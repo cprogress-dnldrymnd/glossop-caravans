@@ -3,7 +3,7 @@
         <div class="container">
             <ul class="nav nav-tabs" id="myTabDeals-Swiper" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="Weekly Deals-tab" data-bs-toggle="tab" data-bs-target="#Weekly Deals-tab-pane" type="button" role="tab" aria-controls="Weekly Deals-tab-pane" aria-selected="true">Weekly Deals</button>
+                    <button class="nav-link active" id="Weekly-Deals-tab" data-bs-toggle="tab" data-bs-target="#Weekly-Deals-tab-pane" type="button" role="tab" aria-controls="Weekly-Deals-tab-pane" aria-selected="true">Weekly Deals</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="New-Caravan-Offers-tab" data-bs-toggle="tab" data-bs-target="#New-Caravan-Offers-tab-pane" type="button" role="tab" aria-controls="New-Caravan-Offers-tab-pane" aria-selected="false">New Caravan Offers</button>
@@ -20,7 +20,7 @@
     <div class="tab-cotnent-holder background-secondary">
         <div class="container">
             <div class="tab-content" id="myTabDeals-SwiperContent">
-                <div class="tab-pane fade show active" id="Weekly Deals-tab-pane" role="tabpanel" aria-labelledby="Weekly Deals-tab" tabindex="0">
+                <div class="tab-pane fade show active" id="Weekly-Deals-tab-pane" role="tabpanel" aria-labelledby="Weekly-Deals-tab" tabindex="0">
                     <form action="" class="form-holder">
                         <div class="row align-items-end">
                             <div class="col">
