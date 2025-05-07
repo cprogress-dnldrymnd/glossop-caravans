@@ -138,6 +138,11 @@ global $listing_fields;
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-9">
+                    <div class="banner">
+                        <?= wp_get_attachment_image(188, 'full') ?>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

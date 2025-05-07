@@ -11270,7 +11270,7 @@ img {
   font-size: 19px; }
   .listing-filter .accordion-button .icon {
     flex: 0 0 32px; }
-    .listing-filter .accordion-button .icon svg {
+    .listing-filter .accordion-button .icon img {
       width: 32px;
       height: 32px;
       object-fit: contain; }
