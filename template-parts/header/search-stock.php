@@ -13,7 +13,7 @@
 
         </ul>
     </div>
-    <div class="background-secondary">
+    <div class="tab-cotnent-holder background-secondary">
         <div class="container">
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="Caravans-tab-pane" role="tabpanel" aria-labelledby="Caravans-tab" tabindex="0">

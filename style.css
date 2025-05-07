@@ -11178,12 +11178,7 @@ img {
     --bs-gutter-y: 8px; }
 
 .seach-stock-holder {
-  --tabs-offset: 82px;
-  --tabs-offset-negative: -82px;
-  padding-bottom: 65px;
-  margin-top: var(--tabs-offset); }
-  .seach-stock-holder .nav-tabs {
-    margin-top: var(--tabs-offset-negative); }
+  padding-bottom: 65px; }
 
 @media (min-width: 1500px) {
   .container {
