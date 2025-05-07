@@ -18,8 +18,6 @@ function action_wp_enqueue_scripts()
     wp_enqueue_script('swiper', vendor_dir . 'swiper/js/swiper-bundle.min.js');
 
     wp_enqueue_script('main', assets_dir . 'javascripts/main.js');
-
-
 }
 add_action('wp_enqueue_scripts', 'action_wp_enqueue_scripts', 20);
 
