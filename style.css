@@ -11289,6 +11289,9 @@ img {
 .col-no-gap {
   gap: 0 !important; }
 
+:where(.is-layout-grid) {
+  gap: 40px; }
+
 body {
   font-family: "Proxima Nova", sans-serif;
   color: var(--text-color);
