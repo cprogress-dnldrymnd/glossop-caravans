@@ -21,120 +21,15 @@
         <div class="container">
             <div class="tab-content" id="myTabDeals-SwiperContent">
                 <div class="tab-pane fade show active" id="Weekly-Deals-tab-pane" role="tabpanel" aria-labelledby="Weekly-Deals-tab" tabindex="0">
-                    <form action="" class="form-holder">
-                        <div class="row align-items-end">
-                            <div class="col">
-                                <?php
-                                form_control(array(
-                                    'type' => 'select',
-                                    'name' => 'Type',
-                                    'id' => 'Type',
-                                    'label' => 'Type',
-                                    'class' => 'form-control-lg',
-                                    'options' => array(
-                                        '' => 'New or Used?',
-                                        'New' => 'New',
-                                        'Used' => 'Used',
-                                        'Both' => 'Both',
-                                    ),
-                                ));
-                                ?>
-                            </div>
-                            <div class="col">
-                                <?php
-                                form_control(array(
-                                    'type' => 'select',
-                                    'name' => 'Berths',
-                                    'id' => 'Berths',
-                                    'label' => 'Berths',
-                                    'class' => 'form-control-lg',
-                                    'options' => array(
-                                        '' => 'How many berths?',
-                                        'All' => 'All',
-                                        '2' => '2',
-                                        '3' => '3',
-                                        '4' => '4',
-                                        '5' => '5',
-                                        '6' => '6',
-                                    ),
-                                ));
-                                ?>
-                            </div>
-                            <div class="col">
-                                <?php
-                                form_control(array(
-                                    'type' => 'select',
-                                    'name' => 'Make',
-                                    'id' => 'Make',
-                                    'label' => 'Make',
-                                    'class' => 'form-control-lg',
-                                    'options' => array(
-                                        '' => 'Select Make',
-                                        'Option 1' => 'Option 1',
-                                        'Option 2' => 'Option 2',
-                                        'Option 3' => 'Option 3',
-                                        'Option 4' => 'Option 4',
-                                        'Option 5' => 'Option 5',
-                                        'Option 6' => ' Option6',
-                                    ),
-                                ));
-                                ?>
-                            </div>
-                            <div class="col">
-                                <?php
-                                form_control(array(
-                                    'type' => 'select',
-                                    'name' => 'Model',
-                                    'id' => 'Model',
-                                    'label' => 'Model',
-                                    'class' => 'form-control-lg',
-                                    'options' => array(
-                                        '' => 'Select Model',
-                                        'Option 1' => 'Option 1',
-                                        'Option 2' => 'Option 2',
-                                        'Option 3' => 'Option 3',
-                                        'Option 4' => 'Option 4',
-                                        'Option 5' => 'Option 5',
-                                        'Option 6' => ' Option6',
-                                    ),
-                                ));
-                                ?>
-                            </div>
-                            <div class="col">
-                                <?php
-                                form_control(array(
-                                    'type' => 'select',
-                                    'name' => 'Price-Min',
-                                    'id' => 'Price-Min',
-                                    'label' => 'Price(min.)',
-                                    'class' => 'form-control-lg',
-                                    'options' => array(
-                                        '' => 'Any',
-                                    ),
-                                ));
-                                ?>
-                            </div>
-                            <div class="col">
-                                <?php
-                                form_control(array(
-                                    'type' => 'select',
-                                    'name' => 'Price-Max',
-                                    'id' => 'Price-Max',
-                                    'label' => 'Price(max.)',
-                                    'class' => 'form-control-lg',
-                                    'options' => array(
-                                        '' => 'Any',
-                                    ),
-                                ));
-                                ?>
-                            </div>
-                            <div class="col">
-                                <div class="button-box">
-                                    <button type="submit" class="btn btn-primary btn-lg w-100">Search</button>
-                                </div>
+
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <?= do_shortcode('[listing_grid]') ?>
                             </div>
                         </div>
-                    </form>
+                    </div>
+
                 </div>
                 <div class="tab-pane fade" id="New-Caravan-Offers-tab-pane" role="tabpanel" aria-labelledby="New-Caravan-Offers-tab" tabindex="0">...</div>
                 <div class="tab-pane fade" id="New-Motorhome-Offers-tab-pane" role="tabpanel" aria-labelledby="New-Motorhome-Offers-tab" tabindex="0">...</div>

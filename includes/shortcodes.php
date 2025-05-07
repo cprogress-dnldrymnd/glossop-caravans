@@ -16,3 +16,5 @@ function listing_grid()
     get_template_part('template-parts/shortcodes/listing-grid');
     return ob_get_clean();
 }
+
+add_shortcode('listing_grid', 'listing_grid');
