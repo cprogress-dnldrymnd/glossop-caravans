@@ -1,0 +1,87 @@
+.footer-decoration {
+    .lines {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        > div {
+            margin-bottom: 4.5px;
+            border-bottom: 1px solid var(--primary-color);
+            @include first-child {
+                border-width: 2px;
+            }
+        }
+    }
+}
+
+#site-footer {
+    hr {
+        margin: 0;
+    }
+
+    hr {
+        color: var(--white-color);
+        opacity: 1;
+    }
+    a {
+        text-decoration: none;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        &:not(.footer-main-menu) {
+            li {
+                @include not-last-child {
+                    margin-right: 1rem;
+                }
+            }
+        }
+        &.footer-main-menu {
+            display: flex;
+            align-items: center;
+            li {
+                display: flex;
+                align-items: center;
+                &:not(:last-child) {
+                    &::after {
+                        content: "";
+                        display: inline-block;
+                        height: 8px;
+                        width: 8px;
+                        border-top: 1px solid;
+                        border-left: 1px solid;
+                        transform: rotate(135deg);
+                        margin-left: 10px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .footer-widget {
+        > div {
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .breadcrumbs-holder {
+        padding-bottom: 0;
+        border-bottom: 0;
+        .container {
+            padding: 0;
+            ul li {
+                margin-right: 0 !important;
+                a {
+                    color: var(--white-color);
+                }
+            }
+        }
+    }
+    .breadcrumbs-holder ul li a {
+        color: var(--white-color);
+    }
+}

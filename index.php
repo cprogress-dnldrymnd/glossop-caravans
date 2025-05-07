@@ -1,33 +1,37 @@
 <?php get_header() ?>
-<main id="primary" class="site-main">
 
-    <?php
-    if (have_posts()) :
+<section class="archive-courses archive-grid background-light-gray py-5">
+    <div class="container large-container">
+        <?php if (have_posts()) { ?>
+            <div class="row">
+                <?php while (have_posts()) { ?>
+                    <?php the_post() ?>
+                    <div class="col-md-4 col-6">
+                        <div class="column-holder d-flex flex-column justify-content-between background-white h-100">
+                            <?= do_shortcode('[_learndash_image id="' . get_post_thumbnail_id() . '" size="medium" learndash_status_bubble="true" taxonomy="ld_course_category"]') ?>
+                            <div class="content-holder d-flex flex-column justify-content-between">
+                                <div>
+                                    <?= do_shortcode('[_heading class="color-primary" tag="h3" heading="' . get_the_title() . '"]'); ?>
+                                    <?= do_shortcode('[_description description="If you want to get onboard and become one of our volunteer Marine Mammal Surveyors..."]'); ?>
+                                    <hr>
+                                    <?= do_shortcode('[_learndash_course_meta]'); ?>
+                                </div>
+                                <div>
+                                    <?= do_shortcode('[_learndash_course_button]'); ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php } ?>
+            </div>
+        <?php } else { ?>
+            <div class="heading-box">
+                <h2>
+                    No results found.
+                </h2>
+            </div>
+        <?php } ?>
+    </div>
+</section>
 
-        if (is_home() && ! is_front_page()) :
-    ?>
-    <?php
-        endif;
-
-        /* Start the Loop */
-        while (have_posts()) :
-            the_post();
-
-            /**
-             * Include the Post-Type-specific template for the content.
-             * If you want to overload this in a child theme then include a file
-             * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-             */
-            get_template_part('template-parts/content', get_post_type());
-
-        endwhile;
-
-        the_posts_navigation();
-
-    else :
-
-        get_template_part('template-parts/content', 'none');
-
-    endif;
-    ?>
-    <?php get_footer() ?>
+<?php get_footer() ?>

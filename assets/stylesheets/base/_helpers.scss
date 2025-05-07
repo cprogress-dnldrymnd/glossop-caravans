@@ -1,0 +1,94 @@
+.container {
+    &:not(.large-container) {
+        @media (min-width: 1500px) {
+            max-width: 1470px;
+        }
+    }
+    &.large-container {
+        @media (min-width: 1200px) {
+            max-width: 1060px;
+        }
+        @media (min-width: 1400px) {
+            max-width: 1060px;
+        }
+        @media (min-width: 1500px) {
+            max-width: 1100px;
+        }
+    }
+}
+
+.image-box {
+    &:not(.not-absolute) {
+        padding: 40%;
+        position: relative;
+        border-radius: 5px;
+        overflow: hidden;
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            left: 0;
+            top: 0;
+            border: none;
+        }
+    }
+    &.image-box-background {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        @include overlay;
+    }
+}
+.background-white {
+    background-color: var(--white-color);
+}
+.background-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.background-accent {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+.background-light-gray {
+    background-color: var(--light-gray-color);
+}
+.background-dark {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+
+.color-primary {
+    color: var(--primary-color);
+    @include headings {
+        color: inherit;
+    }
+}
+.color-accent {
+    color: var(--accent-color);
+}
+.color-white {
+    color: var(--white-color);
+}
+.color-light-gray {
+    color: var(--light-gray-color);
+}
+.background-primary,
+.color-primary,
+.background-dark {
+    @include headings {
+        color: inherit;
+    }
+    a {
+        color: inherit;
+    }
+}

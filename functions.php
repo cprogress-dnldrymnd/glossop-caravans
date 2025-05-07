@@ -2,12 +2,42 @@
 /*-----------------------------------------------------------------------------------*/
 /* Define the version so we can easily replace it throughout the theme
 /*-----------------------------------------------------------------------------------*/
-define('version', 1);
+define('orca_version', 1);
 define('theme_dir', get_template_directory_uri() . '/');
 define('assets_dir', theme_dir . 'assets/');
 define('image_dir', assets_dir . 'images/');
-define('vendor_dir', assets_dir . 'vendor/');
+define('vendor_dir', assets_dir . 'vendors/');
 
+add_action('after_setup_theme', 'setup_woocommerce_support');
+
+function setup_woocommerce_support()
+{
+    add_theme_support('woocommerce');
+    add_theme_support('wc-product-gallery-zoom');
+    add_theme_support('wc-product-gallery-lightbox');
+    add_theme_support('wc-product-gallery-slider');
+}
+
+function action_wp_enqueue_scripts()
+{
+    wp_enqueue_style('style', theme_dir . 'style.css');
+    wp_enqueue_script('bootstrap', vendor_dir . 'bootstrap/dist/js/bootstrap.min.js');
+    wp_register_script('swiper', vendor_dir . 'swiper/js/swiper-bundle.min.js');
+    if (is_post_type_archive('sfwd-courses') || is_tax('ld_course_category') || is_shop() || is_front_page()) {
+        wp_enqueue_script('archive-course', assets_dir . 'javascripts/archive-course.js', array('jquery'));
+        // in JavaScript, object properties are accessed as ajax_object.ajax_url
+        wp_localize_script(
+            'archive-course',
+            'ajax_object',
+            array(
+                'ajax_url' => admin_url('admin-ajax.php')
+            )
+        );
+    } else if (is_single() && get_post_type() == 'sfwd-courses') {
+        wp_enqueue_script('single-course', assets_dir . 'javascripts/single-course.js', array('jquery', 'swiper'));
+    }
+}
+add_action('wp_enqueue_scripts', 'action_wp_enqueue_scripts', 20);
 
 /*-----------------------------------------------------------------------------------*/
 /* Register Carbofields
@@ -19,60 +49,36 @@ function tissue_paper_register_custom_fields()
 }
 function get__post_meta($value)
 {
-    if (function_exists('carbon_get_the_post_meta')) {
-        return carbon_get_the_post_meta($value);
-    }
+    return get_post_meta(get_the_ID(), '_' . $value, true);
 }
 
 function get__term_meta($term_id, $value)
 {
-    if (function_exists('get_term_meta')) {
-        return get_term_meta($term_id, '_' . $value, true);
-    }
-}
-
-function get___term_meta($term_id, $value)
-{
-    if (function_exists('carbon_get_term_meta')) {
-        return carbon_get_term_meta($term_id, $value);
-    }
+    return get_term_meta($term_id, '_' . $value, true);
 }
 
 function get__post_meta_by_id($id, $value)
 {
-    if (function_exists('carbon_get_post_meta')) {
-        return carbon_get_post_meta($id, $value);
-    }
+    return get_post_meta($id, '_' . $value, true);
 }
 function get__theme_option($value)
 {
-    return carbon_get_theme_option($value);
+    return get_option('_' . $value);
 }
 
-
-/*-----------------------------------------------------------------------------------*/
-/* Enqueue Styles and Scripts
-/*-----------------------------------------------------------------------------------*/
-function enqueue_scripts()
+function arrayKeyStartsWith($array, $prefix)
 {
-    wp_enqueue_style('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
-    wp_enqueue_script('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js');
-    wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js');
-
-    wp_register_script('main', assets_dir . 'js/main.js', NULL, version);
-    wp_localize_script(
-        'main',
-        'ajax_object',
-        array(
-            'ajax_url' => admin_url('admin-ajax.php'),
-        )
-    );
-    wp_enqueue_script('main');
-
-
-    wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css');
-    wp_enqueue_style('style', theme_dir . 'style.css', NULL, version);
+    $matchingKeys = [];
+    foreach ($array as $key => $value) {
+        if (strpos($key, $prefix) === 0) {
+            $matchingKeys[$key] = $value;
+        }
+    }
+    return $matchingKeys;
 }
 
-
-add_action('wp_enqueue_scripts', 'enqueue_scripts', 99999); // 
+require_once('includes/bootstrap-navwalker.php');
+require_once('includes/menus.php');
+require_once('includes/theme-widgets.php');
+require_once('includes/post-types.php');
+require_once('includes/shortcodes.php');
