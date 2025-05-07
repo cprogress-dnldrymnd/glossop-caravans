@@ -11438,7 +11438,7 @@ h5, .h5 {
   .listing-grid__feature .grid__feature-inner span {
     display: block; }
 
-.swiper-listing .swiper-wrapper {
+.swiper-listing {
   overflow: visible; }
 
 /*-----------------------------------------------------------------------------------*/
