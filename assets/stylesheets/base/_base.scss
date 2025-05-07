@@ -110,11 +110,7 @@ img {
 }
 
 .seach-stock-holder {
-    --tabs-offset: 82px;
-    --tabs-offset-negative: -82px;
     padding-bottom: 65px;
-    margin-top: var(--tabs-offset);
     .nav-tabs {
-        margin-top: var(--tabs-offset-negative);
     }
 }
