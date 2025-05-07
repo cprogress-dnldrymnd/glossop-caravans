@@ -11398,9 +11398,7 @@ h5, .h5 {
 
 .listing-grid-item__prices .grid-item__price-inner {
   background-color: var(--lightgray-color);
-  text-align: center;
-  padding: 7px;
-  height: 100%; }
+  padding: 7px; }
   .listing-grid-item__prices .grid-item__price-inner span {
     display: block; }
 

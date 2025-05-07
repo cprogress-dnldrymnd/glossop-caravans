@@ -18,7 +18,7 @@
         </div>
     </div>
     <div class="listing-grid-item__bottom">
-        <div class="listing-grid-item__prices row">
+        <div class="listing-grid-item__prices row text-center">
             <div class="listing-grid-item__price col-md-4">
                 <div class="grid-item__price-inner rounded h-100">
                     <span>RRP</span>
