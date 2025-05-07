@@ -11210,6 +11210,9 @@ img {
     height: 100%;
     object-fit: cover; }
 
+.site-content > .wp-block-group {
+  overflow: hidden; }
+
 @media (min-width: 1500px) {
   .container {
     max-width: 1420px; } }

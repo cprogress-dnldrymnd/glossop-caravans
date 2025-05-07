@@ -151,3 +151,8 @@ img {
         object-fit: cover;
     }
 }
+.site-content {
+    & > .wp-block-group {
+        overflow: hidden;
+    }
+}
