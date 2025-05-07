@@ -17,6 +17,16 @@
                 <form action="">
                     <div class="row">
                         <div class="col-auto">
+                            <?php
+                            form_control(array(
+                                'type' => 'text',
+                                'name' => 'search',
+                                'id' => 'search',
+                                'label' => 'Search',
+                                'placeholder' => 'Search by make, model or price',
+                                'value' => ''
+                            ));
+                            ?>
                             <div class="mb-3">
                                 <label for="type" class="form-label">Type</label>
                                 <select class="form-control form-control-lg" name="type" id="type">

@@ -1,6 +1,7 @@
 <?php
 function form_control($args)
 {
+    echo '<div class="form-control-holder">';
     echo '<label for="' . $args['id'] . '">' . $args['label'] . '</label>';
 
     if ($args['type'] == 'text') {
@@ -14,4 +15,5 @@ function form_control($args)
     } elseif ($args['type'] == 'textarea') {
         echo '<textarea name="' . $args['name'] . '" id="' . $args['id'] . '" class="form-control" placeholder="' . $args['placeholder'] . '">' . $args['value'] . '</textarea>';
     }
+    echo '</div>';
 }
