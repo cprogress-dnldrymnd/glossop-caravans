@@ -10,6 +10,8 @@
  * @package orca
  */
 
+ echo do_shortcode('[template template_id=122]');
+
 ?>
 
 <footer id="site-footer" class="site-footer background-primary py-3 d-none">
