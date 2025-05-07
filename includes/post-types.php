@@ -3,6 +3,7 @@
 class newPostType
 {
     public $name;
+    public $key;
     public $singular_name;
     public $icon;
     public $supports;
@@ -24,7 +25,7 @@ class newPostType
     function create_post_type()
     {
         register_post_type(
-            strtolower($this->name),
+            strtolower($this->key),
             array(
                 'labels'              => array(
                     'name'               => _x($this->name, 'post type general name'),
@@ -136,9 +137,11 @@ class newTaxonomy
     }
 }
 $Templates = new newPostType();
+$Templates->key = 'template';
 $Templates->name = 'Templates';
 $Templates->singular_name = 'Template';
 $Templates->icon = 'dashicons-layout';
+$Templates->show_in_rest = true;
 $Templates->supports = array('title', 'editor', 'revisions');
 $Templates->exclude_from_search = true;
 $Templates->publicly_queryable = true;
