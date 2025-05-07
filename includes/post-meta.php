@@ -5,7 +5,7 @@ use Carbon_Fields\Complex_Container;
 use Carbon_Fields\Field;
 use Carbon_Fields\Block;
 
-Block::make(__('Grid'))
+Block::make(__('Grid Items'))
     ->add_fields(array(
         Field::make('text', 'heading', __('Heading')),
         Field::make('textarea', 'description', __('Description')),
