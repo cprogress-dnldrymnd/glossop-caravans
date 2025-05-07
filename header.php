@@ -48,7 +48,7 @@
                                             'container' => false,
                                             'menu_class' => 'fw-semibold flex-row',
                                             'fallback_cb' => '__return_false',
-                                            'items_wrap' => '<ul id="%1$s" class="navbar-nav %2$s">%3$s</ul>',
+                                            'items_wrap' => '<ul id="%1$s" class="navbar-nav fs-23 %2$s">%3$s</ul>',
                                             'depth' => 2,
                                             'walker' => new bootstrap_5_wp_nav_menu_walker()
                                         ));

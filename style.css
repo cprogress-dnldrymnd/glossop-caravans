@@ -11459,6 +11459,9 @@ h5, .h5 {
 .font-sm {
   font-size: 1rem; }
 
+.fs-23 {
+  font-size: 23px; }
+
 @font-face {
   font-family: "Proxima Nova";
   src: url("./assets/fonts/ProximaNova/ProximaNova-Regular.eot");
@@ -11492,8 +11495,6 @@ h5, .h5 {
       position: static;
       visibility: visible;
       transform: none; } }
-#masthead .navbar-nav {
-  font-size: 23px; }
 
 /*-----------------------------------------------------------------------------------*/
 /* Plugins
