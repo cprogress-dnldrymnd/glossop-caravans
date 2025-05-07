@@ -11045,7 +11045,8 @@ button.swiper-pagination-bullet {
 :root {
   --primary-color: #ff681e;
   --secondary-color: #45c324;
-  --text-color: #202020; }
+  --text-color: #202020;
+  --lightgray-color: #f5f5f5; }
 
 @-moz-keyframes spin {
   from {
@@ -11394,6 +11395,9 @@ h5, .h5 {
     padding: 20px; }
   .listing-grid .listing-grid-item__bottom {
     padding: 20px; }
+
+.listing-grid-item__prices .grid-item__price-inner {
+  background-color: var(--lightgray-color); }
 
 /*-----------------------------------------------------------------------------------*/
 /* Plugins

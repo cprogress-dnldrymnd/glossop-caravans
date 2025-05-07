@@ -60,3 +60,10 @@
         padding: 20px;
     }
 }
+
+.listing-grid-item__prices {
+    .grid-item__price-inner {
+        background-color: var(--lightgray-color);
+        text-align: center;
+    }
+}

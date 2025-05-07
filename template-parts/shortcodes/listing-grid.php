@@ -19,17 +19,23 @@
     </div>
     <div class="listing-grid-item__bottom">
         <div class="listing-grid-item__prices row">
-            <div class="listing-grid-item__price col-md-3">
-                <span>RRP</span>
-                <strong>£44,125</strong>
+            <div class="listing-grid-item__price col-md-4">
+                <div class="grid-item__price-inner">
+                    <span>RRP</span>
+                    <strong>£44,125</strong>
+                </div>
             </div>
-            <div class="listing-grid-item__price col-md-3">
-                <span>Our price</span>
-                <strong>£42,200</strong>
+            <div class="listing-grid-item__price col-md-4">
+                <div class="grid-item__price-inner">
+                    <span>Our price</span>
+                    <strong>£42,200</strong>
+                </div>
             </div>
-            <div class="listing-grid-item__price col-md-3">
-                <span>Save</span>
-                <strong>£1,955</strong>
+            <div class="listing-grid-item__price col-md-4">
+                <div class="grid-item__price-inner">
+                    <span>Save</span>
+                    <strong>£1,955</strong>
+                </div>
             </div>
         </div>
         <div class="listing-grid-item__button">
