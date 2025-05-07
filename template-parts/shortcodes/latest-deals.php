@@ -1,7 +1,7 @@
 <div class="deals-swiper-holder">
     <div class="tab-nav-holder">
         <div class="container">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <ul class="nav nav-tabs" id="myTabDeals-Swiper" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="Weekly Deals-tab" data-bs-toggle="tab" data-bs-target="#Weekly Deals-tab-pane" type="button" role="tab" aria-controls="Weekly Deals-tab-pane" aria-selected="true">Weekly Deals</button>
                 </li>
@@ -19,7 +19,7 @@
     </div>
     <div class="tab-cotnent-holder background-secondary">
         <div class="container">
-            <div class="tab-content" id="myTabContent">
+            <div class="tab-content" id="myTabDeals-SwiperContent">
                 <div class="tab-pane fade show active" id="Weekly Deals-tab-pane" role="tabpanel" aria-labelledby="Weekly Deals-tab" tabindex="0">
                     <form action="" class="form-holder">
                         <div class="row align-items-end">
