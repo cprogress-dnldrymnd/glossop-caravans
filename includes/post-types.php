@@ -139,7 +139,6 @@ $Templates = new newPostType();
 $Templates->name = 'Templates';
 $Templates->singular_name = 'Template';
 $Templates->icon = 'dashicons-layout';
-$Templates->show_in_rest = true;
 $Templates->supports = array('title', 'editor', 'revisions');
 $Templates->exclude_from_search = true;
 $Templates->publicly_queryable = true;
