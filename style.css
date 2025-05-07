@@ -11417,7 +11417,10 @@ h5, .h5 {
     display: block; }
 
 .listing-grid__feature .grid__feature-inner {
-  background-color: var(--yellow-color); }
+  background-color: var(--yellow-color);
+  padding: 10px 20px; }
+  .listing-grid__feature .grid__feature-inner span {
+    display: block; }
 
 /*-----------------------------------------------------------------------------------*/
 /* Plugins

@@ -6,12 +6,12 @@
         </div>
         <div class="listing-grid__feature fs-13 row">
             <div class="listing-grid__feature-item col-auto">
-                <div class="grid__feature-inner">
+                <div class="grid__feature-inner rounded h-100">
                     Finance available: 7.9% APR
                 </div>
             </div>
             <div class="listing-grid__feature-item col-auto">
-                <div class="grid__feature-inner">
+                <div class="grid__feature-inner rounded h-100">
                     <span class="fs-7">Per month</span>
                     £565.50
                 </div>
