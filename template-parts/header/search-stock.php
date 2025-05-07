@@ -23,19 +23,7 @@
                         <div class="row align-items-end">
                             <div class="col">
                                 <?php
-                                form_control(array(
-                                    'type' => 'select',
-                                    'name' => 'Type',
-                                    'id' => 'Type',
-                                    'label' => 'Type',
-                                    'class' => 'form-control-lg',
-                                    'options' => array(
-                                        '' => 'New or Used?',
-                                        'New' => 'New',
-                                        'Used' => 'Used',
-                                        'Both' => 'Both',
-                                    ),
-                                ));
+                                
                                 ?>
                             </div>
                             <div class="col">

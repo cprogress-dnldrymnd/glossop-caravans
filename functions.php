@@ -14,7 +14,7 @@ define('vendor_dir', assets_dir . 'vendors/');
 
 function action_after_setup_theme()
 {
-	add_theme_support('post-thumbnails');
+    add_theme_support('post-thumbnails');
 }
 add_action('after_setup_theme', 'action_after_setup_theme');
 
@@ -74,6 +74,7 @@ require_once('includes/theme-widgets.php');
 require_once('includes/post-types.php');
 require_once('includes/shortcodes.php');
 require_once('includes/custom-functions.php');
+require_once('includes/listing-functions.php');
 
 
 function template($atts)
