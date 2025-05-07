@@ -18,7 +18,7 @@ p:last-child {
     margin-bottom: 0 !important;
 }
 a {
-    color: var(--primary-color);
+    color: var(--orange-color);
     @include on-event {
         color: var(--accent-color);
     }

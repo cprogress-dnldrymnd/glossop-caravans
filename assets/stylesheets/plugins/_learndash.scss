@@ -362,7 +362,7 @@ body.ld-in-focus-mode.admin-bar {
     }
     .filter-box {
         button {
-            background-color: var(--primary-color);
+            background-color: var(--orange-color);
             color: var(--white-color);
             @include on-event {
                 background-color: var(--accent-color);

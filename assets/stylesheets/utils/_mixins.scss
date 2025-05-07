@@ -354,7 +354,7 @@
 }
 
 @mixin icon_menu_hover {
-    background-color: var(--primary-color);
+    background-color: var(--orange-color);
 
     span.text {
         color: var(--white-color);
@@ -378,7 +378,7 @@
 }
 
 @mixin icon_menu_hover_mobile {
-    background-color: var(--primary-color);
+    background-color: var(--orange-color);
 
     span.text {
         color: var(--accent-color);
@@ -599,7 +599,7 @@
         padding: 10px;
     }
     @include on-event() {
-        background-color: var(--primary-color);
+        background-color: var(--orange-color);
         color: var(--accent-color);
     }
 }

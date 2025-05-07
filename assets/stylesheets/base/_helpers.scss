@@ -17,10 +17,10 @@
     background-color: var(--white-color);
 }
 .background-primary {
-    background-color: var(--primary-color);
+    background-color: var(--orange-color);
 }
 .background-secondary {
-    background-color: var(--secondary-color);
+    background-color: var(--green-color);
 }
 .background-accent {
     background-color: var(--accent-color);
@@ -42,6 +42,6 @@
     padding-bottom: var(--sm-spacing);
 }
 
-.text-orange {
-    color: #ff5251;
+.text-orange-2 {
+    color: var(--orange-color);
 }
