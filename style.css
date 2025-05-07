@@ -11475,6 +11475,9 @@ h5, .h5 {
   --bs-nav-link-color: var(--text-color);
   gap: 1vw; }
 
+.header-menu.header-menu.header-menu {
+  gap: 1vw; }
+
 .bottom-footer .container > div {
   border-top: 1px solid #D3D3D3;
   padding-top: 30px;
