@@ -1,4 +1,4 @@
-<header id="masthead" class="site-header py-3" role="banner">
+<header id="masthead" class="site-header py-4" role="banner">
     <div class="container">
         <div class="row g-3 justify-content-between align-items-center">
             <div class="col-auto">
