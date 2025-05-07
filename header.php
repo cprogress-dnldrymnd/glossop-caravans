@@ -26,7 +26,7 @@
 
 <body <?php body_class(); ?>>
     <main id="main" class="main-content" role="main">
-        <header id="masthead" class="site-header">
+        <header id="masthead" class="site-header py-3" role="banner">
             <div class="container">
                 <div class="row g-3 justify-content-between align-items-center">
                     <div class="col-auto">
