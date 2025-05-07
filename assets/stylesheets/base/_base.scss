@@ -178,4 +178,10 @@ img {
             object-fit: cover;
         }
     }
+    .wp-block-latest-posts__post-title {
+        text-decoration: none;
+        font-size: 32px;
+        font-weight: bold;
+        color: var(--text-color);
+    }
 }
