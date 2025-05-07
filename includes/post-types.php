@@ -136,7 +136,6 @@ class newTaxonomy
     }
 }
 $Templates = new newPostType();
-$Templates->key = 'templates';
 $Templates->name = 'Templates';
 $Templates->singular_name = 'Template';
 $Templates->icon = 'dashicons-layout';
