@@ -4,11 +4,11 @@
         <div class="desc">
             <p>Step into luxury with the Swift Elegance Grande 780.</p>
         </div>
-        <div class="listing-grid__feature">
-            <div class="listing-grid__feature-item">
+        <div class="listing-grid__feature row">
+            <div class="listing-grid__feature-item col-auto">
                 Finance available: 7.9% APR
             </div>
-            <div class="listing-grid__feature-item">
+            <div class="listing-grid__feature-item col-auto">
                 <div class="small-text">Per month</div>
                 £565.50
             </div>
@@ -18,6 +18,19 @@
         </div>
     </div>
     <div class="listing-grid-item__bottom">
-
+        <div class="listing-grid-item__prices row">
+            <div class="listing-grid-item__price col-md-3">
+                <span>RRP</span>
+                <strong>£44,125</strong>
+            </div>
+            <div class="listing-grid-item__price col-md-3">
+                <span>Our price</span>
+                <strong>£42,200</strong>
+            </div>
+            <div class="listing-grid-item__price col-md-3">
+                <span>Save</span>
+                <strong>£1,955</strong>
+            </div>
+        </div>
     </div>
 </div>
