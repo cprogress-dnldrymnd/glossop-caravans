@@ -11214,7 +11214,8 @@ img {
 
 body {
   font-family: "Proxima Nova", sans-serif;
-  color: var(--text-color); }
+  color: var(--text-color);
+  font-size: 20px; }
 
 h1, .h1,
 h2,
