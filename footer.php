@@ -11,18 +11,7 @@
  */
 
 ?>
-<div class="footer-decoration text-end position-relative">
-    <div class="lines">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <div class="container">
-        <img src="/wp-content/uploads/2024/02/whale-spotters.6b099e7c005173a154c9.png">
-    </div>
-</div>
+
 <footer id="site-footer" class="site-footer background-primary py-3 d-none">
 
     <div class="container">
