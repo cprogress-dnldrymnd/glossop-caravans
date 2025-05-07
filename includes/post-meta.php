@@ -28,15 +28,14 @@ Block::make(__('Grid Items'))
             <?php foreach ($grid as $item) : ?>
                 <div class="col-lg-4">
                     <a href="<?php echo esc_html($item['grid_link']); ?>" class="grid-inner h-100 d-flex flex-column justif-content-between" style="background-color: <?php echo esc_attr($item['bg_color']); ?>;">
-                        <div class="grid-item__tag">
-                            <div class="grid-item__image">
-                                <?php echo wp_get_attachment_image($item['image'], 'full'); ?>
-                                <h3><?php echo esc_html($item['title']); ?></h3>
-                                <span class="tag"><?php echo esc_html($item['grid_tag']); ?></span>
-                            </div><!-- /.grid-item__image -->
-                            <div class="grid-item__content">
-                                <p><?php echo esc_html($item['description']); ?></p>
-                            </div><!-- /.grid-item__content -->
+                        <div class="grid-item__image">
+                            <?php echo wp_get_attachment_image($item['image'], 'full'); ?>
+                            <h3><?php echo esc_html($item['title']); ?></h3>
+                            <span class="tag"><?php echo esc_html($item['grid_tag']); ?></span>
+                        </div><!-- /.grid-item__image -->
+                        <div class="grid-item__content">
+                            <p><?php echo esc_html($item['description']); ?></p>
+                        </div><!-- /.grid-item__content -->
                     </a>
                 </div><!-- /.grid-item -->
             <?php endforeach; ?>
