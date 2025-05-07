@@ -34,10 +34,6 @@
                     </div>
                     <div class="col-auto">
                         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasHeaderMenu" aria-labelledby="offcanvasHeaderMenuLabel">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasHeaderMenuLabel">Offcanvas</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
                             <div class="offcanvas-body">
                                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                                     <div class="container-fluid">
