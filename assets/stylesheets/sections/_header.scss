@@ -1,3 +1,10 @@
 #masthead {
-    
+    .offcanvas {
+        --bs-offcanvas-bg: transparent;
+        @include responsive(md-lg)  {
+            position: static;
+            visibility: visible;
+            transform: none;
+        }
+    }
 }
