@@ -4,7 +4,7 @@ jQuery(document).ready(function () {
 
 function swiper_sliders() {
     var swiper = new Swiper(".swiper-listing", {
-        slidesPerView: 4,
+        slidesPerView: 3,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
