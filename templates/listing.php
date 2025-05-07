@@ -21,9 +21,21 @@ global $listing_fields;
                                         <span class="icon"><?= get__theme_images('sort-by.svg') ?></span> Sort by
                                     </button>
                                 </h2>
-                                <div id="collapseSort-by" class="accordion-collapse collapse" data-bs-parent="#accordionFilter" style="">
+                                <div id="collapseSort-by" class="accordion-collapse collapse" data-bs-parent="#accordionFilter">
                                     <div class="accordion-body">
                                         <?= $listing_fields['sortby'] ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNew-Used" aria-expanded="false" aria-controls="collapseNew-Used">
+                                        <span class="icon"><?= get__theme_images('new-used.svg') ?></span> New-Used
+                                    </button>
+                                </h2>
+                                <div id="collapseNew-Used" class="accordion-collapse collapse" data-bs-parent="#accordionFilter">
+                                    <div class="accordion-body">
+                                        <?= $listing_fields['type'] ?>
                                     </div>
                                 </div>
                             </div>
