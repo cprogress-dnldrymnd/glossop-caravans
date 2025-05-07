@@ -11305,6 +11305,12 @@ h5, .h5 {
 .fs-23 {
   font-size: 23px; }
 
+.fs-14 {
+  font-size: 14px; }
+
+.fs-7 {
+  font-size: 7px; }
+
 @font-face {
   font-family: "Proxima Nova";
   src: url("./assets/fonts/ProximaNova/ProximaNova-Regular.eot");

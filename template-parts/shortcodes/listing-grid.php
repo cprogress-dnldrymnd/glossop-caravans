@@ -9,7 +9,7 @@
                 Finance available: 7.9% APR
             </div>
             <div class="listing-grid__feature-item col-auto">
-                <div class="small-text">Per month</div>
+                <span class="fs-7" >Per month</span>
                 £565.50
             </div>
         </div>
@@ -21,19 +21,19 @@
         <div class="listing-grid-item__prices row text-center">
             <div class="listing-grid-item__price col-md-4">
                 <div class="grid-item__price-inner rounded h-100">
-                    <span>RRP</span>
+                    <span class="fs-14">RRP</span>
                     <strong>£44,125</strong>
                 </div>
             </div>
             <div class="listing-grid-item__price col-md-4">
                 <div class="grid-item__price-inner rounded h-100">
-                    <span>Our price</span>
+                    <span class="fs-14">Our price</span>
                     <strong>£42,200</strong>
                 </div>
             </div>
             <div class="listing-grid-item__price col-md-4">
                 <div class="grid-item__price-inner rounded h-100">
-                    <span>Save</span>
+                    <span class="fs-14">Save</span>
                     <strong>£1,955</strong>
                 </div>
             </div>
