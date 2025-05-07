@@ -46,9 +46,10 @@
         }
     }
     &.nav-tabs-style-2 {
-        gap: 50px;
+        gap: 20px;
         .nav-link {
             &.active {
+                color: var(--text-color);
                 background-color: var(--bs-white);
                 border-color: var(--bs-black);
             }
