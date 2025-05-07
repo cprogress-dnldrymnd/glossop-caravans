@@ -128,7 +128,7 @@
                             </div>
                             <div class="col">
                                 <div class="button-box">
-                                    <button type="submit" class="btn btn-primary btn-lg">Search</button>
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">Search</button>
                                 </div>
                             </div>
                         </div>
