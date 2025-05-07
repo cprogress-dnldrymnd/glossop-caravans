@@ -22,21 +22,20 @@ Block::make(__('Grid Items'))
 ?>
 
     <div class="grid-section">
-
+        <div class="row">
+            <?php foreach ($grid as $item) : ?>
+                <div class="col-lg-4">
+                    <div class="grid-item__image">
+                        <?php echo wp_get_attachment_image($item['image'], 'full'); ?>
+                    </div><!-- /.grid-item__image -->
+                    <div class="grid-item__content">
+                        <h2><?php echo esc_html($item['title']); ?></h2>
+                        <p><?php echo esc_html($item['description']); ?></p>
+                        <span class="tag"><?php echo esc_html($item['grid_tag']); ?></span>
+                    </div><!-- /.grid-item__content -->
+                </div><!-- /.grid-item -->
+            <?php endforeach; ?>
+        </div>
     </div>
-    <div class="block">
-        <div class="block__heading">
-            <h1><?php echo esc_html($fields['heading']); ?></h1>
-        </div><!-- /.block__heading -->
-
-        <div class="block__image">
-            <?php echo wp_get_attachment_image($fields['image'], 'full'); ?>
-        </div><!-- /.block__image -->
-
-        <div class="block__content">
-            <?php echo apply_filters('the_content', $fields['content']); ?>
-        </div><!-- /.block__content -->
-    </div><!-- /.block -->
-
 <?php
     });
