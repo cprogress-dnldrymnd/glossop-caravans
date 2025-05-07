@@ -63,3 +63,4 @@ require_once('includes/menus.php');
 require_once('includes/theme-widgets.php');
 require_once('includes/post-types.php');
 require_once('includes/shortcodes.php');
+require_once('includes/custom-functions.php');
