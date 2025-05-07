@@ -8,7 +8,15 @@ define('assets_dir', theme_dir . 'assets/');
 define('image_dir', assets_dir . 'images/');
 define('vendor_dir', assets_dir . 'vendors/');
 
+/*-----------------------------------------------------------------------------------*/
+/* After Theme Setup
+/*-----------------------------------------------------------------------------------*/
 
+function action_after_setup_theme()
+{
+	add_theme_support('post-thumbnails');
+}
+add_action('after_setup_theme', 'action_after_setup_theme');
 
 function action_wp_enqueue_scripts()
 {

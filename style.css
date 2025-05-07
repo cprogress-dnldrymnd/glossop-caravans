@@ -11291,6 +11291,9 @@ img {
 
 :where(.is-layout-grid) {
   gap: 40px; }
+  @media screen and (max-width: 767px) {
+    :where(.is-layout-grid) {
+      gap: 20px; } }
 
 body {
   font-family: "Proxima Nova", sans-serif;
