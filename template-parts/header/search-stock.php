@@ -20,8 +20,8 @@
                             <?php
                             form_control(array(
                                 'type' => 'select',
-                                'name' => 'type',
-                                'id' => 'type',
+                                'name' => 'Type',
+                                'id' => 'Type',
                                 'label' => 'Type',
                                 'class' => 'form-control-lg',
                                 'options' => array(
@@ -32,7 +32,26 @@
                                 ),
                             ));
                             ?>
-
+                        </div>
+                        <div class="col-auto">
+                            <?php
+                            form_control(array(
+                                'type' => 'select',
+                                'name' => 'Berths',
+                                'id' => 'Berths',
+                                'label' => 'Berths',
+                                'class' => 'form-control-lg',
+                                'options' => array(
+                                    '' => 'How many berths?',
+                                    'All' => 'All',
+                                    '2' => '2',
+                                    '3' => '3',
+                                    '4' => '4',
+                                    '5' => '5',
+                                    '6' => '6',
+                                ),
+                            ));
+                            ?>
                         </div>
                     </div>
                 </form>
