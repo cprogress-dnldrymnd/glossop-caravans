@@ -53,6 +53,74 @@
                             ));
                             ?>
                         </div>
+                        <div class="col-auto">
+                            <?php
+                            form_control(array(
+                                'type' => 'select',
+                                'name' => 'Make',
+                                'id' => 'Make',
+                                'label' => 'Make',
+                                'class' => 'form-control-lg',
+                                'options' => array(
+                                    '' => 'Select Make',
+                                    'Option 1' => 'Option 1',
+                                    'Option 2' => 'Option 2',
+                                    'Option 3' => 'Option 3',
+                                    'Option 4' => 'Option 4',
+                                    'Option 5' => 'Option 5',
+                                    'Option 6' => ' Option6',
+                                ),
+                            ));
+                            ?>
+                        </div>
+                        <div class="col-auto">
+                            <?php
+                            form_control(array(
+                                'type' => 'select',
+                                'name' => 'Model',
+                                'id' => 'Model',
+                                'label' => 'Model',
+                                'class' => 'form-control-lg',
+                                'options' => array(
+                                    '' => 'Select Model',
+                                    'Option 1' => 'Option 1',
+                                    'Option 2' => 'Option 2',
+                                    'Option 3' => 'Option 3',
+                                    'Option 4' => 'Option 4',
+                                    'Option 5' => 'Option 5',
+                                    'Option 6' => ' Option6',
+                                ),
+                            ));
+                            ?>
+                        </div>
+                        <div class="col-auto">
+                            <?php
+                            form_control(array(
+                                'type' => 'select',
+                                'name' => 'Price-Min',
+                                'id' => 'Price-Min',
+                                'label' => 'Price(min.)',
+                                'class' => 'form-control-lg',
+                                'options' => array(
+                                    '' => 'Any',
+                                ),
+                            ));
+                            ?>
+                        </div>
+                        <div class="col-auto">
+                            <?php
+                            form_control(array(
+                                'type' => 'select',
+                                'name' => 'Price-Max',
+                                'id' => 'Price-Max',
+                                'label' => 'Price(max.)',
+                                'class' => 'form-control-lg',
+                                'options' => array(
+                                    '' => 'Any',
+                                ),
+                            ));
+                            ?>
+                        </div>
                     </div>
                 </form>
             </div>
