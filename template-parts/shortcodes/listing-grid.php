@@ -20,25 +20,25 @@
     <div class="listing-grid-item__bottom">
         <div class="listing-grid-item__prices row">
             <div class="listing-grid-item__price col-md-4">
-                <div class="grid-item__price-inner rounded">
+                <div class="grid-item__price-inner rounded h-100">
                     <span>RRP</span>
                     <strong>£44,125</strong>
                 </div>
             </div>
             <div class="listing-grid-item__price col-md-4">
-                <div class="grid-item__price-inner rounded">
+                <div class="grid-item__price-inner rounded h-100">
                     <span>Our price</span>
                     <strong>£42,200</strong>
                 </div>
             </div>
             <div class="listing-grid-item__price col-md-4">
-                <div class="grid-item__price-inner rounded">
+                <div class="grid-item__price-inner rounded h-100">
                     <span>Save</span>
                     <strong>£1,955</strong>
                 </div>
             </div>
         </div>
-        <div class="listing-grid-item__button rounded">
+        <div class="listing-grid-item__button">
             <a href="#" class="btn btn-primary w-100 btn-lg">
                 View deal
             </a>
