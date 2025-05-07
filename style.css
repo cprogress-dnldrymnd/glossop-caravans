@@ -11257,8 +11257,17 @@ img {
 .md-padding {
   padding: var(--md-spacing); }
 
+.xxs-padding {
+  padding: var(--xxs-padding); }
+
+.xxs-padding-top {
+  padding-top: var(--xxs-padding); }
+
 .text-orange-2 {
   color: var(--orange-color); }
+
+.mw-600 {
+  max-width: 600px; }
 
 .g-xxs {
   --bs-gutter-x: 8px;

@@ -58,7 +58,9 @@
 .text-orange-2 {
     color: var(--orange-color);
 }
-
+.mw-600 {
+    max-width: 600px;
+}
 .g-xxs {
     --bs-gutter-x: 8px;
     --bs-gutter-y: 8px;
