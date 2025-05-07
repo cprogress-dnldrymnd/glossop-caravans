@@ -165,6 +165,8 @@ img {
         overflow: hidden;
         margin: 0;
         width: calc(33.33333% - 26.66666666666667px);
+        background-color: var(--bs-white);
+        @include box-shadow(0px 15px 30px #00000008);
     }
     .wp-block-latest-posts__featured-image {
         position: relative;
