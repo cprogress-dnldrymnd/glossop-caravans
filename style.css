@@ -11269,8 +11269,11 @@ img {
   font-weight: bold;
   font-size: 19px; }
   .listing-filter .accordion-button .icon {
-    width: 32px;
     flex: 0 0 32px; }
+    .listing-filter .accordion-button .icon svg {
+      width: 32px;
+      height: 32px;
+      object-fit: contain; }
 
 @media (min-width: 1500px) {
   .container {
