@@ -13,8 +13,6 @@ Text Domain: glossop-caravans
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 :root,
 [data-bs-theme="light"] {
   --bs-blue: #0d6efd;
@@ -11045,17 +11043,9 @@ button.swiper-pagination-bullet {
   to {
     transform: rotate(360deg); } }
 :root {
-  --primary-color: #2A6EBB;
-  --secondary-color: #54595F;
-  --dark-color: #0E3F5D;
-  --accent-color: #33A19A;
-  --white-color: #ffffff;
-  --black-color: #000000;
-  --gray-color: #707070;
-  --gray-color-2: #8D8D8D;
-  --blue-color: #42BDF4;
-  --green-color: #B4D012;
-  --light-gray-color: #F2F2F2; }
+  --primary-color: #FF681E;
+  --secondary-color: #202020;
+  --text-color: #202020; }
 
 @-moz-keyframes spin {
   from {
@@ -11075,6 +11065,27 @@ button.swiper-pagination-bullet {
 /*-----------------------------------------------------------------------------------*/
 /* Base
 /*-----------------------------------------------------------------------------------*/
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./assets/fonts/ProximaNova/ProximaNova-Regular.eot");
+  src: url("./assets/fonts/ProximaNova/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/ProximaNova/ProximaNova-Regular.woff2") format("woff2"), url("./assets/fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"), url("./assets/fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype"), url("./assets/fonts/ProximaNova/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./assets/fonts/ProximaNova/ProximaNova-SemiBold.eot");
+  src: url("./assets/fonts/ProximaNova/ProximaNova-SemiBold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/ProximaNova/ProximaNova-SemiBold.woff2") format("woff2"), url("./assets/fonts/ProximaNova/ProximaNova-SemiBold.woff") format("woff"), url("./assets/fonts/ProximaNova/ProximaNova-SemiBold.ttf") format("truetype"), url("./assets/fonts/ProximaNova/ProximaNova-SemiBold.svg#ProximaNova-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./assets/fonts/ProximaNova/ProximaNova-Bold.eot");
+  src: url("./assets/fonts/ProximaNova/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/ProximaNova/ProximaNova-Bold.woff2") format("woff2"), url("./assets/fonts/ProximaNova/ProximaNova-Bold.woff") format("woff"), url("./assets/fonts/ProximaNova/ProximaNova-Bold.ttf") format("truetype"), url("./assets/fonts/ProximaNova/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
 img {
   max-width: 100%; }
 
@@ -11382,8 +11393,8 @@ section.loading-post select {
   color: inherit; }
 
 body {
-  font-family: "Source Sans 3", sans-serif;
-  color: var(--black-color); }
+  font-family: "Proxima Nova", sans-serif;
+  color: var(--text-color); }
 
 h1, .h1,
 h2,
@@ -11448,6 +11459,27 @@ h5, .h5 {
 .font-sm {
   font-size: 1rem; }
 
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./assets/fonts/ProximaNova/ProximaNova-Regular.eot");
+  src: url("./assets/fonts/ProximaNova/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/ProximaNova/ProximaNova-Regular.woff2") format("woff2"), url("./assets/fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"), url("./assets/fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype"), url("./assets/fonts/ProximaNova/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./assets/fonts/ProximaNova/ProximaNova-SemiBold.eot");
+  src: url("./assets/fonts/ProximaNova/ProximaNova-SemiBold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/ProximaNova/ProximaNova-SemiBold.woff2") format("woff2"), url("./assets/fonts/ProximaNova/ProximaNova-SemiBold.woff") format("woff"), url("./assets/fonts/ProximaNova/ProximaNova-SemiBold.ttf") format("truetype"), url("./assets/fonts/ProximaNova/ProximaNova-SemiBold.svg#ProximaNova-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./assets/fonts/ProximaNova/ProximaNova-Bold.eot");
+  src: url("./assets/fonts/ProximaNova/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/ProximaNova/ProximaNova-Bold.woff2") format("woff2"), url("./assets/fonts/ProximaNova/ProximaNova-Bold.woff") format("woff"), url("./assets/fonts/ProximaNova/ProximaNova-Bold.ttf") format("truetype"), url("./assets/fonts/ProximaNova/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
 /*-----------------------------------------------------------------------------------*/
 /* Header & Footer
 /*-----------------------------------------------------------------------------------*/
