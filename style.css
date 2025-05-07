@@ -11332,7 +11332,9 @@ h5, .h5 {
 .grid-section .grid-inner {
   -webkit-box-shadow: 0px 15px 30px #00000008;
   -moz-box-shadow: 0px 15px 30px #00000008;
-  box-shadow: 0px 15px 30px #00000008; }
+  box-shadow: 0px 15px 30px #00000008;
+  text-decoration: none;
+  overflow: hidden; }
   .grid-section .grid-inner .grid-item__image {
     position: relative;
     padding: 60% 0; }
@@ -11341,7 +11343,23 @@ h5, .h5 {
       left: 40px;
       top: 40px;
       right: 40px;
-      font-weight: 900; }
+      color: var(--bs-white);
+      font-weight: 900;
+      font-size: 80px; }
+    .grid-section .grid-inner .grid-item__image .tag {
+      position: absolute;
+      top: -16px;
+      right: -62px;
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--bs-white);
+      background-color: var(--primary-color);
+      padding: 44px 55px 14px 55px;
+      text-align: center;
+      transform: rotate(45deg);
+      line-height: 1; }
+  .grid-section .grid-inner .grid-item__content {
+    background-color: var(--bs-white); }
 
 /*-----------------------------------------------------------------------------------*/
 /* Plugins

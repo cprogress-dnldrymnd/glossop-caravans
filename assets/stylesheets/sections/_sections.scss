@@ -1,6 +1,9 @@
 .grid-section {
     .grid-inner {
         @include box-shadow(0px 15px 30px #00000008);
+        text-decoration: none;
+        overflow: hidden;
+
         .grid-item__image {
             position: relative;
             padding: 60% 0;
@@ -11,7 +14,24 @@
                 right: 40px;
                 color: var(--bs-white);
                 font-weight: 900;
+                font-size: 80px;
             }
+            .tag {
+                position: absolute;
+                top: -16px;
+                right: -62px;
+                font-size: 28px;
+                font-weight: 800;
+                color: var(--bs-white);
+                background-color: var(--primary-color);
+                padding: 44px 55px 14px 55px;
+                text-align: center;
+                transform: rotate(45deg);
+                line-height: 1;
+            }
+        }
+        .grid-item__content {
+            background-color: var(--bs-white);
         }
     }
 }
