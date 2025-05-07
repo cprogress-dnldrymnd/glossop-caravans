@@ -39,6 +39,18 @@ global $listing_fields;
                                     </div>
                                 </div>
                             </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBerths" aria-expanded="false" aria-controls="collapseBerths">
+                                        <span class="icon"><?= get__theme_images('berths.svg') ?></span> Berths
+                                    </button>
+                                </h2>
+                                <div id="collapseBerths" class="accordion-collapse collapse" data-bs-parent="#accordionFilter">
+                                    <div class="accordion-body">
+                                        <?= $listing_fields['berths'] ?>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
