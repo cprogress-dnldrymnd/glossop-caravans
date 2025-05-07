@@ -11413,6 +11413,9 @@ h5, .h5 {
   .listing-grid-item__prices .grid-item__price-inner span {
     display: block; }
 
+.listing-grid__feature .grid__feature-inner {
+  background-color: var(--yellow-color); }
+
 /*-----------------------------------------------------------------------------------*/
 /* Plugins
 /*-----------------------------------------------------------------------------------*/

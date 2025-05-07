@@ -64,8 +64,14 @@
     .grid-item__price-inner {
         background-color: var(--lightgray-color);
         padding: 7px;
-        span  {
+        span {
             display: block;
         }
+    }
+}
+
+.listing-grid__feature {
+    .grid__feature-inner {
+        background-color: var(--yellow-color);
     }
 }
