@@ -37,10 +37,10 @@ Block::make(__('Grid Items'))
                             <div class="grid-item__content">
                                 <p><?php echo esc_html($item['description']); ?></p>
                             </div><!-- /.grid-item__content -->
-                        </div>
-                    </a><!-- /.grid-item -->
-                <?php endforeach; ?>
-                </div>
+                    </a>
+                </div><!-- /.grid-item -->
+            <?php endforeach; ?>
         </div>
-    <?php
+    </div>
+<?php
     });
