@@ -11086,6 +11086,16 @@ button.swiper-pagination-bullet {
   font-weight: 700;
   font-style: normal;
   font-display: swap; }
+.btn-lg, .btn-group-lg > .btn {
+  --bs-btn-padding-y: 25px;
+  --bs-btn-padding-x: 50px;
+  --bs-btn-font-size: 20px;
+  --bs-border-radius-lg: 5px; }
+
+.form-control-lg {
+  font-size: 20px;
+  padding: 25px; }
+
 .btn-primary {
   --bs-btn-color: var(--bs-white);
   --bs-btn-bg: var(--primary-color);

@@ -1,3 +1,14 @@
+.btn-lg {
+    --bs-btn-padding-y: 25px;
+    --bs-btn-padding-x: 50px;
+    --bs-btn-font-size: 20px;
+    --bs-border-radius-lg: 5px;
+}
+.form-control-lg {
+    font-size: 20px;
+    padding: 25px;
+    --bs-border-radius-lg: 5px;
+}
 .btn-primary {
     --bs-btn-color: var(--bs-white);
     --bs-btn-bg: var(--primary-color);
@@ -73,7 +84,6 @@ img {
         }
     }
 }
-
 
 .form-holder {
     .row {
