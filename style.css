@@ -11344,6 +11344,10 @@ img {
     :where(.is-layout-grid) {
       gap: 20px; } }
 
+.row.g-4 {
+  --bs-gutter-x: 40px;
+  --bs-gutter-y: 40px; }
+
 body {
   font-family: "Proxima Nova", sans-serif;
   color: var(--text-color);
