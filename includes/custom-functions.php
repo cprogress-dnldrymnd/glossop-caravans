@@ -19,3 +19,9 @@ function form_control($args)
 
     return $html;
 }
+
+
+function get__theme_images($file_name)
+{
+    return image_dir() . $file_name;
+}
