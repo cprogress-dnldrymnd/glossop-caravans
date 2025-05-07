@@ -5,7 +5,7 @@
 ?>
 <?php get_header() ?>
 
-<div class="site-content listings">
+<div class="site-content listings background-lightgray">
     <div class="container md-padding-top md-padding-bottom">
         <div class="listings-holder">
             <h2>We found <span class="text-orange">59</span> caravans for you</h2>

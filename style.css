@@ -11287,6 +11287,9 @@ img {
 .background-accent {
   background-color: var(--accent-color); }
 
+.background-lightgray {
+  background-color: var(--lightgray-color); }
+
 .full-image img {
   width: 100%; }
 
@@ -11334,8 +11337,11 @@ img {
 .xs-padding {
   padding: var(--xs-padding); }
 
-.text-orange-2 {
+.text-orange {
   color: var(--orange-color); }
+
+.text-orange-2 {
+  color: var(--orange-color-2); }
 
 .mw-600 {
   max-width: 600px; }
