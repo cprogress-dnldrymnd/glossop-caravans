@@ -11369,6 +11369,10 @@ h5, .h5 {
       text-align: center;
       transform: rotate(45deg);
       line-height: 1; }
+    .grid-section .grid-inner .grid-item__image img {
+      position: absolute;
+      bottom: 0;
+      right: 0; }
   .grid-section .grid-inner .grid-item__content {
     background-color: var(--bs-white);
     padding: 25px;
