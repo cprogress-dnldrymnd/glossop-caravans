@@ -6,7 +6,7 @@
 <?php get_header() ?>
 
 <div class="site-content listings">
-    <div class="container">
+    <div class="container md-padding-top md-padding-bottom">
         <div class="listings-holder">
             <h2>We found <span class="text-orange">59</span> caravans for you</h2>
             <div class="row">
