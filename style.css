@@ -11477,6 +11477,14 @@ h5, .h5 {
 
 .header-menu.header-menu.header-menu {
   gap: 1vw; }
+  @media (min-width: 1200px) and (max-width: 1399px) {
+    .header-menu.header-menu.header-menu {
+      font-size: 20px;
+      gap: 10px; } }
+  @media screen and (max-width: 1399px) {
+    .header-menu.header-menu.header-menu {
+      font-size: 20px;
+      gap: 10px; } }
 
 /* Make the desktop menu hide and mobile menu show below 900px */
 @media (max-width: 991px) {
