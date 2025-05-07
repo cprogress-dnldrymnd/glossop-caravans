@@ -11242,8 +11242,11 @@ img {
   width: 100%; }
 
 :root {
+  --xxs-padding: 20px;
+  --xs-padding: 40px;
   --sm-spacing: 60px;
-  --md-spacing: 100px; }
+  --md-spacing: 80px;
+  --lg-spacing: 100px; }
 
 .sm-padding-top {
   padding-top: var(--sm-spacing); }
