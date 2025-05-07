@@ -5,11 +5,11 @@
 ?>
 <?php get_header() ?>
 
-<section class="full-width-section">
+<div class="site-content full-width-content">
     <?php while (have_posts()) { ?>
         <?php the_post() ?>
         <?php the_content() ?>
     <?php } ?>
-</section>
+</div>
 
 <?php get_footer() ?>
