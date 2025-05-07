@@ -11118,13 +11118,9 @@ button.swiper-pagination-bullet {
   --bs-nav-link-color: var(--bs-black); }
   .nav-tabs .nav-link {
     font-weight: 600;
-    padding: 30px 45px;
+    padding: 25px 45px;
     border: 1px solid var(--bs-black);
     background-color: var(--bs-white); }
-    .nav-tabs .nav-link:hover, .nav-tabs .nav-link:active, .nav-tabs .nav-link:focus {
-      background-color: var(--secondary-color);
-      border-color: var(--secondary-color);
-      --bs-nav-link-color: var(--bs-white); }
     .nav-tabs .nav-link.active {
       background-color: var(--secondary-color);
       border-color: var(--secondary-color);
@@ -11180,6 +11176,14 @@ img {
   .form-holder .row {
     --bs-gutter-x: 8px;
     --bs-gutter-y: 8px; }
+
+.seach-stock-holder {
+  --tabs-offset: 82px;
+  --tabs-offset-negative: -82px;
+  padding-bottom: 65px;
+  margin-top: var(--tabs-offset); }
+  .seach-stock-holder .nav-tabs {
+    margin-top: var(--tabs-offset-negative); }
 
 @media (min-width: 1500px) {
   .container {

@@ -30,10 +30,10 @@
     --bs-nav-link-color: var(--bs-black);
     .nav-link {
         font-weight: 600;
-        padding: 30px 45px;
+        padding: 25px 45px;
         border: 1px solid var(--bs-black);
         background-color: var(--bs-white);
-      
+
         &.active {
             background-color: var(--secondary-color);
             border-color: var(--secondary-color);
@@ -106,5 +106,15 @@ img {
     .row {
         --bs-gutter-x: 8px;
         --bs-gutter-y: 8px;
+    }
+}
+
+.seach-stock-holder {
+    --tabs-offset: 82px;
+    --tabs-offset-negative: -82px;
+    padding-bottom: 65px;
+    margin-top: var(--tabs-offset);
+    .nav-tabs {
+        margin-top: var(--tabs-offset-negative);
     }
 }
