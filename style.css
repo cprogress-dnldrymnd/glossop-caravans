@@ -11307,6 +11307,15 @@ img {
 .xl-padding-bottom {
   padding-bottom: var(--xl-spacing); }
 
+.md-padding {
+  padding-top: var(--md-spacing); }
+
+.md-padding-top {
+  padding-top: var(--md-spacing); }
+
+.md-padding-bottom {
+  padding-bottom: var(--md-spacing); }
+
 .sm-padding-top {
   padding-top: var(--sm-spacing); }
 
