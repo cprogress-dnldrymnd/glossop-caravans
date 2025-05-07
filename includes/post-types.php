@@ -135,3 +135,13 @@ class newTaxonomy
         return $columns;
     }
 }
+$Templates = new newPostType();
+$Templates->key = 'templates';
+$Templates->name = 'Templates';
+$Templates->singular_name = 'Template';
+$Templates->icon = 'dashicons-layout';
+$Templates->supports = array('title', 'editor', 'revisions');
+$Templates->exclude_from_search = true;
+$Templates->publicly_queryable = true;
+$Templates->show_in_admin_bar = true;
+$Templates->has_archive = false;
