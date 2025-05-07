@@ -11086,6 +11086,9 @@ button.swiper-pagination-bullet {
   font-weight: 700;
   font-style: normal;
   font-display: swap; }
+.btn-primary {
+  --bs-btn-color: var(--bs-white); }
+
 img {
   max-width: 100%; }
 
