@@ -135,3 +135,13 @@ class newTaxonomy
         return $columns;
     }
 }
+$Caravans = new newPostType();
+$Caravans->name = 'Caravans';
+$Caravans->singular_name = 'Caravans';
+$Caravans->icon = 'dashicons-testimonial';
+$Caravans->supports = array('title', 'revisions', 'editor', 'thumbnail');
+$Caravans->exclude_from_search = false;
+$Caravans->publicly_queryable = true;
+$Caravans->show_in_admin_bar = true;
+$Caravans->has_archive = true;
+
