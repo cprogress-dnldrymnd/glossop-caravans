@@ -1,3 +1,6 @@
+<?php
+global $listing_fields;
+?>
 <div class="seach-stock-holder">
     <div class="tab-nav-holder">
         <div class="container">
@@ -22,9 +25,7 @@
                     <form action="" class="form-holder">
                         <div class="row align-items-end">
                             <div class="col">
-                                <?php
-                                
-                                ?>
+                                <?= $listing_fields['type'] ?>
                             </div>
                             <div class="col">
                                 <?php
