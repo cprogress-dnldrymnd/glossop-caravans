@@ -17,14 +17,13 @@ global $listing_fields;
                         <div class="accordion" id="accordionFilter">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSort-by" aria-expanded="true" aria-controls="collapseSort-by">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSort-by" aria-expanded="false" aria-controls="collapseSort-by">
                                         Sort by
                                     </button>
                                 </h2>
-                                <div id="collapseSort-by" class="accordion-collapse collapse show" data-bs-parent="#accordionFilter" style="">
+                                <div id="collapseSort-by" class="accordion-collapse collapse" data-bs-parent="#accordionFilter" style="">
                                     <div class="accordion-body">
-                                    <?= $listing_fields['sortby'] ?>
-
+                                        <?= $listing_fields['sortby'] ?>
                                     </div>
                                 </div>
                             </div>
