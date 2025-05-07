@@ -21,7 +21,11 @@ function form_control($args)
 }
 
 
-function get__theme_images($file_name)
+function get__theme_images($file_name, $image_tag = true)
 {
-    return image_dir. $file_name;
+    if ($image_tag) {
+        return '<img src="' . image_dir . $file_name . '" alt="' . $file_name . '">';
+    } else {
+        return  image_dir . $file_name;
+    }
 }
