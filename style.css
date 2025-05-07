@@ -11308,7 +11308,7 @@ img {
   padding-bottom: var(--xl-spacing); }
 
 .md-padding {
-  padding-top: var(--md-spacing); }
+  padding: var(--md-spacing); }
 
 .md-padding-top {
   padding-top: var(--md-spacing); }
@@ -11474,6 +11474,11 @@ h5, .h5 {
 #masthead .navbar-nav {
   --bs-nav-link-color: var(--text-color);
   gap: 1vw; }
+
+.bottom-footer .container > div {
+  border-top: 1px solid #D3D3D3;
+  padding-top: 30px;
+  padding-bottom: 30px; }
 
 .grid-section .grid-inner {
   -webkit-box-shadow: 0px 15px 30px #00000008;
