@@ -57,36 +57,3 @@ img {
         }
     }
 }
-
-.button-box {
-    &:not(.btn-link) {
-        a,
-        button {
-            @include button-style;
-        }
-    }
-    &.btn-primary {
-        a,
-        button {
-            @include button-primary;
-        }
-    }
-    &.btn-black {
-        a,
-        button {
-            @include button-black;
-        }
-    }
-    &.btn-white {
-        a,
-        button {
-            @include button-white;
-        }
-    }
-    &.btn-accent {
-        a,
-        button {
-            @include button-accent;
-        }
-    }
-}
