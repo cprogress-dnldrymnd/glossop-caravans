@@ -11495,6 +11495,8 @@ h5, .h5 {
       position: static;
       visibility: visible;
       transform: none; } }
+#masthead .navbar-nav {
+  gap: 1vw; }
 
 /*-----------------------------------------------------------------------------------*/
 /* Plugins
