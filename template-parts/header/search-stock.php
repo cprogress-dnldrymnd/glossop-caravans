@@ -19,7 +19,7 @@
                         <div class="col-auto">
                             <?php
                             form_control(array(
-                                'type' => 'text',
+                                'type' => 'select',
                                 'name' => 'type',
                                 'id' => 'type',
                                 'label' => 'Type',
