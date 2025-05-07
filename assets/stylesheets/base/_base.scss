@@ -218,5 +218,13 @@ img {
         gap: 20px;
         font-weight: bold;
         font-size: 19px;
+        .icon {
+            flex: 0 0 32px;
+            svg {
+                width: 32px;
+                height: 32px;
+                object-fit: contain;
+            }
+        }
     }
 }
