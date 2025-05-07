@@ -11280,12 +11280,13 @@ section.loading-post select {
   background-color: var(--white-color); }
 
 .background-primary {
-  background-color: var(--primary-color);
-  color: var(--white-color); }
+  background-color: var(--primary-color); }
+
+.background-secondary {
+  background-color: var(--secondary-color); }
 
 .background-accent {
-  background-color: var(--accent-color);
-  color: var(--white-color); }
+  background-color: var(--accent-color); }
 
 body {
   font-family: "Proxima Nova", sans-serif;

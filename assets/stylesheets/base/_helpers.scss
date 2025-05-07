@@ -18,9 +18,10 @@
 }
 .background-primary {
     background-color: var(--primary-color);
-    color: var(--white-color);
+}
+.background-secondary {
+    background-color: var(--secondary-color);
 }
 .background-accent {
     background-color: var(--accent-color);
-    color: var(--white-color);
 }
