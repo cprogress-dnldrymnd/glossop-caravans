@@ -27,11 +27,11 @@ Block::make(__('Grid Items'))
                 <div class="col-lg-4">
                     <div class="grid-item__image">
                         <?php echo wp_get_attachment_image($item['image'], 'full'); ?>
+                        <span class="tag"><?php echo esc_html($item['grid_tag']); ?></span>
                     </div><!-- /.grid-item__image -->
                     <div class="grid-item__content">
                         <h2><?php echo esc_html($item['title']); ?></h2>
                         <p><?php echo esc_html($item['description']); ?></p>
-                        <span class="tag"><?php echo esc_html($item['grid_tag']); ?></span>
                     </div><!-- /.grid-item__content -->
                 </div><!-- /.grid-item -->
             <?php endforeach; ?>
