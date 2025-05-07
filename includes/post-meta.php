@@ -29,7 +29,6 @@ Block::make(__('Grid Items'))
                 <div class="col-lg-4">
                     <div class="grid-inner h-100 d-flex flex-column justif-content-between" style="background-color: <?php echo esc_attr($item['bg_color']); ?>;">
                         <div class="grid-item__tag">
-                            <span class="tag"><?php echo esc_html($item['grid_tag']); ?></span>
                             <div class="grid-item__image">
                                 <?php echo wp_get_attachment_image($item['image'], 'full'); ?>
                                 <h3><?php echo esc_html($item['title']); ?></h3>
