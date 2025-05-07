@@ -156,3 +156,26 @@ img {
         overflow: hidden;
     }
 }
+
+.wp-block-latest-posts__list.wp-block-latest-posts__list {
+    gap: 40px;
+    li {
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+        margin: 0;
+        width: calc(33.33333% - 26.66666666666667px);
+    }
+    .wp-block-latest-posts__featured-image {
+        position: relative;
+        padding: 50% 0;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
