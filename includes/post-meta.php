@@ -13,6 +13,7 @@ Block::make(__('Grid Items'))
                 Field::make('image', 'image', __('Grid Image')),
                 Field::make('textarea', 'description', __('Grid Description')),
                 Field::make('text', 'grid_tag', __('Grid Tag')),
+                Field::make('text', 'grid_link', __('Grid Link')),
             ))
             ->set_layout('tabbed-horizontal')
             ->set_header_template('<%- title %>')
