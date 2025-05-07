@@ -14,8 +14,8 @@
         </ul>
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="Caravans-tab-pane" role="tabpanel" aria-labelledby="Caravans-tab" tabindex="0">
-                <form action="">
-                    <div class="row">
+                <form action="" class="form-holder">
+                    <div class="row align-items-end">
                         <div class="col">
                             <?php
                             form_control(array(
