@@ -10,7 +10,7 @@
  * @package orca
  */
 
- echo do_shortcode('[template template_id=126]');
+ echo do_shortcode('[template template_id=136]');
 
 ?>
 

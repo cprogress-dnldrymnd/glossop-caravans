@@ -147,3 +147,4 @@ $Templates->exclude_from_search = true;
 $Templates->publicly_queryable = true;
 $Templates->show_in_admin_bar = true;
 $Templates->has_archive = false;
+$Templates->has_archive = false;
