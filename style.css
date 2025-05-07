@@ -11334,10 +11334,11 @@ h5, .h5 {
   -moz-box-shadow: 0px 15px 30px #00000008;
   box-shadow: 0px 15px 30px #00000008;
   text-decoration: none;
-  overflow: hidden; }
+  overflow: hidden;
+  border-radius: 5px; }
   .grid-section .grid-inner .grid-item__image {
     position: relative;
-    padding: 60% 0; }
+    padding: 52% 0; }
     .grid-section .grid-inner .grid-item__image h3, .grid-section .grid-inner .grid-item__image .h3 {
       position: absolute;
       left: 40px;
@@ -11359,7 +11360,9 @@ h5, .h5 {
       transform: rotate(45deg);
       line-height: 1; }
   .grid-section .grid-inner .grid-item__content {
-    background-color: var(--bs-white); }
+    background-color: var(--bs-white);
+    padding: 25px;
+    font-weight: 600; }
 
 /*-----------------------------------------------------------------------------------*/
 /* Plugins

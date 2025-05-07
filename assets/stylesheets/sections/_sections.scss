@@ -3,10 +3,10 @@
         @include box-shadow(0px 15px 30px #00000008);
         text-decoration: none;
         overflow: hidden;
-
+        border-radius: 5px;
         .grid-item__image {
             position: relative;
-            padding: 60% 0;
+            padding: 52% 0;
             h3 {
                 position: absolute;
                 left: 40px;
@@ -32,6 +32,8 @@
         }
         .grid-item__content {
             background-color: var(--bs-white);
+            padding: 25px;
+            font-weight: 600;
         }
     }
 }
