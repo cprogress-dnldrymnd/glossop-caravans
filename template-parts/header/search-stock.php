@@ -20,6 +20,7 @@
                             <div class="mb-3">
                                 <label for="type" class="form-label">Type</label>
                                 <select class="form-control form-control-lg" name="type" id="type">
+                                    <option value="">New or Used?</option>
                                     <option value="New">New</option>
                                     <option value="Used">Used</option>
                                     <option value="Both">Both</option>
