@@ -11484,7 +11484,8 @@ h5, .h5 {
 /* Header & Footer
 /*-----------------------------------------------------------------------------------*/
 #masthead .offcanvas {
-  --bs-offcanvas-bg: transparent; }
+  --bs-offcanvas-bg: transparent;
+  --bs-offcanvas-width: 100%; }
   @media screen and (min-width: 992px) {
     #masthead .offcanvas {
       position: static;
