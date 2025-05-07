@@ -19,3 +19,23 @@
     gap: 1vw;
 
 }
+
+/* Make the desktop menu hide and mobile menu show below 900px */
+@media (max-width: 991px) {
+    .wp-block-navigation__responsive-container-open:not(.always-shown) {
+        display: flex !important; /* Show the mobile menu button */
+    }
+    .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+        display: none !important; /* Hide the desktop menu */
+    }
+}
+
+/* Make the desktop menu show and mobile menu hide above 900px */
+@media (min-width: 992px) {
+    .wp-block-navigation__responsive-container-open:not(.always-shown) {
+        display: none !important; /* Hide the mobile menu button */
+    }
+    .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+        display: block !important; /* Show the desktop menu */
+    }
+}
