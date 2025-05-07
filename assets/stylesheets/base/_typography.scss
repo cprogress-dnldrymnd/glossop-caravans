@@ -46,9 +46,9 @@ h2 {
     }
 }
 h3 {
-    font-size: 1.5rem;
+    font-size: 37px;
     @include responsive(mobile) {
-        font-size: 1.25rem;
+        font-size: 25px;
     }
 }
 h4 {
