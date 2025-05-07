@@ -11485,7 +11485,8 @@ h5, .h5 {
 /*-----------------------------------------------------------------------------------*/
 #masthead .offcanvas {
   --bs-offcanvas-bg: transparent;
-  --bs-offcanvas-width: 100%; }
+  --bs-offcanvas-width: 100%;
+  --bs-border-width: 0; }
   @media screen and (min-width: 992px) {
     #masthead .offcanvas {
       position: static;

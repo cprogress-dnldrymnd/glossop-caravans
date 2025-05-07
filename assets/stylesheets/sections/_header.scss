@@ -3,7 +3,7 @@
         --bs-offcanvas-bg: transparent;
         --bs-offcanvas-width: 100%;
         --bs-border-width: 0;
-        @include responsive(md-lg)  {
+        @include responsive(md-lg) {
             position: static;
             visibility: visible;
             transform: none;
