@@ -30,7 +30,7 @@ Block::make(__('Grid Items'))
                         <span class="tag"><?php echo esc_html($item['grid_tag']); ?></span>
                     </div><!-- /.grid-item__image -->
                     <div class="grid-item__content">
-                        <h2><?php echo esc_html($item['title']); ?></h2>
+                        <h3><?php echo esc_html($item['title']); ?></h3>
                         <p><?php echo esc_html($item['description']); ?></p>
                     </div><!-- /.grid-item__content -->
                 </div><!-- /.grid-item -->
