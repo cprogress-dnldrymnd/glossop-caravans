@@ -1,4 +1,4 @@
-<div class="seach-stock-holder background-accent">
+<div class="seach-stock-holder background-secondary">
     <div class="container">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
