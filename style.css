@@ -11177,7 +11177,7 @@ img {
     --bs-gutter-x: 8px;
     --bs-gutter-y: 8px; }
 
-.seach-stock-holder {
+.seach-stock-holder .tab-cotnent-holder {
   padding-bottom: 65px; }
 
 @media (min-width: 1500px) {
