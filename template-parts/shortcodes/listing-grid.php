@@ -34,7 +34,7 @@
             <div class="listing-grid-item__price col-md-4">
                 <div class="grid-item__price-inner rounded h-100">
                     <span class="fs-14">Save</span>
-                    <strong>£1,955</strong>
+                    <strong class="text-orange">£1,955</strong>
                 </div>
             </div>
         </div>

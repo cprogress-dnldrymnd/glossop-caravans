@@ -11234,6 +11234,9 @@ img {
 .sm-padding-bottom {
   padding-bottom: var(--sm-spacing); }
 
+.text-orange {
+  color: #ff5251; }
+
 body {
   font-family: "Proxima Nova", sans-serif;
   color: var(--text-color);
