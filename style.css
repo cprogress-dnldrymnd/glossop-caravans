@@ -11389,7 +11389,9 @@ h5, .h5 {
   box-shadow: 0px 15px 30px #00000008;
   border-radius: 5px;
   overflow: hidden;
-  background-color: var(--white-color); }
+  background-color: var(--bs-white); }
+  .listing-grid .listing-grid-item__top {
+    padding: 20px; }
   .listing-grid .listing-grid-item__bottom {
     padding: 20px; }
 
