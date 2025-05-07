@@ -3,6 +3,23 @@
 function listings_fields()
 {
     global $listing_fields;
+
+    $listing_fields['sortby'] = form_control(array(
+        'type' => 'select',
+        'name' => 'Type',
+        'id' => 'Type',
+        'label' => 'Type',
+        'class' => 'form-control-lg',
+        'options' => array(
+            '' => 'Sort 1',
+            'Option 1' => 'Option 1',
+            'Option 2' => 'Option 2',
+            'Option 3' => 'Option 3',
+            'Option 4' => 'Option 4',
+            'Option 5' => 'Option 5',
+            'Option 6' => ' Option6',
+        ),
+    ));
     $listing_fields['type'] = form_control(array(
         'type' => 'select',
         'name' => 'Type',

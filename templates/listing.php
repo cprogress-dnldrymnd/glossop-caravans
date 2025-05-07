@@ -4,7 +4,9 @@
 /*-----------------------------------------------------------------------------------*/
 ?>
 <?php get_header() ?>
-
+<?php
+global $listing_fields;
+?>
 <div class="site-content listings background-lightgray">
     <div class="container md-padding-top md-padding-bottom">
         <div class="listings-holder">
@@ -21,7 +23,7 @@
                                 </h2>
                                 <div id="collapseSort-by" class="accordion-collapse collapse show" data-bs-parent="#accordionFilter">
                                     <div class="accordion-body">
-                                       
+                                        <?= $listing_fields['sortby'] ?>
                                     </div>
                                 </div>
                             </div>
