@@ -1,7 +1,7 @@
 <div class="deals-swiper-holder">
     <div class="tab-nav-holder">
         <div class="container">
-            <ul class="nav nav-tabs" id="myTabDeals-Swiper" role="tablist">
+            <ul class="nav nav-tabs nav-tabs-style-2" id="myTabDeals-Swiper" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="Weekly-Deals-tab" data-bs-toggle="tab" data-bs-target="#Weekly-Deals-tab-pane" type="button" role="tab" aria-controls="Weekly-Deals-tab-pane" aria-selected="true">Weekly Deals</button>
                 </li>

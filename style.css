@@ -11121,11 +11121,15 @@ button.swiper-pagination-bullet {
     font-weight: 600;
     padding: 25px 45px;
     border: 1px solid var(--bs-black);
-    background-color: var(--bs-white);
-    border-bottom: none; }
+    background-color: var(--bs-white); }
     .nav-tabs .nav-link.active {
       background-color: var(--secondary-color);
       border-color: var(--secondary-color); }
+  .nav-tabs:not(.nav-tabs-style-2) .nav-link {
+    border-bottom: none; }
+  .nav-tabs.nav-tabs-style-2 .nav-link.active {
+    background-color: var(--bs-white);
+    border-color: var(--bs-black); }
 
 img {
   max-width: 100%; }
