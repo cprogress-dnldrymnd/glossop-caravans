@@ -110,6 +110,9 @@ img {
 }
 
 .seach-stock-holder {
+    label {
+        color: var(--bs-white);
+    }
     .tab-cotnent-holder {
         padding-top: 32px;
         padding-bottom: 65px;

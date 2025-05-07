@@ -11177,6 +11177,8 @@ img {
     --bs-gutter-x: 8px;
     --bs-gutter-y: 8px; }
 
+.seach-stock-holder label {
+  color: var(--bs-white); }
 .seach-stock-holder .tab-cotnent-holder {
   padding-top: 32px;
   padding-bottom: 65px; }
