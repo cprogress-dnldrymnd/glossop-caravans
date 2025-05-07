@@ -17,4 +17,18 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <main class="main">ss
+    <main class="main">
+        <header class="header">
+            <div class="header__logo">
+                <a href="<?php echo esc_url(home_url('/')); ?>">
+                    <?php if (get__theme_option('logo')) : ?>
+                        <img src="<?php echo get__theme_option('logo'); ?>" alt="<?php bloginfo('name'); ?>" />
+                    <?php else : ?>
+                        <?php bloginfo('name'); ?>
+                    <?php endif; ?>
+                </a>
+            </div>
+            <nav class="header__nav">
+                <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
+            </nav>
+        </header>
