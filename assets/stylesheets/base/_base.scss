@@ -193,5 +193,10 @@ img {
     }
     .wp-block-latest-posts__post-date {
         order: 2;
+        color: var(--orange-color-3);
+        font-size: 17px;
+        font-weight: 600;
+        margin-top: 25px;
+        margin-bottom: 12px;
     }
 }

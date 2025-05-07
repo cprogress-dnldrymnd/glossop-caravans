@@ -11045,6 +11045,7 @@ button.swiper-pagination-bullet {
 :root {
   --orange-color: #ff681e;
   --orange-color-2: #ff681e;
+  --orange-color-3: #FF980E;
   --green-color: #45c324;
   --yellow-color: #FFC831;
   --text-color: #202020;
@@ -11223,7 +11224,8 @@ img {
     width: calc(33.33333% - 26.66666666666667px); }
   .wp-block-latest-posts__list.wp-block-latest-posts__list .wp-block-latest-posts__featured-image {
     position: relative;
-    padding: 50% 0; }
+    padding: 50% 0;
+    order: 1; }
     .wp-block-latest-posts__list.wp-block-latest-posts__list .wp-block-latest-posts__featured-image a {
       display: inline; }
     .wp-block-latest-posts__list.wp-block-latest-posts__list .wp-block-latest-posts__featured-image img {
@@ -11242,7 +11244,11 @@ img {
     font-weight: bold;
     color: var(--text-color); }
   .wp-block-latest-posts__list.wp-block-latest-posts__list .wp-block-latest-posts__post-date {
-    order: 2; }
+    order: 2;
+    color: var(--orange-color-3);
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 25px; }
 
 @media (min-width: 1500px) {
   .container {
