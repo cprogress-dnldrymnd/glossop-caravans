@@ -31,3 +31,13 @@
         width: 100%;
     }
 }
+:root {
+    --sm-spacing: 60px;
+}
+.sm-padding-top {
+    padding-top: var(--sm-spacing);
+}
+
+.sm-padding-bottom {
+    padding-bottom: var(--sm-spacing);
+}

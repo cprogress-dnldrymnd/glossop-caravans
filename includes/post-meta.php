@@ -7,8 +7,6 @@ use Carbon_Fields\Block;
 
 Block::make(__('Grid Items'))
     ->add_fields(array(
-        Field::make('text', 'heading', __('Heading')),
-        Field::make('textarea', 'description', __('Description')),
         Field::make('complex', 'grid', __('Grid'))
             ->add_fields(array(
                 Field::make('text', 'title', __('Grid Title')),
@@ -20,8 +18,12 @@ Block::make(__('Grid Items'))
             ->set_header_template('<%- title %>')
     ))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
+        $grid = $fields['grid'];
 ?>
 
+    <div class="grid-section">
+
+    </div>
     <div class="block">
         <div class="block__heading">
             <h1><?php echo esc_html($fields['heading']); ?></h1>
