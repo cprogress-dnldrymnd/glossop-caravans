@@ -1,5 +1,5 @@
 <div class="deals-swiper-holder">
-    <div class="tab-nav-holder">
+    <div class="tab-nav-holder mb-4">
         <div class="container">
             <ul class="nav nav-tabs nav-tabs-style-2" id="myTabDeals-Swiper" role="tablist">
                 <li class="nav-item" role="presentation">

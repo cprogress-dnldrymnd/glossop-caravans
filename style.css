@@ -11128,7 +11128,7 @@ button.swiper-pagination-bullet {
   .nav-tabs:not(.nav-tabs-style-2) .nav-link {
     border-bottom: none; }
   .nav-tabs.nav-tabs-style-2 {
-    gap: 50px; }
+    gap: 20px; }
     .nav-tabs.nav-tabs-style-2 .nav-link.active {
       color: var(--text-color);
       background-color: var(--bs-white);
