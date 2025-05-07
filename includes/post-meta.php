@@ -24,7 +24,7 @@ Block::make(__('Grid Items'))
 ?>
 
     <div class="grid-section">
-        <div class="row">
+        <div class="row g-4">
             <?php foreach ($grid as $item) : ?>
                 <div class="col-lg-4">
                     <a href="<?php echo esc_html($item['grid_link']); ?>" class="grid-inner h-100 d-flex flex-column justif-content-between" style="background-color: <?php echo esc_attr($item['bg_color']); ?>;">
