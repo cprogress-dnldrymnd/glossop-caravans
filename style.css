@@ -11250,6 +11250,9 @@ img {
 .sm-padding-bottom {
   padding-bottom: var(--sm-spacing); }
 
+.md-padding {
+  padding: var(--md-spacing); }
+
 .text-orange-2 {
   color: var(--orange-color); }
 

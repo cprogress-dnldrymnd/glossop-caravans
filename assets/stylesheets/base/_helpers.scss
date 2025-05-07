@@ -33,6 +33,7 @@
 }
 :root {
     --sm-spacing: 60px;
+    --md-spacing: 100px;
 }
 .sm-padding-top {
     padding-top: var(--sm-spacing);
@@ -40,6 +41,9 @@
 
 .sm-padding-bottom {
     padding-bottom: var(--sm-spacing);
+}
+.md-padding {
+    padding: var(--md-spacing);
 }
 
 .text-orange-2 {
