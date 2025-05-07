@@ -17,7 +17,7 @@
                 </div>
             </div>
         </div>
-        <div class="listing-grid__image">
+        <div class="listing-grid__image image-style">
             <img src="https://newglossopacaravans.theprogressteam.co.uk/wp-content/uploads/2025/05/glossop-img-removebg-preview.png" alt="">
         </div>
     </div>
