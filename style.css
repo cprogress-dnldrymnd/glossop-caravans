@@ -11335,7 +11335,8 @@ h5, .h5 {
   box-shadow: 0px 15px 30px #00000008;
   text-decoration: none;
   overflow: hidden;
-  border-radius: 5px; }
+  border-radius: 5px;
+  color: var(--text-color); }
   .grid-section .grid-inner .grid-item__image {
     position: relative;
     padding: 52% 0; }
@@ -11363,6 +11364,8 @@ h5, .h5 {
     background-color: var(--bs-white);
     padding: 25px;
     font-weight: 600; }
+  .grid-section .grid-inner:hover, .grid-section .grid-inner:active, .grid-section .grid-inner:focus {
+    color: var(--text-color); }
 
 /*-----------------------------------------------------------------------------------*/
 /* Plugins

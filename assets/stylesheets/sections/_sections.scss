@@ -4,6 +4,7 @@
         text-decoration: none;
         overflow: hidden;
         border-radius: 5px;
+        color: var(--text-color);
         .grid-item__image {
             position: relative;
             padding: 52% 0;
@@ -34,6 +35,9 @@
             background-color: var(--bs-white);
             padding: 25px;
             font-weight: 600;
+        }
+        @include on-event {
+            color: var(--text-color);
         }
     }
 }
