@@ -11239,6 +11239,10 @@ img {
 .text-orange-2 {
   color: var(--orange-color); }
 
+.g-xxs {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0; }
+
 body {
   font-family: "Proxima Nova", sans-serif;
   color: var(--text-color);
