@@ -16,6 +16,8 @@ Block::make(__('Grid'))
                 Field::make('textarea', 'description', __('Grid Description')),
                 Field::make('text', 'grid_tag', __('Grid Tag')),
             ))
+            ->set_layout('tabbed-horizontal')
+            ->set_header_template('<%- title %>')
     ))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
 ?>
