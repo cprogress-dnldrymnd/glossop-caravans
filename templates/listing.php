@@ -78,7 +78,7 @@ global $listing_fields;
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrice" aria-expanded="false" aria-controls="collapsePrice">
-                                        <span class="icon"><?= get__theme_images('Price.svg') ?></span> Price
+                                        <span class="icon"><?= get__theme_images('price.svg') ?></span> Price
                                     </button>
                                 </h2>
                                 <div id="collapsePrice" class="accordion-collapse collapse" data-bs-parent="#accordionFilter">
@@ -90,7 +90,7 @@ global $listing_fields;
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseYear" aria-expanded="false" aria-controls="collapseYear">
-                                        <span class="icon"><?= get__theme_images('Year.svg') ?></span> Year
+                                        <span class="icon"><?= get__theme_images('year.svg') ?></span> Year
                                     </button>
                                 </h2>
                                 <div id="collapseYear" class="accordion-collapse collapse" data-bs-parent="#accordionFilter">
@@ -102,7 +102,7 @@ global $listing_fields;
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLayout-type" aria-expanded="false" aria-controls="collapseLayout-type">
-                                        <span class="icon"><?= get__theme_images('Layout-type.svg') ?></span> Layout-type
+                                        <span class="icon"><?= get__theme_images('layout-type.svg') ?></span> Layout-type
                                     </button>
                                 </h2>
                                 <div id="collapseLayout-type" class="accordion-collapse collapse" data-bs-parent="#accordionFilter">
@@ -114,7 +114,7 @@ global $listing_fields;
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidth" aria-expanded="false" aria-controls="collapseWidth">
-                                        <span class="icon"><?= get__theme_images('Width.svg') ?></span> Width
+                                        <span class="icon"><?= get__theme_images('width.svg') ?></span> Width
                                     </button>
                                 </h2>
                                 <div id="collapseWidth" class="accordion-collapse collapse" data-bs-parent="#accordionFilter">
@@ -126,7 +126,7 @@ global $listing_fields;
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAxles" aria-expanded="false" aria-controls="collapseAxles">
-                                        <span class="icon"><?= get__theme_images('Axles.svg') ?></span> Axles
+                                        <span class="icon"><?= get__theme_images('axles.svg') ?></span> Axles
                                     </button>
                                 </h2>
                                 <div id="collapseAxles" class="accordion-collapse collapse" data-bs-parent="#accordionFilter">
