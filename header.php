@@ -61,6 +61,3 @@
                 </div>
             </div>
         </header>
-
-
-        <?= do_shortcode('[breadcrumbs]') ?>
