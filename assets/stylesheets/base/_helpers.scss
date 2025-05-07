@@ -37,7 +37,18 @@
     --sm-spacing: 60px;
     --md-spacing: 80px;
     --lg-spacing: 100px;
+    --xl-spacing: 120px;
 }
+.xl-padding {
+    padding: var(--xl-spacing);
+}
+.xl-padding-top {
+    padding-top: var(--xl-spacing);
+}
+.xl-padding-bottom {
+    padding-bottom: var(--xl-spacing);
+}
+
 .sm-padding-top {
     padding-top: var(--sm-spacing);
 }
@@ -54,6 +65,10 @@
 .xxs-padding-top {
     padding-top: var(--xxs-padding);
 }   
+
+.xs-padding {
+    padding: var(--xs-padding);
+}
 
 .text-orange-2 {
     color: var(--orange-color);
