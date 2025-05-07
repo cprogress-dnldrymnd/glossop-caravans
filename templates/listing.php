@@ -21,9 +21,10 @@ global $listing_fields;
                                         Sort by
                                     </button>
                                 </h2>
-                                <div id="collapseSort-by" class="accordion-collapse collapse show" data-bs-parent="#accordionFilter">
+                                <div id="collapseSort-by" class="accordion-collapse collapse show" data-bs-parent="#accordionFilter" style="">
                                     <div class="accordion-body">
-                                        <?= $listing_fields['sortby'] ?>
+                                    <?= $listing_fields['sortby'] ?>
+
                                     </div>
                                 </div>
                             </div>
