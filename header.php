@@ -30,7 +30,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-auto">
-                        <?php glossop_caravans_display_site_logo() ?>
+                        <?php glossop_caravans_display_site_logo(true) ?>
                     </div>
                     <div class="col-auto">
 
