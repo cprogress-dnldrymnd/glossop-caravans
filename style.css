@@ -11274,6 +11274,8 @@ img {
       width: 32px;
       height: 32px;
       object-fit: contain; }
+.listing-filter .form-control-holder label {
+  display: none; }
 
 @media (min-width: 1500px) {
   .container {
