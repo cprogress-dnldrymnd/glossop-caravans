@@ -25,3 +25,9 @@
 .background-accent {
     background-color: var(--accent-color);
 }
+
+.full-image {
+    img {
+        width: 100%;
+    }
+}

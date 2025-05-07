@@ -11209,6 +11209,9 @@ img {
 .background-accent {
   background-color: var(--accent-color); }
 
+.full-image img {
+  width: 100%; }
+
 body {
   font-family: "Proxima Nova", sans-serif;
   color: var(--text-color); }
