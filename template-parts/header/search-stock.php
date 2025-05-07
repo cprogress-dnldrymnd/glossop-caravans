@@ -16,7 +16,7 @@
             <div class="tab-pane fade show active" id="Caravans-tab-pane" role="tabpanel" aria-labelledby="Caravans-tab" tabindex="0">
                 <form action="">
                     <div class="row">
-                        <div class="col-auto">
+                        <div class="col">
                             <?php
                             form_control(array(
                                 'type' => 'select',
@@ -33,7 +33,7 @@
                             ));
                             ?>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <?php
                             form_control(array(
                                 'type' => 'select',
@@ -53,7 +53,7 @@
                             ));
                             ?>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <?php
                             form_control(array(
                                 'type' => 'select',
@@ -73,7 +73,7 @@
                             ));
                             ?>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <?php
                             form_control(array(
                                 'type' => 'select',
@@ -93,7 +93,7 @@
                             ));
                             ?>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <?php
                             form_control(array(
                                 'type' => 'select',
@@ -107,7 +107,7 @@
                             ));
                             ?>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <?php
                             form_control(array(
                                 'type' => 'select',
