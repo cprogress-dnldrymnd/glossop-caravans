@@ -11388,7 +11388,6 @@ h5, .h5 {
   -webkit-box-shadow: 0px 15px 30px #00000008;
   -moz-box-shadow: 0px 15px 30px #00000008;
   box-shadow: 0px 15px 30px #00000008;
-  border-radius: 5px;
   overflow: hidden;
   background-color: var(--bs-white); }
   .listing-grid .listing-grid-item__top {
@@ -11397,7 +11396,12 @@ h5, .h5 {
     padding: 20px; }
 
 .listing-grid-item__prices .grid-item__price-inner {
-  background-color: var(--lightgray-color); }
+  background-color: var(--lightgray-color);
+  text-align: center;
+  padding: 7px;
+  height: 100%; }
+  .listing-grid-item__prices .grid-item__price-inner span {
+    display: block; }
 
 /*-----------------------------------------------------------------------------------*/
 /* Plugins

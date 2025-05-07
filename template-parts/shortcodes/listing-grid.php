@@ -1,4 +1,4 @@
-<div class="listing-grid h-100 position-relative">
+<div class="listing-grid h-100 position-relative rounded">
     <div class="listing-grid-item__top">
         <h3>Swift Elegance Grande 780</h3>
         <div class="desc mb-3 mt-3">
@@ -20,25 +20,25 @@
     <div class="listing-grid-item__bottom">
         <div class="listing-grid-item__prices row">
             <div class="listing-grid-item__price col-md-4">
-                <div class="grid-item__price-inner">
+                <div class="grid-item__price-inner rounded">
                     <span>RRP</span>
                     <strong>£44,125</strong>
                 </div>
             </div>
             <div class="listing-grid-item__price col-md-4">
-                <div class="grid-item__price-inner">
+                <div class="grid-item__price-inner rounded">
                     <span>Our price</span>
                     <strong>£42,200</strong>
                 </div>
             </div>
             <div class="listing-grid-item__price col-md-4">
-                <div class="grid-item__price-inner">
+                <div class="grid-item__price-inner rounded">
                     <span>Save</span>
                     <strong>£1,955</strong>
                 </div>
             </div>
         </div>
-        <div class="listing-grid-item__button">
+        <div class="listing-grid-item__button rounded">
             <a href="#" class="btn btn-primary w-100 btn-lg">
                 View deal
             </a>

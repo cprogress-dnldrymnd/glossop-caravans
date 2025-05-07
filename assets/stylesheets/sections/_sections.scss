@@ -50,7 +50,6 @@
 
 .listing-grid {
     @include box-shadow(0px 15px 30px #00000008);
-    border-radius: 5px;
     overflow: hidden;
     background-color: var(--bs-white);
     .listing-grid-item__top {
@@ -65,5 +64,10 @@
     .grid-item__price-inner {
         background-color: var(--lightgray-color);
         text-align: center;
+        padding: 7px;
+        height: 100%;
+        span  {
+            display: block;
+        }
     }
 }
