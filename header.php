@@ -26,4 +26,7 @@
 
 <body <?php body_class(); ?>>
     <main id="main" class="main-content" role="main">
-   
+        <?php
+        get_template_part('template-parts/header', 'search-stock');
+        get_template_part('template-parts/header', 'header');
+        ?>
