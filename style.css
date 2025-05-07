@@ -11130,7 +11130,8 @@ button.swiper-pagination-bullet {
   .nav-tabs.nav-tabs-style-2 {
     gap: 20px; }
     .nav-tabs.nav-tabs-style-2 .nav-link {
-      border: 1px solid var(--bs-white); }
+      border: 1px solid var(--bs-white);
+      border-radius: 5px; }
       .nav-tabs.nav-tabs-style-2 .nav-link.active {
         color: var(--text-color);
         background-color: var(--bs-white);
@@ -11372,7 +11373,8 @@ h5, .h5 {
     .grid-section .grid-inner .grid-item__image img {
       position: absolute;
       bottom: 0;
-      right: 0; }
+      right: 0;
+      left: 10%; }
   .grid-section .grid-inner .grid-item__content {
     background-color: var(--bs-white);
     padding: 25px;
