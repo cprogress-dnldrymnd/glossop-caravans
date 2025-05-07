@@ -1,4 +1,4 @@
-<div class="listing-grid">
+<div class="listing-grid h-100 position-relative">
     <div class="listing-grid-item__top">
         <h3>Swift Elegance Grande 780</h3>
         <div class="desc">
