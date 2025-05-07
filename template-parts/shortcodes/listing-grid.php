@@ -38,7 +38,7 @@
                 </div>
             </div>
         </div>
-        <div class="listing-grid-item__button">
+        <div class="listing-grid-item__button mt-3">
             <a href="#" class="btn btn-primary w-100 btn-lg">
                 View deal
             </a>
