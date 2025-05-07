@@ -28,5 +28,6 @@
     <main id="main" class="main-content" role="main">
         <?php
         get_template_part('template-parts/header/header');
+        echo do_shortcode('[template template_id=167]');
         get_template_part('template-parts/header/search-stock');
         ?>
