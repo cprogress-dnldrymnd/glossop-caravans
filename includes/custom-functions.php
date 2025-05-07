@@ -23,5 +23,5 @@ function form_control($args)
 
 function get__theme_images($file_name)
 {
-    return image_dir() . $file_name;
+    return image_dir. $file_name;
 }
