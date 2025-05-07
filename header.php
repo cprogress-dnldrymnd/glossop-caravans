@@ -28,12 +28,11 @@
     <main id="main" class="main-content" role="main">
         <header id="masthead" class="site-header">
             <div class="container">
-                <div class="row">
+                <div class="row g-3 justify-content-between align-items-center">
                     <div class="col-auto">
                         <?php glossop_caravans_display_site_logo(true) ?>
                     </div>
                     <div class="col-auto">
-
                         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasHeaderMenu" aria-labelledby="offcanvasHeaderMenuLabel">
                             <div class="offcanvas-header">
                                 <h5 class="offcanvas-title" id="offcanvasHeaderMenuLabel">Offcanvas</h5>
