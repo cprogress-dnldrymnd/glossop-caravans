@@ -7,7 +7,7 @@ use Carbon_Fields\Block;
 
 Block::make(__('Grid Items'))
     ->add_fields(array(
-        Field::make('complex', 'grid', __('Grid'))
+        Field::make('complex', 'grid', __('Grid Items'))
             ->add_fields(array(
                 Field::make('text', 'title', __('Grid Title')),
                 Field::make('image', 'image', __('Grid Image')),
