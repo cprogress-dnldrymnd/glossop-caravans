@@ -11248,14 +11248,19 @@ img {
     text-decoration: none;
     font-size: 32px;
     font-weight: bold;
-    color: var(--text-color); }
+    color: var(--text-color);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px; }
   .wp-block-latest-posts__list.wp-block-latest-posts__list .wp-block-latest-posts__post-date {
     order: 2;
     color: var(--orange-color-3);
     font-size: 17px;
     font-weight: 600;
     margin-top: 25px;
-    margin-bottom: 12px; }
+    margin-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px; }
 
 @media (min-width: 1500px) {
   .container {
