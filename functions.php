@@ -16,7 +16,7 @@ function action_wp_enqueue_scripts()
     wp_enqueue_script('bootstrap', vendor_dir . 'bootstrap/dist/js/bootstrap.min.js');
     wp_enqueue_script('swiper', vendor_dir . 'swiper/js/swiper-bundle.min.js');
 
-    wp_enqueue_script('main', assets_dir . 'js/main.js');
+    wp_enqueue_script('main', assets_dir . 'javascripts/main.js');
 
 
 }
