@@ -11131,137 +11131,47 @@ img {
         margin-left: 10px;
         margin-right: 10px; }
 
-.page-title {
-  border-left: 4px solid var(--accent-color);
-  padding-left: 20px;
-  margin-bottom: 0; }
-
-.btn.btn:not(.btn-link) {
+.button-box:not(.btn-link) a,
+.button-box:not(.btn-link) button {
   padding: 10px 20px;
   line-height: 1;
   font-weight: bold;
   border-radius: 8px; }
-.btn.btn.btn-primary {
+.button-box.btn-primary a,
+.button-box.btn-primary button {
   background-color: var(--primary-color);
   border: 1px solid var(--primary-color);
   color: var(--white-color); }
-  .btn.btn.btn-primary:hover, .btn.btn.btn-primary:active, .btn.btn.btn-primary:focus {
+  .button-box.btn-primary a:hover, .button-box.btn-primary a:active, .button-box.btn-primary a:focus,
+  .button-box.btn-primary button:hover,
+  .button-box.btn-primary button:active,
+  .button-box.btn-primary button:focus {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
     border: 1px solid var(--accent-color); }
-.btn.btn.btn-black {
+.button-box.btn-black a,
+.button-box.btn-black button {
   background-color: var(--black-color);
   border: 1px solid var(--black-color);
   color: var(--white-color); }
-  .btn.btn.btn-black:hover, .btn.btn.btn-black:active, .btn.btn.btn-black:focus {
+  .button-box.btn-black a:hover, .button-box.btn-black a:active, .button-box.btn-black a:focus,
+  .button-box.btn-black button:hover,
+  .button-box.btn-black button:active,
+  .button-box.btn-black button:focus {
     background-color: var(--white-color);
     color: var(--black-color); }
-.btn.btn.btn-white {
+.button-box.btn-white a,
+.button-box.btn-white button {
   background-color: var(--white-color);
   border: 1px solid var(--white-color);
   color: var(--black-color); }
-.btn.btn.btn-accent {
+.button-box.btn-accent {
   background-color: var(--accent-color);
   border: 1px solid var(--accent-color);
   color: var(--white-color); }
-  .btn.btn.btn-accent:hover, .btn.btn.btn-accent:active, .btn.btn.btn-accent:focus {
+  .button-box.btn-accent:hover, .button-box.btn-accent:active, .button-box.btn-accent:focus {
     background-color: var(--primary-color);
     border-color: var(--primary-color); }
-
-.wp-element-button.wp-element-button {
-  padding: 10px 20px;
-  line-height: 1;
-  font-weight: bold;
-  border-radius: 8px;
-  background-color: var(--black-color);
-  border: 1px solid var(--black-color);
-  color: var(--white-color); }
-  .wp-element-button.wp-element-button:hover, .wp-element-button.wp-element-button:active, .wp-element-button.wp-element-button:focus {
-    background-color: var(--white-color);
-    color: var(--black-color); }
-
-.taxonomy-terms.taxonomy-terms.taxonomy-terms a {
-  padding: 10px 15px;
-  border-radius: 5px;
-  font-size: 15px;
-  font-weight: bold;
-  line-height: 1;
-  display: inline-block;
-  text-decoration: none;
-  background-color: var(--bg-color, var(--accent-color)) !important;
-  color: var(--text-color, --white-color) !important; }
-  @media screen and (max-width: 575px) {
-    .taxonomy-terms.taxonomy-terms.taxonomy-terms a {
-      font-size: 13px;
-      font-size: 13px;
-      padding: 10px; } }
-  .taxonomy-terms.taxonomy-terms.taxonomy-terms a:hover, .taxonomy-terms.taxonomy-terms.taxonomy-terms a:active, .taxonomy-terms.taxonomy-terms.taxonomy-terms a:focus {
-    background-color: var(--primary-color);
-    color: var(--accent-color); }
-  .taxonomy-terms.taxonomy-terms.taxonomy-terms a:not(:last-child) {
-    margin-right: 10px; }
-
-.swiper-button {
-  width: 34px;
-  height: 34px;
-  border-radius: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .swiper-button:after {
-    font-size: 14px;
-    color: var(--white-color);
-    font-weight: bold; }
-  .swiper-button:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='white' stroke-width='5' stroke-dasharray='50%25%2c 13%25' stroke-dashoffset='86' stroke-linecap='butt'/%3e%3c/svg%3e");
-    width: 34px;
-    height: 34px;
-    border-radius: 100px;
-    transition: 400ms; }
-  .swiper-button:hover:before {
-    transform: rotate(45deg); }
-
-section.loading-post input,
-section.loading-post .load-more a,
-section.loading-post select {
-  pointer-events: none; }
-
-.loading-results svg {
-  width: 50px; }
-
-.spin {
-  animation-name: spin;
-  animation-duration: 3000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; }
-
-#load-more {
-  display: inline-flex;
-  align-items: center;
-  height: 52px; }
-  #load-more svg {
-    display: none;
-    width: 30px;
-    height: 30px;
-    margin-left: 1rem; }
-  #load-more.loading svg {
-    display: inline-block; }
-
-.ppcp-place-order-description {
-  display: none !important; }
-
-.button-group a {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.row-archive .description-box p:not(:first-child) {
-  display: none; }
 
 @media (min-width: 1500px) {
   .container {

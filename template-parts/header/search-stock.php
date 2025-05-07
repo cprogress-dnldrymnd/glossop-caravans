@@ -121,6 +121,11 @@
                             ));
                             ?>
                         </div>
+                        <div class="col">
+                            <div class="button-box button-primary">
+                                <button type="submit">Search</button>
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>
