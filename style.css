@@ -11043,8 +11043,8 @@ button.swiper-pagination-bullet {
   to {
     transform: rotate(360deg); } }
 :root {
-  --primary-color: #FF681E;
-  --secondary-color: #202020;
+  --primary-color: #ff681e;
+  --secondary-color: #45c324;
   --text-color: #202020; }
 
 @-moz-keyframes spin {
