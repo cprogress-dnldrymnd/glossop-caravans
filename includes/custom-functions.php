@@ -5,7 +5,7 @@ function form_control($args)
     echo '<label for="' . $args['id'] . '">' . $args['label'] . '</label>';
 
     if ($args['type'] == 'text') {
-        echo '<input type="text" name="' . $args['name'] . '" id="' . $args['id'] . '" class="form-control" placeholder="' . $args['placeholder'] . '" value="' . $args['value'] . '">';
+        echo '<input type="text" name="' . $args['name'] . '" id="' . $args['id'] . '" class="form-control ' . $args['class'] . '" placeholder="' . $args['placeholder'] . '" value="' . $args['value'] . '">';
     } elseif ($args['type'] == 'select') {
         echo '<select name="' . $args['name'] . '" id="' . $args['id'] . '" class="form-control">';
         foreach ($args['options'] as $key => $value) {

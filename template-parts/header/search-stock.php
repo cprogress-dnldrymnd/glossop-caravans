@@ -20,22 +20,19 @@
                             <?php
                             form_control(array(
                                 'type' => 'text',
-                                'name' => 'search',
-                                'id' => 'search',
-                                'label' => 'Search',
-                                'placeholder' => 'Search by make, model or price',
-                                'value' => ''
+                                'name' => 'type',
+                                'id' => 'type',
+                                'label' => 'Type',
+                                'class' => 'form-control-lg',
+                                'options' => array(
+                                    '' => 'New or Used?',
+                                    'New' => 'New',
+                                    'Used' => 'Used',
+                                    'Both' => 'Both',
+                                ),
                             ));
                             ?>
-                            <div class="mb-3">
-                                <label for="type" class="form-label">Type</label>
-                                <select class="form-control form-control-lg" name="type" id="type">
-                                    <option value="">New or Used?</option>
-                                    <option value="New">New</option>
-                                    <option value="Used">Used</option>
-                                    <option value="Both">Both</option>
-                                </select>
-                            </div>
+                        
                         </div>
                     </div>
                 </form>
