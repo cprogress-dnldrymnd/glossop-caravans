@@ -25,6 +25,14 @@
     --bs-btn-disabled-bg: var(--primary-color);
     --bs-btn-disabled-border-color: var(--primary-color);
 }
+.nav-tabs {
+    --bs-nav-link-font-size: 20px;
+    .nav-link {
+        font-weight: 600;
+        padding: 30px 45px;
+        border: 1px solid var(--bs-black)
+    }
+}
 img {
     max-width: 100%;
 }
@@ -86,6 +94,7 @@ img {
 }
 
 .form-holder {
+    font-size: 20px;
     .row {
         --bs-gutter-x: 8px;
         --bs-gutter-y: 8px;

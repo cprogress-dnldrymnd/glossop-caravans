@@ -11113,6 +11113,12 @@ button.swiper-pagination-bullet {
   --bs-btn-disabled-bg: var(--primary-color);
   --bs-btn-disabled-border-color: var(--primary-color); }
 
+.nav-tabs {
+  --bs-nav-link-font-size: 20px; }
+  .nav-tabs .nav-link {
+    font-weight: 600;
+    padding: 30px 45px; }
+
 img {
   max-width: 100%; }
 
@@ -11158,9 +11164,11 @@ img {
         margin-left: 10px;
         margin-right: 10px; }
 
-.form-holder .row {
-  --bs-gutter-x: 8px;
-  --bs-gutter-y: 8px; }
+.form-holder {
+  font-size: 20px; }
+  .form-holder .row {
+    --bs-gutter-x: 8px;
+    --bs-gutter-y: 8px; }
 
 @media (min-width: 1500px) {
   .container {
