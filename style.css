@@ -11288,7 +11288,8 @@ img {
     display: flex;
     align-items: center;
     gap: 20px;
-    flex-grow: 1; }
+    flex-grow: 1;
+    justify-content: space-between; }
     .listing-filter .accordion-button .accordion-button-inner .icon-text {
       display: flex;
       align-items: center;
