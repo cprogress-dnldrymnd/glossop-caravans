@@ -1,6 +1,6 @@
 <div class="listing-grid-full-details bg-white rounded overflow-hidden position-relative">
   <div class="listing-grid--top">
-    <div class="row">
+    <div class="row justify-content-between">
       <div class="col-auto">
         <div class="image-box brand">
           <?= wp_get_attachment_image(190, 'medium') ?>
