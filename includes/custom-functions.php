@@ -68,9 +68,9 @@ function listing__action()
 {
     ob_start();
     ?>
-    <ul class="icon-list">
-        <li>Share</li>
-        <li>Save</li>
+    <ul class="icon-list d-flex list-inline align-items-center">
+        <li> <?= get__theme_images('share.svg') ?> Share</li>
+        <li><?= get__theme_images(file_name: 'save.svg') ?> Save</li>
     </ul>
     <?php
     return ob_get_clean();

@@ -11317,6 +11317,9 @@ img {
   justify-content: center;
   color: var(--text-color); }
 
+.icon-list {
+  gap: 28px; }
+
 @media (min-width: 1500px) {
   .container {
     max-width: 1420px; } }
