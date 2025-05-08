@@ -178,6 +178,12 @@
             font-weight: 500;
         }
     }
+
+    .swiper-thumbnails {
+        .swiper-slide {
+            height: 120px;
+        }
+    }
 }
 
 .available-now {
