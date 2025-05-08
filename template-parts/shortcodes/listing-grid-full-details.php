@@ -31,7 +31,7 @@
     </div>
     <div class="col-lg-5">
       <div class="listing-grid--right-inner">
-        <div class="image-box image-style">
+        <div class="image-box image-style" style="--fit: contain">
           <?= wp_get_attachment_image(189, 'large') ?>
         </div>
       </div>
