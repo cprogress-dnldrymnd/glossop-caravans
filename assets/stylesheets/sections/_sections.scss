@@ -179,3 +179,14 @@
         }
     }
 }
+
+.listing-inner-holder {
+    .listing-grid__feature {
+        justify-content: flex-end;
+
+        .grid__feature-inner {
+            padding: 12px 20px;
+            font-size: 21px;
+        }
+    }
+}

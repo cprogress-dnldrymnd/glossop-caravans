@@ -11725,6 +11725,12 @@ h5, .h5 {
   font-size: 19px;
   font-weight: 500; }
 
+.listing-inner-holder .listing-grid__feature {
+  justify-content: flex-end; }
+  .listing-inner-holder .listing-grid__feature .grid__feature-inner {
+    padding: 12px 20px;
+    font-size: 21px; }
+
 /*-----------------------------------------------------------------------------------*/
 /* Plugins
 /*-----------------------------------------------------------------------------------*/
