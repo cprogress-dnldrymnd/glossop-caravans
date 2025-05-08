@@ -10,7 +10,7 @@ function fancybox() {
 
     jQuery('.zoom').click(function (e) {
         jQuery(this).next().find('.swiper-slide-active').addClass('sdsdss');
-        jQuery(this).next().find('.swiper-slide-active a').click();
+        jQuery(this).next().find('.swiper-slide-active a').trigger();
         console.log('mama mo');
         e.preventDefault();
     });
