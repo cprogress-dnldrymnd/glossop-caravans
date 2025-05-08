@@ -45,18 +45,45 @@ global $listing_fields;
               </div>
             </div>
             <div class="listing-inner--bottom">
-              <div class="row g-xs">
-                <div class="col-lg-2">
-                  <div class="swiper-gallery-thumbnails">
 
+              <div class="tab-content" id="listingInner--Tab">
+                <div class="tab-pane fade show active" id="gallery-tab-pane" role="tabpanel"
+                  aria-labelledby="gallery-tab" tabindex="0">
+                  <div class="row g-xs">
+                    <div class="col-lg-2">
+                      <div class="swiper-gallery-thumbnails">
+
+                      </div>
+                    </div>
+                    <div class="col-lg-10">
+                      <div class="listing-inner--gallery-grid-holder position-relative rounded overflow-hidden">
+                        <?php echo listing__gallery('gallery-1'); ?>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="col-lg-10">
-                  <div class="listing-inner--gallery-grid-holder position-relative rounded overflow-hidden">
-                    <?php echo listing__gallery('gallery-1'); ?>
-                  </div>
-                </div>
+                <div class="tab-pane fade" id="three-sixty-tab-pane" role="tabpanel" aria-labelledby="three-sixty-tab"
+                  tabindex="0">...</div>
+                <div class="tab-pane fade" id="video-tab-pane" role="tabpanel" aria-labelledby="video-tab" tabindex="0">
+                  ...</div>
               </div>
+
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="gallery-tab" data-bs-toggle="tab"
+                    data-bs-target="#gallery-tab-pane" type="button" role="tab" aria-controls="gallery-tab-pane"
+                    aria-selected="true">gallery</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="three-sixty-tab" data-bs-toggle="tab"
+                    data-bs-target="#three-sixty-tab-pane" type="button" role="tab" aria-controls="three-sixty-tab-pane"
+                    aria-selected="false">three-sixty</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="video-tab" data-bs-toggle="tab" data-bs-target="#video-tab-pane"
+                    type="button" role="tab" aria-controls="video-tab-pane" aria-selected="false">video</button>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
