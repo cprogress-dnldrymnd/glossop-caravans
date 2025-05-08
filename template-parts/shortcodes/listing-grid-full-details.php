@@ -1,8 +1,17 @@
 <div class="listing-grid-full-details bg-white rounded overflow-hidden position-relative">
   <div class="listing-grid--top">
     <div class="row">
-      <div class="image-box brand">
-        <?= wp_get_attachment_image(190, 'medium') ?>
+      <div class="col-auto">
+        <div class="image-box brand">
+          <?= wp_get_attachment_image(190, 'medium') ?>
+        </div>
+        <h3>Swift Sprite Quattro FB 2024</h3>
+        <div class="desc">
+          <p>Now on display - ready to view!</p>
+        </div>
+      </div>
+      <div class="col-auto">
+        <?= listing__action() ?>
       </div>
     </div>
   </div>

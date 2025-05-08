@@ -63,3 +63,15 @@ function listing__price()
     <?php
     return ob_get_clean();
 }
+
+function listing__action()
+{
+    ob_start();
+    ?>
+    <ul class="icon-list">
+        <li>Share</li>
+        <li>Save</li>
+    </ul>
+    <?php
+    return ob_get_clean();
+}
