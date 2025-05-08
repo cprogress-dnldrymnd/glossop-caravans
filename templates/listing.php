@@ -243,7 +243,7 @@ global $listing_fields;
                         </div>
                     </div>
                     <div class="banner mt-20">
-                        <?= wp_get_attachment_image(188, 'full') ?>
+                        <?= wp_get_attachment_image(191, 'full') ?>
                     </div>
                 </div>
             </div>
