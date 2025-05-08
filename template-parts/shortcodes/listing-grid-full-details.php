@@ -49,9 +49,7 @@
             ?>
           </div>
           <div class="listing-grid-right-item">
-
             <?php
-            echo listing__gallery();
             if ($args['style'] != 'style-3') {
               echo listing__features(true);
             }
