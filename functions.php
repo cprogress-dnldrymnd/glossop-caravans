@@ -20,7 +20,7 @@ add_action('after_setup_theme', 'action_after_setup_theme');
 
 function action_wp_enqueue_scripts()
 {
-    wp_enqueue_style('fancybox', vendor_dir . 'fancybox/js/fancybox.css');
+    wp_enqueue_style('fancybox', vendor_dir . 'fancybox/css/fancybox.css');
     wp_enqueue_style('style', theme_dir . 'style.css');
 
     wp_enqueue_script('jquery');
