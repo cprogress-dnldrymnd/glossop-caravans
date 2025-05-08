@@ -213,13 +213,15 @@
 
             >.nav-item {
                 flex: 1 0 0%;
-
                 .nav-link {
                     border: none;
                     background-color: var(--lightgray-color-2);
                     display: flex;
                     align-items: center;
+                    justify-content: center;
                     gap: 18px;
+                    width: 100%;
+
                     &.active {
                         background-color: var(--dark-color);
                         color: var(--text-color);
