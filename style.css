@@ -11324,7 +11324,8 @@ img {
     display: flex;
     gap: 12px; }
   .icon-list.icon-list-v2 {
-    --width: calc(50% - 14px); }
+    gap: 18px;
+    --width: calc(50% - 9px); }
     .icon-list.icon-list-v2 > li {
       flex: 0 0 var(--width);
       width: var(--width); }
