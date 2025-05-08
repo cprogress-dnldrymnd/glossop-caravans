@@ -11500,10 +11500,10 @@ h2, .h2 {
     h2, .h2 {
       font-size: 2rem; } }
 
-h3, .h3 {
+h3, .h3, .h3 {
   font-size: 37px; }
   @media screen and (max-width: 575px) {
-    h3, .h3 {
+    h3, .h3, .h3 {
       font-size: 25px; } }
 
 h4, .h4 {

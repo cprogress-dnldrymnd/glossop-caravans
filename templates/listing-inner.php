@@ -14,7 +14,7 @@ global $listing_fields;
         <div class="col-lg-9">
           <div class="listing-inner--left">
             <div class="listing-inner--top">
-              <div class="row g-3 justify-content-between align-items-end">
+              <div class="row g-3 justify-content-between align-items-center">
                 <div class="col-md-6">
                   <div class="image-box brand">
                     <?= wp_get_attachment_image(190, 'medium') ?>
@@ -26,7 +26,7 @@ global $listing_fields;
               </div>
               <div class="row g-3 justify-content-between align-items-end">
                 <div class="col-auto">
-                  <h1>Swift Sprite Quattro FB 2024</h1>
+                  <h1 class="h3">Swift Sprite Quattro FB 2024</h1>
                 </div>
                 <div class="col-auto">
                   <div class="available-now fs-18">Available to view</div>
