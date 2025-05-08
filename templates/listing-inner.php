@@ -34,10 +34,10 @@ global $listing_fields;
               </div>
 
               <div class="row g-3 justify-content-between align-items-end">
-                <div class="col-auto">
+                <div class="col-lg-7">
                   <?php echo listing__price(); ?>
                 </div>
-                <div class="col-auto">
+                <div class="col-lg-5">
                   <?php
                   echo listing__features(true);
                   ?>
