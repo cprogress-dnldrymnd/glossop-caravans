@@ -160,7 +160,7 @@ img {
 
 .image-style {
     position: relative;
-    padding: 30%;
+    padding: var(--padding, 30%);
 
     img {
         position: absolute;
