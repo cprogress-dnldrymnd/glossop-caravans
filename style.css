@@ -11418,6 +11418,12 @@ img {
   --bs-gutter-x: 40px;
   --bs-gutter-y: 40px; }
 
+.mb-20 {
+  margin-bottom: 20px; }
+
+.mt-20 {
+  margin-top: 20px; }
+
 body {
   font-family: "Proxima Nova", sans-serif;
   color: var(--text-color);
@@ -11661,6 +11667,14 @@ h5, .h5 {
   z-index: 1; }
 .listing-grid-full-details .listing-grid--right-inner {
   padding: 20px; }
+.listing-grid-full-details:hover, .listing-grid-full-details:active, .listing-grid-full-details:focus {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible; }
 
 .swiper-gallery .swiper-pagination {
   position: absolute;

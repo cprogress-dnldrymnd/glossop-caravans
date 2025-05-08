@@ -222,7 +222,7 @@ global $listing_fields;
                     </div>
                 </div>
                 <div class="col-lg-9">
-                    <div class="banner">
+                    <div class="banner mb-20">
                         <?= wp_get_attachment_image(188, 'full') ?>
                     </div>
                     <div class="listings d-flex flex-column" style="--padding: 37%">
@@ -241,6 +241,9 @@ global $listing_fields;
                         <div class="listing-item" id="swiper-gallery-5">
                             <?= do_shortcode('[listing_grid_full_details]') ?>
                         </div>
+                    </div>
+                    <div class="banner mt-20">
+                        <?= wp_get_attachment_image(188, 'full') ?>
                     </div>
                 </div>
             </div>
