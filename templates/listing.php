@@ -227,6 +227,10 @@ global $listing_fields;
                     </div>
                     <div class="listings d-flex flex-column">
                         <?= do_shortcode('[listing_grid_full_details]') ?>
+                        <?= do_shortcode('[listing_grid_full_details]') ?>
+                        <?= do_shortcode('[listing_grid_full_details]') ?>
+                        <?= do_shortcode('[listing_grid_full_details]') ?>
+                        <?= do_shortcode('[listing_grid_full_details]') ?>
                     </div>
                 </div>
             </div>
