@@ -180,6 +180,20 @@
     }
 }
 
+.available-now {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @include before {
+        background-color: #00CC9C;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        flex: 0 0 10px;
+    }
+}
+
 .listing-inner-holder {
     .listing-grid__feature {
         justify-content: flex-end;

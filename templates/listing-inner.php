@@ -29,7 +29,7 @@ global $listing_fields;
                   <h1>Swift Sprite Quattro FB 2024</h1>
                 </div>
                 <div class="col-auto">
-                  <div class="available-now">Available to view</div>
+                  <div class="available-now fs-18">Available to view</div>
                 </div>
               </div>
 
