@@ -45,6 +45,7 @@
           </div>
           <?php
           echo listing__icons();
+          echo listing__features();
           ?>
         </div>
       </div>

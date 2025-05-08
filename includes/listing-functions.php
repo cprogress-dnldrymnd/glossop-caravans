@@ -105,7 +105,7 @@ function listings_fields()
 }
 add_action('after_setup_theme', 'listings_fields');
 
-function listing__features()
+function listing__features($hide_per_month = false)
 {
     ob_start();
     ?>
@@ -116,16 +116,18 @@ function listing__features()
                     Finance available: 7.9% APR
                 </div>
             </div>
-            <div class="listing-grid__feature-item col-auto">
-                <div
-                    class="grid__feature-inner rounded h-100 d-flex flex-column align-items-center justify-content-center text-center">
-                    <span class="fs-7 fw-medium">Per month</span>
-                    £565.50
+            <?php if (!$hide_per_month) { ?>
+                <div class="listing-grid__feature-item col-auto">
+                    <div
+                        class="grid__feature-inner rounded h-100 d-flex flex-column align-items-center justify-content-center text-center">
+                        <span class="fs-7 fw-medium">Per month</span>
+                        £565.50
+                    </div>
                 </div>
-            </div>
+            <?php } ?>
         </div>
     </div>
-x
+    x
     <?php
     return ob_get_clean();
 }
