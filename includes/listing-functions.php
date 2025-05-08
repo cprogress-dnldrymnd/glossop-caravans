@@ -105,7 +105,30 @@ function listings_fields()
 }
 add_action('after_setup_theme', 'listings_fields');
 
-
+function listing__features()
+{
+    ob_start();
+    ?>
+    <div class="listing-grid__feature-holder">
+        <div class="listing-grid__feature fs-13 row g-xxs fw-semibold">
+            <div class="listing-grid__feature-item col-auto">
+                <div class="grid__feature-inner rounded h-100 d-flex align-items-center justify-content-center text-center">
+                    Finance available: 7.9% APR
+                </div>
+            </div>
+            <div class="listing-grid__feature-item col-auto">
+                <div
+                    class="grid__feature-inner rounded h-100 d-flex flex-column align-items-center justify-content-center text-center">
+                    <span class="fs-7 fw-medium">Per month</span>
+                    £565.50
+                </div>
+            </div>
+        </div>
+    </div>
+x
+    <?php
+    return ob_get_clean();
+}
 
 function listing__price()
 {
@@ -185,7 +208,8 @@ function listing__icons()
 {
     ob_start();
     ?>
-    <ul class="icon-list icon-list-v2 d-flex list-inline align-items-center justify-content-end fw-semibold flex-wrap fs-18">
+    <ul
+        class="icon-list icon-list-v2 d-flex list-inline align-items-center justify-content-end fw-semibold flex-wrap fs-18">
         <li> <?= get__theme_images('berths.svg') ?> 6 Berth</li>
         <li><?= get__theme_images('warranty.svg') ?> 3 year warranty</li>
         <li><?= get__theme_images('year.svg') ?> Year 2024</li>
