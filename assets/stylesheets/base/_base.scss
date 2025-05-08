@@ -4,11 +4,13 @@
     --bs-btn-font-size: 20px;
     --bs-border-radius-lg: 5px;
 }
+
 .form-control-lg {
     font-size: 20px;
     padding: 25px;
     --bs-border-radius-lg: 5px;
 }
+
 .btn-primary {
     --bs-btn-color: var(--bs-white);
     --bs-btn-bg: var(--orange-color);
@@ -25,10 +27,12 @@
     --bs-btn-disabled-bg: var(--orange-color);
     --bs-btn-disabled-border-color: var(--orange-color);
 }
+
 .nav-tabs {
     --bs-nav-link-font-size: 20px;
     --bs-nav-link-color: var(--bs-black);
     --bs-nav-tabs-link-active-color: var(--bs-white);
+
     .nav-link {
         font-weight: 600;
         padding: 25px 45px;
@@ -40,17 +44,21 @@
             border-color: var(--green-color);
         }
     }
+
     &:not(.nav-tabs-style-2) {
         .nav-link {
             border-bottom: none;
         }
     }
+
     &.nav-tabs-style-2 {
         gap: 20px;
         border: none;
+
         .nav-link {
             border: 1px solid var(--bs-white);
             border-radius: 5px;
+
             &.active {
                 color: var(--text-color);
                 background-color: var(--bs-white);
@@ -59,9 +67,11 @@
         }
     }
 }
+
 img {
     max-width: 100%;
 }
+
 .list-inline-icons {
     li {
         a {
@@ -70,6 +80,7 @@ img {
             align-items: center;
             color: var(--black-color);
             line-height: 1;
+
             svg {
                 width: 20px;
                 flex: 0 0 20px;
@@ -77,6 +88,7 @@ img {
                 margin-right: 10px;
             }
         }
+
         @include not-last-child {
             margin-right: 1rem;
         }
@@ -86,6 +98,7 @@ img {
 .breadcrumbs-holder {
     border-bottom: 1px solid var(--blue-color); //blue
     padding-bottom: 10px;
+
     ul {
         padding: 0;
         list-style: none;
@@ -93,15 +106,19 @@ img {
         flex-wrap: wrap;
         font-size: 18px;
         align-items: center;
+
         li {
             display: flex;
             align-items: center;
+
             span {
                 font-weight: bold;
             }
+
             a {
                 color: var(--black-color); //black
             }
+
             &:not(:last-child) {
                 &::after {
                     content: "";
@@ -121,6 +138,7 @@ img {
 
 .form-holder {
     font-size: 20px;
+
     .row {
         --bs-gutter-x: 8px;
         --bs-gutter-y: 8px;
@@ -131,17 +149,19 @@ img {
     label {
         color: var(--bs-white);
     }
+
     .tab-cotnent-holder {
         padding-top: 32px;
         padding-bottom: 65px;
     }
-    .nav-tabs {
-    }
+
+    .nav-tabs {}
 }
 
 .image-style {
     position: relative;
     padding: 30%;
+
     img {
         position: absolute;
         top: 0;
@@ -151,14 +171,16 @@ img {
         object-fit: cover;
     }
 }
+
 .site-content {
-    & > .wp-block-group {
+    &>.wp-block-group {
         overflow: hidden;
     }
 }
 
 .wp-block-latest-posts__list.wp-block-latest-posts__list {
     gap: 40px;
+
     li {
         border-radius: 5px;
         position: relative;
@@ -170,13 +192,16 @@ img {
         display: flex;
         flex-direction: column;
     }
+
     .wp-block-latest-posts__featured-image {
         position: relative;
         padding: 50% 0;
         order: 1;
+
         a {
             display: inline;
         }
+
         img {
             position: absolute;
             top: 0;
@@ -188,6 +213,7 @@ img {
             max-height: 100% !important;
         }
     }
+
     .wp-block-latest-posts__post-title {
         order: 3;
         text-decoration: none;
@@ -198,6 +224,7 @@ img {
         padding-right: 20px;
         padding-bottom: 20px;
     }
+
     .wp-block-latest-posts__post-date {
         order: 2;
         color: var(--orange-color-3);
@@ -215,11 +242,21 @@ img {
     .accordion {
         padding: 20px;
         background-color: var(--bs-white);
-        .accordion-item  {
-            --bs-accordion-border-radius: 0;
-            --bs-accordion-border-width: 0;
+
+        .accordion-item {
+            border-left: none;
+            border-right: none;
+            --bs-accordion-border-color: #ECECEC;
+            @include first-child {
+                border-top: none;
+            }
+
+            @include last-child {
+                border-top: none;
+            }
         }
     }
+
     .accordion-button {
         --bs-accordion-inner-border-radius: 0;
         --bs-accordion-inner-border-radius: 0;
@@ -228,8 +265,10 @@ img {
         gap: 20px;
         font-weight: bold;
         font-size: 19px;
+
         .icon {
             flex: 0 0 32px;
+
             img {
                 width: 32px;
                 height: 32px;
@@ -237,6 +276,7 @@ img {
             }
         }
     }
+
     .form-control-holder {
         label {
             display: none;

@@ -11266,8 +11266,12 @@ img {
   padding: 20px;
   background-color: var(--bs-white); }
   .listing-filter .accordion .accordion-item {
-    --bs-accordion-border-radius: 0;
-    --bs-accordion-border-width: 0; }
+    border-left: none;
+    border-right: none; }
+    .listing-filter .accordion .accordion-item:first-child {
+      border-top: none; }
+    .listing-filter .accordion .accordion-item:last-child {
+      border-top: none; }
 .listing-filter .accordion-button {
   --bs-accordion-inner-border-radius: 0;
   --bs-accordion-inner-border-radius: 0;
