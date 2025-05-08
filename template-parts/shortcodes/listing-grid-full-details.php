@@ -43,6 +43,9 @@
           <div class="image-box image-style" style="--fit: contain; --padding: 20%">
             <?= wp_get_attachment_image(189, 'large') ?>
           </div>
+          <?php
+          echo listing__icons();
+          ?>
         </div>
       </div>
     </div>
