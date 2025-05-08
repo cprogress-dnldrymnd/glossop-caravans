@@ -14,7 +14,7 @@ global $listing_fields;
             <div class="row">
                 <div class="col-lg-3">
                     <div class="listing-filter">
-                        <div class="accordion" id="accordionFilter">
+                        <div class="accordion rounded" id="accordionFilter">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSort-by" aria-expanded="false" aria-controls="collapseSort-by">

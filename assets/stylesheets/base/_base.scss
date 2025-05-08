@@ -212,7 +212,17 @@ img {
 
 
 .listing-filter {
+    .accordion {
+        padding: 20px;
+        background-color: var(--bs-white);
+        .accordion-item  {
+            --bs-accordion-border-radius: 0;
+            --bs-accordion-border-width: 0;
+        }
+    }
     .accordion-button {
+        --bs-accordion-inner-border-radius: 0;
+        --bs-accordion-inner-border-radius: 0;
         display: flex;
         align-items: center;
         gap: 20px;
