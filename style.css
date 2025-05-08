@@ -11730,6 +11730,8 @@ h5, .h5 {
   align-items: center;
   gap: 10px; }
   .available-now:before {
+    content: '';
+    display: inline-block;
     background-color: #00CC9C;
     width: 10px;
     height: 10px;

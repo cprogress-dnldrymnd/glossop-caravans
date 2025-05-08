@@ -186,6 +186,8 @@
     gap: 10px;
 
     @include before {
+        content: '';
+        display: inline-block   ;
         background-color: #00CC9C;
         width: 10px;
         height: 10px;
