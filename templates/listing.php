@@ -226,11 +226,21 @@ global $listing_fields;
                         <?= wp_get_attachment_image(188, 'full') ?>
                     </div>
                     <div class="listings d-flex flex-column">
-                        <?= do_shortcode('[listing_grid_full_details]') ?>
-                        <?= do_shortcode('[listing_grid_full_details]') ?>
-                        <?= do_shortcode('[listing_grid_full_details]') ?>
-                        <?= do_shortcode('[listing_grid_full_details]') ?>
-                        <?= do_shortcode('[listing_grid_full_details]') ?>
+                        <div class="listing-item" id="swiper-gallery-1">
+                            <?= do_shortcode('[listing_grid_full_details]') ?>
+                        </div>
+                        <div class="listing-item" id="swiper-gallery-2">
+                            <?= do_shortcode('[listing_grid_full_details]') ?>
+                        </div>
+                        <div class="listing-item" id="swiper-gallery-3">
+                            <?= do_shortcode('[listing_grid_full_details]') ?>
+                        </div>
+                        <div class="listing-item" id="swiper-gallery-4">
+                            <?= do_shortcode('[listing_grid_full_details]') ?>
+                        </div>
+                        <div class="listing-item" id="swiper-gallery-5">
+                            <?= do_shortcode('[listing_grid_full_details]') ?>
+                        </div>
                     </div>
                 </div>
             </div>
