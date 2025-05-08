@@ -217,6 +217,13 @@
                 .nav-link {
                     border: none;
                     background-color: var(--lightgray-color-2);
+                    display: flex;
+                    align-items: center;
+                    gap: 18px;
+                    &.active {
+                        background-color: var(--dark-color);
+                        color: var(--text-color);
+                    }
                 }
             }
         }

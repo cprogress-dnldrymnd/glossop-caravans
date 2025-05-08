@@ -74,16 +74,22 @@ global $listing_fields;
                   <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="gallery-tab" data-bs-toggle="tab"
                       data-bs-target="#gallery-tab-pane" type="button" role="tab" aria-controls="gallery-tab-pane"
-                      aria-selected="true">gallery</button>
+                      aria-selected="true">
+                      <span class="icon"><?= get__theme_images('gallery.svg') ?></span> Gallery
+                    </button>
                   </li>
                   <li class="nav-item" role="presentation">
                     <button class="nav-link" id="three-sixty-tab" data-bs-toggle="tab"
                       data-bs-target="#three-sixty-tab-pane" type="button" role="tab"
-                      aria-controls="three-sixty-tab-pane" aria-selected="false">three-sixty</button>
+                      aria-controls="three-sixty-tab-pane" aria-selected="false">
+                      <span class="icon"><?= get__theme_images('360.svg') ?></span> 360° TOUR
+                    </button>
                   </li>
                   <li class="nav-item" role="presentation">
                     <button class="nav-link" id="video-tab" data-bs-toggle="tab" data-bs-target="#video-tab-pane"
-                      type="button" role="tab" aria-controls="video-tab-pane" aria-selected="false">video</button>
+                      type="button" role="tab" aria-controls="video-tab-pane" aria-selected="false">
+                      <span class="icon"><?= get__theme_images('video.svg') ?></span> Video
+                    </button>
                   </li>
                 </ul>
               </div>
