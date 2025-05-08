@@ -5,7 +5,6 @@
         <div class="image-box brand">
           <?= wp_get_attachment_image(190, 'medium') ?>
         </div>
-
       </div>
       <div class="col-md-6">
         <?= listing__action() ?>
@@ -31,31 +30,8 @@
     <div class="row g-0">
       <div class="col-lg-7">
         <div class="listing-grid--left-inner position-relative">
-          <div class="listing-grid--gallery">
-            <div class="swiper swiper-gallery">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="image-box image-style">
-                    <?= wp_get_attachment_image(53, 'large') ?>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="image-box image-style">
-                    <?= wp_get_attachment_image(53, 'large') ?>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="image-box image-style">
-                    <?= wp_get_attachment_image(53, 'large') ?>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-button-next swiper-button"></div>
-              <div class="swiper-button-prev swiper-button"></div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
           <?php
+          echo listing__gallery();
           if ($args['style'] == 'style-1') {
             echo listing__price();
           }

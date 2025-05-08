@@ -148,3 +148,35 @@ function listing__action()
     <?php
     return ob_get_clean();
 }
+
+function listing__gallery()
+{
+    ob_start();
+    ?>
+    <div class="listing-grid--gallery">
+        <div class="swiper swiper-gallery">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="image-box image-style">
+                        <?= wp_get_attachment_image(53, 'large') ?>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-box image-style">
+                        <?= wp_get_attachment_image(53, 'large') ?>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-box image-style">
+                        <?= wp_get_attachment_image(53, 'large') ?>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-button"></div>
+            <div class="swiper-button-prev swiper-button"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <?php
+    return ob_get_clean();
+}
