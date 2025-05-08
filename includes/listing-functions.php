@@ -178,6 +178,9 @@ function listing__gallery()
     ob_start();
     ?>
     <div class="listing-grid--gallery h-100">
+        <div class="zoom">
+            <?= get__theme_images('zoom.svg') ?>
+        </div>
         <div class="swiper swiper-gallery h-100">
             <div class="swiper-wrapper h-100">
                 <div class="swiper-slide h-100">
