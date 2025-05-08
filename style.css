@@ -11644,7 +11644,7 @@ h5, .h5 {
   position: absolute;
   left: 20px;
   bottom: 20px;
-  right: 20px;
+  right: 100px;
   z-index: 1; }
 .listing-grid-full-details .listing-grid--right-inner {
   padding: 20px; }
