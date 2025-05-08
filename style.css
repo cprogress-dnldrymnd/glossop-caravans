@@ -11678,6 +11678,8 @@ h5, .h5 {
   bottom: 20px;
   right: 100px;
   z-index: 1; }
+.listing-grid-full-details .listing-grid-item__prices .grid-item__price-inner {
+  padding: 13px; }
 .listing-grid-full-details .listing-grid--right-inner > .listing-grid-right-item {
   padding: 20px; }
   .listing-grid-full-details .listing-grid--right-inner > .listing-grid-right-item:not(:last-child) {
