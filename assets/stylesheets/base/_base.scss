@@ -247,12 +247,16 @@ img {
             border-left: none;
             border-right: none;
             --bs-accordion-border-color: #ECECEC;
+
             @include first-child {
                 border-top: none;
             }
 
             @include last-child {
-                border-top: none;
+                border-bottom: none;
+            }
+            .accordion-body {
+                --bs-accordion-body-padding-x: 0;
             }
         }
     }

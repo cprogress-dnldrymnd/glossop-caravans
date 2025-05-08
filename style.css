@@ -11267,11 +11267,12 @@ img {
   background-color: var(--bs-white); }
   .listing-filter .accordion .accordion-item {
     border-left: none;
-    border-right: none; }
+    border-right: none;
+    --bs-accordion-border-color: #ECECEC; }
     .listing-filter .accordion .accordion-item:first-child {
       border-top: none; }
     .listing-filter .accordion .accordion-item:last-child {
-      border-top: none; }
+      border-bottom: none; }
 .listing-filter .accordion-button {
   --bs-accordion-inner-border-radius: 0;
   --bs-accordion-inner-border-radius: 0;
