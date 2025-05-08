@@ -33,7 +33,7 @@ global $listing_fields;
                 </div>
               </div>
 
-              <div class="row g-3 justify-content-between align-items-end">
+              <div class="row g-3 justify-content-between align-items-center">
                 <div class="col-lg-8">
                   <?php echo listing__price(); ?>
                 </div>
