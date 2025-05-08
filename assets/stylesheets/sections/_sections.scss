@@ -95,6 +95,9 @@
     overflow: visible;
 }
 
+.listings {
+    gap: 20px;
+}
 .listing-grid-full-details {
     .listing-grid-item__prices-holder {
         @include transition(500ms);

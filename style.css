@@ -11646,6 +11646,9 @@ h5, .h5 {
 .swiper-listing {
   overflow: visible; }
 
+.listings {
+  gap: 20px; }
+
 .listing-grid-full-details .listing-grid-item__prices-holder {
   -webkit-transition: 500ms;
   -moz-transition: 500ms;
