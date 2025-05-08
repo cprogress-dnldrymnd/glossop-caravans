@@ -11759,7 +11759,8 @@ h5, .h5 {
       border: none;
       background-color: var(--lightgray-color-2);
       display: flex;
-      align-items: center; }
+      align-items: center;
+      gap: 18px; }
       .listing-inner-holder .listing-inner--tabs .nav-tabs > .nav-item .nav-link.active {
         background-color: var(--dark-color);
         color: var(--text-color); }
