@@ -104,7 +104,7 @@
         padding: 20px;
         border-bottom: 1px solid #CDCDCD;
     }
- 
+
 
     .listing-grid--left-inner {
         .listing-grid-item__prices-holder {
@@ -118,6 +118,15 @@
 
     .listing-grid--right-inner {
         padding: 20px;
+
+        .listing-grid__feature-item {
+            width: 100%;
+
+            .grid__feature-inner {
+                padding: 24px;
+                font-size: 20px;
+            }
+        }
     }
 
 }

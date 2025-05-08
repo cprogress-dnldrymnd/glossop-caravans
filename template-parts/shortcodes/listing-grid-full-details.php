@@ -40,13 +40,37 @@
       </div>
       <div class="col-lg-5">
         <div class="listing-grid--right-inner">
-          <div class="image-box image-style mb-20" style="--fit: contain; --padding: 20%">
-            <?= wp_get_attachment_image(189, 'large') ?>
+          <div class="listing-grid-right-item">
+            <div class="image-box image-style mb-20" style="--fit: contain; --padding: 20%">
+              <?= wp_get_attachment_image(189, 'large') ?>
+            </div>
+            <?php
+            echo listing__icons();
+            ?>
           </div>
-          <?php
-          echo listing__icons();
-          echo listing__features(true);
-          ?>
+          <div class="listing-grid-right-item">
+            <?php
+            echo listing__features(true);
+            ?>
+          </div>
+          <div class="listing-grid-right-item">
+            <div class="row g-xxs">
+              <div class="col-sm-6">
+                <div class="listing-grid-item__button mt-3">
+                  <a href="#" class="btn btn-primary w-100 btn-lg">
+                    View deal
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="listing-grid-item__button mt-3">
+                  <a href="#" class="btn btn-primary w-100 btn-lg">
+                    View deal
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

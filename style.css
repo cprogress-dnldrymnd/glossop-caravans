@@ -11678,6 +11678,11 @@ h5, .h5 {
   z-index: 1; }
 .listing-grid-full-details .listing-grid--right-inner {
   padding: 20px; }
+  .listing-grid-full-details .listing-grid--right-inner .listing-grid__feature-item {
+    width: 100%; }
+    .listing-grid-full-details .listing-grid--right-inner .listing-grid__feature-item .grid__feature-inner {
+      padding: 24px;
+      font-size: 20px; }
 
 .swiper-gallery .swiper-pagination {
   position: absolute;
