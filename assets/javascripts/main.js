@@ -40,6 +40,9 @@ function swiper_sliders() {
             loop: true,
             slidesPerView: 1,
             spaceBetween: 0,
+            thumbs: {
+                swiper: swiper_thumb,
+            },
             navigation: {
                 nextEl: '.swiper-gallery-next',
                 prevEl: '.swiper-gallery-prev',
