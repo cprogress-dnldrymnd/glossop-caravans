@@ -11732,7 +11732,7 @@ h5, .h5 {
   font-size: 19px;
   font-weight: 500; }
 .listing-grid--gallery .swiper-thumbnails .swiper-slide {
-  height: 120px; }
+  height: 120px !important; }
 
 .available-now {
   display: flex;
