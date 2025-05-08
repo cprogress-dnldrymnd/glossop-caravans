@@ -64,8 +64,8 @@
               </div>
               <div class="col-sm-6">
                 <div class="listing-grid-item__button mt-3">
-                  <a href="#" class="btn btn-primary w-100 btn-lg">
-                    View deal
+                  <a href="#" class="btn btn-outline-dark w-100 btn-lg">
+                    Enquire now
                   </a>
                 </div>
               </div>
