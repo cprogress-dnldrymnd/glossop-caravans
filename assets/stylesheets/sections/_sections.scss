@@ -99,9 +99,9 @@
     .listing-grid--left-inner {
         .listing-grid-item__prices-holder {
             position: absolute;
-            left: 0;
-            bottom: 0;
-            right: 0;
+            left: 20px;
+            bottom: 20px;
+            right: 20px;
             z-index: 1;
         }
     }
