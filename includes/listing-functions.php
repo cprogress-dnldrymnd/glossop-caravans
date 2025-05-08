@@ -143,7 +143,7 @@ function listing__action()
     ?>
     <ul class="icon-list d-flex list-inline align-items-center justify-content-end fw-semibold">
         <li> <?= get__theme_images('share.svg') ?> Share</li>
-        <li><?= get__theme_images(file_name: 'save.svg') ?> Save</li>
+        <li><?= get__theme_images('save.svg') ?> Save</li>
     </ul>
     <?php
     return ob_get_clean();
@@ -177,6 +177,23 @@ function listing__gallery()
             <div class="swiper-pagination"></div>
         </div>
     </div>
+    <?php
+    return ob_get_clean();
+}
+
+function listing__icons()
+{
+    ob_start();
+    ?>
+    <ul class="icon-list d-flex list-inline align-items-center justify-content-end fw-semibold">
+        <li> <?= get__theme_images('berths.svg') ?> 6 Berth</li>
+        <li><?= get__theme_images('warranty.svg') ?> 3 year warranty</li>
+        <li><?= get__theme_images('year.svg') ?> Year 2024</li>
+        <li><span class="icons"><?= get__theme_images('tire.svg') ?><?= get__theme_images('tire.svg') ?></span>
+            Twin axle</li>
+        <li><?= get__theme_images('kg.svg') ?> MTPLM 1630kg</li>
+        <li><?= get__theme_images('awning-size.svg') ?> 10.52m Awning Size</li>
+    </ul>
     <?php
     return ob_get_clean();
 }
