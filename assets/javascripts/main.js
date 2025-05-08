@@ -14,7 +14,7 @@ function swiper_sliders() {
 
     $key = 1;
     jQuery('.swiper-gallery').each(function (index, element) {
-        var $id = 'swiper-gallery-' + $key;
+        var $id = 'swiper' + $key;
         jQuery(this).attr('id', $id);
         jQuery(this).find('.swiper-button-next').attr('id', $id + '-next');
         jQuery(this).find('.swiper-button-prev').attr('id', $id + '-prev');
