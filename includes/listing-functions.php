@@ -233,7 +233,7 @@ function listing__gallery($id, $is_thumbnail = false)
                 </div>
             </div>
             <?php if ($is_thumbnail == false) { ?>
-                <div class="swiper-button-next swiper-gallery-next' swiper-button"></div>
+                <div class="swiper-button-next swiper-gallery-next swiper-button"></div>
                 <div class="swiper-button-prev swiper-gallery-prev swiper-button"></div>
                 <div class="swiper-pagination swiper-gallery-pagination"></div>
             <?php } ?>
