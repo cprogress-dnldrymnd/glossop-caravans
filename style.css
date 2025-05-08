@@ -11287,7 +11287,12 @@ img {
   .listing-filter .accordion-button .accordion-button-inner {
     display: flex;
     align-items: center;
-    gap: 20px; }
+    gap: 20px;
+    flex-grow: 1; }
+    .listing-filter .accordion-button .accordion-button-inner .icon-text {
+      display: flex;
+      align-items: center;
+      gap: 20px; }
   .listing-filter .accordion-button:after {
     flex: 0 0 auto;
     margin-left: 0; }

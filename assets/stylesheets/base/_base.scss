@@ -276,6 +276,14 @@ img {
             display: flex;
             align-items: center;
             gap: 20px;
+            flex-grow: 1;
+            justify-content: space-between;
+
+            .icon-text {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
         }
 
         @include after {
