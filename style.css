@@ -11765,7 +11765,7 @@ h5, .h5 {
       width: 100%; }
       .listing-inner-holder .listing-inner--tabs .nav-tabs > .nav-item .nav-link.active {
         background-color: var(--dark-color);
-        color: var(--text-color); }
+        color: var(--bs-white); }
 
 /*-----------------------------------------------------------------------------------*/
 /* Plugins
