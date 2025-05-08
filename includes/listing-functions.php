@@ -185,7 +185,7 @@ function listing__icons()
 {
     ob_start();
     ?>
-    <ul class="icon-list icon-list-v2 d-flex list-inline align-items-center justify-content-end fw-semibold flex-wrap">
+    <ul class="icon-list icon-list-v2 d-flex list-inline align-items-center justify-content-end fw-semibold flex-wrap fs-18">
         <li> <?= get__theme_images('berths.svg') ?> 6 Berth</li>
         <li><?= get__theme_images('warranty.svg') ?> 3 year warranty</li>
         <li><?= get__theme_images('year.svg') ?> Year 2024</li>
