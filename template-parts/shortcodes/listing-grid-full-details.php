@@ -40,7 +40,7 @@
       </div>
       <div class="col-lg-5">
         <div class="listing-grid--right-inner">
-          <div class="image-box image-style" style="--fit: contain; --padding: 20%">
+          <div class="image-box image-style mb-20" style="--fit: contain; --padding: 20%">
             <?= wp_get_attachment_image(189, 'large') ?>
           </div>
           <?php
