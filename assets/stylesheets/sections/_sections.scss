@@ -98,7 +98,12 @@
 .listings {
     gap: 20px;
 }
+
 .listing-grid-full-details {
+    .listing-grid--top {
+        padding: 20px;
+        border-bottom: 1px solid #CDCDCD;
+    }
     .listing-grid-item__prices-holder {
         @include transition(500ms);
         @include transform(translateY(20px));

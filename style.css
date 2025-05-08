@@ -11649,6 +11649,9 @@ h5, .h5 {
 .listings {
   gap: 20px; }
 
+.listing-grid-full-details .listing-grid--top {
+  padding: 20px;
+  border-bottom: 1px solid #CDCDCD; }
 .listing-grid-full-details .listing-grid-item__prices-holder {
   -webkit-transition: 500ms;
   -moz-transition: 500ms;
