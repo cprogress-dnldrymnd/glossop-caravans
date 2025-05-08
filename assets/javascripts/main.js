@@ -9,8 +9,8 @@ function fancybox() {
     });
 
     jQuery('.zoom').click(function (e) {
-        jQuery(this).next().find('.swiper-slide-active').addClass('sdsdss');
-        jQuery(this).next().find('.swiper-slide-active a').trigger();
+        jQuery(this).next().find('.swiper-slide-active a').addClass('sdsdss');
+        jQuery(this).next().find('.swiper-slide-active a').trigger('click');
         console.log('mama mo');
         e.preventDefault();
     });
