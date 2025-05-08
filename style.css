@@ -11748,6 +11748,8 @@ h5, .h5 {
   .listing-inner-holder .listing-grid__feature .grid__feature-inner {
     padding: 12px 20px;
     font-size: 21px; }
+.listing-inner-holder .listing-inner--tabs .nav-tabs {
+  gap: 18px; }
 
 /*-----------------------------------------------------------------------------------*/
 /* Plugins

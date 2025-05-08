@@ -205,4 +205,13 @@
             font-size: 21px;
         }
     }
+
+    .listing-inner--tabs {
+        .nav-tabs {
+            gap: 18px;
+            > li {
+                flex: 1 0 0%;
+            }
+        }
+    }
 }
