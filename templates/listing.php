@@ -20,11 +20,13 @@ global $listing_fields;
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseSort-by" aria-expanded="false"
                                         aria-controls="collapseSort-by">
-                                        <span class="icon-text">
-                                            <span class="icon"><?= get__theme_images('sort-by.svg') ?></span>
-                                            Sort by
+                                        <span class="accordion-button-inner">
+                                            <span class="icon-text">
+                                                <span class="icon"><?= get__theme_images('sort-by.svg') ?></span>
+                                                Sort by
+                                            </span>
+                                            <span class="selected fs-14 fw-bold">Price: low to high</span>
                                         </span>
-                                        <span class="selected fs-14 fw-bold">Price: low to high</span>
                                     </button>
                                 </h2>
                                 <div id="collapseSort-by" class="accordion-collapse collapse"
