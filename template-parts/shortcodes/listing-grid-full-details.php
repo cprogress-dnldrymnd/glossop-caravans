@@ -1,4 +1,4 @@
-<div class="listing-grid-full-details">
+<div class="listing-grid-full-details bg-white rounded-overflow-hidden">
   <div class="row g-0">
     <div class="col-lg-9">
       <div class="listing-grid--left-inner">
@@ -6,7 +6,11 @@
       </div>
     </div>
     <div class="col-lg-3">
-
+      <div class="listing-grid--right-inner">
+        <div class="image-box">
+          <?= wp_get_attachment_image(189, 'large') ?>
+        </div>
+      </div>
     </div>
   </div>
 </div>
