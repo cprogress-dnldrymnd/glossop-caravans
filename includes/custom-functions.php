@@ -34,8 +34,10 @@ function get__theme_images($file_name, $image_tag = true)
 }
 
 
-function get__theme_icons($url)
+function get__theme_icons($file_name)
 {
+    $url = get_stylesheet_directory() . '/assets/images/' . $file_name;
+
     $content = file_get_contents($url);
 
     // Output the sanitized SVG
