@@ -11649,6 +11649,18 @@ h5, .h5 {
 .listing-grid-full-details .listing-grid--right-inner {
   padding: 20px; }
 
+.swiper-gallery .swiper-pagination {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  width: auto;
+  padding: 14px 25px;
+  line-height: 1;
+  background-color: var(--bs-white);
+  z-index: 2;
+  border-radius: 5px 0 0 0; }
+
 /*-----------------------------------------------------------------------------------*/
 /* Plugins
 /*-----------------------------------------------------------------------------------*/
