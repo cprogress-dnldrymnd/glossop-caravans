@@ -11640,6 +11640,19 @@ h5, .h5 {
 .swiper-listing {
   overflow: visible; }
 
+.listing-grid-full-details .listing-grid-item__prices-holder {
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -ms-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  -o-transform: translateY(20px);
+  transform: translateY(20px);
+  opacity: 0;
+  visibility: hidden; }
 .listing-grid-full-details .listing-grid--left-inner .listing-grid-item__prices-holder {
   position: absolute;
   left: 20px;
