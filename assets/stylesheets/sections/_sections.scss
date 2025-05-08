@@ -102,7 +102,7 @@
 .listing-grid-full-details {
     .listing-grid--top {
         padding: 20px;
-        border-bottom: 1px solid #CDCDCD;
+        border-bottom: 1px solid var(--bs-border-color);
     }
 
 
@@ -117,7 +117,13 @@
     }
 
     .listing-grid--right-inner {
-        padding: 20px;
+        >.listing-grid-right-item {
+            padding: 20px;
+
+            @include not-last-child {
+                border-bottom: 1px solid var(--bs-border-color);
+            }
+        }
 
         .listing-grid__feature-item {
             width: 100%;

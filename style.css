@@ -11050,7 +11050,8 @@ button.swiper-pagination-bullet {
   --yellow-color: #FFC831;
   --text-color: #202020;
   --lightgray-color: #f5f5f5;
-  --bs-border-radius: 5px; }
+  --bs-border-radius: 5px;
+  --bs-border-color: #CDCDCD; }
 
 @-moz-keyframes spin {
   from {
@@ -11676,13 +11677,15 @@ h5, .h5 {
   bottom: 20px;
   right: 100px;
   z-index: 1; }
-.listing-grid-full-details .listing-grid--right-inner {
+.listing-grid-full-details .listing-grid--right-inner > .listing-grid-right-item {
   padding: 20px; }
-  .listing-grid-full-details .listing-grid--right-inner .listing-grid__feature-item {
-    width: 100%; }
-    .listing-grid-full-details .listing-grid--right-inner .listing-grid__feature-item .grid__feature-inner {
-      padding: 24px;
-      font-size: 20px; }
+  .listing-grid-full-details .listing-grid--right-inner > .listing-grid-right-item:not(:last-child) {
+    border-bottom: 1px solid var(--bs-border-color); }
+.listing-grid-full-details .listing-grid--right-inner .listing-grid__feature-item {
+  width: 100%; }
+  .listing-grid-full-details .listing-grid--right-inner .listing-grid__feature-item .grid__feature-inner {
+    padding: 24px;
+    font-size: 20px; }
 
 .swiper-gallery .swiper-pagination {
   position: absolute;
