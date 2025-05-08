@@ -186,7 +186,7 @@ function listing__gallery($id, $is_thumbnail = false)
                 <div class="swiper-slide <?= $is_thumbnail == false ? '' : '' ?>">
                     <a href="<?= wp_get_attachment_image_url(53, 'full') ?>" data-fancybox="<?= $id ?>"
                         class="d-block image-box image-style <?= $is_thumbnail == false ? '' : '' ?>">
-                        <?= wp_get_attachment_image(53, is_thumbnail == false ? 'large' : 'medium') ?>
+                        <?= wp_get_attachment_image(53, $is_thumbnail == false ? 'large' : 'medium') ?>
                     </a>
                 </div>
             </div>
