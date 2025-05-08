@@ -14,7 +14,7 @@ global $listing_fields;
         <div class="col-lg-9">
           <div class="listing-inner--left">
             <div class="listing-inner--top">
-              <div class="row g-3 justify-content-between align-items-center">
+              <div class="row g-3 justify-content-between align-items-center mb-1">
                 <div class="col-md-6">
                   <div class="image-box brand">
                     <?= wp_get_attachment_image(190, 'medium') ?>
