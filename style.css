@@ -11695,7 +11695,21 @@ h5, .h5 {
     padding: 24px;
     font-size: 20px; }
 
-.swiper-gallery .swiper-pagination {
+.listing-grid--gallery .zoom {
+  width: 56px;
+  height: 56px;
+  background-color: var(--bs-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  position: absolute;
+  z-index: 2;
+  top: 15px;
+  right: 15px;
+  cursor: pointer; }
+.listing-grid--gallery .swiper-gallery .swiper-pagination {
   position: absolute;
   right: 0;
   bottom: 0;
