@@ -165,7 +165,7 @@ function listing__action()
 {
     ob_start();
     ?>
-    <ul class="icon-list d-flex list-inline align-items-center justify-content-end fw-semibold">
+    <ul class="icon-list mb-0 d-flex list-inline align-items-center justify-content-end fw-semibold">
         <li> <?= get__theme_images('share.svg') ?> Share</li>
         <li><?= get__theme_images('save.svg') ?> Save</li>
     </ul>
@@ -228,7 +228,7 @@ function listing__icons()
     ob_start();
     ?>
     <ul
-        class="icon-list icon-list-v2 d-flex list-inline align-items-center justify-content-end fw-semibold flex-wrap fs-18">
+        class="icon-list mb-0 icon-list-v2 d-flex list-inline align-items-center justify-content-end fw-semibold flex-wrap fs-18">
         <li> <?= get__theme_images('berths.svg') ?> 6 Berth</li>
         <li><?= get__theme_images('warranty.svg') ?> 3 year warranty</li>
         <li><?= get__theme_images('year.svg') ?> Year 2024</li>
