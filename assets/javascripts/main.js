@@ -29,6 +29,11 @@ function swiper_sliders() {
     $key = 1;
 
     if (jQuery('.swiper-thumbnails').length > 0) {
+
+        $height = jQuery('.swiper-gallery').outerHeight();
+
+        jQuery('.swiper-thumbnails').css('height',$height+'px');
+
         var swiper_thumb = new Swiper(".swiper-thumbnails", {
             direction: "vertical",
             spaceBetween: 10,
