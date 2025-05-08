@@ -1,4 +1,4 @@
-<div class="listing-grid-full-details bg-white rounded-overflow-hidden">
+<div class="listing-grid-full-details bg-white rounded overflow-hidden position-relative">
   <div class="row g-0">
     <div class="col-lg-7">
       <div class="listing-grid--left-inner">

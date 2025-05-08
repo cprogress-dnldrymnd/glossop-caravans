@@ -11202,7 +11202,7 @@ img {
 
 .image-style {
   position: relative;
-  padding: 30%; }
+  padding: var(--padding, 30%); }
   .image-style img {
     position: absolute;
     top: 0;
