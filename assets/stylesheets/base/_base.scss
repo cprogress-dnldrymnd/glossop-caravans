@@ -239,6 +239,9 @@ img {
 
 
 .listing-filter {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
     .accordion {
         padding: 20px;
         background-color: var(--bs-white);
