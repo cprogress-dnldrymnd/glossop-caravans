@@ -11750,6 +11750,10 @@ h5, .h5 {
   .listing-inner-holder .listing-grid__feature .grid__feature-inner {
     padding: 12px 20px;
     font-size: 21px; }
+.listing-inner-holder .listing-grid--gallery .swiper-gallery .swiper-pagination {
+  right: 20px;
+  bottom: 20px;
+  border-radius: 5px; }
 .listing-inner-holder .listing-inner--tabs .nav-tabs {
   border: none;
   gap: 18px; }

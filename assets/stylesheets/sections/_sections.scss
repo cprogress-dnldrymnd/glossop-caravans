@@ -206,6 +206,12 @@
         }
     }
 
+    .listing-grid--gallery .swiper-gallery .swiper-pagination {
+        right: 20px;
+        bottom: 20px;
+        border-radius: 5px;
+    }
+
     .listing-inner--tabs {
         .nav-tabs {
             border: none;
@@ -213,6 +219,7 @@
 
             >.nav-item {
                 flex: 1 0 0%;
+
                 .nav-link {
                     border: none;
                     background-color: var(--lightgray-color-2);
@@ -223,6 +230,7 @@
                     width: 100%;
                     border-radius: 5px;
                     height: 100%;
+
                     &.active {
                         background-color: var(--dark-color);
                         color: var(--bs-white);
