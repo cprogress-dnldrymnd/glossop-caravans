@@ -11327,7 +11327,8 @@ img {
   gap: 28px; }
   .icon-list li {
     display: flex;
-    gap: 12px; }
+    gap: 12px;
+    align-items: center; }
   .icon-list.icon-list-v2 {
     gap: 18px;
     --width: calc(50% - 9px); }
