@@ -48,14 +48,18 @@
             echo listing__icons();
             ?>
           </div>
-          <?php
-          echo listing__gallery();
-          if ($args['style'] != 'style-3') {
-            echo '<div class="listing-grid-right-item">';
-            echo listing__features(true);
-            echo ' </div>';
-          }
-          ?>
+          <div class="listing-grid-right-item">
+
+            <?php
+            echo listing__gallery();
+            if ($args['style'] != 'style-3') {
+              echo listing__features(true);
+            }
+            else {
+              echo listing__price();
+            }
+            ?>
+          </div>
           <div class="listing-grid-right-item">
             <div class="row g-xxs">
               <div class="col-sm-6">
