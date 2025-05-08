@@ -52,7 +52,9 @@ global $listing_fields;
                   </div>
                 </div>
                 <div class="col-lg-10">
-                  <?php echo listing__gallery('gallery-1'); ?>
+                  <div class="listing-inner--gallery-grid-holder position-relative rounded overflow-hidden">
+                    <?php echo listing__gallery('gallery-1'); ?>
+                  </div>
                 </div>
               </div>
             </div>
