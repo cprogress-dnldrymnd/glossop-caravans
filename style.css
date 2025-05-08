@@ -11273,6 +11273,8 @@ img {
       border-top: none; }
     .listing-filter .accordion .accordion-item:last-child {
       border-bottom: none; }
+    .listing-filter .accordion .accordion-item .accordion-body {
+      --bs-accordion-body-padding-x: 0; }
 .listing-filter .accordion-button {
   --bs-accordion-inner-border-radius: 0;
   --bs-accordion-inner-border-radius: 0;
