@@ -11733,6 +11733,10 @@ h5, .h5 {
   font-weight: 500; }
 .listing-grid--gallery .swiper-thumbnails .swiper-slide {
   height: auto !important; }
+  .listing-grid--gallery .swiper-thumbnails .swiper-slide .image-box {
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative; }
 
 .available-now {
   display: flex;
