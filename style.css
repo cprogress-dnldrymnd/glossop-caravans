@@ -11050,6 +11050,7 @@ button.swiper-pagination-bullet {
   --yellow-color: #FFC831;
   --text-color: #202020;
   --lightgray-color: #f5f5f5;
+  --ligthgray-color-2: #F2F2F2;
   --bs-border-radius: 5px;
   --bs-border-color: #CDCDCD; }
 
@@ -11749,9 +11750,13 @@ h5, .h5 {
     padding: 12px 20px;
     font-size: 21px; }
 .listing-inner-holder .listing-inner--tabs .nav-tabs {
+  border: none;
   gap: 18px; }
-  .listing-inner-holder .listing-inner--tabs .nav-tabs > li {
+  .listing-inner-holder .listing-inner--tabs .nav-tabs > .nav-item {
     flex: 1 0 0%; }
+    .listing-inner-holder .listing-inner--tabs .nav-tabs > .nav-item .nav-link {
+      border: none;
+      background-color: var(--lightgray-color-2); }
 
 /*-----------------------------------------------------------------------------------*/
 /* Plugins
