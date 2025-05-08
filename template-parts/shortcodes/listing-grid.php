@@ -6,42 +6,26 @@
         </div>
         <div class="listing-grid__feature fs-13 row g-xxs fw-semibold">
             <div class="listing-grid__feature-item col-auto">
-                <div class="grid__feature-inner rounded h-100 d-flex align-items-center justify-content-center text-center"> 
+                <div
+                    class="grid__feature-inner rounded h-100 d-flex align-items-center justify-content-center text-center">
                     Finance available: 7.9% APR
                 </div>
             </div>
             <div class="listing-grid__feature-item col-auto">
-                <div class="grid__feature-inner rounded h-100 d-flex flex-column align-items-center justify-content-center text-center">
+                <div
+                    class="grid__feature-inner rounded h-100 d-flex flex-column align-items-center justify-content-center text-center">
                     <span class="fs-7 fw-medium">Per month</span>
                     £565.50
                 </div>
             </div>
         </div>
         <div class="listing-grid__image image-style">
-            <img src="https://newglossopacaravans.theprogressteam.co.uk/wp-content/uploads/2025/05/glossop-img-removebg-preview.png" alt="">
+            <img src="https://newglossopacaravans.theprogressteam.co.uk/wp-content/uploads/2025/05/glossop-img-removebg-preview.png"
+                alt="">
         </div>
     </div>
     <div class="listing-grid-item__bottom">
-        <div class="listing-grid-item__prices row g-xxs text-center">
-            <div class="listing-grid-item__price col-md-4">
-                <div class="grid-item__price-inner rounded h-100">
-                    <span class="fs-14">RRP</span>
-                    <strong><s>£44,125</s></strong>
-                </div>
-            </div>
-            <div class="listing-grid-item__price col-md-4">
-                <div class="grid-item__price-inner rounded h-100">
-                    <span class="fs-14">Our price</span>
-                    <strong>£42,200</strong>
-                </div>
-            </div>
-            <div class="listing-grid-item__price col-md-4">
-                <div class="grid-item__price-inner rounded h-100">
-                    <span class="fs-14">Save</span>
-                    <strong class="text-orange-2">£1,955</strong>
-                </div>
-            </div>
-        </div>
+        <?= $listing__price ?>
         <div class="listing-grid-item__button mt-3">
             <a href="#" class="btn btn-primary w-100 btn-lg">
                 View deal

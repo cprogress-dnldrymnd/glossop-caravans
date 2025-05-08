@@ -10,7 +10,7 @@ function latest_deals()
 add_shortcode('latest_deals', 'latest_deals');
 
 
-function listing_grid() 
+function listing_grid()
 {
     ob_start();
     get_template_part('template-parts/shortcodes/listing-grid');
@@ -18,3 +18,15 @@ function listing_grid()
 }
 
 add_shortcode('listing_grid', 'listing_grid');
+
+
+function listing_grid_full_details()
+{
+    ob_start();
+    get_template_part('template-parts/shortcodes/listing-grid-full-details');
+    return ob_get_clean();
+}
+
+add_shortcode('listing_grid_full_details', 'listing_grid_full_details');
+
+
