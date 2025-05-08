@@ -323,8 +323,16 @@ img {
 
 .icon-list {
     gap: 28px;
+
     li {
         display: flex;
         gap: 12px;
+    }
+
+    &.icon-list-v2 {
+        >li {
+            flex: 0 0 50%;
+            width: 50%;
+        }
     }
 }

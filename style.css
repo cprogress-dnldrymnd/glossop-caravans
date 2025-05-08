@@ -11322,6 +11322,9 @@ img {
   .icon-list li {
     display: flex;
     gap: 12px; }
+  .icon-list.icon-list-v2 > li {
+    flex: 0 0 50%;
+    width: 50%; }
 
 @media (min-width: 1500px) {
   .container {
