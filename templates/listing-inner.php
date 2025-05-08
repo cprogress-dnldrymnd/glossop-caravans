@@ -12,7 +12,18 @@ global $listing_fields;
     <div class="listing-inner-holder">
       <div class="col-lg-9">
         <div class="listing-inner--left">
-
+          <div class="listing-inner--top">
+            <div class="row g-3 justify-content-between">
+              <div class="col-md-6">
+                <div class="image-box brand">
+                  <?= wp_get_attachment_image(190, 'medium') ?>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <?= listing__action() ?>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-lg-3">
