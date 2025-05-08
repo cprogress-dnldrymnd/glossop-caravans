@@ -26,19 +26,19 @@
                         <div class="swiper swiper-listing">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <?= do_shortcode('[listing_grid style="style-1"]') ?>
+                                    <?= do_shortcode('[listing_grid]') ?>
                                 </div>
                                 <div class="swiper-slide">
-                                    <?= do_shortcode('[listing_grid style="style-2"]') ?>
+                                    <?= do_shortcode('[listing_grid]') ?>
                                 </div>
                                 <div class="swiper-slide">
-                                    <?= do_shortcode('[listing_grid style="style-3"]') ?>
+                                    <?= do_shortcode('[listing_grid]') ?>
                                 </div>
                                 <div class="swiper-slide">
-                                    <?= do_shortcode('[listing_grid style="style-1"]') ?>
+                                    <?= do_shortcode('[listing_grid]') ?>
                                 </div>
                                 <div class="swiper-slide">
-                                    <?= do_shortcode('[listing_grid style="style-1"]') ?>
+                                    <?= do_shortcode('[listing_grid]') ?>
                                 </div>
                             </div>
                         </div>
