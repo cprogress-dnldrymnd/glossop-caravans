@@ -30,7 +30,7 @@ function swiper_sliders() {
             },
             pagination: {
                 el: '#' + $id + '-pagination',
-                clickable: true,
+                type: "fraction",
             },
         });
         $key++;
