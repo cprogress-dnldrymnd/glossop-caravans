@@ -19,6 +19,7 @@ global $listing_fields;
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSort-by" aria-expanded="false" aria-controls="collapseSort-by">
                                         <span class="icon"><?= get__theme_images('sort-by.svg') ?></span> Sort by
+                                        <span class="selected">Price: low to high</span>
                                     </button>
                                 </h2>
                                 <div id="collapseSort-by" class="accordion-collapse collapse" data-bs-parent="#accordionFilter">
