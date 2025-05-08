@@ -24,6 +24,14 @@ global $listing_fields;
                   <?= listing__action() ?>
                 </div>
               </div>
+              <div class="row g-3 justify-content-between">
+                <div class="col-auto">
+                  <h1>Swift Sprite Quattro FB 2024</h1>
+                </div>
+                <div class="col-auto">
+                  <div class="available-now">Available to view</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
