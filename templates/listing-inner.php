@@ -24,7 +24,7 @@ global $listing_fields;
                   <?= listing__action() ?>
                 </div>
               </div>
-              <div class="row g-3 justify-content-between align-items-end">
+              <div class="row g-3 justify-content-between align-items-center">
                 <div class="col-auto">
                   <h1 class="h3">Swift Sprite Quattro FB 2024</h1>
                 </div>
