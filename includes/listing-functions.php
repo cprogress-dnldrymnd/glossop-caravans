@@ -177,11 +177,11 @@ function listing__gallery()
 {
     ob_start();
     ?>
-    <div class="listing-grid--gallery">
-        <div class="swiper swiper-gallery">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="image-box image-style">
+    <div class="listing-grid--gallery h-100">
+        <div class="swiper swiper-gallery h-100">
+            <div class="swiper-wrapper h-100">
+                <div class="swiper-slide h-100">
+                    <div class="image-box image-style h-100">
                         <?= wp_get_attachment_image(53, 'large') ?>
                     </div>
                 </div>

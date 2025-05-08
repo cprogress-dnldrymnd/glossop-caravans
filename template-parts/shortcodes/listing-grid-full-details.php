@@ -29,7 +29,7 @@
   <div class="listing-grid--bottom">
     <div class="row g-0">
       <div class="col-lg-7">
-        <div class="listing-grid--left-inner position-relative">
+        <div class="listing-grid--left-inner position-relative h-100">
           <?php
           echo listing__gallery();
           if ($args['style'] == 'style-1') {
