@@ -11328,6 +11328,10 @@ img {
       flex: 0 0 var(--width);
       width: var(--width); }
 
+span.icons {
+  display: flex;
+  gap: 5px; }
+
 @media (min-width: 1500px) {
   .container {
     max-width: 1420px; } }
