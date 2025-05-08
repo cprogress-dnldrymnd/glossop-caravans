@@ -183,8 +183,43 @@ function listing__gallery($id, $is_thumbnail = false)
         </div>
         <div class="swiper <?= $is_thumbnail == false ? 'swiper-gallery h-100' : 'swiper-thumbnails' ?>">
             <div class="swiper-wrapper <?= $is_thumbnail == false ? 'h-100' : '' ?>">
-
                 <div class="swiper-slide <?= $is_thumbnail == false ? 'h-100' : '' ?>">
+                    <a href="<?= wp_get_attachment_image_url(53, 'full') ?>" <?= $is_thumbnail == false ? 'data-fancybox="' . $id . '"' : '' ?>
+                        class="d-block image-box image-style <?= $is_thumbnail == false ? 'h-100' : '' ?>">
+                        <?= wp_get_attachment_image(53, $is_thumbnail == false ? 'large' : 'medium') ?>
+                    </a>
+                </div>
+                 <div class="swiper-slide <?= $is_thumbnail == false ? 'h-100' : '' ?>">
+                    <a href="<?= wp_get_attachment_image_url(53, 'full') ?>" <?= $is_thumbnail == false ? 'data-fancybox="' . $id . '"' : '' ?>
+                        class="d-block image-box image-style <?= $is_thumbnail == false ? 'h-100' : '' ?>">
+                        <?= wp_get_attachment_image(53, $is_thumbnail == false ? 'large' : 'medium') ?>
+                    </a>
+                </div>
+                 <div class="swiper-slide <?= $is_thumbnail == false ? 'h-100' : '' ?>">
+                    <a href="<?= wp_get_attachment_image_url(53, 'full') ?>" <?= $is_thumbnail == false ? 'data-fancybox="' . $id . '"' : '' ?>
+                        class="d-block image-box image-style <?= $is_thumbnail == false ? 'h-100' : '' ?>">
+                        <?= wp_get_attachment_image(53, $is_thumbnail == false ? 'large' : 'medium') ?>
+                    </a>
+                </div>
+                 <div class="swiper-slide <?= $is_thumbnail == false ? 'h-100' : '' ?>">
+                    <a href="<?= wp_get_attachment_image_url(53, 'full') ?>" <?= $is_thumbnail == false ? 'data-fancybox="' . $id . '"' : '' ?>
+                        class="d-block image-box image-style <?= $is_thumbnail == false ? 'h-100' : '' ?>">
+                        <?= wp_get_attachment_image(53, $is_thumbnail == false ? 'large' : 'medium') ?>
+                    </a>
+                </div>
+                 <div class="swiper-slide <?= $is_thumbnail == false ? 'h-100' : '' ?>">
+                    <a href="<?= wp_get_attachment_image_url(53, 'full') ?>" <?= $is_thumbnail == false ? 'data-fancybox="' . $id . '"' : '' ?>
+                        class="d-block image-box image-style <?= $is_thumbnail == false ? 'h-100' : '' ?>">
+                        <?= wp_get_attachment_image(53, $is_thumbnail == false ? 'large' : 'medium') ?>
+                    </a>
+                </div>
+                 <div class="swiper-slide <?= $is_thumbnail == false ? 'h-100' : '' ?>">
+                    <a href="<?= wp_get_attachment_image_url(53, 'full') ?>" <?= $is_thumbnail == false ? 'data-fancybox="' . $id . '"' : '' ?>
+                        class="d-block image-box image-style <?= $is_thumbnail == false ? 'h-100' : '' ?>">
+                        <?= wp_get_attachment_image(53, $is_thumbnail == false ? 'large' : 'medium') ?>
+                    </a>
+                </div>
+                 <div class="swiper-slide <?= $is_thumbnail == false ? 'h-100' : '' ?>">
                     <a href="<?= wp_get_attachment_image_url(53, 'full') ?>" <?= $is_thumbnail == false ? 'data-fancybox="' . $id . '"' : '' ?>
                         class="d-block image-box image-style <?= $is_thumbnail == false ? 'h-100' : '' ?>">
                         <?= wp_get_attachment_image(53, $is_thumbnail == false ? 'large' : 'medium') ?>
