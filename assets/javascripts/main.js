@@ -7,6 +7,11 @@ function fancybox() {
     Fancybox.bind("[data-fancybox]", {
         // Your custom options
     });
+
+    jQuery('.zoom').click(function (e) {
+        jQuery(this).next().find('.swiper-slide-active a').click();
+        e.preventDefault();
+    });
 }
 
 function swiper_sliders() {
