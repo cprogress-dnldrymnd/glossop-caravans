@@ -32,3 +32,12 @@ function get__theme_images($file_name, $image_tag = true)
         return image_dir . $file_name;
     }
 }
+
+
+function get__theme_icons($url)
+{
+    $content = file_get_contents($url);
+
+    // Output the sanitized SVG
+    return $content;
+}
