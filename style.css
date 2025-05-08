@@ -11428,6 +11428,10 @@ span.icons {
   --bs-gutter-x: 8px;
   --bs-gutter-y: 8px; }
 
+.g-xs {
+  --bs-gutter-x: 16px;
+  --bs-gutter-y: 16px; }
+
 .col-no-gap {
   gap: 0 !important; }
 

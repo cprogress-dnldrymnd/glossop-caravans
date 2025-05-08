@@ -44,6 +44,18 @@ global $listing_fields;
                 </div>
               </div>
             </div>
+            <div class="listing-inner--bottom">
+              <div class="row g-xs">
+                <div class="col-lg-3">
+                  <div class="swiper-gallery-thumbnails">
+
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <?php echo listing__gallery('gallery-1'); ?>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-lg-3">
