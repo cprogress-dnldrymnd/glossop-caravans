@@ -13,7 +13,7 @@ global $listing_fields;
       <div class="row g-4">
         <div class="col-lg-9">
           <div class="listing-inner--left">
-            <div class="listing-inner--top">
+            <div class="listing-inner--top mb-4">
               <div class="row g-3 justify-content-between align-items-center mb-1">
                 <div class="col-md-6">
                   <div class="image-box brand">
