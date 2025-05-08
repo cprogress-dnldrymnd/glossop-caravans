@@ -18,7 +18,7 @@ function swiper_sliders() {
         jQuery(this).attr('id', $id);
         jQuery(this).find('.swiper-button-next').attr('id', $id + '-next');
         jQuery(this).find('.swiper-button-prev').attr('id', $id + '-prev');
-        jQuery(this).find('.swiper-pagination-team').attr('id', $id + '-pagination');
+        jQuery(this).find('.swiper-pagination').attr('id', $id + '-pagination');
 
         var $id = new Swiper('#' + $id, {
             loop: true,
