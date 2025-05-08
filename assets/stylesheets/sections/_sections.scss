@@ -104,12 +104,7 @@
         padding: 20px;
         border-bottom: 1px solid #CDCDCD;
     }
-    .listing-grid-item__prices-holder {
-        @include transition(500ms);
-        @include transform(translateY(20px));
-        opacity: 0;
-        visibility: hidden;
-    }
+ 
 
     .listing-grid--left-inner {
         .listing-grid-item__prices-holder {
@@ -125,11 +120,6 @@
         padding: 20px;
     }
 
-    @include on-event {
-        @include transform(translateY(0));
-        opacity: 1;
-        visibility: visible;
-    }
 }
 
 .swiper-gallery {

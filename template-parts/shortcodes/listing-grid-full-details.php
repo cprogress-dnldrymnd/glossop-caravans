@@ -8,6 +8,7 @@
         <h3>Swift Sprite Quattro FB 2024</h3>
         <div class="desc">
           <p>Now on display - ready to view!</p>
+          <?= $args['style'] ?>
         </div>
       </div>
       <div class="col-auto">

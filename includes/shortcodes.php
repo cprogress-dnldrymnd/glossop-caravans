@@ -20,13 +20,20 @@ function listing_grid()
 add_shortcode('listing_grid', 'listing_grid');
 
 
-function listing_grid_full_details()
+function listing_grid_full_details($atts)
 {
     ob_start();
-    get_template_part('template-parts/shortcodes/listing-grid-full-details');
+    extract(
+        shortcode_atts(
+            array(
+                'style' => 'style-1',
+            ),
+            $atts
+        )
+    );
+    $args['style'] = $style;
+    get_template_part('template-parts/shortcodes/listing-grid-full-details', NULL, $args);
     return ob_get_clean();
 }
 
 add_shortcode('listing_grid_full_details', 'listing_grid_full_details');
-
-
