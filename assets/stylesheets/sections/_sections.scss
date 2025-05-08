@@ -182,11 +182,14 @@
     .swiper-thumbnails {
         .swiper-slide {
             height: auto !important;
-
+            cursor: pointer;
             .image-box {
                 border-radius: 5px;
                 overflow: hidden;
                 position: relative;
+                a {
+                    pointer-events: none;
+                }
             }
         }
     }
