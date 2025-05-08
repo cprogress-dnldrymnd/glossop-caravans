@@ -11670,7 +11670,7 @@ h5, .h5 {
 
 .listing-grid-full-details .listing-grid--top {
   padding: 20px;
-  border-bottom: 1px solid #CDCDCD; }
+  border-bottom: 1px solid var(--bs-border-color); }
 .listing-grid-full-details .listing-grid--left-inner .listing-grid-item__prices-holder {
   position: absolute;
   left: 20px;
