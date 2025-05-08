@@ -18,7 +18,7 @@
           <p>Now on display - ready to view!</p>
         </div>
       </div>
-      <div class="col-auto">
+      <div class="col">
         <?php
         if ($args['style'] == 'style-2') {
           echo listing__price();
