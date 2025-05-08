@@ -221,9 +221,9 @@ function listing__gallery($id, $is_thumbnail = false)
                     </a>
                 </div>
             </div>
-            <div class="swiper-button-next swiper-button"></div>
-            <div class="swiper-button-prev swiper-button"></div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next <?= $is_thumbnail == false ? 'swiper-gallery-next' : '' ?> swiper-button"></div>
+            <div class="swiper-button-prev <?= $is_thumbnail == false ? 'swiper-gallery-prev' : '' ?> swiper-button"></div>
+            <div class="swiper-pagination <?= $is_thumbnail == false ? 'swiper-gallery-pagination' : '' ?>"></div>
         </div>
     </div>
     <?php

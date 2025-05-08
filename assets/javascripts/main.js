@@ -27,26 +27,51 @@ function swiper_sliders() {
     });
 
     $key = 1;
-    jQuery('.swiper-gallery').each(function (index, element) {
-        var $id = 'swiper' + $key;
-        jQuery(this).attr('id', $id);
-        jQuery(this).find('.swiper-button-next').attr('id', $id + '-next');
-        jQuery(this).find('.swiper-button-prev').attr('id', $id + '-prev');
-        jQuery(this).find('.swiper-pagination').attr('id', $id + '-pagination');
 
-        var $id = new Swiper('#' + $id, {
+    if (jQuery('.swiper-thumbnails').length > 0) {
+        var swiper_thumb = new Swiper(".swiper-thumbnails", {
+            direction: "vertical",
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper_gallery = new Swiper('.swiper-gallery', {
             loop: true,
             slidesPerView: 1,
             spaceBetween: 0,
             navigation: {
-                nextEl: '#' + $id + '-next',
-                prevEl: '#' + $id + '-prev',
+                nextEl: '.swiper-gallery-next',
+                prevEl: '.swiper-gallery-prev',
             },
             pagination: {
-                el: '#' + $id + '-pagination',
+                el: '.swiper-gallery-pagination',
                 type: "fraction",
             },
         });
         $key++;
-    });
+    } else {
+        jQuery('.swiper-gallery').each(function (index, element) {
+            var $id = 'swiper' + $key;
+            jQuery(this).attr('id', $id);
+            jQuery(this).find('.swiper-button-next').attr('id', $id + '-next');
+            jQuery(this).find('.swiper-button-prev').attr('id', $id + '-prev');
+            jQuery(this).find('.swiper-pagination').attr('id', $id + '-pagination');
+
+            var $id = new Swiper('#' + $id, {
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 0,
+                navigation: {
+                    nextEl: '#' + $id + '-next',
+                    prevEl: '#' + $id + '-prev',
+                },
+                pagination: {
+                    el: '#' + $id + '-pagination',
+                    type: "fraction",
+                },
+            });
+            $key++;
+        });
+    }
 }
