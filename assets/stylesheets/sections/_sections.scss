@@ -5,9 +5,11 @@
         overflow: hidden;
         border-radius: 5px;
         color: var(--text-color);
+
         .grid-item__image {
             position: relative;
             padding: 52% 0;
+
             h3 {
                 position: absolute;
                 left: 40px;
@@ -17,6 +19,7 @@
                 font-weight: 900;
                 font-size: 80px;
             }
+
             .tag {
                 position: absolute;
                 top: -16px;
@@ -30,6 +33,7 @@
                 transform: rotate(45deg);
                 line-height: 1;
             }
+
             img {
                 position: absolute;
                 bottom: 0;
@@ -37,11 +41,13 @@
                 left: 10%;
             }
         }
+
         .grid-item__content {
             background-color: var(--bs-white);
             padding: 25px;
             font-weight: 600;
         }
+
         @include on-event {
             color: var(--text-color);
         }
@@ -52,9 +58,11 @@
     @include box-shadow(0px 15px 30px #00000008);
     overflow: hidden;
     background-color: var(--bs-white);
+
     .listing-grid-item__top {
         padding: 20px;
     }
+
     .listing-grid-item__bottom {
         padding: 20px;
     }
@@ -64,6 +72,7 @@
     .grid-item__price-inner {
         background-color: var(--lightgray-color);
         padding: 7px;
+
         span {
             display: block;
         }
@@ -75,6 +84,7 @@
         background-color: var(--yellow-color);
         padding: 8px 20px;
         line-height: 1;
+
         span {
             display: block;
         }
@@ -86,6 +96,15 @@
 }
 
 .listing-grid-full-details {
+    .listing-grid--left-inner {
+        .listing-grid-item__prices-holder {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+
     .listing-grid--right-inner {
         padding: 20px;
     }
