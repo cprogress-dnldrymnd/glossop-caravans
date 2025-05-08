@@ -1,18 +1,29 @@
 <div class="listing-grid-full-details bg-white rounded overflow-hidden position-relative">
   <div class="listing-grid--top">
-    <div class="row justify-content-between">
+    <div class="row g-3 justify-content-between">
       <div class="col-auto">
         <div class="image-box brand">
           <?= wp_get_attachment_image(190, 'medium') ?>
         </div>
-        <h3>Swift Sprite Quattro FB 2024</h3>
-        <div class="desc">
-          <p>Now on display - ready to view!</p>
-          <?= $args['style'] ?>
-        </div>
+
       </div>
       <div class="col-auto">
         <?= listing__action() ?>
+      </div>
+    </div>
+    <div class="row g-3 justify-content-between">
+      <div class="col-auto">
+        <h3>Swift Sprite Quattro FB 2024</h3>
+        <div class="desc">
+          <p>Now on display - ready to view!</p>
+        </div>
+      </div>
+      <div class="col-auto">
+        <?php
+        if ($args['style'] == 'style-2') {
+          echo listing__price();
+        }
+        ?>
       </div>
     </div>
   </div>
@@ -44,7 +55,11 @@
               <div class="swiper-pagination"></div>
             </div>
           </div>
-          <?= listing__price() ?>
+          <?php
+          if ($args['style'] == 'style-1') {
+            echo listing__price();
+          }
+          ?>
         </div>
       </div>
       <div class="col-lg-5">
