@@ -1,7 +1,7 @@
 <div class="listing-grid-full-details bg-white rounded overflow-hidden position-relative">
   <div class="row g-0">
     <div class="col-lg-7">
-      <div class="listing-grid--left-inner">
+      <div class="listing-grid--left-inner position-relative">
         <div class="listing-grid--gallery">
           <div class="swiper swiper-gallery">
             <div class="swiper-wrapper">
