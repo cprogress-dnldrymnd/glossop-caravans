@@ -230,10 +230,10 @@ global $listing_fields;
                             <?= do_shortcode('[listing_grid_full_details]') ?>
                         </div>
                         <div class="listing-item" id="swiper-gallery-2">
-                            <?= do_shortcode('[listing_grid_full_details]') ?>
+                            <?= do_shortcode('[listing_grid_full_details style="style-2"]') ?>
                         </div>
                         <div class="listing-item" id="swiper-gallery-3">
-                            <?= do_shortcode('[listing_grid_full_details]') ?>
+                            <?= do_shortcode('[listing_grid_full_details style="style-3"]') ?>
                         </div>
                         <div class="listing-item" id="swiper-gallery-4">
                             <?= do_shortcode('[listing_grid_full_details]') ?>
