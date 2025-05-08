@@ -32,12 +32,12 @@ function swiper_sliders() {
 
         $height = jQuery('.swiper-gallery').outerHeight();
 
-        jQuery('.swiper-thumbnails').css('height',$height+'px');
+        jQuery('.swiper-thumbnails').css('height', $height + 'px');
 
         var swiper_thumb = new Swiper(".swiper-thumbnails", {
             direction: "vertical",
             spaceBetween: 10,
-            slidesPerView: 4,
+            slidesPerView: 'auto',
             freeMode: true,
             watchSlidesProgress: true,
         });
