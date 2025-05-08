@@ -1,4 +1,4 @@
-<div class="listing-grid-full-details bg-white rounded overflow-hidden position-relative">
+<div class="listing-grid-full-details bg-white rounded overflow-hidden position-relative <?= $args['style'] ?>">
   <div class="listing-grid--top">
     <div class="row g-3 justify-content-between">
       <div class="col-auto">
