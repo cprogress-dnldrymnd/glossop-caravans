@@ -267,9 +267,16 @@ img {
         --bs-accordion-inner-border-radius: 0;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         gap: 20px;
         font-weight: bold;
         font-size: 19px;
+
+        .accordion-button-inner {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
 
         @include after {
             flex: 0 0 auto;

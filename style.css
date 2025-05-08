@@ -11280,9 +11280,14 @@ img {
   --bs-accordion-inner-border-radius: 0;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 20px;
   font-weight: bold;
   font-size: 19px; }
+  .listing-filter .accordion-button .accordion-button-inner {
+    display: flex;
+    align-items: center;
+    gap: 20px; }
   .listing-filter .accordion-button:after {
     flex: 0 0 auto;
     margin-left: 0; }

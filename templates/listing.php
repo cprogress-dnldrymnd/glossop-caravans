@@ -41,7 +41,13 @@ global $listing_fields;
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseNew-Used" aria-expanded="false"
                                         aria-controls="collapseNew-Used">
-                                        <span class="icon"><?= get__theme_images('new-used.svg') ?></span> New-Used
+                                        <span class="accordion-button-inner">
+                                            <span class="icon-text">
+                                                <span class="icon"><?= get__theme_images('new-used.svg') ?></span>
+                                                New-Used
+                                            </span>
+                                            <span class="selected fs-14 fw-bold">Value</span>
+                                        </span>
                                     </button>
                                 </h2>
                                 <div id="collapseNew-Used" class="accordion-collapse collapse"
@@ -56,7 +62,12 @@ global $listing_fields;
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseBerths" aria-expanded="false"
                                         aria-controls="collapseBerths">
-                                        <span class="icon"><?= get__theme_images('berths.svg') ?></span> Berths
+                                        <span class="accordion-button-inner">
+                                            <span class="icon-text">
+                                                <span class="icon"><?= get__theme_images('berths.svg') ?></span> Berths
+                                            </span>
+                                            <span class="selected fs-14 fw-bold">Value</span>
+                                        </span>
                                     </button>
                                 </h2>
                                 <div id="collapseBerths" class="accordion-collapse collapse"
@@ -71,7 +82,12 @@ global $listing_fields;
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseMake" aria-expanded="false"
                                         aria-controls="collapseMake">
-                                        <span class="icon"><?= get__theme_images('make.svg') ?></span> Make
+                                        <span class="accordion-button-inner">
+                                            <span class="icon-text">
+                                                <span class="icon"><?= get__theme_images('make.svg') ?></span> Make
+                                            </span>
+                                            <span class="selected fs-14 fw-bold">Value</span>
+                                        </span>
                                     </button>
                                 </h2>
                                 <div id="collapseMake" class="accordion-collapse collapse"
@@ -86,7 +102,12 @@ global $listing_fields;
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseModel" aria-expanded="false"
                                         aria-controls="collapseModel">
-                                        <span class="icon"><?= get__theme_images('model.svg') ?></span> Model
+                                        <span class="accordion-button-inner">
+                                            <span class="icon-text">
+                                                <span class="icon"><?= get__theme_images('model.svg') ?></span> Model
+                                            </span>
+                                            <span class="selected fs-14 fw-bold">Value</span>
+                                        </span>
                                     </button>
                                 </h2>
                                 <div id="collapseModel" class="accordion-collapse collapse"
@@ -101,7 +122,12 @@ global $listing_fields;
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapsePrice" aria-expanded="false"
                                         aria-controls="collapsePrice">
-                                        <span class="icon"><?= get__theme_images('price.svg') ?></span> Price
+                                        <span class="accordion-button-inner">
+                                            <span class="icon-text">
+                                                <span class="icon"><?= get__theme_images('price.svg') ?></span> Price
+                                            </span>
+                                            <span class="selected fs-14 fw-bold">Value</span>
+                                        </span>
                                     </button>
                                 </h2>
                                 <div id="collapsePrice" class="accordion-collapse collapse"
@@ -116,7 +142,12 @@ global $listing_fields;
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseYear" aria-expanded="false"
                                         aria-controls="collapseYear">
-                                        <span class="icon"><?= get__theme_images('year.svg') ?></span> Year
+                                        <span class="accordion-button-inner">
+                                            <span class="icon-text">
+                                                <span class="icon"><?= get__theme_images('year.svg') ?></span> Year
+                                            </span>
+                                            <span class="selected fs-14 fw-bold">Value</span>
+                                        </span>
                                     </button>
                                 </h2>
                                 <div id="collapseYear" class="accordion-collapse collapse"
@@ -131,8 +162,13 @@ global $listing_fields;
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseLayout-type" aria-expanded="false"
                                         aria-controls="collapseLayout-type">
-                                        <span class="icon"><?= get__theme_images('layout-type.svg') ?></span>
-                                        Layout-type
+                                        <span class="accordion-button-inner">
+                                            <span class="icon-text">
+                                                <span class="icon"><?= get__theme_images('layout-type.svg') ?></span>
+                                                Layout-type
+                                            </span>
+                                            <span class="selected fs-14 fw-bold">Value</span>
+                                        </span>
                                     </button>
                                 </h2>
                                 <div id="collapseLayout-type" class="accordion-collapse collapse"
@@ -147,7 +183,12 @@ global $listing_fields;
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseWidth" aria-expanded="false"
                                         aria-controls="collapseWidth">
-                                        <span class="icon"><?= get__theme_images('width.svg') ?></span> Width
+                                        <span class="accordion-button-inner">
+                                            <span class="icon-text">
+                                                <span class="icon"><?= get__theme_images('width.svg') ?></span> Width
+                                            </span>
+                                            <span class="selected fs-14 fw-bold">Value</span>
+                                        </span>
                                     </button>
                                 </h2>
                                 <div id="collapseWidth" class="accordion-collapse collapse"
@@ -162,7 +203,12 @@ global $listing_fields;
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseAxles" aria-expanded="false"
                                         aria-controls="collapseAxles">
-                                        <span class="icon"><?= get__theme_images('axles.svg') ?></span> Axles
+                                        <span class="accordion-button-inner">
+                                            <span class="icon-text">
+                                                <span class="icon"><?= get__theme_images('axles.svg') ?></span> Axles
+                                            </span>
+                                            <span class="selected fs-14 fw-bold">Value</span>
+                                        </span>
                                     </button>
                                 </h2>
                                 <div id="collapseAxles" class="accordion-collapse collapse"
