@@ -1,13 +1,13 @@
 <div class="listing-grid-full-details bg-white rounded overflow-hidden position-relative <?= $args['style'] ?>">
   <div class="listing-grid--top">
     <div class="row g-3 justify-content-between">
-      <div class="col-auto">
+      <div class="col-md-6">
         <div class="image-box brand">
           <?= wp_get_attachment_image(190, 'medium') ?>
         </div>
 
       </div>
-      <div class="col-auto">
+      <div class="col-md-6">
         <?= listing__action() ?>
       </div>
     </div>
