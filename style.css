@@ -11633,7 +11633,8 @@ h5, .h5 {
   position: absolute;
   left: 0;
   bottom: 0;
-  right: 0; }
+  right: 0;
+  z-index: 1; }
 .listing-grid-full-details .listing-grid--right-inner {
   padding: 20px; }
 
