@@ -127,7 +127,6 @@ function listing__features($hide_per_month = false)
             <?php } ?>
         </div>
     </div>
-    x
     <?php
     return ob_get_clean();
 }
