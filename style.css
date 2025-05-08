@@ -11319,6 +11319,9 @@ img {
 
 .icon-list {
   gap: 28px; }
+  .icon-list li {
+    display: flex;
+    gap: 12px; }
 
 @media (min-width: 1500px) {
   .container {
