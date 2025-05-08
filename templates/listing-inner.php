@@ -52,7 +52,7 @@ global $listing_fields;
                     <div class="row g-xs">
                       <div class="col-lg-2">
                         <div class="swiper-gallery-thumbnails">
-
+                          <?php echo listing__gallery('gallery-1', true); ?>
                         </div>
                       </div>
                       <div class="col-lg-10">

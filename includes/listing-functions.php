@@ -173,7 +173,7 @@ function listing__action()
     return ob_get_clean();
 }
 
-function listing__gallery($id)
+function listing__gallery($id, $is_thumbnail = false)
 {
     ob_start();
     ?>
@@ -181,35 +181,42 @@ function listing__gallery($id)
         <div class="zoom">
             <?= get__theme_images('zoom.svg') ?>
         </div>
-        <div class="swiper swiper-gallery h-100">
-            <div class="swiper-wrapper h-100">
-                <div class="swiper-slide h-100">
-                    <a href="<?= wp_get_attachment_image_url(53, 'large') ?>" data-fancybox="<?= $id ?>"
-                        class="d-block image-box image-style h-100">
+        <div class="swiper <?= $is_thumbnail == false ? 'swiper-gallery h-100' : 'swiper-thumbnails' ?>">
+            <div class="swiper-wrapper <?= $is_thumbnail == false ? '' : '' ?>">
+                <div class="swiper-slide <?= $is_thumbnail == false ? '' : '' ?>">
+                    <a href="<?= wp_get_attachment_image_url(53, $is_thumbnail == false ? 'large' : 'medium') ?>"
+                        data-fancybox="<?= $id ?>"
+                        class="d-block image-box image-style <?= $is_thumbnail == false ? '' : '' ?>">
                         <?= wp_get_attachment_image(53, 'large') ?>
                     </a>
                 </div>
-                <div class="swiper-slide h-100">
-                    <a href="<?= wp_get_attachment_image_url(53, 'large') ?>" data-fancybox="<?= $id ?>"
-                        class="d-block image-box image-style h-100">
+
+                <div class="swiper-slide <?= $is_thumbnail == false ? '' : '' ?>">
+                    <a href="<?= wp_get_attachment_image_url(53, $is_thumbnail == false ? 'large' : 'medium') ?>"
+                        data-fancybox="<?= $id ?>"
+                        class="d-block image-box image-style <?= $is_thumbnail == false ? '' : '' ?>">
                         <?= wp_get_attachment_image(53, 'large') ?>
                     </a>
                 </div>
-                <div class="swiper-slide h-100">
-                    <a href="<?= wp_get_attachment_image_url(53, 'large') ?>" data-fancybox="<?= $id ?>"
-                        class="d-block image-box image-style h-100">
+
+                <div class="swiper-slide <?= $is_thumbnail == false ? '' : '' ?>">
+                    <a href="<?= wp_get_attachment_image_url(53, $is_thumbnail == false ? 'large' : 'medium') ?>"
+                        data-fancybox="<?= $id ?>"
+                        class="d-block image-box image-style <?= $is_thumbnail == false ? '' : '' ?>">
                         <?= wp_get_attachment_image(53, 'large') ?>
                     </a>
                 </div>
-                <div class="swiper-slide h-100">
-                    <a href="<?= wp_get_attachment_image_url(53, 'large') ?>" data-fancybox="<?= $id ?>"
-                        class="d-block image-box image-style h-100">
+                <div class="swiper-slide <?= $is_thumbnail == false ? '' : '' ?>">
+                    <a href="<?= wp_get_attachment_image_url(53, $is_thumbnail == false ? 'large' : 'medium') ?>"
+                        data-fancybox="<?= $id ?>"
+                        class="d-block image-box image-style <?= $is_thumbnail == false ? '' : '' ?>">
                         <?= wp_get_attachment_image(53, 'large') ?>
                     </a>
                 </div>
-                <div class="swiper-slide h-100">
-                    <a href="<?= wp_get_attachment_image_url(53, 'large') ?>" data-fancybox="<?= $id ?>"
-                        class="d-block image-box image-style h-100">
+                <div class="swiper-slide <?= $is_thumbnail == false ? '' : '' ?>">
+                    <a href="<?= wp_get_attachment_image_url(53, $is_thumbnail == false ? 'large' : 'medium') ?>"
+                        data-fancybox="<?= $id ?>"
+                        class="d-block image-box image-style <?= $is_thumbnail == false ? '' : '' ?>">
                         <?= wp_get_attachment_image(53, 'large') ?>
                     </a>
                 </div>
