@@ -141,7 +141,7 @@ function listing__action()
 {
     ob_start();
     ?>
-    <ul class="icon-list d-flex list-inline align-items-center">
+    <ul class="icon-list d-flex list-inline align-items-center justify-content-end">
         <li> <?= get__theme_images('share.svg') ?> Share</li>
         <li><?= get__theme_images(file_name: 'save.svg') ?> Save</li>
     </ul>

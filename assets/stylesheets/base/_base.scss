@@ -323,4 +323,8 @@ img {
 
 .icon-list {
     gap: 28px;
+    li {
+        display: flex;
+        gap: 12px;
+    }
 }
