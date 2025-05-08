@@ -227,19 +227,19 @@ global $listing_fields;
                     </div>
                     <div class="listings d-flex flex-column" style="--padding: 37%">
                         <div class="listing-item" id="swiper-gallery-1">
-                            <?= do_shortcode('[listing_grid_full_details]') ?>
+                            <?= do_shortcode('[listing_grid_full_details id="gallery-1"]') ?>
                         </div>
                         <div class="listing-item" id="swiper-gallery-2">
-                            <?= do_shortcode('[listing_grid_full_details style="style-2"]') ?>
+                            <?= do_shortcode('[listing_grid_full_details id="gallery-2" style="style-2"]') ?>
                         </div>
                         <div class="listing-item" id="swiper-gallery-3">
-                            <?= do_shortcode('[listing_grid_full_details style="style-3"]') ?>
+                            <?= do_shortcode('[listing_grid_full_details id="gallery-3" style="style-3"]') ?>
                         </div>
                         <div class="listing-item" id="swiper-gallery-4">
-                            <?= do_shortcode('[listing_grid_full_details]') ?>
+                            <?= do_shortcode('[listing_grid_full_details id="gallery-4"]') ?>
                         </div>
                         <div class="listing-item" id="swiper-gallery-5">
-                            <?= do_shortcode('[listing_grid_full_details]') ?>
+                            <?= do_shortcode('[listing_grid_full_details id="gallery-4"]') ?>
                         </div>
                     </div>
                     <div class="banner mt-20">
