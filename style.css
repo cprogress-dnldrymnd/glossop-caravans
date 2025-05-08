@@ -11306,6 +11306,17 @@ img {
 .listing-filter .form-control-holder label {
   display: none; }
 
+.swiper-button.swiper-button {
+  --swiper-navigation-size: 20px;
+  width: 56px;
+  height: 56px;
+  background-color: var(--bs-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color); }
+
 @media (min-width: 1500px) {
   .container {
     max-width: 1420px; } }
