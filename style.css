@@ -11750,6 +11750,8 @@ h5, .h5 {
     font-size: 21px; }
 .listing-inner-holder .listing-inner--tabs .nav-tabs {
   gap: 18px; }
+  .listing-inner-holder .listing-inner--tabs .nav-tabs > li {
+    flex: 1 0 0%; }
 
 /*-----------------------------------------------------------------------------------*/
 /* Plugins

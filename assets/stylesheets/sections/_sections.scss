@@ -209,7 +209,7 @@
     .listing-inner--tabs {
         .nav-tabs {
             gap: 18px;
-            > li {
+            > .nav-item {
                 flex: 1 0 0%;
             }
         }
