@@ -12,13 +12,13 @@
       </div>
     </div>
     <div class="row g-3 justify-content-between">
-      <div class="col-auto">
+      <div class="col-md-6">
         <h3>Swift Sprite Quattro FB 2024</h3>
         <div class="desc">
           <p>Now on display - ready to view!</p>
         </div>
       </div>
-      <div class="col">
+      <div class="col-md-6">
         <?php
         if ($args['style'] == 'style-2') {
           echo listing__price();
