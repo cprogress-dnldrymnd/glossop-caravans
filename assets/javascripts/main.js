@@ -1,6 +1,13 @@
 jQuery(document).ready(function () {
     swiper_sliders();
+    fancybox();
 });
+
+function fancybox() {
+    Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+    });
+}
 
 function swiper_sliders() {
     var swiper = new Swiper(".swiper-listing", {
