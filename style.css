@@ -11322,9 +11322,11 @@ img {
   .icon-list li {
     display: flex;
     gap: 12px; }
-  .icon-list.icon-list-v2 > li {
-    flex: 0 0 50%;
-    width: 50%; }
+  .icon-list.icon-list-v2 {
+    --width: calc(50% - 14px); }
+    .icon-list.icon-list-v2 > li {
+      flex: 0 0 var(--width);
+      width: var(--width); }
 
 @media (min-width: 1500px) {
   .container {

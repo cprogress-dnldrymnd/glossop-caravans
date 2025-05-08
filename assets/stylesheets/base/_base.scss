@@ -330,9 +330,11 @@ img {
     }
 
     &.icon-list-v2 {
+        --width: calc(50% - 14px);
+
         >li {
-            flex: 0 0 50%;
-            width: 50%;
+            flex: 0 0 var(--width);
+            width: var(--width);
         }
     }
 }
