@@ -2,6 +2,27 @@
   <div class="row g-0">
     <div class="col-lg-7">
       <div class="listing-grid--left-inner">
+        <div class="listing-grid--gallery">
+          <div class="swiper swiper-gallery">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="image-box">
+                  <?= wp_get_attachment_image(53, 'large') ?>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-box">
+                  <?= wp_get_attachment_image(53, 'large') ?>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-box">
+                  <?= wp_get_attachment_image(53, 'large') ?>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <?= listing__price() ?>
       </div>
     </div>
