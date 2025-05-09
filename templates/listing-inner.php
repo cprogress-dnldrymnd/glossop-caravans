@@ -44,7 +44,7 @@ global $listing_fields;
                 </div>
               </div>
             </div>
-            <div class="listing-inner--tabs">
+            <div class="listing-inner--tabs mb-xs pb-20">
               <div class="tab-content mb-3" id="listingInner--Tab">
                 <div class="tab-pane fade show active" id="gallery-tab-pane" role="tabpanel"
                   aria-labelledby="gallery-tab" tabindex="0">

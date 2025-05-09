@@ -43,8 +43,8 @@
 }
 
 :root {
-    --xxs-padding: 20px;
-    --xs-padding: 40px;
+    --xxs-spacing: 20px;
+    --xs-spacing: 40px;
     --sm-spacing: 60px;
     --md-spacing: 80px;
     --lg-spacing: 100px;
@@ -87,16 +87,20 @@
     padding: var(--md-spacing);
 }
 
-.xxs-padding {
-    padding: var(--xxs-padding);
+.xxs-spacing {
+    padding: var(--xxs-spacing);
 }
 
-.xxs-padding-top {
-    padding-top: var(--xxs-padding);
+.xxs-spacing-top {
+    padding-top: var(--xxs-spacing);
 }
 
-.xs-padding {
-    padding: var(--xs-padding);
+.xs-spacing {
+    padding: var(--xs-spacing);
+}
+
+.xs-margin-bottom {
+    margin-bottom: var(--xs-spacing);
 }
 
 .text-orange {
@@ -115,10 +119,12 @@
     --bs-gutter-x: 8px;
     --bs-gutter-y: 8px;
 }
+
 .g-xs {
     --bs-gutter-x: 16px;
     --bs-gutter-y: 16px;
 }
+
 .col-no-gap {
     gap: 0 !important;
 }
@@ -144,4 +150,12 @@
 
 .mt-20 {
     margin-top: 20px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.p-20 {
+    padding: 20px;
 }
