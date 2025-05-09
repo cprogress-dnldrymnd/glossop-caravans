@@ -171,3 +171,7 @@
 .p-20 {
     padding: 20px;
 }
+
+.box-shadow {
+    @include box-shadow(0px 8px 22px #00000014);
+}

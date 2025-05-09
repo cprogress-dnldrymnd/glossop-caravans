@@ -198,11 +198,11 @@ global $listing_fields;
                     <div class="col-lg-9">
                       <?php
                       echo form_control(array(
-                        'type'    => 'text',
-                        'name'    => 'registration',
-                        'id'      => 'registration',
-                        'label'   => 'Enter registration number',
-                        'class'   => 'form-control-lg',
+                        'type'        => 'text',
+                        'name'        => 'registration',
+                        'id'          => 'registration',
+                        'label'       => 'Enter registration number',
+                        'class'       => 'form-control-lg',
                         'placeholder' => 'E.G. PN24 MVS'
                       ));
                       ?>
@@ -220,7 +220,11 @@ global $listing_fields;
         </div>
         <div class="col-lg-3">
           <div class="listing-inner--right">
-
+            <div class="cta finance-calculator">
+              <div class="cta--iner p-20 rounded box-shadow">
+                <h3 class="fs-32">md-margin-bottom</h3>
+              </div>
+            </div>
           </div>
         </div>
       </div>
