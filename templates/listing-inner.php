@@ -187,7 +187,7 @@ global $listing_fields;
                 </div>
               </div>
             </div>
-            <div class="calculator-form">
+            <div class="calculator-form p-5 rounded">
               <div class="calculator-form-inner background-lightgray-3">
                 <h3>What can I tow?</h3>
                 <div class="desc">
