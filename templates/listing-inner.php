@@ -109,7 +109,7 @@ global $listing_fields;
                 <p><a href="#" class="fw-semibold">Read more</a></p>
               </div>
             </div>
-            <div class="listing-inner--specifications">
+            <div class="listing-inner--specifications md-margin-bottom">
               <div class="listing-filter accordion-style-1">
                 <div class="accordion rounded border overflow-hidden" id="accordionSpecs">
                   <div class="accordion-item">
@@ -185,6 +185,38 @@ global $listing_fields;
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div class="calculator-form">
+              <div class="calculator-form-inner background-lightgray-3">
+                <h3>What can I tow?</h3>
+                <div class="desc">
+                  <p>Use our calculator to find out your maximum towing capacity.</p>
+                </div>
+                <form action="">
+                  <div class="row">
+                    <div class="col-lg-9">
+                      <?php
+                      echo form_control(array(
+                        'type'    => 'text',
+                        'name'    => 'registration',
+                        'id'      => 'registration',
+                        'label'   => 'Enter registration number',
+                        'class'   => 'form-control-lg',
+                        'options' => array(
+                          ''         => 'Sort 1',
+                          'Option 1' => 'Option 1',
+                          'Option 2' => 'Option 2',
+                          'Option 3' => 'Option 3',
+                          'Option 4' => 'Option 4',
+                          'Option 5' => 'Option 5',
+                          'Option 6' => ' Option6',
+                        ),
+                      ));
+                      ?>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>

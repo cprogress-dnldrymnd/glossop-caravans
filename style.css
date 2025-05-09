@@ -11052,6 +11052,7 @@ button.swiper-pagination-bullet {
   --dark-color: #505050;
   --lightgray-color: #f5f5f5;
   --lightgray-color-2: #F2F2F2;
+  --lightgray-color-3: #F9F9F9;
   --bs-border-radius: 5px;
   --bs-border-color: #CDCDCD; }
 
@@ -11371,6 +11372,12 @@ span.icons {
 .background-lightgray {
   background-color: var(--lightgray-color); }
 
+.background-lightgray-2 {
+  background-color: var(--lightgray-color-2); }
+
+.background-lightgray-3 {
+  background-color: var(--lightgray-color-3); }
+
 .full-image img {
   width: 100%; }
 
@@ -11419,6 +11426,9 @@ span.icons {
   padding: var(--xs-spacing); }
 
 .xs-margin-bottom {
+  margin-bottom: var(--xs-spacing); }
+
+.md-margin-bottom {
   margin-bottom: var(--xs-spacing); }
 
 .text-orange {

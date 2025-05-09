@@ -35,7 +35,12 @@
 .background-lightgray {
     background-color: var(--lightgray-color);
 }
-
+.background-lightgray-2 {
+    background-color: var(--lightgray-color-2);
+}
+.background-lightgray-3 {
+    background-color: var(--lightgray-color-3);
+}
 .full-image {
     img {
         width: 100%;
@@ -102,7 +107,9 @@
 .xs-margin-bottom {
     margin-bottom: var(--xs-spacing);
 }
-
+.md-margin-bottom {
+    margin-bottom: var(--xs-spacing);
+}
 .text-orange {
     color: var(--orange-color);
 }
