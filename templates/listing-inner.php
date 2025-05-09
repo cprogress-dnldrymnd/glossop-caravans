@@ -94,7 +94,7 @@ global $listing_fields;
             <div class="listing-key--info">
               <h4 class="fs-35">Key Information</h4>
               <?php
-              echo listing__key_information();
+              echo listing__key_information_v2();
               ?>
             </div>
           </div>
