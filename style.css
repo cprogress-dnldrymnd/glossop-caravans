@@ -11384,6 +11384,8 @@ img {
       width: var(--width); }
   .icon-list.icon-list-v3 {
     gap: 18px; }
+    .icon-list.icon-list-v3 span {
+      text-decoration: underline; }
 
 span.icons {
   display: flex;
