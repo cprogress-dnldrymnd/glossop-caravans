@@ -246,6 +246,27 @@ global $listing_fields;
                 </div>
               </div>
             </div>
+
+            <div class="cta cta--contact-information">
+              <div class="cta--iner p-20 rounded box-shadow">
+                <h3 class="fs-32">Contact information</h3>
+                <ul
+                  class="icon-list mb-0 icon-list-v3 d-flex list-inline align-items-center justify-content-end fw-semibold flex-wrap fs-18">
+                  <li>
+                    <?php get__theme_icons('phone.svg') ?>
+                    <span><a href="tel:01457 868 011">01457 868 011</a></span>
+                  </li>
+                  <li>
+                    <?php get__theme_icons('whatsapp.svg') ?>
+                    <span><a href="tel:07525 491 913">07525 491 913</a></span>
+                  </li>
+                  <li>
+                    <?php get__theme_icons('location.svg') ?>
+                    <span><a href="#">Location</a></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
