@@ -220,7 +220,7 @@ global $listing_fields;
         </div>
         <div class="col-lg-3">
           <div class="listing-inner--right">
-            <div class="cta finance-calculator">
+            <div class="cta cta--finance-calculator">
               <div class="cta--iner p-20 rounded box-shadow">
                 <h3 class="fs-32">Finance calculator</h3>
                 <div class="desc mb-20">
@@ -231,6 +231,18 @@ global $listing_fields;
                 </div>
                 <div class="image-box">
                   <?= wp_get_attachment_image(194, 'medium') ?>
+                </div>
+              </div>
+            </div>
+
+            <div class="cta cta--reserve">
+              <div class="cta--iner p-20 rounded box-shadow">
+                <h3 class="fs-32">Reserve online</h3>
+                <div class="desc mb-20">
+                  <p>Interested in this caravan? Reserve online and temporarily remove from sale</p>
+                </div>
+                <div class="button-box ">
+                  <a class="btn btn-primary w-100">Reserve now</a>
                 </div>
               </div>
             </div>
