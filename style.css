@@ -11466,13 +11466,13 @@ span.icons {
 .md-padding {
   padding: var(--md-spacing); }
 
-.xxs-spacing {
+.xxs-padding {
   padding: var(--xxs-spacing); }
 
-.xxs-spacing-top {
+.xxs-padding-top {
   padding-top: var(--xxs-spacing); }
 
-.xs-spacing {
+.xs-padding {
   padding: var(--xs-spacing); }
 
 .xs-margin-bottom {
