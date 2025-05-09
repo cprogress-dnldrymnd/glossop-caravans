@@ -118,7 +118,7 @@ global $listing_fields;
                         data-bs-target="#collapseSort-by" aria-expanded="false" aria-controls="collapseSort-by">
                         <span class="accordion-button-inner">
                           <span class="icon-text">
-                            <span class="icon"><?= get__theme_images('berths.svg') ?></span>
+                            <span class="icon"><?= get__theme_icons('berths.svg') ?></span>
                             Interior Features
                           </span>
                         </span>
@@ -142,7 +142,7 @@ global $listing_fields;
                         data-bs-target="#collapseSort-by" aria-expanded="false" aria-controls="collapseSort-by">
                         <span class="accordion-button-inner">
                           <span class="icon-text">
-                            <span class="icon"><?= get__theme_images('caravan.svg') ?></span>
+                            <span class="icon"><?= get__theme_icons('caravan.svg') ?></span>
                             Exterior Features
                           </span>
                         </span>
@@ -166,7 +166,7 @@ global $listing_fields;
                         data-bs-target="#collapseSort-by" aria-expanded="false" aria-controls="collapseSort-by">
                         <span class="accordion-button-inner">
                           <span class="icon-text">
-                            <span class="icon"><?= get__theme_images('warranty.svg') ?></span>
+                            <span class="icon"><?= get__theme_icons('warranty.svg') ?></span>
                             Warranty
                           </span>
                         </span>
