@@ -161,13 +161,18 @@ function listing__price()
     return ob_get_clean();
 }
 
-function listing__action()
+function listing__action($share = true, $save = true)
 {
     ob_start();
     ?>
     <ul class="icon-list mb-0 d-flex list-inline align-items-center justify-content-end fw-semibold">
-        <li> <?= get__theme_images('share.svg') ?> Share</li>
-        <li><?= get__theme_images('save.svg') ?> Save</li>
+        <?php if ($share == true) { ?>
+            <li><?= get__theme_images('share.svg') ?> Share</li>
+        <?php } ?>
+        <?php if ($save == true) { ?>
+            <li><?= get__theme_images('save.svg') ?> Save</li>
+        <?php } ?>
+
     </ul>
     <?php
     return ob_get_clean();
@@ -242,8 +247,7 @@ function listing__key_information_simple()
 {
     ob_start();
     ?>
-    <ul
-        class="icon-list mb-0 icon-list-v4 d-flex list-inline align-items-center flex-wrap fs-18">
+    <ul class="icon-list mb-0 icon-list-v4 d-flex list-inline align-items-center flex-wrap fs-18">
         <li> <?= get__theme_images('berths.svg') ?> 4 Berth</li>
         <li><?= get__theme_images('year.svg') ?> 2024</li>
     </ul>
