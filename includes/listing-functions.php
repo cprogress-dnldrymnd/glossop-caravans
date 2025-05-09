@@ -264,37 +264,37 @@ function listing__key_information_v2()
     <ul
         class="icon-list mb-0 icon-list-v2 d-flex list-inline align-items-center justify-content-end fw-semibold flex-wrap fs-18">
         <li class="border-bottom py-3"> <?= get__theme_images('berths.svg') ?>
-            <span>
+            <span class="col d-flex justify-content-between">
                 <span>Berth</span>
                 <span>6</span>
             </span>
         </li>
         <li class="border-bottom py-3"><?= get__theme_images('year.svg') ?>
-            <span>
+            <span class="col d-flex justify-content-between">
                 <span>Unladen Weight</span>
                 <span>1450kg</span>
             </span>
         </li>
         <li class="border-bottom py-3"><?= get__theme_images('year.svg') ?>
-            <span>
+            <span class="col d-flex justify-content-between">
                 <span>Year</span>
                 <span>2024</span>
             </span>
         </li>
         <li class="border-bottom py-3"><?= get__theme_images('kg.svg') ?>
-            <span>
+            <span class="col d-flex justify-content-between">
                 <span>MTPLM</span>
                 <span>1630kg</span>
             </span>
         </li>
         <li class="border-bottom py-3"><?= get__theme_images('awning-size.svg') ?>
-            <span>
+            <span class="col d-flex justify-content-between">
                 <span>Awning Size</span>
                 <span>10.52m</span>
             </span>
         </li>
         <li class="border-bottom py-3"><?= get__theme_images('dimensions.svg') ?>
-            <span>
+            <span class="col d-flex justify-content-between">
                 <span>Dimensions</span>
                 <span>L 7.98m x W 2.25m</span>
             </span>

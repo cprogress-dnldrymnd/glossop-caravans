@@ -11793,6 +11793,8 @@ h5, .h5 {
       .listing-inner-holder .listing-inner--tabs .nav-tabs > .nav-item .nav-link.active {
         background-color: var(--dark-color);
         color: var(--bs-white); }
+.listing-inner-holder .listing-key--info .icon-list-v2 {
+  row-gap: 0; }
 
 /*-----------------------------------------------------------------------------------*/
 /* Plugins
