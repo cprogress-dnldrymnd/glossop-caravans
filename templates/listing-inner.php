@@ -9,7 +9,7 @@ global $listing_fields;
 ?>
 <div class="site-content listing-inner">
   <div class="container md-padding-top md-padding-bottom">
-    <div class="listing-inner-holder">
+    <div class="listing-inner-holder md-margin-bottom">
       <div class="row g-4">
         <div class="col-lg-9">
           <div class="listing-inner--left">
@@ -250,8 +250,7 @@ global $listing_fields;
             <div class="cta cta--contact-information">
               <div class="cta--iner p-20 rounded box-shadow">
                 <h3 class="fs-32">Contact information</h3>
-                <ul
-                  class="icon-list mb-0 icon-list-v3 d-flex flex-column list-inline  flex-wrap">
+                <ul class="icon-list mb-0 icon-list-v3 d-flex flex-column list-inline  flex-wrap">
                   <li>
                     <?= get__theme_icons(file_name: 'phone.svg') ?>
                     <span><a href="tel:01457 868 011">01457 868 011</a></span>
@@ -261,11 +260,36 @@ global $listing_fields;
                     <span><a href="tel:07525 491 913">07525 491 913</a></span>
                   </li>
                   <li>
-                    <?= get__theme_icons('location.svg') ?>
+
                     <span><a href="#">Location</a></span>
                   </li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="listine-inner--related">
+      <h2>You may also like</h2>
+      <div class="swiper-holder">
+        <div class="swiper swiper-listing">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <?= do_shortcode('[listing_grid]') ?>
+            </div>
+            <div class="swiper-slide">
+              <?= do_shortcode('[listing_grid]') ?>
+            </div>
+            <div class="swiper-slide">
+              <?= do_shortcode('[listing_grid]') ?>
+            </div>
+            <div class="swiper-slide">
+              <?= do_shortcode('[listing_grid]') ?>
+            </div>
+            <div class="swiper-slide">
+              <?= do_shortcode('[listing_grid]') ?>
             </div>
           </div>
         </div>
