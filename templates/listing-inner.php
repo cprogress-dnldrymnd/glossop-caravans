@@ -190,11 +190,11 @@ global $listing_fields;
             <div class="calculator-form p-5 rounded">
               <div class="calculator-form-inner background-lightgray-3">
                 <h3>What can I tow?</h3>
-                <div class="desc">
+                <div class="desc mb-5">
                   <p>Use our calculator to find out your maximum towing capacity.</p>
                 </div>
                 <form action="">
-                  <div class="row">
+                  <div class="row g-3 align-items-end">
                     <div class="col-lg-9">
                       <?php
                       echo form_control(array(
@@ -203,15 +203,7 @@ global $listing_fields;
                         'id'      => 'registration',
                         'label'   => 'Enter registration number',
                         'class'   => 'form-control-lg',
-                        'options' => array(
-                          ''         => 'Sort 1',
-                          'Option 1' => 'Option 1',
-                          'Option 2' => 'Option 2',
-                          'Option 3' => 'Option 3',
-                          'Option 4' => 'Option 4',
-                          'Option 5' => 'Option 5',
-                          'Option 6' => ' Option6',
-                        ),
+                        'placeholder' => 'E.G. PN24 MVS'
                       ));
                       ?>
                     </div>
