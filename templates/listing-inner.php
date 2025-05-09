@@ -115,7 +115,7 @@ global $listing_fields;
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseSort-by" aria-expanded="false" aria-controls="collapseSort-by">
+                        data-bs-target="#collapseInterior" aria-expanded="false" aria-controls="collapseInterior">
                         <span class="accordion-button-inner">
                           <span class="icon-text">
                             <span class="icon"><?= get__theme_icons('berths.svg') ?></span>
@@ -124,7 +124,7 @@ global $listing_fields;
                         </span>
                       </button>
                     </h2>
-                    <div id="collapseSort-by" class="accordion-collapse collapse" data-bs-parent="#accordionSpecs">
+                    <div id="collapseInterior" class="accordion-collapse collapse" data-bs-parent="#accordionSpecs">
                       <div class="accordion-body">
                         <ul>
                           <li>Ut velit odio totam illo</li>
@@ -139,7 +139,7 @@ global $listing_fields;
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseSort-by" aria-expanded="false" aria-controls="collapseSort-by">
+                        data-bs-target="#collapseExterior" aria-expanded="false" aria-controls="collapseExterior">
                         <span class="accordion-button-inner">
                           <span class="icon-text">
                             <span class="icon"><?= get__theme_icons('caravan.svg') ?></span>
@@ -148,7 +148,7 @@ global $listing_fields;
                         </span>
                       </button>
                     </h2>
-                    <div id="collapseSort-by" class="accordion-collapse collapse" data-bs-parent="#accordionSpecs">
+                    <div id="collapseExterior" class="accordion-collapse collapse" data-bs-parent="#accordionSpecs">
                       <div class="accordion-body">
                         <ul>
                           <li>Ut velit odio totam illo</li>
@@ -163,7 +163,7 @@ global $listing_fields;
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseSort-by" aria-expanded="false" aria-controls="collapseSort-by">
+                        data-bs-target="#collapseWarranty" aria-expanded="false" aria-controls="collapseWarranty">
                         <span class="accordion-button-inner">
                           <span class="icon-text">
                             <span class="icon"><?= get__theme_icons('warranty.svg') ?></span>
@@ -172,7 +172,7 @@ global $listing_fields;
                         </span>
                       </button>
                     </h2>
-                    <div id="collapseSort-by" class="accordion-collapse collapse" data-bs-parent="#accordionSpecs">
+                    <div id="collapseWarranty" class="accordion-collapse collapse" data-bs-parent="#accordionSpecs">
                       <div class="accordion-body">
                         <ul>
                           <li>Ut velit odio totam illo</li>
