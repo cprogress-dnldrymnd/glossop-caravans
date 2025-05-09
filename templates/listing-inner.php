@@ -96,6 +96,9 @@ global $listing_fields;
               <?php
               echo listing__key_information_v2();
               ?>
+              <div class="awning-image image-box image-style mb-20" style="--fit: contain; --padding: 18%">
+                <?= wp_get_attachment_image(189, 'large') ?>
+              </div>
             </div>
           </div>
         </div>
