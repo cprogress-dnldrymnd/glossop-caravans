@@ -28,7 +28,7 @@
     </div>
     <div class="listing-grid-item__bottom">
         <?php if ($args['style'] == 'style-2') { ?>
-            <h3>Swift Elegance Grande 780</h3>
+            <h3 class="fs-23">Swift Elegance Grande 780</h3>
             <div class="desc mb-3 mt-3">
                 <p>Step into luxury with the Swift Elegance Grande 780.</p>
             </div>
