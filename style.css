@@ -11745,7 +11745,7 @@ h5, .h5 {
     padding: 20px; }
   .listing-grid .listing-grid-item__bottom {
     padding: 20px; }
-  .listing-grid.style-2 .listing-grid__feature {
+  .listing-grid.style-2 .listing-grid--feature--action {
     position: absolute;
     z-index: 1;
     top: 15px;
