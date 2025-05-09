@@ -11749,7 +11749,11 @@ h5, .h5 {
     position: absolute;
     z-index: 1;
     top: 15px;
-    left: 15px; }
+    left: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    right: 15px; }
 
 .listing-grid-item__prices .grid-item__price-inner {
   background-color: var(--lightgray-color);
