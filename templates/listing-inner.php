@@ -96,8 +96,16 @@ global $listing_fields;
               <?php
               echo listing__key_information_v2();
               ?>
-              <div class="awning-image image-box border-bottom">
+              <div class="awning-image image-box border-bottom xs-margin-bottom">
                 <?= wp_get_attachment_image(189, 'large') ?>
+              </div>
+            </div>
+            <div class="listing-inner--description">
+              <h4 class="fs-35">Description</h4>
+              <div class="desc">
+                <p>The Swift Challenger 530 2008 is a practical and family-friendly caravan, offering a flexible 4-berth
+                  layout and a spacious separate end washroom. Designed with comfort and functionality in mind, it's
+                  ideal for couples or small families who value a well-organised living space.</p>
               </div>
             </div>
           </div>
