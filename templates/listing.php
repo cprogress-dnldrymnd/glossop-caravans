@@ -13,7 +13,7 @@ global $listing_fields;
             <h2 class="mb-5">We found <span class="text-orange">59</span> caravans for you</h2>
             <div class="row g-4">
                 <div class="col-lg-3">
-                    <div class="listing-filter accordion-style-1">
+                    <div class="listing-filter sticky-element accordion-style-1">
                         <div class="accordion rounded" id="accordionFilter">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">

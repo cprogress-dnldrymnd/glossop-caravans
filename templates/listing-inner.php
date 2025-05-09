@@ -219,7 +219,7 @@ global $listing_fields;
           </div>
         </div>
         <div class="col-lg-3">
-          <div class="listing-inner--right">
+          <div class="listing-inner--right sticky-element">
             <div class="cta cta--finance-calculator mb-4">
               <div class="cta--iner p-20 rounded box-shadow">
                 <h3 class="fs-32">Finance calculator</h3>

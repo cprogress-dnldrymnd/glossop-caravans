@@ -11305,55 +11305,56 @@ img {
     padding-left: 20px;
     padding-right: 20px; }
 
-.accordion-style-1 {
+.sticky-element {
   position: sticky;
   position: -webkit-sticky;
   top: 0; }
-  .accordion-style-1 .accordion {
-    padding: 20px;
-    background-color: var(--bs-white); }
-    .accordion-style-1 .accordion .accordion-item {
-      border-left: none;
-      border-right: none;
-      --bs-accordion-border-color: #ECECEC; }
-      .accordion-style-1 .accordion .accordion-item:first-child {
-        border-top: none; }
-      .accordion-style-1 .accordion .accordion-item:last-child {
-        border-bottom: none; }
-      .accordion-style-1 .accordion .accordion-item .accordion-body {
-        --bs-accordion-body-padding-x: 0; }
-  .accordion-style-1 .accordion-button {
-    --bs-accordion-inner-border-radius: 0;
-    --bs-accordion-inner-border-radius: 0;
-    --bs-accordion-btn-padding-x: 0;
+
+.accordion-style-1 .accordion {
+  padding: 20px;
+  background-color: var(--bs-white); }
+  .accordion-style-1 .accordion .accordion-item {
+    border-left: none;
+    border-right: none;
+    --bs-accordion-border-color: #ECECEC; }
+    .accordion-style-1 .accordion .accordion-item:first-child {
+      border-top: none; }
+    .accordion-style-1 .accordion .accordion-item:last-child {
+      border-bottom: none; }
+    .accordion-style-1 .accordion .accordion-item .accordion-body {
+      --bs-accordion-body-padding-x: 0; }
+.accordion-style-1 .accordion-button {
+  --bs-accordion-inner-border-radius: 0;
+  --bs-accordion-inner-border-radius: 0;
+  --bs-accordion-btn-padding-x: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-weight: bold;
+  font-size: 19px; }
+  .accordion-style-1 .accordion-button .accordion-button-inner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 20px;
-    font-weight: bold;
-    font-size: 19px; }
-    .accordion-style-1 .accordion-button .accordion-button-inner {
+    flex-grow: 1;
+    justify-content: space-between; }
+    .accordion-style-1 .accordion-button .accordion-button-inner .icon-text {
       display: flex;
       align-items: center;
-      gap: 20px;
-      flex-grow: 1;
-      justify-content: space-between; }
-      .accordion-style-1 .accordion-button .accordion-button-inner .icon-text {
-        display: flex;
-        align-items: center;
-        gap: 20px; }
-    .accordion-style-1 .accordion-button:after {
-      flex: 0 0 auto;
-      margin-left: 0; }
-    .accordion-style-1 .accordion-button .icon {
-      flex: 0 0 32px; }
-      .accordion-style-1 .accordion-button .icon img,
-      .accordion-style-1 .accordion-button .icon svg {
-        width: 32px;
-        height: 32px;
-        object-fit: contain; }
-  .accordion-style-1 .form-control-holder label {
-    display: none; }
+      gap: 20px; }
+  .accordion-style-1 .accordion-button:after {
+    flex: 0 0 auto;
+    margin-left: 0; }
+  .accordion-style-1 .accordion-button .icon {
+    flex: 0 0 32px; }
+    .accordion-style-1 .accordion-button .icon img,
+    .accordion-style-1 .accordion-button .icon svg {
+      width: 32px;
+      height: 32px;
+      object-fit: contain; }
+.accordion-style-1 .form-control-holder label {
+  display: none; }
 
 .swiper-button.swiper-button {
   --swiper-navigation-size: 20px;
