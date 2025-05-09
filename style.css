@@ -11383,6 +11383,9 @@ img {
       width: var(--width); }
   .icon-list.icon-list-v3 {
     gap: 18px; }
+    .icon-list.icon-list-v3 li svg {
+      flex: 0 0 20px;
+      width: 20px; }
 
 span.icons {
   display: flex;
