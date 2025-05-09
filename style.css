@@ -11745,6 +11745,9 @@ h5, .h5 {
     padding: 20px; }
   .listing-grid .listing-grid-item__bottom {
     padding: 20px; }
+  .listing-grid.style-2 .listing-grid--key-information .icon-list-v4 li svg, .listing-grid.style-2 .listing-grid--key-information .icon-list-v4 li img {
+    width: 24px;
+    height: 20px; }
   .listing-grid.style-2 .listing-grid--feature--action {
     position: absolute;
     z-index: 1;

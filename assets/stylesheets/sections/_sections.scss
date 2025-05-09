@@ -70,6 +70,19 @@
     }
 
     &.style-2 {
+        .listing-grid--key-information {
+            .icon-list-v4 {
+                li {
+
+                    svg,
+                    img {
+                        width: 24px;
+                        flex: 0 0 20px;
+                    }
+                }
+            }
+        }
+
         .listing-grid--feature--action {
             position: absolute;
             z-index: 1;
