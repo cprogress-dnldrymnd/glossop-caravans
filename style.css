@@ -11478,6 +11478,9 @@ span.icons {
 .xs-margin-bottom {
   margin-bottom: var(--xs-spacing); }
 
+.sm-margin-bottom {
+  margin-bottom: var(--sm-spacing); }
+
 .md-margin-bottom {
   margin-bottom: var(--md-spacing); }
 

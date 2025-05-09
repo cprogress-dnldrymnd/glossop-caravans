@@ -272,7 +272,7 @@ global $listing_fields;
     </div>
 
     <div class="listine-inner--related">
-      <h2>You may also like</h2>
+      <h2 class="sm-margin-bottom">You may also like</h2>
       <div class="swiper-holder">
         <div class="swiper swiper-listing">
           <div class="swiper-wrapper">
