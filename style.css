@@ -11370,8 +11370,7 @@ img {
 .icon-list {
   gap: 28px; }
   .icon-list a {
-    color: inherit;
-    text-decoration: none; }
+    color: inherit; }
   .icon-list li {
     display: flex;
     gap: 12px;
@@ -11384,8 +11383,6 @@ img {
       width: var(--width); }
   .icon-list.icon-list-v3 {
     gap: 18px; }
-    .icon-list.icon-list-v3 span {
-      text-decoration: underline; }
 
 span.icons {
   display: flex;
