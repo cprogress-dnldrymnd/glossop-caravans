@@ -223,6 +223,10 @@ global $listing_fields;
             <div class="cta finance-calculator">
               <div class="cta--iner p-20 rounded box-shadow">
                 <h3 class="fs-32">md-margin-bottom</h3>
+                <div class="desc">
+                  <p>7.9% available, calculate the cost of your caravan or motorhome</p>
+                </div>
+                <a class="btn btn-primary w-100">Search</a>
               </div>
             </div>
           </div>
