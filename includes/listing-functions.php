@@ -189,37 +189,37 @@ function listing__gallery($id, $is_thumbnail = false)
                         <?= wp_get_attachment_image(53, $is_thumbnail == false ? 'large' : 'medium') ?>
                     </a>
                 </div>
-                 <div class="swiper-slide <?= $is_thumbnail == false ? 'h-100' : '' ?>">
+                <div class="swiper-slide <?= $is_thumbnail == false ? 'h-100' : '' ?>">
                     <a href="<?= wp_get_attachment_image_url(53, 'full') ?>" <?= $is_thumbnail == false ? 'data-fancybox="' . $id . '"' : '' ?>
                         class="d-block image-box image-style <?= $is_thumbnail == false ? 'h-100' : '' ?>">
                         <?= wp_get_attachment_image(53, $is_thumbnail == false ? 'large' : 'medium') ?>
                     </a>
                 </div>
-                 <div class="swiper-slide <?= $is_thumbnail == false ? 'h-100' : '' ?>">
+                <div class="swiper-slide <?= $is_thumbnail == false ? 'h-100' : '' ?>">
                     <a href="<?= wp_get_attachment_image_url(53, 'full') ?>" <?= $is_thumbnail == false ? 'data-fancybox="' . $id . '"' : '' ?>
                         class="d-block image-box image-style <?= $is_thumbnail == false ? 'h-100' : '' ?>">
                         <?= wp_get_attachment_image(53, $is_thumbnail == false ? 'large' : 'medium') ?>
                     </a>
                 </div>
-                 <div class="swiper-slide <?= $is_thumbnail == false ? 'h-100' : '' ?>">
+                <div class="swiper-slide <?= $is_thumbnail == false ? 'h-100' : '' ?>">
                     <a href="<?= wp_get_attachment_image_url(53, 'full') ?>" <?= $is_thumbnail == false ? 'data-fancybox="' . $id . '"' : '' ?>
                         class="d-block image-box image-style <?= $is_thumbnail == false ? 'h-100' : '' ?>">
                         <?= wp_get_attachment_image(53, $is_thumbnail == false ? 'large' : 'medium') ?>
                     </a>
                 </div>
-                 <div class="swiper-slide <?= $is_thumbnail == false ? 'h-100' : '' ?>">
+                <div class="swiper-slide <?= $is_thumbnail == false ? 'h-100' : '' ?>">
                     <a href="<?= wp_get_attachment_image_url(53, 'full') ?>" <?= $is_thumbnail == false ? 'data-fancybox="' . $id . '"' : '' ?>
                         class="d-block image-box image-style <?= $is_thumbnail == false ? 'h-100' : '' ?>">
                         <?= wp_get_attachment_image(53, $is_thumbnail == false ? 'large' : 'medium') ?>
                     </a>
                 </div>
-                 <div class="swiper-slide <?= $is_thumbnail == false ? 'h-100' : '' ?>">
+                <div class="swiper-slide <?= $is_thumbnail == false ? 'h-100' : '' ?>">
                     <a href="<?= wp_get_attachment_image_url(53, 'full') ?>" <?= $is_thumbnail == false ? 'data-fancybox="' . $id . '"' : '' ?>
                         class="d-block image-box image-style <?= $is_thumbnail == false ? 'h-100' : '' ?>">
                         <?= wp_get_attachment_image(53, $is_thumbnail == false ? 'large' : 'medium') ?>
                     </a>
                 </div>
-                 <div class="swiper-slide <?= $is_thumbnail == false ? 'h-100' : '' ?>">
+                <div class="swiper-slide <?= $is_thumbnail == false ? 'h-100' : '' ?>">
                     <a href="<?= wp_get_attachment_image_url(53, 'full') ?>" <?= $is_thumbnail == false ? 'data-fancybox="' . $id . '"' : '' ?>
                         class="d-block image-box image-style <?= $is_thumbnail == false ? 'h-100' : '' ?>">
                         <?= wp_get_attachment_image(53, $is_thumbnail == false ? 'large' : 'medium') ?>
@@ -251,6 +251,54 @@ function listing__key_information()
             Twin axle</li>
         <li><?= get__theme_images('kg.svg') ?> MTPLM 1630kg</li>
         <li><?= get__theme_images('awning-size.svg') ?> 10.52m Awning Size</li>
+    </ul>
+    <?php
+    return ob_get_clean();
+}
+
+
+function listing__key_information_v2()
+{
+    ob_start();
+    ?>
+    <ul
+        class="icon-list mb-0 icon-list-v2 d-flex list-inline align-items-center justify-content-end fw-semibold flex-wrap fs-18">
+        <li> <?= get__theme_images('berths.svg') ?>
+            <span>
+                <span>Berth</span>
+                <span>6</span>
+            </span>
+        </li>
+        <li><?= get__theme_images('year.svg') ?>
+            <span>
+                <span>Unladen Weight</span>
+                <span>1450kg</span>
+            </span>
+        </li>
+        <li><?= get__theme_images('year.svg') ?>
+            <span>
+                <span>Year</span>
+                <span>2024</span>
+            </span>
+        </li>
+        <li><?= get__theme_images('kg.svg') ?>
+            <span>
+                <span>MTPLM</span>
+                <span>1630kg</span>
+            </span>
+        </li>
+        <li><?= get__theme_images('awning-size.svg') ?>
+            <span>
+                <span>Awning Size</span>
+                <span>10.52m</span>
+            </span>
+        </li>
+        <li><?= get__theme_images('dimensions.svg') ?>
+            <span>
+                <span>Dimensions</span>
+                <span>L 7.98m x W 2.25m</span>
+            </span>
+        </li>
     </ul>
     <?php
     return ob_get_clean();
