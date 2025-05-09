@@ -1,3 +1,10 @@
+.btn {
+    --bs-btn-font-size: 20px;
+    --bs-btn-padding-x: 20px;
+    --bs-btn-padding-y: 20px;
+    --bs-btn-border-radius: 5px;
+}
+
 .btn-lg {
     --bs-btn-padding-y: 25px;
     --bs-btn-padding-x: 50px;
@@ -27,6 +34,7 @@
     --bs-btn-disabled-bg: var(--orange-color);
     --bs-btn-disabled-border-color: var(--orange-color);
 }
+
 .btn-secondary {
     --bs-btn-color: var(--bs-white);
     --bs-btn-bg: var(--teal-color);
@@ -43,6 +51,7 @@
     --bs-btn-disabled-bg: var(--teal-color);
     --bs-btn-disabled-border-color: var(--teal-color);
 }
+
 .nav-tabs {
     --bs-nav-link-font-size: 20px;
     --bs-nav-link-color: var(--bs-black);
