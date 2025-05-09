@@ -22,8 +22,7 @@
             </div>
         </div>
         <div class="listing-grid__image image-style">
-            <img src="https://newglossopacaravans.theprogressteam.co.uk/wp-content/uploads/2025/05/glossop-img-removebg-preview.png"
-                alt="">
+            <?= wp_get_attachment_image($args['image_id'], 'large') ?>
         </div>
     </div>
     <div class="listing-grid-item__bottom">

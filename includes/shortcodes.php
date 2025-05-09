@@ -17,11 +17,13 @@ function listing_grid($atts)
         shortcode_atts(
             array(
                 'style' => 'style-1',
+                'image_id' => 47
             ),
             $atts
         )
     );
     $args['style'] = $style;
+    $args['image_id'] = $image_id;
     get_template_part('template-parts/shortcodes/listing-grid', NULL, $args);
     return ob_get_clean();
 }
