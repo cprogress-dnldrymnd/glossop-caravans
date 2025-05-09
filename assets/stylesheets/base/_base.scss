@@ -242,6 +242,7 @@ img {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+
     .accordion {
         padding: 20px;
         background-color: var(--bs-white);
@@ -298,7 +299,8 @@ img {
         .icon {
             flex: 0 0 32px;
 
-            img {
+            img,
+            svg {
                 width: 32px;
                 height: 32px;
                 object-fit: contain;
@@ -337,6 +339,7 @@ img {
     &.icon-list-v2 {
         gap: 18px;
         --width: calc(50% - 9px);
+
         >li {
             flex: 0 0 var(--width);
             width: var(--width);
