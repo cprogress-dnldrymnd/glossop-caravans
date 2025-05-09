@@ -59,12 +59,23 @@
     overflow: hidden;
     background-color: var(--bs-white);
 
-    .listing-grid-item__top {
-        padding: 20px;
+    &:not(.style-2) {
+        .listing-grid-item__top {
+            padding: 20px;
+        }
     }
 
     .listing-grid-item__bottom {
         padding: 20px;
+    }
+
+    &.style-2 {
+        .listing-grid__feature {
+            position: absolute;
+            z-index: 1;
+            top: 15px;
+            left: 15px;
+        }
     }
 }
 
