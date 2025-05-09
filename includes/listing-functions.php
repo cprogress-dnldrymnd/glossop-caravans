@@ -238,6 +238,19 @@ function listing__gallery($id, $is_thumbnail = false)
     return ob_get_clean();
 }
 
+function listing__key_information_simple()
+{
+    ob_start();
+    ?>
+    <ul
+        class="icon-list mb-0 icon-list-v4 d-flex list-inline align-items-center justify-content-end fw-semibold flex-wrap fs-18">
+        <li> <?= get__theme_images('berths.svg') ?> 4 Berth</li>
+        <li><?= get__theme_images('year.svg') ?> 2024</li>
+    </ul>
+    <?php
+    return ob_get_clean();
+}
+
 function listing__key_information()
 {
     ob_start();
