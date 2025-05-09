@@ -1,4 +1,4 @@
-<div class="listing-grid h-100 position-relative rounded">
+<div class="listing-grid h-100 position-relative rounded <?= $args['style'] ?>">
     <div class="listing-grid-item__top">
         <?php if ($args['style'] == 'style-1') { ?>
             <h3>Swift Elegance Grande 780</h3>
