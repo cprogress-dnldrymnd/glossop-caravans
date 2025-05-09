@@ -11754,6 +11754,17 @@ h5, .h5 {
     justify-content: space-between;
     gap: 20px;
     right: 15px; }
+    .listing-grid.style-2 .listing-grid--feature--action .icon-list li {
+      background-color: var(--bs-white);
+      font-size: 17px;
+      padding: 5px;
+      border-radius: 6px;
+      padding: 7px 10px; }
+      .listing-grid.style-2 .listing-grid--feature--action .icon-list li svg,
+      .listing-grid.style-2 .listing-grid--feature--action .icon-list li img {
+        width: 15px;
+        height: 15px;
+        flex: 0 0 15px; }
 
 .listing-grid-item__prices .grid-item__price-inner {
   background-color: var(--lightgray-color);
