@@ -28,6 +28,9 @@
     <div class="listing-grid-item__bottom">
         <?php if ($args['style'] == 'style-2') { ?>
             <h3 class="fs-23">Swift Elegance Grande 780</h3>
+            <?php
+            echo listing__key_information_simple();
+            ?>
         <?php } ?>
         <?= listing__price() ?>
         <div class="listing-grid-item__button mt-3">
