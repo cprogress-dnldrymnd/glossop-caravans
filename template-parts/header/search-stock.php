@@ -50,8 +50,64 @@ global $listing_fields;
                         </div>
                     </form>
                 </div>
-                <div class="tab-pane fade" id="Motorhomes-tab-pane" role="tabpanel" aria-labelledby="Motorhomes-tab" tabindex="0">...</div>
-                <div class="tab-pane fade" id="Statics-tab-pane" role="tabpanel" aria-labelledby="Statics-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="Motorhomes-tab-pane" role="tabpanel" aria-labelledby="Motorhomes-tab" tabindex="0">
+                    <form action="" class="form-holder">
+                        <div class="row align-items-end">
+                            <div class="col">
+                                <?= $listing_fields['type'] ?>
+                            </div>
+                            <div class="col">
+                                <?= $listing_fields['berths'] ?>
+                            </div>
+                            <div class="col">
+                                <?= $listing_fields['make'] ?>
+                            </div>
+                            <div class="col">
+                                <?= $listing_fields['model'] ?>
+                            </div>
+                            <div class="col">
+                                <?= $listing_fields['price_min'] ?>
+                            </div>
+                            <div class="col">
+                                <?= $listing_fields['price_max'] ?>
+                            </div>
+                            <div class="col">
+                                <div class="button-box">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="Statics-tab-pane" role="tabpanel" aria-labelledby="Statics-tab" tabindex="0">
+                    <form action="" class="form-holder">
+                        <div class="row align-items-end">
+                            <div class="col">
+                                <?= $listing_fields['type'] ?>
+                            </div>
+                            <div class="col">
+                                <?= $listing_fields['berths'] ?>
+                            </div>
+                            <div class="col">
+                                <?= $listing_fields['make'] ?>
+                            </div>
+                            <div class="col">
+                                <?= $listing_fields['model'] ?>
+                            </div>
+                            <div class="col">
+                                <?= $listing_fields['price_min'] ?>
+                            </div>
+                            <div class="col">
+                                <?= $listing_fields['price_max'] ?>
+                            </div>
+                            <div class="col">
+                                <div class="button-box">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
