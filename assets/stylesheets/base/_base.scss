@@ -366,3 +366,11 @@ span.icons {
     display: flex;
     gap: 5px;
 }
+
+.calculator-form {
+    form {
+        label {
+            font-weight: bold;
+        }
+    }
+}

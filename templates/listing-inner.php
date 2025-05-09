@@ -187,8 +187,8 @@ global $listing_fields;
                 </div>
               </div>
             </div>
-            <div class="calculator-form p-5 rounded">
-              <div class="calculator-form-inner background-lightgray-3">
+            <div class="calculator-form">
+              <div class="calculator-form-inner background-lightgray-3 p-5 rounded">
                 <h3>What can I tow?</h3>
                 <div class="desc mb-5">
                   <p>Use our calculator to find out your maximum towing capacity.</p>
