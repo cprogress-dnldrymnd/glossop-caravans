@@ -226,7 +226,7 @@ global $listing_fields;
                 <div class="desc mb-20">
                   <p>7.9% available, calculate the cost of your caravan or motorhome</p>
                 </div>
-                <a class="btn btn-primary w-100">Search</a>
+                <a class="btn btn-yellow w-100">View calculator</a>
               </div>
             </div>
           </div>

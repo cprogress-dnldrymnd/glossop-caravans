@@ -11099,7 +11099,8 @@ button.swiper-pagination-bullet {
 .btn {
   --bs-btn-font-size: 20px;
   --bs-btn-padding-x: 20px;
-  --bs-btn-padding-y: 20px; }
+  --bs-btn-padding-y: 20px;
+  --bs-btn-border-radius: 5px; }
 
 .btn-lg, .btn-group-lg > .btn {
   --bs-btn-padding-y: 25px;
@@ -11143,6 +11144,22 @@ button.swiper-pagination-bullet {
   --bs-btn-disabled-color: var(--bs-white);
   --bs-btn-disabled-bg: var(--teal-color);
   --bs-btn-disabled-border-color: var(--teal-color); }
+
+.btn-yellow {
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--yellow-color);
+  --bs-btn-border-color: var(--yellow-color);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: var(--yellow-color);
+  --bs-btn-hover-border-color: var(--yellow-color);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: var(--bs-white);
+  --bs-btn-active-bg: var(--yellow-color);
+  --bs-btn-active-border-color: var(--yellow-color);
+  --bs-btn-active-shadow: none;
+  --bs-btn-disabled-color: var(--bs-white);
+  --bs-btn-disabled-bg: var(--yellow-color);
+  --bs-btn-disabled-border-color: var(--yellow-color); }
 
 .nav-tabs {
   --bs-nav-link-font-size: 20px;
