@@ -11265,24 +11265,24 @@ img {
     padding-left: 20px;
     padding-right: 20px; }
 
-.listing-filter {
+.accordion-style-1 {
   position: sticky;
   position: -webkit-sticky;
   top: 0; }
-  .listing-filter .accordion {
+  .accordion-style-1 .accordion {
     padding: 20px;
     background-color: var(--bs-white); }
-    .listing-filter .accordion .accordion-item {
+    .accordion-style-1 .accordion .accordion-item {
       border-left: none;
       border-right: none;
       --bs-accordion-border-color: #ECECEC; }
-      .listing-filter .accordion .accordion-item:first-child {
+      .accordion-style-1 .accordion .accordion-item:first-child {
         border-top: none; }
-      .listing-filter .accordion .accordion-item:last-child {
+      .accordion-style-1 .accordion .accordion-item:last-child {
         border-bottom: none; }
-      .listing-filter .accordion .accordion-item .accordion-body {
+      .accordion-style-1 .accordion .accordion-item .accordion-body {
         --bs-accordion-body-padding-x: 0; }
-  .listing-filter .accordion-button {
+  .accordion-style-1 .accordion-button {
     --bs-accordion-inner-border-radius: 0;
     --bs-accordion-inner-border-radius: 0;
     --bs-accordion-btn-padding-x: 0;
@@ -11292,26 +11292,26 @@ img {
     gap: 20px;
     font-weight: bold;
     font-size: 19px; }
-    .listing-filter .accordion-button .accordion-button-inner {
+    .accordion-style-1 .accordion-button .accordion-button-inner {
       display: flex;
       align-items: center;
       gap: 20px;
       flex-grow: 1;
       justify-content: space-between; }
-      .listing-filter .accordion-button .accordion-button-inner .icon-text {
+      .accordion-style-1 .accordion-button .accordion-button-inner .icon-text {
         display: flex;
         align-items: center;
         gap: 20px; }
-    .listing-filter .accordion-button:after {
+    .accordion-style-1 .accordion-button:after {
       flex: 0 0 auto;
       margin-left: 0; }
-    .listing-filter .accordion-button .icon {
+    .accordion-style-1 .accordion-button .icon {
       flex: 0 0 32px; }
-      .listing-filter .accordion-button .icon img {
+      .accordion-style-1 .accordion-button .icon img {
         width: 32px;
         height: 32px;
         object-fit: contain; }
-  .listing-filter .form-control-holder label {
+  .accordion-style-1 .form-control-holder label {
     display: none; }
 
 .swiper-button.swiper-button {
