@@ -277,19 +277,19 @@ global $listing_fields;
         <div class="swiper swiper-listing">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <?= do_shortcode('[listing_grid style="style-2"]') ?>
+              <?= do_shortcode('[listing_grid image_id="195" style="style-2"]') ?>
             </div>
             <div class="swiper-slide">
-              <?= do_shortcode('[listing_grid style="style-2"]') ?>
+              <?= do_shortcode('[listing_grid image_id="195" style="style-2"]') ?>
             </div>
             <div class="swiper-slide">
-              <?= do_shortcode('[listing_grid style="style-2"]') ?>
+              <?= do_shortcode('[listing_grid image_id="195" style="style-2"]') ?>
             </div>
             <div class="swiper-slide">
-              <?= do_shortcode('[listing_grid style="style-2"]') ?>
+              <?= do_shortcode('[listing_grid image_id="195" style="style-2"]') ?>
             </div>
             <div class="swiper-slide">
-              <?= do_shortcode('[listing_grid style="style-2"]') ?>
+              <?= do_shortcode('[listing_grid image_id="195" style="style-2"]') ?>
             </div>
           </div>
         </div>
