@@ -11369,6 +11369,8 @@ img {
 
 .icon-list {
   gap: 28px; }
+  .icon-list a {
+    color: inherit; }
   .icon-list li {
     display: flex;
     gap: 12px;
@@ -11379,6 +11381,8 @@ img {
     .icon-list.icon-list-v2 > li {
       flex: 0 0 var(--width);
       width: var(--width); }
+  .icon-list.icon-list-v3 {
+    gap: 18px; }
 
 span.icons {
   display: flex;

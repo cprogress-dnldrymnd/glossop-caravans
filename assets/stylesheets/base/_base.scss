@@ -374,6 +374,10 @@ img {
 .icon-list {
     gap: 28px;
 
+    a {
+        color: inherit;
+    }
+
     li {
         display: flex;
         gap: 12px;
@@ -388,6 +392,10 @@ img {
             flex: 0 0 var(--width);
             width: var(--width);
         }
+    }
+
+    &.icon-list-v3 {
+        gap: 18px;
     }
 }
 
