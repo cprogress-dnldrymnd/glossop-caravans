@@ -11370,7 +11370,8 @@ img {
 .icon-list {
   gap: 28px; }
   .icon-list a {
-    color: inherit; }
+    color: inherit;
+    text-decoration: none; }
   .icon-list li {
     display: flex;
     gap: 12px;
