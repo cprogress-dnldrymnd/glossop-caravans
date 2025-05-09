@@ -100,7 +100,7 @@ global $listing_fields;
                 <?= wp_get_attachment_image(189, 'large') ?>
               </div>
             </div>
-            <div class="listing-inner--description">
+            <div class="listing-inner--description xs-margin-bottom">
               <h4 class="fs-35">Description</h4>
               <div class="desc">
                 <p>The Swift Challenger 530 2008 is a practical and family-friendly caravan, offering a flexible 4-berth
@@ -111,7 +111,7 @@ global $listing_fields;
             </div>
             <div class="listing-inner--specifications">
               <div class="listing-filter accordion-style-1">
-                <div class="accordion rounded" id="accordionFilter">
+                <div class="accordion rounded border overflow-hidden" id="accordionSpecs">
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -119,179 +119,68 @@ global $listing_fields;
                         <span class="accordion-button-inner">
                           <span class="icon-text">
                             <span class="icon"><?= get__theme_images('sort-by.svg') ?></span>
-                            Sort by
+                            Interior Features
                           </span>
-                          <span class="selected fs-14 fw-bold">Price: low to high</span>
                         </span>
                       </button>
                     </h2>
-                    <div id="collapseSort-by" class="accordion-collapse collapse" data-bs-parent="#accordionFilter">
+                    <div id="collapseSort-by" class="accordion-collapse collapse" data-bs-parent="#accordionSpecs">
                       <div class="accordion-body">
-                        <?= $listing_fields['sortby'] ?>
+                        <ul>
+                          <li>Ut velit odio totam illo</li>
+                          <li>Ut velit odio totam illo</li>
+                          <li>Ut velit odio totam illo</li>
+                          <li>Ut velit odio totam illo</li>
+                          <li>Ut velit odio totam illo</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseNew-Used" aria-expanded="false" aria-controls="collapseNew-Used">
+                        data-bs-target="#collapseSort-by" aria-expanded="false" aria-controls="collapseSort-by">
                         <span class="accordion-button-inner">
                           <span class="icon-text">
-                            <span class="icon"><?= get__theme_images('new-used.svg') ?></span>
-                            New-Used
+                            <span class="icon"><?= get__theme_images('sort-by.svg') ?></span>
+                            Exterior Features
                           </span>
-                          <span class="selected fs-14 fw-bold">Value</span>
                         </span>
                       </button>
                     </h2>
-                    <div id="collapseNew-Used" class="accordion-collapse collapse" data-bs-parent="#accordionFilter">
+                    <div id="collapseSort-by" class="accordion-collapse collapse" data-bs-parent="#accordionSpecs">
                       <div class="accordion-body">
-                        <?= $listing_fields['type'] ?>
+                        <ul>
+                          <li>Ut velit odio totam illo</li>
+                          <li>Ut velit odio totam illo</li>
+                          <li>Ut velit odio totam illo</li>
+                          <li>Ut velit odio totam illo</li>
+                          <li>Ut velit odio totam illo</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseBerths" aria-expanded="false" aria-controls="collapseBerths">
+                        data-bs-target="#collapseSort-by" aria-expanded="false" aria-controls="collapseSort-by">
                         <span class="accordion-button-inner">
                           <span class="icon-text">
-                            <span class="icon"><?= get__theme_images('berths.svg') ?></span> Berths
+                            <span class="icon"><?= get__theme_images('sort-by.svg') ?></span>
+                            Warranty
                           </span>
-                          <span class="selected fs-14 fw-bold">Value</span>
                         </span>
                       </button>
                     </h2>
-                    <div id="collapseBerths" class="accordion-collapse collapse" data-bs-parent="#accordionFilter">
+                    <div id="collapseSort-by" class="accordion-collapse collapse" data-bs-parent="#accordionSpecs">
                       <div class="accordion-body">
-                        <?= $listing_fields['berths'] ?>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseMake" aria-expanded="false" aria-controls="collapseMake">
-                        <span class="accordion-button-inner">
-                          <span class="icon-text">
-                            <span class="icon"><?= get__theme_images('make.svg') ?></span> Make
-                          </span>
-                          <span class="selected fs-14 fw-bold">Value</span>
-                        </span>
-                      </button>
-                    </h2>
-                    <div id="collapseMake" class="accordion-collapse collapse" data-bs-parent="#accordionFilter">
-                      <div class="accordion-body">
-                        <?= $listing_fields['make'] ?>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseModel" aria-expanded="false" aria-controls="collapseModel">
-                        <span class="accordion-button-inner">
-                          <span class="icon-text">
-                            <span class="icon"><?= get__theme_images('model.svg') ?></span> Model
-                          </span>
-                          <span class="selected fs-14 fw-bold">Value</span>
-                        </span>
-                      </button>
-                    </h2>
-                    <div id="collapseModel" class="accordion-collapse collapse" data-bs-parent="#accordionFilter">
-                      <div class="accordion-body">
-                        <?= $listing_fields['model'] ?>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapsePrice" aria-expanded="false" aria-controls="collapsePrice">
-                        <span class="accordion-button-inner">
-                          <span class="icon-text">
-                            <span class="icon"><?= get__theme_images('price.svg') ?></span> Price
-                          </span>
-                          <span class="selected fs-14 fw-bold">Value</span>
-                        </span>
-                      </button>
-                    </h2>
-                    <div id="collapsePrice" class="accordion-collapse collapse" data-bs-parent="#accordionFilter">
-                      <div class="accordion-body">
-                        <?= $listing_fields['type'] ?>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseYear" aria-expanded="false" aria-controls="collapseYear">
-                        <span class="accordion-button-inner">
-                          <span class="icon-text">
-                            <span class="icon"><?= get__theme_images('year.svg') ?></span> Year
-                          </span>
-                          <span class="selected fs-14 fw-bold">Value</span>
-                        </span>
-                      </button>
-                    </h2>
-                    <div id="collapseYear" class="accordion-collapse collapse" data-bs-parent="#accordionFilter">
-                      <div class="accordion-body">
-                        <?= $listing_fields['type'] ?>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseLayout-type" aria-expanded="false" aria-controls="collapseLayout-type">
-                        <span class="accordion-button-inner">
-                          <span class="icon-text">
-                            <span class="icon"><?= get__theme_images('layout-type.svg') ?></span>
-                            Layout-type
-                          </span>
-                          <span class="selected fs-14 fw-bold">Value</span>
-                        </span>
-                      </button>
-                    </h2>
-                    <div id="collapseLayout-type" class="accordion-collapse collapse" data-bs-parent="#accordionFilter">
-                      <div class="accordion-body">
-                        <?= $listing_fields['type'] ?>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseWidth" aria-expanded="false" aria-controls="collapseWidth">
-                        <span class="accordion-button-inner">
-                          <span class="icon-text">
-                            <span class="icon"><?= get__theme_images('width.svg') ?></span> Width
-                          </span>
-                          <span class="selected fs-14 fw-bold">Value</span>
-                        </span>
-                      </button>
-                    </h2>
-                    <div id="collapseWidth" class="accordion-collapse collapse" data-bs-parent="#accordionFilter">
-                      <div class="accordion-body">
-                        <?= $listing_fields['type'] ?>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseAxles" aria-expanded="false" aria-controls="collapseAxles">
-                        <span class="accordion-button-inner">
-                          <span class="icon-text">
-                            <span class="icon"><?= get__theme_images('axles.svg') ?></span> Axles
-                          </span>
-                          <span class="selected fs-14 fw-bold">Value</span>
-                        </span>
-                      </button>
-                    </h2>
-                    <div id="collapseAxles" class="accordion-collapse collapse" data-bs-parent="#accordionFilter">
-                      <div class="accordion-body">
-                        <?= $listing_fields['type'] ?>
+                        <ul>
+                          <li>Ut velit odio totam illo</li>
+                          <li>Ut velit odio totam illo</li>
+                          <li>Ut velit odio totam illo</li>
+                          <li>Ut velit odio totam illo</li>
+                          <li>Ut velit odio totam illo</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
