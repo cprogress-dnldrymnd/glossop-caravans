@@ -11794,7 +11794,10 @@ h5, .h5 {
         background-color: var(--dark-color);
         color: var(--bs-white); }
 .listing-inner-holder .listing-key--info .icon-list-v2 {
-  row-gap: 0; }
+  row-gap: 0;
+  col-gap: var(--sm-spacing); }
+.listing-inner-holder .listing-key--info .awning-image {
+  width: calc(50% - 18px); }
 
 /*-----------------------------------------------------------------------------------*/
 /* Plugins
