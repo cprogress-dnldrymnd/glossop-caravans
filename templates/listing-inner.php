@@ -215,6 +215,11 @@ global $listing_fields;
                       ));
                       ?>
                     </div>
+                    <div class="col-lg-3">
+                      <div class="button-box">
+                        <button type="submit" class="btn btn-secondary btn-lg w-100">Calculate</button>
+                      </div>
+                    </div>
                   </div>
                 </form>
               </div>
