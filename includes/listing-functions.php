@@ -238,7 +238,7 @@ function listing__gallery($id, $is_thumbnail = false)
     return ob_get_clean();
 }
 
-function listing__icons()
+function listing__key_information()
 {
     ob_start();
     ?>

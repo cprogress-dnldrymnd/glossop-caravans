@@ -91,6 +91,11 @@ global $listing_fields;
                 </li>
               </ul>
             </div>
+            <div class="listing-key--info">
+              <?php
+              echo listing__key_information();
+              ?>
+            </div>
           </div>
         </div>
         <div class="col-lg-3">

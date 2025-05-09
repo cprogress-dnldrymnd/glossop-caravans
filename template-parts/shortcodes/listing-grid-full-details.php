@@ -44,9 +44,11 @@
             <div class="image-box image-style mb-20" style="--fit: contain; --padding: 18%">
               <?= wp_get_attachment_image(189, 'large') ?>
             </div>
-            <?php
-            echo listing__icons();
-            ?>
+            <div class="listing-inner--key-info">
+              <?php
+              echo listing__key_information();
+              ?>
+            </div>
           </div>
           <div class="listing-grid-right-item">
             <?php
