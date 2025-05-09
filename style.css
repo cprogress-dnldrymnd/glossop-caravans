@@ -11099,7 +11099,7 @@ button.swiper-pagination-bullet {
 .btn {
   --bs-btn-font-size: 20px;
   --bs-btn-padding-x: 20px;
-  --bs-btn-padding-y: 20px;
+  --bs-btn-padding-y: 12px;
   --bs-btn-border-radius: 5px; }
 
 .btn-lg, .btn-group-lg > .btn {
@@ -11146,7 +11146,7 @@ button.swiper-pagination-bullet {
   --bs-btn-disabled-border-color: var(--teal-color); }
 
 .btn-yellow {
-  --bs-btn-color: var(--bs-white);
+  --bs-btn-color: var(--bs-black);
   --bs-btn-bg: var(--yellow-color);
   --bs-btn-border-color: var(--yellow-color);
   --bs-btn-hover-color: var(--bs-white);
