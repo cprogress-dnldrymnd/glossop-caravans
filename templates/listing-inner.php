@@ -92,7 +92,7 @@ global $listing_fields;
               </ul>
             </div>
             <div class="listing-key--info">
-              <h4 class="fs-35">Key Information</h4>
+              <h4 class="fs-35 mb-5">Key Information</h4>
               <?php
               echo listing__key_information_v2();
               ?>
