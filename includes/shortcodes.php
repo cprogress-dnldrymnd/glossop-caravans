@@ -10,10 +10,19 @@ function latest_deals()
 add_shortcode('latest_deals', 'latest_deals');
 
 
-function listing_grid()
+function listing_grid($atts)
 {
     ob_start();
-    get_template_part('template-parts/shortcodes/listing-grid');
+    extract(
+        shortcode_atts(
+            array(
+                'style' => 'style-1',
+            ),
+            $atts
+        )
+    );
+    $args['style'] = $style;
+    get_template_part('template-parts/shortcodes/listing-grid', NULL, $args);
     return ob_get_clean();
 }
 

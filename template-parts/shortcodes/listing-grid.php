@@ -1,9 +1,11 @@
 <div class="listing-grid h-100 position-relative rounded">
     <div class="listing-grid-item__top">
-        <h3>Swift Elegance Grande 780</h3>
-        <div class="desc mb-3 mt-3">
-            <p>Step into luxury with the Swift Elegance Grande 780.</p>
-        </div>
+        <?php if ($args['style'] == 'style-1') { ?>
+            <h3>Swift Elegance Grande 780</h3>
+            <div class="desc mb-3 mt-3">
+                <p>Step into luxury with the Swift Elegance Grande 780.</p>
+            </div>
+        <?php } ?>
         <div class="listing-grid__feature fs-13 row g-xxs fw-semibold">
             <div class="listing-grid__feature-item col-auto">
                 <div
@@ -25,6 +27,12 @@
         </div>
     </div>
     <div class="listing-grid-item__bottom">
+        <?php if ($args['style'] == 'style-2') { ?>
+            <h3>Swift Elegance Grande 780</h3>
+            <div class="desc mb-3 mt-3">
+                <p>Step into luxury with the Swift Elegance Grande 780.</p>
+            </div>
+        <?php } ?>
         <?= listing__price() ?>
         <div class="listing-grid-item__button mt-3">
             <a href="#" class="btn btn-primary w-100 btn-lg">
