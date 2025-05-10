@@ -418,3 +418,9 @@ span.icons {
         }
     }
 }
+
+.offcanvas.offcanvas {
+    max-width: 860px;
+    width: 100%;
+    z-index: 99999;
+}
