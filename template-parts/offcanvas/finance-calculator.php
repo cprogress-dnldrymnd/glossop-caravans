@@ -64,6 +64,21 @@
                 Purchase
                 Fee</p>
             </div>
+            <div class="offcanvas-form--results">
+              <div class="row g-3">
+                <div class="col-lg-3">
+                  <?php
+                  echo form_control(array(
+                    'type'    => 'text',
+                    'name'    => 'Duration',
+                    'id'      => 'Duration',
+                    'label'   => 'Duration:',
+                    'attribute'   => 'form-control-lg',
+                  ));
+                  ?>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
