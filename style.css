@@ -11589,6 +11589,9 @@ span.icons {
   -moz-box-shadow: 0px 8px 22px #00000014;
   box-shadow: 0px 8px 22px #00000014; }
 
+.gap-24 {
+  gap: 24px; }
+
 body {
   font-family: "Proxima Nova", sans-serif;
   color: var(--text-color);
