@@ -9,7 +9,7 @@
       <div class="offcanvas-form--holder">
         <div class="offcanvas-form--form">
           <div class="offcanvas-form--form-header background-yellow p-20">
-            <div class="row g-4 justify-content-between align-items-center  g-3">
+            <div class="row g-4 justify-content-between align-items-center g-3">
               <div class="col-lg-6">
                 <h4 class="fs-32">Finance calculator</h4>
               </div>
@@ -22,7 +22,7 @@
           </div>
           <div class="offcanvas-form--form-fields">
             <form action="" class="offcanvas-form mb-20">
-              <div class="row g-4">
+              <div class="row g-3">
                 <div class="col-lg-6">
                   <?php
                   echo form_control(array(
