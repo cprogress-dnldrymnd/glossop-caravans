@@ -6,7 +6,7 @@
       <div class="offcanvas-form--holder">
         <div class="offcanvas-form--form">
           <div class="offcanvas-form--form-header background-gray p-20">
-            <h4 class="fs-32">Finance calculator</h4>
+            <h4 class="fs-32">Reserve this caravan for free</h4>
           </div>
           <div class="offcanvas-form--form-fields">
             <form action="" class="offcanvas-form mb-20">
