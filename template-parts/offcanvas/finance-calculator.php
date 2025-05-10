@@ -69,11 +69,12 @@
                 <div class="col-lg-3">
                   <?php
                   echo form_control(array(
-                    'type'    => 'text',
-                    'name'    => 'Duration',
-                    'id'      => 'Duration',
-                    'label'   => 'Duration:',
-                    'attribute'   => 'form-control-lg',
+                    'type'      => 'text',
+                    'name'      => 'cash_price',
+                    'id'        => 'cash_price',
+                    'label'     => 'Cash Price::',
+                    'attribute' => 'readonly',
+                    'value' => '£8,488'
                   ));
                   ?>
                 </div>
