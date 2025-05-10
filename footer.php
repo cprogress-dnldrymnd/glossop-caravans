@@ -10,7 +10,7 @@
  * @package orca
  */
 
- echo do_shortcode('[template template_id=136]');
+echo do_shortcode('[template template_id=136]');
 
 ?>
 
@@ -73,11 +73,11 @@
                                 <?php
                                 wp_nav_menu(array(
                                     'theme_location' => 'footer-menu',
-                                    'container' => false,
-                                    'menu_class' => '',
-                                    'fallback_cb' => '__return_false',
-                                    'items_wrap' => '<ul id="%1$s" class="menu" >%3$s</ul>',
-                                    'depth' => 2,
+                                    'container'      => false,
+                                    'menu_class'     => '',
+                                    'fallback_cb'    => '__return_false',
+                                    'items_wrap'     => '<ul id="%1$s" class="menu" >%3$s</ul>',
+                                    'depth'          => 2,
                                 ));
                                 ?>
 
@@ -107,6 +107,10 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+
+<?php
+get_template_part('template-parts/offcanvas/finance-calculator');
+?>
 
 </body>
 
