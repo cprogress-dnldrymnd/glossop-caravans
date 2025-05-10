@@ -1,5 +1,5 @@
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasFinanceCalculator"
-  aria-labelledby="offcanvasFinanceCalculatorLabel">
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasReserveForm"
+  aria-labelledby="offcanvasReserveFormLabel">
   <div class="offcanvas-body">
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     <div class="offcanvas-body--inner background-white rounded overflow-hidden">
