@@ -58,7 +58,7 @@
               </div>
             </form>
 
-            <div class="desc fs-12">
+            <div class="desc fs-12 mb-20">
               <p> Change the deposit and repayment period and the calculator will automatically work out your estimated
                 repayments. The APR offered may vary according to a number of factors including deposit paid, status of
                 the applicant, fees and charges and frequency of payments. *Final payment includes £10 Option To
