@@ -185,7 +185,7 @@
                     'label'     => false,
                     'attribute' => 'readonly',
                     'value'     => 'Monthly payment: £140.95',
-                    'class'     => 'form-control-lg text-center border'
+                    'class'     => 'form-control-lg text-center border fs-20 fw-semibold'
                   ));
                   ?>
                 </div>
