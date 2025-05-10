@@ -11474,6 +11474,9 @@ span.icons {
 .background-lightgray-3 {
   background-color: var(--lightgray-color-3); }
 
+.background-light-gray-4 {
+  background-color: var(--lightgray-color-4s); }
+
 .background-yellow {
   background-color: var(--yellow-color); }
 
