@@ -64,7 +64,7 @@
                 Purchase
                 Fee</p>
             </div>
-            <div class="offcanvas-form--results">
+            <div class="offcanvas-form--results fs-16">
               <div class="row g-3">
                 <div class="col-lg-3">
                   <?php
