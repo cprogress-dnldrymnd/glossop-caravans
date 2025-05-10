@@ -31,6 +31,7 @@
                     'id'    => 'Deposit',
                     'label' => 'Deposit:',
                     'class' => 'form-control-lg',
+                    'value' => '£100'
                   ));
                   ?>
                 </div>
@@ -66,7 +67,55 @@
             </div>
             <div class="offcanvas-form--results fs-16">
               <div class="row g-3">
-                <div class="col-lg-3">
+                <div class="col-lg-4">
+                  <?php
+                  echo form_control(array(
+                    'type'      => 'text',
+                    'name'      => 'Cash_Price',
+                    'id'        => 'Cash_Price',
+                    'label'     => 'Cash Price:',
+                    'attribute' => 'readonly',
+                    'value'     => '£8,488'
+                  ));
+                  ?>
+                </div>
+                <div class="col-lg-4">
+                  <?php
+                  echo form_control(array(
+                    'type'      => 'text',
+                    'name'      => 'deposit',
+                    'id'        => 'deposit',
+                    'label'     => 'Deposit:',
+                    'attribute' => 'readonly',
+                    'value'     => '£100'
+                  ));
+                  ?>
+                </div>
+                <div class="col-lg-4">
+                  <?php
+                  echo form_control(array(
+                    'type'      => 'text',
+                    'name'      => 'Total_Amount_of_Credit',
+                    'id'        => 'Total_Amount_of_Credit',
+                    'label'     => 'Total Amount of Credit:',
+                    'attribute' => 'readonly',
+                    'value'     => '£8,488'
+                  ));
+                  ?>
+                </div>
+                <div class="col-lg-4">
+                  <?php
+                  echo form_control(array(
+                    'type'      => 'text',
+                    'name'      => 'Agreement_Duration',
+                    'id'        => 'Agreement_Duration',
+                    'label'     => 'Agreement Duration:',
+                    'attribute' => 'readonly',
+                    'value'     => '£8,488'
+                  ));
+                  ?>
+                </div>
+                <div class="col-lg-4">
                   <?php
                   echo form_control(array(
                     'type'      => 'text',
@@ -74,7 +123,79 @@
                     'id'        => 'cash_price',
                     'label'     => 'Cash Price::',
                     'attribute' => 'readonly',
-                    'value' => '£8,488'
+                    'value'     => '£8,488'
+                  ));
+                  ?>
+                </div>
+                <div class="col-lg-4">
+                  <?php
+                  echo form_control(array(
+                    'type'      => 'text',
+                    'name'      => 'Monthly_Repayments_of',
+                    'id'        => 'Monthly_Repayments_of',
+                    'label'     => '84 Monthly Repayments of:',
+                    'attribute' => 'readonly',
+                    'value'     => '£8,488'
+                  ));
+                  ?>
+                </div>
+                <div class="col-lg-4">
+                  <?php
+                  echo form_control(array(
+                    'type'      => 'text',
+                    'name'      => 'Total_Amount_Repayable',
+                    'id'        => 'Total_Amount_Repayable',
+                    'label'     => 'Total Amount Repayable:',
+                    'attribute' => 'readonly',
+                    'value'     => '£8,488'
+                  ));
+                  ?>
+                </div>
+                <div class="col-lg-4">
+                  <?php
+                  echo form_control(array(
+                    'type'      => 'text',
+                    'name'      => 'Purchase_Fee',
+                    'id'        => 'Purchase_Fee',
+                    'label'     => 'Purchase Fee*:',
+                    'attribute' => 'readonly',
+                    'value'     => '£8,488'
+                  ));
+                  ?>
+                </div>
+                <div class="col-lg-4">
+                  <?php
+                  echo form_control(array(
+                    'type'      => 'text',
+                    'name'      => 'Interest_Rate',
+                    'id'        => 'Interest_Rate',
+                    'label'     => 'Interest Rate:',
+                    'attribute' => 'readonly',
+                    'value'     => '£8,488'
+                  ));
+                  ?>
+                </div>
+                <div class="col-lg-4">
+                  <?php
+                  echo form_control(array(
+                    'type'      => 'text',
+                    'name'      => 'Representative_APR',
+                    'id'        => 'Representative_APR',
+                    'label'     => 'Representative APR:',
+                    'attribute' => 'readonly',
+                    'value'     => '£8,488'
+                  ));
+                  ?>
+                </div>
+                <div class="col-12">
+                  <?php
+                  echo form_control(array(
+                    'type'      => 'text',
+                    'name'      => 'Monthly_payment',
+                    'id'        => 'Monthly_payment',
+                    'label'     => false,
+                    'attribute' => 'readonly',
+                    'value'     => 'Monthly payment: £140.95'
                   ));
                   ?>
                 </div>

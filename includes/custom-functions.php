@@ -2,7 +2,9 @@
 function form_control($args)
 {
     $html = '<div class="form-control-holder">';
-    $html .= '<label class="mb-2 fw-semibold" for="' . $args['id'] . '">' . $args['label'] . '</label>';
+    if ($args['label'] != false) {
+        $html .= '<label class="mb-2 fw-semibold" for="' . $args['id'] . '">' . $args['label'] . '</label>';
+    }
 
     if ($args['type'] == 'text') {
         $html .= '<input ' . $args['attribute'] . ' type="text" name="' . $args['name'] . '" id="' . $args['id'] . '" class="form-control ' . $args['class'] . '" placeholder="' . $args['placeholder'] . '" value="' . $args['value'] . '">';
