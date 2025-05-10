@@ -11,10 +11,12 @@
     --bs-btn-font-size: 20px;
     --bs-border-radius-lg: 5px;
 }
+
 .form-f {
     padding: 16px 24px;
     font-size: 16px;
 }
+
 .form-control-lg {
     font-size: 20px;
     padding: 25px;
@@ -454,5 +456,17 @@ span.icons {
             margin-left: auto;
             margin-right: auto;
         }
+    }
+
+    .btn-close.btn-close {
+        position: absolute;
+        left: 0;
+        background-color: #EEEFF2;
+        border-radius: 5px;
+        opacity: 1;
+        padding: 10px 15px;
+        width: 43px;
+        height: 43px;
+        transform: translateX(-180%);
     }
 }

@@ -11427,6 +11427,16 @@ span.icons {
       max-width: 740px;
       margin-left: auto;
       margin-right: auto; }
+  .offcanvas.offcanvas .btn-close.btn-close {
+    position: absolute;
+    left: 0;
+    background-color: #EEEFF2;
+    border-radius: 5px;
+    opacity: 1;
+    padding: 10px 15px;
+    width: 43px;
+    height: 43px;
+    transform: translateX(-180%); }
 
 @media (min-width: 1500px) {
   .container {
