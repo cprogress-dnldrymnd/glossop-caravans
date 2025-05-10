@@ -111,22 +111,11 @@
                     'id'        => 'Agreement_Duration',
                     'label'     => 'Agreement Duration:',
                     'attribute' => 'readonly',
-                    'value'     => '£8,488'
+                    'value'     => '7 Years'
                   ));
                   ?>
                 </div>
-                <div class="col-lg-4">
-                  <?php
-                  echo form_control(array(
-                    'type'      => 'text',
-                    'name'      => 'cash_price',
-                    'id'        => 'cash_price',
-                    'label'     => 'Cash Price::',
-                    'attribute' => 'readonly',
-                    'value'     => '£8,488'
-                  ));
-                  ?>
-                </div>
+               
                 <div class="col-lg-4">
                   <?php
                   echo form_control(array(
@@ -135,7 +124,7 @@
                     'id'        => 'Monthly_Repayments_of',
                     'label'     => '84 Monthly Repayments of:',
                     'attribute' => 'readonly',
-                    'value'     => '£8,488'
+                    'value'     => '£140.95'
                   ));
                   ?>
                 </div>
@@ -147,7 +136,7 @@
                     'id'        => 'Total_Amount_Repayable',
                     'label'     => 'Total Amount Repayable:',
                     'attribute' => 'readonly',
-                    'value'     => '£8,488'
+                    'value'     => '£11,939.80'
                   ));
                   ?>
                 </div>
@@ -159,7 +148,7 @@
                     'id'        => 'Purchase_Fee',
                     'label'     => 'Purchase Fee*:',
                     'attribute' => 'readonly',
-                    'value'     => '£8,488'
+                    'value'     => '£10'
                   ));
                   ?>
                 </div>
@@ -171,7 +160,7 @@
                     'id'        => 'Interest_Rate',
                     'label'     => 'Interest Rate:',
                     'attribute' => 'readonly',
-                    'value'     => '£8,488'
+                    'value'     => '10.37%'
                   ));
                   ?>
                 </div>
@@ -183,7 +172,7 @@
                     'id'        => 'Representative_APR',
                     'label'     => 'Representative APR:',
                     'attribute' => 'readonly',
-                    'value'     => '£8,488'
+                    'value'     => '10.9%'
                   ));
                   ?>
                 </div>
@@ -195,7 +184,8 @@
                     'id'        => 'Monthly_payment',
                     'label'     => false,
                     'attribute' => 'readonly',
-                    'value'     => 'Monthly payment: £140.95'
+                    'value'     => 'Monthly payment: £140.95',
+                    'class'     => 'form-control-lg'
                   ));
                   ?>
                 </div>
