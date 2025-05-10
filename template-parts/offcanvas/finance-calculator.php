@@ -9,17 +9,18 @@
       <div class="finance-calculator--holder">
         <div class="finance-calculator--form">
           <div class="finance-calculator--form-header background-yellow p-20">
-            <div class="row g-4 justify-content-between align-items-center  g-3"></div>
-            <div class="col-lg-5">
-              <h4 class="fs-32">Finance calculator</h4>
-            </div>
-            <div class="col-lg-7">
-              <p>
-                7.9% available, calculate the cost of your caravan or motorhome
-              </p>
+            <div class="row g-4 justify-content-between align-items-center  g-3">
+              <div class="col-lg-5">
+                <h4 class="fs-32">Finance calculator</h4>
+              </div>
+              <div class="col-lg-7">
+                <p>
+                  7.9% available, calculate the cost of your caravan or motorhome
+                </p>
+              </div>
             </div>
           </div>
-          <div class="finance-calculator--form-fields ">
+          <div class="finance-calculator--form-fields">
             <div class="row g-4">
               <div class="col-lg-6">
                 <?php
