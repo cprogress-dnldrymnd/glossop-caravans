@@ -11440,6 +11440,9 @@ span.icons {
     transform: translateX(-180%);
     background-size: 25px; }
 
+.wpcf7.wpcf7 br {
+  display: none; }
+
 @media (min-width: 1500px) {
   .container {
     max-width: 1420px; } }
