@@ -11440,6 +11440,8 @@ span.icons {
     transform: translateX(-180%);
     background-size: 25px; }
 
+.wpcf7.wpcf7 p {
+  margin-bottom: 0; }
 .wpcf7.wpcf7 br {
   display: none; }
 
