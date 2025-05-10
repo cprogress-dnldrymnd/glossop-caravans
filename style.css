@@ -11052,6 +11052,7 @@ button.swiper-pagination-bullet {
   --blue-color: #00BCE2;
   --text-color: #202020;
   --dark-color: #505050;
+  --gray-color: #CCCCCC;
   --lightgray-color: #f5f5f5;
   --lightgray-color-2: #F2F2F2;
   --lightgray-color-3: #F9F9F9;
@@ -11436,7 +11437,8 @@ span.icons {
     padding: 10px 15px;
     width: 43px;
     height: 37px;
-    transform: translateX(-180%); }
+    transform: translateX(-180%);
+    background-size: 25px; }
 
 @media (min-width: 1500px) {
   .container {
@@ -11474,6 +11476,9 @@ span.icons {
 
 .background-yellow {
   background-color: var(--yellow-color); }
+
+.background-gray {
+  background-color: var(--gray-color); }
 
 .background-white {
   background-color: var(--bs-white); }

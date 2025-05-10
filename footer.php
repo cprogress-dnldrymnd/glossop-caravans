@@ -110,6 +110,7 @@ echo do_shortcode('[template template_id=136]');
 
 <?php
 get_template_part('template-parts/offcanvas/finance-calculator');
+get_template_part('template-parts/offcanvas/reserve-form');
 ?>
 
 </body>
