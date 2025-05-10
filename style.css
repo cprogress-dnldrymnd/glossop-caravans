@@ -11404,7 +11404,8 @@ span.icons {
     .offcanvas.offcanvas .offcanvas-body .offcanvas-body--inner {
       max-width: 740px;
       margin-left: auto;
-      margin-rights: auto; }
+      margin-right: auto;
+      padding: 30px; }
 
 @media (min-width: 1500px) {
   .container {

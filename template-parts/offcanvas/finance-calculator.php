@@ -8,7 +8,8 @@
     <div class="offcanvas-body--inner rounded overflow-hidden">
       <div class="finance-calculator--holder">
         <div class="finance-calculator--form">
-          <div class="finance-calculator--form-header row justify-content-between align-items-center background-yellow  g-3 p-20">
+          <div
+            class="finance-calculator--form-header row g-4 justify-content-between align-items-center background-yellow  g-3 p-20">
             <div class="col-lg-5">
               <h4 class="fs-32">Finance calculator</h4>
             </div>
@@ -16,6 +17,36 @@
               <p>
                 7.9% available, calculate the cost of your caravan or motorhome
               </p>
+            </div>
+          </div>
+          <div class="finance-calculator--form-fields row g-4">
+            <div class="col-lg-6">
+              <?php
+              echo form_control(array(
+                'type'  => 'text',
+                'name'  => 'Deposit',
+                'id'    => 'Deposit',
+                'label' => 'Deposit:',
+                'class' => 'form-control-lg',
+              ));
+              ?>
+            </div>
+            <div class="col-lg-6">
+              <?php
+              echo form_control(array(
+                'type'    => 'select',
+                'name'    => 'Duration',
+                'id'      => 'Duration',
+                'label'   => 'Duration:',
+                'class'   => 'form-control-lg',
+                'options' => array(
+                  ''         => 'Select Duration',
+                  'Option 1' => 'Option 1',
+                  'Option 2' => 'Option 3',
+                  'Option 3' => 'Option 3',
+                ),
+              ));
+              ?>
             </div>
           </div>
         </div>
