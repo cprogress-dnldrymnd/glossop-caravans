@@ -11,7 +11,7 @@
     --bs-btn-font-size: 20px;
     --bs-border-radius-lg: 5px;
 }
-.form-control {
+.form-f {
     padding: 16px 24px;
     font-size: 16px;
 }
@@ -73,7 +73,7 @@
 }
 
 .btn-blue {
-    --bs-btn-color: var(--bs-black);
+    --bs-btn-color: var(--bs-white);
     --bs-btn-bg: var(--blue-color);
     --bs-btn-border-color: var(--blue-color);
     --bs-btn-hover-color: var(--bs-white);

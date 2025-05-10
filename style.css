@@ -11110,7 +11110,7 @@ button.swiper-pagination-bullet {
   --bs-btn-font-size: 20px;
   --bs-border-radius-lg: 5px; }
 
-.form-control {
+.form-f {
   padding: 16px 24px;
   font-size: 16px; }
 
@@ -11168,7 +11168,7 @@ button.swiper-pagination-bullet {
   --bs-btn-disabled-border-color: var(--yellow-color); }
 
 .btn-blue {
-  --bs-btn-color: var(--bs-black);
+  --bs-btn-color: var(--bs-white);
   --bs-btn-bg: var(--blue-color);
   --bs-btn-border-color: var(--blue-color);
   --bs-btn-hover-color: var(--bs-white);
