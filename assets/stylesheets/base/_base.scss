@@ -425,14 +425,13 @@ span.icons {
     z-index: 99999;
 
     .offcanvas-body {
-        background-color: #F6F6F6;
+        background-color: var(--lightgray-color-4);;
         padding: 50px 20px;
 
         .offcanvas-body--inner {
             max-width: 740px;
             margin-left: auto;
             margin-right: auto;
-            padding: 30px;
         }
     }
 }

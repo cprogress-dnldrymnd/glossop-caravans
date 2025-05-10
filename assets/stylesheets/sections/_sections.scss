@@ -319,3 +319,11 @@
         }
     }
 }
+
+.offcanvas-form--form-fields {
+    padding: 30px;
+
+    .form-control {
+        background-color: var(--lightgray-color-4);
+    }
+}

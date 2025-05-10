@@ -11054,6 +11054,7 @@ button.swiper-pagination-bullet {
   --lightgray-color: #f5f5f5;
   --lightgray-color-2: #F2F2F2;
   --lightgray-color-3: #F9F9F9;
+  --lightgray-color-4: #F6F6F6;
   --bs-border-radius: 5px;
   --bs-border-color: #CDCDCD; }
 
@@ -11404,8 +11405,7 @@ span.icons {
     .offcanvas.offcanvas .offcanvas-body .offcanvas-body--inner {
       max-width: 740px;
       margin-left: auto;
-      margin-right: auto;
-      padding: 30px; }
+      margin-right: auto; }
 
 @media (min-width: 1500px) {
   .container {
@@ -11916,6 +11916,11 @@ h5, .h5 {
     flex: calc(50% - (var(--sm-spacing) / 2)); }
 .listing-inner-holder .listing-key--info .awning-image {
   width: calc(50% - (var(--sm-spacing) / 2)); }
+
+.offcanvas-form--form-fields {
+  padding: 30px; }
+  .offcanvas-form--form-fields .form-control {
+    background-color: var(--lightgray-color-4); }
 
 /*-----------------------------------------------------------------------------------*/
 /* Plugins

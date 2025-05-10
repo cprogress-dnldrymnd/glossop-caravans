@@ -5,10 +5,10 @@
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    <div class="offcanvas-body--inner rounded overflow-hidden">
-      <div class="finance-calculator--holder">
-        <div class="finance-calculator--form">
-          <div class="finance-calculator--form-header background-yellow p-20">
+    <div class="offcanvas-body--inner background-white rounded overflow-hidden">
+      <div class="offcanvas-form--holder">
+        <div class="offcanvas-form--form">
+          <div class="offcanvas-form--form-header background-yellow p-20">
             <div class="row g-4 justify-content-between align-items-center  g-3">
               <div class="col-lg-6">
                 <h4 class="fs-32">Finance calculator</h4>
@@ -20,7 +20,7 @@
               </div>
             </div>
           </div>
-          <div class="finance-calculator--form-fields">
+          <div class="offcanvas-form--form-fields">
             <div class="row g-4">
               <div class="col-lg-6">
                 <?php
