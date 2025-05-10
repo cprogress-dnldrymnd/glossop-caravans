@@ -50,6 +50,9 @@
                 ));
                 ?>
               </div>
+              <div class="col-lg-12">
+                <button type="submit" class="btn btn-lg btn-blue w-100"> Calculate </button>
+              </div>
             </div>
           </div>
         </div>
