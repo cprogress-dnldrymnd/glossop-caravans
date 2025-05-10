@@ -21,38 +21,48 @@
             </div>
           </div>
           <div class="offcanvas-form--form-fields">
-            <div class="row g-4">
-              <div class="col-lg-6">
-                <?php
-                echo form_control(array(
-                  'type'  => 'text',
-                  'name'  => 'Deposit',
-                  'id'    => 'Deposit',
-                  'label' => 'Deposit:',
-                  'class' => 'form-control-lg',
-                ));
-                ?>
+            <form action="" class="offcanvas-form mb-20">
+              <div class="row g-4">
+                <div class="col-lg-6">
+                  <?php
+                  echo form_control(array(
+                    'type'  => 'text',
+                    'name'  => 'Deposit',
+                    'id'    => 'Deposit',
+                    'label' => 'Deposit:',
+                    'class' => 'form-control-lg',
+                  ));
+                  ?>
+                </div>
+                <div class="col-lg-6">
+                  <?php
+                  echo form_control(array(
+                    'type'    => 'select',
+                    'name'    => 'Duration',
+                    'id'      => 'Duration',
+                    'label'   => 'Duration:',
+                    'class'   => 'form-control-lg',
+                    'options' => array(
+                      ''         => 'Select Duration',
+                      'Option 1' => 'Option 1',
+                      'Option 2' => 'Option 3',
+                      'Option 3' => 'Option 3',
+                    ),
+                  ));
+                  ?>
+                </div>
+                <div class="col-lg-12">
+                  <button type="submit" class="btn btn-lg btn-blue w-100"> Calculate </button>
+                </div>
               </div>
-              <div class="col-lg-6">
-                <?php
-                echo form_control(array(
-                  'type'    => 'select',
-                  'name'    => 'Duration',
-                  'id'      => 'Duration',
-                  'label'   => 'Duration:',
-                  'class'   => 'form-control-lg',
-                  'options' => array(
-                    ''         => 'Select Duration',
-                    'Option 1' => 'Option 1',
-                    'Option 2' => 'Option 3',
-                    'Option 3' => 'Option 3',
-                  ),
-                ));
-                ?>
-              </div>
-              <div class="col-lg-12">
-                <button type="submit" class="btn btn-lg btn-blue w-100"> Calculate </button>
-              </div>
+            </form>
+
+            <div class="desc fs-12">
+              <p> Change the deposit and repayment period and the calculator will automatically work out your estimated
+                repayments. The APR offered may vary according to a number of factors including deposit paid, status of
+                the applicant, fees and charges and frequency of payments. *Final payment includes £10 Option To
+                Purchase
+                Fee</p>
             </div>
           </div>
         </div>
