@@ -1,21 +1,25 @@
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasFinanceCalculator" aria-labelledby="offcanvasFinanceCalculatorLabel">
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasFinanceCalculator"
+  aria-labelledby="offcanvasFinanceCalculatorLabel">
   <div class="offcanvas-header">
     <h5 class="offcanvas-title" id="offcanvasFinanceCalculatorLabel">Offcanvas</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    <div>
-      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-    </div>
-    <div class="dropdown mt-3">
-      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-        Dropdown button
-      </button>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
+    <div class="offcanvas-body--inner rounded overflow-hidden">
+      <div class="finance-calculator--holder">
+        <div class="finance-calculator--form">
+          <div class="finance-calculator--form-header row justify-content-between align-items-center background-yellow  g-3 p-20">
+            <div class="col-auto">
+              <h4 class="fs-32">Finance calculator</h4>
+            </div>
+            <div class="col-auto">
+              <p>
+                7.9% available, calculate the cost of your caravan or motorhome
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
