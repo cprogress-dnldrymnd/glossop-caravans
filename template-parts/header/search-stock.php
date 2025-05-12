@@ -42,7 +42,7 @@ global $listing_fields;
                             <div class="col-sm-6 col-md-4 col-lg">
                                 <?= $listing_fields['price_max'] ?>
                             </div>
-                            <div class="col-sm-12 col-md-12 col-lg">
+                            <div class="col-sm-12 col-md-12 col-lg button">
                                 <div class="button-box">
                                     <button type="submit" class="btn btn-primary btn-lg w-100">Search</button>
                                 </div>

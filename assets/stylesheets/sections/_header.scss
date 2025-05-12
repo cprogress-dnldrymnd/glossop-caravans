@@ -36,9 +36,9 @@
     }
 }
 .search-stock-row {
-    .advance-search-col {
+    .button-col {
         @include responsive(xs-sm) {
-           order: 12
+            order: 12;
         }
     }
 }
