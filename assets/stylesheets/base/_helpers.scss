@@ -242,3 +242,9 @@
         flex-direction: column-reverse;
     }
 }
+
+.w-100-mobile > * {
+    @include responsive(xs) {
+        width: 100%;
+    }
+}
