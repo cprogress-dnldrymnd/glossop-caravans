@@ -47,9 +47,75 @@
                     </div>
 
                 </div>
-                <div class="tab-pane fade" id="New-Caravan-Offers-tab-pane" role="tabpanel" aria-labelledby="New-Caravan-Offers-tab" tabindex="0">...</div>
-                <div class="tab-pane fade" id="New-Motorhome-Offers-tab-pane" role="tabpanel" aria-labelledby="New-Motorhome-Offers-tab" tabindex="0">...</div>
-                <div class="tab-pane fade" id="Clearance-tab-pane" role="tabpanel" aria-labelledby="Clearance-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="New-Caravan-Offers-tab-pane" role="tabpanel" aria-labelledby="New-Caravan-Offers-tab" tabindex="0">
+                    <div class="swiper-holder">
+                        <div class="swiper swiper-listing swiper-mobile-style">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <?= do_shortcode('[listing_grid]') ?>
+                                </div>
+                                <div class="swiper-slide">
+                                    <?= do_shortcode('[listing_grid]') ?>
+                                </div>
+                                <div class="swiper-slide">
+                                    <?= do_shortcode('[listing_grid]') ?>
+                                </div>
+                                <div class="swiper-slide">
+                                    <?= do_shortcode('[listing_grid]') ?>
+                                </div>
+                                <div class="swiper-slide">
+                                    <?= do_shortcode('[listing_grid]') ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="New-Motorhome-Offers-tab-pane" role="tabpanel" aria-labelledby="New-Motorhome-Offers-tab" tabindex="0">
+                    <div class="swiper-holder">
+                        <div class="swiper swiper-listing swiper-mobile-style">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <?= do_shortcode('[listing_grid]') ?>
+                                </div>
+                                <div class="swiper-slide">
+                                    <?= do_shortcode('[listing_grid]') ?>
+                                </div>
+                                <div class="swiper-slide">
+                                    <?= do_shortcode('[listing_grid]') ?>
+                                </div>
+                                <div class="swiper-slide">
+                                    <?= do_shortcode('[listing_grid]') ?>
+                                </div>
+                                <div class="swiper-slide">
+                                    <?= do_shortcode('[listing_grid]') ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Clearance-tab-pane" role="tabpanel" aria-labelledby="Clearance-tab" tabindex="0">
+                    <div class="swiper-holder">
+                        <div class="swiper swiper-listing swiper-mobile-style">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <?= do_shortcode('[listing_grid]') ?>
+                                </div>
+                                <div class="swiper-slide">
+                                    <?= do_shortcode('[listing_grid]') ?>
+                                </div>
+                                <div class="swiper-slide">
+                                    <?= do_shortcode('[listing_grid]') ?>
+                                </div>
+                                <div class="swiper-slide">
+                                    <?= do_shortcode('[listing_grid]') ?>
+                                </div>
+                                <div class="swiper-slide">
+                                    <?= do_shortcode('[listing_grid]') ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
