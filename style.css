@@ -11558,6 +11558,20 @@ span.icons {
   --md-spacing: 80px;
   --lg-spacing: 100px;
   --xl-spacing: 120px; }
+  @media screen and (max-width: 991px) {
+    :root {
+      --xs-spacing: 30px;
+      --sm-spacing: 50px;
+      --md-spacing: 70px;
+      --lg-spacing: 80px;
+      --xl-spacing: 100px; } }
+  @media screen and (max-width: 767px) {
+    :root {
+      --xs-spacing: 20px;
+      --sm-spacing: 25px;
+      --md-spacing: 40px;
+      --lg-spacing: 60px;
+      --xl-spacing: 80px; } }
 
 .xl-padding {
   padding: var(--xl-spacing); }
@@ -11714,14 +11728,25 @@ h1, .h1 {
     h1, .h1 {
       font-size: 2.5rem; } }
 
-h2, .h2 {
-  font-size: 3.125rem; }
+h2, .h2,
+.h2 {
+  font-size: 59px; }
   @media screen and (max-width: 991px) {
-    h2, .h2 {
-      font-size: 3rem; } }
+    h2, .h2,
+    .h2 {
+      font-size: 50px; } }
+  @media screen and (max-width: 767px) {
+    h2, .h2,
+    .h2 {
+      font-size: 40px; } }
   @media screen and (max-width: 575px) {
-    h2, .h2 {
-      font-size: 2rem; } }
+    h2, .h2,
+    .h2 {
+      font-size: 30px; } }
+  @media screen and (max-width: 480px) {
+    h2, .h2,
+    .h2 {
+      font-size: 24px; } }
 
 h3, .h3,
 .h3 {
