@@ -42,6 +42,7 @@
     }
     .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
         display: block !important; /* Show the desktop menu */
+        position: relative;
     }
 }
 
@@ -71,7 +72,7 @@
     }
 }
 .custom-submenu {
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     top: var(--header-height, 102px);
