@@ -47,6 +47,11 @@ global $listing_fields;
                                     <button type="submit" class="btn btn-primary btn-lg w-100">Search</button>
                                 </div>
                             </div>
+                            <div class="col-12 text-center">
+                                <div class="advance-search text-center">
+                                    <a href="">Advanced Search</a>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>
