@@ -12,7 +12,7 @@
                     <button class="nav-link" id="New-Motorhome-Offers-tab" data-bs-toggle="tab" data-bs-target="#New-Motorhome-Offers-tab-pane" type="button" role="tab" aria-controls="New-Motorhome-Offers-tab-pane" aria-selected="false">New Motorhome Offers</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="Clearance-tab" data-bs-toggle="tab" data-bs-target="#Clearance-tab-pane" type="button" role="tab" aria-controls="Clearance-tab-pane" aria-selected="false">New Motorhome Offers</button>
+                    <button class="nav-link text-red" id="Clearance-tab" data-bs-toggle="tab" data-bs-target="#Clearance-tab-pane" type="button" role="tab" aria-controls="Clearance-tab-pane" aria-selected="false">Clearance</button>
                 </li>
             </ul>
         </div>
