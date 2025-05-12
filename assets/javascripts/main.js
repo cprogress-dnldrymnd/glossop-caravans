@@ -18,8 +18,22 @@ function fancybox() {
 
 function swiper_sliders() {
     var swiper = new Swiper(".swiper-listing", {
-        slidesPerView: 3,
-        spaceBetween: 40,
+
+        breakpoints: {
+            0: {
+                slidesPerView: 'auto',
+                spaceBetween: 12,
+                freeMode: true,
+            },
+
+
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
+
+        },
+
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
