@@ -68,17 +68,19 @@
 
             .wp-block-navigation {
                 position: static;
-                .wp-block-navigation-item.has-child {
+                .wp-block-navigation-item {
                     position: static;
-                    .wp-block-navigation-item__content {
-                        height: var(--header-inner-height, 78px);
-                        display: flex;
-                        align-items: center;
-                    }
-                }
+                    
             }
         }
-
+        .wp-block-navigation-item.has-child {
+            position: static;
+            .wp-block-navigation-item__content {
+                height: var(--header-inner-height, 78px);
+                display: flex;
+                align-items: center;
+            }
+        }
         .has-custom-submenu {
             @include on-event {
                 .custom-submenu {
