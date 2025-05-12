@@ -3,6 +3,10 @@
     --bs-btn-padding-x: 20px;
     --bs-btn-padding-y: 12px;
     --bs-btn-border-radius: 5px;
+    @include responsive(xs-sm) {
+        --bs-btn-font-size: 15px;
+        --bs-btn-padding-x: 16px;
+    }
 }
 
 .btn-lg {
@@ -10,6 +14,11 @@
     --bs-btn-padding-x: 50px;
     --bs-btn-font-size: 20px;
     --bs-border-radius-lg: 5px;
+    @include responsive(xs-sm) {
+        --bs-btn-padding-y: 20px;
+        --bs-btn-padding-x: 20px;
+        --bs-btn-font-size: 16px;
+    }
 }
 
 .form-control {
@@ -222,7 +231,8 @@ img {
         padding-bottom: 65px;
     }
 
-    .nav-tabs {}
+    .nav-tabs {
+    }
 }
 
 .image-style {
@@ -240,7 +250,7 @@ img {
 }
 
 .site-content {
-    &>.wp-block-group {
+    & > .wp-block-group {
         overflow: hidden;
     }
 }
@@ -311,8 +321,6 @@ img {
 }
 
 .accordion-style-1 {
-
-
     .accordion {
         padding: 20px;
         background-color: var(--bs-white);
@@ -320,7 +328,7 @@ img {
         .accordion-item {
             border-left: none;
             border-right: none;
-            --bs-accordion-border-color: #ECECEC;
+            --bs-accordion-border-color: #ececec;
 
             @include first-child {
                 border-top: none;
@@ -414,7 +422,7 @@ img {
         gap: 18px;
         --width: calc(50% - 9px);
 
-        >li {
+        > li {
             flex: 0 0 var(--width);
             width: var(--width);
         }
@@ -452,7 +460,6 @@ span.icons {
 
     .offcanvas-body {
         background-color: var(--lightgray-color-4);
-        ;
         padding: 50px 20px;
 
         .offcanvas-body--inner {
@@ -465,7 +472,7 @@ span.icons {
     .btn-close.btn-close {
         position: absolute;
         left: 0;
-        background-color: #EEEFF2;
+        background-color: #eeeff2;
         border-radius: 5px;
         opacity: 1;
         padding: 10px 15px;

@@ -11104,12 +11104,21 @@ button.swiper-pagination-bullet {
   --bs-btn-padding-x: 20px;
   --bs-btn-padding-y: 12px;
   --bs-btn-border-radius: 5px; }
+  @media screen and (max-width: 991px) {
+    .btn {
+      --bs-btn-font-size: 15px;
+      --bs-btn-padding-x: 16px; } }
 
 .btn-lg, .btn-group-lg > .btn {
   --bs-btn-padding-y: 25px;
   --bs-btn-padding-x: 50px;
   --bs-btn-font-size: 20px;
   --bs-border-radius-lg: 5px; }
+  @media screen and (max-width: 991px) {
+    .btn-lg, .btn-group-lg > .btn {
+      --bs-btn-padding-y: 20px;
+      --bs-btn-padding-x: 20px;
+      --bs-btn-font-size: 16px; } }
 
 .form-control {
   padding: 16px 24px;
@@ -11343,7 +11352,7 @@ img {
   .accordion-style-1 .accordion .accordion-item {
     border-left: none;
     border-right: none;
-    --bs-accordion-border-color: #ECECEC; }
+    --bs-accordion-border-color: #ececec; }
     .accordion-style-1 .accordion .accordion-item:first-child {
       border-top: none; }
     .accordion-style-1 .accordion .accordion-item:last-child {
@@ -11435,7 +11444,7 @@ span.icons {
   .offcanvas.offcanvas .btn-close.btn-close {
     position: absolute;
     left: 0;
-    background-color: #EEEFF2;
+    background-color: #eeeff2;
     border-radius: 5px;
     opacity: 1;
     padding: 10px 15px;
