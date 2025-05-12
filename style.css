@@ -11492,18 +11492,12 @@ span.icons {
 
 @media screen and (max-width: 991px) {
   .swiper-mobile-style .swiper-slide {
-    width: 350px !important;
+    width: 40% !important;
     height: auto !important;
     flex-basis: unset; } }
-@media screen and (max-width: 767px) {
-  .swiper-mobile-style .swiper-slide {
-    width: 300px !important; } }
 @media screen and (max-width: 575px) {
   .swiper-mobile-style .swiper-slide {
-    width: 270px !important; } }
-@media screen and (max-width: 480px) {
-  .swiper-mobile-style .swiper-slide {
-    width: 220px !important; } }
+    width: 85% !important; } }
 
 .wp-block-button__link.wp-block-button__link {
   font-size: inherit;

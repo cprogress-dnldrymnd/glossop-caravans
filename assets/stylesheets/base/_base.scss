@@ -534,18 +534,13 @@ span.icons {
 .swiper-mobile-style {
     .swiper-slide {
         @include responsive(xs-sm) {
-            width: 350px !important;
+            width: 40% !important;
             height: auto !important;
             flex-basis: unset;
         }
-        @include responsive(xs) {
-            width: 300px !important;
-        }
+      
         @include responsive(mobile) {
-            width: 270px !important;
-        }
-        @include responsive(xxs) {
-            width: 220px !important;
+            width: 85% !important;
         }
     }
 }
