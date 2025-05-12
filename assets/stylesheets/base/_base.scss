@@ -511,6 +511,9 @@ span.icons {
     }
 }
 .swiper-on-mobile.swiper-on-mobile.swiper-on-mobile {
+    .swiper {
+        overflow: visible;
+    }
     .swiper-wrapper {
         @include responsive(xs-sm) {
             display: flex;
@@ -520,6 +523,7 @@ span.icons {
     .swiper-slide {
         @include responsive(xs-sm) {
             width: 350px !important;
+            height: auto !important;
             flex-basis: unset;
         }
         @include responsive(xs) {
