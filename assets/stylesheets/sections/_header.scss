@@ -74,6 +74,14 @@
         }
         .wp-block-navigation-item.has-child {
             position: static;
+            > a {
+                .wp-block-navigation-item__label {
+                    @include on-event {
+                        color: var(--green-color);
+                        color: var(--bs-white);
+                    }
+                }
+            }
             .wp-block-navigation-item__content {
                 height: var(--header-inner-height, 78px);
                 display: flex;

@@ -11925,6 +11925,8 @@ h5, .h5 {
       position: static; }
   #masthead .wp-block-navigation-item.has-child {
     position: static; }
+    #masthead .wp-block-navigation-item.has-child > a .wp-block-navigation-item__label:hover, #masthead .wp-block-navigation-item.has-child > a .wp-block-navigation-item__label:active, #masthead .wp-block-navigation-item.has-child > a .wp-block-navigation-item__label:focus {
+      color: var(--green-color); }
     #masthead .wp-block-navigation-item.has-child .wp-block-navigation-item__content {
       height: var(--header-inner-height, 78px);
       display: flex;
