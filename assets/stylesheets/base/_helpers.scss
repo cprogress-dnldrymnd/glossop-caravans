@@ -146,7 +146,7 @@
     color: var(--orange-color-4);
 }
 .text-red {
-    color: var(--red-color);
+    color: var(--red-color) !important;
 }
 .mw-600 {
     max-width: 600px;

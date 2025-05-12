@@ -11589,6 +11589,9 @@ span.icons {
 .text-orange-4 {
   color: var(--orange-color-4); }
 
+.text-red {
+  color: var(--red-color); }
+
 .mw-600 {
   max-width: 600px; }
 
