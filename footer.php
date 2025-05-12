@@ -116,8 +116,9 @@ get_template_part('template-parts/offcanvas/reserve-form');
 ?>
 
 <script>
-    $(document).ready(function () {
-        $submenu = jQuery('<?= do_shortcode('[template template_id=324]') ?>')
+    jQuery(document).ready(function () {
+        $submenu = jQuery('<?= do_shortcode('[template template_id=324]') ?>');
+        console.log($submenu);
     });
 </script>
 </body>
