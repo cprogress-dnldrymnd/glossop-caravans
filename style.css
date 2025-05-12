@@ -11949,7 +11949,7 @@ h5, .h5 {
   -o-transition: 500ms;
   transition: 500ms;
   opacity: 0; }
-  .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-navigation-item.has-child .wp-block-navigation-item__content {
+  .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-navigation-item .wp-block-navigation-item__content {
     padding: 0; }
 
 .bottom-footer .container > div {
