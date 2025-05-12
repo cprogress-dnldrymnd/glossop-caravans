@@ -11688,6 +11688,9 @@ body {
   color: var(--text-color);
   font-size: 20px;
   line-height: 1.2; }
+  @media screen and (max-width: 575px) {
+    body {
+      font-size: 16px; } }
 
 h1, .h1,
 h2,
