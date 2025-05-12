@@ -534,7 +534,7 @@ span.icons {
 .swiper-mobile-style {
     .swiper-slide {
         @include responsive(xs-sm) {
-            width: 40% !important;
+            width: 50% !important;
             height: auto !important;
             flex-basis: unset;
         }

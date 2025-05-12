@@ -11492,7 +11492,7 @@ span.icons {
 
 @media screen and (max-width: 991px) {
   .swiper-mobile-style .swiper-slide {
-    width: 40% !important;
+    width: 50% !important;
     height: auto !important;
     flex-basis: unset; } }
 @media screen and (max-width: 575px) {
