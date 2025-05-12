@@ -11768,7 +11768,7 @@ h5, .h5 {
       gap: 8px; } }
 
 @media screen and (max-width: 991px) {
-  .search-stock-row .advance-search-col {
+  .search-stock-row .button-col {
     order: 12; } }
 
 /* Make the desktop menu hide and mobile menu show below 900px */
