@@ -65,18 +65,20 @@
         }
         .wp-block-navigation__responsive-dialog {
             position: static;
-        }
-        .wp-block-navigation {
-            position: static;
-            .wp-block-navigation-item {
+
+            .wp-block-navigation {
                 position: static;
-                .wp-block-navigation-item__content {
-                    height: var(--header-inner-height, 78px);
-                    display: flex;
-                    align-items: center;
+                .wp-block-navigation-item.has-child {
+                    position: static;
+                    .wp-block-navigation-item__content {
+                        height: var(--header-inner-height, 78px);
+                        display: flex;
+                        align-items: center;
+                    }
                 }
             }
         }
+
         .has-custom-submenu {
             @include on-event {
                 .custom-submenu {
@@ -99,5 +101,5 @@
     z-index: 9;
     visibility: hidden;
     @include transition(500ms);
-    opacity: 0;;
+    opacity: 0;
 }
