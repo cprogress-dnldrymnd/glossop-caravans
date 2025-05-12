@@ -15,12 +15,21 @@
     }
 }
 
+.wp-block-site-logo {
+    img {
+        @include responsive(small-lg) {
+            max-width: 200px;
+        }
+    }
+}
+
 .header-menu.header-menu.header-menu {
     gap: 1vw;
     @include responsive(small-lg) {
         font-size: 20px;
         gap: 10px;
     }
+
     @include responsive(md) {
         font-size: 18px;
         gap: 8px;
