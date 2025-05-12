@@ -70,6 +70,13 @@
             position: static;
         }
     }
+    .has-custom-submenu {
+        @include on-event {
+            .custom-submenu {
+                visibility: visible;
+            }
+        }
+    }
 }
 .custom-submenu {
     position: absolute;
