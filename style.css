@@ -11930,7 +11930,7 @@ h5, .h5 {
   #masthead .has-custom-submenu:hover .custom-submenu, #masthead .has-custom-submenu:active .custom-submenu, #masthead .has-custom-submenu:focus .custom-submenu {
     visibility: visible;
     opacity: 1; } }
-.custom-submenu {
+.custom-submenu.custom-submenu.custom-submenu.custom-submenu {
   --top: calc(var(--header-height, 102px) + var(--admin-bar-height, 0));
   position: absolute;
   left: 0;
