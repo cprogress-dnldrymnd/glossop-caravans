@@ -56,7 +56,20 @@
         }
     }
 }
-
+#masthead {
+    .wp-block-navigation__responsive-container {
+        position: static;
+    }
+    .wp-block-navigation__responsive-dialog {
+        position: static;
+    }
+    .wp-block-navigation {
+        position: static;
+        .wp-block-navigation-item {
+            position: static;
+        }
+    }
+}
 .custom-submenu {
     position: fixed;
     left: 0;
