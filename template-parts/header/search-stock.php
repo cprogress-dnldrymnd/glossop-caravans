@@ -36,7 +36,7 @@ global $listing_fields;
                             <div class="col-sm-6 col-md-4 col-lg">
                                 <?= $listing_fields['model'] ?>
                             </div>
-                            <div class="v">
+                            <div class="col-sm-6 col-md-4 col-lg">
                                 <?= $listing_fields['price_min'] ?>
                             </div>
                             <div class="col-sm-6 col-md-4 col-lg">
