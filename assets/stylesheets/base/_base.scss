@@ -159,6 +159,9 @@
     &.swiper-wrapper {
         gap: 0;
         flex-wrap: nowrap;
+        .swiper-slide {
+            width: auto;
+        }
     }
 }
 
