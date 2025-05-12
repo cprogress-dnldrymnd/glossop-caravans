@@ -11923,6 +11923,8 @@ h5, .h5 {
     position: static; }
     #masthead .wp-block-navigation .wp-block-navigation-item {
       position: static; }
+      #masthead .wp-block-navigation .wp-block-navigation-item a {
+        height: var(--header-inner-height); }
   #masthead .has-custom-submenu:hover .custom-submenu, #masthead .has-custom-submenu:active .custom-submenu, #masthead .has-custom-submenu:focus .custom-submenu {
     visibility: visible; } }
 .custom-submenu {

@@ -70,6 +70,9 @@
             position: static;
             .wp-block-navigation-item {
                 position: static;
+                a {
+                    height: var(--header-inner-height, 78px);
+                }
             }
         }
         .has-custom-submenu {
