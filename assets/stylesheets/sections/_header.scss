@@ -65,12 +65,11 @@
         }
         .wp-block-navigation__responsive-dialog {
             position: static;
-
-            .wp-block-navigation {
+        }
+        .wp-block-navigation {
+            position: static;
+            .wp-block-navigation-item {
                 position: static;
-                .wp-block-navigation-item {
-                    position: static;
-                }
             }
         }
         .wp-block-navigation-item.has-child {
