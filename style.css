@@ -11657,6 +11657,9 @@ span.icons {
   @media screen and (max-width: 767px) {
     :where(.is-layout-grid) {
       gap: 20px; } }
+  @media screen and (max-width: 575px) {
+    :where(.is-layout-grid) {
+      gap: 10px; } }
 
 .row.g-4 {
   --bs-gutter-x: 40px;
@@ -11700,6 +11703,9 @@ span.icons {
 @media screen and (max-width: 767px) {
   .w-100-mobile > * {
     width: 100%; } }
+
+.grid-template-2-mobile {
+  grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
 body {
   font-family: "Proxima Nova", sans-serif;
