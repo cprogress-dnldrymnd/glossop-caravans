@@ -35,7 +35,13 @@
         padding: 20px;
     }
 }
-
+.form-control-holder {
+    label {
+        @include responsive(xs-sm) {
+            font-size: 16px;
+        }
+    }
+}
 .btn-primary {
     --bs-btn-color: var(--bs-white);
     --bs-btn-bg: var(--orange-color);
