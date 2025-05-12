@@ -7,6 +7,7 @@ jQuery(document).ready(function () {
 function mega_menu() {
     $height = jQuery('#main-header').outerHeight();
     $admin_bar = jQuery('#wpadminbar').outerHeight();
+    if($)
     jQuery('body').css('--header-height', $height + 'px');
     jQuery('body').css('--admin-bar-height', $admin_bar + 'px');
 }
