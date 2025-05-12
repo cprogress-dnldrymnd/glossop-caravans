@@ -20,77 +20,61 @@ add_action('init', 'menu_locations');
 
 
 /**
- * Registers a block style for the navigation submenu.
+ * Registers the custom submenu block variation.
  */
-function custom_nav_submenu_block_style() {
-	if ( ! function_exists( 'register_block_style' ) ) {
-		return;
-	}
+function custom_submenu_content_block_variation() {
+    // Register the block variation.  This JavaScript will run in the editor.
+    wp_register_script(
+        'custom-submenu-content-variation',
+        plugins_url( 'custom-submenu-content-variation.js', __FILE__ ), // Path to your JS file
+        array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-navigation' ), // Dependencies
+        filemtime( plugin_dir_path( __FILE__ ) . 'custom-submenu-content-variation.js' ), // Gets file modification time
+        true // Enqueue in the footer.
+    );
 
-	register_block_style(
-		'core/navigation-submenu',
-		array(
-			'name'  => 'custom-content',
-			'label' => 'Custom Content Submenu',
-		)
-	);
+    // Pass any data to the JavaScript file.  In this case, we don't need to pass any data, but this is how you would do it.
+    wp_localize_script(
+        'custom-submenu-content-variation',
+        'customSubmenuContent', // Object name in JS
+        array(
+            'exampleData' => 'Hello from PHP!',
+        )
+    );
+
+    // Enqueue the script.
+    wp_enqueue_script( 'custom-submenu-content-variation' );
 }
-add_action( 'init', 'custom_nav_submenu_block_style' );
+add_action( 'init', 'custom_submenu_content_block_variation' );
 
 /**
- * Adds a filter to modify the block attributes.
+ * Renders the custom submenu content.  This PHP runs when the page is displayed.
  *
- * This filter checks if the current block is a navigation submenu and has the
- * 'custom-content' style applied. If so, it adds a class name that our
- * CSS and JavaScript will use.
- *
- * @param array  $block_attributes The block attributes.
- * @param string $block_name       The name of the block.
- *
- * @return array The modified block attributes.
- */
-function custom_nav_submenu_add_attributes( $block_attributes, $block_name ) {
-	if ( 'core/navigation-submenu' === $block_name ) {
-		if ( isset( $block_attributes['className'] ) &&
-				strpos( $block_attributes['className'], 'is-style-custom-content' ) !== false ) {
-			$block_attributes['className'] .= ' has-custom-content';
-		}
-	}
-	return $block_attributes;
-}
-add_filter( 'render_block_data', 'custom_nav_submenu_add_attributes', 10, 2 );
-
-
-/**
- * Filters the content of the navigation submenu block.
- *
- * This function adds a custom div element to the end of the submenu's content
- * when the 'has-custom-content' class is present.  This div will contain
- * our dynamically added content.
- *
- * @param string $block_content The block's content.
- * @param array  $block         The block's data.
- *
+ * @param array $block_content The block content.
+ * @param array $block The block data.
  * @return string The modified block content.
  */
-function custom_nav_submenu_filter_content( $block_content, $block ) {
-	if ( isset( $block['attrs']['className'] ) &&
-			strpos( $block['attrs']['className'], 'has-custom-content' ) !== false ) {
-		$custom_content = '<div class="custom-submenu-content">';
-		$custom_content .= '<p>This is custom content!</p>';
-		$custom_content .= '<button class="custom-button">Click Me</button>';
-		$custom_content .= '</div>';
+function render_custom_submenu_content( $block_content, $block ) {
+    // Check if this is a navigation submenu block AND it's our custom variation.
+    if ( 'core/navigation-submenu' === $block['blockName'] && isset( $block['attrs']['isCustomContent'] ) && $block['attrs']['isCustomContent'] === true ) {
+        // Get the custom content from the block attributes.
+        $custom_content = isset( $block['attrs']['customContent'] ) ? $block['attrs']['customContent'] : '';
 
-		// Find the closing ul tag and insert our content before it.  This is more robust
-		// than a simple append, in case the submenu structure changes slightly.
-		$pos = strrpos( $block_content, '</ul>' );
-		if ( false !== $pos ) {
-			$block_content = substr_replace( $block_content, $custom_content, $pos, 0 );
-		} else {
-			//If for some reason the closing ul is not found, append.
-			$block_content .= $custom_content;
-		}
-	}
-	return $block_content;
+        // Build the output.  This is where you can add your custom HTML.
+        $output = '<div class="custom-submenu-content">';
+        $output .= do_blocks( $custom_content ); // Render any blocks that might be in the custom content.  VERY IMPORTANT.
+        $output .= '</div>';
+
+        // Find the closing tag of the <ul> element.  We want to insert our content *before* it.  This is crucial for correct HTML structure.
+        $ul_close_tag_position = strrpos( $block_content, '</ul>' );
+
+        if ( false !== $ul_close_tag_position ) {
+            // Insert the custom content before the closing </ul> tag.
+            $block_content = substr_replace( $block_content, $output, $ul_close_tag_position, 0 );
+        } else {
+            //If for some reason the closing tag isn't found, append to the end.
+             $block_content .= $output;
+        }
+    }
+    return $block_content;
 }
-add_filter( 'render_block_core/navigation-submenu', 'custom_nav_submenu_filter_content', 10, 2 );
+add_filter( 'render_block', 'render_custom_submenu_content', 10, 2 );
