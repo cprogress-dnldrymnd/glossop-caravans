@@ -6,7 +6,8 @@ jQuery(document).ready(function () {
 
 function mega_menu() {
     $height = jQuery('#main-header').outerHeight();
-    jQuery('body').css('--header-height', $height + 'px');
+    $admin_bar = jQuery('#wpadminbar').outerHeight();
+    jQuery('body').css('--header-height', $height + $admin_bar + 'px');
 }
 
 function fancybox() {
