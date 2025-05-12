@@ -510,3 +510,10 @@ span.icons {
         display: none;
     }
 }
+
+.swiper-on-mobile {
+    
+    .swiper-slide {
+        width: 270px !important;
+    }
+}
