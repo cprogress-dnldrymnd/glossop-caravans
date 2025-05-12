@@ -70,8 +70,10 @@
             position: static;
             .wp-block-navigation-item {
                 position: static;
-                a {
+                .wp-block-navigation-item__content {
                     height: var(--header-inner-height, 78px);
+                    display: flex;
+                    align-items: center;
                 }
             }
         }
