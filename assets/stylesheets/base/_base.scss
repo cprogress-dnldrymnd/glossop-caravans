@@ -510,15 +510,26 @@ span.icons {
         display: none;
     }
 }
-@include responsive(xs-sm) {
-    .swiper-on-mobile.swiper-on-mobile.swiper-on-mobile {
-        .swiper-wrapper {
+.swiper-on-mobile.swiper-on-mobile.swiper-on-mobile {
+    .swiper-wrapper {
+        @include responsive(xs-sm) {
             display: flex;
             gap: 0;
         }
-        .swiper-slide {
-            width: 270px !important;
+    }
+    .swiper-slide {
+        @include responsive(xs-sm) {
+            width: 350px !important;
             flex-basis: unset;
+        }
+        @include responsive(xs) {
+            width: 300px !important;
+        }
+        @include responsive(mobile) {
+            width: 270px !important;
+        }
+        @include responsive(xxs) {
+            width: 220px !important;
         }
     }
 }
