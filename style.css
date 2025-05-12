@@ -11906,7 +11906,7 @@ h5, .h5 {
     /* Show the desktop menu */
     position: relative; } }
 .header-tel a {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   text-decoration: none;
   gap: 10px; }
