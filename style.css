@@ -11928,7 +11928,8 @@ h5, .h5 {
         display: flex;
         align-items: center; }
   #masthead .has-custom-submenu:hover .custom-submenu, #masthead .has-custom-submenu:active .custom-submenu, #masthead .has-custom-submenu:focus .custom-submenu {
-    visibility: visible; } }
+    visibility: visible;
+    opacity: 1; } }
 .custom-submenu {
   --top: calc(var(--header-height, 102px) + var(--admin-bar-height, 0));
   position: absolute;
@@ -11939,7 +11940,13 @@ h5, .h5 {
   margin-left: auto;
   margin-right: auto;
   z-index: 9;
-  visibility: hidden; }
+  visibility: hidden;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -ms-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+  opacity: 0; }
 
 .bottom-footer .container > div {
   border-top: 1px solid #D3D3D3;

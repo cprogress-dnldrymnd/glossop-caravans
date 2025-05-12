@@ -81,6 +81,7 @@
             @include on-event {
                 .custom-submenu {
                     visibility: visible;
+                    opacity: 1;
                 }
             }
         }
@@ -97,4 +98,6 @@
     margin-right: auto;
     z-index: 9;
     visibility: hidden;
+    @include transition(500ms);
+    opacity: 0;;
 }
