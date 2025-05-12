@@ -238,7 +238,7 @@
 }
 
 .swap-col-mobile {
-    @include responsive(767) {
+    @include responsive(sm) {
         flex-direction: column-reverse;
     }
 }
