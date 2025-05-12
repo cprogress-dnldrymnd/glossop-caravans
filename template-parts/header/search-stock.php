@@ -24,22 +24,22 @@ global $listing_fields;
                 <div class="tab-pane fade show active" id="Caravans-tab-pane" role="tabpanel" aria-labelledby="Caravans-tab" tabindex="0">
                     <form action="" class="form-holder">
                         <div class="row align-items-end search-stock-row">
-                            <div class="col-sm-6 col-md-4 col-lg">
+                            <div class="col-6 col-md-4 col-lg">
                                 <?= $listing_fields['type'] ?>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg">
+                            <div class="col-xs-6 col-md-4 col-lg">
                                 <?= $listing_fields['berths'] ?>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg">
+                            <div class="col-6 col-md-4 col-lg">
                                 <?= $listing_fields['make'] ?>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg">
+                            <div class="col-6 col-md-4 col-lg">
                                 <?= $listing_fields['model'] ?>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg">
+                            <div class="col-6 col-md-4 col-lg">
                                 <?= $listing_fields['price_min'] ?>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg">
+                            <div class="col-6 col-md-4 col-lg">
                                 <?= $listing_fields['price_max'] ?>
                             </div>
                             <div class="col-sm-12 col-md-12 col-lg button">
