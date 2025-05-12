@@ -11625,6 +11625,9 @@ span.icons {
 .gap-24 {
   gap: 24px; }
 
+.wp-block-image > img {
+  width: 100% !important; }
+
 body {
   font-family: "Proxima Nova", sans-serif;
   color: var(--text-color);
