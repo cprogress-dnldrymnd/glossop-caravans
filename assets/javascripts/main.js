@@ -82,6 +82,13 @@ function swiper_sliders() {
             $key++;
         });
     }
+  
+    var swiper_on_mobile = new Swiper('.nav-tabs-swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        freeMode: true,
+      
+    });
 
     if (window.innerWidth < 992) {
         jQuery('.swiper-on-mobile > div').addClass('swiper-on-mobile-js');
@@ -94,4 +101,5 @@ function swiper_sliders() {
           
         });
     }
+
 }
