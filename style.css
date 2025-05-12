@@ -11486,19 +11486,20 @@ span.icons {
   .swiper-on-mobile.swiper-on-mobile.swiper-on-mobile .swiper-wrapper {
     display: flex;
     gap: 0; } }
+
 @media screen and (max-width: 991px) {
-  .swiper-on-mobile.swiper-on-mobile.swiper-on-mobile .swiper-slide {
+  .swiper-mobile-style .swiper-slide {
     width: 350px !important;
     height: auto !important;
     flex-basis: unset; } }
 @media screen and (max-width: 767px) {
-  .swiper-on-mobile.swiper-on-mobile.swiper-on-mobile .swiper-slide {
+  .swiper-mobile-style .swiper-slide {
     width: 300px !important; } }
 @media screen and (max-width: 575px) {
-  .swiper-on-mobile.swiper-on-mobile.swiper-on-mobile .swiper-slide {
+  .swiper-mobile-style .swiper-slide {
     width: 270px !important; } }
 @media screen and (max-width: 480px) {
-  .swiper-on-mobile.swiper-on-mobile.swiper-on-mobile .swiper-slide {
+  .swiper-mobile-style .swiper-slide {
     width: 220px !important; } }
 
 @media (min-width: 1500px) {

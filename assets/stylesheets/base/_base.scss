@@ -527,6 +527,9 @@ span.icons {
             gap: 0;
         }
     }
+}
+
+.swiper-mobile-style {
     .swiper-slide {
         @include responsive(xs-sm) {
             width: 350px !important;
