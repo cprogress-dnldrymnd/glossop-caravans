@@ -88,9 +88,9 @@ function swiper_sliders() {
         jQuery('.swiper-on-mobile > div > div').addClass('swiper-wrapper');
         jQuery('.swiper-on-mobile > div > div > div').addClass('swiper-slide');
         var swiper_on_mobile = new Swiper('.swiper-on-mobile-js', {
-            loop: true,
             slidesPerView: 'auto',
             spaceBetween: 12,
+            freeMode: true,
           
         });
     }
