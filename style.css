@@ -11119,6 +11119,9 @@ button.swiper-pagination-bullet {
   font-size: 20px;
   padding: 25px;
   --bs-border-radius-lg: 5px; }
+  @media screen and (max-width: 991px) {
+    .form-control-lg {
+      font-size: 14px; } }
 
 .btn-primary {
   --bs-btn-color: var(--bs-white);

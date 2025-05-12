@@ -21,6 +21,10 @@
     font-size: 20px;
     padding: 25px;
     --bs-border-radius-lg: 5px;
+    @include responsive(xs-sm) {
+        font-size: 14px;
+        padding: 20px;
+    }
 }
 
 .btn-primary {
