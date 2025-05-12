@@ -48,8 +48,8 @@ global $listing_fields;
                                 </div>
                             </div>
                             <div class="col-12 text-center">
-                                <div class="advance-search text-center">
-                                    <a href="">Advanced Search</a>
+                                <div class="advance-search text-center mt-0 mt-lg-0">
+                                    <a href="#" class="text-white">Advanced Search</a>
                                 </div>
                             </div>
                         </div>
