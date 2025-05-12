@@ -46,7 +46,8 @@ h2 {
         font-size: 2rem;
     }
 }
-h3, .h3 {
+h3,
+.h3 {
     font-size: 37px;
     @include responsive(mobile) {
         font-size: 25px;
@@ -89,4 +90,9 @@ h5 {
 }
 .fs-7 {
     font-size: 7px;
+}
+@include responsive(mobile) {
+    .fs-14-mobile {
+        font-size: 14px;
+    }
 }

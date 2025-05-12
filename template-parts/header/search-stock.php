@@ -23,7 +23,7 @@ global $listing_fields;
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="Caravans-tab-pane" role="tabpanel" aria-labelledby="Caravans-tab" tabindex="0">
                     <form action="" class="form-holder">
-                        <div class="row align-items-end">
+                        <div class="row align-items-end search-stock-row">
                             <div class="col-sm-6 col-md-4 col-lg">
                                 <?= $listing_fields['type'] ?>
                             </div>
@@ -47,7 +47,7 @@ global $listing_fields;
                                     <button type="submit" class="btn btn-primary btn-lg w-100">Search</button>
                                 </div>
                             </div>
-                            <div class="col-12 text-center">
+                            <div class="col-12 text-center advance-search-col">
                                 <div class="advance-search text-center mt-0 mt-lg-0">
                                     <a href="#" class="text-white">Advanced Search</a>
                                 </div>

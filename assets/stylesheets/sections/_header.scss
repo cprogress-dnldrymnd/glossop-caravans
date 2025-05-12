@@ -35,7 +35,13 @@
         gap: 8px;
     }
 }
-
+.search-stock-row {
+    .advance-search-col {
+        @include responsive(xs-sm) {
+           order: 12
+        }
+    }
+}
 /* Make the desktop menu hide and mobile menu show below 900px */
 @media (max-width: 991px) {
     .wp-block-navigation__responsive-container-open:not(.always-shown) {
