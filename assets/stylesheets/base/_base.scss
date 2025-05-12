@@ -339,6 +339,12 @@ img {
         padding-left: 20px;
         padding-right: 20px;
     }
+    @include responsive(xs) {
+        gap: 20px;
+    }
+    @include responsive(mobile) {
+        gap: 10px;
+    }
 }
 
 .sticky-element {
@@ -538,7 +544,7 @@ span.icons {
             height: auto !important;
             flex-basis: unset;
         }
-      
+
         @include responsive(mobile) {
             width: 85% !important;
         }

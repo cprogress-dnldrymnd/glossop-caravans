@@ -11365,6 +11365,12 @@ img {
     margin-bottom: 12px;
     padding-left: 20px;
     padding-right: 20px; }
+  @media screen and (max-width: 767px) {
+    .wp-block-latest-posts__list.wp-block-latest-posts__list {
+      gap: 20px; } }
+  @media screen and (max-width: 575px) {
+    .wp-block-latest-posts__list.wp-block-latest-posts__list {
+      gap: 10px; } }
 
 .sticky-element {
   position: sticky;

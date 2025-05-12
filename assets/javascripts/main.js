@@ -107,7 +107,7 @@ function swiper_sliders() {
     });
 
     if (window.innerWidth < 992) {
-        jQuery('.swiper-on-mobile > div').addClass('swiper-on-mobile-js');
+        jQuery('.swiper-on-mobile > div').addClass('swiper swiper-on-mobile-js');
         jQuery('.swiper-on-mobile > div > div').addClass('swiper-wrapper');
         jQuery('.swiper-on-mobile > div > div > div').addClass('swiper-slide');
         var swiper_on_mobile = new Swiper('.swiper-on-mobile-js', {
