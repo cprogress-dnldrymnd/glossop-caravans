@@ -138,6 +138,11 @@
 
 .swiper-listing {
     overflow: visible;
+    .listing-grid__feature-finance {
+        @include responsive(xs-sm) {
+            display: none;
+        }
+    }
 }
 
 .listings {

@@ -111,13 +111,13 @@ function listing__features($hide_per_month = false)
     ?>
     <div class="listing-grid__feature-holder">
         <div class="listing-grid__feature fs-13 row g-xxs fw-semibold">
-            <div class="listing-grid__feature-item col-auto">
+            <div class="listing-grid__feature-item col-auto listing-grid__feature-finance">
                 <div class="grid__feature-inner rounded h-100 d-flex align-items-center justify-content-center text-center">
                     Finance available: 7.9% APR
                 </div>
             </div>
             <?php if (!$hide_per_month) { ?>
-                <div class="listing-grid__feature-item col-auto">
+                <div class="listing-grid__feature-item listing-grid__feature-per-month col-auto">
                     <div
                         class="grid__feature-inner rounded h-100 d-flex flex-column align-items-center justify-content-center text-center">
                         <span class="fs-7 fw-medium">Per month</span>

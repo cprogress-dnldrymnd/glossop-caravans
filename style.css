@@ -11986,6 +11986,9 @@ h5, .h5 {
 
 .swiper-listing {
   overflow: visible; }
+  @media screen and (max-width: 991px) {
+    .swiper-listing .listing-grid__feature-finance {
+      display: none; } }
 
 .listings {
   gap: 20px; }
