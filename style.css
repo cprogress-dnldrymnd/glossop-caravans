@@ -11668,10 +11668,12 @@ h2, .h2 {
     h2, .h2 {
       font-size: 2rem; } }
 
-h3, .h3, .h3 {
+h3, .h3,
+.h3 {
   font-size: 37px; }
   @media screen and (max-width: 575px) {
-    h3, .h3, .h3 {
+    h3, .h3,
+    .h3 {
       font-size: 25px; } }
 
 h4, .h4 {
@@ -11713,7 +11715,6 @@ h5, .h5 {
 @media screen and (max-width: 575px) {
   .fs-14-mobile {
     font-size: 14px; } }
-
 @font-face {
   font-family: "Proxima Nova";
   src: url("./assets/fonts/ProximaNova/ProximaNova-Regular.eot");
