@@ -11234,7 +11234,7 @@ button.swiper-pagination-bullet {
         color: var(--text-color);
         background-color: var(--bs-white);
         border-color: var(--bs-black); }
-  .nav-tabs.nav-tabs-swiper {
+  .nav-tabs.swiper-wrapper {
     gap: 0; }
 
 img {
