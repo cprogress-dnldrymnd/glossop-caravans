@@ -146,6 +146,12 @@
     margin-bottom: var(--md-spacing);
 }
 
+.md-padding-mobile {
+    @include responsive(xs) {
+        padding: var(--md-spacing);
+    }
+}
+
 .text-orange {
     color: var(--orange-color);
 }

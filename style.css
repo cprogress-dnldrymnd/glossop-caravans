@@ -11621,6 +11621,10 @@ span.icons {
 .md-margin-bottom {
   margin-bottom: var(--md-spacing); }
 
+@media screen and (max-width: 767px) {
+  .md-padding-mobile {
+    padding: var(--md-spacing); } }
+
 .text-orange {
   color: var(--orange-color); }
 
