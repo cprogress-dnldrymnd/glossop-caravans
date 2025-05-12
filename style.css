@@ -11489,13 +11489,15 @@ span.icons {
 .wpcf7.wpcf7 br {
   display: none; }
 
-.swiper-on-mobile.swiper-on-mobile.swiper-on-mobile .swiper {
-  overflow: visible; }
 @media screen and (max-width: 991px) {
   .swiper-on-mobile.swiper-on-mobile.swiper-on-mobile .swiper-wrapper {
     display: flex;
     gap: 0; } }
 
+.swiper-mobile-style .swiper {
+  overflow: visible; }
+.swiper-mobile-style .swiper-wrapper {
+  flex-wrap: nowrap; }
 @media screen and (max-width: 991px) {
   .swiper-mobile-style .swiper-slide {
     width: 50% !important;
