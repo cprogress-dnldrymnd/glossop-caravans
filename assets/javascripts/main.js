@@ -82,4 +82,16 @@ function swiper_sliders() {
             $key++;
         });
     }
+
+    if (window.innerWidth < 992) {
+        jQuery('.swiper-on-mobile > div').addClass('swiper');
+        jQuery('.swiper-on-mobile > div > div').addClass('swiper');
+        jQuery('.swiper-on-mobile > div > div > div').addClass('swiper-slide');
+        var swiper_on_mobile = new Swiper('.swiper-on-mobile', {
+            loop: true,
+            slidesPerView: 'auto',
+            spaceBetween: 12,
+          
+        });
+    }
 }
