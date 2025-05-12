@@ -11628,6 +11628,9 @@ span.icons {
 .wp-block-image.w-100 > img {
   width: 100% !important; }
 
+.double-line-height {
+  line-height: 1.8; }
+
 body {
   font-family: "Proxima Nova", sans-serif;
   color: var(--text-color);
