@@ -230,3 +230,9 @@
 .double-line-height {
     line-height: 1.8;
 }
+
+.swap-col-mobile {
+    @include responsive(767) {
+        flex-direction: column-reverse;
+    }
+}
