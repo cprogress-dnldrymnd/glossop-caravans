@@ -76,8 +76,10 @@
             position: static;
             > a {
                 .wp-block-navigation-item__label {
+                    padding: 10px;
+                    border-radius: 5px;
                     @include on-event {
-                        color: var(--green-color);
+                        background-color: var(--green-color);
                         color: var(--bs-white);
                     }
                 }
