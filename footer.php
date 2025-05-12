@@ -10,9 +10,11 @@
  * @package orca
  */
 
-echo do_shortcode('[template template_id=136]');
 
 ?>
+<footer class="fs-14-mobile">
+    <?php echo do_shortcode('[template template_id=136]'); ?>
+</footer>
 
 <footer id="site-footer" class="site-footer background-primary py-3 d-none">
 
