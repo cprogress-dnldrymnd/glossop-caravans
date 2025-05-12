@@ -11121,7 +11121,8 @@ button.swiper-pagination-bullet {
   --bs-border-radius-lg: 5px; }
   @media screen and (max-width: 991px) {
     .form-control-lg {
-      font-size: 14px; } }
+      font-size: 14px;
+      padding: 20px; } }
 
 .btn-primary {
   --bs-btn-color: var(--bs-white);
