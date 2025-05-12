@@ -11046,6 +11046,7 @@ button.swiper-pagination-bullet {
   --orange-color: #ff681e;
   --orange-color-2: #ff681e;
   --orange-color-3: #FF980E;
+  --orange-color-4: #FF5251;
   --green-color: #45c324;
   --yellow-color: #FFC831;
   --teal-color: #009BA5;
@@ -11580,6 +11581,12 @@ span.icons {
 
 .text-orange-2 {
   color: var(--orange-color-2); }
+
+.text-orange-3 {
+  color: var(--orange-color-3); }
+
+.text-orange-4 {
+  color: var(--orange-color-4); }
 
 .mw-600 {
   max-width: 600px; }

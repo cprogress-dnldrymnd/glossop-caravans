@@ -152,7 +152,7 @@ function listing__price()
             <div class="listing-grid-item__price col-md-4">
                 <div class="grid-item__price-inner rounded h-100">
                     <span class="fs-14">Save</span>
-                    <strong class="text-orange-2">£1,955</strong>
+                    <strong class="text-orange-4">£1,955</strong>
                 </div>
             </div>
         </div>
