@@ -11950,7 +11950,8 @@ h5, .h5 {
   transition: 500ms;
   opacity: 0; }
   .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-navigation-item .wp-block-navigation-item__content {
-    padding: 0; }
+    padding: 0;
+    height: auto !important; }
 
 .bottom-footer .container > div {
   border-top: 1px solid #D3D3D3;

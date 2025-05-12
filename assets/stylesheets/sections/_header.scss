@@ -105,5 +105,6 @@
     opacity: 0;
     .wp-block-navigation-item .wp-block-navigation-item__content {
         padding: 0;
+        height: auto !important;
     }
 }
