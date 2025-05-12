@@ -3,7 +3,10 @@ body {
     color: var(--text-color);
     font-size: 20px;
     line-height: 1.2;
-    @include responsive(mobile) {
+    @include responsive(xs-sm) {
+        font-size: 18px;
+    }
+    @include responsive(xs) {
         font-size: 16px;
     }
 }
