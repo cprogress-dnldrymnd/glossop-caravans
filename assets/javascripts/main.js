@@ -83,7 +83,7 @@ function swiper_sliders() {
         });
     }
     jQuery('.nav-tabs-swiper .swiper-slide').each(function (index, element) {
-        $width = jQuery(this).outerWidth();
+        $width = jQuery(this).find('.nav-link').outerWidth();
         jQuery(this).css('width', $width + 'px');
     });
     var swiper_on_mobile = new Swiper('.nav-tabs-swiper', {
