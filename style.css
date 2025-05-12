@@ -11918,18 +11918,11 @@ h5, .h5 {
     position: static;
     height: 100%; }
   #masthead .wp-block-navigation__responsive-dialog {
-    position: static;
-    height: 100%; }
-  #masthead .block-navigation__responsive-container-content {
-    height: 100%; }
+    position: static; }
   #masthead .wp-block-navigation {
-    position: static;
-    height: 100%; }
+    position: static; }
     #masthead .wp-block-navigation .wp-block-navigation-item {
-      position: static;
-      height: 100%; }
-      #masthead .wp-block-navigation .wp-block-navigation-item .wp-block-navigation-item__content {
-        height: 100%; }
+      position: static; }
   #masthead .has-custom-submenu:hover .custom-submenu, #masthead .has-custom-submenu:active .custom-submenu, #masthead .has-custom-submenu:focus .custom-submenu {
     visibility: visible; } }
 .custom-submenu {
