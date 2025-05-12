@@ -11506,7 +11506,8 @@ span.icons {
     width: 220px !important; } }
 
 .wp-block-button__link.wp-block-button__link {
-  font-size: inherit; }
+  font-size: inherit;
+  padding: 18px; }
 
 @media (min-width: 1500px) {
   .container {
