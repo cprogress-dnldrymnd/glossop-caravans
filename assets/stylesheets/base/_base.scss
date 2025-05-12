@@ -510,10 +510,15 @@ span.icons {
         display: none;
     }
 }
-
-.swiper-on-mobile {
-    
-    .swiper-slide {
-        width: 270px !important;
+@include responsive(xs-sm) {
+    .swiper-on-mobile.swiper-on-mobile.swiper-on-mobile {
+        .swiper-wrapper {
+            display: flex;
+            gap: 0;
+        }
+        .swiper-slide {
+            width: 270px !important;
+            flex-basis: unset;
+        }
     }
 }

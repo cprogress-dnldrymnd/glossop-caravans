@@ -11475,9 +11475,12 @@ span.icons {
 .wpcf7.wpcf7 br {
   display: none; }
 
-.swiper-on-mobile .swiper-slide {
-  width: 270px !important; }
-
+@media screen and (max-width: 991px) {
+  .swiper-on-mobile.swiper-on-mobile .swiper-wrapper {
+    display: flex; }
+  .swiper-on-mobile.swiper-on-mobile .swiper-slide {
+    width: 270px !important;
+    flex-basis: unset; } }
 @media (min-width: 1500px) {
   .container {
     max-width: 1420px; } }
