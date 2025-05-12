@@ -48,7 +48,7 @@ global $listing_fields;
                                 </div>
                             </div>
                             <div class="col-12 text-center advance-search-col">
-                                <div class="advance-search text-center mt-0 mt-lg-0">
+                                <div class="advance-search text-center mt-0 mt-lg-2">
                                     <a href="#" class="text-white fs-14-mobile">Advanced Search</a>
                                 </div>
                             </div>
