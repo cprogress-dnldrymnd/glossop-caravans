@@ -1,6 +1,6 @@
 <div class="deals-swiper-holder">
     <div class="tab-nav-holder mb-5">
-        <div class="container">
+        <div class="container p-0">
             <div class="nav-tabs-swiper nav-tabs-swiper swiper overflow-visible">
                 <ul class="swiper-wrapper nav nav-tabs nav-tabs-style-2" id="myTabDeals-Swiper" role="tablist">
                     <li class="swiper-slide nav-item" role="presentation">
@@ -19,8 +19,8 @@
             </div>
         </div>
     </div>
-    <div class="tab-cotnent-holder ">
-        <div class="container">
+    <div class="tab-cotnent-holder">
+        <div class="container p-0">
             <div class="tab-content" id="myTabDeals-SwiperContent">
                 <div class="tab-pane fade show active" id="Weekly-Deals-tab-pane" role="tabpanel" aria-labelledby="Weekly-Deals-tab" tabindex="0">
 

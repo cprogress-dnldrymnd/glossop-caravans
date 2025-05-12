@@ -11237,6 +11237,8 @@ button.swiper-pagination-bullet {
   .nav-tabs.swiper-wrapper {
     gap: 0;
     flex-wrap: nowrap; }
+    .nav-tabs.swiper-wrapper .swiper-slide {
+      width: auto; }
 
 img {
   max-width: 100%; }
