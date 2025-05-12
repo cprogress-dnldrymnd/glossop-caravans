@@ -11927,7 +11927,12 @@ h5, .h5 {
     position: static; }
     #masthead .wp-block-navigation-item.has-child > a .wp-block-navigation-item__label {
       padding: 10px;
-      border-radius: 5px; }
+      border-radius: 5px;
+      -webkit-transition: 400ms;
+      -moz-transition: 400ms;
+      -ms-transition: 400ms;
+      -o-transition: 400ms;
+      transition: 400ms; }
       #masthead .wp-block-navigation-item.has-child > a .wp-block-navigation-item__label:hover, #masthead .wp-block-navigation-item.has-child > a .wp-block-navigation-item__label:active, #masthead .wp-block-navigation-item.has-child > a .wp-block-navigation-item__label:focus {
         background-color: var(--green-color);
         color: var(--bs-white); }

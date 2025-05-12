@@ -78,6 +78,8 @@
                 .wp-block-navigation-item__label {
                     padding: 10px;
                     border-radius: 5px;
+                    @include transition(400ms);
+
                     @include on-event {
                         background-color: var(--green-color);
                         color: var(--bs-white);
