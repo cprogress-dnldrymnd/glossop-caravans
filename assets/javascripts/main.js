@@ -82,12 +82,14 @@ function swiper_sliders() {
             $key++;
         });
     }
-  
+    jQuery('.nav-tabs-swiper .swiper-slide').each(function (index, element) {
+        $width = jQuery(this).outerWidth();
+        jQuery(this).css('width', $width + 'px');
+    });
     var swiper_on_mobile = new Swiper('.nav-tabs-swiper', {
         slidesPerView: 'auto',
         spaceBetween: 20,
         freeMode: true,
-      
     });
 
     if (window.innerWidth < 992) {
@@ -98,7 +100,7 @@ function swiper_sliders() {
             slidesPerView: 'auto',
             spaceBetween: 12,
             freeMode: true,
-          
+
         });
     }
 
