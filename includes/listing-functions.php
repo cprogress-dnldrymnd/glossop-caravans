@@ -137,19 +137,19 @@ function listing__price()
     ?>
     <div class="listing-grid-item__prices-holder">
         <div class="listing-grid-item__prices row g-xxs text-center">
-            <div class="listing-grid-item__price col-md-4">
+            <div class="listing-grid-item__price col-4">
                 <div class="grid-item__price-inner rounded h-100">
                     <span class="fs-14">RRP</span>
                     <strong><s>£44,125</s></strong>
                 </div>
             </div>
-            <div class="listing-grid-item__price col-md-4">
+            <div class="listing-grid-item__price col-4">
                 <div class="grid-item__price-inner rounded h-100">
                     <span class="fs-14">Our price</span>
                     <strong>£42,200</strong>
                 </div>
             </div>
-            <div class="listing-grid-item__price col-md-4">
+            <div class="listing-grid-item__price col-4">
                 <div class="grid-item__price-inner rounded h-100">
                     <span class="fs-14">Save</span>
                     <strong class="text-orange-4">£1,955</strong>

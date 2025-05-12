@@ -11973,8 +11973,6 @@ h5, .h5 {
 
 .swiper-listing {
   overflow: visible; }
-  .swiper-listing .listing-grid-item__prices .listing-grid-item__price {
-    width: 33.33333333% !important; }
 
 .listings {
   gap: 20px; }
