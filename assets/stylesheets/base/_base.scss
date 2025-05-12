@@ -232,6 +232,10 @@ img {
     .row {
         --bs-gutter-x: 8px;
         --bs-gutter-y: 8px;
+        @include responsive(xs-sm) {
+            --bs-gutter-x: 12px;
+            --bs-gutter-y: 12px;
+        }
     }
 }
 

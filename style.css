@@ -11121,7 +11121,8 @@ button.swiper-pagination-bullet {
       --bs-btn-font-size: 16px; } }
   @media screen and (max-width: 767px) {
     .btn-lg, .btn-group-lg > .btn {
-      --bs-btn-font-size: 18px; } }
+      --bs-btn-padding-y: 18px;
+      --bs-btn-padding-x: 18px; } }
 
 .form-control {
   padding: 16px 24px;
@@ -11282,6 +11283,10 @@ img {
   .form-holder .row {
     --bs-gutter-x: 8px;
     --bs-gutter-y: 8px; }
+    @media screen and (max-width: 991px) {
+      .form-holder .row {
+        --bs-gutter-x: 12px;
+        --bs-gutter-y: 12px; } }
 
 .seach-stock-holder label {
   color: var(--bs-white); }
