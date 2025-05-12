@@ -30,7 +30,7 @@ add_action('init', 'menu_locations');
 function my_custom_submenu_content($items, $item, $args, $depth)
 {
     // Check if this is the submenu of the desired parent item (e.g., by title).
-    if ('Your Parent Menu Item Title' === $item->title && $depth === 0) {
+    if ('Caravans' === $item->title && $depth === 0) {
         // You can add HTML directly here or render a block.
         $custom_content = '<li class="menu-item custom-submenu-item">';
         $custom_content .= '<div class="wp-block-your-custom-block">';
