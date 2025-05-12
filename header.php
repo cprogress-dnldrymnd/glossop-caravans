@@ -26,7 +26,12 @@
 
 <body <?php body_class(); ?>>
     <main id="main" class="main-content" role="main">
+        <header id="masthead" class="site-header" role="banner">
+            <?php
+            echo do_shortcode('[template template_id=167]');
+            ?>
+        </header>
         <?php
-        echo do_shortcode('[template template_id=167]');
+
         get_template_part('template-parts/header/search-stock');
         ?>
