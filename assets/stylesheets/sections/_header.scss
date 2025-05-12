@@ -1,4 +1,3 @@
-
 .wp-block-site-logo {
     img {
         @include responsive(small-lg) {
@@ -62,7 +61,7 @@
     position: fixed;
     left: 0;
     right: 0;
-    top: 0;
+    top: var(--header-height, 102px);
     max-width: 1720px;
     margin-left: auto;
     margin-right: auto;

@@ -1,7 +1,13 @@
 jQuery(document).ready(function () {
     swiper_sliders();
     fancybox();
+    mega_menu();
 });
+
+function mega_menu() {
+    $height = jQuery('#main-header').outerHeight();
+    jQuery('body').css('--header-height', $height + 'px');
+}
 
 function fancybox() {
     Fancybox.bind("[data-fancybox]", {
