@@ -11681,10 +11681,12 @@ span.icons {
   gap: 24px; }
 
 .wp-block-image.w-100 > img {
-  width: 100% !important; }
+  width: 100% !important;
+  object-fit: cover; }
 
 .wp-block-image.h-100 > img {
-  height: 100% !important; }
+  height: 100% !important;
+  object-fit: cover; }
 
 .double-line-height {
   line-height: 1.8; }
