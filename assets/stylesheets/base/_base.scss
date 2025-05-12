@@ -132,6 +132,9 @@
             background-color: var(--green-color);
             border-color: var(--green-color);
         }
+        @include responsive(xs) {
+            padding: 18px 25px;
+        }
     }
 
     &:not(.nav-tabs-style-2) {
