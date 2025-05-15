@@ -12,7 +12,7 @@
 
 
 ?>
-<footer class="fs-14-mobile">
+<footer class="main-footer">
     <?php echo do_shortcode('[template template_id=136]'); ?>
 </footer>
 
