@@ -11312,7 +11312,9 @@ img {
   padding-bottom: 32px; }
 @media screen and (max-width: 991px) {
   .seach-stock-holder .nav-tabs .nav-item .nav-link {
-    width: 100%; } }
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px; } }
 @media screen and (max-width: 991px) {
   .seach-stock-holder .nav-tabs .nav-item {
     flex: 1 0 0%; } }
