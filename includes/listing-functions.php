@@ -203,9 +203,7 @@ function listing__gallery($id, $is_thumbnail = false)
                 </div>
             </div>
             <?php
-            if ($args['style'] == 'style-2') {
-                echo listing__action(false);
-            }
+            echo listing__action(false);
             ?>
         </div>
         <div class="swiper <?= $is_thumbnail == false ? 'swiper-gallery h-100' : 'swiper-thumbnails' ?>">
