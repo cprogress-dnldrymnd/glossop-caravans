@@ -225,7 +225,7 @@
             border-radius: 5px 0 0 0;
             font-size: 19px;
             font-weight: 500;
-            @include responsive(mobile){
+            @include responsive(mobile) {
                 padding: 10px;
                 font-size: 15px;
             }
@@ -245,6 +245,9 @@
                 border-radius: 5px;
                 overflow: hidden;
                 position: relative;
+                @include responsive(mobile) {
+                    border-radius: 0;
+                }
             }
         }
     }
@@ -347,4 +350,8 @@
         --bs-gutter-x: 5px;
         --bs-gutter-y: 5px;
     }
+}
+
+#gallery-tab-pane {
+    @include responsive(mobile);
 }

@@ -12220,6 +12220,9 @@ h5, .h5 {
     border-radius: 5px;
     overflow: hidden;
     position: relative; }
+    @media screen and (max-width: 575px) {
+      .listing-grid--gallery .swiper-thumbnails .swiper-slide .image-box {
+        border-radius: 0; } }
 
 .available-now {
   display: flex;
