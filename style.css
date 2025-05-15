@@ -12333,7 +12333,11 @@ h5, .h5 {
           flex: 0 0 20px; }
           .listing-inner-holder .listing-inner--specifications .accordion .accordion-button-inner .icon-text .icon svg {
             width: 20px;
-            height: 20px; } }
+            height: 20px; }
+  .listing-inner-holder .listing--details-mobile {
+    border-bottom: 1px solid var(--bs-border-color);
+    margin-bottom: var(--xs-spacing);
+    padding-bottom: var(--xs-spacing); } }
 
 .offcanvas-form--form-fields {
   padding: 30px; }

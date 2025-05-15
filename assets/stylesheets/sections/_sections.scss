@@ -391,6 +391,11 @@
                 }
             }
         }
+        .listing--details-mobile {
+            border-bottom: 1px solid var(--bs-border-color);
+            margin-bottom: var(--xs-spacing);
+            padding-bottom: var(--xs-spacing);
+        }
     }
 }
 

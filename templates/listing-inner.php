@@ -91,7 +91,7 @@ global $listing_fields;
                 <div class="image-box brand mb-3">
                   <?= wp_get_attachment_image(190, 'medium') ?>
                 </div>
-                <h2 class="heading">Swift Sprite Quattro FB 2024</h2>
+                <h2 class="heading mb-0">Swift Sprite Quattro FB 2024</h2>
               </div>
               <div class="listing-key--info">
                 <h4 class="fs-35 heading mb-3 mb-lg-4">Key Information</h4>
