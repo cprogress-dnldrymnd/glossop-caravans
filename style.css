@@ -11588,7 +11588,8 @@ span.icons {
   gap: 10px;
   align-items: center; }
   .btn-with-icon svg {
-    height: 10px; }
+    height: 14px;
+    width: auto; }
 
 @media (min-width: 1500px) {
   .container {
