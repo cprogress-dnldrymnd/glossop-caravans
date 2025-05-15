@@ -4,12 +4,12 @@ global $listing_fields;
 <div class="seach-stock-holder">
     <div class="search-stock-mobile d-block d-lg-none background-secondary px-3 py-5">
         <div class="container">
-            <div class="row g-3 justify-content-between align-items-center text-white">
+            <div class="row g-3 justify-content-between align-items-center text-white fw-semibold">
                 <div class="col-auto">
-                    <span class="fs-16">Caravans</span>
+                    <span class="fs-16 ">Caravans</span>
                 </div>
                 <div class="col-auto">
-                    <a href="">
+                    <a href="" class="fs-14 text-white d-flex gap-3 align-items-center">
                         Edit <?= get__theme_icons('pencil.svg') ?>
                     </a>
                 </div>
