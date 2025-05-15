@@ -11584,7 +11584,7 @@ span.icons {
   padding: 18px 25px; }
 
 .btn-with-icon {
-  display: flex;
+  display: inline-flex;
   gap: 10px;
   align-items: center; }
   .btn-with-icon svg {

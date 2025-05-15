@@ -12,7 +12,7 @@ global $listing_fields;
         <div class="listings-holder">
             <h2 class="mb-5">We found <span class="text-orange">59</span> caravans for you</h2>
 
-            <div class="filter--mobile d-block d-lg-none">
+            <div class="filter--mobile d-block d-lg-none fw-semibold">
                 <div class="row g-xxs">
                     <div class="col-6">
                         <button class="btn-with-icon btn btn-primary w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvasFilter" aria-controls="offCanvasFilter">
