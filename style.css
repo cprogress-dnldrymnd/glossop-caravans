@@ -12318,7 +12318,20 @@ h5, .h5 {
       justify-content: space-between;
       gap: 20px;
       padding-top: 20px;
-      padding-bottom: 20px; } }
+      padding-bottom: 20px; }
+      .listing-inner-holder .listing-key--info .awning-image img {
+        max-width: 230px; } }
+@media screen and (max-width: 767px) {
+  .listing-inner-holder .listing-inner--specifications .accordion {
+    border: none !important;
+    padding: 0; }
+    .listing-inner-holder .listing-inner--specifications .accordion .accordion-button-inner .icon-text {
+      font-size: 16px; }
+      .listing-inner-holder .listing-inner--specifications .accordion .accordion-button-inner .icon-text .icon {
+        width: 20px; }
+        .listing-inner-holder .listing-inner--specifications .accordion .accordion-button-inner .icon-text .icon svg {
+          width: 20px;
+          height: 20px; } }
 
 .offcanvas-form--form-fields {
   padding: 30px; }

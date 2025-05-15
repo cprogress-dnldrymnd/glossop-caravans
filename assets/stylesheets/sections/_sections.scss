@@ -359,6 +359,25 @@
             }
         }
     }
+    @include responsive(xs) {
+        .listing-inner--specifications {
+            .accordion {
+                border: none !important;
+                padding: 0;
+                .accordion-button-inner .icon-text {
+                    font-size: 16px;
+                    .icon {
+                        flex: 0 0 20px;
+
+                        svg {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .offcanvas-form--form-fields {
