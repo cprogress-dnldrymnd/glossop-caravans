@@ -450,6 +450,10 @@ img {
                 display: flex;
                 align-items: center;
                 gap: 20px;
+                @include responsive(mobile) {
+                    gap: 10px;
+                    font-size: 15px;
+                }
             }
         }
 
@@ -466,6 +470,9 @@ img {
                 width: 32px;
                 height: 32px;
                 object-fit: contain;
+                @include responsive(mobile) {
+                    font-size: 20px;
+                }
             }
         }
     }
