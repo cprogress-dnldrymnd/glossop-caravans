@@ -16,14 +16,14 @@ global $listing_fields;
                 <div class="row g-xxs">
                     <div class="col-6">
                         <button class="btn btn-primary w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvasFilter" aria-controls="offCanvasFilter">
-                            <?= get__theme_images('filter.svg') ?>
+                            <?= get__theme_icons('filter.svg') ?>
 
                             Filter
                         </button>
                     </div>
                     <div class="col-6">
                         <button class="btn btn-light w-100 border">
-                            <?= get__theme_images('sort-by.svg') ?>
+                            <?= get__theme_icons('sort-by.svg') ?>
                             Sort
                         </button>
                     </div>
