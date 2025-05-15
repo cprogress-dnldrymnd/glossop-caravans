@@ -12303,7 +12303,8 @@ h5, .h5 {
     @media screen and (max-width: 767px) {
       .listing-inner-holder .listing-key--info .icon-list-v2 li {
         width: 100%;
-        flex: 100%; } }
+        flex: 100%;
+        border: none !important; } }
   @media screen and (max-width: 575px) {
     .listing-inner-holder .listing-key--info .icon-list-v2 {
       font-size: 14px; }
