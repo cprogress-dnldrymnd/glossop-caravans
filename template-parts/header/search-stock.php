@@ -27,7 +27,7 @@ global $listing_fields;
                             <div class="col-6 col-md-4 col-lg">
                                 <?= $listing_fields['type'] ?>
                             </div>
-                            <div class="col-xs-6 col-md-4 col-lg">
+                            <div class="col-6 col-md-4 col-lg">
                                 <?= $listing_fields['berths'] ?>
                             </div>
                             <div class="col-6 col-md-4 col-lg">
