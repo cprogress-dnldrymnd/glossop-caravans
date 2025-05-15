@@ -12267,6 +12267,10 @@ h5, .h5 {
       width: 100%;
       border-radius: 5px;
       height: 100%; }
+      @media screen and (max-width: 575px) {
+        .listing-inner-holder .listing-inner--tabs .nav-tabs > .nav-item .nav-link svg {
+          width: 20px;
+          height: 20px; } }
       .listing-inner-holder .listing-inner--tabs .nav-tabs > .nav-item .nav-link.active {
         background-color: var(--dark-color);
         color: var(--bs-white); }
