@@ -3,6 +3,9 @@
         @include responsive(md-lg) {
             max-width: 200px;
         }
+        @include responsive(xs-sm) {
+            max-width: 150px;
+        }
         
     }
 }
