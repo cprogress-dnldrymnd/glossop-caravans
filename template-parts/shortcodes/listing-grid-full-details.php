@@ -47,10 +47,15 @@
       <div class="col-xl-5">
         <div class="listing-grid--right-inner">
           <div class="listing-grid-right-item">
-            <div class="image-box image-style mb-20" style="--fit: contain; --padding: 18%">
+            <div class="image-box image-style mb-20 d-none d-lg- block" style="--fit: contain; --padding: 18%">
               <?= wp_get_attachment_image(189, 'large') ?>
             </div>
-            <div class="listing-inner--key-info">
+            <div class="listing-inner--key-info d-none d-lg-block">
+              <?php
+              echo listing__key_information();
+              ?>
+            </div>
+            <div class="listing-inner--key-info d-block d-lg-none">
               <?php
               echo listing__key_information();
               ?>
