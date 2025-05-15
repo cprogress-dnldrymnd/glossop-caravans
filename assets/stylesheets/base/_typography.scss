@@ -46,11 +46,14 @@ h1 {
 h2,
 .h2 {
     font-size: 59px;
-    @include responsive(xs-sm) {
+    @include responsive(xs-md) {
         font-size: 50px;
     }
-    @include responsive(xs) {
+    @include responsive(xs-sm) {
         font-size: 40px;
+    }
+    @include responsive(xs) {
+        font-size: 30px;
     }
     @include responsive(mobile) {
         font-size: 24px;
