@@ -11321,6 +11321,11 @@ img {
 @media screen and (max-width: 991px) {
   .seach-stock-holder .nav-tabs {
     flex-wrap: nowrap !important; } }
+@media screen and (max-width: 991px) {
+  .seach-stock-holder .search-stock-mobile:not(.active) + .tab-nav-holder {
+    display: none; }
+    .seach-stock-holder .search-stock-mobile:not(.active) + .tab-nav-holder + .tab-cotnent-holder {
+      display: none; } }
 
 .image-style {
   position: relative;

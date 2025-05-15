@@ -286,6 +286,18 @@ img {
             flex-wrap: nowrap !important;
         }
     }
+    .search-stock-mobile {
+        @include responsive(xs-sm) {
+            &:not(.active) {
+                & + .tab-nav-holder {
+                    display: none;
+                    & + .tab-cotnent-holder {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .image-style {
