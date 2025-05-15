@@ -11801,6 +11801,10 @@ span.icons {
   .flex-column-md {
     flex-direction: column !important; } }
 
+@media screen and (max-width: 991px) {
+  .flex-column-sm {
+    flex-direction: column !important; } }
+
 body {
   font-family: "Proxima Nova", sans-serif;
   color: var(--text-color);

@@ -261,3 +261,8 @@
         flex-direction: column !important;
     }
 }
+.flex-column-sm {
+    @include responsive(xs-sm) {
+        flex-direction: column !important;
+    }
+}
