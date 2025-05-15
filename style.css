@@ -12104,7 +12104,8 @@ h5, .h5 {
     display: block; }
 
 .swiper-listing {
-  overflow: visible; }
+  overflow: visible;
+  padding-bottom: 20px; }
   @media screen and (max-width: 991px) {
     .swiper-listing .listing-grid__feature-finance {
       display: none; } }
