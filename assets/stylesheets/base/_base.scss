@@ -286,18 +286,7 @@ img {
             flex-wrap: nowrap !important;
         }
     }
-    .search-stock-mobile {
-        @include responsive(xs-sm) {
-            &:not(.active) {
-                & + .tab-nav-holder {
-                    display: none;
-                    & + .tab-cotnent-holder {
-                        display: none;
-                    }
-                }
-            }
-        }
-    }
+
     &:not(.filter--active) {
         .tab-nav-holder,
         .tab-cotnent-holder {
