@@ -296,35 +296,32 @@
             border: none;
             gap: 18px;
 
-            > .nav-item {
+            .nav-link {
                 flex: 1 0 0%;
-
-                .nav-link {
-                    border: none;
-                    background-color: var(--lightgray-color-2);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 18px;
-                    width: 100%;
-                    border-radius: 5px;
-                    height: 100%;
-                    svg {
-                        @include responsive(mobile) {
-                            width: 20px;
-                            height: 20px;
-                        }
-                    }
-                    &.active {
-                        background-color: var(--dark-color);
-                        color: var(--bs-white);
-                        @include responsive(mobile) {
-                            display: none;
-                        }
-                    }
+                border: none;
+                background-color: var(--lightgray-color-2);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 18px;
+                width: 100%;
+                border-radius: 5px;
+                height: 100%;
+                svg {
                     @include responsive(mobile) {
-                        font-size: 10px;
+                        width: 20px;
+                        height: 20px;
                     }
+                }
+                &.active {
+                    background-color: var(--dark-color);
+                    color: var(--bs-white);
+                    @include responsive(mobile) {
+                        display: none;
+                    }
+                }
+                @include responsive(mobile) {
+                    font-size: 10px;
                 }
             }
         }

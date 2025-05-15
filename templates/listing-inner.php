@@ -76,19 +76,15 @@ global $listing_fields;
                     aria-selected="true">
                     <span class="icon"><?= get__theme_icons('gallery.svg') ?></span> Gallery
                   </button>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="three-sixty-tab" data-bs-toggle="tab"
-                      data-bs-target="#three-sixty-tab-pane" type="button" role="tab"
-                      aria-controls="three-sixty-tab-pane" aria-selected="false">
-                      <span class="icon"><?= get__theme_icons('360.svg') ?></span> 360° TOUR
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="video-tab" data-bs-toggle="tab" data-bs-target="#video-tab-pane"
-                      type="button" role="tab" aria-controls="video-tab-pane" aria-selected="false">
-                      <span class="icon"><?= get__theme_icons('video.svg') ?></span> Video
-                    </button>
-                  </li>
+                  <button class="nav-link" id="three-sixty-tab" data-bs-toggle="tab"
+                    data-bs-target="#three-sixty-tab-pane" type="button" role="tab"
+                    aria-controls="three-sixty-tab-pane" aria-selected="false">
+                    <span class="icon"><?= get__theme_icons('360.svg') ?></span> 360° TOUR
+                  </button>
+                  <button class="nav-link" id="video-tab" data-bs-toggle="tab" data-bs-target="#video-tab-pane"
+                    type="button" role="tab" aria-controls="video-tab-pane" aria-selected="false">
+                    <span class="icon"><?= get__theme_icons('video.svg') ?></span> Video
+                  </button>
                 </ul>
               </div>
               <div class="listing-key--info">
