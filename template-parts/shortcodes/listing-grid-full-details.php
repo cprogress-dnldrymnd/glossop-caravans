@@ -56,7 +56,7 @@
               echo listing__key_information();
               ?>
             </div>
-            <div class="d-block d-lg-none">
+            <div class="d-block d-lg-none mt-3">
               <div class="listing-inner--key-info">
                 <?php
                 echo listing__key_information_simple();
