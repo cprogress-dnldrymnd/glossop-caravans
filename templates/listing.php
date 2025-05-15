@@ -30,7 +30,7 @@ global $listing_fields;
             <div class="row g-4">
                 <div class="col-lg-3">
                     <div class="listing-filter sticky-element accordion-style-1">
-                        <div class="offcanvas offcanvas-start offcanvas-visible-desktop" tabindex="-1" id="offCanvasFilter" aria-labelledby="offCanvasFilterLabel">
+                        <div class="offcanvas offcanvas-end offcanvas-visible-desktop" tabindex="-1" id="offCanvasFilter" aria-labelledby="offCanvasFilterLabel">
                             <div class="offcanvas-body">
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 <div class="accordion rounded overflow-hidden" id="accordionFilter">
