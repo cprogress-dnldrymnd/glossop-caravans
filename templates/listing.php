@@ -20,7 +20,7 @@ global $listing_fields;
                         </button>
                     </div>
                     <div class="col-6">
-                        <button class="btn btn-orange">
+                        <button class="btn btn-light w-100 border">
                             Filter
                         </button>
                     </div>

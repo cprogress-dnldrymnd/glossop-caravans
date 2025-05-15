@@ -11446,6 +11446,10 @@ img {
       display: flex;
       align-items: center;
       gap: 20px; }
+      @media screen and (max-width: 575px) {
+        .accordion-style-1 .accordion-button .accordion-button-inner .icon-text {
+          gap: 10px;
+          font-size: 15px; } }
   .accordion-style-1 .accordion-button:after {
     flex: 0 0 auto;
     margin-left: 0; }
@@ -11459,7 +11463,6 @@ img {
       @media screen and (max-width: 575px) {
         .accordion-style-1 .accordion-button .icon img,
         .accordion-style-1 .accordion-button .icon svg {
-          grid-area: 20px;
           font-size: 20px; } }
 .accordion-style-1 .form-control-holder label {
   display: none; }
