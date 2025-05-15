@@ -138,6 +138,7 @@
 
 .swiper-listing {
     overflow: visible;
+    padding-bottom: 20px;
     .listing-grid__feature-finance {
         @include responsive(xs-sm) {
             display: none;
