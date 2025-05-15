@@ -12247,7 +12247,8 @@ h5, .h5 {
     .listing-inner-holder .listing-grid--gallery .swiper-gallery .swiper-pagination {
       font-size: 12px;
       right: 10px;
-      bottom: 10px; } }
+      bottom: 10px;
+      padding: 7px 12px; } }
 .listing-inner-holder .listing-inner--tabs .nav-tabs {
   border: none;
   gap: 18px; }

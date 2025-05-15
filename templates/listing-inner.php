@@ -49,7 +49,7 @@ global $listing_fields;
                 <div class="tab-content mb-3" id="listingInner--Tab">
                   <div class="tab-pane fade show active" id="gallery-tab-pane" role="tabpanel"
                     aria-labelledby="gallery-tab" tabindex="0">
-                    <div class="row g-xs flex-column-reverse flex-lg-row">
+                    <div class="row g-xs flex-column-reverse flex-lg-row gallery-row">
                       <div class="col-lg-2">
                         <div class="swiper-gallery-thumbnails">
                           <?php echo listing__gallery('gallery-1', true); ?>

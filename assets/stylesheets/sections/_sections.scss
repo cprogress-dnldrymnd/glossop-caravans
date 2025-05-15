@@ -341,3 +341,10 @@
         border: none;
     }
 }
+
+.gallery-row {
+    @include responsive(xs) {
+        --bs-gutter-x: 5px;
+        --bs-gutter-y: 5px;
+    }
+}
