@@ -186,7 +186,7 @@ function listing__gallery($id, $is_thumbnail = false)
         <div class="zoom d-none d-lg-block">
             <?= get__theme_images('zoom.svg') ?>
         </div>
-        <div class="listing-grid--feature--action d-block d-lg-none">
+        <div class="listing-grid--feature--action  listing-grid--feature--action--style-2 d-flex d-lg-none">
             <div class="listing-grid__feature fs-13 row g-xxs fw-semibold">
                 <div class="listing-grid__feature-item col-auto">
                     <div
