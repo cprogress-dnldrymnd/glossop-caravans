@@ -28,7 +28,7 @@ global $listing_fields;
             </div>
 
             <div class="row g-4">
-                <div class="col-lg-3 d-none d-lg-block">
+                <div class="col-lg-3">
                     <div class="listing-filter sticky-element accordion-style-1">
                         <div class="offcanvas offcanvas-start offcanvas-visible-desktop" tabindex="-1" id="offCanvasFilter" aria-labelledby="offCanvasFilterLabel">
                             <div class="offcanvas-body">
