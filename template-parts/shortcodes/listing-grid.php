@@ -7,7 +7,7 @@
             </div>
         <?php } ?>
 
-        <div class="listing-grid--feature--action">
+        <div class="listing-grid--feature--action ">
             <div class="listing-grid__feature fs-13 row g-xxs fw-semibold">
                 <div class="listing-grid__feature-item col-auto">
                     <div
