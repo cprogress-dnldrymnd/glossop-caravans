@@ -15,7 +15,7 @@ global $listing_fields;
             <div class="filter--mobile d-block d-lg-none">
                 <div class="row g-xxs">
                     <div class="col-6">
-                        <button class="btn btn-orange">
+                        <button class="btn btn-primary">
                             Filter
                         </button>
                     </div>
