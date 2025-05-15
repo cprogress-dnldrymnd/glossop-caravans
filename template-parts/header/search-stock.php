@@ -2,20 +2,22 @@
 global $listing_fields;
 ?>
 <div class="seach-stock-holder">
-    <div class="search-stock-mobile d-block d-lg-none background-secondary px-5 py-3">
-        <div class="container">
-            <div class="row g-3 justify-content-between align-items-center text-white fw-semibold">
-                <div class="col-auto">
-                    <span class="fs-16 ">Caravans</span>
-                </div>
-                <div class="col-auto">
-                    <a href="" class="fs-14 text-white d-flex gap-3 align-items-center text-decoration-none">
-                        Edit <?= get__theme_icons('pencil.svg') ?>
-                    </a>
+    <?php if (is_page(186)) { ?>
+        <div class="search-stock-mobile d-block d-lg-none background-secondary px-5 py-3">
+            <div class="container">
+                <div class="row g-3 justify-content-between align-items-center text-white fw-semibold">
+                    <div class="col-auto">
+                        <span class="fs-16 ">Caravans</span>
+                    </div>
+                    <div class="col-auto">
+                        <a href="" class="fs-14 text-white d-flex gap-3 align-items-center text-decoration-none">
+                            Edit <?= get__theme_icons('pencil.svg') ?>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    <?php } ?>
     <div class="tab-nav-holder">
         <div class="container">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
