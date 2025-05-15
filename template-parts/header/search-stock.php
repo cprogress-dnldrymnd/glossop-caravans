@@ -10,7 +10,7 @@ global $listing_fields;
                         <span class="fs-16 ">Caravans</span>
                     </div>
                     <div class="col-auto">
-                        <a href="#"  class="fs-14 text-white d-flex gap-3 align-items-center text-decoration-none edit-stock-filter">
+                        <a href="#" class="fs-14 text-white d-flex gap-3 align-items-center text-decoration-none edit-stock-filter">
                             Edit <?= get__theme_icons('pencil.svg') ?>
                         </a>
                     </div>
@@ -73,28 +73,33 @@ global $listing_fields;
                 </div>
                 <div class="tab-pane fade" id="Motorhomes-tab-pane" role="tabpanel" aria-labelledby="Motorhomes-tab" tabindex="0">
                     <form action="" class="form-holder">
-                        <div class="row align-items-end">
-                            <div class="col">
+                        <div class="row align-items-end search-stock-row">
+                            <div class="col-6 col-md-4 col-lg">
                                 <?= $listing_fields['type'] ?>
                             </div>
-                            <div class="col">
+                            <div class="col-6 col-md-4 col-lg">
                                 <?= $listing_fields['berths'] ?>
                             </div>
-                            <div class="col">
+                            <div class="col-6 col-md-4 col-lg">
                                 <?= $listing_fields['make'] ?>
                             </div>
-                            <div class="col">
+                            <div class="col-6 col-md-4 col-lg">
                                 <?= $listing_fields['model'] ?>
                             </div>
-                            <div class="col">
+                            <div class="col-6 col-md-4 col-lg">
                                 <?= $listing_fields['price_min'] ?>
                             </div>
-                            <div class="col">
+                            <div class="col-6 col-md-4 col-lg">
                                 <?= $listing_fields['price_max'] ?>
                             </div>
-                            <div class="col">
+                            <div class="col-sm-12 col-md-12 col-lg button">
                                 <div class="button-box">
                                     <button type="submit" class="btn btn-primary btn-lg w-100">Search</button>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center advance-search-col">
+                                <div class="advance-search text-center mt-0 mt-lg-2">
+                                    <a href="#" class="text-white fs-14-mobile">Advanced Search</a>
                                 </div>
                             </div>
                         </div>
@@ -102,28 +107,33 @@ global $listing_fields;
                 </div>
                 <div class="tab-pane fade" id="Statics-tab-pane" role="tabpanel" aria-labelledby="Statics-tab" tabindex="0">
                     <form action="" class="form-holder">
-                        <div class="row align-items-end">
-                            <div class="col">
+                        <div class="row align-items-end search-stock-row">
+                            <div class="col-6 col-md-4 col-lg">
                                 <?= $listing_fields['type'] ?>
                             </div>
-                            <div class="col">
+                            <div class="col-6 col-md-4 col-lg">
                                 <?= $listing_fields['berths'] ?>
                             </div>
-                            <div class="col">
+                            <div class="col-6 col-md-4 col-lg">
                                 <?= $listing_fields['make'] ?>
                             </div>
-                            <div class="col">
+                            <div class="col-6 col-md-4 col-lg">
                                 <?= $listing_fields['model'] ?>
                             </div>
-                            <div class="col">
+                            <div class="col-6 col-md-4 col-lg">
                                 <?= $listing_fields['price_min'] ?>
                             </div>
-                            <div class="col">
+                            <div class="col-6 col-md-4 col-lg">
                                 <?= $listing_fields['price_max'] ?>
                             </div>
-                            <div class="col">
+                            <div class="col-sm-12 col-md-12 col-lg button">
                                 <div class="button-box">
                                     <button type="submit" class="btn btn-primary btn-lg w-100">Search</button>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center advance-search-col">
+                                <div class="advance-search text-center mt-0 mt-lg-2">
+                                    <a href="#" class="text-white fs-14-mobile">Advanced Search</a>
                                 </div>
                             </div>
                         </div>
