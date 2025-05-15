@@ -107,6 +107,7 @@ global $listing_fields;
                 </div>
               </div>
               <div class="listing-inner--specifications md-margin-bottom">
+                <h4 class="fs-35 mb-3 mb-lg-3">Specification and Features</h4>
                 <div class="listing-filter accordion-style-1">
                   <div class="accordion rounded border overflow-hidden" id="accordionSpecs">
                     <div class="accordion-item">
