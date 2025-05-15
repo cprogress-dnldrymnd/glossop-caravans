@@ -12069,26 +12069,27 @@ h5, .h5 {
   .listing-grid.style-2 .listing-grid--key-information .icon-list-v4 li img {
     width: 24px;
     flex: 0 0 20px; }
-  .listing-grid.style-2 .listing-grid--feature--action {
-    position: absolute;
-    z-index: 1;
-    top: 15px;
-    left: 15px;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    right: 15px; }
-    .listing-grid.style-2 .listing-grid--feature--action .icon-list li {
-      background-color: var(--bs-white);
-      font-size: 17px;
-      padding: 5px;
-      border-radius: 6px;
-      padding: 7px 10px; }
-      .listing-grid.style-2 .listing-grid--feature--action .icon-list li svg,
-      .listing-grid.style-2 .listing-grid--feature--action .icon-list li img {
-        width: 15px;
-        height: 15px;
-        flex: 0 0 15px; }
+
+.listing-grid--feature--action--style-2.listing-grid--feature--action {
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  right: 15px; }
+  .listing-grid--feature--action--style-2.listing-grid--feature--action .icon-list li {
+    background-color: var(--bs-white);
+    font-size: 17px;
+    padding: 5px;
+    border-radius: 6px;
+    padding: 7px 10px; }
+    .listing-grid--feature--action--style-2.listing-grid--feature--action .icon-list li svg,
+    .listing-grid--feature--action--style-2.listing-grid--feature--action .icon-list li img {
+      width: 15px;
+      height: 15px;
+      flex: 0 0 15px; }
 
 .listing-grid-item__prices .grid-item__price-inner {
   background-color: var(--lightgray-color);
@@ -12184,9 +12185,9 @@ h5, .h5 {
   align-items: center;
   gap: 10px; }
   .available-now:before {
-    content: '';
+    content: "";
     display: inline-block;
-    background-color: #00CC9C;
+    background-color: #00cc9c;
     width: 10px;
     height: 10px;
     border-radius: 50%;

@@ -73,7 +73,6 @@
         .listing-grid--key-information {
             .icon-list-v4 {
                 li {
-
                     svg,
                     img {
                         width: 24px;
@@ -82,31 +81,33 @@
                 }
             }
         }
+    }
+}
 
-        .listing-grid--feature--action {
-            position: absolute;
-            z-index: 1;
-            top: 15px;
-            left: 15px;
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-            right: 15px;
+.listing-grid--feature--action--style-2 {
+    &.listing-grid--feature--action {
+        position: absolute;
+        z-index: 1;
+        top: 15px;
+        left: 15px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        right: 15px;
 
-            .icon-list {
-                li {
-                    background-color: var(--bs-white);
-                    font-size: 17px;
-                    padding: 5px;
-                    border-radius: 6px;
-                    padding: 7px 10px;
+        .icon-list {
+            li {
+                background-color: var(--bs-white);
+                font-size: 17px;
+                padding: 5px;
+                border-radius: 6px;
+                padding: 7px 10px;
 
-                    svg,
-                    img {
-                        width: 15px;
-                        height: 15px;
-                        flex: 0 0 15px;
-                    }
+                svg,
+                img {
+                    width: 15px;
+                    height: 15px;
+                    flex: 0 0 15px;
                 }
             }
         }
@@ -156,7 +157,6 @@
         border-bottom: 1px solid var(--bs-border-color);
     }
 
-
     .listing-grid--left-inner {
         .listing-grid-item__prices-holder {
             position: absolute;
@@ -172,7 +172,7 @@
     }
 
     .listing-grid--right-inner {
-        >.listing-grid-right-item {
+        > .listing-grid-right-item {
             padding: 20px;
 
             @include not-last-child {
@@ -189,7 +189,6 @@
             }
         }
     }
-
 }
 
 .listing-grid--gallery {
@@ -250,7 +249,6 @@
                 border-radius: 5px;
                 overflow: hidden;
                 position: relative;
-
             }
         }
     }
@@ -262,9 +260,9 @@
     gap: 10px;
 
     @include before {
-        content: '';
+        content: "";
         display: inline-block;
-        background-color: #00CC9C;
+        background-color: #00cc9c;
         width: 10px;
         height: 10px;
         border-radius: 50%;
@@ -293,7 +291,7 @@
             border: none;
             gap: 18px;
 
-            >.nav-item {
+            > .nav-item {
                 flex: 1 0 0%;
 
                 .nav-link {
