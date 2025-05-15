@@ -258,7 +258,8 @@ img {
     }
     .tab-nav-holder {
         .container {
-            @include responsive(mobile) {
+            @include responsive(xs-sm) {
+                max-width: 100%;
                 padding-left: 0;
                 padding-right: 0;
             }
