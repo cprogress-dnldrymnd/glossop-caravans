@@ -3,14 +3,16 @@ global $listing_fields;
 ?>
 <div class="seach-stock-holder">
     <div class="search-stock-mobile d-block d-lg-none background-secondary px-3 py-5">
-        <div class="row g-3">
-            <div class="col-auto">
-                <span class="fs-16">Caravans</span>
-            </div>
-            <div class="col-auto">
-                <a href="">
-                    Edit <?= get__theme_icons('pencil.svg') ?>
-                </a>
+        <div class="container">
+            <div class="row g-3 justify-content-between align-items-center text-white">
+                <div class="col-auto">
+                    <span class="fs-16">Caravans</span>
+                </div>
+                <div class="col-auto">
+                    <a href="">
+                        Edit <?= get__theme_icons('pencil.svg') ?>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
