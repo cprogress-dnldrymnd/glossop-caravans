@@ -494,7 +494,7 @@ img {
     align-items: center;
     justify-content: center;
     color: var(--text-color);
-    @include responsive(mobile) {
+    @include responsive(xs) {
         --swiper-navigation-size: 15px;
         width: 36px;
         height: 36px;

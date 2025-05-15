@@ -280,6 +280,12 @@
         right: 20px;
         bottom: 20px;
         border-radius: 5px;
+        @include responsive(xs) {
+            font-size: 12px;
+            right: 10px;
+            bottom: 10px;
+            padding: 7px 12px;
+        }
     }
 
     .listing-inner--tabs {

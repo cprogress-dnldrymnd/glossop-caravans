@@ -11477,7 +11477,7 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--text-color); }
-  @media screen and (max-width: 575px) {
+  @media screen and (max-width: 767px) {
     .swiper-button.swiper-button {
       --swiper-navigation-size: 15px;
       width: 36px;
@@ -12243,6 +12243,11 @@ h5, .h5 {
   right: 20px;
   bottom: 20px;
   border-radius: 5px; }
+  @media screen and (max-width: 767px) {
+    .listing-inner-holder .listing-grid--gallery .swiper-gallery .swiper-pagination {
+      font-size: 12px;
+      right: 10px;
+      bottom: 10px; } }
 .listing-inner-holder .listing-inner--tabs .nav-tabs {
   border: none;
   gap: 18px; }
