@@ -64,17 +64,30 @@ function swiper_sliders() {
 
     if (jQuery('.swiper-thumbnails').length > 0) {
 
-        $height = jQuery('.swiper-gallery').outerHeight();
 
-        jQuery('.swiper-thumbnails').css('height', $height + 'px');
 
-        var swiper_thumb = new Swiper(".swiper-thumbnails", {
-            direction: "vertical",
-            spaceBetween: 10,
-            slidesPerView: 'auto',
-            freeMode: true,
-            watchSlidesProgress: true,
-        });
+        if (window.innerWidth > 991) {
+            $height = jQuery('.swiper-gallery').outerHeight();
+
+            jQuery('.swiper-thumbnails').css('height', $height + 'px');
+            var swiper_thumb = new Swiper(".swiper-thumbnails", {
+                direction: "vertical",
+                spaceBetween: 10,
+                slidesPerView: 'auto',
+                freeMode: true,
+                watchSlidesProgress: true,
+            });
+        } else {
+            var swiper_thumb = new Swiper(".swiper-thumbnails", {
+                spaceBetween: 5,
+                slidesPerView: 4,
+                freeMode: true,
+                watchSlidesProgress: true,
+            });
+        }
+
+
+
         var swiper_gallery = new Swiper('.swiper-gallery', {
             loop: true,
             slidesPerView: 1,
