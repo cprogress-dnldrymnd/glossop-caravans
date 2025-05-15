@@ -11898,27 +11898,9 @@ h5, .h5 {
 
 .fs-35 {
   font-size: 35px; }
-  @media screen and (max-width: 991px) {
-    .fs-35 {
-      font-size: 30px; } }
-  @media screen and (max-width: 767px) {
-    .fs-35 {
-      font-size: 25px; } }
-  @media screen and (max-width: 575px) {
-    .fs-35 {
-      font-size: 20px; } }
 
 .fs-32 {
   font-size: 32px; }
-  @media screen and (max-width: 991px) {
-    .fs-32 {
-      font-size: 25px; } }
-  @media screen and (max-width: 767px) {
-    .fs-32 {
-      font-size: 20px; } }
-  @media screen and (max-width: 575px) {
-    .fs-32 {
-      font-size: 18px; } }
 
 .fs-23 {
   font-size: 23px; }
@@ -12255,6 +12237,15 @@ h5, .h5 {
     border-radius: 50%;
     flex: 0 0 10px; }
 
+@media screen and (max-width: 991px) {
+  .listing-inner-holder .heading {
+    font-size: 30px; } }
+@media screen and (max-width: 767px) {
+  .listing-inner-holder .heading {
+    font-size: 25px; } }
+@media screen and (max-width: 575px) {
+  .listing-inner-holder .heading {
+    font-size: 20px; } }
 .listing-inner-holder .listing-grid__feature {
   justify-content: flex-end; }
   .listing-inner-holder .listing-grid__feature .grid__feature-inner {

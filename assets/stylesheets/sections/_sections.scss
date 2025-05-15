@@ -270,6 +270,17 @@
 }
 
 .listing-inner-holder {
+    .heading {
+        @include responsive(xs-sm) {
+            font-size: 30px;
+        }
+        @include responsive(xs) {
+            font-size: 25px;
+        }
+        @include responsive(mobile) {
+            font-size: 20px;
+        }
+    }
     .listing-grid__feature {
         justify-content: flex-end;
 

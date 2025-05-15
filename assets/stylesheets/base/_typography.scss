@@ -87,28 +87,11 @@ h5 {
 }
 .fs-35 {
     font-size: 35px;
-    @include responsive(xs-sm) {
-        font-size: 30px;
-    }
-    @include responsive(xs) {
-        font-size: 25px;
-    }
-    @include responsive(mobile) {
-        font-size: 20px;
-    }
 }
 
 .fs-32 {
     font-size: 32px;
-    @include responsive(xs-sm) {
-        font-size: 25px;
-    }
-    @include responsive(xs) {
-        font-size: 20px;
-    }
-    @include responsive(mobile) {
-        font-size: 18px;
-    }
+
 }
 .fs-23 {
     font-size: 23px;
