@@ -2,7 +2,7 @@
 global $listing_fields;
 ?>
 <div class="seach-stock-holder">
-    <?php if (is_page(186)) { ?>
+    <?php if (is_page(186) || is_page(192)) { ?>
         <div class="search-stock-mobile d-block d-lg-none background-secondary px-5 py-3">
             <div class="container">
                 <div class="row g-3 justify-content-between align-items-center text-white fw-semibold">
