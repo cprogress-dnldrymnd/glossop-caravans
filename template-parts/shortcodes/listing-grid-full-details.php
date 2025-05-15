@@ -33,7 +33,13 @@
           <?php
           echo listing__gallery($args['id']);
           if ($args['style'] == 'style-1') {
-            echo listing__price();
+          ?>
+            <div class="d-none d-lg-block">
+              <?php
+              echo listing__price();
+              ?>
+            </div>
+          <?php
           }
           ?>
         </div>
