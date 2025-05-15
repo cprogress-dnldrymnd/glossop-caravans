@@ -11524,6 +11524,13 @@ span.icons {
     height: 37px;
     transform: translateX(-180%);
     background-size: 25px; }
+    @media screen and (max-width: 991px) {
+      .offcanvas.offcanvas .btn-close.btn-close {
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        transform: translateX(-120%);
+        background-size: 15px; } }
   @media screen and (min-width: 992px) {
     .offcanvas.offcanvas.offcanvas-visible-desktop {
       max-width: 100%;
@@ -11537,6 +11544,9 @@ span.icons {
         background-color: transparent; }
         .offcanvas.offcanvas.offcanvas-visible-desktop .offcanvas-body .btn-close {
           display: none; } }
+  @media screen and (max-width: 991px) {
+    .offcanvas.offcanvas {
+      max-width: 85%; } }
 
 .wpcf7.wpcf7 p {
   margin-bottom: 0; }

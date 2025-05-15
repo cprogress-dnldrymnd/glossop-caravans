@@ -302,7 +302,6 @@ img {
             }
         }
     }
-   
 }
 
 .image-style {
@@ -570,6 +569,13 @@ span.icons {
         height: 37px;
         transform: translateX(-180%);
         background-size: 25px;
+        @include responsive(xs-sm) {
+            width: 30px;
+            height: 30px;
+            padding: 10px;
+            transform: translateX(-120%);
+            background-size: 15px;
+        }
     }
     &.offcanvas-visible-desktop {
         @include responsive(md-lg) {
@@ -587,6 +593,9 @@ span.icons {
                 }
             }
         }
+    }
+    @include responsive(xs-sm) {
+        max-width: 85%;
     }
 }
 
