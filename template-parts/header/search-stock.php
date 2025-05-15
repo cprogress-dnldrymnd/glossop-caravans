@@ -10,7 +10,7 @@ global $listing_fields;
                         <span class="fs-16 ">Caravans</span>
                     </div>
                     <div class="col-auto">
-                        <a href="" class="fs-14 text-white d-flex gap-3 align-items-center text-decoration-none">
+                        <a href="#"  class="fs-14 text-white d-flex gap-3 align-items-center text-decoration-none edit-stock-filter">
                             Edit <?= get__theme_icons('pencil.svg') ?>
                         </a>
                     </div>

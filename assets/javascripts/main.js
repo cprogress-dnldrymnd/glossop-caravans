@@ -3,7 +3,13 @@ jQuery(document).ready(function () {
     fancybox();
     mega_menu();
 });
+function search_stock() {
+    $('.edit-stock-filter').click(function (e) {
+        jQuery(this).parents('.seach-stock-holder').toggleClass('filter--active');
+        e.preventDefault();
 
+    });
+}
 function mega_menu() {
     $height = jQuery('#main-header').outerHeight();
     $main_header_inner_height = jQuery('#main-header > div').outerHeight();

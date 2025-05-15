@@ -298,6 +298,12 @@ img {
             }
         }
     }
+    &:not(.filter--active) {
+        .tab-nav-holder,
+        .tab-cotnent-holder {
+            display: none;
+        }
+    }
 }
 
 .image-style {
