@@ -263,7 +263,7 @@ global $listing_fields;
                       <span><a href="tel:07525 491 913">07525 491 913</a></span>
                     </li>
                     <li>
-
+                    <?= get__theme_icons('location.svg') ?>
                       <span><a href="#">Location</a></span>
                     </li>
                   </ul>
