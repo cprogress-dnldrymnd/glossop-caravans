@@ -1,5 +1,5 @@
 <div class="listing-grid-full-details bg-white rounded overflow-hidden position-relative <?= $args['style'] ?>">
-  <div class="listing-grid--top">
+  <div class="listing-grid--top d-none d-lg-block">
     <div class="row g-3 justify-content-between mb-1">
       <div class="col-md-6">
         <div class="image-box brand">
