@@ -286,7 +286,7 @@ global $listing_fields;
           <?= listing__price(false) ?>
         </div>
         <div class="col-5">
-
+          <a class="btn btn-primary w-100" data-bs-toggle="offcanvas" href="#offcanvasReserveForm" role="button" aria-controls="offcanvasReserveForm">Reserve now</a>
         </div>
       </div>
     </div>
