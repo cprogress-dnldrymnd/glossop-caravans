@@ -648,3 +648,13 @@ span.icons {
     font-size: inherit;
     padding: 18px 25px;
 }
+
+.btn-with-icon {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    svg {
+        height: 14px;
+        width: auto;
+    }
+}

@@ -11583,6 +11583,13 @@ span.icons {
   font-size: inherit;
   padding: 18px 25px; }
 
+.btn-with-icon {
+  display: flex;
+  gap: 10px;
+  align-items: center; }
+  .btn-with-icon svg {
+    height: 10px; }
+
 @media (min-width: 1500px) {
   .container {
     max-width: 1420px; } }
