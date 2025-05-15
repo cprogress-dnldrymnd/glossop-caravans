@@ -279,14 +279,14 @@ global $listing_fields;
     </div>
   </section>
 
-  <section class="listing-inner--mobile-sticky">
+  <section class="listing-inner--mobile-sticky d-block d-lg-none position-sticky bottom-0 background-white p-20">
     <div class="container">
       <div class="row g-xs">
         <div class="col-7">
           <?= listing__price(false) ?>
         </div>
         <div class="col-5">
-          
+
         </div>
       </div>
     </div>

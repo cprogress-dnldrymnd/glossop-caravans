@@ -138,7 +138,7 @@ function listing__price($rrp = true, $our_price = true, $save = true)
     <div class="listing-grid-item__prices-holder">
         <div class="listing-grid-item__prices row g-xxs text-center">
             <?php if ($rrp) { ?>
-                <div class="listing-grid-item__price col-4">
+                <div class="listing-grid-item__price col">
                     <div class="grid-item__price-inner rounded h-100">
                         <span class="fs-14">RRP</span>
                         <strong><s>£44,125</s></strong>
@@ -147,7 +147,7 @@ function listing__price($rrp = true, $our_price = true, $save = true)
             <?php } ?>
             <?php if ($our_price) { ?>
 
-                <div class="listing-grid-item__price col-4">
+                <div class="listing-grid-item__price col">
                     <div class="grid-item__price-inner rounded h-100">
                         <span class="fs-14">Our price</span>
                         <strong>£42,200</strong>
@@ -155,7 +155,7 @@ function listing__price($rrp = true, $our_price = true, $save = true)
                 </div>
             <?php } ?>
             <?php if ($save) { ?>
-                <div class="listing-grid-item__price col-4">
+                <div class="listing-grid-item__price col">
                     <div class="grid-item__price-inner rounded h-100">
                         <span class="fs-14">Save</span>
                         <strong class="text-orange-4">£1,955</strong>

@@ -429,3 +429,11 @@
         margin-right: -1rem;
     }
 }
+
+.listing-inner--mobile-sticky {
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    left: 0;
+    right: 0;
+}
