@@ -11318,6 +11318,9 @@ img {
 @media screen and (max-width: 991px) {
   .seach-stock-holder .nav-tabs .nav-item {
     flex: 1 0 0%; } }
+@media screen and (max-width: 991px) {
+  .seach-stock-holder .nav-tabs {
+    flex-wrap: nowrap !important; } }
 
 .image-style {
   position: relative;
