@@ -56,11 +56,17 @@
               echo listing__key_information();
               ?>
             </div>
-            <div class="listing-inner--key-info d-block d-lg-none">
+            <div class="d-block d-lg-none">
+              <div class="listing-inner--key-info">
+                <?php
+                echo listing__key_information_simple();
+                ?>
+              </div>
               <?php
-              echo listing__key_information_simple();
+              echo listing__price();;
               ?>
             </div>
+
           </div>
           <div class="listing-grid-right-item">
             <?php
