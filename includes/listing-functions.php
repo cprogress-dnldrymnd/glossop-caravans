@@ -183,7 +183,7 @@ function listing__gallery($id, $is_thumbnail = false)
     ob_start();
 ?>
     <div class="listing-grid--gallery h-100">
-        <div class="zoom" class="d-none d-lg-block ">
+        <div class="zoom d-none d-lg-block">
             <?= get__theme_images('zoom.svg') ?>
         </div>
         <div class="listing-grid--feature--action d-block d-lg-none">
