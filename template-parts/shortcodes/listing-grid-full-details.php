@@ -68,16 +68,10 @@
             </div>
 
           </div>
-          <div class="listing-grid-right-item">
+          <div class="listing-grid-right-item d-none d-lg-block">
             <?php
             if ($args['style'] != 'style-3') {
-            ?>
-              <div class="d-none d-lg-block">
-                <?php
-                echo listing__features(true);
-                ?>
-              </div>
-            <?php
+              echo listing__features(true);
             } else {
               echo listing__price();
             }
