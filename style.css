@@ -12050,6 +12050,9 @@ h5, .h5 {
     padding: 0;
     height: auto !important; }
 
+.wp-block-navigation__responsive-container-content {
+  padding: 20px; }
+
 .bottom-footer .container > div {
   border-top: 1px solid #D3D3D3;
   padding-top: 30px;
