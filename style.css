@@ -11518,18 +11518,19 @@ span.icons {
     height: 37px;
     transform: translateX(-180%);
     background-size: 25px; }
-  .offcanvas.offcanvas.offcanvas-visible-mobile {
-    max-width: 100%;
-    position: static;
-    transform: none;
-    visibility: visible;
-    opacity: 1;
-    border: none; }
-    .offcanvas.offcanvas.offcanvas-visible-mobile .offcanvas-body {
-      padding: 0;
-      background-color: transparent; }
-      .offcanvas.offcanvas.offcanvas-visible-mobile .offcanvas-body .btn-close {
-        display: none; }
+  @media screen and (min-width: 992px) {
+    .offcanvas.offcanvas.offcanvas-visible-desktop {
+      max-width: 100%;
+      position: static;
+      transform: none;
+      visibility: visible;
+      opacity: 1;
+      border: none; }
+      .offcanvas.offcanvas.offcanvas-visible-desktop .offcanvas-body {
+        padding: 0;
+        background-color: transparent; }
+        .offcanvas.offcanvas.offcanvas-visible-desktop .offcanvas-body .btn-close {
+          display: none; } }
 
 .wpcf7.wpcf7 p {
   margin-bottom: 0; }
