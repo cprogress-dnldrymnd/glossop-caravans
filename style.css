@@ -12322,16 +12322,21 @@ h5, .h5 {
       .listing-inner-holder .listing-key--info .awning-image img {
         max-width: 230px; } }
 @media screen and (max-width: 767px) {
-  .listing-inner-holder .listing-inner--specifications .accordion {
-    border: none !important;
-    padding: 0; }
-    .listing-inner-holder .listing-inner--specifications .accordion .accordion-button-inner .icon-text {
-      font-size: 16px; }
-      .listing-inner-holder .listing-inner--specifications .accordion .accordion-button-inner .icon-text .icon {
-        width: 20px; }
-        .listing-inner-holder .listing-inner--specifications .accordion .accordion-button-inner .icon-text .icon svg {
-          width: 20px;
-          height: 20px; } }
+  .listing-inner-holder .listing-inner--specifications {
+    border-top: 1px solid var(--bs-border-color);
+    margin-top: var(--xs-spacing);
+    padding-top: var(--xs-spacing); }
+    .listing-inner-holder .listing-inner--specifications .accordion {
+      border: none !important;
+      padding: 0;
+      --bs-accordion-btn-padding-y: 10px; }
+      .listing-inner-holder .listing-inner--specifications .accordion .accordion-button-inner .icon-text {
+        font-size: 16px; }
+        .listing-inner-holder .listing-inner--specifications .accordion .accordion-button-inner .icon-text .icon {
+          flex: 0 0 20px; }
+          .listing-inner-holder .listing-inner--specifications .accordion .accordion-button-inner .icon-text .icon svg {
+            width: 20px;
+            height: 20px; } }
 
 .offcanvas-form--form-fields {
   padding: 30px; }

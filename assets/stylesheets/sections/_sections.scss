@@ -361,14 +361,17 @@
     }
     @include responsive(xs) {
         .listing-inner--specifications {
+            border-top: 1px solid var(--bs-border-color);
+            margin-top: var(--xs-spacing);
+            padding-top: var(--xs-spacing);
             .accordion {
                 border: none !important;
                 padding: 0;
+                --bs-accordion-btn-padding-y: 10px;
                 .accordion-button-inner .icon-text {
                     font-size: 16px;
                     .icon {
                         flex: 0 0 20px;
-
                         svg {
                             width: 20px;
                             height: 20px;
