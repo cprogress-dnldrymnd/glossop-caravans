@@ -88,7 +88,7 @@ global $listing_fields;
                 </ul>
               </div>
               <div class="listing-key--info">
-                <h4 class="fs-35 mb-5">Key Information</h4>
+                <h4 class="fs-35 mb-3 mb-lg-3">Key Information</h4>
                 <?php
                 echo listing__key_information_v2();
                 ?>
@@ -97,7 +97,7 @@ global $listing_fields;
                 </div>
               </div>
               <div class="listing-inner--description xs-margin-bottom">
-                <h4 class="fs-35">Description</h4>
+                <h4 class="fs-35 mb-3 mb-lg-3">Description</h4>
                 <div class="desc">
                   <p>The Swift Challenger 530 2008 is a practical and family-friendly caravan, offering a flexible
                     4-berth
