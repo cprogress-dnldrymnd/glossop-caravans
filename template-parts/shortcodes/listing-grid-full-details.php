@@ -57,7 +57,7 @@
               ?>
             </div>
             <div class="d-block d-lg-none mt-3">
-              <div class="listing-inner--key-info">
+              <div class="listing-inner--key-info mb-3">
                 <?php
                 echo listing__key_information_simple();
                 ?>
@@ -86,7 +86,7 @@
                   </a>
                 </div>
               </div>
-              <div class="col-sm-6">
+              <div class="col-sm-6 d-none d-lg-block">
                 <div class="listing-grid-item__button mt-3">
                   <a href="#" class="btn btn-outline-dark w-100 btn-lg fw-semibold">
                     Enquire now
