@@ -286,13 +286,19 @@ img {
             flex-wrap: nowrap !important;
         }
     }
-
-    &:not(.filter--active) {
-        .tab-nav-holder,
-        .tab-cotnent-holder {
-            display: none;
+    .search-stock-mobile {
+        @include responsive(xs-sm) {
+            &:not(.filter--active) {
+                & + .tab-nav-holder {
+                    display: none;
+                    & + .tab-cotnent-holder {
+                        display: none;
+                    }
+                }
+            }
         }
     }
+   
 }
 
 .image-style {

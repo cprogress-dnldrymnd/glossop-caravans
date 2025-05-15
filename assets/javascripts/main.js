@@ -6,7 +6,7 @@ jQuery(document).ready(function () {
 });
 function search_stock() {
     jQuery('.edit-stock-filter').click(function (e) {
-        jQuery(this).parents('.seach-stock-holder').toggleClass('filter--active');
+        jQuery(this).parents('.search-stock-mobile').toggleClass('filter--active');
         e.preventDefault();
 
     });
