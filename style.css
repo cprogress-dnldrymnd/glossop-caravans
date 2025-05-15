@@ -12282,6 +12282,11 @@ h5, .h5 {
     background-color: var(--lightgray-color-4);
     border: none; }
 
+@media screen and (max-width: 767px) {
+  .gallery-row {
+    --bs-gutter-x: 5px;
+    --bs-gutter-y: 5px; } }
+
 /*-----------------------------------------------------------------------------------*/
 /* Plugins
 /*-----------------------------------------------------------------------------------*/
