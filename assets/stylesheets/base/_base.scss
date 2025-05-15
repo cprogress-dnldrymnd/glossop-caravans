@@ -256,7 +256,14 @@ img {
     label {
         color: var(--bs-white);
     }
-
+    .tab-nav-holder {
+       .container {
+        @include responsive(mobile) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+       }
+    }
     .tab-cotnent-holder {
         padding-top: 32px;
         padding-bottom: 32px;
@@ -266,7 +273,7 @@ img {
         .nav-item {
             .nav-link {
                 @include responsive(xs-sm) {
-                   width: 100%;
+                    width: 100%;
                 }
             }
             @include responsive(xs-sm) {

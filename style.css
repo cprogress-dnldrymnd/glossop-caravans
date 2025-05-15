@@ -11303,6 +11303,10 @@ img {
 
 .seach-stock-holder label {
   color: var(--bs-white); }
+@media screen and (max-width: 575px) {
+  .seach-stock-holder .tab-nav-holder .container {
+    padding-left: 0;
+    padding-right: 0; } }
 .seach-stock-holder .tab-cotnent-holder {
   padding-top: 32px;
   padding-bottom: 32px; }
