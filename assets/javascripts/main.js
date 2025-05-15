@@ -2,9 +2,10 @@ jQuery(document).ready(function () {
     swiper_sliders();
     fancybox();
     mega_menu();
+    search_stock();
 });
 function search_stock() {
-    $('.edit-stock-filter').click(function (e) {
+    jQuery('.edit-stock-filter').click(function (e) {
         jQuery(this).parents('.seach-stock-holder').toggleClass('filter--active');
         e.preventDefault();
 
