@@ -11469,6 +11469,11 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--text-color); }
+  @media screen and (max-width: 575px) {
+    .swiper-button.swiper-button {
+      --swiper-navigation-size: 15px;
+      width: 36px;
+      height: 36px; } }
 
 .icon-list {
   gap: 28px; }
