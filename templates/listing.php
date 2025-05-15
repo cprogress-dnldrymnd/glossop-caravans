@@ -12,7 +12,7 @@ global $listing_fields;
         <div class="listings-holder">
             <h2 class="mb-5">We found <span class="text-orange">59</span> caravans for you</h2>
             <div class="row g-4">
-                <div class="col-lg-3">
+                <div class="col-lg-3 d-none d-lg-block">
                     <div class="listing-filter sticky-element accordion-style-1">
                         <div class="offcanvas offcanvas-start offcanvas-visible-desktop" tabindex="-1" id="offCanvasFilter" aria-labelledby="offCanvasFilterLabel">
                             <div class="offcanvas-body">
