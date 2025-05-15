@@ -7,7 +7,8 @@
 <?php
 global $listing_fields;
 ?>
-<div class="site-content listing-inner md-padding-top md-padding-bottom">
+<div class="site-content listing-inner md-padding-bottom">
+  <div class="md-padding-top d-none d-lg-block"></div>
   <section class="listing-inner--main-details overflow-hidden">
     <div class="container">
       <div class="listing-inner-holder md-margin-bottom">
