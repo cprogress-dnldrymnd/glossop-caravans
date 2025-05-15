@@ -108,7 +108,7 @@ add_action('after_setup_theme', 'listings_fields');
 function listing__features($hide_per_month = false)
 {
     ob_start();
-    ?>
+?>
     <div class="listing-grid__feature-holder">
         <div class="listing-grid__feature fs-13 row g-xxs fw-semibold">
             <div class="listing-grid__feature-item col-auto listing-grid__feature-finance">
@@ -127,14 +127,14 @@ function listing__features($hide_per_month = false)
             <?php } ?>
         </div>
     </div>
-    <?php
+<?php
     return ob_get_clean();
 }
 
 function listing__price()
 {
     ob_start();
-    ?>
+?>
     <div class="listing-grid-item__prices-holder">
         <div class="listing-grid-item__prices row g-xxs text-center">
             <div class="listing-grid-item__price col-4">
@@ -157,14 +157,14 @@ function listing__price()
             </div>
         </div>
     </div>
-    <?php
+<?php
     return ob_get_clean();
 }
 
 function listing__action($share = true, $save = true)
 {
     ob_start();
-    ?>
+?>
     <ul class="icon-list mb-0 d-flex list-inline align-items-center justify-content-end fw-semibold">
         <?php if ($share == true) { ?>
             <li><?= get__theme_images('share.svg') ?> Share</li>
@@ -174,17 +174,39 @@ function listing__action($share = true, $save = true)
         <?php } ?>
 
     </ul>
-    <?php
+<?php
     return ob_get_clean();
 }
 
 function listing__gallery($id, $is_thumbnail = false)
 {
     ob_start();
-    ?>
+?>
     <div class="listing-grid--gallery h-100">
         <div class="zoom">
             <?= get__theme_images('zoom.svg') ?>
+        </div>
+        <div class="listing-grid--feature--action">
+            <div class="listing-grid__feature fs-13 row g-xxs fw-semibold">
+                <div class="listing-grid__feature-item col-auto">
+                    <div
+                        class="grid__feature-inner rounded h-100 d-flex align-items-center justify-content-center text-center">
+                        Finance available: 7.9% APR
+                    </div>
+                </div>
+                <div class="listing-grid__feature-item col-auto">
+                    <div
+                        class="grid__feature-inner rounded h-100 d-flex flex-column align-items-center justify-content-center text-center">
+                        <span class="fs-7 fw-medium">Per month</span>
+                        £565.50
+                    </div>
+                </div>
+            </div>
+            <?php
+            if ($args['style'] == 'style-2') {
+                echo listing__action(false);
+            }
+            ?>
         </div>
         <div class="swiper <?= $is_thumbnail == false ? 'swiper-gallery h-100' : 'swiper-thumbnails' ?>">
             <div class="swiper-wrapper <?= $is_thumbnail == false ? 'h-100' : '' ?>">
@@ -239,26 +261,26 @@ function listing__gallery($id, $is_thumbnail = false)
 
         </div>
     </div>
-    <?php
+<?php
     return ob_get_clean();
 }
 
 function listing__key_information_simple()
 {
     ob_start();
-    ?>
+?>
     <ul class="icon-list mb-0 icon-list-v4 d-flex list-inline align-items-center flex-wrap fs-18">
         <li> <?= get__theme_images('berths.svg') ?> 4 Berth</li>
         <li><?= get__theme_images('year.svg') ?> 2024</li>
     </ul>
-    <?php
+<?php
     return ob_get_clean();
 }
 
 function listing__key_information()
 {
     ob_start();
-    ?>
+?>
     <ul
         class="icon-list mb-0 icon-list-v2 d-flex list-inline align-items-center justify-content-end fw-semibold flex-wrap fs-18">
         <li> <?= get__theme_images('berths.svg') ?> 6 Berth</li>
@@ -269,7 +291,7 @@ function listing__key_information()
         <li><?= get__theme_images('kg.svg') ?> MTPLM 1630kg</li>
         <li><?= get__theme_images('awning-size.svg') ?> 10.52m Awning Size</li>
     </ul>
-    <?php
+<?php
     return ob_get_clean();
 }
 
@@ -277,7 +299,7 @@ function listing__key_information()
 function listing__key_information_v2()
 {
     ob_start();
-    ?>
+?>
     <ul
         class="icon-list mb-0 icon-list-v2 d-flex list-inline align-items-center justify-content-end fw-semibold flex-wrap fs-18">
         <li class="border-bottom py-3"> <?= get__theme_images('berths.svg') ?>
@@ -317,6 +339,6 @@ function listing__key_information_v2()
             </span>
         </li>
     </ul>
-    <?php
+<?php
     return ob_get_clean();
 }

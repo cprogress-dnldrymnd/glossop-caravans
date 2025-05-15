@@ -54,8 +54,7 @@
             <?php
             if ($args['style'] != 'style-3') {
               echo listing__features(true);
-            }
-            else {
+            } else {
               echo listing__price();
             }
             ?>
