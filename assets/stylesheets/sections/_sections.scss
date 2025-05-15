@@ -351,6 +351,14 @@
                     flex: 100%;
                 }
             }
+            @include responsive(mobile) {
+                font-size: 14px;
+                img {
+                    width: 20px;
+                    height: 20px;
+                    object-fit: contain;
+                }
+            }
         }
 
         .awning-image {
