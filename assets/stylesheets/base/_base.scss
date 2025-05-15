@@ -567,6 +567,20 @@ span.icons {
         transform: translateX(-180%);
         background-size: 25px;
     }
+    &.offcanvas-visible-mobile {
+        max-width: 100%;
+        position: static;
+        transform: none;
+        visibility: visible;
+        opacity: 1;
+        .offcanvas-body {
+            padding: 0;
+            background-color: transparent;
+            .btn-close {
+                display: none;
+            }
+        }
+    }
 }
 
 .wpcf7.wpcf7 {
