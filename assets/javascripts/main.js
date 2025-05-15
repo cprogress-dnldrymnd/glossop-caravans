@@ -10,7 +10,10 @@ function mega_menu() {
     $admin_bar = jQuery('#wpadminbar').outerHeight();
     jQuery('body').css('--header-height', $height + 'px');
     jQuery('body').css('--header-inner-height', $main_header_inner_height + 'px');
-    jQuery('body').css('--admin-bar-height', $admin_bar + 'px');
+    if (jQuery('#wpadminbar').length > 0) {
+        jQuery('body').css('--admin-bar-height', $admin_bar + 'px');
+
+    }
 }
 
 function fancybox() {
