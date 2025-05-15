@@ -80,14 +80,14 @@
           <div class="listing-grid-right-item">
             <div class="row g-xxs">
               <div class="col-md-6">
-                <div class="listing-grid-item__button mt-3">
+                <div class="listing-grid-item__button">
                   <a href="#" class="btn btn-primary w-100 btn-lg fw-semibold">
                     View deal
                   </a>
                 </div>
               </div>
               <div class="col-md-6 d-none d-lg-block">
-                <div class="listing-grid-item__button mt-3">
+                <div class="listing-grid-item__button">
                   <a href="#" class="btn btn-outline-dark w-100 btn-lg fw-semibold">
                     Enquire now
                   </a>
