@@ -12051,11 +12051,11 @@ h5, .h5 {
     padding: 0;
     height: auto !important; }
 
-.wp-block-navigation__responsive-container-content {
-  padding: 20px; }
-  .wp-block-navigation__responsive-container-content .wp-block-navigation__responsive-container-close {
-    right: 20px; }
-
+@media screen and (max-width: 991px) {
+  .wp-block-navigation__responsive-container-content {
+    padding: 20px; }
+    .wp-block-navigation__responsive-container-content .wp-block-navigation__responsive-container-close {
+      right: 20px; } }
 .bottom-footer .container > div {
   border-top: 1px solid #D3D3D3;
   padding-top: 30px;
