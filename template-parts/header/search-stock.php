@@ -2,7 +2,7 @@
 global $listing_fields;
 ?>
 <div class="seach-stock-holder">
-    <div class="search-stock-mobile d-block d-lg-none background-secondary px-3 py-5">
+    <div class="search-stock-mobile d-block d-lg-none background-secondary px-5 py-3">
         <div class="container">
             <div class="row g-3 justify-content-between align-items-center text-white fw-semibold">
                 <div class="col-auto">
