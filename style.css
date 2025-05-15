@@ -11525,7 +11525,8 @@ span.icons {
     visibility: visible;
     opacity: 1; }
     .offcanvas.offcanvas.offcanvas-visible-mobile .offcanvas-body {
-      padding: 0; }
+      padding: 0;
+      background-color: transparent; }
       .offcanvas.offcanvas.offcanvas-visible-mobile .offcanvas-body .btn-close {
         display: none; }
 
