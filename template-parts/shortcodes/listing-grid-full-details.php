@@ -50,6 +50,7 @@
             <div class="image-box image-style mb-20 d-none d-lg- block" style="--fit: contain; --padding: 18%">
               <?= wp_get_attachment_image(189, 'large') ?>
             </div>
+            <h3 class="d-block d-lg-none">Swift Sprite Quattro FB 2024</h3>
             <div class="listing-inner--key-info d-none d-lg-block">
               <?php
               echo listing__key_information();
