@@ -11104,6 +11104,9 @@ button.swiper-pagination-bullet {
 body {
   --admin-bar-height: 0; }
 
+img {
+  height: auto; }
+
 .btn {
   --bs-btn-font-size: 20px;
   --bs-btn-padding-x: 20px;
