@@ -12363,11 +12363,10 @@ h5, .h5 {
     margin-right: -1rem; } }
 
 .listing-inner--mobile-sticky {
-  position: fixed;
-  bottom: 0;
   z-index: 999;
   left: 0;
-  right: 0; }
+  right: 0;
+  box-shadow: 0px -5px 16px #0000001F; }
 
 /*-----------------------------------------------------------------------------------*/
 /* Plugins

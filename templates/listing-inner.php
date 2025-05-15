@@ -279,20 +279,7 @@ global $listing_fields;
     </div>
   </section>
 
-  <section class="listing-inner--mobile-sticky d-block d-lg-none position-sticky bottom-0 background-white p-20">
-    <div class="container">
-      <div class="row g-xs align-items-center">
-        <div class="col-7">
-          <?= listing__price(false) ?>
-        </div>
-        <div class="col-5">
-          <a class="btn btn-primary w-100" data-bs-toggle="offcanvas" href="#offcanvasReserveForm" role="button" aria-controls="offcanvasReserveForm">Reserve now</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="listine-inner--related overflow-hidden">
+  <section class="listine-inner--related overflow-hidden pt-5 p5-lg-0">
     <div class="container">
       <h2 class="sm-margin-bottom">You may also like</h2>
       <div class="swiper-holder">
