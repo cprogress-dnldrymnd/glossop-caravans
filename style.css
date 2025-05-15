@@ -12315,7 +12315,9 @@ h5, .h5 {
       flex: 100%;
       display: flex;
       align-items: start;
-      gap: 20px; } }
+      justify-content: space-between;
+      gap: 20px;
+      max-width: 230px; } }
 
 .offcanvas-form--form-fields {
   padding: 30px; }
