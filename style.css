@@ -11898,9 +11898,27 @@ h5, .h5 {
 
 .fs-35 {
   font-size: 35px; }
+  @media screen and (max-width: 991px) {
+    .fs-35 {
+      font-size: 30px; } }
+  @media screen and (max-width: 767px) {
+    .fs-35 {
+      font-size: 25px; } }
+  @media screen and (max-width: 575px) {
+    .fs-35 {
+      font-size: 20px; } }
 
 .fs-32 {
   font-size: 32px; }
+  @media screen and (max-width: 991px) {
+    .fs-32 {
+      font-size: 28px; } }
+  @media screen and (max-width: 767px) {
+    .fs-32 {
+      font-size: 23px; } }
+  @media screen and (max-width: 575px) {
+    .fs-32 {
+      font-size: 18px; } }
 
 .fs-23 {
   font-size: 23px; }
