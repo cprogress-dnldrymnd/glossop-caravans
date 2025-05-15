@@ -14,7 +14,7 @@ global $listing_fields;
         <div class="row g-4">
           <div class="col-lg-9">
             <div class="listing-inner--left">
-              <div class="listing-inner--details mb-4">
+              <div class="listing-inner--details d-none d-lg-block mb-4">
                 <div class="row g-3 justify-content-between align-items-center mb-1">
                   <div class="col-md-6">
                     <div class="image-box brand">
