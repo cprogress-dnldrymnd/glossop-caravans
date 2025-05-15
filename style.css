@@ -11306,6 +11306,12 @@ img {
 .seach-stock-holder .tab-cotnent-holder {
   padding-top: 32px;
   padding-bottom: 32px; }
+@media screen and (max-width: 991px) {
+  .seach-stock-holder .nav-tabs .nav-item .nav-link {
+    width: 100%; } }
+@media screen and (max-width: 991px) {
+  .seach-stock-holder .nav-tabs .nav-item {
+    flex: 1 0 0%; } }
 
 .image-style {
   position: relative;

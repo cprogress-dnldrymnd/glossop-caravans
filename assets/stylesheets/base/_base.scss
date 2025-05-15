@@ -263,6 +263,16 @@ img {
     }
 
     .nav-tabs {
+        .nav-item {
+            .nav-link {
+                @include responsive(xs-sm) {
+                   width: 100%;
+                }
+            }
+            @include responsive(xs-sm) {
+                flex: 1 0 0%;
+            }
+        }
     }
 }
 
