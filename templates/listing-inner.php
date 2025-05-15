@@ -279,6 +279,19 @@ global $listing_fields;
     </div>
   </section>
 
+  <section class="listing-inner--mobile-sticky">
+    <div class="container">
+      <div class="row g-xs">
+        <div class="col-7">
+          <?= listing__price(false) ?>
+        </div>
+        <div class="col-5">
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="listine-inner--related overflow-hidden">
     <div class="container">
       <h2 class="sm-margin-bottom">You may also like</h2>
