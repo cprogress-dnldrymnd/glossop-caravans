@@ -12270,6 +12270,12 @@ h5, .h5 {
       .listing-inner-holder .listing-inner--tabs .nav-tabs > .nav-item .nav-link.active {
         background-color: var(--dark-color);
         color: var(--bs-white); }
+        @media screen and (max-width: 575px) {
+          .listing-inner-holder .listing-inner--tabs .nav-tabs > .nav-item .nav-link.active {
+            display: none; } }
+      @media screen and (max-width: 575px) {
+        .listing-inner-holder .listing-inner--tabs .nav-tabs > .nav-item .nav-link {
+          font-size: 10px; } }
 .listing-inner-holder .listing-key--info .icon-list-v2 {
   row-gap: 0;
   column-gap: var(--sm-spacing); }

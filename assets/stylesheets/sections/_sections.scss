@@ -309,10 +309,21 @@
                     width: 100%;
                     border-radius: 5px;
                     height: 100%;
-
+                    svg {
+                        @include responsive(mobile) {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
                     &.active {
                         background-color: var(--dark-color);
                         color: var(--bs-white);
+                        @include responsive(mobile) {
+                            display: none;
+                        }
+                    }
+                    @include responsive(mobile) {
+                        font-size: 10px;
                     }
                 }
             }
