@@ -28,7 +28,7 @@
   </div>
   <div class="listing-grid--bottom">
     <div class="row g-0">
-      <div class="col-lg-7">
+      <div class="col-xl-7">
         <div class="listing-grid--left-inner position-relative h-100">
           <?php
           echo listing__gallery($args['id']);
@@ -38,7 +38,7 @@
           ?>
         </div>
       </div>
-      <div class="col-lg-5">
+      <div class="col-xl-5">
         <div class="listing-grid--right-inner">
           <div class="listing-grid-right-item">
             <div class="image-box image-style mb-20" style="--fit: contain; --padding: 18%">
