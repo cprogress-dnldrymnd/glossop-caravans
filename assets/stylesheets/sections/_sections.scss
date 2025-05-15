@@ -87,7 +87,7 @@
 .listing-grid--feature--action--style-2 {
     &.listing-grid--feature--action {
         position: absolute;
-        z-index: 1;
+        z-index: 2;
         top: 15px;
         left: 15px;
         display: flex;
@@ -211,14 +211,6 @@
             width: 20px;
         }
     }
-    .listing-grid--feature--action {
-        position: absolute;
-        top: 20px;
-        z-index: 2;
-        left: 20px;
-        right: 20px;
-    }
-
     .swiper-gallery {
         .swiper-pagination {
             position: absolute;
