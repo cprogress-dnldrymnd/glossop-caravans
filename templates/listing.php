@@ -11,6 +11,22 @@ global $listing_fields;
     <div class="container md-padding-top md-padding-bottom">
         <div class="listings-holder">
             <h2 class="mb-5">We found <span class="text-orange">59</span> caravans for you</h2>
+
+            <div class="filter--mobile">
+                <div class="row g-xxs">
+                    <div class="col-6">
+                        <button class="btn btn-orange">
+                            Filter
+                        </button>
+                    </div>
+                    <div class="col-6">
+                        <button class="btn btn-orange">
+                            Filter
+                        </button>
+                    </div>
+                </div>
+            </div>
+
             <div class="row g-4">
                 <div class="col-lg-3 d-none d-lg-block">
                     <div class="listing-filter sticky-element accordion-style-1">
