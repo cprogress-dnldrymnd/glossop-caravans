@@ -87,6 +87,12 @@ global $listing_fields;
                   </button>
                 </ul>
               </div>
+              <div class="listing--details-mobile d-block d-lg-none">
+                <div class="image-box brand mb-3">
+                  <?= wp_get_attachment_image(190, 'medium') ?>
+                </div>
+                <h2 class="fs-35">Swift Sprite Quattro FB 2024</h2>
+              </div>
               <div class="listing-key--info">
                 <h4 class="fs-35 heading mb-3 mb-lg-4">Key Information</h4>
                 <?php
