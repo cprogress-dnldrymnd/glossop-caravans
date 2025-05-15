@@ -12150,6 +12150,12 @@ h5, .h5 {
   cursor: pointer; }
   .listing-grid--gallery .zoom img {
     width: 20px; }
+.listing-grid--gallery .listing-grid--feature--action {
+  position: absolute;
+  top: 20px;
+  z-index: 2;
+  left: 20px;
+  right: 20px; }
 .listing-grid--gallery .swiper-gallery .swiper-pagination {
   position: absolute;
   right: 0;
