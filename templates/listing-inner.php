@@ -71,13 +71,11 @@ global $listing_fields;
                 </div>
 
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="gallery-tab" data-bs-toggle="tab"
-                      data-bs-target="#gallery-tab-pane" type="button" role="tab" aria-controls="gallery-tab-pane"
-                      aria-selected="true">
-                      <span class="icon"><?= get__theme_icons('gallery.svg') ?></span> Gallery
-                    </button>
-                  </li>
+                  <button class="nav-link active" id="gallery-tab" data-bs-toggle="tab"
+                    data-bs-target="#gallery-tab-pane" type="button" role="tab" aria-controls="gallery-tab-pane"
+                    aria-selected="true">
+                    <span class="icon"><?= get__theme_icons('gallery.svg') ?></span> Gallery
+                  </button>
                   <li class="nav-item" role="presentation">
                     <button class="nav-link" id="three-sixty-tab" data-bs-toggle="tab"
                       data-bs-target="#three-sixty-tab-pane" type="button" role="tab"
@@ -263,7 +261,7 @@ global $listing_fields;
                       <span><a href="tel:07525 491 913">07525 491 913</a></span>
                     </li>
                     <li>
-                    <?= get__theme_icons('location.svg') ?>
+                      <?= get__theme_icons('location.svg') ?>
                       <span><a href="#">Location</a></span>
                     </li>
                   </ul>
