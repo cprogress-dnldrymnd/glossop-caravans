@@ -117,26 +117,33 @@ Block::make(__('Accordion'))
             ->set_header_template('<%- title %>')
     ))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
-        $grid = $fields['grid'];
+        $accordion_items = $fields['accordion'];
 ?>
 
-    <div class="grid-section">
-        <div class="row g-4">
-            <?php foreach ($grid as $item) : ?>
-                <div class="col-lg-4">
-                    <a href="<?php echo esc_html($item['grid_link']); ?>" class="grid-inner h-100 d-flex flex-column justif-content-between" style="background-color: <?php echo esc_attr($item['bg_color']); ?>;">
-                        <div class="grid-item__image">
-                            <?php echo wp_get_attachment_image($item['image'], 'full'); ?>
-                            <h3><?php echo esc_html($item['title']); ?></h3>
-                            <span class="tag"><?php echo esc_html($item['grid_tag']); ?></span>
-                        </div><!-- /.grid-item__image -->
-                        <div class="grid-item__content">
-                            <p><?php echo esc_html($item['description']); ?></p>
-                        </div><!-- /.grid-item__content -->
-                    </a>
-                </div><!-- /.grid-item -->
-            <?php endforeach; ?>
+    <div class="accordion-box accordion-style-1">
+        <div class="listing-filter accordion-style-1">
+            <div class="accordion rounded border overflow-hidden" id="accordionSpecs">
+                <?php foreach ($accordion_items as $accordion_item) { ?>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="orange-color collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseInterior" aria-expanded="false" aria-controls="collapseInterior">
+                                <span class="orange-color-inner">
+                                    <span class="icon-text">
+                                        <?= $accordion_item['title'] ?>
+                                    </span>
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="collapseInterior" class="accordion-collapse collapse" data-bs-parent="#accordionSpecs">
+                            <div class="accordion-body">
+                                <?= $accordion_item['description'] ?>
+                            </div>
+                        </div>
+                    </div>
+                <?php } ?>
+
+            </div>
         </div>
-    </div>
-<?php
+    <?php
     });
