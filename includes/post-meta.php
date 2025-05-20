@@ -63,7 +63,7 @@ Block::make(__('Icon'))
         $icon_color = $fields['icon_color'];
         $icon_width = $fields['icon_width'];
         $icon_height = $fields['icon_height'];
-        $icon_alignment = $fields['icon_heiicon_alignmentght'];
+        $icon_alignment = $fields['icon_alignment'];
 ?>
 
     <div class="svg-box <?= $icon_alignment ?> <?= $attributes['className'] ?>" style="color: <?= $icon_color ?>; --svg-width: <?= $icon_width ?>; --svg-height: <?= $icon_height ?>">
