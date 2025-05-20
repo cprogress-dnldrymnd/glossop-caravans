@@ -147,4 +147,17 @@ $Templates->exclude_from_search = true;
 $Templates->publicly_queryable = true;
 $Templates->show_in_admin_bar = true;
 $Templates->has_archive = false;
+
+
+
+$Templates = new newPostType();
+$Templates->key = 'videos';
+$Templates->name = 'Videos';
+$Templates->singular_name = 'Video';
+$Templates->icon = 'dashicons-video';
+$Templates->show_in_rest = true;
+$Templates->supports = array('title', 'editor', 'revisions');
+$Templates->exclude_from_search = true;
+$Templates->publicly_queryable = true;
+$Templates->show_in_admin_bar = false;
 $Templates->has_archive = false;
