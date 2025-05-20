@@ -59,8 +59,9 @@ Block::make(__('Icon'))
         $icon_height = $fields['icon_height'];
 ?>
 
-    <div class="svg-box <?= $attributes['class'] ?>" style="color: <?= $icon_color ?>; --svg-width: <?= $icon_width ?>; --svg-height: <?= $icon_height ?>">
+    <div class="svg-box " style="color: <?= $icon_color ?>; --svg-width: <?= $icon_width ?>; --svg-height: <?= $icon_height ?>">
         <?= get__media_libray_icons($icon) ?>
+        <?= serialize($attributes) ?>
     </div>
 <?php
     });
