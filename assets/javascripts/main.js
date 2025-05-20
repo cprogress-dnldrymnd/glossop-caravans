@@ -64,8 +64,6 @@ function swiper_sliders() {
 
     if (jQuery('.swiper-thumbnails').length > 0) {
 
-
-
         if (window.innerWidth > 991) {
             $height = jQuery('.swiper-gallery').outerHeight();
 
