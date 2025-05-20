@@ -43,7 +43,8 @@ Block::make(__('Grid Items'))
     </div>
 <?php
     });*/
-    $style = 'style="font-weight: bold;text-align: center;background-color: #000;color: #fff;padding: 10px;"';
+
+$style = 'style="font-weight: bold;text-align: center;background-color: #000;color: #fff;padding: 10px;"';
 
 Block::make(__('Icon'))
     ->add_fields(array(
@@ -80,12 +81,21 @@ Block::make(__('Video Gallery'))
         Field::make('html', 'html_end')->set_html("<div style='text-align: center'><a class='components-button is-primary target='_blank' href='/wp-admin/edit.php?post_type=videos'>Manage Videos</a></div>"),
     ))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
-
+        $videos = get_posts(array(
+            'post_type' => 'videos',
+            'numberposts' => -1,
+        ))
 ?>
 
     <div class="video-gallery-box <?= $attributes['className'] ?>">
         <div class="row g-4">
-
+            <?php foreach ($videos as $video) { ?>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="video-box">
+                        <?= $video->post_content ?>
+                    </div>
+                </div>
+            <?php } ?>
         </div>
     </div>
 <?php
