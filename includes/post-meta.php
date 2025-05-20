@@ -122,11 +122,11 @@ Block::make(__('Accordion'))
     <div class="accordion-box accordion-style-1">
         <div class="accordion-box--iner">
             <div class="accordion rounded border overflow-hidden" id="accordionBlocks-<?= uniqid('', true) ?>">
-                <?php foreach ($accordion_items as $accordion_item) { ?>
+                <?php foreach ($accordion_items as $key => $accordion_item) { ?>
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="orange-color collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseInterior" aria-expanded="false" aria-controls="collapseInterior">
+                                data-bs-target="#collapse<?= $key ?>" aria-expanded="false" aria-controls="collapse<?= $key ?>">
                                 <span class="orange-color-inner">
                                     <span class="icon-text">
                                         <?= $accordion_item['title'] ?>
@@ -134,7 +134,7 @@ Block::make(__('Accordion'))
                                 </span>
                             </button>
                         </h2>
-                        <div id="collapseInterior" class="accordion-collapse collapse" data-bs-parent="#accordionBlocks-<?= uniqid('', true) ?>">
+                        <div id="collapse<?= $key ?>" class="accordion-collapse collapse" data-bs-parent="#accordionBlocks-<?= uniqid('', true) ?>">
                             <div class="accordion-body">
                                 <?= $accordion_item['description'] ?>
                             </div>
