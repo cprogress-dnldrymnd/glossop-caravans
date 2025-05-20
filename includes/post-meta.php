@@ -43,3 +43,17 @@ Block::make(__('Grid Items'))
     </div>
 <?php
     });
+
+Block::make(__('Icon'))
+    ->add_fields(array(
+        Field::make('image', 'icon', __('Icon'))->set_type(array('image/svg+xm')),
+    ))
+    ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
+        $icon = $fields['icon'];
+?>
+
+    <div class="svg-box">
+        <?= $icon ?>
+    </div>
+<?php
+    });
