@@ -55,23 +55,9 @@ add_action('init', function () {
     }
 });
 
-function allow_svg_upload( $allowed_file_types ) {
-    $allowed_file_types['svg'] = 'image/svg+xml';
-    return $allowed_file_types;
-  }
-  add_filter( 'upload_mimes', 'allow_svg_upload' );
-  
-  // Optional: Additional security check (recommended)
-  function restrict_svg_upload( $file ) {
-    if ( isset( $file['ext'] ) && strtolower( $file['ext'] ) === 'svg' ) {
-      // Check for malicious code within the SVG (basic check - for more robust security, use a dedicated library)
-      $svg_content = file_get_contents( $file['file'] );
-      if ( strpos( $svg_content, '<script' ) !== false || strpos( $svg_content, 'javascript:' ) !== false ) {
-        $file['error'] = 'Invalid SVG: Contains potentially malicious code.';
-        return $file;
-      }
-    }
-    return $file;
-  }
-  add_filter( 'wp_check_filetype_and_ext', 'restrict_svg_upload', 10, 1 );
-  
+function add_svg_support($mimes)
+{
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+}
+add_filter('upload_mimes', 'add_svg_support');
