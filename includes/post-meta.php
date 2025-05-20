@@ -43,10 +43,11 @@ Block::make(__('Grid Items'))
     </div>
 <?php
     });*/
+    $style = 'style="font-weight: bold;text-align: center;background-color: #000;color: #fff;padding: 10px;"';
 
 Block::make(__('Icon'))
     ->add_fields(array(
-        Field::make('html', 'html_start')->set_html('<div style="font-weight: bold;text-align: center;background-color: #000;color: #fff;padding: 10px;">Icon</div>'),
+        Field::make('html', 'html_start')->set_html("<div $style>Icon</div>"),
         Field::make('color', 'icon_color', __('Color')),
         Field::make('select', 'icon_alignment', __('Alignment'))->set_options(array(
             '' => 'Default',
@@ -69,6 +70,23 @@ Block::make(__('Icon'))
 
     <div class="svg-box <?= $icon_alignment ?> <?= $attributes['className'] ?>" style="color: <?= $icon_color ?>; --svg-width: <?= $icon_width ?>; --svg-height: <?= $icon_height ?>">
         <?= get__media_libray_icons($icon) ?>
+    </div>
+<?php
+    });
+
+Block::make(__('Video Gallery'))
+    ->add_fields(array(
+        Field::make('html', 'html_start')->set_html("<div $style>Video Gallery Block</div>"),
+        Field::make('html', 'html_end')->set_html("<div $style><a href='/wp-admin/edit.php?post_type=videos'>Manage Videos</a></div>"),
+    ))
+    ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
+
+?>
+
+    <div class="video-gallery-box <?= $attributes['className'] ?>">
+        <div class="row g-4">
+
+        </div>
     </div>
 <?php
     });
