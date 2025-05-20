@@ -125,7 +125,7 @@ Block::make(__('Accordion'))
                 <?php foreach ($accordion_items as $key => $accordion_item) { ?>
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="orange-color collapsed" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button orange-color collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapse<?= $key ?>" aria-expanded="false" aria-controls="collapse<?= $key ?>">
                                 <span class="orange-color-inner">
                                     <span class="icon-text">
