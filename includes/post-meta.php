@@ -93,7 +93,7 @@ Block::make(__('Video Gallery'))
             <?php while ($query->have_posts()) { ?>
                 <?php $query->the_post() ?>
                 <div class="col-sm-6 col-lg-4">
-                    <div class="video-box">
+                    <div class="video-box rounded overflow-hidden position-relative">
                         <?php the_content() ?>
                     </div>
                 </div>
