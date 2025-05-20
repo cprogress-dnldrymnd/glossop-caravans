@@ -659,3 +659,10 @@ span.icons {
         width: auto;
     }
 }
+
+.svg-box {
+    svg {
+        width: var(--svg-width, 50px);
+        height: var(--svg-height, 50px);
+    }
+}

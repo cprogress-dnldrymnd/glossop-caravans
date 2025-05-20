@@ -46,13 +46,20 @@ Block::make(__('Grid Items'))
 
 Block::make(__('Icon'))
     ->add_fields(array(
+        Field::make('color', 'icon_color', __('Color')),
+        Field::make('text', 'icon_width', __('Width')),
+        Field::make('text', 'icon_height', __('Width')),
         Field::make('image', 'icon', __('Icon')),
+
     ))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
         $icon = $fields['icon'];
+        $icon_color = $fields['icon_color'];
+        $icon_width = $fields['icon_width'];
+        $icon_height = $fields['icon_height'];
 ?>
 
-    <div class="svg-box">
+    <div class="svg-box" style="color: <?= $icon_color ?>; --svg-width: <?= $icon_width ?>; --svg-height: <?= $icon_height ?>">
         <?= get__media_libray_icons($icon) ?>
     </div>
 <?php

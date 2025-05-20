@@ -11592,6 +11592,10 @@ span.icons {
     height: 14px;
     width: auto; }
 
+.svg-box svg {
+  width: var(--svg-width, 50px);
+  height: var(--svg-height, 50px); }
+
 @media (min-width: 1500px) {
   .container {
     max-width: 1420px; } }
@@ -12376,6 +12380,9 @@ h5, .h5 {
   left: 0;
   right: 0;
   box-shadow: 0px -5px 16px #0000001F; }
+
+.delear-details .logo-box img {
+  max-width: 140px; }
 
 /*-----------------------------------------------------------------------------------*/
 /* Plugins
