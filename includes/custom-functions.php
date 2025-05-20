@@ -46,7 +46,7 @@ function get__theme_icons($file_name)
 
 function get__media_libray_icons($id)
 {
-    $url = wp_get_attachment_image_url($id);
+    $url = wp_get_original_image_path($id);
 
     $content = file_get_contents($url);
 
