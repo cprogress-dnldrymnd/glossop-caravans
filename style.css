@@ -11611,6 +11611,8 @@ span.icons {
 @media (min-width: 1800px) {
   .container {
     max-width: 1720px; } }
+.container.small-container {
+  max-width: 1000px; }
 
 .background-white {
   background-color: var(--white-color); }
