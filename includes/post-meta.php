@@ -46,7 +46,7 @@ Block::make(__('Grid Items'))
 
 Block::make(__('Icon'))
     ->add_fields(array(
-        Field::make('image', 'icon', __('Icon'))->set_type(array('image/svg+xm')),
+        Field::make('file', 'icon', __('Icon'))->set_type(array('image/svg+xm')),
     ))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
         $icon = $fields['icon'];
