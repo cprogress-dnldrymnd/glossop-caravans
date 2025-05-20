@@ -53,7 +53,7 @@ Block::make(__('Icon'))
 ?>
 
     <div class="svg-box">
-        <?= $icon ?>
+        <?= get__media_libray_icons($icon) ?>
     </div>
 <?php
     });
