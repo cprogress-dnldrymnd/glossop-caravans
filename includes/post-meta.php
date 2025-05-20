@@ -68,7 +68,6 @@ Block::make(__('Icon'))
 
     <div class="svg-box <?= $icon_alignment ?> <?= $attributes['className'] ?>" style="color: <?= $icon_color ?>; --svg-width: <?= $icon_width ?>; --svg-height: <?= $icon_height ?>">
         <?= get__media_libray_icons($icon) ?>
-        <?= serialize($attributes) ?>
     </div>
 <?php
     });
