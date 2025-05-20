@@ -113,7 +113,6 @@ Block::make(__('Accordion'))
                 Field::make('text', 'title', __('Accordion Title')),
                 Field::make('rich_text', 'description', __('Accordion Description')),
             ))
-            ->set_layout('tabbed-horizontal')
             ->set_header_template('<%- title %>')
     ))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
