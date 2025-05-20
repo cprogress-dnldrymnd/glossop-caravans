@@ -4,7 +4,7 @@ use Carbon_Fields\Container;
 use Carbon_Fields\Complex_Container;
 use Carbon_Fields\Field;
 use Carbon_Fields\Block;
-
+/*
 Block::make(__('Grid Items'))
     ->add_fields(array(
         Field::make('complex', 'grid', __('Grid Items'))
@@ -42,7 +42,7 @@ Block::make(__('Grid Items'))
         </div>
     </div>
 <?php
-    });
+    });*/
 
 Block::make(__('Icon'))
     ->add_fields(array(
@@ -59,7 +59,7 @@ Block::make(__('Icon'))
         $icon_height = $fields['icon_height'];
 ?>
 
-    <div class="svg-box" style="color: <?= $icon_color ?>; --svg-width: <?= $icon_width ?>; --svg-height: <?= $icon_height ?>">
+    <div class="svg-box <?= $attributes['class'] ?>" style="color: <?= $icon_color ?>; --svg-width: <?= $icon_width ?>; --svg-height: <?= $icon_height ?>">
         <?= get__media_libray_icons($icon) ?>
     </div>
 <?php
