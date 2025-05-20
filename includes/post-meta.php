@@ -46,7 +46,7 @@ Block::make(__('Grid Items'))
 
 Block::make(__('Icon'))
     ->add_fields(array(
-        Field::make('html', 'html_start')->set_html('<div stlye="border-top: 2px solid">Icon</div>'),
+        Field::make('html', 'html_start')->set_html('<div style="font-weight: bold;text-align: center;background-color: #000;color: #fff;padding: 10px;">Icon</div>'),
         Field::make('color', 'icon_color', __('Color')),
         Field::make('select', 'icon_alignment', __('Alignment'))->set_options(array(
             '' => 'Default',
