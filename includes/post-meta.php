@@ -47,8 +47,14 @@ Block::make(__('Grid Items'))
 Block::make(__('Icon'))
     ->add_fields(array(
         Field::make('color', 'icon_color', __('Color')),
+        Field::make('select', 'icon_alignment', __('Alignment'))->set_options(array(
+            '' => 'Default',
+            'text-center' => 'Center',
+            'text-start' => 'Left',
+            'text-end' => 'Right',
+        )),
         Field::make('text', 'icon_width', __('Width')),
-        Field::make('text', 'icon_height', __('Width')),
+        Field::make('text', 'icon_height', __('Height')),
         Field::make('image', 'icon', __('Icon')),
 
     ))
@@ -57,9 +63,10 @@ Block::make(__('Icon'))
         $icon_color = $fields['icon_color'];
         $icon_width = $fields['icon_width'];
         $icon_height = $fields['icon_height'];
+        $icon_alignment = $fields['icon_heiicon_alignmentght'];
 ?>
 
-    <div class="svg-box " style="color: <?= $icon_color ?>; --svg-width: <?= $icon_width ?>; --svg-height: <?= $icon_height ?>">
+    <div class="svg-box <?= $icon_alignment ?>" style="color: <?= $icon_color ?>; --svg-width: <?= $icon_width ?>; --svg-height: <?= $icon_height ?>">
         <?= get__media_libray_icons($icon) ?>
         <?= serialize($attributes) ?>
     </div>
