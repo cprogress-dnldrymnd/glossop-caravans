@@ -666,3 +666,9 @@ span.icons {
         height: var(--svg-height, 50px);
     }
 }
+
+.video-gallery-box {
+    iframe {
+        width: 100%;
+    }
+}

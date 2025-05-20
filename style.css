@@ -11596,6 +11596,9 @@ span.icons {
   width: var(--svg-width, 50px);
   height: var(--svg-height, 50px); }
 
+.video-gallery-box iframe {
+  width: 100%; }
+
 @media (min-width: 1500px) {
   .container {
     max-width: 1420px; } }
