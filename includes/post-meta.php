@@ -77,7 +77,7 @@ Block::make(__('Icon'))
 Block::make(__('Video Gallery'))
     ->add_fields(array(
         Field::make('html', 'html_start')->set_html("<div $style>Video Gallery Block</div>"),
-        Field::make('html', 'html_end')->set_html("<div $style><a href='/wp-admin/edit.php?post_type=videos'>Manage Videos</a></div>"),
+        Field::make('html', 'html_end')->set_html("<div $style><a class='components-button is-primary target='_blank' href='/wp-admin/edit.php?post_type=videos'>Manage Videos</a></div>"),
     ))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
 
