@@ -107,9 +107,9 @@ Block::make(__('Video Gallery'))
 
 Block::make(__('Accordion'))
     ->add_fields(array(
-        Field::make('complex', 'accordion', __('Grid Items'))
+        Field::make('html', 'html_start')->set_html("<div $style>Accordion Block</div>"),
+        Field::make('complex', 'accordion', __('Accordion'))
             ->add_fields(array(
-                Field::make('html', 'html_start')->set_html("<div $style>Accordion Block</div>"),
                 Field::make('text', 'title', __('Accordion Title')),
                 Field::make('rich_text', 'description', __('Accordion Description')),
             ))
