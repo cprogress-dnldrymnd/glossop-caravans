@@ -81,21 +81,24 @@ Block::make(__('Video Gallery'))
         Field::make('html', 'html_end')->set_html("<div style='text-align: center'><a class='components-button is-primary target='_blank' href='/wp-admin/edit.php?post_type=videos'>Manage Videos</a></div>"),
     ))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
-        $videos = get_posts(array(
+        $args = array(
             'post_type' => 'videos',
-            'numberposts' => -1,
-        ))
+            'posts_per_page' => -1,
+        );
+        $query = new WP_Query($args);
 ?>
 
     <div class="video-gallery-box <?= $attributes['className'] ?>">
         <div class="row g-4">
-            <?php foreach ($videos as $video) { ?>
+            <?php while ($query->have_posts()) { ?>
+                <?php $query->the_post() ?>
                 <div class="col-sm-6 col-lg-4">
                     <div class="video-box">
-                        <?= $video->post_content ?>
+                        <?php the_content() ?>
                     </div>
                 </div>
             <?php } ?>
+            <?php wp_reset_postdata() ?>
         </div>
     </div>
 <?php
