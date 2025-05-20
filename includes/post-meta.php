@@ -53,9 +53,9 @@ Block::make(__('Icon'))
             'text-center' => 'Center',
             'text-start' => 'Left',
             'text-end' => 'Right',
-        )),
-        Field::make('text', 'icon_width', __('Width')),
-        Field::make('text', 'icon_height', __('Height')),
+        ))->set_width(33),
+        Field::make('text', 'icon_width', __('Width'))->set_width(33),
+        Field::make('text', 'icon_height', __('Height'))->set_width(33),
         Field::make('image', 'icon', __('Icon')),
 
     ))
