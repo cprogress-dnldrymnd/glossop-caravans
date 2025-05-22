@@ -11116,6 +11116,26 @@ img {
     .btn {
       --bs-btn-font-size: 15px;
       --bs-btn-padding-x: 16px; } }
+  .btn.wp-block-button {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0; }
+    .btn.wp-block-button .wp-element-button {
+      --bs-btn-color: inherit;
+      --bs-btn-bg: inherit;
+      --bs-btn-border-color: inherit;
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: var(--orange-color);
+      --bs-btn-hover-border-color: var(--orange-color);
+      --bs-btn-focus-shadow-rgb: 49, 132, 253;
+      --bs-btn-active-color: var(--bs-white);
+      --bs-btn-active-bg: var(--orange-color);
+      --bs-btn-active-border-color: var(--orange-color);
+      --bs-btn-active-shadow: none;
+      --bs-btn-disabled-color: var(--bs-white);
+      --bs-btn-disabled-bg: var(--orange-color);
+      --bs-btn-disabled-border-color: var(--orange-color); }
 
 .btn-lg, .btn-group-lg > .btn {
   --bs-btn-padding-y: 25px;
@@ -11815,10 +11835,6 @@ span.icons {
 @media screen and (max-width: 991px) {
   .flex-column-sm {
     flex-direction: column !important; } }
-
-.icon-size-md svg {
-  height: 50px;
-  width: 50px; }
 
 body {
   font-family: "Proxima Nova", sans-serif;
