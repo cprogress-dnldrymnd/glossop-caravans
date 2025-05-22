@@ -109,11 +109,11 @@
 }
 
 .md-padding-top {
-    padding-top: var(--md-spacing);
+    padding-top: var(--md-spacing) !important;
 }
 
 .md-padding-bottom {
-    padding-bottom: var(--md-spacing);
+    padding-bottom: var(--md-spacing) !important;
 }
 
 .sm-padding-top {

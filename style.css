@@ -11709,10 +11709,10 @@ span.icons {
   padding: var(--md-spacing); }
 
 .md-padding-top {
-  padding-top: var(--md-spacing); }
+  padding-top: var(--md-spacing) !important; }
 
 .md-padding-bottom {
-  padding-bottom: var(--md-spacing); }
+  padding-bottom: var(--md-spacing) Im !important; }
 
 .sm-padding-top {
   padding-top: var(--sm-spacing); }
