@@ -11583,6 +11583,8 @@ span.icons {
   margin-bottom: 0; }
 .wpcf7.wpcf7 br {
   display: none; }
+.wpcf7.wpcf7 .wpcf7-list-item {
+  margin-left: 0 !important; }
 
 @media screen and (max-width: 991px) {
   .swiper-on-mobile.swiper-on-mobile.swiper-on-mobile .swiper-wrapper {
@@ -11624,7 +11626,7 @@ span.icons {
 
 .wp-block-embed__wrapper {
   position: relative;
-  padding: 30% 0; }
+  padding: 28.1% 0; }
   .wp-block-embed__wrapper iframe {
     position: absolute;
     width: 100%;
