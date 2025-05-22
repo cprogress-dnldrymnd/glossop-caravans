@@ -11636,9 +11636,6 @@ span.icons {
     left: 0;
     object-fit: cover; }
 
-.pgcsimplygalleryblock-grid-item .pgcsimplygalleryblock-grid-main-wrap .pgcsimplygalleryblock-grid-item-wrap {
-  border-radius: 5px; }
-
 @media (min-width: 1500px) {
   .container {
     max-width: 1420px; } }
