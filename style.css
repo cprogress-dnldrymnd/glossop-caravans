@@ -11622,6 +11622,18 @@ span.icons {
 .video-gallery-box iframe {
   width: 100%; }
 
+.wp-block-embed__wrapper {
+  position: relative;
+  padding: 30% 0; }
+  .wp-block-embed__wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    object-fit: cover; }
+
 @media (min-width: 1500px) {
   .container {
     max-width: 1420px; } }
