@@ -720,3 +720,8 @@ span.icons {
         object-fit: cover;
     }
 }
+.h-100 {
+    .wp-block-embed__wrapper {
+        height: 100%;
+    }
+}
