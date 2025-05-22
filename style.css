@@ -11816,6 +11816,10 @@ span.icons {
   .flex-column-sm {
     flex-direction: column !important; } }
 
+.icon-size-md svg {
+  height: 50px;
+  width: 50px; }
+
 body {
   font-family: "Proxima Nova", sans-serif;
   color: var(--text-color);
