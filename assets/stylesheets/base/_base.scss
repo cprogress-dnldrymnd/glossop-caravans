@@ -643,7 +643,8 @@ span.icons {
         display: none;
     }
     .wpcf7-list-item {
-        &.first {
+        &.first,
+        &:first-child {
             margin-left: 0 !important;
         }
     }
@@ -705,7 +706,6 @@ span.icons {
         width: 100%;
     }
 }
-
 
 .wp-block-embed__wrapper {
     position: relative;

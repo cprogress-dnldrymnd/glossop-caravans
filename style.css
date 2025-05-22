@@ -11583,7 +11583,7 @@ span.icons {
   margin-bottom: 0; }
 .wpcf7.wpcf7 br {
   display: none; }
-.wpcf7.wpcf7 .wpcf7-list-item.first {
+.wpcf7.wpcf7 .wpcf7-list-item.first, .wpcf7.wpcf7 .wpcf7-list-item:first-child {
   margin-left: 0 !important; }
 
 @media screen and (max-width: 991px) {
