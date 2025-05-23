@@ -289,7 +289,7 @@
 			]
 		},
 		"shadow": {
-			"defaultPresets": false,
+			"defaultPresets": false
 		},
 		"spacing": {
 			"blockGap": null,
@@ -325,39 +325,7 @@
 			"textDecoration": false,
 			"textTransform": false,
 			"writingMode": false,
-			"fontFamilies": [
-				{
-					"name": "Proxima Nova",
-					"slug": "proxima-nova",
-					"fontFamily": "Proxima Nova, sans-serif",
-					"fontFace": [
-						{
-							"src": [
-								"file:./assets/fonts/ProximaNova/ProximaNova-Regular.woff2"
-							],
-							"fontWeight": "400",
-							"fontStyle": "normal",
-							"fontFamily": "Proxima Nova"
-						},
-						{
-							"src": [
-								"file:./assets/fonts/ProximaNova/ProximaNova-Bold.woff2"
-							],
-							"fontWeight": "700",
-							"fontStyle": "normal",
-							"fontFamily": "Proxima Nova"
-						},
-						{
-							"src": [
-								"file:./assets/fonts/ProximaNova/ProximaNova-Semibold.woff2"
-							],
-							"fontWeight": "600",
-							"fontStyle": "normal",
-							"fontFamily": "Proxima Nova"
-						}
-					]
-				}
-			]
+			"fontFamilies": []
 		},
 		"blocks": {
 			"core/button": {
