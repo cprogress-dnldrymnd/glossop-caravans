@@ -60,9 +60,7 @@ function editor_styling()
 {
 ?>
     <style>
-        body {
-            display: none !important;
-        }
+     
     </style>
 <?php
 }
