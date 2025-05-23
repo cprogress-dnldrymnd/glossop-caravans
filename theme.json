@@ -163,9 +163,9 @@
 					"slug": "black"
 				},
 				{
-					"color": "#FFFFFF",
+					"color": "#ffffff",
 					"name": "White",
-					"slug": "white"
+					"slug": "white-theme"
 				},
 				{
 					"color": "#ff681e",
