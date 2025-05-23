@@ -1,0 +1,10 @@
+:root :where(.editor-styles-wrapper.editor-styles-wrapper) {
+  --wp--preset--font-size--large: 20px !important; }
+
+body a {
+  color: #3c434a; }
+
+.editor-styles-wrapper {
+  padding: 20px; }
+
+/*# sourceMappingURL=admin.css.map */

@@ -58,26 +58,6 @@ add_action('init', function () {
 function action_wp_enqueue_scripts_admin()
 {
     wp_enqueue_style('style---admin', theme_dir . 'style.css');
+    wp_enqueue_style('style---admin---custom', theme_dir . 'admin/style.css');
 }
 add_action('admin_enqueue_scripts', 'action_wp_enqueue_scripts_admin', 20);
-
-
-function editor_styling()
-{
-?>
-    <style>
-        :root :where(.editor-styles-wrapper.editor-styles-wrapper) {
-            --wp--preset--font-size--large: 20px !important;
-        }
-
-        body a {
-            color: #3c434a;
-        }
-
-        .editor-styles-wrapper {
-            padding: 20px;
-        }
-    </style>
-<?php
-}
-add_action('admin_head', 'editor_styling');
