@@ -325,7 +325,39 @@
 			"textDecoration": false,
 			"textTransform": false,
 			"writingMode": false,
-			"fontFamilies": []
+			"fontFamilies": [
+				{
+					"name": "Proxima Nova",
+					"slug": "proxima-nova",
+					"fontFamily": "Proxima Nova, sans-serif",
+					"fontFace": [
+						{
+							"src": [
+								"file:./assets/fonts/ProximaNova/ProximaNova-Regular.woff2"
+							],
+							"fontWeight": "400",
+							"fontStyle": "normal",
+							"fontFamily": "Proxima Nova"
+						},
+						{
+							"src": [
+								"file:./assets/fonts/ProximaNova/ProximaNova-Bold.woff2"
+							],
+							"fontWeight": "700",
+							"fontStyle": "normal",
+							"fontFamily": "Proxima Nova"
+						},
+						{
+							"src": [
+								"file:./assets/fonts/ProximaNova/ProximaNova-Semibold.woff2"
+							],
+							"fontWeight": "600",
+							"fontStyle": "normal",
+							"fontFamily": "Proxima Nova"
+						}
+					]
+				}
+			]
 		},
 		"blocks": {
 			"core/button": {
