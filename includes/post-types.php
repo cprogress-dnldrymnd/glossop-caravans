@@ -150,14 +150,26 @@ $Templates->has_archive = false;
 
 
 
-$Templates = new newPostType();
-$Templates->key = 'videos';
-$Templates->name = 'Videos';
-$Templates->singular_name = 'Video';
-$Templates->icon = 'dashicons-video-alt3';
-$Templates->show_in_rest = true;
-$Templates->supports = array('title', 'editor', 'revisions');
-$Templates->exclude_from_search = true;
-$Templates->publicly_queryable = true;
-$Templates->show_in_admin_bar = false;
-$Templates->has_archive = false;
+$Videos = new newPostType();
+$Videos->key = 'videos';
+$Videos->name = 'Videos';
+$Videos->singular_name = 'Video';
+$Videos->icon = 'dashicons-video-alt3';
+$Videos->show_in_rest = true;
+$VideTeamsos->supports = array('title', 'editor', 'revisions');
+$Videos->exclude_from_search = true;
+$Videos->publicly_queryable = true;
+$Videos->show_in_admin_bar = false;
+$Videos->has_archive = false;
+
+$Teams = new newPostType();
+$Teams->key = 'team';
+$Teams->name = 'Teams';
+$Teams->singular_name = 'Team';
+$Teams->icon = 'dashicons-video-alt3';
+$Teams->show_in_rest = true;
+$Teams->supports = array('title', 'editor', 'revisions');
+$Teams->exclude_from_search = true;
+$Teams->publicly_queryable = true;
+$Teams->show_in_admin_bar = false;
+$Teams->has_archive = false;
