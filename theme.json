@@ -318,7 +318,6 @@
 				}
 			]
 		},
-		
 		"spacing": {
 			"blockGap": null,
 			"margin": false,
@@ -363,7 +362,23 @@
 							"src": [
 								"file:./assets/fonts/ProximaNova/ProximaNova-Regular.woff2"
 							],
-							"fontWeight": "200 800",
+							"fontWeight": "400",
+							"fontStyle": "normal",
+							"fontFamily": "Proxima Nova"
+						},
+						{
+							"src": [
+								"file:./assets/fonts/ProximaNova/ProximaNova-Bold.woff2"
+							],
+							"fontWeight": "700",
+							"fontStyle": "normal",
+							"fontFamily": "Proxima Nova"
+						},
+						{
+							"src": [
+								"file:./assets/fonts/ProximaNova/ProximaNova-Semibold.woff2"
+							],
+							"fontWeight": "600",
 							"fontStyle": "normal",
 							"fontFamily": "Proxima Nova"
 						}
