@@ -23,42 +23,66 @@
 			"duotone": [
 				{
 					"name": "Dark grayscale",
-					"colors": [ "#000000", "#7f7f7f" ],
+					"colors": [
+						"#000000",
+						"#7f7f7f"
+					],
 					"slug": "dark-grayscale"
 				},
 				{
 					"name": "Grayscale",
-					"colors": [ "#000000", "#ffffff" ],
+					"colors": [
+						"#000000",
+						"#ffffff"
+					],
 					"slug": "grayscale"
 				},
 				{
 					"name": "Purple and yellow",
-					"colors": [ "#8c00b7", "#fcff41" ],
+					"colors": [
+						"#8c00b7",
+						"#fcff41"
+					],
 					"slug": "purple-yellow"
 				},
 				{
 					"name": "Blue and red",
-					"colors": [ "#000097", "#ff4747" ],
+					"colors": [
+						"#000097",
+						"#ff4747"
+					],
 					"slug": "blue-red"
 				},
 				{
 					"name": "Midnight",
-					"colors": [ "#000000", "#00a5ff" ],
+					"colors": [
+						"#000000",
+						"#00a5ff"
+					],
 					"slug": "midnight"
 				},
 				{
 					"name": "Magenta and yellow",
-					"colors": [ "#c7005a", "#fff278" ],
+					"colors": [
+						"#c7005a",
+						"#fff278"
+					],
 					"slug": "magenta-yellow"
 				},
 				{
 					"name": "Purple and green",
-					"colors": [ "#a60072", "#67ff66" ],
+					"colors": [
+						"#a60072",
+						"#67ff66"
+					],
 					"slug": "purple-green"
 				},
 				{
 					"name": "Blue and orange",
-					"colors": [ "#1900d8", "#ffa96b" ],
+					"colors": [
+						"#1900d8",
+						"#ffa96b"
+					],
 					"slug": "blue-orange"
 				}
 			],
@@ -128,90 +152,90 @@
 			"link": false,
 			"palette": [
 				{
-                    "color": "#202020",
-                    "name": "Text",
-                    "slug": "text"
-                },
-                {
-                    "color": "#000000",
-                    "name": "Black",
-                    "slug": "black"
-                },
-                {
-                    "color": "#FFFFFF",
-                    "name": "White",
-                    "slug": "white"
-                },
-                {
-                    "color": "#ff681e",
-                    "name": "Orange 1",
-                    "slug": "orange-color"
-                },
-                {
-                    "color": "#FF980E",
-                    "name": "Orange 2",
-                    "slug": "orange-color-2"
-                },
-                {
-                    "color": "#FF5251",
-                    "name": "Orange 3",
-                    "slug": "orange-color-3"
-                },
-                {
-                    "color": "#45c324",
-                    "name": "Green",
-                    "slug": "green"
-                },
-                {
-                    "color": "#FFC831",
-                    "name": "Yellow",
-                    "slug": "yellow"
-                },
-                {
-                    "color": "#009BA5",
-                    "name": "Teal",
-                    "slug": "teal"
-                },
-                {
-                    "color": "#00BCE2",
-                    "name": "Blue",
-                    "slug": "blue"
-                },
-                {
-                    "color": "#505050",
-                    "name": "Dark",
-                    "slug": "dark"
-                },
-                {
-                    "color": "#CCCCCC",
-                    "name": "Gray",
-                    "slug": "gray"
-                },
-                {
-                    "color": "#f5f5f5",
-                    "name": "Lightgray 1",
-                    "slug": "lightgray-1"
-                },
-                {
-                    "color": "#F2F2F2",
-                    "name": "Lightgray 2",
-                    "slug": "lightgray-2"
-                },
-                {
-                    "color": "#f5f5f5",
-                    "name": "Lightgray 3",
-                    "slug": "lightgray-3"
-                },
-                {
-                    "color": "#F6F6F6",
-                    "name": "Lightgray 4",
-                    "slug": "lightgray-4"
-                },
-                {
-                    "color": "#CC0909",
-                    "name": "Red",
-                    "slug": "red"
-                },
+					"color": "#202020",
+					"name": "Text",
+					"slug": "text"
+				},
+				{
+					"color": "#000000",
+					"name": "Black",
+					"slug": "black"
+				},
+				{
+					"color": "#FFFFFF",
+					"name": "White",
+					"slug": "white"
+				},
+				{
+					"color": "#ff681e",
+					"name": "Orange 1",
+					"slug": "orange-color"
+				},
+				{
+					"color": "#FF980E",
+					"name": "Orange 2",
+					"slug": "orange-color-2"
+				},
+				{
+					"color": "#FF5251",
+					"name": "Orange 3",
+					"slug": "orange-color-3"
+				},
+				{
+					"color": "#45c324",
+					"name": "Green",
+					"slug": "green"
+				},
+				{
+					"color": "#FFC831",
+					"name": "Yellow",
+					"slug": "yellow"
+				},
+				{
+					"color": "#009BA5",
+					"name": "Teal",
+					"slug": "teal"
+				},
+				{
+					"color": "#00BCE2",
+					"name": "Blue",
+					"slug": "blue"
+				},
+				{
+					"color": "#505050",
+					"name": "Dark",
+					"slug": "dark"
+				},
+				{
+					"color": "#CCCCCC",
+					"name": "Gray",
+					"slug": "gray"
+				},
+				{
+					"color": "#f5f5f5",
+					"name": "Lightgray 1",
+					"slug": "lightgray-1"
+				},
+				{
+					"color": "#F2F2F2",
+					"name": "Lightgray 2",
+					"slug": "lightgray-2"
+				},
+				{
+					"color": "#f5f5f5",
+					"name": "Lightgray 3",
+					"slug": "lightgray-3"
+				},
+				{
+					"color": "#F6F6F6",
+					"name": "Lightgray 4",
+					"slug": "lightgray-4"
+				},
+				{
+					"color": "#CC0909",
+					"name": "Red",
+					"slug": "red"
+				},
 				{
 					"name": "Black",
 					"slug": "black",
@@ -296,7 +320,14 @@
 			"padding": false,
 			"customSpacingSize": true,
 			"defaultSpacingSizes": true,
-			"units": [ "px", "em", "rem", "vh", "vw", "%" ],
+			"units": [
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw",
+				"%"
+			],
 			"spacingScale": {
 				"operator": "*",
 				"increment": 1.5,
@@ -338,7 +369,24 @@
 			"textAlign": true,
 			"textDecoration": true,
 			"textTransform": true,
-			"writingMode": false
+			"writingMode": false,
+			"fontFamilies": [
+				{
+					"name": "Proxima Nova",
+					"slug": "proxima-nova",
+					"fontFamily": "Proxima Nova, sans-serif",
+					"fontFace": [
+						{
+							"src": [
+								"file:./assets/fonts/manrope/Manrope-VariableFont_wght.woff2"
+							],
+							"fontWeight": "200 800",
+							"fontStyle": "normal",
+							"fontFamily": "Manrope"
+						}
+					]
+				}
+			]
 		},
 		"blocks": {
 			"core/button": {
@@ -362,6 +410,13 @@
 		}
 	},
 	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|manrope",
+			"fontSize": "var:preset|font-size|large",
+			"fontWeight": "300",
+			"letterSpacing": "-0.1px",
+			"lineHeight": "1.4"
+		},
 		"blocks": {
 			"core/button": {
 				"variations": {
