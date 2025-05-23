@@ -249,7 +249,7 @@
 			"wideSize": "100%"
 		},
 		"dimensions": {
-			"defaultAspectRatios": true,
+			"defaultAspectRatios": true
 		},
 		"shadow": {
 			"defaultPresets": false
