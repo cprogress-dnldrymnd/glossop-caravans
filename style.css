@@ -11044,8 +11044,7 @@ button.swiper-pagination-bullet {
     transform: rotate(360deg); } }
 :root {
   --orange-color: #ff681e;
-  --orange-color-2: #ff681e;
-  --orange-color-3: #FF980E;
+  --orange-color-2: #FF980E;
   --orange-color-4: #FF5251;
   --green-color: #45c324;
   --yellow-color: #FFC831;
@@ -11770,7 +11769,7 @@ span.icons {
   color: var(--orange-color); }
 
 .text-orange-2 {
-  color: var(--orange-color-2); }
+  color: var(--orange-color); }
 
 .text-orange-3 {
   color: var(--orange-color-3); }
