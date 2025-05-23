@@ -245,8 +245,8 @@
 			"text": true
 		},
 		"layout": {
-			"contentSize": "1340px",
-			"wideSize": "1340px"
+			"contentSize": "100%",
+			"wideSize": "100%"
 		},
 		"dimensions": {
 			"defaultAspectRatios": true,
