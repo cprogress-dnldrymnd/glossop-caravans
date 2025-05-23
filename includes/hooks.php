@@ -58,6 +58,6 @@ add_action('init', function () {
 function action_wp_enqueue_scripts_admin()
 {
     wp_enqueue_style('style---admin', theme_dir . 'style.css');
-    wp_enqueue_style('style---admin---custom', theme_dir . 'admin/style.css');
+    wp_enqueue_style('style---admin---custom', theme_dir . 'admin/admin.css');
 }
 add_action('admin_enqueue_scripts', 'action_wp_enqueue_scripts_admin', 20);
