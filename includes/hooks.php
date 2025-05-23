@@ -55,6 +55,12 @@ add_action('init', function () {
     }
 });
 
+function action_wp_enqueue_scripts_admin()
+{
+    wp_enqueue_style('style---admin', theme_dir . 'style.css');
+}
+add_action('admin_enqueue_scripts', 'action_wp_enqueue_scripts_admin', 20);
+
 
 function editor_styling()
 {
@@ -63,13 +69,11 @@ function editor_styling()
         :root {
             --wp--preset--font-size--large: 20px !important;
         }
+
+        body a {
+            color: #3c434a;
+        }
     </style>
 <?php
 }
 add_action('admin_head', 'editor_styling');
-
-function action_wp_enqueue_scripts_admin()
-{
-    wp_enqueue_style('style---admin', theme_dir . 'style.css');
-}
-add_action('admin_enqueue_scripts', 'action_wp_enqueue_scripts_admin', 20);
