@@ -351,7 +351,7 @@
 			"lineHeight": false,
 			"textAlign": true,
 			"textDecoration": false,
-			"textTransform": true,
+			"textTransform": false,
 			"writingMode": false,
 			"fontFamilies": [
 				{
@@ -361,11 +361,11 @@
 					"fontFace": [
 						{
 							"src": [
-								"file:./assets/fonts/manrope/Manrope-VariableFont_wght.woff2"
+								"file:./assets/fonts/Proxima Nova/ProximaNova-Regular.woff2"
 							],
 							"fontWeight": "200 800",
 							"fontStyle": "normal",
-							"fontFamily": "Manrope"
+							"fontFamily": "Proxima Nova"
 						}
 					]
 				}
@@ -394,7 +394,7 @@
 	},
 	"styles": {
 		"typography": {
-			"fontFamily": "var:preset|font-family|manrope",
+			"fontFamily": "var:preset|font-family|proxima-nova",
 			"fontSize": "var:preset|font-size|large",
 			"fontWeight": "300",
 			"letterSpacing": "-0.1px",
