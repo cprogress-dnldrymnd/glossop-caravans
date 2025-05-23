@@ -361,7 +361,7 @@
 					"fontFace": [
 						{
 							"src": [
-								"file:./assets/fonts/Proxima Nova/ProximaNova-Regular.woff2"
+								"file:./assets/fonts/ProximaNova/ProximaNova-Regular.woff2"
 							],
 							"fontWeight": "200 800",
 							"fontStyle": "normal",
