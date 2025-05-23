@@ -19,7 +19,7 @@
 			"customGradient": true,
 			"defaultDuotone": true,
 			"defaultGradients": true,
-			"defaultPalette": true,
+			"defaultPalette": false,
 			"duotone": [
 				{
 					"name": "Dark grayscale",
