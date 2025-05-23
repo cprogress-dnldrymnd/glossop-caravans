@@ -73,6 +73,10 @@ function editor_styling()
         body a {
             color: #3c434a;
         }
+
+        .editor-styles-wrapper {
+            padding: 20px;
+        }
     </style>
 <?php
 }
