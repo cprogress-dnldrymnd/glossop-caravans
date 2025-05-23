@@ -20,6 +20,7 @@
 			"defaultDuotone": true,
 			"defaultGradients": true,
 			"defaultPalette": false,
+			"text": true,
 			"duotone": [
 				{
 					"name": "Dark grayscale",
@@ -241,8 +242,7 @@
 					"slug": "black",
 					"color": "#000000"
 				}
-			],
-			"text": false
+			]
 		},
 		"layout": {
 			"contentSize": "100%",
