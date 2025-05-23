@@ -10,8 +10,8 @@
             "palette": [
                 {
                     "color": "#202020",
-                    "name": "Base",
-                    "slug": "base"
+                    "name": "Text",
+                    "slug": "text"
                 },
                 {
                     "color": "#000000",
@@ -210,7 +210,13 @@
                 "right": "var:preset|spacing|50"
             }
         },
-    
+        "typography": {
+            "fontFamily": "var:preset|font-family|-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+            "fontSize": "var:preset|font-size|large",
+            "fontWeight": "300",
+            "letterSpacing": "-0.1px",
+            "lineHeight": "1.4"
+        },
         "blocks": {
             "core/avatar": {
                 "border": {
