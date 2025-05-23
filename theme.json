@@ -245,8 +245,8 @@
 			]
 		},
 		"layout": {
-			"contentSize": "100%",
-			"wideSize": "100%"
+			"contentSize": "90%",
+			"wideSize": "90%"
 		},
 		"dimensions": {
 			"defaultAspectRatios": true,
