@@ -66,7 +66,7 @@ function editor_styling()
 {
 ?>
     <style>
-        :root {
+        :root :where(.editor-styles-wrapper.editor-styles-wrapper) {
             --wp--preset--font-size--large: 20px !important;
         }
 
