@@ -68,3 +68,17 @@ add_theme_support( 'editor-color-palette', array(
         'color' => '#6c757d', // Example hex code
     ),
 ) );
+
+function editor_styling() {
+    ?>
+    <style></style>
+    <?php
+}
+add_action('admin_head', 'editor_styling');
+
+function action_wp_enqueue_scripts_admin()
+{
+    wp_enqueue_style('style', theme_dir . 'style.css');
+   
+}
+add_action('admin_enqueue_scripts', 'action_wp_enqueue_scripts_admin', 20);
