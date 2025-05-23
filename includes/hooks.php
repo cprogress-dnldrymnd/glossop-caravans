@@ -72,7 +72,11 @@ add_theme_support('editor-color-palette', array(
 function editor_styling()
 {
 ?>
-    <style></style>
+    <style>
+        body {
+            display: none !important;
+        }
+    </style>
 <?php
 }
 add_action('admin_head', 'editor_styling');
