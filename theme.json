@@ -342,7 +342,7 @@
 			}
 		},
 		"typography": {
-			"customFontSize": true,
+			"customFontSize": false,
 			"defaultFontSizes": true,
 			"dropCap": true,
 			"fontStyle": true,
