@@ -11867,6 +11867,9 @@ span.icons {
   .flex-column-sm {
     flex-direction: column !important; } }
 
+:where(.wp-block-columns.is-layout-flex).row {
+  gap: 0; }
+
 body {
   font-family: "Proxima Nova", sans-serif;
   color: var(--text-color);
