@@ -71,7 +71,7 @@ add_theme_support('editor-color-palette', array(
 
 function editor_styling()
 {
-?>
+?>sdsdss
     <style>
         body {
             display: none !important;
