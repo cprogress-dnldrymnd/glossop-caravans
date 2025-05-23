@@ -60,7 +60,9 @@ function editor_styling()
 {
 ?>
     <style>
-     
+        :root {
+            --wp--preset--font-size--large: 20px;
+        }
     </style>
 <?php
 }
