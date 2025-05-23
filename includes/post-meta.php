@@ -114,7 +114,7 @@ Block::make(__('Accordion'))
                 Field::make('rich_text', 'description', __('Accordion Description')),
             ))
             ->set_header_template('<%- title %>')
-            ->set_collapsed()
+            ->set_collapsed(true)
     ))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
         $accordion_items = $fields['accordion'];
