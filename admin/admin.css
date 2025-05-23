@@ -28,4 +28,10 @@ body a {
 b, strong {
   font-weight: bold; }
 
+.is-root-container.is-root-container.is-root-container.is-root-container.is-root-container .custom-submenu {
+  visibility: visible;
+  position: static;
+  transform: none;
+  opacity: 1; }
+
 /*# sourceMappingURL=admin.css.map */
