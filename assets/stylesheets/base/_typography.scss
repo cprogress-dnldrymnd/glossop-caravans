@@ -31,7 +31,7 @@ a {
     }
 }
 
-h1 h1.wp-block-heading {
+h1 {
     font-size: 4.25rem;
     @include responsive(xs-sm) {
         font-size: 3.5rem;
@@ -44,8 +44,7 @@ h1 h1.wp-block-heading {
     }
 }
 h2,
-.h2,
-h2.wp-block-heading {
+.h2 {
     font-size: 59px;
     @include responsive(xs-md) {
         font-size: 50px;
@@ -61,8 +60,7 @@ h2.wp-block-heading {
     }
 }
 h3,
-.h3,
-h3.wp-block-heading {
+.h3 {
     font-size: 37px;
     @include responsive(xs-md) {
         font-size: 32px;
@@ -77,12 +75,10 @@ h3.wp-block-heading {
         font-size: 25px;
     }
 }
-h4,
-h4.wp-block-heading {
+h4 {
     font-size: 1.25rem;
 }
-h5,
-h5.wp-block-heading {
+h5 {
     font-size: 1.15rem;
 }
 
@@ -95,6 +91,7 @@ h5.wp-block-heading {
 
 .fs-32 {
     font-size: 32px;
+
 }
 .fs-23 {
     font-size: 23px;
