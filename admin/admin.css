@@ -17,4 +17,7 @@ body a {
 .interface-complementary-area .components-panel__header.editor-sidebar__panel-tabs {
   font-size: 16px; }
 
+.editor-styles-wrapper .is-root-container {
+  padding: 0 20px 20px 20px; }
+
 /*# sourceMappingURL=admin.css.map */
