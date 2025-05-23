@@ -245,8 +245,8 @@
 			]
 		},
 		"layout": {
-			"contentSize": "90%",
-			"wideSize": "90%"
+			"contentSize": "100%",
+			"wideSize": "100%"
 		},
 		"dimensions": {
 			"defaultAspectRatios": true,
@@ -343,9 +343,9 @@
 		},
 		"typography": {
 			"customFontSize": false,
-			"defaultFontSizes": true,
-			"dropCap": true,
-			"fontStyle": true,
+			"defaultFontSizes": false,
+			"dropCap": false,
+			"fontStyle": false,
 			"fontWeight": false,
 			"letterSpacing": false,
 			"lineHeight": false,
