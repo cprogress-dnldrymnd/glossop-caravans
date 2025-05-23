@@ -54,3 +54,17 @@ add_action('init', function () {
         remove_action('admin_bar_menu', 'wp_admin_bar_comments_menu', 60);
     }
 });
+
+// Add a custom color palette
+add_theme_support( 'editor-color-palette', array(
+    array(
+        'name'  => __( 'Primary Color', 'your-theme' ),
+        'slug'  => 'primary',
+        'color' => '#007bff', // Example hex code
+    ),
+    array(
+        'name'  => __( 'Secondary Color', 'your-theme' ),
+        'slug'  => 'secondary',
+        'color' => '#6c757d', // Example hex code
+    ),
+) );
