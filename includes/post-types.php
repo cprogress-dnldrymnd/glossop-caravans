@@ -168,8 +168,57 @@ $Teams->name = 'Teams';
 $Teams->singular_name = 'Team';
 $Teams->icon = 'dashicons-video-alt3';
 $Teams->show_in_rest = true;
-$Teams->supports = array('title', 'revisions','thumbnail', 'excerpt');
+$Teams->supports = array('title', 'revisions', 'thumbnail', 'excerpt');
 $Teams->exclude_from_search = true;
 $Teams->publicly_queryable = true;
 $Teams->show_in_admin_bar = false;
 $Teams->has_archive = false;
+
+
+$Caravans = new newPostType();
+$Caravans->key = 'caravan';
+$Caravans->name = 'Caravans';
+$Caravans->singular_name = 'Caravan';
+$Caravans->icon = 'dashicons-video-alt3';
+$Caravans->show_in_rest = true;
+$Caravans->supports = array('title', 'revisions', 'thumbnail', 'excerpt');
+$Caravans->exclude_from_search = true;
+$Caravans->publicly_queryable = true;
+$Caravans->show_in_admin_bar = false;
+$Caravans->has_archive = false;
+
+
+
+$Caravans_Category = new newTaxonomy();
+$Caravans_Category->taxonomy = 'manufacturer';
+$Caravans_Category->post_type = 'caravan';
+$Caravans_Category->args = array(
+    'label'        => 'Manufactuer',
+    'labels' => array(
+        'name'                       => _x('Manufactuer', 'Taxonomy General Name', 'text_domain'),
+        'singular_name'              => _x('Manufactuer', 'Taxonomy Singular Name', 'text_domain'),
+        'menu_name'                  => __('Manufactuer', 'text_domain'),
+        'all_items'                  => __('All Manufactuer', 'text_domain'),
+        'parent_item'                => __('Parent Manufactuer', 'text_domain'),
+        'parent_item_colon'          => __('Parent Item:', 'text_domain'),
+        'new_item_name'              => __('New Item Name', 'text_domain'),
+        'add_new_item'               => __('Add New Item', 'text_domain'),
+        'edit_item'                  => __('Edit Item', 'text_domain'),
+        'update_item'                => __('Update Item', 'text_domain'),
+        'view_item'                  => __('View Item', 'text_domain'),
+        'separate_items_with_commas' => __('Separate items with commas', 'text_domain'),
+        'add_or_remove_items'        => __('Add or remove Manufactuer', 'text_domain'),
+        'choose_from_most_used'      => __('Choose from the most used', 'text_domain'),
+        'popular_items'              => __('Popular Manufactuer', 'text_domain'),
+        'search_items'               => __('Search Manufactuer', 'text_domain'),
+        'not_found'                  => __('Not Found', 'text_domain'),
+        'no_terms'                   => __('No Manufactuer', 'text_domain'),
+        'items_list'                 => __('Items list', 'text_domain'),
+        'items_list_navigation'      => __('Items list navigation', 'text_domain'),
+    ),
+    'hierarchical' => true,
+    'query_var'    => true,
+    'rewrite'      => array(
+        'slug'         => 'Caravan-category',
+    )
+);
