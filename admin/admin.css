@@ -4,14 +4,14 @@
 body a {
   color: #3c434a; }
 
-.editor-styles-wrapper .is-root-container {
-  padding: 20px; }
+.editor-post-panel__row-label.editor-post-panel__row-label,
+.editor-post-url__front-page-link.editor-post-url__front-page-link {
+  font-size: 14px; }
 
 .edit-post-visual-editor__post-title-wrapper.edit-post-visual-editor__post-title-wrapper {
   margin: 0;
   background-color: var(--orange-color);
   padding: 20px;
-  margin-bottom: 40px;
   color: #fff; }
 
 /*# sourceMappingURL=admin.css.map */
