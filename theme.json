@@ -244,6 +244,10 @@
 			],
 			"text": true
 		},
+		"layout": {
+			"contentSize": "100%",
+			"wideSize": "1340px"
+		},
 		"dimensions": {
 			"defaultAspectRatios": true,
 			"aspectRatios": [
@@ -314,6 +318,7 @@
 				}
 			]
 		},
+		
 		"spacing": {
 			"blockGap": null,
 			"margin": false,
