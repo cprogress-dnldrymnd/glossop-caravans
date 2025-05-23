@@ -56,29 +56,29 @@ add_action('init', function () {
 });
 
 // Add a custom color palette
-add_theme_support( 'editor-color-palette', array(
+add_theme_support('editor-color-palette', array(
     array(
-        'name'  => __( 'Primary Color', 'your-theme' ),
+        'name'  => __('Primary Color', 'your-theme'),
         'slug'  => 'primary',
         'color' => '#007bff', // Example hex code
     ),
     array(
-        'name'  => __( 'Secondary Color', 'your-theme' ),
+        'name'  => __('Secondary Color', 'your-theme'),
         'slug'  => 'secondary',
         'color' => '#6c757d', // Example hex code
     ),
-) );
+));
 
-function editor_styling() {
-    ?>
+function editor_styling()
+{
+?>
     <style></style>
-    <?php
+<?php
 }
 add_action('admin_head', 'editor_styling');
 
 function action_wp_enqueue_scripts_admin()
 {
-    wp_enqueue_style('style', theme_dir . 'style.css');
-   
+    wp_enqueue_style('style---admin', theme_dir . 'style.css');
 }
 add_action('admin_enqueue_scripts', 'action_wp_enqueue_scripts_admin', 20);
