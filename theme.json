@@ -242,7 +242,7 @@
 					"color": "#000000"
 				}
 			],
-			"text": true
+			"text": false
 		},
 		"layout": {
 			"contentSize": "100%",
