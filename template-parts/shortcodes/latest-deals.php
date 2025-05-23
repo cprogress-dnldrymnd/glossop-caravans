@@ -23,7 +23,6 @@
         <div class="container p-0">
             <div class="tab-content" id="myTabDeals-SwiperContent">
                 <div class="tab-pane fade show active" id="Weekly-Deals-tab-pane" role="tabpanel" aria-labelledby="Weekly-Deals-tab" tabindex="0">
-
                     <div class="swiper-holder">
                         <div class="swiper swiper-listing swiper-mobile-style">
                             <div class="swiper-wrapper">

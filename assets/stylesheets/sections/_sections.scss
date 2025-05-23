@@ -82,6 +82,11 @@
             }
         }
     }
+    &.style-1 {
+        .listing-grid--feature--action {
+            position: static !important;
+        }
+    }
 }
 
 .listing-grid--feature--action--style-2 {

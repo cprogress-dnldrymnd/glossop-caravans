@@ -12189,6 +12189,8 @@ h5, .h5 {
   .listing-grid.style-2 .listing-grid--key-information .icon-list-v4 li img {
     width: 24px;
     flex: 0 0 20px; }
+  .listing-grid.style-1 .listing-grid--feature--action {
+    position: static !important; }
 
 .listing-grid--feature--action--style-2.listing-grid--feature--action {
   position: absolute;
