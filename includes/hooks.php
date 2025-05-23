@@ -58,7 +58,7 @@ add_action('init', function () {
 
 function editor_styling()
 {
-?>sdsdss
+?>
     <style>
         body {
             display: none !important;

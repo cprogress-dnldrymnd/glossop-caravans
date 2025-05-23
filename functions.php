@@ -77,6 +77,7 @@ require_once('includes/post-types.php');
 require_once('includes/shortcodes.php');
 require_once('includes/custom-functions.php');
 require_once('includes/listing-functions.php');
+require_once('includes/hooks.php');
 
 
 function template($atts)
