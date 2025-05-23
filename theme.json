@@ -154,7 +154,7 @@
 				{
 					"name": "Proxima Nova",
 					"slug": "proxima-nova",
-					"fontFamily": "Manrope, sans-serif",
+					"fontFamily": "Proxima Nova, sans-serif",
 					"fontFace": [
 						{
 							"src": [
@@ -198,7 +198,7 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var:preset|font-family|Proxima Nova",
+			"fontFamily": "var:preset|font-family|proxima-nova",
 			"fontSize": "var:preset|font-size|large",
 			"fontWeight": "300",
 			"letterSpacing": "-0.1px",
