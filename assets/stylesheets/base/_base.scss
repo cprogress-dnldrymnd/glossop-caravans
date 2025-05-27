@@ -200,6 +200,16 @@ img {
             width: auto;
         }
     }
+    &.nav-tabs-style-3 {
+        .nav-link {
+            padding: 15px;
+            img {
+                height: 52px;
+                width: auto;
+            }
+        }
+
+    }
 }
 
 img {
