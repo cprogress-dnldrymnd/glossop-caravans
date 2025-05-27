@@ -281,7 +281,7 @@ Block::make(__('Listing URL'))
         $listing_url = get__post_meta_by_id(get_the_ID(), 'listing_url', true);
     ?>
         <?php if ($listing_url) { ?>
-            <div class="listing-grid-item__button">
+            <div class="listing-grid-item__button mt-20">
                 <a href="<?= $listing_url ?>" class="btn btn-primary w-100 btn-lg fw-semibold">
                     View Full Listing
                 </a>
