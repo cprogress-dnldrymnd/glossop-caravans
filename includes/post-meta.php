@@ -181,11 +181,17 @@ Block::make(__('Accordion'))
 
 Block::make(__('Listing Feature'))
     ->add_fields(array(
+        Field::make('html', 'html_1')->set_html("<div $style>Listing Feature</div>"),
         Field::make('checkbox', 'berths', __('Berths'))->set_width(33),
         Field::make('checkbox', 'warranty', __('Warannty'))->set_width(33),
         Field::make('checkbox', 'year', __('Year'))->set_width(33),
         Field::make('checkbox', 'weight', __('Weight'))->set_width(33),
         Field::make('checkbox', 'awning_size', __('Awning Size'))->set_width(33),
+
+        Field::make('html', 'html_1')->set_html("<div $style>Listing Prices</div>"),
+        Field::make('checkbox', 'rrp', __('Berths'))->set_width(33),
+        Field::make('checkbox', 'our_price', __('Warannty'))->set_width(33),
+        Field::make('checkbox', 'savings', __('Year'))->set_width(33),
 
     ))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
