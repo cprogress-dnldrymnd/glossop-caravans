@@ -229,5 +229,9 @@ Block::make(__('Floor Plan'))
     ))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
         $floor_plan = get__post_meta_by_id(get_the_ID(), 'floor_plan', true);
-        echo wp_get_attachment_image($floor_plan, 'medium', false, array('class' => $attributes['className']));
+        if ($floor_plan) {
+            echo '<div class="floor-plan-box text-center ' . $attributes['className'] . '">';
+            echo wp_get_attachment_image($floor_plan, 'medium', false, array('class' => 'w-100'));
+            echo '</div>';
+        }
     });
