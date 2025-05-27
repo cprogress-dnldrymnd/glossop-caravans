@@ -327,6 +327,7 @@ Block::make(__('Tabs Navigation'))
 
     ))
     ->set_inner_blocks(true)
+    ->set_inner_blocks_position('below')
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
     ?>
         <ul class="nav nav-tabs" id="<?= $fields['tab_id'] ?>" role="tablist">
