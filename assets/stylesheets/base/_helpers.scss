@@ -302,7 +302,7 @@
 }
 
 @include responsive(md-lg) {
-    .position-lg-sticky {
+    .position-lg-sticky.position-lg-sticky {
             position: sticky !important;
     }
 }

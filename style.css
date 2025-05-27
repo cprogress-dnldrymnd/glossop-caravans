@@ -11878,6 +11878,9 @@ span.icons {
 :where(.wp-block-columns.is-layout-flex).row {
   gap: 0; }
 
+@media screen and (min-width: 992px) {
+  .position-lg-sticky {
+    position: sticky !important; } }
 body {
   font-family: "Proxima Nova", sans-serif;
   color: var(--text-color);
