@@ -78,7 +78,7 @@ Block::make(__('Grid Items'))
 <?php
     });*/
 
-$style = 'style="font-weight: bold;text-align: center;background-color: #000;color: #fff;padding: 10px;"';
+$style = 'style="font-weight: bold;text-align: center;background-color: #ff980e;color: #fff;padding: 10px;"';
 
 Block::make(__('Icon'))
     ->add_fields(array(
