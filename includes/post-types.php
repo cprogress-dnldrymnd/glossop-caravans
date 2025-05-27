@@ -218,7 +218,8 @@ $Manufacturer->args = array(
     ),
     'hierarchical' => true,
     'query_var'    => true,
+    'show_in_rest' => true,
     'rewrite'      => array(
-        'slug'         => 'Caravan-category',
+        'slug'         => 'manufacturer',
     )
 );
