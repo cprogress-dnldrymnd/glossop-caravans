@@ -189,6 +189,8 @@ Block::make(__('Listing Feature'))
 
     ))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
+        global $post;
+        echo $post_id;
         if ($fields['berths']) {
             $berths = get__post_meta(get_the_ID(), 'berths', true);
         }
