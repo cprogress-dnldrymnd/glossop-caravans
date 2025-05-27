@@ -11644,11 +11644,12 @@ span.icons {
   gap: 8px;
   padding: 0;
   margin: 0;
-  list-style: none;
-  display: flex; }
-  .checklist.checklist a
-  li:before {
-    content: ''; }
+  list-style: none; }
+  .checklist.checklist li {
+    display: flex;
+    align-items: center; }
+    .checklist.checklist li:before {
+      content: ""; }
 
 @media (min-width: 1500px) {
   .container {
