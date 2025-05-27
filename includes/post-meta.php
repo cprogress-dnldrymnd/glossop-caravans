@@ -188,14 +188,9 @@ Block::make(__('Listing Feature'))
         Field::make('checkbox', 'awning_size', __('Awning Size'))->set_width(33),
 
     ))
-    ->set_render_callback(function () {
-    ?>
-        <div class="listing-grid--key-information mb-20">
-            <ul class="icon-list mb-0 icon-list-v4 d-flex list-inline align-items-center flex-wrap fs-18">
-                <li> <img src="https://newglossopacaravans.theprogressteam.co.uk/wp-content/themes/glossop-caravans/assets/images/berths.svg" alt="berths.svg"> 4 Berth</li>
-                <li><img src="https://newglossopacaravans.theprogressteam.co.uk/wp-content/themes/glossop-caravans/assets/images/year.svg" alt="year.svg"> 2024</li>
-            </ul>
-        </div>
-    <?php
-
+    ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
+        if ($fields['berths']) {
+            $berths = get__post_meta(get_the_ID(), 'berths', true);
+        }
+        echo listing__key_information_simple($berths);
     });
