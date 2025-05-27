@@ -178,3 +178,12 @@ Block::make(__('Accordion'))
         </div>
     <?php
     });
+
+Block::make(__('Listing Feature'))
+    ->add_fields(array(
+        // ...
+    ))
+    ->set_inner_blocks(true)
+    ->set_render_callback(function () {
+        // ..
+    });
