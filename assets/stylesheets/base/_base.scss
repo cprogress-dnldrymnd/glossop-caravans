@@ -725,3 +725,19 @@ span.icons {
         height: 100%;
     }
 }
+
+.checklist.checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+        display: flex;
+        align-items: center;
+        @include before {
+            content: "";
+        }
+    }
+}
