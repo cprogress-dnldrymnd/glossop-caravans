@@ -328,6 +328,6 @@ Block::make(__('Tabs'))
     ->set_inner_blocks(true)
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
         ?>
-            <?= virtual($inner_blocks) ?>
+            <?= var_dump($inner_blocks) ?>
         <?php
     });
