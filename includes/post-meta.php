@@ -349,9 +349,7 @@ Block::make(__('Tabs Navigation Item'))
 
 
     ))
-    ->set_inner_blocks(true)
     ->set_parent('carbon-fields/tabs-navigation')
-    ->set_inner_blocks_position('below')
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
     ?>
         <li class="nav-item" role="presentation">
