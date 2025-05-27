@@ -11880,7 +11880,8 @@ span.icons {
 
 @media screen and (min-width: 992px) {
   .position-lg-sticky.position-lg-sticky {
-    position: sticky !important; } }
+    position: sticky !important;
+    z-index: 2; } }
 body {
   font-family: "Proxima Nova", sans-serif;
   color: var(--text-color);
