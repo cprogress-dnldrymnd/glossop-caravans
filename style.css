@@ -11855,6 +11855,10 @@ span.icons {
   .w-100-mobile > * {
     width: 100%; } }
 
+@media screen and (max-width: 991px) {
+  .grid-template-2-tablet.grid-template-2-tablet.grid-template-2-tablet {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
 @media screen and (max-width: 767px) {
   .grid-template-2-mobile.grid-template-2-mobile.grid-template-2-mobile {
     grid-template-columns: repeat(2, minmax(0, 1fr)); } }

@@ -268,12 +268,17 @@
         width: 100%;
     }
 }
-
+.grid-template-2-tablet.grid-template-2-tablet.grid-template-2-tablet {
+    @include responsive(xs-sm) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
 .grid-template-2-mobile.grid-template-2-mobile.grid-template-2-mobile {
     @include responsive(xs) {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
+
 .flex-column-md {
     @include responsive(xs-md) {
         flex-direction: column !important;
@@ -284,7 +289,6 @@
         flex-direction: column !important;
     }
 }
-
 
 :where(.wp-block-columns.is-layout-flex) {
     &.row {
