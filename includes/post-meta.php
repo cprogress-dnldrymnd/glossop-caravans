@@ -327,7 +327,6 @@ Block::make(__('Tabs Navigation'))
 
     ))
     ->set_inner_blocks(true)
-    ->set_inner_blocks_position('below')
     ->set_allowed_inner_blocks(array(
         'carbon-fields/tabs-navigation-item',
     ))
