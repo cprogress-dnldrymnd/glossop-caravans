@@ -324,7 +324,6 @@ Block::make(__('Tabs Navigation'))
     ->add_fields(array(
         Field::make('html', 'html_1')->set_html("<div $style>Tabs</div>"),
         Field::make('text', 'tab_id', 'Tab ID'),
-        Field::make('html', 'html_2')->set_html("<div $style>End of Tabs</div>"),
 
     ))
     ->set_inner_blocks(true)
