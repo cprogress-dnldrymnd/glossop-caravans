@@ -16,18 +16,9 @@ Container::make('post_meta', __('Caravan Properties'))
     ->where('post_type', '=', 'caravan')
     ->add_fields(array(
         Field::make('image', 'floor_plan', __('Floor Plan')),
-        Field::make('complex', 'pricing', __('Pricing (£)'))
-            ->add_fields('rrp', array(
-                Field::make('text', 'price', __('Price'))->set_attribute('type', 'number')->set_attribute('step', '1'),
-            ))
-            ->add_fields('our_price', array(
-                Field::make('text', 'price', __('Price'))->set_attribute('type', 'number')->set_attribute('step', '1'),
-            ))
-            ->add_fields('save', array(
-                Field::make('text', 'price', __('Price'))->set_attribute('type', 'number')->set_attribute('step', '1'),
-            ))
-            ->set_layout('tabbed-horizontal')
-            ->set_duplicate_groups_allowed(false),
+        Field::make('text', 'rrp', __('RRP (£)'))->set_attribute('type', 'number')->set_attribute('step', '1'),
+        Field::make('text', 'our_price', __('Our Price (£)'))->set_attribute('type', 'number')->set_attribute('step', '1'),
+        Field::make('text', 'savings', __('Savings (£)'))->set_attribute('type', 'number')->set_attribute('step', '1'),
 
         Field::make('select', 'berths', __('Berths'))
             ->set_options(array(
