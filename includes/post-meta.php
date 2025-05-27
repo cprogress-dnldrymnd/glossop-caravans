@@ -258,12 +258,12 @@ Block::make(__('Manufacturer Bar'))
         <div class="manufacturer-bar">
             <div class="row g-3 align-items-center">
                 <?php if ($small_logo) { ?>
-                    <div class="col-auto">
+                    <div class="col-auto small-logo">
                         <?= wp_get_attachment_image($small_logo, 'medium', false); ?>
                     </div>
                 <?php } ?>
                 <?php if ($main_logo) { ?>
-                    <div class="col-auto">
+                    <div class="col-auto main-logo">
                         <?= wp_get_attachment_image($main_logo, 'medium', false); ?>
                     </div>
                 <?php } ?>
