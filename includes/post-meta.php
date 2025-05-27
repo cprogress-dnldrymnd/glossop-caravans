@@ -252,7 +252,7 @@ Block::make(__('Manufacturer Bar'))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
 
 
-        $manufacturer_id = carbon_get_term_meta($fields['manufacturer'][0]['id'], 'manufacturer');
+        $manufacturer_id = carbon_get_term_meta($fields['manufacturer'][0]['id'], 'main_logo');
     ?>
         <div class="manufacturer-bar">
             <?= $manufacturer_id ?>
