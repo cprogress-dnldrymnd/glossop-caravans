@@ -220,3 +220,14 @@ Block::make(__('Listing Prices'))
         }
         echo listing__price($rrp, $our_price, $savings);
     });
+
+
+Block::make(__('Floor Plan'))
+    ->add_fields(array(
+        Field::make('html', 'html_1')->set_html("<div $style>Floor Plan</div>"),
+
+    ))
+    ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
+        $floor_plan = get__post_meta_by_id(get_the_ID(), 'floor_plan', true);
+        echo wp_get_attachment_image($floor_plan, 'medium', false, array('class' => $attributes['className']));
+    });
