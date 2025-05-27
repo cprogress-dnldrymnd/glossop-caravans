@@ -328,6 +328,9 @@ Block::make(__('Tabs Navigation'))
     ))
     ->set_inner_blocks(true)
     ->set_inner_blocks_position('below')
+    ->set_allowed_inner_blocks(array(
+        'carbon-fields/tabs-navigation-item',
+    ))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
     ?>
         <ul class="nav nav-tabs" id="<?= $fields['tab_id'] ?>" role="tablist">
@@ -338,12 +341,12 @@ Block::make(__('Tabs Navigation'))
 
 Block::make(__('Tabs Navigation Item'))
     ->add_fields(array(
-        Field::make('html', 'html_1')->set_html("<div $style>Tabs</div>"),
+        Field::make('html', 'html_1')->set_html("<div $style>Tab Navigation Item</div>"),
         Field::make('text', 'tab_id', 'Tab ID'),
 
     ))
     ->set_inner_blocks(true)
-    ->set_parent( 'carbon-fields/tabs-navigation' )
+    ->set_parent('carbon-fields/tabs-navigation')
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
     ?>
         <li class="nav-item" role="presentation">
