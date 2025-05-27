@@ -318,3 +318,16 @@ Block::make(__('Listing Now On Display'))
         <?php } ?>
     <?php
     });
+
+
+Block::make(__('Tabs'))
+    ->add_fields(array(
+        Field::make('html', 'html_1')->set_html("<div $style>Tabs</div>"),
+
+    ))
+    ->set_inner_blocks(true)
+    ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
+        ?>
+            <?= virtual($inner_blocks) ?>
+        <?php
+    });
