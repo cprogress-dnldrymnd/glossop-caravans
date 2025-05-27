@@ -203,9 +203,9 @@ Block::make(__('Listing Feature'))
 Block::make(__('Listing Prices'))
     ->add_fields(array(
         Field::make('html', 'html_1')->set_html("<div $style>Listing Prices</div>"),
-        Field::make('checkbox', 'rrp', __('Berths'))->set_width(33),
-        Field::make('checkbox', 'our_price', __('Warannty'))->set_width(33),
-        Field::make('checkbox', 'savings', __('Year'))->set_width(33),
+        Field::make('checkbox', 'rrp', __('RRP'))->set_width(33),
+        Field::make('checkbox', 'our_price', __('Our Price'))->set_width(33),
+        Field::make('checkbox', 'savings', __('Savings'))->set_width(33),
 
     ))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
