@@ -42,6 +42,13 @@ strong {
   border-radius: 10px;
   margin-bottom: 20px; }
 
+[data-type="carbon-fields/tabs-navigation-item"] {
+  padding: 20px;
+  border: 1px solid #bfbfbf;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
 .crb-field-style-1.crb-field-style-1 .cf-field__body input {
   background-color: var(--orange-color);
   font-family: "Proxima Nova";
