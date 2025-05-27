@@ -11667,7 +11667,8 @@ span.icons {
   max-width: 1000px; }
   .table-style-1.table-style-1 table th, .table-style-1.table-style-1 table td {
     border-left: none;
-    border-right: none; }
+    border-right: none;
+    border-color: #DDDDDD; }
 
 @media (min-width: 1500px) {
   .container {

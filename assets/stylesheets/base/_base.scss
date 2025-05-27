@@ -753,6 +753,11 @@ span.icons {
 .table-style-1.table-style-1 {
     max-width: 1000px;
     table {
+        th {
+            @include responsive(md-lg) {
+                font-size: 32px;
+            }
+        }
         th, td {
             border-left: none;
             border-right: none;
