@@ -30,8 +30,9 @@ Container::make('post_meta', __('Caravan Properties'))
                 '5' => '5',
                 '6' => '6',
             )),
-        Field::make('text', 'warranty', __('Warranty')),
+        Field::make('text', 'axle', __('Axle')),
         Field::make('text', 'year', __('Year')),
+        Field::make('text', 'warranty', __('Warranty')),
         Field::make('text', 'weight', __('Weight')),
         Field::make('text', 'awning_size', __('Awning Size')),
         Field::make('checkbox', 'now_on_display', __('Now On Display')),
@@ -308,7 +309,7 @@ Block::make(__('Listing Now On Display'))
     ?>
         <?php if ($now_on_display) { ?>
             <div class="now-on-display-box rounded background-yellow text-center p-2 fw-semibold fs-14 <?= $attributes['className'] ?>">
-               Now On Display
+                Now On Display
             </div>
         <?php } ?>
     <?php

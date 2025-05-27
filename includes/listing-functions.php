@@ -276,7 +276,7 @@ function listing__gallery($id, $is_thumbnail = false)
     return ob_get_clean();
 }
 
-function listing__key_information_simple($berths = 4, $year = 2024)
+function listing__key_information_simple($berths = 4, $year = 2024, $axle = false)
 {
     ob_start();
 ?>
@@ -286,6 +286,9 @@ function listing__key_information_simple($berths = 4, $year = 2024)
         <?php } ?>
         <?php if ($year > 0) { ?>
             <li><?= get__theme_images('year.svg') ?> <?= $year ?> </li>
+        <?php } ?>
+        <?php if ($axle > 0) { ?>
+            <li><?= get__theme_images('axles.svg') ?> <?= $axle ?> </li>
         <?php } ?>
     </ul>
 <?php
