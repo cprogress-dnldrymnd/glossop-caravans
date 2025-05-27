@@ -327,6 +327,7 @@ Block::make(__('Tabs Navigation'))
 
     ))
     ->set_inner_blocks(true)
+    ->set_inner_blocks_position('below')
     ->set_allowed_inner_blocks(array(
         'carbon-fields/tabs-navigation-item',
     ))
@@ -343,7 +344,6 @@ Block::make(__('Tabs Navigation Item'))
         Field::make('html', 'html_1')->set_html("<div $style>Tab Navigation Item</div>"),
         Field::make('text', 'tab_item_id', 'Tab Item ID'),
         Field::make('text', 'tab_item_title', 'Tab Item Title'),
-        Field::make('html', 'html_1')->set_html("<div $style>Tab Navigation Item</div>"),
 
 
     ))
