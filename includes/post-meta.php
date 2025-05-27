@@ -218,5 +218,5 @@ Block::make(__('Listing Prices'))
         if ($fields['savings']) {
             $savings = get__post_meta_by_id(get_the_ID(), 'savings', true);
         }
-        echo listing__price($rrp, $our_price, $savings);;
+        echo listing__price($rrp, $our_price, $savings);
     });
