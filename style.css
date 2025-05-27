@@ -11666,7 +11666,9 @@ span.icons {
 .table-style-1.table-style-1 {
   max-width: 1000px; }
   .table-style-1.table-style-1 table th {
-    border-top: none !important; }
+    border-top: none !important;
+    padding-top: 25px;
+    padding-bottom: 25px; }
     @media screen and (min-width: 992px) {
       .table-style-1.table-style-1 table th {
         font-size: 32px; } }
