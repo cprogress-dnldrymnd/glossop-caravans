@@ -26,6 +26,7 @@ Container::make('post_meta', __('Caravan Properties'))
             ->add_fields('save', array(
                 Field::make('text', 'price', __('Price'))->set_attribute('type', 'number')->set_attribute('step', '1'),
             ))
+            ->set_layout('tabbed-horizontal')
 
     ));
 /*
