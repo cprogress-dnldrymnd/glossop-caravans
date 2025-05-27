@@ -201,7 +201,7 @@ Block::make(__('Listing Feature'))
             $year = get__post_meta_by_id(get_the_ID(), 'year', true);
         }
         if ($fields['axle']) {
-            $year = get__post_meta_by_id(get_the_ID(), 'axle', true);
+            $axle = get__post_meta_by_id(get_the_ID(), 'axle', true);
         }
         echo listing__key_information_simple($berths, $year, $axle);
     });
