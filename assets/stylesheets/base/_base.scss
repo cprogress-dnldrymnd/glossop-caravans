@@ -754,6 +754,7 @@ span.icons {
     max-width: 1000px;
     table {
         th {
+            border-top: none !important;
             @include responsive(md-lg) {
                 font-size: 32px;
             }
