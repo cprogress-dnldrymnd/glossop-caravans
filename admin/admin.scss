@@ -33,10 +33,10 @@ body a {
         margin-right: auto;
     }
 }
-b, strong {
+b,
+strong {
     font-weight: bold;
 }
-
 
 .is-root-container.is-root-container.is-root-container.is-root-container.is-root-container {
     .custom-submenu {
@@ -45,4 +45,12 @@ b, strong {
         transform: none;
         opacity: 1;
     }
+}
+
+[data-type="carbon-fields/tabs-navigation"] {
+    background-color: var(--wp--preset--color--white);
+    padding: 20px;
+    border: 1px solid #bfbfbf;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }

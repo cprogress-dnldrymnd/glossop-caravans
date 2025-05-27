@@ -322,8 +322,10 @@ Block::make(__('Listing Now On Display'))
 
 Block::make(__('Tabs Navigation'))
     ->add_fields(array(
-        Field::make('html', 'html_1')->set_html("<div $style>Tabs Navigation</div>"),
-        Field::make('text', 'tab_id', 'Tab ID'),
+        Field::make('html', 'html_1')->set_html("<div $style>Tabs Navigation</div>")->set_width(50),
+        Field::make('text', 'tab_id', '')->set_width(50)->set_classes('crb-field-style-1')
+            ->set_attribute('placeholder', 'Tab ID')
+
 
     ))
     ->set_inner_blocks(true)
@@ -342,7 +344,8 @@ Block::make(__('Tabs Navigation'))
 Block::make(__('Tabs Navigation Item'))
     ->add_fields(array(
         Field::make('html', 'html_1')->set_html("<div $style>Tab Navigation Item</div>")->set_width(50),
-        Field::make('text', 'tab_item_id', __('Tab Item ID'))->set_width(50)
+        Field::make('text', 'tab_item_id', __(''))->set_width(50)->set_classes('crb-field-style-1')
+            ->set_attribute('placeholder', 'Tab Item ID')
     ))
     ->set_parent('carbon-fields/tabs-navigation')
     ->set_inner_blocks(true)
