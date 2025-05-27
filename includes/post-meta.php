@@ -307,7 +307,7 @@ Block::make(__('Now On Display'))
         $now_on_display = get__post_meta_by_id(get_the_ID(), 'now_on_display', true);
     ?>
         <?php if ($now_on_display) { ?>
-            <div class="now-on-display-box rounded background-yellow text-center">
+            <div class="now-on-display-box rounded background-yellow text-center mt-20 mb-20">
                Now On Display
             </div>
         <?php } ?>
