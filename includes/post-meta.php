@@ -4,6 +4,14 @@ use Carbon_Fields\Container;
 use Carbon_Fields\Complex_Container;
 use Carbon_Fields\Field;
 use Carbon_Fields\Block;
+
+Container::make('term_meta', __('Manufacturer Properties'))
+    ->where('term_taxonomy', '=', 'manufacturer')
+    ->add_fields(array(
+        Field::make('image', 'small_logo', __('Small Logo')),
+        Field::make('image', 'main logo', __('Main Logo')),
+    ));
+
 /*
 Block::make(__('Grid Items'))
     ->add_fields(array(
