@@ -342,6 +342,7 @@ Block::make(__('Tabs Navigation'))
 Block::make(__('Tabs Navigation Item'))
     ->add_fields(array(
         Field::make('html', 'html_1')->set_html("<div $style>Tab Navigation Item</div>"),
+        Field::make('text', 'tab_item_id', __('Tab Item ID'))
     ))
     ->set_parent('carbon-fields/tabs-navigation')
     ->set_inner_blocks(true)
@@ -349,7 +350,7 @@ Block::make(__('Tabs Navigation Item'))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
     ?>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="<?= $fields['tab_item_title'] ?>" data-bs-toggle="tab" data-bs-target="#<?= $fields['tab_item_title'] ?>-pane" type="button" role="tab" aria-controls="<?= $fields['tab_item_title'] ?>-pane">
+            <button class="nav-link" id="<?= $fields['tab_item_id'] ?>" data-bs-toggle="tab" data-bs-target="#<?= $fields['tab_item_id'] ?>-pane" type="button" role="tab" aria-controls="<?= $fields['tab_item_title'] ?>-pane">
                 <?= $inner_blocks ?>
             </button>
         </li>
