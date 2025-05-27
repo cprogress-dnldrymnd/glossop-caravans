@@ -192,5 +192,8 @@ Block::make(__('Listing Feature'))
         if ($fields['berths']) {
             $berths = get__post_meta_by_id(get_the_ID(), 'berths', true);
         }
-        echo listing__key_information_simple($berths);
+        if ($fields['year']) {
+            $year = get__post_meta_by_id(get_the_ID(), 'year', true);
+        }
+        echo listing__key_information_simple($berths, $year);
     });
