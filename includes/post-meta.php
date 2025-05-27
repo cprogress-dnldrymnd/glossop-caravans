@@ -253,14 +253,21 @@ Block::make(__('Manufacturer Bar'))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
         $term_id = $fields['manufacturer'][0]['id'];
         $parent = wp_get_term_taxonomy_parent_id($term_id, 'manufacturer');
+        $small_logo = carbon_get_term_meta($term_id, 'small_logo');
         $main_logo = carbon_get_term_meta($term_id, 'main_logo');
-        $small_logo = carbon_get_term_meta($parent, 'small_logo');
+        $small_logo_parent = carbon_get_term_meta($parent, 'small_logo');
     ?>
         <div class="manufacturer-bar">
             <div class="row g-3 align-items-center">
-                <?php if ($small_logo) { ?>
+                <?php if (!$parent && $small_logo) { ?>
                     <div class="col-auto small-logo">
                         <?= wp_get_attachment_image($small_logo, 'medium', false); ?>
+                    </div>
+                <?php }  ?>
+
+                <?php if ($small_logo_parent) { ?>
+                    <div class="col-auto small-logo">
+                        <?= wp_get_attachment_image($small_logo_parent, 'medium', false); ?>
                     </div>
                 <?php } ?>
                 <?php if ($main_logo) { ?>
@@ -281,7 +288,7 @@ Block::make(__('Listing URL'))
         $listing_url = get__post_meta_by_id(get_the_ID(), 'listing_url', true);
     ?>
         <?php if ($listing_url) { ?>
-            <div class="listing-grid-item__button mt-20">
+            <div class="listing-grid-item__button">
                 <a href="<?= $listing_url ?>" class="btn btn-primary w-100 btn-lg fw-semibold">
                     View Full Listing
                 </a>
