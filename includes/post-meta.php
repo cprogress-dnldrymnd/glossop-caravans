@@ -299,7 +299,7 @@ Block::make(__('Listing URL'))
     });
 
 
-Block::make(__('Now On Display'))
+Block::make(__('Listing Now On Display'))
     ->add_fields(array(
         Field::make('html', 'html_1')->set_html("<div $style> Now On Display </div>"),
     ))
