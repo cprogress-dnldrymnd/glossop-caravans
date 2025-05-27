@@ -11647,9 +11647,15 @@ span.icons {
   list-style: none; }
   .checklist.checklist li {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    gap: 10px; }
     .checklist.checklist li:before {
-      content: ""; }
+      content: "";
+      width: 16px;
+      height: 9px;
+      border-left: 2px solid var(--orange-color);
+      border-bottom: 2px solid var(--orange-color);
+      transform: rotate(-45deg); }
 
 @media (min-width: 1500px) {
   .container {

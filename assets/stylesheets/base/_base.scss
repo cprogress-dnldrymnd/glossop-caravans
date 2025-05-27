@@ -736,8 +736,14 @@ span.icons {
     li {
         display: flex;
         align-items: center;
+        gap: 10px;
         @include before {
             content: "";
+            width: 16px;
+            height: 9px;
+            border-left: 2px solid var(--orange-color);
+            border-bottom: 2px solid var(--orange-color);
+            transform: rotate(-45deg);
         }
     }
 }
