@@ -237,7 +237,7 @@ Block::make(__('Floor Plan'))
     });
 
 
-Block::make(__('Manufacturer'))
+Block::make(__('Manufacturer Bar'))
     ->add_fields(array(
         Field::make('html', 'html_1')->set_html("<div $style>Manufacturer </div>"),
         Field::make('association', 'manufacturer', __('Manufacturer'))
