@@ -254,6 +254,7 @@ Block::make(__('Manufacturer Bar'))
         $parent = wp_get_term_taxonomy_parent_id($term_id, 'manufacturer');
         $main_logo = carbon_get_term_meta($term_id, 'main_logo');
         $small_logo = carbon_get_term_meta($parent, 'small_logo');
+        echo $parent;
     ?>
         <div class="manufacturer-bar">
             <div class="row g-3 align-items-center">
