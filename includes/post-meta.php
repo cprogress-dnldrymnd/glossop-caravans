@@ -181,13 +181,19 @@ Block::make(__('Accordion'))
 
 Block::make(__('Listing Feature'))
     ->add_fields(array(
-        // ...
-    ))
-    ->set_inner_blocks(true)
-    ->set_inner_blocks_template(array(
-        array('core/heading'),
-        array('core/paragraph')
+        Field::make('complex', 'features', __('Listing Features'))
+            ->add_fields('berths', array())
+            ->add_fields('warranty', array())
+            ->add_fields('year', array())
     ))
     ->set_render_callback(function () {
-        // ..
+    ?>
+        <div class="listing-grid--key-information mb-20">
+            <ul class="icon-list mb-0 icon-list-v4 d-flex list-inline align-items-center flex-wrap fs-18">
+                <li> <img src="https://newglossopacaravans.theprogressteam.co.uk/wp-content/themes/glossop-caravans/assets/images/berths.svg" alt="berths.svg"> 4 Berth</li>
+                <li><img src="https://newglossopacaravans.theprogressteam.co.uk/wp-content/themes/glossop-caravans/assets/images/year.svg" alt="year.svg"> 2024</li>
+            </ul>
+        </div>
+    <?php
+
     });
