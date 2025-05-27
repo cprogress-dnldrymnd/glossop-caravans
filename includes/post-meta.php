@@ -272,3 +272,20 @@ Block::make(__('Manufacturer Bar'))
         </div>
     <?php
     });
+
+Block::make(__('Listing URL'))
+    ->add_fields(array(
+        Field::make('html', 'html_1')->set_html("<div $style>Listing URL </div>"),
+    ))
+    ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
+        $listing_url = get__post_meta_by_id(get_the_ID(), 'listing_url', true);
+    ?>
+        <?php if ($listing_url) { ?>
+            <div class="listing-grid-item__button">
+                <a href="<?= $listing_url ?>" class="btn btn-primary w-100 btn-lg fw-semibold">
+                    View Full Listing
+                </a>
+            </div>
+        <?php } ?>
+    <?php
+    });
