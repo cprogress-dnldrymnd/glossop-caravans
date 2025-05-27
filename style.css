@@ -11882,6 +11882,9 @@ span.icons {
   .position-lg-sticky.position-lg-sticky {
     position: sticky !important;
     z-index: 2; } }
+.h-100 > .components-resizable-box__container {
+  height: 100% !important; }
+
 body {
   font-family: "Proxima Nova", sans-serif;
   color: var(--text-color);

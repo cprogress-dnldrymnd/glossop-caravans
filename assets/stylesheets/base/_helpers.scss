@@ -307,3 +307,7 @@
             z-index: 2;
     }
 }
+
+.h-100 > .components-resizable-box__container {
+    height: 100% !important;
+}
