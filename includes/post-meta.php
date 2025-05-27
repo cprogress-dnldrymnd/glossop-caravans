@@ -252,10 +252,11 @@ Block::make(__('Manufacturer Bar'))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
 
 
-        $manufacturer = carbon_get_term_meta($fields['manufacturer'][0]['id'], 'manufacturer');
+        $manufacturer_id = carbon_get_term_meta($fields['manufacturer'][0]['id'], 'manufacturer');
     ?>
         <div class="manufacturer-bar">
-            <?= $manufacturer ?>
+            <?= $manufacturer_id ?>
+            <?php var_dump($fields['manufacturer']); ?>
         </div>
     <?php
     });
