@@ -11655,11 +11655,19 @@ span.icons {
       height: 9px;
       border-left: 2px solid var(--orange-color);
       border-bottom: 2px solid var(--orange-color);
+      margin-top: -2px;
+      display: inline-block;
       -webkit-transform: rotate(-45deg);
       -moz-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
       -o-transform: rotate(-45deg);
       transform: rotate(-45deg); }
+
+.table-style-1.table-style-1 {
+  max-width: 1000px; }
+  .table-style-1.table-style-1 table th, .table-style-1.table-style-1 table td {
+    border-left: none;
+    border-right: none; }
 
 @media (min-width: 1500px) {
   .container {

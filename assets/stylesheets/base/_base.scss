@@ -749,3 +749,14 @@ span.icons {
         }
     }
 }
+
+.table-style-1.table-style-1 {
+    max-width: 1000px;
+    table {
+        th, td {
+            border-left: none;
+            border-right: none;
+            border-color: #DDDDDD;
+        }
+    }
+}
