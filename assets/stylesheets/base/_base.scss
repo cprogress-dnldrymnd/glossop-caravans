@@ -758,10 +758,14 @@ span.icons {
                 font-size: 32px;
             }
         }
+        thead {
+            border-color: #DDDDDD;
+        }
         th, td {
             border-left: none;
             border-right: none;
             border-color: #DDDDDD;
+            padding: 10px;
         }
     }
 }

@@ -11665,10 +11665,16 @@ span.icons {
 
 .table-style-1.table-style-1 {
   max-width: 1000px; }
+  @media screen and (min-width: 992px) {
+    .table-style-1.table-style-1 table th {
+      font-size: 32px; } }
+  .table-style-1.table-style-1 table thead {
+    border-color: #DDDDDD; }
   .table-style-1.table-style-1 table th, .table-style-1.table-style-1 table td {
     border-left: none;
     border-right: none;
-    border-color: #DDDDDD; }
+    border-color: #DDDDDD;
+    padding: 10px 0; }
 
 @media (min-width: 1500px) {
   .container {
