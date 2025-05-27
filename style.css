@@ -11655,6 +11655,10 @@ span.icons {
       height: 9px;
       border-left: 2px solid var(--orange-color);
       border-bottom: 2px solid var(--orange-color);
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
       transform: rotate(-45deg); }
 
 @media (min-width: 1500px) {
