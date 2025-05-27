@@ -28,6 +28,18 @@ Container::make('post_meta', __('Caravan Properties'))
             ))
             ->set_layout('tabbed-horizontal')
             ->set_duplicate_groups_allowed(false),
+        Field::make('complex', 'features', __('Features'))
+            ->add_fields('berths', array(
+                Field::make('text', 'price', __('Price'))->set_attribute('type', 'number')->set_attribute('step', '1'),
+            ))
+            ->add_fields('our_price', array(
+                Field::make('text', 'price', __('Price'))->set_attribute('type', 'number')->set_attribute('step', '1'),
+            ))
+            ->add_fields('save', array(
+                Field::make('text', 'price', __('Price'))->set_attribute('type', 'number')->set_attribute('step', '1'),
+            ))
+            ->set_layout('tabbed-horizontal')
+            ->set_duplicate_groups_allowed(false),
         Field::make('select', 'berths', __('Berths'))
             ->set_options(array(
                 'all' => 'All',
@@ -36,9 +48,11 @@ Container::make('post_meta', __('Caravan Properties'))
                 '4' => '4',
                 '5' => '5',
                 '6' => '6',
-            ))
-
-
+            )),
+        Field::make('text', 'warranty', __('Warranty')),
+        Field::make('text', 'year', __('Year')),
+        Field::make('text', 'weight', __('Weight')),
+        Field::make('text', 'awning_size', __('Awning Size')),
 
     ));
 /*
