@@ -11101,7 +11101,7 @@ button.swiper-pagination-bullet {
   font-style: normal;
   font-display: swap; }
 body {
-  --admin-bar-height: 0; }
+  --admin-bar-height: 0px; }
 
 img {
   height: auto; }
