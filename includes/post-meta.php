@@ -333,7 +333,7 @@ Block::make(__('Tabs Navigation'))
     ))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
     ?>
-        <ul class="nav nav-tabs" id="<?= $fields['tab_id'] ?>" role="tablist">
+        <ul class="nav nav-tabs nav-tabs-style-3" id="<?= $fields['tab_id'] ?>" role="tablist">
             <?= $inner_blocks ?>
         </ul>
     <?php
