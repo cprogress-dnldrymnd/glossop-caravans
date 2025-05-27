@@ -78,7 +78,7 @@ Block::make(__('Grid Items'))
 <?php
     });*/
 
-$style = 'style="font-weight: bold; text-align: center; background-color: #45c324; color: #fff; padding: 15px; border-radius: 5px; font-family: Proxima Nova; text-transform: uppercase; letter-spacing: 1px; font-size: 20px;"';
+$style = 'style="font-weight: bold;  background-color: #45c324; color: #fff; padding: 15px; border-radius: 5px; font-family: Proxima Nova; text-transform: uppercase; letter-spacing: 1px; font-size: 20px;"';
 
 Block::make(__('Icon'))
     ->add_fields(array(
@@ -341,8 +341,8 @@ Block::make(__('Tabs Navigation'))
 
 Block::make(__('Tabs Navigation Item'))
     ->add_fields(array(
-        Field::make('html', 'html_1')->set_html("<div $style>Tab Navigation Item</div>"),
-        Field::make('text', 'tab_item_id', __('Tab Item ID'))
+        Field::make('html', 'html_1')->set_html("<div $style>Tab Navigation Item</div>")->set_width(50),
+        Field::make('text', 'tab_item_id', __('Tab Item ID'))->set_width(50)
     ))
     ->set_parent('carbon-fields/tabs-navigation')
     ->set_inner_blocks(true)
