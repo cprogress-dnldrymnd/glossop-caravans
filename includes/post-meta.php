@@ -297,3 +297,19 @@ Block::make(__('Listing URL'))
         <?php } ?>
     <?php
     });
+
+
+Block::make(__('Now On Display'))
+    ->add_fields(array(
+        Field::make('html', 'html_1')->set_html("<div $style> Now On Display </div>"),
+    ))
+    ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
+        $now_on_display = get__post_meta_by_id(get_the_ID(), 'now_on_display', true);
+    ?>
+        <?php if ($now_on_display) { ?>
+            <div class="now-on-display-box rounded background-yellow text-center">
+               Now On Display
+            </div>
+        <?php } ?>
+    <?php
+    });
