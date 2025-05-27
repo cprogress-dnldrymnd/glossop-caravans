@@ -184,6 +184,10 @@ Block::make(__('Listing Feature'))
         // ...
     ))
     ->set_inner_blocks(true)
+    ->set_inner_blocks_template(array(
+        array('core/heading'),
+        array('core/paragraph')
+    ))
     ->set_render_callback(function () {
         // ..
     });
