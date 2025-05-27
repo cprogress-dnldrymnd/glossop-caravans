@@ -281,7 +281,7 @@ function listing__key_information_simple($berths = 4, $year = 2024, $axle = fals
     ob_start();
 ?>
     <ul class="icon-list mb-0 icon-list-v4 d-flex list-inline align-items-center flex-wrap fs-18">
-        <?php if ($berth) { ?>
+        <?php if ($berths) { ?>
             <li> <?= get__theme_images('berths.svg') ?> <?= $berths ?> Berth</li>
         <?php } ?>
         <?php if ($year) { ?>
