@@ -34,6 +34,7 @@ Container::make('post_meta', __('Caravan Properties'))
         Field::make('text', 'year', __('Year')),
         Field::make('text', 'weight', __('Weight')),
         Field::make('text', 'awning_size', __('Awning Size')),
+        Field::make('checkbox', 'now_on_display', __('Now On Display')),
 
     ));
 /*
