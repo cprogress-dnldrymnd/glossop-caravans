@@ -188,6 +188,20 @@ Block::make(__('Listing Feature'))
         Field::make('checkbox', 'weight', __('Weight'))->set_width(33),
         Field::make('checkbox', 'awning_size', __('Awning Size'))->set_width(33),
 
+    ))
+    ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
+        if ($fields['berths']) {
+            $berths = get__post_meta_by_id(get_the_ID(), 'berths', true);
+        }
+        if ($fields['year']) {
+            $year = get__post_meta_by_id(get_the_ID(), 'year', true);
+        }
+        echo listing__key_information_simple($berths, $year);
+    });
+
+
+Block::make(__('Listing Prices'))
+    ->add_fields(array(
         Field::make('html', 'html_1')->set_html("<div $style>Listing Prices</div>"),
         Field::make('checkbox', 'rrp', __('Berths'))->set_width(33),
         Field::make('checkbox', 'our_price', __('Warannty'))->set_width(33),
