@@ -9,7 +9,7 @@ Container::make('term_meta', __('Manufacturer Properties'))
     ->where('term_taxonomy', '=', 'manufacturer')
     ->add_fields(array(
         Field::make('image', 'small_logo', __('Small Logo')),
-        Field::make('image', 'main logo', __('Main Logo')),
+        Field::make('image', 'main_logo', __('Main Logo')),
     ));
 
 /*
