@@ -16,15 +16,15 @@ Container::make('post_meta', __('Caravan Properties'))
     ->where('post_type', '=', 'caravan')
     ->add_fields(array(
         Field::make('image', 'floor_plan', __('Floor Plan')),
-        Field::make('complex', 'pricing', __('Pricing'))
+        Field::make('complex', 'pricing', __('Pricing (£)'))
             ->add_fields('rrp', array(
-                Field::make('text', 'price', __('Price')),
+                Field::make('text', 'price', __('Price'))->set_attribute('type', 'number')->set_attribute('step', '1'),
             ))
             ->add_fields('our_price', array(
-                Field::make('text', 'price', __('Price')),
+                Field::make('text', 'price', __('Price'))->set_attribute('type', 'number')->set_attribute('step', '1'),
             ))
             ->add_fields('save', array(
-                Field::make('text', 'price', __('Price')),
+                Field::make('text', 'price', __('Price'))->set_attribute('type', 'number')->set_attribute('step', '1'),
             ))
 
     ));
