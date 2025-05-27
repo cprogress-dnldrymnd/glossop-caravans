@@ -303,11 +303,54 @@
 
 @include responsive(md-lg) {
     .position-lg-sticky.position-lg-sticky {
-            position: sticky !important;
-            z-index: 2;
+        position: sticky !important;
+        z-index: 2;
     }
 }
 
 .h-100 > .components-resizable-box__container {
     height: 100% !important;
+}
+
+.text-decoration-none a {
+    text-decoration: none !important;
+}
+.custom-box-link {
+    position: relative;
+}
+.custom-box-link a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.small-logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+.main-logo img {
+    height: 60px;
+    object-fit: contain;
+}
+.position-sticky {
+    z-index: 2;
+}
+
+.image-nav img {
+    height: 30px !important;
+    width: auto !important;
+}
+
+.admin-bar .top-0 {
+    top: 32px !important;
+}
+.now-on-display-box.position-absolute {
+    z-index: 1;
+    top: 20px;
+    right: 20px;
 }
