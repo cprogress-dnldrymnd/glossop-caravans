@@ -27,7 +27,18 @@ Container::make('post_meta', __('Caravan Properties'))
                 Field::make('text', 'price', __('Price'))->set_attribute('type', 'number')->set_attribute('step', '1'),
             ))
             ->set_layout('tabbed-horizontal')
-            ->set_duplicate_groups_allowed(false)
+            ->set_duplicate_groups_allowed(false),
+        Field::make('select', 'berths', __('Berths'))
+            ->set_options(array(
+                'all' => 'All',
+                '2' => '2',
+                '3' => '3',
+                '4' => '4',
+                '5' => '5',
+                '6' => '6',
+            ))
+
+
 
     ));
 /*
