@@ -186,8 +186,9 @@ Block::make(__('Listing Feature'))
     ->add_fields(array(
         Field::make('html', 'html_1')->set_html("<div $style>Listing Feature</div>"),
         Field::make('checkbox', 'berths', __('Berths'))->set_width(33),
-        Field::make('checkbox', 'warranty', __('Warannty'))->set_width(33),
         Field::make('checkbox', 'year', __('Year'))->set_width(33),
+        Field::make('checkbox', 'axle', __('Axle'))->set_width(33),
+        Field::make('checkbox', 'warranty', __('Warannty'))->set_width(33),
         Field::make('checkbox', 'weight', __('Weight'))->set_width(33),
         Field::make('checkbox', 'awning_size', __('Awning Size'))->set_width(33),
 
@@ -199,7 +200,10 @@ Block::make(__('Listing Feature'))
         if ($fields['year']) {
             $year = get__post_meta_by_id(get_the_ID(), 'year', true);
         }
-        echo listing__key_information_simple($berths, $year);
+        if ($fields['axle']) {
+            $year = get__post_meta_by_id(get_the_ID(), 'axle', true);
+        }
+        echo listing__key_information_simple($berths, $year, $axle);
     });
 
 
