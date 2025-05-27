@@ -12,6 +12,22 @@ Container::make('term_meta', __('Manufacturer Properties'))
         Field::make('image', 'main_logo', __('Main Logo')),
     ));
 
+Container::make('post_meta', __('Caravan Properties'))
+    ->where('term_taxonomy', '=', 'caravans')
+    ->add_fields(array(
+        Field::make('image', 'floor_plan', __('Floor Plan')),
+        Field::make('complex', 'pricing', __('Pricing'))
+            ->add_fields('rrp', array(
+                Field::make('text', 'price', __('Price')),
+            ))
+            ->add_fields('our_price', array(
+                Field::make('text', 'price', __('Price')),
+            ))
+            ->add_fields('save', array(
+                Field::make('text', 'price', __('Price')),
+            ))
+
+    ));
 /*
 Block::make(__('Grid Items'))
     ->add_fields(array(
