@@ -250,12 +250,24 @@ Block::make(__('Manufacturer Bar'))
             ->set_max(1)
     ))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
-
-
-        $manufacturer_id = carbon_get_term_meta($fields['manufacturer'][0]['id'], 'main_logo');
+        $term_id = $fields['manufacturer'][0]['id'];
+        $parent = wp_get_term_taxonomy_parent_id($term_id);
+        $main_logo = carbon_get_term_meta($term_id, 'main_logo');
+        $small_logo = carbon_get_term_meta($parent, 'small_logo');
     ?>
         <div class="manufacturer-bar">
-            <?= wp_get_attachment_image($manufacturer_id, 'medium', false);?>
+            <div class="row g-3 align-items-center">
+                <?php if ($small_logo) { ?>
+                    <div class="col-auto">
+                        <?= wp_get_attachment_image($small_logo, 'medium', false); ?>
+                    </div>
+                <?php } ?>
+                <?php if ($main_logo) { ?>
+                    <div class="col-auto">
+                        <?= wp_get_attachment_image($main_logo, 'medium', false); ?>
+                    </div>
+                <?php } ?>
+            </div>
         </div>
     <?php
     });
