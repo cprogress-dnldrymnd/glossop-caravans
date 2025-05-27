@@ -320,14 +320,33 @@ Block::make(__('Listing Now On Display'))
     });
 
 
-Block::make(__('Tabs'))
+Block::make(__('Tabs Navigation'))
     ->add_fields(array(
         Field::make('html', 'html_1')->set_html("<div $style>Tabs</div>"),
+        Field::make('text', 'tab_id', 'Tab ID'),
 
     ))
     ->set_inner_blocks(true)
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
-        ?>
-            <?= var_dump($inner_blocks) ?>
-        <?php
+    ?>
+        <ul class="nav nav-tabs" id="<?= $fields['tab_id'] ?>" role="tablist">
+
+        </ul>
+    <?php
+    });
+
+Block::make(__('Tabs Navigation Item'))
+    ->add_fields(array(
+        Field::make('html', 'html_1')->set_html("<div $style>Tabs</div>"),
+        Field::make('text', 'tab_id', 'Tab ID'),
+
+    ))
+    ->set_inner_blocks(true)
+    ->set_parent( 'carbon-fields/Tabs Navigation' )
+    ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
+    ?>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+        </li>
+    <?php
     });
