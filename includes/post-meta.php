@@ -209,11 +209,14 @@ Block::make(__('Listing Prices'))
 
     ))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
-        if ($fields['berths']) {
-            $berths = get__post_meta_by_id(get_the_ID(), 'berths', true);
+        if ($fields['rrp']) {
+            $rrp = get__post_meta_by_id(get_the_ID(), 'rrp', true);
         }
-        if ($fields['year']) {
-            $year = get__post_meta_by_id(get_the_ID(), 'year', true);
+        if ($fields['our_price']) {
+            $our_price = get__post_meta_by_id(get_the_ID(), 'our_price', true);
         }
-        echo listing__key_information_simple($berths, $year);
+        if ($fields['savings']) {
+            $savings = get__post_meta_by_id(get_the_ID(), 'savings', true);
+        }
+        echo listing__price($rrp, $our_price, $savings);;
     });
