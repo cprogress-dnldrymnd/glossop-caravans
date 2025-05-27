@@ -11269,11 +11269,15 @@ img {
     flex-wrap: nowrap; }
     .nav-tabs.swiper-wrapper .swiper-slide {
       width: auto; }
-  .nav-tabs.nav-tabs-style-3 .nav-link {
-    padding: 15px; }
-    .nav-tabs.nav-tabs-style-3 .nav-link img {
-      height: 52px;
-      width: auto; }
+  .nav-tabs.nav-tabs-style-3 {
+    gap: 15px; }
+    .nav-tabs.nav-tabs-style-3 .nav-link {
+      padding: 15px; }
+      .nav-tabs.nav-tabs-style-3 .nav-link figure {
+        margin-bottom: 0; }
+      .nav-tabs.nav-tabs-style-3 .nav-link img {
+        height: 25px;
+        width: auto; }
 
 img {
   max-width: 100%; }

@@ -201,8 +201,12 @@ img {
         }
     }
     &.nav-tabs-style-3 {
+        gap: 15px;
         .nav-link {
             padding: 15px;
+            figure {
+                margin-bottom: 0;
+            }
             img {
                 height: 25px;
                 width: auto;
