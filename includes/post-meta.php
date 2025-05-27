@@ -13,7 +13,7 @@ Container::make('term_meta', __('Manufacturer Properties'))
     ));
 
 Container::make('post_meta', __('Caravan Properties'))
-    ->where('term_taxonomy', '=', 'caravans')
+    ->where('post_type', '=', 'caravans')
     ->add_fields(array(
         Field::make('image', 'floor_plan', __('Floor Plan')),
         Field::make('complex', 'pricing', __('Pricing'))
