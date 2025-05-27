@@ -755,6 +755,8 @@ span.icons {
     table {
         th {
             border-top: none !important;
+            padding-top: 25px;
+            padding-bottom: 25px;
             @include responsive(md-lg) {
                 font-size: 32px;
             }
