@@ -322,7 +322,7 @@ Block::make(__('Listing Now On Display'))
 
 Block::make(__('Tabs Navigation'))
     ->add_fields(array(
-        Field::make('html', 'html_1')->set_html("<div $style>Tabs</div>"),
+        Field::make('html', 'html_1')->set_html("<div $style>Tabs Navigation</div>"),
         Field::make('text', 'tab_id', 'Tab ID'),
 
     ))
