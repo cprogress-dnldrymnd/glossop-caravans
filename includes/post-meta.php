@@ -255,8 +255,8 @@ Block::make(__('Manufacturer Bar'))
         $manufacturer_id = carbon_get_term_meta($fields['manufacturer'][0]['id'], 'main_logo');
     ?>
         <div class="manufacturer-bar">
-            <?= $manufacturer_id ?>
-            <?php var_dump($fields['manufacturer']); ?>
+            <?= wp_get_attachment_image($manufacturer_id, 'medium', false, array('class' => 'w-100'));?>
+
         </div>
     <?php
     });
