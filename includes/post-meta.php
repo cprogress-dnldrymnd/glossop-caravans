@@ -378,3 +378,16 @@ Block::make(__('Listing Action'))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
         echo listing__action();
     });
+
+Block::make(__('Listing Category Logo'))
+    ->add_fields(array(
+        Field::make('html', 'html_1')->set_html("<div $style> Listing Action </div>"),
+        
+    ))
+    ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
+    ?>
+        <div class="image-box brand">
+
+        </div>
+    <?php
+    });
