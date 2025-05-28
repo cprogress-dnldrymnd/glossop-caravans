@@ -76,7 +76,9 @@
             }
         }
         .wp-block-navigation-item.has-child {
-            position: static;
+            &.has-custom-submenu {
+                position: static;
+            }
             > a {
                 .wp-block-navigation-item__label {
                     padding: 10px;
