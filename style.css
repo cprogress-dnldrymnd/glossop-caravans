@@ -11997,7 +11997,8 @@ span.icons {
 
 .row.row.row.wp-block-group {
   margin-right: calc(-0.5 * var(--bs-gutter-x)) !important;
-  margin-left: calc(-0.5 * var(--bs-gutter-x)) !important; }
+  margin-left: calc(-0.5 * var(--bs-gutter-x)) !important;
+  width: auto; }
 
 body {
   font-family: "Proxima Nova", sans-serif;

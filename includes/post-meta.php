@@ -396,6 +396,23 @@ Block::make(__('Listing Category Logo'))
             <div class="image-box brand">
                 <?= wp_get_attachment_image($logo, 'medium') ?>
             </div>
+        <?php
+        }
+    });
+
+Block::make(__('Listing Gallery'))
+    ->add_fields(array(
+        Field::make('html', 'html_1')->set_html("<div $style> Listing Action </div>"),
+    ))
+    ->set_category('listing')
+    ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
+        $manufacturer = get_the_terms(get_the_ID(), 'manufacturer');
+        $logo = get__term_meta($manufacturer[0]->term_id, 'main_logo');
+        if ($logo) {
+        ?>
+            <div class="image-box brand">
+                <?= wp_get_attachment_image($logo, 'medium') ?>
+            </div>
     <?php
         }
     });
