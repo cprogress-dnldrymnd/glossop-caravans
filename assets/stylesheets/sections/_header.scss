@@ -13,13 +13,17 @@
     gap: 1vw;
     @include responsive(small-lg) {
         font-size: 20px;
-        gap: 10px;
+        gap: 5px;
     }
 
     @include responsive(md) {
         font-size: 18px;
-        gap: 8px;
+        gap: 3px;
+        .wp-block-navigation-item__label {
+            font-size: 15px ;
+        }
     }
+
 }
 .search-stock-row {
     .button-col {
