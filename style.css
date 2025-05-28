@@ -12193,7 +12193,9 @@ h5, .h5 {
   @media (min-width: 992px) and (max-width: 1199px) {
     .header-menu.header-menu.header-menu {
       font-size: 18px;
-      gap: 3px; } }
+      gap: 3px; }
+      .header-menu.header-menu.header-menu .wp-block-navigation-item__label {
+        font-size: 15px; } }
 
 @media screen and (max-width: 991px) {
   .search-stock-row .button-col {
