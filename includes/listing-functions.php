@@ -141,7 +141,7 @@ function listing__price($rrp = '33795', $our_price = '42200', $savings = '1955')
                 <div class="listing-grid-item__price col">
                     <div class="grid-item__price-inner rounded h-100">
                         <span class="fs-14">RRP</span>
-                        <strong><s><?= price__format($rrp) ?></s></strong>
+                        <strong><?= price__format($rrp) ?></strong>
                     </div>
                 </div>
             <?php } ?>
