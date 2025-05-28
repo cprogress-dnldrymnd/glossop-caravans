@@ -108,6 +108,7 @@
 </footer>
 <div class="d-none">
     <?= do_shortcode('[template template_id=324]') ?>
+    <?= do_shortcode('[template template_id=1602]') ?>
 </div>
 </div><!-- #page -->
 
@@ -122,6 +123,7 @@ get_template_part('template-parts/offcanvas/reserve-form');
     jQuery(document).ready(function() {
         if (window.innerWidth > 991) {
             jQuery('#Motorhomes-Submenu').appendTo('.Motorhomes-Submenu');
+            jQuery('#Caravans-Submenu').appendTo('.Caravans-Submenu');
 
         }
     });
