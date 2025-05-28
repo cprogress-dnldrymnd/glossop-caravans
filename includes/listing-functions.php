@@ -145,15 +145,7 @@ function listing__price($rrp = '33795', $our_price = '42200', $savings = '1955')
                     </div>
                 </div>
             <?php } ?>
-            <?php if ($our_price) { ?>
-
-                <div class="listing-grid-item__price col">
-                    <div class="grid-item__price-inner rounded h-100">
-                        <span class="fs-14">RRP</span>
-                        <strong><?= price__format($our_price) ?></strong>
-                    </div>
-                </div>
-            <?php } ?>
+       
             <?php if ($our_price) { ?>
 
                 <div class="listing-grid-item__price col">
