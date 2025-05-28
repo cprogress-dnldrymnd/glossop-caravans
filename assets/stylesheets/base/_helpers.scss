@@ -369,3 +369,13 @@
         max-width: unset;
     }
 }
+
+.styled-box {
+    background-color: #0C8686;
+    color: var(--bs-white);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
