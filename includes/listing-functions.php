@@ -232,14 +232,12 @@ function listing__gallery($id, $is_thumbnail = false, $images = 'default', $clas
                         </a>
                     </div>
                 <?php } ?>
-
-                <?php if ($is_thumbnail == false) { ?>
-                    <div class="swiper-button-next swiper-gallery-next swiper-button"></div>
-                    <div class="swiper-button-prev swiper-gallery-prev swiper-button"></div>
-                    <div class="swiper-pagination swiper-gallery-pagination"></div>
-                <?php } ?>
-
             </div>
+            <?php if ($is_thumbnail == false) { ?>
+                <div class="swiper-button-next swiper-gallery-next swiper-button"></div>
+                <div class="swiper-button-prev swiper-gallery-prev swiper-button"></div>
+                <div class="swiper-pagination swiper-gallery-pagination"></div>
+            <?php } ?>
         </div>
     <?php
     return ob_get_clean();
