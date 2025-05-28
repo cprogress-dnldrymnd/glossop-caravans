@@ -131,7 +131,7 @@ function listing__features($hide_per_month = false)
     return ob_get_clean();
 }
 
-function listing__price($rrp = false, $our_price = '42200', $savings = '1955')
+function listing__price($rrp = '33795', $our_price = '42200', $savings = '1955')
 {
     ob_start();
 ?>
