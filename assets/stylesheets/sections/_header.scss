@@ -163,7 +163,6 @@
     opacity: 0;
     visibility: hidden;
     z-index: 2;
-    @include transition(300ms);
     z-index: 1;
 }
 .mega-menu-active {
@@ -196,7 +195,6 @@
     z-index: 9;
     visibility: hidden;
 
-    @include transition(300ms);
     opacity: 0;
     .wp-block-navigation-item .wp-block-navigation-item__content {
         padding: 0;
