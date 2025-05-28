@@ -12322,6 +12322,11 @@ h5, .h5 {
   opacity: 0;
   visibility: hidden;
   z-index: 2;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
   z-index: 1; }
 
 .mega-menu-active .backdrop {
@@ -12348,6 +12353,11 @@ h5, .h5 {
   margin-right: auto;
   z-index: 9;
   visibility: hidden;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
   opacity: 0; }
   .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-navigation-item .wp-block-navigation-item__content {
     padding: 0;
