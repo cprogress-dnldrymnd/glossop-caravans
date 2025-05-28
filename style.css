@@ -12001,7 +12001,7 @@ span.icons {
   max-width: unset; }
 
 .styled-box {
-  background-color: #0C8686;
+  background-color: #0c8686;
   color: var(--bs-white);
   padding: 10px;
   font-size: 16px;
@@ -12014,6 +12014,13 @@ span.icons {
 
 .hide-zoom .zoom {
   display: none !important; }
+
+@media screen and (max-width: 767px) {
+  .wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media screen and (max-width: 575px) {
+  .wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr)); } }
 
 body {
   font-family: "Proxima Nova", sans-serif;
