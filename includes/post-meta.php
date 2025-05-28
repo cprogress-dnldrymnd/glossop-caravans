@@ -39,7 +39,7 @@ Container::make('post_meta', __('Gallery'))
     ->where('post_type', '=', 'caravan')
     ->set_context('side')
     ->add_fields(array(
-        Field::make('image', 'media_gallery', __('')),
+        Field::make('media_gallery', 'gallery', __('')),
     ));
 /*
 Block::make(__('Grid Items'))
