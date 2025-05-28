@@ -11995,6 +11995,10 @@ span.icons {
   padding: 15px 22px;
   line-height: 1; }
 
+.row.row.row.wp-block-group {
+  margin-right: calc(-0.5 * var(--bs-gutter-x)) !important;
+  margin-left: calc(-0.5 * var(--bs-gutter-x)) !important; }
+
 body {
   font-family: "Proxima Nova", sans-serif;
   color: var(--text-color);
