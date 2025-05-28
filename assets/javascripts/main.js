@@ -3,6 +3,7 @@ jQuery(document).ready(function () {
     fancybox();
     mega_menu();
     search_stock();
+    listings();
 });
 
 function listings() {
