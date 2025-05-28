@@ -12215,14 +12215,14 @@ h5, .h5 {
       gap: 5px; }
       .header-menu.header-menu.header-menu .wp-block-navigation-item__label {
         font-size: 20px; } }
+  @media (max-width: 1599px) {
+    .header-menu.header-menu.header-menu .wp-block-navigation-item__label {
+      font-size: 21px; } }
   @media (max-width: 1499px) {
     .header-menu.header-menu.header-menu {
       gap: 10px; }
       .header-menu.header-menu.header-menu .wp-block-navigation-item__label {
         font-size: 20px; } }
-  @media (max-width: 1599px) {
-    .header-menu.header-menu.header-menu .wp-block-navigation-item__label {
-      font-size: 21px; } }
   @media (min-width: 992px) and (max-width: 1199px) {
     .header-menu.header-menu.header-menu {
       gap: 3px; }
