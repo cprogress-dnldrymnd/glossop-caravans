@@ -167,6 +167,7 @@ custom-submenu.wp-block-site-logo {
     z-index: 1;
 }
 .mega-menu-active {
+    overflow: hidden;
     .backdrop {
         opacity: 1;
         visibility: visible;
