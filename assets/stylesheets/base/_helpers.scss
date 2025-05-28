@@ -354,6 +354,9 @@
 }
 .now-on-display-box.position-absolute {
     z-index: 1;
-    top: 20px;
-    right: 20px;
+    left: 0;
+    top: 0;
+    border-radius: 0px 0px 5px 0px;
+    padding: 15px 22px;
+    line-height: 1;
 }

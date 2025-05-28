@@ -11753,6 +11753,9 @@ span.icons {
 .background-white {
   background-color: var(--bs-white); }
 
+.background-orange-color-3 {
+  background-color: var(--orange-color-3); }
+
 .full-image img {
   width: 100%; }
 
@@ -11986,8 +11989,9 @@ span.icons {
 
 .now-on-display-box.position-absolute {
   z-index: 1;
-  top: 20px;
-  right: 20px; }
+  left: 0;
+  top: 0;
+  border-radius: 0px 0px 5px 0px; }
 
 body {
   font-family: "Proxima Nova", sans-serif;
