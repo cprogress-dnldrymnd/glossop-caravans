@@ -275,7 +275,7 @@ Block::make(__('Listing Now On Display'))
         $now_on_display = get__post_meta_by_id(get_the_ID(), 'now_on_display', true);
     ?>
         <?php if ($now_on_display) { ?>
-            <div class="now-on-display-box  background-orange-color-3 text-center fw-semibold fs-16 <?= $attributes['className'] ?>">
+            <div class="now-on-display-box  background-orange-color-3 text-center fw-semibold fs-16 text=white <?= $attributes['className'] ?>">
                 NOW ON DISPLAY
             </div>
         <?php } ?>
