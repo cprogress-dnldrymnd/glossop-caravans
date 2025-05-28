@@ -4,7 +4,16 @@ jQuery(document).ready(function () {
     mega_menu();
     search_stock();
     listings();
+    read_more();
 });
+
+function read_more() {
+   jQuery('.read-more-button').click(function (e) {
+        jQuery('.read-more-content').removeClass('d-none');
+        e.preventDefault();
+
+    });
+}
 
 function listings() {
     if (jQuery('.nav-tabs-swiper-style-1').length > 0) {

@@ -113,7 +113,12 @@ global $listing_fields;
                     4-berth
                     layout and a spacious separate end washroom. Designed with comfort and functionality in mind, it's
                     ideal for couples or small families who value a well-organised living space.</p>
-                  <p><a href="#" class="fw-semibold">Read more</a></p>
+                  <p><a href="#" class="fw-semibold read-more-button">Read more</a></p>
+                  <div class="d-none read-more-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quibusdam, consequatur nihil mollitia eum sint adipisci esse recusandae nulla, quidem, porro placeat accusantium voluptatibus maxime praesentium earum in? Beatae, sint!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quibusdam, consequatur nihil mollitia eum sint adipisci esse recusandae nulla, quidem, porro placeat accusantium voluptatibus maxime praesentium earum in? Beatae, sint!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quibusdam, consequatur nihil mollitia eum sint adipisci esse recusandae nulla, quidem, porro placeat accusantium voluptatibus maxime praesentium earum in? Beatae, sint!</p>
+                  </div>
                 </div>
               </div>
               <div class="listing-inner--specifications md-margin-bottom">
