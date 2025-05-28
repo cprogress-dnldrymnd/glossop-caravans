@@ -12010,6 +12010,9 @@ span.icons {
   font-weight: 600;
   text-transform: uppercase; }
 
+.icon-list-v5 .icon-list {
+  gap: 20px; }
+
 body {
   font-family: "Proxima Nova", sans-serif;
   color: var(--text-color);
