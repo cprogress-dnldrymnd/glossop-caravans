@@ -131,7 +131,7 @@ function listing__features($hide_per_month = false)
     return ob_get_clean();
 }
 
-function listing__price($rrp = true, $our_price = '42200', $savings = '1955')
+function listing__price($rrp = '33795', $our_price = '42200', $savings = '1955')
 {
     ob_start();
 ?>
@@ -141,7 +141,16 @@ function listing__price($rrp = true, $our_price = '42200', $savings = '1955')
                 <div class="listing-grid-item__price col">
                     <div class="grid-item__price-inner rounded h-100">
                         <span class="fs-14">RRP</span>
-                        <strong><s><?= price__format(intval($our_price) + intval($savings)) ?></s></strong>
+                        <strong><s><?= price__format($rrp) ?></s></strong>
+                    </div>
+                </div>
+            <?php } ?>
+            <?php if ($our_price) { ?>
+
+                <div class="listing-grid-item__price col">
+                    <div class="grid-item__price-inner rounded h-100">
+                        <span class="fs-14">RRP</span>
+                        <strong><?= price__format($our_price) ?></strong>
                     </div>
                 </div>
             <?php } ?>
