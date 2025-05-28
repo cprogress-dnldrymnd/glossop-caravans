@@ -4,6 +4,12 @@ jQuery(document).ready(function () {
     mega_menu();
     search_stock();
 });
+
+function listings() {
+    if (jQuery('.nav-tabs-swiper-style-1').length > 0) {
+        jQuery('.nav-tabs-swiper-style-1 .nav-item:first-child .nav-link').click();
+    }
+}
 function search_stock() {
     jQuery('.edit-stock-filter').click(function (e) {
         jQuery(this).parents('.search-stock-mobile').toggleClass('filter--active');
