@@ -11170,13 +11170,23 @@ img {
       padding: 18px; } }
 
 @media (min-width: 992px) and (max-width: 1599px) {
-  .seach-stock-holder .form-control-lg, .seach-stock-holder .btn-lg, .seach-stock-holder .btn-group-lg > .btn {
+  .seach-stock-holder .form-control-lg,
+  .seach-stock-holder .btn-lg,
+  .seach-stock-holder .btn-group-lg > .btn {
     padding: 25px 0.7vw;
     font-size: 18px; } }
 @media (min-width: 992px) and (max-width: 1399px) {
-  .seach-stock-holder .form-control-lg, .seach-stock-holder .btn-lg, .seach-stock-holder .btn-group-lg > .btn {
+  .seach-stock-holder .form-control-lg,
+  .seach-stock-holder .btn-lg,
+  .seach-stock-holder .btn-group-lg > .btn {
     padding: 25px 0.5vw;
     font-size: 16px; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .seach-stock-holder .form-control-lg,
+  .seach-stock-holder .btn-lg,
+  .seach-stock-holder .btn-group-lg > .btn {
+    padding: 15px 0.5vw;
+    font-size: 13px; } }
 
 @media screen and (max-width: 991px) {
   .form-control-holder label {
