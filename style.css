@@ -12198,9 +12198,12 @@ h5, .h5 {
 /*-----------------------------------------------------------------------------------*/
 /* Header & Footer
 /*-----------------------------------------------------------------------------------*/
+@media screen and (min-width: 1200px) {
+  .wp-block-site-logo img {
+    max-width: 320px; } }
 @media screen and (min-width: 992px) {
   .wp-block-site-logo img {
-    max-width: 200px; } }
+    max-width: 320px; } }
 @media screen and (max-width: 991px) {
   .wp-block-site-logo img {
     max-width: 150px; } }

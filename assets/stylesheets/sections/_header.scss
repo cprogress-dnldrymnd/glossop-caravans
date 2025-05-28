@@ -1,7 +1,10 @@
 .wp-block-site-logo {
     img {
+        @include responsive(lg) {
+            max-width: 320px;
+        }
         @include responsive(md-lg) {
-            max-width: 200px;
+            max-width: 320px;
         }
         @include responsive(xs-sm) {
             max-width: 150px;
@@ -20,10 +23,9 @@
         font-size: 18px;
         gap: 3px;
         .wp-block-navigation-item__label {
-            font-size: 15px ;
+            font-size: 15px;
         }
     }
-
 }
 .search-stock-row {
     .button-col {
