@@ -11140,7 +11140,7 @@ img {
 
 .btn-lg, .btn-group-lg > .btn {
   --bs-btn-padding-y: 25px;
-  --bs-btn-padding-x: 50px;
+  --bs-btn-padding-x: 2.5vw;
   --bs-btn-font-size: 20px;
   --bs-border-radius-lg: 5px; }
   @media screen and (max-width: 991px) {
