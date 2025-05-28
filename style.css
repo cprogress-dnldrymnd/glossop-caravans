@@ -12240,7 +12240,7 @@ h5, .h5 {
       content: "";
       position: fixed;
       left: 0;
-      top: 0;
+      top: calc(var(--header-height) + var(--admin-bar-height));
       right: 0;
       bottom: 0;
       background-color: rgba(0, 0, 0, 0.5);
