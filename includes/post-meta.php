@@ -405,12 +405,16 @@ Block::make(__('Listing Gallery'))
     ))
     ->set_category('listing')
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
-        $manufacturer = get_the_terms(get_the_ID(), 'manufacturer');
-        $logo = get__term_meta($manufacturer[0]->term_id, 'main_logo');
-        if ($logo) {
+        $gallery = get__post_meta_by_id(get_the_ID(), 'gallery', true);
+        if ($gallery) {
         ?>
             <div class="image-box brand">
-                <?= wp_get_attachment_image($logo, 'medium') ?>
+            </div>
+        <?php
+        } else {
+        ?>
+            <div class="image-box image-style">
+                <?= wp_get_attachment_image(get_post_thumbnail_id(), 'large') ?>
             </div>
     <?php
         }
