@@ -106,6 +106,7 @@
         </div>
     </div>
 </footer>
+<div class="backdrop"></div>
 <div class="d-none">
     <?= do_shortcode('[template template_id=324]') ?>
     <?= do_shortcode('[template template_id=1602]') ?>
@@ -126,11 +127,6 @@ get_template_part('template-parts/offcanvas/reserve-form');
             jQuery('#Motorhomes-Submenu').appendTo('.Motorhomes-Submenu');
             jQuery('#Caravans-Submenu').appendTo('.Caravans-Submenu');
             jQuery('#Export-Submenu').appendTo('.Export-Submenu');
-
-            jQuery('<div class="backdrop"></div>').prependTo('.Motorhomes-Submenu');
-            jQuery('<div class="backdrop"></div>').prependTo('.Caravans-Submenu');
-            jQuery('<div class="backdrop"></div>').prependTo('.Export-Submenu');
-
         }
     });
 </script>

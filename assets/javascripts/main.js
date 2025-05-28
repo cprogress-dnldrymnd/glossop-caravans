@@ -8,7 +8,7 @@ jQuery(document).ready(function () {
 });
 
 function read_more() {
-   jQuery('.read-more-button').click(function (e) {
+    jQuery('.read-more-button').click(function (e) {
         jQuery('.read-more-content').removeClass('d-none');
         jQuery(this).addClass('d-none');
         e.preventDefault();
@@ -38,6 +38,13 @@ function mega_menu() {
         jQuery('body').css('--admin-bar-height', $admin_bar + 'px');
 
     }
+    jQuery('.backdrop').hover(function () {
+        // over
+
+    }, function () {
+        // out
+    }
+    );
 }
 
 function fancybox() {
