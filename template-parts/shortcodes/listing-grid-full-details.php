@@ -81,7 +81,7 @@
             <div class="row g-xxs">
               <div class="col-lg-6">
                 <div class="listing-grid-item__button">
-                  <a href="#" class="btn btn-primary w-100 btn-lg fw-semibold">
+                  <a href="https://newglossopacaravans.theprogressteam.co.uk/listing-inner" class="btn btn-primary w-100 btn-lg fw-semibold">
                     View deal
                   </a>
                 </div>
