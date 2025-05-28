@@ -175,7 +175,7 @@
     margin-right: auto;
     z-index: 9;
     visibility: hidden;
-    @include transition(500ms);
+    @include transition(300ms);
     opacity: 0;
     .wp-block-navigation-item .wp-block-navigation-item__content {
         padding: 0;
