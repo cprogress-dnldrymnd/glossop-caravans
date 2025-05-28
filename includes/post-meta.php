@@ -405,7 +405,13 @@ Block::make(__('Listing Gallery'))
     ))
     ->set_category('listing')
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
+        $images = [get_post_thumbnail_id()];
         $gallery = get__post_meta_by_id(get_the_ID(), 'gallery');
+
+        foreach ($gallery as $image) {
+            $images[] = $image;
+        }
+        var_dump($gallery);
         if ($gallery) {
         ?>
             <div class="image-box brand">
