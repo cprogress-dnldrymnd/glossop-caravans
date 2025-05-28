@@ -12326,7 +12326,8 @@ h5, .h5 {
   -moz-transition: 300ms;
   -ms-transition: 300ms;
   -o-transition: 300ms;
-  transition: 300ms; }
+  transition: 300ms;
+  z-index: 9999999; }
 
 .custom-submenu.custom-submenu.custom-submenu.custom-submenu {
   --top: calc(var(--header-height, 102px) + var(--admin-bar-height, 0));

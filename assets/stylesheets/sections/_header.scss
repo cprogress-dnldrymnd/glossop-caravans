@@ -164,6 +164,7 @@ custom-submenu.wp-block-site-logo {
     visibility: hidden;
     z-index: 2;
     @include transition(300ms);
+    z-index: 9999999;
 }
 .custom-submenu.custom-submenu.custom-submenu.custom-submenu {
     --top: calc(var(--header-height, 102px) + var(--admin-bar-height, 0));

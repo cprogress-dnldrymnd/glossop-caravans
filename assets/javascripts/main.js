@@ -38,13 +38,11 @@ function mega_menu() {
         jQuery('body').css('--admin-bar-height', $admin_bar + 'px');
 
     }
-    jQuery('.backdrop').hover(function () {
-        // over
-
+    jQuery('.has-custom-submenu').hover(function () {
+        jQuery('body').addClass('mega-menu-active');
     }, function () {
-        // out
-    }
-    );
+        jQuery('body').removeClass('mega-menu-active');
+    });
 }
 
 function fancybox() {
