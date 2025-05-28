@@ -412,5 +412,5 @@ Block::make(__('Listing Gallery'))
             $images[] = $image;
         }
 
-        echo listing__gallery('gallery---' . get_the_ID(), false, $images);
+        echo listing__gallery('gallery---' . get_the_ID(), false, $images, $attributes['className']);
     });

@@ -189,14 +189,14 @@ function listing__action($share = true, $save = true)
     return ob_get_clean();
 }
 
-function listing__gallery($id, $is_thumbnail = false, $images = 'default')
+function listing__gallery($id, $is_thumbnail = false, $images = 'default', $class = 'h-100')
 {
     ob_start();
     if ($images == 'default') {
         $images = [53, 53, 53, 53, 53, 53];
     }
 ?>
-    <div class="listing-grid--gallery h-100">
+    <div class="listing-grid--gallery <?= $class ?>">
         <div class="zoom d-none d-lg-flex">
             <?= get__theme_images('zoom.svg') ?>
         </div>
@@ -233,52 +233,52 @@ function listing__gallery($id, $is_thumbnail = false, $images = 'default')
                     </div>
                 <?php } ?>
 
-            <?php if ($is_thumbnail == false) { ?>
-                <div class="swiper-button-next swiper-gallery-next swiper-button"></div>
-                <div class="swiper-button-prev swiper-gallery-prev swiper-button"></div>
-                <div class="swiper-pagination swiper-gallery-pagination"></div>
-            <?php } ?>
+                <?php if ($is_thumbnail == false) { ?>
+                    <div class="swiper-button-next swiper-gallery-next swiper-button"></div>
+                    <div class="swiper-button-prev swiper-gallery-prev swiper-button"></div>
+                    <div class="swiper-pagination swiper-gallery-pagination"></div>
+                <?php } ?>
 
+            </div>
         </div>
-    </div>
-<?php
+    <?php
     return ob_get_clean();
 }
 
 function listing__key_information_simple($berths = 4, $year = 2024, $axle = false)
 {
     ob_start();
-?>
-    <ul class="icon-list mb-0 icon-list-v4 d-flex list-inline align-items-center flex-wrap fs-18">
-        <?php if ($berths) { ?>
-            <li> <?= get__theme_images('berths.svg') ?> <?= $berths ?> Berth</li>
-        <?php } ?>
-        <?php if ($year) { ?>
-            <li><?= get__theme_images('year.svg') ?> <?= $year ?> </li>
-        <?php } ?>
-        <?php if ($axle) { ?>
-            <li><?= get__theme_images('axles.svg') ?> <?= $axle ?> </li>
-        <?php } ?>
-    </ul>
-<?php
+    ?>
+        <ul class="icon-list mb-0 icon-list-v4 d-flex list-inline align-items-center flex-wrap fs-18">
+            <?php if ($berths) { ?>
+                <li> <?= get__theme_images('berths.svg') ?> <?= $berths ?> Berth</li>
+            <?php } ?>
+            <?php if ($year) { ?>
+                <li><?= get__theme_images('year.svg') ?> <?= $year ?> </li>
+            <?php } ?>
+            <?php if ($axle) { ?>
+                <li><?= get__theme_images('axles.svg') ?> <?= $axle ?> </li>
+            <?php } ?>
+        </ul>
+    <?php
     return ob_get_clean();
 }
 
 function listing__key_information()
 {
     ob_start();
-?>
-    <ul
-        class="icon-list mb-0 icon-list-v2 d-flex list-inline align-items-center justify-content-end fw-semibold flex-wrap fs-18">
-        <li> <?= get__theme_images('berths.svg') ?> 6 Berth</li>
-        <li><?= get__theme_images('warranty.svg') ?> 3 year warranty</li>
-        <li><?= get__theme_images('year.svg') ?> Year 2024</li>
-        <li><span class="icons"><?= get__theme_images('tire.svg') ?><?= get__theme_images('tire.svg') ?></span>
-            Twin axle</li>
-        <li><?= get__theme_images('kg.svg') ?> MTPLM 1630kg</li>
-        <li><?= get__theme_images('awning-size.svg') ?> 10.52m Awning Size</li>
-    </ul>
-<?php
+    ?>
+        <ul
+            class="icon-list mb-0 icon-list-v2 d-flex list-inline align-items-center justify-content-end fw-semibold flex-wrap fs-18">
+            <li> <?= get__theme_images('berths.svg') ?> 6 Berth</li>
+            <li><?= get__theme_images('warranty.svg') ?> 3 year warranty</li>
+            <li><?= get__theme_images('year.svg') ?> Year 2024</li>
+            <li><span class="icons"><?= get__theme_images('tire.svg') ?><?= get__theme_images('tire.svg') ?></span>
+                Twin axle</li>
+            <li><?= get__theme_images('kg.svg') ?> MTPLM 1630kg</li>
+            <li><?= get__theme_images('awning-size.svg') ?> 10.52m Awning Size</li>
+        </ul>
+    <?php
     return ob_get_clean();
 }
 
@@ -286,46 +286,46 @@ function listing__key_information()
 function listing__key_information_v2()
 {
     ob_start();
-?>
-    <ul
-        class="icon-list mb-0 icon-list-v2 d-flex list-inline align-items-center justify-content-end fw-semibold flex-wrap fs-18">
-        <li class="border-bottom py-1 py-lg-3"> <?= get__theme_images('berths.svg') ?>
-            <span class="col d-flex justify-content-between">
-                <span>Berth</span>
-                <span>6</span>
-            </span>
-        </li>
-        <li class="border-bottom py-1 py-lg-3"><?= get__theme_images('year.svg') ?>
-            <span class="col d-flex justify-content-between">
-                <span>Unladen Weight</span>
-                <span>1450kg</span>
-            </span>
-        </li>
-        <li class="border-bottom py-1 py-lg-3"><?= get__theme_images('year.svg') ?>
-            <span class="col d-flex justify-content-between">
-                <span>Year</span>
-                <span>2024</span>
-            </span>
-        </li>
-        <li class="border-bottom py-1 py-lg-3"><?= get__theme_images('kg.svg') ?>
-            <span class="col d-flex justify-content-between">
-                <span>MTPLM</span>
-                <span>1630kg</span>
-            </span>
-        </li>
-        <li class="border-bottom py-1 py-lg-3"><?= get__theme_images('awning-size.svg') ?>
-            <span class="col d-flex justify-content-between">
-                <span>Awning Size</span>
-                <span>10.52m</span>
-            </span>
-        </li>
-        <li class="border-bottom py-1 py-lg-3"><?= get__theme_images('dimensions.svg') ?>
-            <span class="col d-flex justify-content-between">
-                <span>Dimensions</span>
-                <span>L 7.98m x W 2.25m</span>
-            </span>
-        </li>
-    </ul>
-<?php
+    ?>
+        <ul
+            class="icon-list mb-0 icon-list-v2 d-flex list-inline align-items-center justify-content-end fw-semibold flex-wrap fs-18">
+            <li class="border-bottom py-1 py-lg-3"> <?= get__theme_images('berths.svg') ?>
+                <span class="col d-flex justify-content-between">
+                    <span>Berth</span>
+                    <span>6</span>
+                </span>
+            </li>
+            <li class="border-bottom py-1 py-lg-3"><?= get__theme_images('year.svg') ?>
+                <span class="col d-flex justify-content-between">
+                    <span>Unladen Weight</span>
+                    <span>1450kg</span>
+                </span>
+            </li>
+            <li class="border-bottom py-1 py-lg-3"><?= get__theme_images('year.svg') ?>
+                <span class="col d-flex justify-content-between">
+                    <span>Year</span>
+                    <span>2024</span>
+                </span>
+            </li>
+            <li class="border-bottom py-1 py-lg-3"><?= get__theme_images('kg.svg') ?>
+                <span class="col d-flex justify-content-between">
+                    <span>MTPLM</span>
+                    <span>1630kg</span>
+                </span>
+            </li>
+            <li class="border-bottom py-1 py-lg-3"><?= get__theme_images('awning-size.svg') ?>
+                <span class="col d-flex justify-content-between">
+                    <span>Awning Size</span>
+                    <span>10.52m</span>
+                </span>
+            </li>
+            <li class="border-bottom py-1 py-lg-3"><?= get__theme_images('dimensions.svg') ?>
+                <span class="col d-flex justify-content-between">
+                    <span>Dimensions</span>
+                    <span>L 7.98m x W 2.25m</span>
+                </span>
+            </li>
+        </ul>
+    <?php
     return ob_get_clean();
 }
