@@ -29,7 +29,11 @@ Container::make('post_meta', __('Caravan Properties'))
                 '5' => '5',
                 '6' => '6',
             )),
-        Field::make('text', 'axle', __('Axle')),
+        Field::make('text', 'axle', __('Axle'))
+            ->set_options(array(
+                'Single Axle' => 'Single Axle',
+                'Twin Axle' => 'Twin Axle',
+            )),
         Field::make('text', 'year', __('Year')),
         Field::make('text', 'warranty', __('Warranty')),
         Field::make('text', 'weight', __('Weight')),
@@ -215,7 +219,7 @@ Block::make(__('Listing Prices'))
     ))
     ->set_category('listing')
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
-      
+
         if ($fields['our_price']) {
             $our_price = get__post_meta_by_id(get_the_ID(), 'our_price');
         }
