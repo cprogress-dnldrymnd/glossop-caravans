@@ -1,10 +1,10 @@
-custom-submenu.wp-block-site-logo {
+.wp-block-site-logo {
     img {
         @include responsive(lg) {
             max-width: 320px;
         }
         @include responsive(small-lg) {
-            max-width: 200px;
+            max-width: 250px;
         }
         @include responsive(md) {
             max-width: 200px;
