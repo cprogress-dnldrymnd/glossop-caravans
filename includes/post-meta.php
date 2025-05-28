@@ -335,7 +335,7 @@ Block::make(__('Tabs Navigation'))
     ))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
     ?>
-        <div class="nav-tabs-swiper nav-tabs-swiper swiper overflow-visible">
+        <div class="nav-tabs-swiper nav-tabs-swiper-style-1 nav-tabs-swiper swiper overflow-visible">
             <ul class="swiper-wrapper nav nav-tabs nav-tabs-style-3" id="<?= $fields['tab_id'] ?>" role="tablist">
                 <?= $inner_blocks ?>
             </ul>
@@ -393,7 +393,7 @@ Block::make(__('Tabs Content'))
 
 Block::make(__('Tabs Content Item'))
     ->add_fields(array(
-        Field::make('html', 'html_1')->set_html("<div $style>Tabs Content</div>")->set_width(50),
+        Field::make('html', 'html_1')->set_html("<div $style>Tabs Content Item</div>")->set_width(50),
         Field::make('text', 'tab_content_id', '')->set_width(50)->set_classes('crb-field-style-1')
             ->set_attribute('placeholder', 'Tab ID')
 
