@@ -8,8 +8,7 @@ use Carbon_Fields\Block;
 Container::make('term_meta', __('Manufacturer Properties'))
     ->where('term_taxonomy', '=', 'manufacturer')
     ->add_fields(array(
-        Field::make('image', 'small_logo', __('Small Logo')),
-        Field::make('image', 'main_logo', __('Main Logo')),
+        Field::make('image', 'main_logo', __('Logo')),
     ));
 
 Container::make('post_meta', __('Caravan Properties'))
