@@ -263,7 +263,7 @@ Block::make(__('Listing URL'))
     ?>
         <?php if ($listing_url) { ?>
             <div class="listing-grid-item__button">
-                <a href="<?= $listing_url ?>" class="btn btn-primary w-100 btn-lg fw-semibold">
+                <a href="https://newglossopacaravans.theprogressteam.co.uk/listing-inner" class="btn btn-primary w-100 btn-lg fw-semibold">
                     View Full Listing
                 </a>
             </div>
