@@ -11171,7 +11171,12 @@ img {
 
 @media (min-width: 992px) and (max-width: 1599px) {
   .seach-stock-holder .form-control-lg {
-    padding: 25px 0.7vw; } }
+    padding: 25px 0.7vw;
+    font-size: 18px; } }
+@media (min-width: 992px) and (max-width: 1399px) {
+  .seach-stock-holder .form-control-lg {
+    padding: 25px 0.5vw;
+    font-size: 16px; } }
 
 @media screen and (max-width: 991px) {
   .form-control-holder label {
