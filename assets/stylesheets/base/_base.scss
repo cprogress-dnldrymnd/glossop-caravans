@@ -823,3 +823,12 @@ span.icons {
         }
     }
 }
+
+.listing-grid-item__button {
+    .btn {
+        @include responsive(md-lg) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
