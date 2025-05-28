@@ -11270,10 +11270,14 @@ img {
     .nav-tabs.swiper-wrapper .swiper-slide {
       width: auto; }
   .nav-tabs.nav-tabs-style-3 {
-    gap: 15px; }
+    gap: 15px;
+    border: none; }
     .nav-tabs.nav-tabs-style-3 .nav-link {
       padding: 15px;
-      border: 1px solid var(--bs-black); }
+      border: 1px solid var(--bs-black);
+      border-radius: 5px;
+      margin: 0;
+      min-width: 200px; }
       .nav-tabs.nav-tabs-style-3 .nav-link figure {
         margin-bottom: 0; }
       .nav-tabs.nav-tabs-style-3 .nav-link img {
