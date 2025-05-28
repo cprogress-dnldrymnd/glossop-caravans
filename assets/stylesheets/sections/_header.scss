@@ -4,7 +4,7 @@
             max-width: 320px;
         }
         @include responsive(md-lg) {
-            max-width: 320px;
+            max-width: 200px;
         }
         @include responsive(xs-sm) {
             max-width: 150px;

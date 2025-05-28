@@ -12203,7 +12203,7 @@ h5, .h5 {
     max-width: 320px; } }
 @media screen and (min-width: 992px) {
   .wp-block-site-logo img {
-    max-width: 320px; } }
+    max-width: 200px; } }
 @media screen and (max-width: 991px) {
   .wp-block-site-logo img {
     max-width: 150px; } }
