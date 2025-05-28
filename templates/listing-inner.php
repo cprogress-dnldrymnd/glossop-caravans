@@ -65,10 +65,12 @@ global $listing_fields;
                   </div>
                   <div class="tab-pane fade" id="three-sixty-tab-pane" role="tabpanel" aria-labelledby="three-sixty-tab"
                     tabindex="0">
-                    ...</div>
+                    <iframe class="w-100" height="500" src="https://www.glossopcaravans.co.uk/images360/shop/" frameborder="0"></iframe>
+                  </div>
                   <div class="tab-pane fade" id="video-tab-pane" role="tabpanel" aria-labelledby="video-tab"
                     tabindex="0">
-                    ...</div>
+                    <iframe class="rounded overflow-hidden" title="YouTube video player" src="https://www.youtube.com/embed/u6yCMPWOt4Q?autoplay=1&amp;mute=1&amp;loop=1" width="100%" height="600" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                  </div>
                 </div>
 
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
