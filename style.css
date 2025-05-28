@@ -12204,16 +12204,16 @@ h5, .h5 {
 /* Header & Footer
 /*-----------------------------------------------------------------------------------*/
 @media screen and (min-width: 1200px) {
-  custom-submenu.wp-block-site-logo img {
+  .wp-block-site-logo img {
     max-width: 320px; } }
 @media (min-width: 1200px) and (max-width: 1399px) {
-  custom-submenu.wp-block-site-logo img {
+  .wp-block-site-logo img {
     max-width: 250px; } }
 @media (min-width: 992px) and (max-width: 1199px) {
-  custom-submenu.wp-block-site-logo img {
+  .wp-block-site-logo img {
     max-width: 200px; } }
 @media screen and (max-width: 991px) {
-  custom-submenu.wp-block-site-logo img {
+  .wp-block-site-logo img {
     max-width: 150px; } }
 
 .header-menu.header-menu.header-menu {
