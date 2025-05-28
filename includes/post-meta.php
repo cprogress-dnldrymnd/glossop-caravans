@@ -17,8 +17,9 @@ Container::make('post_meta', __('Caravan Properties'))
         Field::make('media_gallery', 'gallery', __('Gallery')),
         Field::make('image', 'floor_plan', __('Floor Plan')),
         Field::make('text', 'listing_url', __('Listing URL'))->set_attribute('type', 'url'),
-        Field::make('text', 'our_price', __('Our Price (£)'))->set_attribute('type', 'number')->set_attribute('step', '1')->set_width(50),
-        Field::make('text', 'savings', __('Savings (£)'))->set_attribute('type', 'number')->set_attribute('step', '1')->set_width(50),
+        Field::make('text', 'rrp', __('RRP (£)'))->set_attribute('type', 'number')->set_attribute('step', '1')->set_width(33),
+        Field::make('text', 'our_price', __('Our Price (£)'))->set_attribute('type', 'number')->set_attribute('step', '1')->set_width(33),
+        Field::make('text', 'savings', __('Savings (£)'))->set_attribute('type', 'number')->set_attribute('step', '1')->set_width(33),
 
         Field::make('select', 'berths', __('Berths'))
             ->set_options(array(
