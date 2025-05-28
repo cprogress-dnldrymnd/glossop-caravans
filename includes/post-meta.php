@@ -223,7 +223,7 @@ Block::make(__('Listing Prices'))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
 
         if ($fields['rrp']) {
-            $rrp = true;
+            $rrp = get__post_meta_by_id(get_the_ID(), 'our_price');
         } else {
             $rrp = false;
         }
