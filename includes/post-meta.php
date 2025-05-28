@@ -195,8 +195,8 @@ Block::make(__('Listing Feature'))
         Field::make('checkbox', 'warranty', __('Warannty'))->set_width(33),
         Field::make('checkbox', 'weight', __('Weight'))->set_width(33),
         Field::make('checkbox', 'awning_size', __('Awning Size'))->set_width(33),
-
     ))
+    ->set_category('listing')
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
         if ($fields['berths']) {
             $berths = get__post_meta_by_id(get_the_ID(), 'berths', true);
@@ -219,6 +219,7 @@ Block::make(__('Listing Prices'))
         Field::make('checkbox', 'savings', __('Savings'))->set_width(33),
 
     ))
+    ->set_category('listing')
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
         if ($fields['rrp']) {
             $rrp = get__post_meta_by_id(get_the_ID(), 'rrp', true);
@@ -238,6 +239,7 @@ Block::make(__('Listing Floor Plan'))
         Field::make('html', 'html_1')->set_html("<div $style>Floor Plan</div>"),
 
     ))
+    ->set_category('listing')
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
         $floor_plan = get__post_meta_by_id(get_the_ID(), 'floor_plan', true);
         if ($floor_plan) {
@@ -252,6 +254,7 @@ Block::make(__('Listing URL'))
     ->add_fields(array(
         Field::make('html', 'html_1')->set_html("<div $style>Listing URL </div>"),
     ))
+    ->set_category('listing')
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
         $listing_url = get__post_meta_by_id(get_the_ID(), 'listing_url', true);
     ?>
@@ -270,6 +273,7 @@ Block::make(__('Listing Now On Display'))
     ->add_fields(array(
         Field::make('html', 'html_1')->set_html("<div $style> Now On Display </div>"),
     ))
+    ->set_category('listing')
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
         $now_on_display = get__post_meta_by_id(get_the_ID(), 'now_on_display', true);
     ?>
@@ -383,6 +387,7 @@ Block::make(__('Listing Category Logo'))
     ->add_fields(array(
         Field::make('html', 'html_1')->set_html("<div $style> Listing Action </div>"),
     ))
+    ->set_category('listing')
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
         $manufacturer = get_the_terms(get_the_ID(), 'manufacturer');
         $logo = get__term_meta($manufacturer[0]->term_id, 'main_logo');
