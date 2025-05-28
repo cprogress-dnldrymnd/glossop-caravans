@@ -365,6 +365,7 @@
     &.wp-block-group {
         margin-right: calc(-0.5 * var(--bs-gutter-x)) !important;
         margin-left: calc(-0.5 * var(--bs-gutter-x)) !important;
-            width: auto;
+        width: auto;
+        max-width: unset;
     }
 }
