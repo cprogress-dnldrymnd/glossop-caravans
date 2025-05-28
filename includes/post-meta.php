@@ -36,7 +36,12 @@ Container::make('post_meta', __('Caravan Properties'))
         Field::make('text', 'weight', __('Weight')),
         Field::make('text', 'awning_size', __('Awning Size')),
         Field::make('checkbox', 'now_on_display', __('Now On Display')),
-
+    ));
+Container::make('post_meta', __('Gallery'))
+    ->where('post_type', '=', 'caravan')
+    ->set_context('side')
+    ->add_fields(array(
+        Field::make('image', 'media_gallery', __('')),
     ));
 /*
 Block::make(__('Grid Items'))
