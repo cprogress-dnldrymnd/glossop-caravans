@@ -175,6 +175,18 @@ $Teams->show_in_admin_bar = false;
 $Teams->has_archive = false;
 
 
+$Testimonials = new newPostType();
+$Testimonials->key = 'testimonials';
+$Testimonials->name = 'Testimonials';
+$Testimonials->singular_name = 'Testimonial';
+$Testimonials->icon = 'dashicons-video-alt3';
+$Testimonials->show_in_rest = true;
+$Testimonials->supports = array('title', 'revisions', 'excerpt');
+$Testimonials->exclude_from_search = true;
+$Testimonials->publicly_queryable = true;
+$Testimonials->show_in_admin_bar = false;
+$Testimonials->has_archive = false;
+
 $Caravans = new newPostType();
 $Caravans->key = 'caravan';
 $Caravans->name = 'Caravans & Motorhomes';
