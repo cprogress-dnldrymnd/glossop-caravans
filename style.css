@@ -11290,9 +11290,6 @@ img {
     flex-wrap: nowrap; }
     .nav-tabs.swiper-wrapper .swiper-slide {
       width: auto; }
-  .nav-tabs.nav-tabs-style-3 .nav-link.active {
-    background-color: var(--orange-color);
-    border-color: var(--orange-color); }
   .nav-tabs.nav-tabs-style-3 .nav-link figure {
     margin-bottom: 0; }
   .nav-tabs.nav-tabs-style-3 .nav-link img {

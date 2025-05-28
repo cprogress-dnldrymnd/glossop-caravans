@@ -223,10 +223,8 @@ img {
     }
     &.nav-tabs-style-3 {
         .nav-link {
-            &.active {
-                background-color: var(--orange-color);
-                border-color: var(--orange-color);
-            }
+            min-width: 200px;
+            width: 100%;
             figure {
                 margin-bottom: 0;
             }
