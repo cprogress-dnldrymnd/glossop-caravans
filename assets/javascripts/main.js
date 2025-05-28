@@ -10,6 +10,7 @@ jQuery(document).ready(function () {
 function read_more() {
    jQuery('.read-more-button').click(function (e) {
         jQuery('.read-more-content').removeClass('d-none');
+        jQuery(this).addClass('d-none');
         e.preventDefault();
 
     });
