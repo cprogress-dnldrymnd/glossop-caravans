@@ -127,6 +127,10 @@ get_template_part('template-parts/offcanvas/reserve-form');
             jQuery('#Caravans-Submenu').appendTo('.Caravans-Submenu');
             jQuery('#Export-Submenu').appendTo('.Export-Submenu');
 
+            jQuery('<div class="backdrop"></div>').prependTo('.Motorhomes-Submenu');
+            jQuery('<div class="backdrop"></div>').prependTo('.Caravans-Submenu');
+            jQuery('<div class="backdrop"></div>').prependTo('.Export-Submenu');
+
         }
     });
 </script>
