@@ -78,7 +78,7 @@ img {
     }
 }
 .seach-stock-holder {
-    .form-control-lg {
+    .form-control-lg, .btn-lg {
         @media (min-width: 992px) {
             @media (max-width: 1599px) {
                 padding: 25px 0.7vw;
