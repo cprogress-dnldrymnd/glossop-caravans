@@ -235,6 +235,9 @@ global $listing_fields;
                   <div class="button-box mb-20">
                     <a class="btn btn-yellow w-100" data-bs-toggle="offcanvas" href="#offcanvasFinanceCalculator" role="button" aria-controls="offcanvasFinanceCalculator">View calculator</a>
                   </div>
+                  <div class="button-box mb-20">
+                    <a class="btn btn-yellow w-100" data-bs-toggle="offcanvas" href="#offcanvasFinanceCalculator" role="button" aria-controls="offcanvasFinanceCalculator">Apply for Finance</a>
+                  </div>
                   <div class="image-box">
                     <?= wp_get_attachment_image(194, 'medium') ?>
                   </div>
