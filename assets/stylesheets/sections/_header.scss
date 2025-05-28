@@ -62,43 +62,44 @@
 }
 @include responsive(md-lg) {
     #masthead {
-        .wp-block-navigation__responsive-container {
-            position: static;
-            height: 100%;
-        }
-        .wp-block-navigation__responsive-dialog {
-            position: static;
-        }
-        .wp-block-navigation {
-            position: static;
-        }
-        .wp-block-navigation-item {
-            &.has-custom-submenu {
+        .header-menu {
+            .wp-block-navigation__responsive-container {
+                position: static;
+                height: 100%;
+            }
+            .wp-block-navigation__responsive-dialog {
                 position: static;
             }
-            > a {
-                .wp-block-navigation-item__label {
-                    padding: 10px;
-                    border-radius: 5px;
-                    @include transition(400ms);
-
-                    @include on-event {
-                        background-color: var(--green-color);
-                        color: var(--bs-white);
+            .wp-block-navigation {
+                position: static;
+            }
+            > .wp-block-navigation-item {
+                &.has-custom-submenu {
+                    position: static;
+                }
+                > a {
+                    > .wp-block-navigation-item__label {
+                        padding: 10px;
+                        border-radius: 5px;
+                        @include transition(400ms);
+                        @include on-event {
+                            background-color: var(--green-color);
+                            color: var(--bs-white);
+                        }
                     }
                 }
+                .wp-block-navigation-item__content {
+                    height: var(--header-inner-height, 78px);
+                    display: flex;
+                    align-items: center;
+                }
             }
-            .wp-block-navigation-item__content {
-                height: var(--header-inner-height, 78px);
-                display: flex;
-                align-items: center;
-            }
-        }
-        .has-custom-submenu {
-            @include on-event {
-                .custom-submenu {
-                    visibility: visible;
-                    opacity: 1;
+            .has-custom-submenu {
+                @include on-event {
+                    .custom-submenu {
+                        visibility: visible;
+                        opacity: 1;
+                    }
                 }
             }
         }
