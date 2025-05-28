@@ -12223,6 +12223,11 @@ h5, .h5 {
       gap: 10px; }
       .header-menu.header-menu.header-menu .wp-block-navigation-item__label {
         font-size: 20px; } }
+  @media (min-width: 1200px) and (max-width: 1399px) {
+    .header-menu.header-menu.header-menu {
+      gap: 7px; }
+      .header-menu.header-menu.header-menu .wp-block-navigation-item__label {
+        font-size: 20px; } }
   @media (min-width: 992px) and (max-width: 1199px) {
     .header-menu.header-menu.header-menu {
       gap: 3px; }
