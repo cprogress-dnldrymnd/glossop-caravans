@@ -366,3 +366,44 @@ Block::make(__('Tabs Navigation Item'))
 
     <?php
     });
+
+
+
+Block::make(__('Tabs Content'))
+    ->add_fields(array(
+        Field::make('html', 'html_1')->set_html("<div $style>Tabs Content</div>")->set_width(50),
+        Field::make('text', 'tab_id', '')->set_width(50)->set_classes('crb-field-style-1')
+            ->set_attribute('placeholder', 'Tab ID')
+
+
+    ))
+    ->set_inner_blocks(true)
+    ->set_inner_blocks_position('below')
+    ->set_allowed_inner_blocks(array(
+        'carbon-fields/tabs-content-item',
+    ))
+    ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
+    ?>
+        <div class="tab-content" id="<?= $fields['tab_id'] ?>">
+            <?= $inner_blocks ?>
+        </div>
+    <?php
+    });
+
+
+Block::make(__('Tabs Content Item'))
+    ->add_fields(array(
+        Field::make('html', 'html_1')->set_html("<div $style>Tabs Content</div>")->set_width(50),
+        Field::make('text', 'tab_content_id', '')->set_width(50)->set_classes('crb-field-style-1')
+            ->set_attribute('placeholder', 'Tab ID')
+
+    ))
+    ->set_inner_blocks(true)
+    ->set_inner_blocks_position('below')
+    ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
+    ?>
+        <div class="tab-pane fade" id="<?= $fields['tab_content_id'] ?>-pane">
+            <?= $inner_blocks ?>
+        </div>
+    <?php
+    });
