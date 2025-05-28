@@ -164,7 +164,7 @@ custom-submenu.wp-block-site-logo {
     visibility: hidden;
     z-index: 2;
     @include transition(300ms);
-    z-index: 9999999;
+    z-index: 1;
 }
 .mega-menu-active {
     .backdrop {

@@ -12327,7 +12327,7 @@ h5, .h5 {
   -ms-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms;
-  z-index: 9999999; }
+  z-index: 1; }
 
 .mega-menu-active .backdrop {
   opacity: 1;
