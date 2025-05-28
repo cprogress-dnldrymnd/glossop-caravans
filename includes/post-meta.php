@@ -14,6 +14,7 @@ Container::make('term_meta', __('Manufacturer Properties'))
 Container::make('post_meta', __('Caravan Properties'))
     ->where('post_type', '=', 'caravan')
     ->add_fields(array(
+        Field::make('media_gallery', 'gallery', __('Gallery')),
         Field::make('image', 'floor_plan', __('Floor Plan')),
         Field::make('text', 'listing_url', __('Listing URL'))->set_attribute('type', 'url'),
         Field::make('text', 'our_price', __('Our Price (£)'))->set_attribute('type', 'number')->set_attribute('step', '1')->set_width(50),
@@ -35,12 +36,7 @@ Container::make('post_meta', __('Caravan Properties'))
         Field::make('text', 'awning_size', __('Awning Size')),
         Field::make('checkbox', 'now_on_display', __('Now On Display')),
     ));
-Container::make('post_meta', __('Gallery'))
-    ->where('post_type', '=', 'caravan')
-    ->set_context('side')
-    ->add_fields(array(
-        Field::make('media_gallery', 'gallery', __('')),
-    ));
+
 /*
 Block::make(__('Grid Items'))
     ->add_fields(array(
