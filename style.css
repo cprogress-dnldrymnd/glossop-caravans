@@ -12338,8 +12338,6 @@ h5, .h5 {
   margin-right: auto;
   z-index: 9;
   visibility: hidden;
-  padding-left: 20px;
-  padding-right: 20px;
   -webkit-transition: 300ms;
   -moz-transition: 300ms;
   -ms-transition: 300ms;
