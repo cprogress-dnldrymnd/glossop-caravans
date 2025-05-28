@@ -6,7 +6,7 @@ custom-submenu.wp-block-site-logo {
         @include responsive(small-lg) {
             max-width: 200px;
         }
-          @include responsive(md) {
+        @include responsive(md) {
             max-width: 200px;
         }
         @include responsive(xs-sm) {
@@ -104,7 +104,7 @@ custom-submenu.wp-block-site-logo {
             > .wp-block-navigation-item {
                 &.has-custom-submenu {
                     position: static;
-                    @include before {
+                    .backdrop {
                         content: "";
                         position: fixed;
                         left: 0;
@@ -141,7 +141,7 @@ custom-submenu.wp-block-site-logo {
                     }
                 }
                 @include on-event {
-                    @include before {
+                    .backdrop {
                         opacity: 1;
                         visibility: visible;
                     }
