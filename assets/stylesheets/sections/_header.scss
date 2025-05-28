@@ -91,6 +91,12 @@
                         }
                     }
                 }
+
+                .wp-block-navigation-submenu {
+                    .wp-block-navigation-item__content {
+                        font-size: 14px;
+                    }
+                }
              
             }
             .has-custom-submenu {
