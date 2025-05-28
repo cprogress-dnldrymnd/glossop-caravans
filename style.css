@@ -11726,7 +11726,7 @@ span.icons {
     border-color: #dddddd;
     padding: 15px 10px; }
 
-@media screen and (min-width: 992px) and (max-width: 1499px) {
+@media screen and (min-width: 992px) {
   .listing-grid-item__button .btn {
     padding-left: 10px;
     padding-right: 10px; } }

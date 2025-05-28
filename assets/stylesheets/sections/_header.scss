@@ -114,6 +114,7 @@
                         background-color: rgba(0, 0, 0, 0.5);
                         opacity: 0;
                         visibility: hidden;
+                        z-index: 2;
                         @include transition(300ms);
                     }
                 }
