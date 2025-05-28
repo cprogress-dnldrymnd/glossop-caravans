@@ -12332,6 +12332,9 @@ h5, .h5 {
 .mega-menu-active .backdrop {
   opacity: 1;
   visibility: visible; }
+.mega-menu-active #masthead {
+  position: sticky;
+  top: 0; }
 
 .custom-submenu.custom-submenu.custom-submenu.custom-submenu {
   --top: calc(var(--header-height, 102px) + var(--admin-bar-height, 0));
