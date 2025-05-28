@@ -12236,6 +12236,14 @@ h5, .h5 {
     position: static; }
   #masthead .header-menu > .wp-block-navigation-item.has-custom-submenu {
     position: static; }
+    #masthead .header-menu > .wp-block-navigation-item.has-custom-submenu:before {
+      content: "";
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); }
   #masthead .header-menu > .wp-block-navigation-item > .wp-block-navigation-item__content {
     height: var(--header-inner-height, 78px);
     display: flex;

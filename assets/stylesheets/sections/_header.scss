@@ -110,8 +110,10 @@
                 }
                 @include on-event {
                     > .wp-block-navigation-item__content {
-                        background-color: var(--green-color);
-                        color: var(--bs-white);
+                        > .wp-block-navigation-item__label {
+                            background-color: var(--green-color);
+                            color: var(--bs-white);
+                        }
                     }
                 }
             }
