@@ -84,6 +84,9 @@
                         right: 0;
                         bottom: 0;
                         background-color: rgba(0, 0, 0, 0.5);
+                        opacity: 0;
+                        visibility: hidden;
+                        @include transition(300ms);
                     }
                 }
                 > .wp-block-navigation-item__content {
@@ -109,6 +112,10 @@
                     }
                 }
                 @include on-event {
+                    @include before {
+                        opacity: 1;
+                        visibility: visible;
+                    }
                     > .wp-block-navigation-item__content {
                         > .wp-block-navigation-item__label {
                             background-color: var(--green-color);
