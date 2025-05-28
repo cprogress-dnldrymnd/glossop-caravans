@@ -29,9 +29,11 @@
         <header id="masthead" class="site-header" role="banner">
             <?php
             echo do_shortcode('[template template_id=167]');
-            echo do_shortcode('[template template_id=1735]');
             ?>
         </header>
+        <?php
+        echo do_shortcode('[template template_id=1735]');
+        ?>
         <?php
 
         get_template_part('template-parts/header/search-stock');
