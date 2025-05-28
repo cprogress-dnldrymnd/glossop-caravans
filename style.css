@@ -11159,7 +11159,7 @@ img {
 
 .form-control-lg {
   font-size: 20px;
-  padding: 25px;
+  padding: 25px 1vw;
   --bs-border-radius-lg: 5px; }
   @media screen and (max-width: 991px) {
     .form-control-lg {
@@ -11168,6 +11168,10 @@ img {
   @media screen and (max-width: 767px) {
     .form-control-lg {
       padding: 18px; } }
+
+@media (min-width: 992px) and (max-width: 1599px) {
+  .seach-stock-holder .form-control-lg {
+    padding: 25px 0.7vw; } }
 
 @media screen and (max-width: 991px) {
   .form-control-holder label {

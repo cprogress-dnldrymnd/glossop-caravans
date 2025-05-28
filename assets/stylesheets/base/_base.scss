@@ -67,7 +67,7 @@ img {
 
 .form-control-lg {
     font-size: 20px;
-    padding: 25px;
+    padding: 25px 1vw;
     --bs-border-radius-lg: 5px;
     @include responsive(xs-sm) {
         font-size: 14px;
@@ -75,6 +75,16 @@ img {
     }
     @include responsive(xs) {
         padding: 18px;
+    }
+}
+.seach-stock-holder {
+    .form-control-lg {
+        @media (min-width: 992px) {
+            @media (max-width: 1599px) {
+                padding: 25px 0.7vw;
+                font-size: 18px;
+            }
+        }
     }
 }
 .form-control-holder {
