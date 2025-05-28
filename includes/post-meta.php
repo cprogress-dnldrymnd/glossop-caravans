@@ -395,7 +395,7 @@ Block::make(__('Listing Category Logo'))
             <div class="image-box brand">
                 <?= wp_get_attachment_image($logo, 'medium') ?>
             </div>
-        <?php
+    <?php
         }
     });
 
@@ -411,17 +411,6 @@ Block::make(__('Listing Gallery'))
         foreach ($gallery as $image) {
             $images[] = $image;
         }
-        var_dump($gallery);
-        if ($gallery) {
-        ?>
-            <div class="image-box brand">
-            </div>
-        <?php
-        } else {
-        ?>
-            <div class="image-box image-style">
-                <?= wp_get_attachment_image(get_post_thumbnail_id(), 'large') ?>
-            </div>
-    <?php
-        }
+
+        echo listing__gallery('gallery---' . get_the_ID(), false, $images);
     });
