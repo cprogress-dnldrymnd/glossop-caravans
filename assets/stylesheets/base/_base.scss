@@ -208,6 +208,7 @@ img {
             border-radius: 5px;
             margin: 0;
             min-width: 200px;
+            width: 100%;
             &.active {
                 background-color: var(--orange-color);
                 border-color: var(--orange-color);
@@ -220,7 +221,6 @@ img {
                 width: auto;
             }
         }
-
     }
 }
 
@@ -784,12 +784,13 @@ span.icons {
             }
         }
         thead {
-            border-color: #DDDDDD;
+            border-color: #dddddd;
         }
-        th, td {
+        th,
+        td {
             border-left: none;
             border-right: none;
-            border-color: #DDDDDD;
+            border-color: #dddddd;
             padding: 15px 10px;
         }
     }
