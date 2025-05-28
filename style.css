@@ -12227,7 +12227,7 @@ h5, .h5 {
     .header-menu.header-menu.header-menu {
       gap: 7px; }
       .header-menu.header-menu.header-menu .wp-block-navigation-item__label {
-        font-size: 20px; } }
+        font-size: 18px; } }
   @media (min-width: 992px) and (max-width: 1199px) {
     .header-menu.header-menu.header-menu {
       gap: 3px; }
