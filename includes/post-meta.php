@@ -369,3 +369,12 @@ Block::make(__('Tabs Content Item'))
         </div>
     <?php
     });
+
+
+Block::make(__('Listing Action'))
+    ->add_fields(array(
+        Field::make('html', 'html_1')->set_html("<div $style> Listing Action </div>"),
+    ))
+    ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
+        echo listing__action();
+    });
