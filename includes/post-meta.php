@@ -406,7 +406,7 @@ Block::make(__('Listing Gallery'))
     ->set_category('listing')
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
         $images = [get_post_thumbnail_id()];
-        $gallery = get__post_meta_by_id(get_the_ID(), 'gallery');
+        $gallery = carbon_get_post_meta('gallery');
 
         foreach ($gallery as $image) {
             $images[] = $image;
