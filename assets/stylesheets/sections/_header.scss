@@ -60,6 +60,17 @@
         }
     }
 }
+#masthead {
+    position: sticky;
+    top: 0;
+    background-color: var(--bs-white);
+    z-index: 9;
+}
+.admin-bar {
+    #masthead {
+        top: 32px;
+    }
+}
 @include responsive(md-lg) {
     #masthead {
         .header-menu {
