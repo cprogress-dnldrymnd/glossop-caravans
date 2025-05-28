@@ -383,3 +383,9 @@
         gap: 20px
     }
 }
+
+.hide-zoom {
+    .zoom {
+        display: none !important;
+    }
+}

@@ -553,6 +553,9 @@ img {
         width: 36px;
         height: 36px;
     }
+    &.swiper-button-lock {
+        display: none !important;
+    }
 }
 
 .icon-list {

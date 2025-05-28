@@ -11526,6 +11526,8 @@ img {
       --swiper-navigation-size: 15px;
       width: 36px;
       height: 36px; } }
+  .swiper-button.swiper-button.swiper-button-lock {
+    display: none !important; }
 
 .icon-list {
   gap: 28px; }
@@ -12009,6 +12011,9 @@ span.icons {
 
 .icon-list-v5 .icon-list {
   gap: 20px; }
+
+.hide-zoom .zoom {
+  display: none !important; }
 
 body {
   font-family: "Proxima Nova", sans-serif;
