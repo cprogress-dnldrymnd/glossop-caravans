@@ -60,13 +60,7 @@
         }
     }
 }
-.admin-bar {
-    #masthead {
-        #main-header {
-            top: 32px;
-        }
-    }
-}
+
 @include responsive(md-lg) {
     #masthead {
         .header-menu {
