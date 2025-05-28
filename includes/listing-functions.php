@@ -256,7 +256,13 @@ function listing__key_information_simple($berths = 4, $year = 2024, $axle = fals
             <li><?= get__theme_images('year.svg') ?> <?= $year ?> </li>
         <?php } ?>
         <?php if ($axle) { ?>
-            <li><?= get__theme_images('axles.svg') ?> <?= $axle ?> </li>
+            <li>
+                <?php if ($axle == 'Twin Axle') { ?>
+                    <?= get__theme_images('axles.svg') ?>
+                <?php } ?>
+                <?= get__theme_images('axles.svg') ?>
+                <?= $axle ?>
+            </li>
         <?php } ?>
     </ul>
 <?php
