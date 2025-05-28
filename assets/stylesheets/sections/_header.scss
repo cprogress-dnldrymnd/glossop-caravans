@@ -25,6 +25,13 @@
             font-size: 21px;
         }
     }
+
+     @media (max-width: 1499px) {
+        gap: 10px;
+        .wp-block-navigation-item__label {
+            font-size: 20px;
+        }
+    }
     @include responsive(md) {
         gap: 3px;
         .wp-block-navigation-item__label {
