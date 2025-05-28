@@ -11278,7 +11278,8 @@ img {
       margin: 0;
       min-width: 200px; }
       .nav-tabs.nav-tabs-style-3 .nav-link.active {
-        background-color: var(--orange-color); }
+        background-color: var(--orange-color);
+        border-color: var(--orange-color); }
       .nav-tabs.nav-tabs-style-3 .nav-link figure {
         margin-bottom: 0; }
       .nav-tabs.nav-tabs-style-3 .nav-link img {
