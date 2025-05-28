@@ -367,7 +367,7 @@ Block::make(__('Tabs Content Item'))
         <div class="tab-pane fade" id="<?= $fields['tab_content_id'] ?>-pane">
             <?= $inner_blocks ?>
         </div>
-    <?php
+        <?php
     });
 
 
@@ -382,12 +382,15 @@ Block::make(__('Listing Action'))
 Block::make(__('Listing Category Logo'))
     ->add_fields(array(
         Field::make('html', 'html_1')->set_html("<div $style> Listing Action </div>"),
-        
     ))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
-    ?>
-        <div class="image-box brand">
-
-        </div>
+        $manufacturer = get_the_terms(get_the_ID(), 'manufacturer');
+        $logo = get__term_meta($manufacturer[0]->term_id, 'main_logo');
+        if ($logo) {
+        ?>
+            <div class="image-box brand">
+                <?= wp_get_attachment_image($logo, 'medium') ?>
+            </div>
     <?php
+        }
     });
