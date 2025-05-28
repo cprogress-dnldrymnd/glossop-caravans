@@ -335,9 +335,11 @@ Block::make(__('Tabs Navigation'))
     ))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
     ?>
-        <ul class="nav nav-tabs nav-tabs-style-3" id="<?= $fields['tab_id'] ?>" role="tablist">
-            <?= $inner_blocks ?>
-        </ul>
+        <div class="nav-tabs-swiper nav-tabs-swiper swiper overflow-visible">
+            <ul class="swiper-wrapper nav nav-tabs nav-tabs-style-2" id="<?= $fields['tab_id'] ?>" role="tablist">
+                <?= $inner_blocks ?>
+            </ul>
+        </div>
     <?php
     });
 
@@ -356,10 +358,11 @@ Block::make(__('Tabs Navigation Item'))
     ))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
     ?>
-        <li class="nav-item" role="presentation">
+        <li class="swiper-slide nav-item" role="presentation">
             <button class="nav-link" id="<?= $fields['tab_item_id'] ?>" data-bs-toggle="tab" data-bs-target="#<?= $fields['tab_item_id'] ?>-pane" type="button" role="tab" aria-controls="<?= $fields['tab_item_title'] ?>-pane">
                 <?= $inner_blocks ?>
             </button>
         </li>
+
     <?php
     });
