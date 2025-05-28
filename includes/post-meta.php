@@ -198,13 +198,13 @@ Block::make(__('Listing Feature'))
     ->set_category('listing')
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
         if ($fields['berths']) {
-            $berths = get__post_meta_by_id(get_the_ID(), 'berths', true);
+            $berths = get__post_meta_by_id(get_the_ID(), 'berths');
         }
         if ($fields['year']) {
-            $year = get__post_meta_by_id(get_the_ID(), 'year', true);
+            $year = get__post_meta_by_id(get_the_ID(), 'year');
         }
         if ($fields['axle']) {
-            $axle = get__post_meta_by_id(get_the_ID(), 'axle', true);
+            $axle = get__post_meta_by_id(get_the_ID(), 'axle');
         }
         echo listing__key_information_simple($berths, $year, $axle);
     });
@@ -221,13 +221,13 @@ Block::make(__('Listing Prices'))
     ->set_category('listing')
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
         if ($fields['rrp']) {
-            $rrp = get__post_meta_by_id(get_the_ID(), 'rrp', true);
+            $rrp = get__post_meta_by_id(get_the_ID(), 'rrp');
         }
         if ($fields['our_price']) {
-            $our_price = get__post_meta_by_id(get_the_ID(), 'our_price', true);
+            $our_price = get__post_meta_by_id(get_the_ID(), 'our_price');
         }
         if ($fields['savings']) {
-            $savings = get__post_meta_by_id(get_the_ID(), 'savings', true);
+            $savings = get__post_meta_by_id(get_the_ID(), 'savings');
         }
         echo listing__price($rrp, $our_price, $savings);
     });
@@ -240,7 +240,7 @@ Block::make(__('Listing Floor Plan'))
     ))
     ->set_category('listing')
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
-        $floor_plan = get__post_meta_by_id(get_the_ID(), 'floor_plan', true);
+        $floor_plan = get__post_meta_by_id(get_the_ID(), 'floor_plan');
         if ($floor_plan) {
             echo '<div class="floor-plan-box text-center ' . $attributes['className'] . '">';
             echo wp_get_attachment_image($floor_plan, 'medium', false, array('class' => 'w-100'));
@@ -255,7 +255,7 @@ Block::make(__('Listing URL'))
     ))
     ->set_category('listing')
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
-        $listing_url = get__post_meta_by_id(get_the_ID(), 'listing_url', true);
+        $listing_url = get__post_meta_by_id(get_the_ID(), 'listing_url');
     ?>
         <?php if ($listing_url) { ?>
             <div class="listing-grid-item__button">
@@ -274,7 +274,7 @@ Block::make(__('Listing Now On Display'))
     ))
     ->set_category('listing')
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
-        $now_on_display = get__post_meta_by_id(get_the_ID(), 'now_on_display', true);
+        $now_on_display = get__post_meta_by_id(get_the_ID(), 'now_on_display');
     ?>
         <?php if ($now_on_display) { ?>
             <div class="now-on-display-box  background-orange-color-3 text-center fw-semibold fs-16 text-white <?= $attributes['className'] ?>">
@@ -401,11 +401,11 @@ Block::make(__('Listing Category Logo'))
 
 Block::make(__('Listing Gallery'))
     ->add_fields(array(
-        Field::make('html', 'html_1')->set_html("<div $style> Listing Action </div>"),
+        Field::make('html', 'html_1')->set_html("<div $style> Listing Gallery </div>"),
     ))
     ->set_category('listing')
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
-        $gallery = get__post_meta_by_id(get_the_ID(), 'gallery', true);
+        $gallery = get__post_meta_by_id(get_the_ID(), 'gallery');
         if ($gallery) {
         ?>
             <div class="image-box brand">
