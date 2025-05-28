@@ -1,10 +1,9 @@
 .wp-block-site-logo {
     img {
-       
         @include responsive(md-lg) {
             max-width: 200px;
         }
-         @include responsive(lg) {
+        @include responsive(lg) {
             max-width: 320px;
         }
         @include responsive(xs-sm) {
@@ -16,12 +15,17 @@
 .header-menu.header-menu.header-menu {
     gap: 1vw;
     @include responsive(small-lg) {
-        font-size: 20px;
         gap: 5px;
+        .wp-block-navigation-item__label {
+            font-size: 20px;
+        }
     }
-
+    @media (max-width: 1599px) {
+        .wp-block-navigation-item__label {
+            font-size: 18px;
+        }
+    }
     @include responsive(md) {
-        font-size: 18px;
         gap: 3px;
         .wp-block-navigation-item__label {
             font-size: 15px;
