@@ -213,20 +213,26 @@ Block::make(__('Listing Feature'))
 Block::make(__('Listing Prices'))
     ->add_fields(array(
         Field::make('html', 'html_1')->set_html("<div $style>Listing Prices</div>"),
-        Field::make('checkbox', 'our_price', __('Our Price'))->set_width(50),
+        Field::make('checkbox', 'rrp', __('RRP'))->set_width(33),
+        Field::make('checkbox', 'our_price', __('Our Price'))->set_width(33),
         Field::make('checkbox', 'savings', __('Savings'))->set_width(33),
 
     ))
     ->set_category('listing')
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
 
+        if ($fields['rrp']) {
+            $rrp = true;
+        } else {
+            $rrp = false;
+        }
         if ($fields['our_price']) {
             $our_price = get__post_meta_by_id(get_the_ID(), 'our_price');
         }
         if ($fields['savings']) {
             $savings = get__post_meta_by_id(get_the_ID(), 'savings');
         }
-        echo listing__price(true, $our_price, $savings);
+        echo listing__price($rrp, $our_price, $savings);
     });
 
 
