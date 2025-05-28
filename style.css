@@ -12236,21 +12236,21 @@ h5, .h5 {
     position: static; }
   #masthead .header-menu > .wp-block-navigation-item.has-custom-submenu {
     position: static; }
-  #masthead .header-menu > .wp-block-navigation-item > a > .wp-block-navigation-item__label {
-    padding: 10px;
-    border-radius: 5px;
-    -webkit-transition: 400ms;
-    -moz-transition: 400ms;
-    -ms-transition: 400ms;
-    -o-transition: 400ms;
-    transition: 400ms; }
-    #masthead .header-menu > .wp-block-navigation-item > a > .wp-block-navigation-item__label:hover, #masthead .header-menu > .wp-block-navigation-item > a > .wp-block-navigation-item__label:active, #masthead .header-menu > .wp-block-navigation-item > a > .wp-block-navigation-item__label:focus {
-      background-color: var(--green-color);
-      color: var(--bs-white); }
-  #masthead .header-menu > .wp-block-navigation-item .wp-block-navigation-item__content {
+  #masthead .header-menu > .wp-block-navigation-item > .wp-block-navigation-item__content {
     height: var(--header-inner-height, 78px);
     display: flex;
     align-items: center; }
+    #masthead .header-menu > .wp-block-navigation-item > .wp-block-navigation-item__content > .wp-block-navigation-item__label {
+      padding: 10px;
+      border-radius: 5px;
+      -webkit-transition: 400ms;
+      -moz-transition: 400ms;
+      -ms-transition: 400ms;
+      -o-transition: 400ms;
+      transition: 400ms; }
+      #masthead .header-menu > .wp-block-navigation-item > .wp-block-navigation-item__content > .wp-block-navigation-item__label:hover, #masthead .header-menu > .wp-block-navigation-item > .wp-block-navigation-item__content > .wp-block-navigation-item__label:active, #masthead .header-menu > .wp-block-navigation-item > .wp-block-navigation-item__content > .wp-block-navigation-item__label:focus {
+        background-color: var(--green-color);
+        color: var(--bs-white); }
   #masthead .header-menu .has-custom-submenu:hover .custom-submenu, #masthead .header-menu .has-custom-submenu:active .custom-submenu, #masthead .header-menu .has-custom-submenu:focus .custom-submenu {
     visibility: visible;
     opacity: 1; } }
