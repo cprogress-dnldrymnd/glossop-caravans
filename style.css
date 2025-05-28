@@ -12329,11 +12329,9 @@ h5, .h5 {
   transition: 300ms;
   z-index: 1; }
 
-.mega-menu-active {
-  overflow: hidden; }
-  .mega-menu-active .backdrop {
-    opacity: 1;
-    visibility: visible; }
+.mega-menu-active .backdrop {
+  opacity: 1;
+  visibility: visible; }
 
 .custom-submenu.custom-submenu.custom-submenu.custom-submenu {
   --top: calc(var(--header-height, 102px) + var(--admin-bar-height, 0));
