@@ -12234,8 +12234,6 @@ h5, .h5 {
     position: static; }
   #masthead .wp-block-navigation {
     position: static; }
-    #masthead .wp-block-navigation .wp-block-navigation-item {
-      position: static; }
   #masthead .wp-block-navigation-item.has-child.has-custom-submenu {
     position: static; }
   #masthead .wp-block-navigation-item.has-child > a .wp-block-navigation-item__label {
