@@ -52,6 +52,19 @@ function mega_menu() {
         });
     }
 
+    let maxHeight = 0;
+    let $highestElement = null;
+    jQuery('.custom-submenu').each(function () {
+        const currentHeight = jQuery(this).outerHeight(); // Use outerHeight() to include padding and border
+
+        // Check if the current element's height is greater than the current maximum
+        if (currentHeight > maxHeight) {
+            maxHeight = currentHeight;
+            $highestElement = jQuery(this); // Store the jQuery object of the tallest element
+        }
+
+        console.log($highestElement);
+    });
 }
 
 function fancybox() {
