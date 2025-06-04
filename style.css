@@ -12429,7 +12429,7 @@ h5, .h5 {
     max-width: calc(100% - 40px);
     overflow: visible !important; }
     .wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content {
-      padding: 20px;
+      padding: 20px !important;
       overflow: auto !important;
       height: 100vh; }
       .wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container {
