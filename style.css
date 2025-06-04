@@ -12424,6 +12424,19 @@ h5, .h5 {
         padding: 0 !important;
         margin: 0 !important;
         border: none !important; }
+        .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-group.group-submenu-mobile > p:first-child:after {
+          content: "";
+          display: inline-block;
+          width: 0;
+          height: 0;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-top: 5px solid var(--bs-white);
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          transform: rotate(180deg); }
         .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-group.group-submenu-mobile .wp-block-navigation {
           display: none; }
       .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-navigation__container {
@@ -12482,12 +12495,18 @@ h5, .h5 {
             align-items: center;
             flex-direction: row; }
             .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container .wp-block-navigation-item.has-custom-submenu > .wp-block-navigation-item__content:after {
-              -webkit-transition: 400ms;
-              -moz-transition: 400ms;
-              -ms-transition: 400ms;
-              -o-transition: 400ms;
-              transition: 400ms;
-              content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/></svg>') !important; }
+              content: "";
+              display: inline-block;
+              width: 0;
+              height: 0;
+              border-left: 5px solid transparent;
+              border-right: 5px solid transparent;
+              border-top: 5px solid var(--bs-white);
+              -webkit-transform: rotate(180deg);
+              -moz-transform: rotate(180deg);
+              -ms-transform: rotate(180deg);
+              -o-transform: rotate(180deg);
+              transform: rotate(180deg); }
       .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content:before {
         content: "" !important;
         display: block !important;
