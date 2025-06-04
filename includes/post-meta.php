@@ -33,6 +33,7 @@ Container::make('post_meta', __('Caravan Properties'))
             )),
         Field::make('select', 'axle', __('Axle'))
             ->set_options(array(
+                '' => 'None',
                 'Single Axle' => 'Single Axle',
                 'Twin Axle' => 'Twin Axle',
             )),
