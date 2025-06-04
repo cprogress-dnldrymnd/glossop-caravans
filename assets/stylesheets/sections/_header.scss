@@ -241,7 +241,7 @@
         max-width: calc(100% - 40px);
         overflow: visible !important;
         .wp-block-navigation__responsive-container-content {
-            padding-top: 20px;
+            padding-top: 20px !important;
             .wp-block-navigation__container {
                 width: 100%;
                 .wp-block-navigation-item {
