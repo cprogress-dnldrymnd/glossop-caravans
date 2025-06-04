@@ -216,6 +216,12 @@
         padding: 0;
         height: auto !important;
     }
+    .wp-block-group {
+        padding: 0 !important;
+    }
+    .wp-block-navigation__container {
+        gap: 1px;
+    }
     @include responsive(xs-sm) {
         position: static;
         visibility: visible;

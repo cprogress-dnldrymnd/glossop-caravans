@@ -12403,6 +12403,8 @@ h5, .h5 {
   .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-navigation-item .wp-block-navigation-item__content {
     padding: 0;
     height: auto !important; }
+  .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-group {
+    padding: 0 !important; }
   @media screen and (max-width: 991px) {
     .custom-submenu.custom-submenu.custom-submenu.custom-submenu {
       position: static;
