@@ -235,7 +235,7 @@
 }
 @include responsive(xs-sm) {
     .wp-block-navigation__responsive-container {
-        max-width: 90%;
+        max-width: calc(100% - 40px);
         overflow: visible !important;
         .wp-block-navigation__responsive-container-content {
             .wp-block-navigation__container {
@@ -270,7 +270,7 @@
         padding: 20px;
     }
     .wp-block-navigation__responsive-container-close.wp-block-navigation__responsive-container-close.wp-block-navigation__responsive-container-close {
-        right: -40px;
+        right: -30px;
         top: 20px;
     }
 }
