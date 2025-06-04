@@ -46,9 +46,9 @@ function mega_menu() {
         });
     } else {
 
-
-        jQuery('.has-custom-submenu').click(function (e) {
-            jQuery(this).toggleClass('active');
+        jQuery('.has-custom-submenu a').click(function (e) {
+            jQuery(this).parent().toggleClass('active');
+            e.preventDefault();
         });
     }
 
