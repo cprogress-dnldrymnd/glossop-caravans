@@ -12411,7 +12411,7 @@ h5, .h5 {
 @media screen and (max-width: 991px) {
   .wp-block-navigation__responsive-container {
     max-width: 90%;
-    overflow: visible; }
+    overflow: visible !important; }
     .wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container {
       width: 100%; }
       .wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container .wp-block-navigation-item {
@@ -12432,7 +12432,7 @@ h5, .h5 {
     padding: 20px; }
 
   .wp-block-navigation__responsive-container-close.wp-block-navigation__responsive-container-close.wp-block-navigation__responsive-container-close {
-    right: -20px;
+    right: -40px;
     top: 20px; } }
 .bottom-footer .container > div {
   border-top: 1px solid #D3D3D3;
