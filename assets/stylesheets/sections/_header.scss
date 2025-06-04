@@ -306,12 +306,12 @@
     }
     .wp-block-navigation__responsive-container-close.wp-block-navigation__responsive-container-close.wp-block-navigation__responsive-container-close {
         right: 20px;
-        top: 14px;
+        top: 25px;
     }
     .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container {
         overflow: visible !important;
         .wp-block-navigation__responsive-container-content {
-            padding: 70px 20px 20px !important;
+            padding: 90px 20px 20px !important;
             overflow: auto !important;
             height: 100vh;
             display: block !important;
@@ -358,9 +358,9 @@
             @include before {
                 content: "" !important;
                 display: block !important;
-                height: 50px;
+                height: 70px;
                 background-image: url(https://newglossopacaravans.theprogressteam.co.uk/wp-content/uploads/2025/05/glossop-logo-300x78.png);
-                background-size: 130px;
+                background-size: 150px;
                 background-repeat: no-repeat;
                 width: 100%;
                 margin-bottom: 20px;
