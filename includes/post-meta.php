@@ -294,7 +294,7 @@ Block::make(__('Tabs Navigation'))
         Field::make('html', 'html_1')->set_html("<div $style>Tabs Navigation</div>")->set_width(50),
         Field::make('text', 'tab_id', '')->set_width(50)->set_classes('crb-field-style-1')
             ->set_attribute('placeholder', 'Tab ID'),
-        Field::make('select', 'style', __('Berths'))
+        Field::make('select', 'style', __('Style'))
             ->set_options(array(
                 '' => 'Default',
                 'style-2' => 'Style 2',
