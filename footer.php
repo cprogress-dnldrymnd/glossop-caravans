@@ -123,11 +123,9 @@ get_template_part('template-parts/offcanvas/reserve-form');
 
 <script>
     jQuery(document).ready(function() {
-        if (window.innerWidth > 991) {
-            jQuery('#Motorhomes-Submenu').appendTo('.Motorhomes-Submenu');
-            jQuery('#Caravans-Submenu').appendTo('.Caravans-Submenu');
-            jQuery('#Export-Submenu').appendTo('.Export-Submenu');
-        }
+        jQuery('#Motorhomes-Submenu').appendTo('.Motorhomes-Submenu');
+        jQuery('#Caravans-Submenu').appendTo('.Caravans-Submenu');
+        jQuery('#Export-Submenu').appendTo('.Export-Submenu');
     });
 </script>
 </body>
