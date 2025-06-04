@@ -12405,6 +12405,8 @@ h5, .h5 {
     height: auto !important; }
   .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-group {
     padding: 0 !important; }
+  .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-navigation__container {
+    gap: 1px; }
   @media screen and (max-width: 991px) {
     .custom-submenu.custom-submenu.custom-submenu.custom-submenu {
       position: static;
