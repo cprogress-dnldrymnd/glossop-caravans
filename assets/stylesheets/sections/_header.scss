@@ -12,6 +12,9 @@
         @include responsive(xs-sm) {
             max-width: 150px;
         }
+        @include responsive(xxxs) {
+            max-width: 130px;
+        }
     }
 }
 

@@ -12219,6 +12219,9 @@ h5, .h5 {
 @media screen and (max-width: 991px) {
   .wp-block-site-logo img {
     max-width: 150px; } }
+@media screen and (max-width: 360px) {
+  .wp-block-site-logo img {
+    max-width: 100px; } }
 
 .header-menu.header-menu.header-menu {
   gap: 1vw; }
