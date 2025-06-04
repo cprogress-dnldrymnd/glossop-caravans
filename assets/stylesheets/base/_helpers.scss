@@ -398,3 +398,9 @@
         grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
     }
 }
+
+.mb-5 {
+    @include responsive(xs) {
+        margin-bottom: 20px !important;
+    }
+}
