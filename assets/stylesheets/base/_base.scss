@@ -697,6 +697,9 @@ span.icons {
             gap: 0;
         }
     }
+    @include responsive(xs-sm) {
+        padding-bottom: 25px;
+    }
 }
 
 .swiper-mobile-style {

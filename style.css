@@ -11625,6 +11625,9 @@ span.icons {
   .swiper-on-mobile.swiper-on-mobile.swiper-on-mobile .swiper-wrapper {
     display: flex;
     gap: 0; } }
+@media screen and (max-width: 991px) {
+  .swiper-on-mobile.swiper-on-mobile.swiper-on-mobile {
+    padding-bottom: 25px; } }
 
 .swiper-mobile-style .swiper {
   overflow: visible; }
