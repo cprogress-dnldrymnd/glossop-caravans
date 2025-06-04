@@ -11303,6 +11303,8 @@ img {
   padding-bottom: 40px;
   margin-bottom: 40px;
   border-bottom: 1px solid var(--gray-color); }
+  .nav-tabs-swiper-style-1.style-2 {
+    flex-direction: column; }
 
 img {
   max-width: 100%; }
