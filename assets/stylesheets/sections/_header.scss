@@ -236,6 +236,11 @@
             width: 100% !important;
         }
     }
+    > div {
+        @include responsive(md-lg) {
+            height: var(--mega-menu-height);
+        }
+    }
 }
 @include responsive(xs-sm) {
     .wp-block-navigation__responsive-dialog.wp-block-navigation__responsive-dialog.wp-block-navigation__responsive-dialog {
