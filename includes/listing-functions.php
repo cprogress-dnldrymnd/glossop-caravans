@@ -131,7 +131,7 @@ function listing__features($hide_per_month = false)
     return ob_get_clean();
 }
 
-function listing__price($rrp = '33795', $our_price = '42200', $savings = '1955')
+function listing__price($rrp = '33795', $our_price = '42200', $savings = '1955', $per_month = false)
 {
     ob_start();
 ?>
@@ -160,6 +160,14 @@ function listing__price($rrp = '33795', $our_price = '42200', $savings = '1955')
                     <div class="grid-item__price-inner rounded h-100">
                         <span class="fs-14">Save</span>
                         <strong class="text-orange-3"><?= price__format($savings) ?></strong>
+                    </div>
+                </div>
+            <?php } ?>
+            <?php if ($per_month) { ?>
+                <div class="listing-grid-item__price col">
+                    <div class="grid-item__price-inner rounded h-100">
+                        <span class="fs-14">Per month</span>
+                        <strong class="text-orange-3"><?= price__format($per_month) ?></strong>
                     </div>
                 </div>
             <?php } ?>

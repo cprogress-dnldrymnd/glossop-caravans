@@ -17,9 +17,10 @@ Container::make('post_meta', __('Caravan Properties'))
         Field::make('media_gallery', 'gallery', __('Gallery')),
         Field::make('image', 'floor_plan', __('Floor Plan')),
         Field::make('text', 'listing_url', __('Listing URL'))->set_attribute('type', 'url'),
-        Field::make('text', 'rrp', __('RRP (£)'))->set_attribute('type', 'number')->set_attribute('step', '1')->set_width(33),
-        Field::make('text', 'our_price', __('Our Price (£)'))->set_attribute('type', 'number')->set_attribute('step', '1')->set_width(33),
-        Field::make('text', 'savings', __('Savings (£)'))->set_attribute('type', 'number')->set_attribute('step', '1')->set_width(33),
+        Field::make('text', 'rrp', __('RRP (£)'))->set_attribute('type', 'number')->set_attribute('step', '1')->set_width(25),
+        Field::make('text', 'our_price', __('Our Price (£)'))->set_attribute('type', 'number')->set_attribute('step', '1')->set_width(25),
+        Field::make('text', 'savings', __('Savings (£)'))->set_attribute('type', 'number')->set_attribute('step', '1')->set_width(25),
+        Field::make('text', 'per_month', __('Per Month (£)'))->set_attribute('type', 'number')->set_attribute('step', '1')->set_width(25),
 
         Field::make('select', 'berths', __('Berths'))
             ->set_options(array(
@@ -217,7 +218,7 @@ Block::make(__('Listing Prices'))
         Field::make('checkbox', 'rrp', __('RRP'))->set_width(33),
         Field::make('checkbox', 'our_price', __('Our Price'))->set_width(33),
         Field::make('checkbox', 'savings', __('Savings'))->set_width(33),
-
+        Field::make('checkbox', 'per_month', __('Per Month'))->set_width(33),
     ))
     ->set_category('listing')
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
@@ -233,7 +234,10 @@ Block::make(__('Listing Prices'))
         if ($fields['savings']) {
             $savings = get__post_meta_by_id(get_the_ID(), 'savings');
         }
-        echo listing__price($rrp, $our_price, $savings);
+        if ($fields['per_month']) {
+            $savings = get__post_meta_by_id(get_the_ID(), 'per_month');
+        }
+        echo listing__price($rrp, $our_price, $savings, $per_month);
     });
 
 
