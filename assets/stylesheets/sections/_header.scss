@@ -261,8 +261,11 @@
                         @include transform(rotate(180deg));
                     }
                 }
-                .wp-block-navigation {
-                    display: none;
+
+                &:not(.active) {
+                    .wp-block-navigation {
+                        display: none;
+                    }
                 }
             }
         }

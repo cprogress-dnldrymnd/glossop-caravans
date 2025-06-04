@@ -50,6 +50,10 @@ function mega_menu() {
             jQuery(this).parent().toggleClass('active');
             e.preventDefault();
         });
+        jQuery('.group-submenu-mobile > p').click(function (e) {
+            jQuery(this).parent().toggleClass('active');
+            e.preventDefault();
+        });
     }
 
 
