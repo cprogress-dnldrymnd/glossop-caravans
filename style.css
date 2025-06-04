@@ -12394,7 +12394,8 @@ h5, .h5 {
   @media screen and (max-width: 991px) {
     .custom-submenu.custom-submenu.custom-submenu.custom-submenu {
       position: static;
-      visibility: visible; } }
+      visibility: visible;
+      opacity: 1; } }
 
 @media screen and (max-width: 991px) {
   .wp-block-navigation__responsive-container-content {

@@ -38,11 +38,20 @@ function mega_menu() {
         jQuery('body').css('--admin-bar-height', $admin_bar + 'px');
 
     }
-    jQuery('.has-custom-submenu').hover(function () {
-        jQuery('body').addClass('mega-menu-active');
-    }, function () {
-        jQuery('body').removeClass('mega-menu-active');
-    });
+    if (window.innerWidth > 991) {
+        jQuery('.has-custom-submenu').hover(function () {
+            jQuery('body').addClass('mega-menu-active');
+        }, function () {
+            jQuery('body').removeClass('mega-menu-active');
+        });
+    } else {
+
+
+        jQuery('.has-custom-submenu').click(function (e) {
+            jQuery(this).toggleClass('active');
+        });
+    }
+
 }
 
 function fancybox() {
