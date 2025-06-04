@@ -12391,6 +12391,10 @@ h5, .h5 {
   .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-navigation-item .wp-block-navigation-item__content {
     padding: 0;
     height: auto !important; }
+  @media screen and (max-width: 991px) {
+    .custom-submenu.custom-submenu.custom-submenu.custom-submenu {
+      position: static;
+      visibility: visible; } }
 
 @media screen and (max-width: 991px) {
   .wp-block-navigation__responsive-container-content {

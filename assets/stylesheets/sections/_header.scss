@@ -213,6 +213,10 @@
         padding: 0;
         height: auto !important;
     }
+    @include responsive(xs-sm) {
+        position: static;
+        visibility: visible;
+    }
 }
 
 @include responsive(xs-sm) {
