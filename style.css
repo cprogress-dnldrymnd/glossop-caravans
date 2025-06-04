@@ -12408,9 +12408,9 @@ h5, .h5 {
   .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-navigation__container {
     gap: 1px; }
     .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-navigation__container > .wp-block-navigation-item > .wp-block-navigation-item__content {
-      border-radius: 0; }
+      border-radius: 0 !important; }
     .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-navigation__container > .wp-block-navigation-item:last-child > .wp-block-navigation-item__content {
-      border-radius: 0 0 5px 5px; }
+      border-radius: 0 0 5px 5px !important; }
   @media screen and (max-width: 991px) {
     .custom-submenu.custom-submenu.custom-submenu.custom-submenu {
       position: static;

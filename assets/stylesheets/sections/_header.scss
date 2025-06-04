@@ -223,11 +223,11 @@
         gap: 1px;
         > .wp-block-navigation-item {
             > .wp-block-navigation-item__content {
-                border-radius: 0;
+                border-radius: 0 !important;
             }
             @include last-child {
                 > .wp-block-navigation-item__content {
-                    border-radius: 0 0 5px 5px;
+                    border-radius: 0 0 5px 5px !important;
                 }
             }
         }
