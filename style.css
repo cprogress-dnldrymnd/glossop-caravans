@@ -12399,6 +12399,8 @@ h5, .h5 {
       width: 100%;
       display: none;
       padding-top: 0; }
+      .custom-submenu.custom-submenu.custom-submenu.custom-submenu p.fw-semibold {
+        font-size: 20px; }
       .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-column {
         flex-basis: 100% !important;
         width: 100% !important; } }
