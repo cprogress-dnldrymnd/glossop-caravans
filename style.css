@@ -12425,36 +12425,38 @@ h5, .h5 {
     background-color: var(--bs-white);
     padding: 2px; }
 
-  .wp-block-navigation__responsive-container {
+  .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container {
     max-width: calc(100% - 40px);
     overflow: visible !important; }
-    .wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content {
+    .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content {
       padding: 20px !important;
       overflow: auto !important;
-      height: 100vh; }
-      .wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container {
+      height: 100vh;
+      display: block !important; }
+      .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container {
         width: 100%; }
-        .wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container .wp-block-navigation-item {
+        .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container .wp-block-navigation-item {
           width: 100%; }
-          .wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container .wp-block-navigation-item.active .custom-submenu.custom-submenu.custom-submenu.custom-submenu {
+          .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container .wp-block-navigation-item.active .custom-submenu.custom-submenu.custom-submenu.custom-submenu {
             display: block; }
-          .wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container .wp-block-navigation-item.has-custom-submenu > .wp-block-navigation-item__content {
+          .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container .wp-block-navigation-item.has-custom-submenu > .wp-block-navigation-item__content {
             display: flex;
             gap: 15px;
             justify-content: space-between;
             align-items: center;
             width: 100%;
             flex-direction: row; }
-            .wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container .wp-block-navigation-item.has-custom-submenu > .wp-block-navigation-item__content:after {
+            .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container .wp-block-navigation-item.has-custom-submenu > .wp-block-navigation-item__content:after {
               content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/></svg>') !important; }
-      .wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content:before {
+      .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content:before {
         content: "" !important;
         display: block !important;
         height: 40px;
         background-image: url(https://newglossopacaravans.theprogressteam.co.uk/wp-content/uploads/2025/05/glossop-logo-300x78.png);
         background-size: contain;
         background-repeat: no-repeat;
-        width: 100%; } }
+        width: 100%;
+        margin-bottom: 20px; } }
 .bottom-footer .container > div {
   border-top: 1px solid #D3D3D3;
   padding-top: 30px;
