@@ -308,7 +308,7 @@ Block::make(__('Tabs Navigation'))
     ))
     ->set_render_callback(function ($fields, $attributes, $inner_blocks) {
     ?>
-        <div class="overflow-visible <?= $fields['style'] == 'style-2' ? '' : 'nav-tabs-swiper swiper nav-tabs-swiper-style-1' ?>">
+        <div class="overflow-visible <?= $fields['style'] == 'style-2' ? '' : 'nav-tabs-swiper swiper nav-tabs-swiper-style-1 nav-tabs-js' ?>">
             <ul class="nav nav-tabs nav-tabs-style-2 nav-tabs-style-3 <?= $fields['style'] == 'style-2' ? 'style-2' : 'swiper-wrapper' ?>" id="<?= $fields['tab_id'] ?>" role="tablist">
                 <?= $inner_blocks ?>
             </ul>
