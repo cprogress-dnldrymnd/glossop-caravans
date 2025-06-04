@@ -311,7 +311,7 @@
     .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container {
         overflow: visible !important;
         .wp-block-navigation__responsive-container-content {
-            padding: 90px 20px 20px !important;
+            padding: 90px 12px 12px !important;
             overflow: auto !important;
             height: 100vh;
             display: block !important;
@@ -363,7 +363,6 @@
                 background-size: 150px;
                 background-repeat: no-repeat;
                 width: 100%;
-                margin-bottom: 20px;
                 position: fixed;
                 z-index: 1;
                 left: 0;
