@@ -263,6 +263,10 @@
                 }
             }
         }
+        @include before {
+            content: '';
+            display: block;
+        }
     }
 }
 @include responsive(xs-sm) {
