@@ -221,6 +221,16 @@
     }
     .wp-block-navigation__container {
         gap: 1px;
+        > .wp-block-navigation-item {
+            > .wp-block-navigation-item__content {
+                border-radius: 0;
+            }
+            @include last-child {
+                > .wp-block-navigation-item__content {
+                    border-radius: 0 0 5px 5px;
+                }
+            }
+        }
     }
     @include responsive(xs-sm) {
         position: static;
@@ -275,6 +285,7 @@
                             display: block;
                         }
                         > .wp-block-navigation-item__content {
+                            border-radius: 5px 5px 0 0;
                             @include after {
                                 @include transform(rotate(180deg));
                             }

@@ -12407,6 +12407,10 @@ h5, .h5 {
     padding: 0 !important; }
   .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-navigation__container {
     gap: 1px; }
+    .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-navigation__container > .wp-block-navigation-item > .wp-block-navigation-item__content {
+      border-radius: 0; }
+    .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-navigation__container > .wp-block-navigation-item:last-child > .wp-block-navigation-item__content {
+      border-radius: 0 0 5px 5px; }
   @media screen and (max-width: 991px) {
     .custom-submenu.custom-submenu.custom-submenu.custom-submenu {
       position: static;
@@ -12452,12 +12456,14 @@ h5, .h5 {
           width: 100%; }
           .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container .wp-block-navigation-item.active .custom-submenu.custom-submenu.custom-submenu.custom-submenu {
             display: block; }
-          .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container .wp-block-navigation-item.active > .wp-block-navigation-item__content:after {
-            -webkit-transform: rotate(180deg);
-            -moz-transform: rotate(180deg);
-            -ms-transform: rotate(180deg);
-            -o-transform: rotate(180deg);
-            transform: rotate(180deg); }
+          .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container .wp-block-navigation-item.active > .wp-block-navigation-item__content {
+            border-radius: 5px 5px 0 0; }
+            .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container .wp-block-navigation-item.active > .wp-block-navigation-item__content:after {
+              -webkit-transform: rotate(180deg);
+              -moz-transform: rotate(180deg);
+              -ms-transform: rotate(180deg);
+              -o-transform: rotate(180deg);
+              transform: rotate(180deg); }
           .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container .wp-block-navigation-item > .wp-block-navigation-item__content {
             background-color: var(--lightgray-color);
             padding: 10px 15px;
