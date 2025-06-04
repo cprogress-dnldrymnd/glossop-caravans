@@ -198,16 +198,14 @@
     }
 }
 @mixin submenu-arrow {
-    @include after {
-        content: "";
-        display: inline-block;
-        width: 0;
-        height: 0;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-top: 5px solid var(--bs-white);
-        @include transform(rotate(180deg));
-    }
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid var(--bs-white);
+    @include transform(rotate(180deg));
 }
 .custom-submenu.custom-submenu.custom-submenu.custom-submenu {
     --top: calc(var(--header-height, 102px) + var(--admin-bar-height, 0));
@@ -254,7 +252,15 @@
             border: none !important;
             &.group-submenu-mobile {
                 > p:first-child {
-                    @include submenu-arrow;
+                    background-color: var(--lightgray-color);
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    width: 100%;
+                    font-size: 16px;
+                    margin: 0 !important;
+                    @include after {
+                        @include submenu-arrow;
+                    }
                 }
                 .wp-block-navigation {
                     display: none;
@@ -331,8 +337,9 @@
                             justify-content: space-between;
                             align-items: center;
                             flex-direction: row;
-
-                            @include submenu-arrow;
+                            @include after {
+                                @include submenu-arrow;
+                            }
                         }
                     }
                 }
