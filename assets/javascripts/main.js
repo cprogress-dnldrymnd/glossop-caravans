@@ -160,9 +160,9 @@ function swiper_sliders() {
     });
 
     if (window.innerWidth < 992) {
-        jQuery('.swiper-on-mobile > *').addClass('swiper swiper-on-mobile-js');
-        jQuery('.swiper-on-mobile > * > *').addClass('swiper-wrapper');
-        jQuery('.swiper-on-mobile > * > * > *').addClass('swiper-slide');
+        jQuery('.swiper-on-mobile').addClass('swiper swiper-on-mobile-js');
+        jQuery('.swiper-on-mobile > *').addClass('swiper-wrapper');
+        jQuery('.swiper-on-mobile > * > *').addClass('swiper-slide');
         var swiper_on_mobile = new Swiper('.swiper-on-mobile-js', {
             slidesPerView: 'auto',
             spaceBetween: 12,
