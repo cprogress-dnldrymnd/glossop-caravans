@@ -12410,7 +12410,8 @@ h5, .h5 {
       .custom-submenu.custom-submenu.custom-submenu.custom-submenu .p-20 {
         padding-left: 0 !important;
         padding-right: 0 !important; }
-      .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-column {
+      .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-column,
+      .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-group {
         flex-basis: 100% !important;
         width: 100% !important; } }
 

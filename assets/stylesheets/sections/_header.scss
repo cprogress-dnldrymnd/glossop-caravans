@@ -230,7 +230,8 @@
             padding-left: 0 !important;
             padding-right: 0 !important;
         }
-        .wp-block-column {
+        .wp-block-column,
+        .wp-block-group {
             flex-basis: 100% !important;
             width: 100% !important;
         }
