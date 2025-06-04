@@ -12415,7 +12415,7 @@ h5, .h5 {
         width: 100% !important; } }
 
 @media screen and (max-width: 991px) {
-  .wp-block-navigation__responsive-dia.wp-block-navigation__responsive-dialog.wp-block-navigation__responsive-dialog.wp-block-navigation__responsive-dialog {
+  .wp-block-navigation__responsive-dia.wp-block-navigation__responsive-dialog.wp-block-navigation__responsive-dialogwp-block-navigation__responsive-dialog {
     margin-top: 0 !important; }
 
   .wp-block-navigation__responsive-container {
