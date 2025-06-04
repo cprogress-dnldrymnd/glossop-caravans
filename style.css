@@ -12448,12 +12448,18 @@ h5, .h5 {
           width: 100%; }
           .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container .wp-block-navigation-item.active .custom-submenu.custom-submenu.custom-submenu.custom-submenu {
             display: block; }
+          .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container .wp-block-navigation-item.active > .wp-block-navigation-item__content:after {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg); }
           .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container .wp-block-navigation-item > .wp-block-navigation-item__content {
             background-color: var(--lightgray-color);
             padding: 10px 15px;
             border-radius: 5px;
             width: 100%; }
-            .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container .wp-block-navigation-item > .wp-block-navigation-item__content .navigation-item__label {
+            .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container .wp-block-navigation-item > .wp-block-navigation-item__content .wp-block-navigation-item__label {
               font-size: 16px; }
           .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container .wp-block-navigation-item.has-custom-submenu > .wp-block-navigation-item__content {
             display: flex;
