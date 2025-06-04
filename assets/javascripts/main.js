@@ -52,19 +52,7 @@ function mega_menu() {
         });
     }
 
-    let highestHeight = 0;
-    let highestElement = null;
-
-    jQuery('.custom-submenu').each(function () {
-        const currentHeight = jQuery(this).outerHeight(); // Use .outerHeight() to include padding and border
-
-        if (currentHeight > highestHeight) {
-            highestHeight = currentHeight;
-            highestElement = jQuery(this);
-        }
-    });
-
-    console.log(highestElement);
+    
 
 }
 

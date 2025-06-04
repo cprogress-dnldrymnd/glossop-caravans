@@ -126,6 +126,20 @@ get_template_part('template-parts/offcanvas/reserve-form');
         jQuery('#Motorhomes-Submenu').appendTo('.Motorhomes-Submenu');
         jQuery('#Caravans-Submenu').appendTo('.Caravans-Submenu');
         jQuery('#Export-Submenu').appendTo('.Export-Submenu');
+
+        let highestHeight = 0;
+        let highestElement = null;
+
+        jQuery('.custom-submenu').each(function() {
+            const currentHeight = jQuery(this).outerHeight(); // Use .outerHeight() to include padding and border
+
+            if (currentHeight > highestHeight) {
+                highestHeight = currentHeight;
+                highestElement = jQuery(this);
+            }
+        });
+
+        console.log(highestElement);
     });
 </script>
 </body>
