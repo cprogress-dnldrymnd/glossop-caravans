@@ -241,6 +241,9 @@ img {
             padding: 0;
             background-color: transparent;
             text-align: left;
+            &.active {
+                color: var(--orange-color);
+            }
         }
     }
 }

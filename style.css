@@ -11305,6 +11305,8 @@ img {
       padding: 0;
       background-color: transparent;
       text-align: left; }
+      .nav-tabs.style-2 .nav-link.nav-link.nav-link.active {
+        color: var(--orange-color); }
 
 .nav-tabs-swiper-style-1 {
   padding-bottom: 40px;
