@@ -139,7 +139,7 @@ get_template_part('template-parts/offcanvas/reserve-form');
             }
         });
 
-        jQuery(this).body().css('--mega-menu-height', highestElement + 'px');
+        jQuery('body').css('--mega-menu-height', highestElement + 'px');
 
     });
 </script>

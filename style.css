@@ -12422,7 +12422,7 @@ h5, .h5 {
         width: 100% !important; } }
   @media screen and (min-width: 992px) {
     .custom-submenu.custom-submenu.custom-submenu.custom-submenu > div {
-      height: var(---mega-menu-height); } }
+      height: var(--mega-menu-height); } }
 
 @media screen and (max-width: 991px) {
   .wp-block-navigation__responsive-dialog.wp-block-navigation__responsive-dialog.wp-block-navigation__responsive-dialog {
