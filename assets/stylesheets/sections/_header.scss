@@ -277,15 +277,15 @@
                         }
                     }
                 }
-                @include before {
-                    content: "" !important;
-                    display: block !important;
-                    height: 40px;
-                    background-image: url(https://newglossopacaravans.theprogressteam.co.uk/wp-content/uploads/2025/05/glossop-logo-300x78.png);
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    width: 100%;
-                }
+            }
+            @include before {
+                content: "" !important;
+                display: block !important;
+                height: 40px;
+                background-image: url(https://newglossopacaravans.theprogressteam.co.uk/wp-content/uploads/2025/05/glossop-logo-300x78.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 100%;
             }
         }
     }
