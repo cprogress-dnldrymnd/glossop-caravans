@@ -220,6 +220,10 @@
         width: 100%;
         display: none;
         padding-top: 0;
+        .wp-block-column {
+            flex-basis: 100% !important;
+            width: 100% !important;;
+        }
     }
 }
 @include responsive(xs-sm) {

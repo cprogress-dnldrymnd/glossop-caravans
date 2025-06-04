@@ -12398,7 +12398,10 @@ h5, .h5 {
       opacity: 1;
       width: 100%;
       display: none;
-      padding-top: 0; } }
+      padding-top: 0; }
+      .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-column {
+        flex-basis: 100% !important;
+        width: 100% !important; } }
 
 @media screen and (max-width: 991px) {
   .wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container {
