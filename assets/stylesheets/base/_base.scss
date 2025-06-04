@@ -845,3 +845,11 @@ span.icons {
         }
     }
 }
+
+
+.fancybox__container.fancybox__container {
+	z-index: 99999;
+}
+.offcanvas-backdrop.offcanvas-backdrop {
+	    z-index: 9999;
+}
