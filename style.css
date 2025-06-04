@@ -12430,9 +12430,11 @@ h5, .h5 {
           border-radius: 0;
           width: 100%;
           font-size: 16px;
-          margin: 0 !important;
+          margin: 1px 0 0 0 !important;
           cursor: pointer;
-          margin-top: 1px; }
+          display: flex;
+          justify-content: space-between;
+          gap: 15px; }
           .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-group.group-submenu-mobile > p:first-child:after {
             -webkit-transition: 400ms;
             -moz-transition: 400ms;
