@@ -242,9 +242,7 @@ global $listing_fields;
                   <div class="button-box mb-20">
                     <a class="btn btn-yellow w-100" data-bs-toggle="offcanvas" href="#offcanvasFinanceCalculator" role="button" aria-controls="offcanvasFinanceCalculator">View calculator</a>
                   </div>
-                  <div class="button-box mb-20">
-                    <a class="btn btn-primary w-100" data-bs-toggle="offcanvas" href="#offcanvasFinanceCalculator" role="button" aria-controls="offcanvasFinanceCalculator">Apply for Finance</a>
-                  </div>
+              
                   <div class="button-box mb-20">
                     <a class="btn btn-blue w-100" target="_blank" href="https://www.creditindicator.co.uk/dealer/c99c4932-6dd8-4e1c-968b-c4b88728752a">
                       Check Eligibility
