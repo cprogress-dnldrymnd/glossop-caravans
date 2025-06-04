@@ -12396,7 +12396,8 @@ h5, .h5 {
       position: static;
       visibility: visible;
       opacity: 1;
-      width: 100%; } }
+      width: 100%;
+      display: none; } }
 
 @media screen and (max-width: 991px) {
   .wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container {

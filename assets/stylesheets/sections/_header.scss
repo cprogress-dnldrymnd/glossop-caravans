@@ -218,6 +218,7 @@
         visibility: visible;
         opacity: 1;
         width: 100%;
+        display: none;
     }
 }
 @include responsive(xs-sm) {
@@ -227,6 +228,11 @@
                 width: 100%;
                 .wp-block-navigation-item {
                     width: 100%;
+                    &.active {
+                        .custom-submenu.custom-submenu.custom-submenu.custom-submenu {
+                            display: block;
+                        }
+                    }
                 }
             }
         }
