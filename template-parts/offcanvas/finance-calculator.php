@@ -186,6 +186,13 @@
                   ));
                   ?>
                 </div>
+                <div class="col-12">
+                  <div class="button-box mb-20">
+                    <a class="btn btn-blue w-100" target="_blank" href="https://www.creditindicator.co.uk/dealer/c99c4932-6dd8-4e1c-968b-c4b88728752a">
+                      Check Eligibility
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
