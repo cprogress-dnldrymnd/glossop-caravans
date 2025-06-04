@@ -11468,7 +11468,7 @@ img {
 .sticky-element {
   position: sticky;
   position: -webkit-sticky;
-  top: 0; }
+  top: var(--admin-bar-height); }
 
 .accordion-style-1 .accordion {
   padding: 20px;
