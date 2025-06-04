@@ -258,6 +258,7 @@
                     width: 100%;
                     font-size: 16px;
                     margin: 0 !important;
+                    cursor: pointer;
                     @include after {
                         @include submenu-arrow;
                     }
