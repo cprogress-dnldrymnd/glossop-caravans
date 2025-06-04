@@ -229,12 +229,14 @@
         }
         .wp-block-column {
             flex-basis: 100% !important;
-            width: 100% !important;;
+            width: 100% !important;
         }
     }
 }
 @include responsive(xs-sm) {
     .wp-block-navigation__responsive-container {
+        max-width: 90%;
+        overflow: visible;
         .wp-block-navigation__responsive-container-content {
             .wp-block-navigation__container {
                 width: 100%;
@@ -266,8 +268,9 @@
 @include responsive(xs-sm) {
     .wp-block-navigation__responsive-container-content {
         padding: 20px;
-        .wp-block-navigation__responsive-container-close {
-            right: 20px;
-        }
+    }
+    .wp-block-navigation__responsive-container-close.wp-block-navigation__responsive-container-close.wp-block-navigation__responsive-container-close {
+        right: -20px;
+        top: 20px;
     }
 }
