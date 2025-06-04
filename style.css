@@ -11300,6 +11300,11 @@ img {
       width: auto; }
   .nav-tabs.style-2 {
     flex-direction: column; }
+    .nav-tabs.style-2 .nav-link.nav-link.nav-link {
+      border: none;
+      padding: 0;
+      background-color: transparent;
+      text-align: left; }
 
 .nav-tabs-swiper-style-1 {
   padding-bottom: 40px;
