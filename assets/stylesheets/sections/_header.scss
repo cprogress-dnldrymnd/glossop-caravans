@@ -237,13 +237,13 @@
     }
 }
 @include responsive(xs-sm) {
-    .wp-block-navigation__responsive-dia.wp-block-navigation__responsive-dialog.wp-block-navigation__responsive-dialog.wp-block-navigation__responsive-dialog {
+    .wp-block-navigation__responsive-dialog.wp-block-navigation__responsive-dialog.wp-block-navigation__responsive-dialog {
         margin-top: 0 !important;
     }
     .wp-block-navigation__responsive-container {
         max-width: calc(100% - 40px);
         overflow: visible !important;
-
+       
         .wp-block-navigation__responsive-container-content {
             padding-top: 20px !important;
 
