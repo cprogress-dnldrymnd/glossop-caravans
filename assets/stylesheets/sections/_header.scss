@@ -187,6 +187,14 @@
     }
 }
 
+.wp-block-navigation-item {
+    @include responsive(xs-sm) {
+        .wp-block-navigation-item__content {
+            flex-direction: column;
+        }
+    }
+}
+
 .custom-submenu.custom-submenu.custom-submenu.custom-submenu {
     --top: calc(var(--header-height, 102px) + var(--admin-bar-height, 0));
     position: fixed;

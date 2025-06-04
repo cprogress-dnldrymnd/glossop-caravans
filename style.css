@@ -12367,6 +12367,10 @@ h5, .h5 {
 .admin-bar #masthead {
   top: 32px; }
 
+@media screen and (max-width: 991px) {
+  .wp-block-navigation-item .wp-block-navigation-item__content {
+    flex-direction: column; } }
+
 .custom-submenu.custom-submenu.custom-submenu.custom-submenu {
   --top: calc(var(--header-height, 102px) + var(--admin-bar-height, 0));
   position: fixed;
