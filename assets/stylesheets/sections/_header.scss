@@ -241,6 +241,7 @@
         max-width: calc(100% - 40px);
         overflow: visible !important;
         .wp-block-navigation__responsive-container-content {
+            padding-top: 20px;
             .wp-block-navigation__container {
                 width: 100%;
                 .wp-block-navigation-item {
@@ -272,7 +273,8 @@
                 background-image: url(https://newglossopacaravans.theprogressteam.co.uk/wp-content/uploads/2025/05/glossop-logo-300x78.png);
                 background-size: contain;
                 background-repeat: no-repeat;
-                margin: 20px;
+                margin-left: 20px;
+                width: 100%;
             }
         }
     }
