@@ -12403,14 +12403,6 @@ h5, .h5 {
   .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-navigation-item .wp-block-navigation-item__content {
     padding: 0;
     height: auto !important; }
-  .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-group {
-    padding: 0 !important; }
-  .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-navigation__container {
-    gap: 1px; }
-    .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-navigation__container > .wp-block-navigation-item > .wp-block-navigation-item__content {
-      border-radius: 0 !important; }
-    .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-navigation__container > .wp-block-navigation-item:last-child > .wp-block-navigation-item__content {
-      border-radius: 0 0 5px 5px !important; }
   @media screen and (max-width: 991px) {
     .custom-submenu.custom-submenu.custom-submenu.custom-submenu {
       position: static;
@@ -12427,7 +12419,19 @@ h5, .h5 {
       .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-column,
       .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-group {
         flex-basis: 100% !important;
-        width: 100% !important; } }
+        width: 100% !important; }
+      .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-group {
+        padding: 0 !important;
+        margin: 0 !important;
+        border: none !important; }
+        .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-group.group-submenu-mobile .wp-block-navigation {
+          display: none; }
+      .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-navigation__container {
+        gap: 1px; }
+        .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-navigation__container > .wp-block-navigation-item > .wp-block-navigation-item__content {
+          border-radius: 0 !important; }
+        .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-navigation__container > .wp-block-navigation-item:last-child > .wp-block-navigation-item__content {
+          border-radius: 0 0 5px 5px !important; } }
   @media screen and (min-width: 992px) {
     .custom-submenu.custom-submenu.custom-submenu.custom-submenu > div {
       height: var(--mega-menu-height); } }
