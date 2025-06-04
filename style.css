@@ -12056,6 +12056,9 @@ span.icons {
   .mb-5 {
     margin-bottom: 30px !important; } }
 
+.overflow-unset {
+  overflow: unset !important; }
+
 body {
   font-family: "Proxima Nova", sans-serif;
   color: var(--text-color);
