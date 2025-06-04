@@ -9,7 +9,7 @@
  */
 ?>
 <!doctype html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> class="glossop-caravans">
 
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">

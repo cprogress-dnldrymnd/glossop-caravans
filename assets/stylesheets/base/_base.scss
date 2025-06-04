@@ -4,7 +4,14 @@ body {
 img {
     height: auto;
 }
-
+@include responsive(xs-sm) {
+    html.glossop-caravans.glossop-caravans {
+        margin-top: 0 !important;
+    }
+    #wpadminbar {
+        display: none !important;
+    }
+}
 .btn {
     --bs-btn-font-size: 20px;
     --bs-btn-padding-x: 20px;
