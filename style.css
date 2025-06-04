@@ -12398,6 +12398,11 @@ h5, .h5 {
       opacity: 1; } }
 
 @media screen and (max-width: 991px) {
+  .wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container {
+    width: 100%; }
+    .wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container .wp-block-navigation-item {
+      width: 100%; } }
+@media screen and (max-width: 991px) {
   .wp-block-navigation__responsive-container-content {
     padding: 20px; }
     .wp-block-navigation__responsive-container-content .wp-block-navigation__responsive-container-close {

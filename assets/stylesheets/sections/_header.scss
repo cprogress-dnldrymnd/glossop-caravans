@@ -217,9 +217,21 @@
         position: static;
         visibility: visible;
         opacity: 1;
+        width: 100%;
     }
 }
-
+@include responsive(xs-sm) {
+    .wp-block-navigation__responsive-container {
+        .wp-block-navigation__responsive-container-content {
+            .wp-block-navigation__container {
+                width: 100%;
+                .wp-block-navigation-item {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
 @include responsive(xs-sm) {
     .wp-block-navigation__responsive-container-content {
         padding: 20px;
