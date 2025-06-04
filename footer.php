@@ -135,7 +135,7 @@ get_template_part('template-parts/offcanvas/reserve-form');
 
             if (currentHeight > highestHeight) {
                 highestHeight = currentHeight;
-                highestElement = jQuery(this);
+                highestElement = jQuery(this).outerHeight();
             }
         });
 
