@@ -12410,7 +12410,8 @@ h5, .h5 {
       opacity: 1;
       width: 100%;
       display: none;
-      padding-top: 0; }
+      padding-top: 0;
+      z-index: 0; }
       .custom-submenu.custom-submenu.custom-submenu.custom-submenu p.fw-semibold {
         font-size: 20px; }
       .custom-submenu.custom-submenu.custom-submenu.custom-submenu .p-20 {
@@ -12472,12 +12473,12 @@ h5, .h5 {
 
   .wp-block-navigation__responsive-container-close.wp-block-navigation__responsive-container-close.wp-block-navigation__responsive-container-close {
     right: 20px;
-    top: 20px; }
+    top: 14px; }
 
   .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container {
     overflow: visible !important; }
     .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content {
-      padding: 20px !important;
+      padding: 70px 20px 20px !important;
       overflow: auto !important;
       height: 100vh;
       display: block !important; }
@@ -12518,12 +12519,19 @@ h5, .h5 {
       .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content:before {
         content: "" !important;
         display: block !important;
-        height: 40px;
+        height: 50px;
         background-image: url(https://newglossopacaravans.theprogressteam.co.uk/wp-content/uploads/2025/05/glossop-logo-300x78.png);
-        background-size: contain;
+        background-size: 130px;
         background-repeat: no-repeat;
         width: 100%;
-        margin-bottom: 20px; } }
+        margin-bottom: 20px;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        background-color: var(--bs-white);
+        background-position: 20px center;
+        top: 0; } }
 .bottom-footer .container > div {
   border-top: 1px solid #D3D3D3;
   padding-top: 30px;
