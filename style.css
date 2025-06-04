@@ -12370,9 +12370,9 @@ h5, .h5 {
   background-color: var(--bs-white);
   z-index: 9999; }
 
-.admin-bar #masthead {
-  top: 32px; }
-
+@media screen and (min-width: 992px) {
+  .admin-bar #masthead {
+    top: 32px; } }
 @media screen and (max-width: 991px) {
   .wp-block-navigation-item .wp-block-navigation-item__content {
     flex-direction: column; } }
@@ -12434,7 +12434,7 @@ h5, .h5 {
           .wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container .wp-block-navigation-item.has-custom-submenu > .wp-block-navigation-item__content:after {
             content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/></svg>') !important; }
     .wp-block-navigation__responsive-container:before {
-      content: '';
+      content: "";
       display: block; } }
 @media screen and (max-width: 991px) {
   .wp-block-navigation__responsive-container-content {
