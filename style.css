@@ -12527,6 +12527,10 @@ h5, .h5 {
         background-color: var(--bs-white);
         background-position: 12px center;
         top: 0; } }
+@media (min-width: 992px) {
+  .header-socials {
+    position: relative;
+    top: 56px; } }
 .bottom-footer .container > div {
   border-top: 1px solid #D3D3D3;
   padding-top: 30px;
