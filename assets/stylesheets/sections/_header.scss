@@ -1,7 +1,10 @@
 .wp-block-site-logo {
     img {
-        @include responsive(small-lg) {
+        @include responsive(lg) {
             max-width: 250px;
+        }
+        @include responsive(small-lg) {
+            max-width: 220px;
         }
         @include responsive(md) {
             max-width: 200px;
