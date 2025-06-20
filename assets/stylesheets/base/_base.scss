@@ -52,10 +52,10 @@ img {
 }
 
 .btn-lg {
-    --bs-btn-padding-y: 10px;
+    --bs-btn-padding-y: 15px;
     --bs-btn-padding-x: 2.5vw;
-    --bs-btn-font-size: 20px;
     --bs-border-radius-lg: 5px;
+    
     @include responsive(xs-sm) {
         --bs-btn-padding-y: 20px;
         --bs-btn-padding-x: 20px;
@@ -73,7 +73,7 @@ img {
 }
 
 .form-control-lg {
-    padding: 10px 1vw;
+    padding: 15px 1vw;
     --bs-border-radius-lg: 5px;
     @include responsive(xs-sm) {
         font-size: 14px;
