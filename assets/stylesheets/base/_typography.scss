@@ -45,15 +45,15 @@ h1 {
 }
 h2,
 .h2 {
-    font-size: 59px;
+    font-size: 34px;
     @include responsive(xs-md) {
-        font-size: 50px;
+        font-size: 30px;
     }
     @include responsive(xs-sm) {
-        font-size: 40px;
+        font-size: 28px;
     }
     @include responsive(xs) {
-        font-size: 30px;
+        font-size: 26px;
     }
     @include responsive(mobile) {
         font-size: 24px;
@@ -61,25 +61,31 @@ h2,
 }
 h3,
 .h3 {
-    font-size: 37px;
+    font-size: 24px;
     @include responsive(xs-md) {
-        font-size: 32px;
+        font-size: 23px;
     }
     @include responsive(xs-sm) {
-        font-size: 30px;
+        font-size: 22px;
     }
     @include responsive(xs) {
-        font-size: 27px;
+        font-size: 20px;
     }
     @include responsive(mobile) {
-        font-size: 25px;
+        font-size: 19px;
     }
 }
 h4 {
-    font-size: 1.25rem;
+    font-size: 20px;
+    @include responsive(mobile) {
+        font-size: 18px;
+    }
 }
 h5 {
-    font-size: 1.15rem;
+    font-size: 18px;
+    @include responsive(mobile) {
+        font-size: 16px;
+    }
 }
 
 .font-sm {
