@@ -11744,9 +11744,6 @@ span.icons {
 
 .advance-search {
   margin-bottom: 8px; }
-  .advance-search a {
-    text-decoration: none;
-    font-weight: 600; }
 
 @media (min-width: 1400px) {
   .container {
