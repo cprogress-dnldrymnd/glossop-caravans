@@ -11504,8 +11504,7 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  font-weight: bold;
-  font-size: 19px; }
+  font-weight: bold; }
   .accordion-style-1 .accordion-button .accordion-button-inner {
     display: flex;
     align-items: center;
@@ -12530,7 +12529,7 @@ h5, .h5 {
 @media (min-width: 992px) {
   .header-socials {
     position: relative;
-    top: 56px; } }
+    top: 41px; } }
 .bottom-footer .container > div {
   border-top: 1px solid #D3D3D3;
   padding-top: 30px;
