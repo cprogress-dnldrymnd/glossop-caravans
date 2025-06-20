@@ -328,8 +328,6 @@ img {
 }
 
 .form-holder {
-    font-size: 20px;
-
     .row {
         --bs-gutter-x: 8px;
         --bs-gutter-y: 8px;
@@ -850,4 +848,12 @@ span.icons {
 }
 .offcanvas-backdrop.offcanvas-backdrop {
     z-index: 9999;
+}
+
+.advance-search {
+    margin-bottom: 8px;
+    a {
+        text-decoration: none;
+        font-weight: 600;
+    }
 }

@@ -11363,15 +11363,13 @@ img {
         margin-left: 10px;
         margin-right: 10px; }
 
-.form-holder {
-  font-size: 20px; }
-  .form-holder .row {
-    --bs-gutter-x: 8px;
-    --bs-gutter-y: 8px; }
-    @media screen and (max-width: 991px) {
-      .form-holder .row {
-        --bs-gutter-x: 12px;
-        --bs-gutter-y: 12px; } }
+.form-holder .row {
+  --bs-gutter-x: 8px;
+  --bs-gutter-y: 8px; }
+  @media screen and (max-width: 991px) {
+    .form-holder .row {
+      --bs-gutter-x: 12px;
+      --bs-gutter-y: 12px; } }
 
 .seach-stock-holder label {
   color: var(--bs-white); }
@@ -11743,6 +11741,10 @@ span.icons {
 
 .offcanvas-backdrop.offcanvas-backdrop {
   z-index: 9999; }
+
+.advance-search a {
+  text-decoration: none;
+  font-weight: 600; }
 
 @media (min-width: 1400px) {
   .container {
