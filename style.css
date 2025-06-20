@@ -11160,12 +11160,11 @@ img {
       --bs-btn-padding-x: 18px; } }
 
 .form-control {
-  padding: 16px 24px;
+  padding: 10px 24px;
   font-size: 16px; }
 
 .form-control-lg {
-  font-size: 16px;
-  padding: 25px 1vw;
+  padding: 10px 1vw;
   --bs-border-radius-lg: 5px; }
   @media screen and (max-width: 991px) {
     .form-control-lg {
@@ -12065,7 +12064,7 @@ span.icons {
 body {
   font-family: "Proxima Nova", sans-serif;
   color: var(--text-color);
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.2; }
   @media screen and (max-width: 991px) {
     body {
