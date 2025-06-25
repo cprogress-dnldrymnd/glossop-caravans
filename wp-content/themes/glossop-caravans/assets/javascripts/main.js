@@ -29,8 +29,7 @@ function search_stock() {
 
     });
 }
-function mega_menu() {
-
+function mega_submenu() {
     jQuery('#Motorhomes-Submenu').appendTo('.Motorhomes-Submenu');
     jQuery('#Caravans-Submenu').appendTo('.Caravans-Submenu');
     jQuery('#Export-Submenu').appendTo('.Export-Submenu');
@@ -47,6 +46,16 @@ function mega_menu() {
         }
     });
     jQuery('body').css('--mega-menu-height', highestElement + 'px');
+}
+function mega_menu() {
+    if (jQuery('.main-content').length > 0) {
+        mega_submenu();
+    } else {
+        setTimeout(function () {
+            mega_submenu();
+        }, 1000);
+    }
+
 
     $height = jQuery('#main-header').outerHeight();
     $main_header_inner_height = jQuery('#main-header > div').outerHeight();
