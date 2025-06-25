@@ -121,28 +121,6 @@ get_template_part('template-parts/offcanvas/finance-calculator');
 get_template_part('template-parts/offcanvas/reserve-form');
 ?>
 
-<script>
-    jQuery(document).ready(function() {
-        jQuery('#Motorhomes-Submenu').appendTo('.Motorhomes-Submenu');
-        jQuery('#Caravans-Submenu').appendTo('.Caravans-Submenu');
-        jQuery('#Export-Submenu').appendTo('.Export-Submenu');
-
-        let highestHeight = 0;
-        let highestElement = null;
-
-        jQuery('.custom-submenu').each(function() {
-            const currentHeight = jQuery(this).outerHeight(); // Use .outerHeight() to include padding and border
-
-            if (currentHeight > highestHeight) {
-                highestHeight = currentHeight;
-                highestElement = jQuery(this).outerHeight();
-            }
-        });
-
-        jQuery('body').css('--mega-menu-height', highestElement + 'px');
-
-    });
-</script>
 </body>
 
 </html>
