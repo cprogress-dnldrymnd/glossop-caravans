@@ -25,6 +25,11 @@ function fetch___template(location, elementSelector) {
 }
 fetch___template('_header_footer.php', '#insert-footer-header');
 
-jQuery(document).ready(function () {
-    jQuery('#main-content').insertBefore('.main-footer');
-});
+window.onload = function () {
+    const mainContent = document.getElementById('main-content');
+    const mainFooter = document.querySelector('.main-footer');
+
+    if (mainContent && mainFooter) {
+        mainFooter.parentNode.insertBefore(mainContent, mainFooter);
+    }
+};
