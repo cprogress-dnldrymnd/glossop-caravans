@@ -48,7 +48,7 @@ function mega_submenu() {
     jQuery('body').css('--mega-menu-height', highestElement + 'px');
 }
 function mega_menu() {
-    if (jQuery('.main-content').length > 0) {
+    if (jQuery('.static-page-content').length > 0) {
         mega_submenu();
     } else {
         setTimeout(function () {
