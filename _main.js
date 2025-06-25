@@ -26,8 +26,6 @@ function fetch___template(location, elementSelector) {
 fetch___template('_header_footer.php', '#insert-footer-header');
 
 window.onload = function () {
-
-
     setTimeout(function () {
         const mainContent = document.getElementById('main-content');
         const mainFooter = document.querySelector('.main-footer');
@@ -36,5 +34,5 @@ window.onload = function () {
             console.log('xxxx2');
             mainFooter.parentNode.insertBefore(mainContent, mainFooter);
         }
-    }, 500);
+    }, 1000);
 };
