@@ -24,4 +24,4 @@ function fetch___template(location, elementSelector) {
         });
 }
 fetch___template('_header.php', '#insert-header');
-fetch___template('footer.php', '#insert-footer');
+fetch___template('_footer.php', '#insert-footer');
