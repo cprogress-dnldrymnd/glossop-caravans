@@ -7,6 +7,7 @@ jQuery(document).ready(function () {
     read_more();
 });
 
+
 function read_more() {
     jQuery('.read-more-button').click(function (e) {
         jQuery('.read-more-content').removeClass('d-none');
@@ -29,6 +30,24 @@ function search_stock() {
     });
 }
 function mega_menu() {
+
+    jQuery('#Motorhomes-Submenu').appendTo('.Motorhomes-Submenu');
+    jQuery('#Caravans-Submenu').appendTo('.Caravans-Submenu');
+    jQuery('#Export-Submenu').appendTo('.Export-Submenu');
+
+    let highestHeight = 0;
+    let highestElement = null;
+
+    jQuery('.custom-submenu').each(function () {
+        const currentHeight = jQuery(this).outerHeight(); // Use .outerHeight() to include padding and border
+
+        if (currentHeight > highestHeight) {
+            highestHeight = currentHeight;
+            highestElement = jQuery(this).outerHeight();
+        }
+    });
+    jQuery('body').css('--mega-menu-height', highestElement + 'px');
+
     $height = jQuery('#main-header').outerHeight();
     $main_header_inner_height = jQuery('#main-header > div').outerHeight();
     $admin_bar = jQuery('#wpadminbar').outerHeight();
