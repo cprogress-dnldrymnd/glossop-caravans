@@ -1,721 +1,694 @@
-<!doctype html>
-<html <?php language_attributes(); ?> class="glossop-caravans">
-
-<head>
-	<meta charset="<?php bloginfo('charset'); ?>">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<title>
-		<?php bloginfo('name'); // show the blog name, from settings 
-        ?> |
-		<?php is_front_page() ? bloginfo('description') : wp_title(''); // if we're on the home page, show the description, from the site's settings - otherwise, show the title of the post or page 
-        ?>
-	</title>
-
-</head>
-
-<body class="static-pages">
-	<main id="main" class="main-content" role="main">
-		<div id="insert-header"></div>
-		<div class="collapse" id="searchbox">
-			<div class="col-12">
-				<div class="row">
-					<h2 class="searchbox-header w-100 text-center text-white p-2 h5 m-0">Search Stock</h2>
-				</div>
-			</div>
-
-			<div class="container-fluid container-lg">
-				<div class="row">
-
-					<div class="col-12 search-buttons">
-						<div class="row justify-content-center pt-2 pb-3">
-							<div class="col-auto px-0 px-sm-3">
-								<a class="caravans d-block" title="Search Caravans" data-toggle="collapse"
-									href="#search_caravans" role="button" aria-expanded="false"
-									aria-controls="search_caravans">
-									<i class="d-block"></i>
-								</a>
-								<p class="d-block m-0 h6 text-center text-dark">Caravans</p>
-							</div>
-							<div class="col-auto px-0 px-sm-3">
-								<a class="motorhomes d-block" title="Search Motorhomes " data-toggle="collapse"
-									href="#search_motorhomes" role="button" aria-expanded="false"
-									aria-controls="search_motorhomes">
-									<i class="d-block"></i>
-								</a>
-								<p class="d-block m-0 h6 text-center text-dark">Motorhomes</p>
-							</div>
-							<div class="col-auto  px-0 px-sm-3">
-								<a class="statics d-block" title="Search Statics"
-									href="https://www.glossopcaravans.co.uk//statics" role="button">
-									<i class="d-block"></i>
-								</a>
-								<p class="d-block m-0 h6 text-center text-dark">Statics</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-12">
-						<div class="row">
-							<div class="accordion w-100" id="accordionSearch">
-
-								<div class="collapse col-12" id="search_caravans" data-parent="#accordionSearch">
-									<div class="row">
-
-										<div class="col-12 col-md-8 col-lg-9">
-											<div class="row">
-												<form name="caravan_finder" id="search_caravans_stock" class="col-12"
-													action="https://www.glossopcaravans.co.uk/caravans_search_results"
-													method="GET">
-													<div class="row">
-														<input type="hidden" name="stock" value="caravans">
-														<input type="hidden" name="finance" value="0"
-															id="priceMethodFinance">
-
-														<div
-															class="form-group col-12 col-md-6 col-lg-4 m-0 pb-3 pb-md-1">
-															<ul class="nav nav-tabs border-0 w-100" id="myTab"
-																role="tablist">
-																<li class="nav-item col-6 text-center pl-0 pr-1"
-																	role="presentation">
-																	<a class="nav-link active border-0 text-white bg-light-grey rounded-0 h6 px-0 py-2"
-																		data-method="cash" title="Price" id="price-tab"
-																		data-toggle="tab"
-																		href="#parent-slider-caravans-cash" role="tab"
-																		aria-controls="parent-slider-caravans-cash"
-																		aria-selected="true">Price</a>
-																</li>
-																<li class="nav-item col-6 text-center pl-1 pr-0"
-																	role="presentation">
-																	<a class="nav-link border-0  text-white bg-light-grey rounded-0  h6 px-0 py-2"
-																		data-method="finance" title="Monthly Price"
-																		id="pm-tab" data-toggle="tab"
-																		href="#parent-slider-caravans-pm" role="tab"
-																		aria-controls="parent-slider-caravans-pm"
-																		aria-selected="false">Monthly Price</a>
-																</li>
-															</ul>
-
-															<!-- Tab panes -->
-															<div class="tab-content py-3 col-12 px-5">
-																<div class="tab-pane active"
-																	id="parent-slider-caravans-cash" role="tabpanel"
-																	aria-labelledby="price-tab">
-																	<div class="row">
-																		<div class="col-12 price-slider-wrapper">
-
-																			<div class="layout-slider"
-																				id="parent-slider-cash">
-																				<input id="minSliderVal" type="hidden"
-																					name="" value="500" />
-																				<input id="maxSliderVal" type="hidden"
-																					name="" value="41000" />
-																				<input id="slider-cash" type="slider"
-																					name="priceRange"
-																					value="500;41000" />
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-pane" id="parent-slider-caravans-pm"
-																	role="tabpanel" aria-labelledby="profile-tab">
-																	<div class="row">
-																		<div class="col-12 price-slider-wrapper">
-
-																			<div class="layout-slider"
-																				id="parent-slider-pm">
-																				<input id="minSliderValFinance"
-																					type="hidden" name="" value="0" />
-																				<input id="maxSliderValFinance"
-																					type="hidden" name="" value="800" />
-																				<input id="slider-pm" type="slider"
-																					name="priceFinRange"
-																					value="0;800" />
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-
-														<div class="form-group  col-12 col-md-6 col-lg-4 m-0">
-															<div class="row pb-5">
-																<div class="col pr-1">
-																	<label class="radio-inline w-100">
-																		<input class="cfType" type="radio" name="cfType"
-																			value="N">
-																		<span
-																			class="checkmark text-center w-100 py-2 bg-light-grey"><span
-																				class="h6 w-100 m-0 text-white">New</span></span>
-																	</label>
-																</div>
-																<div class="col pl-1 pr-1">
-																	<label class="radio-inline w-100">
-																		<input class="cfType" type="radio" name="cfType"
-																			value="U">
-																		<span
-																			class="checkmark text-center w-100 py-2 bg-light-grey"><span
-																				class="h6 w-100 m-0 text-white">Used</span></span>
-																	</label>
-																</div>
-																<div class="col pl-1">
-																	<label class="radio-inline w-100">
-																		<input class="cfType" type="radio" name="cfType"
-																			value="B" checked="checked">
-																		<span
-																			class="checkmark text-center w-100 py-2 bg-light-grey"><span
-																				class="h6 w-100 m-0 text-white">Both</span></span>
-																	</label>
-																</div>
-															</div>
-
-
-															<div class="row pb-5">
-																<div class="col-12">
-																	<p class="mx-0 mb-1 h6 text-center">Berths</p>
-																</div>
-																<div class="col-12 ">
-																	<div class="row">
-																		<div class="col pr-1">
-																			<label class="radio-inline w-100">
-																				<input class="berth" type="radio"
-																					name="berth" value="Any"
-																					checked="checked">
-																				<span
-																					class="checkmark text-center w-100 py-2 bg-light-grey"><span
-																						class="h6 w-100 m-0 text-white">All</span></span>
-																			</label>
-																		</div>
-																		<div class="col px-1">
-																			<label class="radio-inline w-100">
-																				<input class="berth" type="radio"
-																					name="berth" value="2">
-																				<span
-																					class="checkmark text-center w-100 py-2 bg-light-grey"><span
-																						class="h6 w-100 m-0 text-white">2</span></span>
-																			</label>
-																		</div>
-																		<div class="col px-1">
-																			<label class="radio-inline w-100">
-																				<input class="berth" type="radio"
-																					name="berth" value="3">
-																				<span
-																					class="checkmark text-center w-100 py-2 bg-light-grey"><span
-																						class="h6 w-100 m-0 text-white">3</span></span>
-																			</label>
-																		</div>
-																		<div class="col px-1">
-																			<label class="radio-inline w-100">
-																				<input class="berth" type="radio"
-																					name="berth" value="4">
-																				<span
-																					class="checkmark text-center w-100 py-2 bg-light-grey"><span
-																						class="h6 w-100 m-0 text-white">4</span></span>
-																			</label>
-																		</div>
-																		<div class="col px-1">
-																			<label class="radio-inline w-100">
-																				<input class="berth" type="radio"
-																					name="berth" value="5">
-																				<span
-																					class="checkmark text-center w-100 py-2 bg-light-grey"><span
-																						class="h6 w-100 m-0 text-white">5</span></span>
-																			</label>
-																		</div>
-																		<div class="col pl-1">
-																			<label class="radio-inline w-100">
-																				<input class="berth" type="radio"
-																					name="berth" value="6">
-																				<span
-																					class="checkmark text-center w-100 py-2 bg-light-grey"><span
-																						class="h6 w-100 m-0 text-white">6</span></span>
-																			</label>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-
-
-														<div class="form-group col-12 col-md-12 col-lg-4 m-0">
-															<div class="row pb-5">
-																<div class="col-12">
-																	<p class="mx-0 mb-1 h6 text-center">Extra
-																		Details</p>
-																</div>
-																<div class="col-12 ">
-																	<div class="row">
-																		<div
-																			class="col pr-1 pl-3 col-lg-4  pb-lg-5 pl-lg-3">
-																			<label class="checkbox-inline w-100">
-																				<input class="layout" type="checkbox"
-																					name="cfEndbed" value="1">
-																				<span
-																					class="checkmark text-center w-100 py-2 bg-light-grey">
-																					<p
-																						class="h6 w-100 m-0 text-white small-text">
-																						End</br>Bedroom</p>
-																				</span>
-																			</label>
-																		</div>
-																		<div class="col px-1 col-lg-4">
-																			<label class="checkbox-inline w-100">
-																				<input class="layout" type="checkbox"
-																					name="cfEndkitchen" value="1">
-																				<span
-																					class="checkmark text-center w-100 py-2 bg-light-grey">
-																					<p
-																						class="h6 w-100 m-0 text-white small-text">
-																						End</br>Kitchen</p>
-																				</span>
-																			</label>
-																		</div>
-																		<div class="col px-1 col-lg-4 pl-lg-1 pr-lg-3">
-																			<label class="checkbox-inline w-100">
-																				<input class="layout" type="checkbox"
-																					name="cfFixedbed" value="1">
-																				<span
-																					class="checkmark text-center w-100 py-2 bg-light-grey">
-																					<p
-																						class="h6 w-100 m-0 text-white small-text">
-																						Fixed</br>Bedroom</p>
-																				</span>
-																			</label>
-																		</div>
-																		<div class="col px-1 col-lg-6 pl-lg-3">
-																			<label class="checkbox-inline w-100">
-																				<input class="layout" type="checkbox"
-																					name="cfEndwash" value="1">
-																				<span
-																					class="checkmark text-center w-100 py-2 bg-light-grey">
-																					<p
-																						class="h6 w-100 m-0 text-white small-text">
-																						End</br>Washroom</p>
-																				</span>
-																			</label>
-																		</div>
-																		<div class="col pl-1 pr-3 col-lg-6 pr-lg-3">
-																			<label class="checkbox-inline w-100">
-																				<input class="layout" type="checkbox"
-																					name="cfTwinaxle" value="1">
-																				<span
-																					class="checkmark text-center w-100 py-2 bg-light-grey">
-																					<p
-																						class="h6 w-100 m-0 text-white small-text">
-																						Twin</br>Axle</p>
-																				</span>
-																			</label>
-																		</div>
-																	</div>
-																</div>
-															</div>
-
-
-														</div>
-													</div>
-												</form>
-											</div>
-										</div>
-
-										<div class="col-12 col-md-4 col-lg-3">
-											<div class="row">
-												<div class="col-12 mb-2">
-													<form id="search_caravans_stockno"
-														action="https://www.glossopcaravans.co.uk/caravan-stocknumber-search"
-														method="GET">
-														<div class="form-group m-0">
-															<input type="hidden" name="stock" value="caravans">
-															<input type="text" id="caravans_stock_number"
-																name="stock_num" class="form-control rounded-0"
-																placeholder="Stock Number" value="">
-														</div>
-													</form>
-												</div>
-												<div class="col-12 mb-2 text-center">
-													<div class="accordion" id="accordionTowsafe">
-
-
-														<button
-															class="w-100 text-center text-white bg-yellow py-2 m-0 h6 border-0"
-															type="button" data-toggle="collapse"
-															data-target="#collapseTowsafe" aria-expanded="false"
-															aria-controls="collapseOne">
-															What can my car tow ?
-														</button>
-
-
-														<div id="collapseTowsafe" class="collapse"
-															aria-labelledby="headingOne"
-															data-parent="#accordionTowsafe">
-															<p class="small-text my-2">Enter your car reg and email
-																below
-																and we
-																will match your car to our stock</p>
-
-															<form id="search_caravans_towform"
-																action="https://www.glossopcaravans.co.uk/caravan-towing-results/"
-																method="post">
-
-																<div class="reg1">
-																	<div class="input-group mb-2">
-																		<input type="text" id="VRMinput" name="VRMinput"
-																			class="form-control reg-number rounded-0 "
-																			placeholder="REG HERE" />
-																	</div>
-																</div>
-
-																<div class="emailTow mb-0">
-																	<div class="input-group m-0">
-																		<input type="text" id="emailTow" name="email"
-																			class="form-control  rounded-0"
-																			placeholder="Enter a Valid Email" />
-																	</div>
-																</div>
-
-																<div class="col-12" id="towsafeEmailCheck"
-																	style="display:none; text-align: center; background-color: #d4201e; color: #fff;">
-																	Please enter a valid email address</div>
-																<div class="col-12" id="towsafeRegCheck"
-																	style="display:none; text-align: center; background-color: #d4201e; color: #fff;">
-																	Please enter a valid car registration</div>
-															</form>
-
-														</div>
-													</div>
-												</div>
-												<div class="col-12  text-center">
-													<input id="search_caravans_submit" type="button"
-														class="bg-green h6 py-2 text-white w-100 border-0 text-center"
-														value="Search Stock" />
-												</div>
-											</div>
-										</div>
-
-									</div>
-								</div>
-								<div class="collapse col-12" id="search_motorhomes" data-parent="#accordionSearch">
-									<div class="row">
-
-										<div class="col-12 col-md-8 col-lg-9">
-											<div class="row">
-												<form name="caravan_finder" id="search_motorhomes_stock" class="col-12"
-													action="https://www.glossopcaravans.co.uk/motorhomes_search_results"
-													method="GET">
-													<div class="row">
-														<input type="hidden" name="stock" value="motorhomes">
-														<input type="hidden" name="finance" value="0"
-															id="priceMethodFinance">
-
-														<div
-															class="form-group col-12 col-md-6 col-lg-4 m-0 pb-3 pb-md-1">
-															<ul class="nav nav-tabs border-0 w-100" id="myTab"
-																role="tablist">
-																<li class="nav-item col-6 text-center pl-0 pr-1"
-																	role="presentation">
-																	<a class="nav-link active border-0 text-white bg-light-grey rounded-0 h6 px-0 py-2"
-																		data-method="cash" title="Price" id="price-tab"
-																		data-toggle="tab"
-																		href="#parent-slider-motorhomes-cash" role="tab"
-																		aria-controls="parent-slider-motorhomes-cash"
-																		aria-selected="true">Price</a>
-																</li>
-																<li class="nav-item col-6 text-center pl-1 pr-0"
-																	role="presentation">
-																	<a class="nav-link border-0  text-white bg-light-grey rounded-0  h6 px-0 py-2"
-																		data-method="finance" title="Monthly Price"
-																		id="pm-tab" data-toggle="tab"
-																		href="#parent-slider-motorhomes-pm" role="tab"
-																		aria-controls="parent-slider-motorhomes-pm"
-																		aria-selected="false">Monthly Price</a>
-																</li>
-															</ul>
-
-															<!-- Tab panes -->
-															<div class="tab-content py-3 col-12 px-5">
-																<div class="tab-pane active"
-																	id="parent-slider-motorhomes-cash" role="tabpanel"
-																	aria-labelledby="price-tab">
-																	<div class="row">
-																		<div class="col-12 price-slider-wrapper">
-
-																			<div class="layout-slider"
-																				id="parent-slider-cash">
-																				<input id="minSliderVal" type="hidden"
-																					name="" value="10000" />
-																				<input id="maxSliderVal" type="hidden"
-																					name="" value="100000" />
-																				<input id="slider-cash" type="slider"
-																					name="priceRange"
-																					value="10000;100000" />
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-pane" id="parent-slider-motorhomes-pm"
-																	role="tabpanel" aria-labelledby="profile-tab">
-																	<div class="row">
-																		<div class="col-12 price-slider-wrapper">
-
-																			<div class="layout-slider"
-																				id="parent-slider-pm">
-																				<input id="minSliderValFinance"
-																					type="hidden" name="" value="0" />
-																				<input id="maxSliderValFinance"
-																					type="hidden" name="" value="800" />
-																				<input id="slider-pm" type="slider"
-																					name="priceFinRange"
-																					value="0;800" />
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-
-														<div class="form-group  col-12 col-md-6 col-lg-4 m-0">
-															<div class="row pb-5">
-																<div class="col pr-1">
-																	<label class="radio-inline w-100">
-																		<input class="cfType" type="radio" name="cfType"
-																			value="N">
-																		<span
-																			class="checkmark text-center w-100 py-2 bg-light-grey"><span
-																				class="h6 w-100 m-0 text-white">New</span></span>
-																	</label>
-																</div>
-																<div class="col pl-1 pr-1">
-																	<label class="radio-inline w-100">
-																		<input class="cfType" type="radio" name="cfType"
-																			value="U">
-																		<span
-																			class="checkmark text-center w-100 py-2 bg-light-grey"><span
-																				class="h6 w-100 m-0 text-white">Used</span></span>
-																	</label>
-																</div>
-																<div class="col pl-1">
-																	<label class="radio-inline w-100">
-																		<input class="cfType" type="radio" name="cfType"
-																			value="B" checked="checked">
-																		<span
-																			class="checkmark text-center w-100 py-2 bg-light-grey"><span
-																				class="h6 w-100 m-0 text-white">Both</span></span>
-																	</label>
-																</div>
-															</div>
-
-
-															<div class="row pb-5">
-																<div class="col-12">
-																	<p class="mx-0 mb-1 h6 text-center">Berths</p>
-																</div>
-																<div class="col-12 ">
-																	<div class="row">
-																		<div class="col pr-1">
-																			<label class="radio-inline w-100">
-																				<input class="berth" type="radio"
-																					name="berth" value="Any"
-																					checked="checked">
-																				<span
-																					class="checkmark text-center w-100 py-2 bg-light-grey"><span
-																						class="h6 w-100 m-0 text-white">All</span></span>
-																			</label>
-																		</div>
-																		<div class="col px-1">
-																			<label class="radio-inline w-100">
-																				<input class="berth" type="radio"
-																					name="berth" value="2">
-																				<span
-																					class="checkmark text-center w-100 py-2 bg-light-grey"><span
-																						class="h6 w-100 m-0 text-white">2</span></span>
-																			</label>
-																		</div>
-																		<div class="col px-1">
-																			<label class="radio-inline w-100">
-																				<input class="berth" type="radio"
-																					name="berth" value="3">
-																				<span
-																					class="checkmark text-center w-100 py-2 bg-light-grey"><span
-																						class="h6 w-100 m-0 text-white">3</span></span>
-																			</label>
-																		</div>
-																		<div class="col px-1">
-																			<label class="radio-inline w-100">
-																				<input class="berth" type="radio"
-																					name="berth" value="4">
-																				<span
-																					class="checkmark text-center w-100 py-2 bg-light-grey"><span
-																						class="h6 w-100 m-0 text-white">4</span></span>
-																			</label>
-																		</div>
-																		<div class="col px-1">
-																			<label class="radio-inline w-100">
-																				<input class="berth" type="radio"
-																					name="berth" value="5">
-																				<span
-																					class="checkmark text-center w-100 py-2 bg-light-grey"><span
-																						class="h6 w-100 m-0 text-white">5</span></span>
-																			</label>
-																		</div>
-																		<div class="col pl-1">
-																			<label class="radio-inline w-100">
-																				<input class="berth" type="radio"
-																					name="berth" value="6">
-																				<span
-																					class="checkmark text-center w-100 py-2 bg-light-grey"><span
-																						class="h6 w-100 m-0 text-white">6</span></span>
-																			</label>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-
-
-														<div class="form-group col-12 col-md-12 col-lg-4 m-0">
-															<div class="row pb-5">
-																<div class="col-12">
-																	<p class="mx-0 mb-1 h6 text-center">Extra
-																		Details</p>
-																</div>
-																<div class="col-12 ">
-																	<div class="row">
-																		<div
-																			class="col pr-1 pl-3 col-lg-4  pb-lg-5 pl-lg-3">
-																			<label class="checkbox-inline w-100">
-																				<input class="layout" type="checkbox"
-																					name="cfEndkitchen" value="1">
-																				<span
-																					class="checkmark text-center w-100 py-2 bg-light-grey">
-																					<p
-																						class="h6 w-100 m-0 text-white small-text">
-																						End</br>Kitchen</p>
-																				</span>
-																			</label>
-																		</div>
-																		<div class="col px-1 col-lg-4">
-																			<label class="checkbox-inline w-100">
-																				<input class="layout" type="checkbox"
-																					name="cfFixedbed" value="1">
-																				<span
-																					class="checkmark text-center w-100 py-2 bg-light-grey">
-																					<p
-																						class="h6 w-100 m-0 text-white small-text">
-																						Fixed</br>Bedroom</p>
-																				</span>
-																			</label>
-																		</div>
-																		<div class="col px-1 col-lg-4 pl-lg-1 pr-lg-3">
-																			<label class="checkbox-inline w-100">
-																				<input class="layout" type="checkbox"
-																					name="cfEndwash" value="1">
-																				<span
-																					class="checkmark text-center w-100 py-2 bg-light-grey">
-																					<p
-																						class="h6 w-100 m-0 text-white small-text">
-																						End</br>Washroom</p>
-																				</span>
-																			</label>
-																		</div>
-																	</div>
-																</div>
-															</div>
-
-
-														</div>
-													</div>
-												</form>
-											</div>
-										</div>
-
-										<div class="col-12 col-md-4 col-lg-3">
-											<div class="row">
-												<div class="col-12 mb-2">
-													<form id="search_motorhomes_stockno"
-														action="https://www.glossopcaravans.co.uk/motorhome-stocknumber-search"
-														method="GET">
-														<div class="form-group m-0">
-															<input type="hidden" name="stock" value="motorhomes">
-															<input type="text" id="motorhomes_stock_number"
-																name="stock_num" class="form-control rounded-0"
-																placeholder="Stock Number" value="">
-														</div>
-													</form>
-												</div>
-												<div class="col-12  text-center">
-													<input id="search_motorhomes_submit" type="button"
-														class="bg-green h6 py-2 text-white w-100 border-0 text-center"
-														value="Search Stock" />
-												</div>
-											</div>
-										</div>
-
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-
-			<div class="col-12">
-				<div class="row">
-					<div class="searchbox-footer w-100 text-center p-2 "></div>
-				</div>
+<script type="text/javascript" src="./_main.js"></script>
+<div id="insert-footer-header"></div>
+<div id="main-content">
+	<div class="collapse" id="searchbox">
+		<div class="col-12">
+			<div class="row">
+				<h2 class="searchbox-header w-100 text-center text-white p-2 h5 m-0">Search Stock</h2>
 			</div>
 		</div>
-		<div id="primary" class="row-fluid">
-			<div id="content" role="main" class="span8 offset2">
+
+		<div class="container-fluid container-lg">
+			<div class="row">
+
+				<div class="col-12 search-buttons">
+					<div class="row justify-content-center pt-2 pb-3">
+						<div class="col-auto px-0 px-sm-3">
+							<a class="caravans d-block" title="Search Caravans" data-toggle="collapse"
+								href="#search_caravans" role="button" aria-expanded="false"
+								aria-controls="search_caravans">
+								<i class="d-block"></i>
+							</a>
+							<p class="d-block m-0 h6 text-center text-dark">Caravans</p>
+						</div>
+						<div class="col-auto px-0 px-sm-3">
+							<a class="motorhomes d-block" title="Search Motorhomes " data-toggle="collapse"
+								href="#search_motorhomes" role="button" aria-expanded="false"
+								aria-controls="search_motorhomes">
+								<i class="d-block"></i>
+							</a>
+							<p class="d-block m-0 h6 text-center text-dark">Motorhomes</p>
+						</div>
+						<div class="col-auto  px-0 px-sm-3">
+							<a class="statics d-block" title="Search Statics"
+								href="https://www.glossopcaravans.co.uk//statics" role="button">
+								<i class="d-block"></i>
+							</a>
+							<p class="d-block m-0 h6 text-center text-dark">Statics</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<div class="row">
+						<div class="accordion w-100" id="accordionSearch">
+
+							<div class="collapse col-12" id="search_caravans" data-parent="#accordionSearch">
+								<div class="row">
+
+									<div class="col-12 col-md-8 col-lg-9">
+										<div class="row">
+											<form name="caravan_finder" id="search_caravans_stock" class="col-12"
+												action="https://www.glossopcaravans.co.uk/caravans_search_results"
+												method="GET">
+												<div class="row">
+													<input type="hidden" name="stock" value="caravans">
+													<input type="hidden" name="finance" value="0"
+														id="priceMethodFinance">
+
+													<div class="form-group col-12 col-md-6 col-lg-4 m-0 pb-3 pb-md-1">
+														<ul class="nav nav-tabs border-0 w-100" id="myTab"
+															role="tablist">
+															<li class="nav-item col-6 text-center pl-0 pr-1"
+																role="presentation">
+																<a class="nav-link active border-0 text-white bg-light-grey rounded-0 h6 px-0 py-2"
+																	data-method="cash" title="Price" id="price-tab"
+																	data-toggle="tab"
+																	href="#parent-slider-caravans-cash" role="tab"
+																	aria-controls="parent-slider-caravans-cash"
+																	aria-selected="true">Price</a>
+															</li>
+															<li class="nav-item col-6 text-center pl-1 pr-0"
+																role="presentation">
+																<a class="nav-link border-0  text-white bg-light-grey rounded-0  h6 px-0 py-2"
+																	data-method="finance" title="Monthly Price"
+																	id="pm-tab" data-toggle="tab"
+																	href="#parent-slider-caravans-pm" role="tab"
+																	aria-controls="parent-slider-caravans-pm"
+																	aria-selected="false">Monthly Price</a>
+															</li>
+														</ul>
+
+														<!-- Tab panes -->
+														<div class="tab-content py-3 col-12 px-5">
+															<div class="tab-pane active"
+																id="parent-slider-caravans-cash" role="tabpanel"
+																aria-labelledby="price-tab">
+																<div class="row">
+																	<div class="col-12 price-slider-wrapper">
+
+																		<div class="layout-slider"
+																			id="parent-slider-cash">
+																			<input id="minSliderVal" type="hidden"
+																				name="" value="500" />
+																			<input id="maxSliderVal" type="hidden"
+																				name="" value="41000" />
+																			<input id="slider-cash" type="slider"
+																				name="priceRange" value="500;41000" />
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="tab-pane" id="parent-slider-caravans-pm"
+																role="tabpanel" aria-labelledby="profile-tab">
+																<div class="row">
+																	<div class="col-12 price-slider-wrapper">
+
+																		<div class="layout-slider"
+																			id="parent-slider-pm">
+																			<input id="minSliderValFinance"
+																				type="hidden" name="" value="0" />
+																			<input id="maxSliderValFinance"
+																				type="hidden" name="" value="800" />
+																			<input id="slider-pm" type="slider"
+																				name="priceFinRange" value="0;800" />
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="form-group  col-12 col-md-6 col-lg-4 m-0">
+														<div class="row pb-5">
+															<div class="col pr-1">
+																<label class="radio-inline w-100">
+																	<input class="cfType" type="radio" name="cfType"
+																		value="N">
+																	<span
+																		class="checkmark text-center w-100 py-2 bg-light-grey"><span
+																			class="h6 w-100 m-0 text-white">New</span></span>
+																</label>
+															</div>
+															<div class="col pl-1 pr-1">
+																<label class="radio-inline w-100">
+																	<input class="cfType" type="radio" name="cfType"
+																		value="U">
+																	<span
+																		class="checkmark text-center w-100 py-2 bg-light-grey"><span
+																			class="h6 w-100 m-0 text-white">Used</span></span>
+																</label>
+															</div>
+															<div class="col pl-1">
+																<label class="radio-inline w-100">
+																	<input class="cfType" type="radio" name="cfType"
+																		value="B" checked="checked">
+																	<span
+																		class="checkmark text-center w-100 py-2 bg-light-grey"><span
+																			class="h6 w-100 m-0 text-white">Both</span></span>
+																</label>
+															</div>
+														</div>
 
 
+														<div class="row pb-5">
+															<div class="col-12">
+																<p class="mx-0 mb-1 h6 text-center">Berths</p>
+															</div>
+															<div class="col-12 ">
+																<div class="row">
+																	<div class="col pr-1">
+																		<label class="radio-inline w-100">
+																			<input class="berth" type="radio"
+																				name="berth" value="Any"
+																				checked="checked">
+																			<span
+																				class="checkmark text-center w-100 py-2 bg-light-grey"><span
+																					class="h6 w-100 m-0 text-white">All</span></span>
+																		</label>
+																	</div>
+																	<div class="col px-1">
+																		<label class="radio-inline w-100">
+																			<input class="berth" type="radio"
+																				name="berth" value="2">
+																			<span
+																				class="checkmark text-center w-100 py-2 bg-light-grey"><span
+																					class="h6 w-100 m-0 text-white">2</span></span>
+																		</label>
+																	</div>
+																	<div class="col px-1">
+																		<label class="radio-inline w-100">
+																			<input class="berth" type="radio"
+																				name="berth" value="3">
+																			<span
+																				class="checkmark text-center w-100 py-2 bg-light-grey"><span
+																					class="h6 w-100 m-0 text-white">3</span></span>
+																		</label>
+																	</div>
+																	<div class="col px-1">
+																		<label class="radio-inline w-100">
+																			<input class="berth" type="radio"
+																				name="berth" value="4">
+																			<span
+																				class="checkmark text-center w-100 py-2 bg-light-grey"><span
+																					class="h6 w-100 m-0 text-white">4</span></span>
+																		</label>
+																	</div>
+																	<div class="col px-1">
+																		<label class="radio-inline w-100">
+																			<input class="berth" type="radio"
+																				name="berth" value="5">
+																			<span
+																				class="checkmark text-center w-100 py-2 bg-light-grey"><span
+																					class="h6 w-100 m-0 text-white">5</span></span>
+																		</label>
+																	</div>
+																	<div class="col pl-1">
+																		<label class="radio-inline w-100">
+																			<input class="berth" type="radio"
+																				name="berth" value="6">
+																			<span
+																				class="checkmark text-center w-100 py-2 bg-light-grey"><span
+																					class="h6 w-100 m-0 text-white">6</span></span>
+																		</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
 
-				<article class="post">
-					<section id="os-banner" class="bg-lt-red os-banner-sec">
-						<div class="container-fluid no-gutters valign title-container">
-							<div class="tclr-wht mid title-wrap ">
-								<h1 class="fwBld">a1 motorhomes</h1>
+
+													<div class="form-group col-12 col-md-12 col-lg-4 m-0">
+														<div class="row pb-5">
+															<div class="col-12">
+																<p class="mx-0 mb-1 h6 text-center">Extra Details</p>
+															</div>
+															<div class="col-12 ">
+																<div class="row">
+																	<div
+																		class="col pr-1 pl-3 col-lg-4  pb-lg-5 pl-lg-3">
+																		<label class="checkbox-inline w-100">
+																			<input class="layout" type="checkbox"
+																				name="cfEndbed" value="1">
+																			<span
+																				class="checkmark text-center w-100 py-2 bg-light-grey">
+																				<p
+																					class="h6 w-100 m-0 text-white small-text">
+																					End</br>Bedroom</p>
+																			</span>
+																		</label>
+																	</div>
+																	<div class="col px-1 col-lg-4">
+																		<label class="checkbox-inline w-100">
+																			<input class="layout" type="checkbox"
+																				name="cfEndkitchen" value="1">
+																			<span
+																				class="checkmark text-center w-100 py-2 bg-light-grey">
+																				<p
+																					class="h6 w-100 m-0 text-white small-text">
+																					End</br>Kitchen</p>
+																			</span>
+																		</label>
+																	</div>
+																	<div class="col px-1 col-lg-4 pl-lg-1 pr-lg-3">
+																		<label class="checkbox-inline w-100">
+																			<input class="layout" type="checkbox"
+																				name="cfFixedbed" value="1">
+																			<span
+																				class="checkmark text-center w-100 py-2 bg-light-grey">
+																				<p
+																					class="h6 w-100 m-0 text-white small-text">
+																					Fixed</br>Bedroom</p>
+																			</span>
+																		</label>
+																	</div>
+																	<div class="col px-1 col-lg-6 pl-lg-3">
+																		<label class="checkbox-inline w-100">
+																			<input class="layout" type="checkbox"
+																				name="cfEndwash" value="1">
+																			<span
+																				class="checkmark text-center w-100 py-2 bg-light-grey">
+																				<p
+																					class="h6 w-100 m-0 text-white small-text">
+																					End</br>Washroom</p>
+																			</span>
+																		</label>
+																	</div>
+																	<div class="col pl-1 pr-3 col-lg-6 pr-lg-3">
+																		<label class="checkbox-inline w-100">
+																			<input class="layout" type="checkbox"
+																				name="cfTwinaxle" value="1">
+																			<span
+																				class="checkmark text-center w-100 py-2 bg-light-grey">
+																				<p
+																					class="h6 w-100 m-0 text-white small-text">
+																					Twin</br>Axle</p>
+																			</span>
+																		</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+
+									<div class="col-12 col-md-4 col-lg-3">
+										<div class="row">
+											<div class="col-12 mb-2">
+												<form id="search_caravans_stockno"
+													action="https://www.glossopcaravans.co.uk/caravan-stocknumber-search"
+													method="GET">
+													<div class="form-group m-0">
+														<input type="hidden" name="stock" value="caravans">
+														<input type="text" id="caravans_stock_number" name="stock_num"
+															class="form-control rounded-0" placeholder="Stock Number"
+															value="">
+													</div>
+												</form>
+											</div>
+											<div class="col-12 mb-2 text-center">
+												<div class="accordion" id="accordionTowsafe">
+
+
+													<button
+														class="w-100 text-center text-white bg-yellow py-2 m-0 h6 border-0"
+														type="button" data-toggle="collapse"
+														data-target="#collapseTowsafe" aria-expanded="false"
+														aria-controls="collapseOne">
+														What can my car tow ?
+													</button>
+
+
+													<div id="collapseTowsafe" class="collapse"
+														aria-labelledby="headingOne" data-parent="#accordionTowsafe">
+														<p class="small-text my-2">Enter your car reg and email below
+															and we
+															will match your car to our stock</p>
+
+														<form id="search_caravans_towform"
+															action="https://www.glossopcaravans.co.uk/caravan-towing-results/"
+															method="post">
+
+															<div class="reg1">
+																<div class="input-group mb-2">
+																	<input type="text" id="VRMinput" name="VRMinput"
+																		class="form-control reg-number rounded-0 "
+																		placeholder="REG HERE" />
+																</div>
+															</div>
+
+															<div class="emailTow mb-0">
+																<div class="input-group m-0">
+																	<input type="text" id="emailTow" name="email"
+																		class="form-control  rounded-0"
+																		placeholder="Enter a Valid Email" />
+																</div>
+															</div>
+
+															<div class="col-12" id="towsafeEmailCheck"
+																style="display:none; text-align: center; background-color: #d4201e; color: #fff;">
+																Please enter a valid email address</div>
+															<div class="col-12" id="towsafeRegCheck"
+																style="display:none; text-align: center; background-color: #d4201e; color: #fff;">
+																Please enter a valid car registration</div>
+														</form>
+
+													</div>
+												</div>
+											</div>
+											<div class="col-12  text-center">
+												<input id="search_caravans_submit" type="button"
+													class="bg-green h6 py-2 text-white w-100 border-0 text-center"
+													value="Search Stock" />
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="collapse col-12" id="search_motorhomes" data-parent="#accordionSearch">
+								<div class="row">
+
+									<div class="col-12 col-md-8 col-lg-9">
+										<div class="row">
+											<form name="caravan_finder" id="search_motorhomes_stock" class="col-12"
+												action="https://www.glossopcaravans.co.uk/motorhomes_search_results"
+												method="GET">
+												<div class="row">
+													<input type="hidden" name="stock" value="motorhomes">
+													<input type="hidden" name="finance" value="0"
+														id="priceMethodFinance">
+
+													<div class="form-group col-12 col-md-6 col-lg-4 m-0 pb-3 pb-md-1">
+														<ul class="nav nav-tabs border-0 w-100" id="myTab"
+															role="tablist">
+															<li class="nav-item col-6 text-center pl-0 pr-1"
+																role="presentation">
+																<a class="nav-link active border-0 text-white bg-light-grey rounded-0 h6 px-0 py-2"
+																	data-method="cash" title="Price" id="price-tab"
+																	data-toggle="tab"
+																	href="#parent-slider-motorhomes-cash" role="tab"
+																	aria-controls="parent-slider-motorhomes-cash"
+																	aria-selected="true">Price</a>
+															</li>
+															<li class="nav-item col-6 text-center pl-1 pr-0"
+																role="presentation">
+																<a class="nav-link border-0  text-white bg-light-grey rounded-0  h6 px-0 py-2"
+																	data-method="finance" title="Monthly Price"
+																	id="pm-tab" data-toggle="tab"
+																	href="#parent-slider-motorhomes-pm" role="tab"
+																	aria-controls="parent-slider-motorhomes-pm"
+																	aria-selected="false">Monthly Price</a>
+															</li>
+														</ul>
+
+														<!-- Tab panes -->
+														<div class="tab-content py-3 col-12 px-5">
+															<div class="tab-pane active"
+																id="parent-slider-motorhomes-cash" role="tabpanel"
+																aria-labelledby="price-tab">
+																<div class="row">
+																	<div class="col-12 price-slider-wrapper">
+
+																		<div class="layout-slider"
+																			id="parent-slider-cash">
+																			<input id="minSliderVal" type="hidden"
+																				name="" value="10000" />
+																			<input id="maxSliderVal" type="hidden"
+																				name="" value="100000" />
+																			<input id="slider-cash" type="slider"
+																				name="priceRange"
+																				value="10000;100000" />
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="tab-pane" id="parent-slider-motorhomes-pm"
+																role="tabpanel" aria-labelledby="profile-tab">
+																<div class="row">
+																	<div class="col-12 price-slider-wrapper">
+
+																		<div class="layout-slider"
+																			id="parent-slider-pm">
+																			<input id="minSliderValFinance"
+																				type="hidden" name="" value="0" />
+																			<input id="maxSliderValFinance"
+																				type="hidden" name="" value="800" />
+																			<input id="slider-pm" type="slider"
+																				name="priceFinRange" value="0;800" />
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="form-group  col-12 col-md-6 col-lg-4 m-0">
+														<div class="row pb-5">
+															<div class="col pr-1">
+																<label class="radio-inline w-100">
+																	<input class="cfType" type="radio" name="cfType"
+																		value="N">
+																	<span
+																		class="checkmark text-center w-100 py-2 bg-light-grey"><span
+																			class="h6 w-100 m-0 text-white">New</span></span>
+																</label>
+															</div>
+															<div class="col pl-1 pr-1">
+																<label class="radio-inline w-100">
+																	<input class="cfType" type="radio" name="cfType"
+																		value="U">
+																	<span
+																		class="checkmark text-center w-100 py-2 bg-light-grey"><span
+																			class="h6 w-100 m-0 text-white">Used</span></span>
+																</label>
+															</div>
+															<div class="col pl-1">
+																<label class="radio-inline w-100">
+																	<input class="cfType" type="radio" name="cfType"
+																		value="B" checked="checked">
+																	<span
+																		class="checkmark text-center w-100 py-2 bg-light-grey"><span
+																			class="h6 w-100 m-0 text-white">Both</span></span>
+																</label>
+															</div>
+														</div>
+
+
+														<div class="row pb-5">
+															<div class="col-12">
+																<p class="mx-0 mb-1 h6 text-center">Berths</p>
+															</div>
+															<div class="col-12 ">
+																<div class="row">
+																	<div class="col pr-1">
+																		<label class="radio-inline w-100">
+																			<input class="berth" type="radio"
+																				name="berth" value="Any"
+																				checked="checked">
+																			<span
+																				class="checkmark text-center w-100 py-2 bg-light-grey"><span
+																					class="h6 w-100 m-0 text-white">All</span></span>
+																		</label>
+																	</div>
+																	<div class="col px-1">
+																		<label class="radio-inline w-100">
+																			<input class="berth" type="radio"
+																				name="berth" value="2">
+																			<span
+																				class="checkmark text-center w-100 py-2 bg-light-grey"><span
+																					class="h6 w-100 m-0 text-white">2</span></span>
+																		</label>
+																	</div>
+																	<div class="col px-1">
+																		<label class="radio-inline w-100">
+																			<input class="berth" type="radio"
+																				name="berth" value="3">
+																			<span
+																				class="checkmark text-center w-100 py-2 bg-light-grey"><span
+																					class="h6 w-100 m-0 text-white">3</span></span>
+																		</label>
+																	</div>
+																	<div class="col px-1">
+																		<label class="radio-inline w-100">
+																			<input class="berth" type="radio"
+																				name="berth" value="4">
+																			<span
+																				class="checkmark text-center w-100 py-2 bg-light-grey"><span
+																					class="h6 w-100 m-0 text-white">4</span></span>
+																		</label>
+																	</div>
+																	<div class="col px-1">
+																		<label class="radio-inline w-100">
+																			<input class="berth" type="radio"
+																				name="berth" value="5">
+																			<span
+																				class="checkmark text-center w-100 py-2 bg-light-grey"><span
+																					class="h6 w-100 m-0 text-white">5</span></span>
+																		</label>
+																	</div>
+																	<div class="col pl-1">
+																		<label class="radio-inline w-100">
+																			<input class="berth" type="radio"
+																				name="berth" value="6">
+																			<span
+																				class="checkmark text-center w-100 py-2 bg-light-grey"><span
+																					class="h6 w-100 m-0 text-white">6</span></span>
+																		</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+
+													<div class="form-group col-12 col-md-12 col-lg-4 m-0">
+														<div class="row pb-5">
+															<div class="col-12">
+																<p class="mx-0 mb-1 h6 text-center">Extra Details</p>
+															</div>
+															<div class="col-12 ">
+																<div class="row">
+																	<div
+																		class="col pr-1 pl-3 col-lg-4  pb-lg-5 pl-lg-3">
+																		<label class="checkbox-inline w-100">
+																			<input class="layout" type="checkbox"
+																				name="cfEndkitchen" value="1">
+																			<span
+																				class="checkmark text-center w-100 py-2 bg-light-grey">
+																				<p
+																					class="h6 w-100 m-0 text-white small-text">
+																					End</br>Kitchen</p>
+																			</span>
+																		</label>
+																	</div>
+																	<div class="col px-1 col-lg-4">
+																		<label class="checkbox-inline w-100">
+																			<input class="layout" type="checkbox"
+																				name="cfFixedbed" value="1">
+																			<span
+																				class="checkmark text-center w-100 py-2 bg-light-grey">
+																				<p
+																					class="h6 w-100 m-0 text-white small-text">
+																					Fixed</br>Bedroom</p>
+																			</span>
+																		</label>
+																	</div>
+																	<div class="col px-1 col-lg-4 pl-lg-1 pr-lg-3">
+																		<label class="checkbox-inline w-100">
+																			<input class="layout" type="checkbox"
+																				name="cfEndwash" value="1">
+																			<span
+																				class="checkmark text-center w-100 py-2 bg-light-grey">
+																				<p
+																					class="h6 w-100 m-0 text-white small-text">
+																					End</br>Washroom</p>
+																			</span>
+																		</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+
+									<div class="col-12 col-md-4 col-lg-3">
+										<div class="row">
+											<div class="col-12 mb-2">
+												<form id="search_motorhomes_stockno"
+													action="https://www.glossopcaravans.co.uk/motorhome-stocknumber-search"
+													method="GET">
+													<div class="form-group m-0">
+														<input type="hidden" name="stock" value="motorhomes">
+														<input type="text" id="motorhomes_stock_number" name="stock_num"
+															class="form-control rounded-0" placeholder="Stock Number"
+															value="">
+													</div>
+												</form>
+											</div>
+											<div class="col-12  text-center">
+												<input id="search_motorhomes_submit" type="button"
+													class="bg-green h6 py-2 text-white w-100 border-0 text-center"
+													value="Search Stock" />
+											</div>
+										</div>
+									</div>
+
+								</div>
 							</div>
 						</div>
-					</section>
-					<section class="contents">
-						<div class="container">
+					</div>
+				</div>
 
-							<div class="the-content">
-								<p>As the UK's leading caravan dealer Glossop Garavans have over 500 caravans and a
-									huge
-									selection of a1 motorhomes & motorhomes upon our 7 acre caravan site, our
-									history and
-									reputation for selling caravans speaks for itself.</p>
+			</div>
+		</div>
 
-								<p>Glossop Caravans are caravan main dealers for; a1 motorhomes, Coachman caravans,
-									Buccaneer
-									caravans, Elddis caravans, Sterling caravans and Swift Caravans. Please view our
-									caravan
-									stocklist to look at all the caravan models available and our current stock of
-									new and
-									used
-									caravans. Glossop Caravans also have 4 different caravan manufacturer Special
-									Edition
-									Caravans offering a higher level of specification.
-								</p>
-								<p>We have a fantastic range of a1 motorhomes, used caravans/motorhomes as well as
-									new
-									Motorhomes from Bessacarr, Elddis, Mondial, Escape and Swift. Glossop Caravans
-									have one
-									of
-									the largest selection of new and used awnings, with a great selection on show
-									including
-									6
-									berth caravans in one of the largest UK showrooms.</p>
+		<div class="col-12">
+			<div class="row">
+				<div class="searchbox-footer w-100 text-center p-2 "></div>
+			</div>
+		</div>
+	</div>
+	<div id="primary" class="row-fluid">
+		<div id="content" role="main" class="span8 offset2">
 
-							</div><!-- the-content -->
+
+
+			<article class="post">
+				<section id="os-banner" class="bg-lt-red os-banner-sec">
+					<div class="container-fluid no-gutters valign title-container">
+						<div class="tclr-wht mid title-wrap ">
+							<h1 class="fwBld">a1 motorhomes</h1>
 						</div>
-					</section>
+					</div>
+				</section>
+				<section class="contents">
+					<div class="container">
 
-				</article>
+						<div class="the-content">
+							<p>As the UK's leading caravan dealer Glossop Garavans have over 500 caravans and a huge
+								selection of a1 motorhomes & motorhomes upon our 7 acre caravan site, our history and
+								reputation for selling caravans speaks for itself.</p>
+
+							<p>Glossop Caravans are caravan main dealers for; a1 motorhomes, Coachman caravans,
+								Buccaneer
+								caravans, Elddis caravans, Sterling caravans and Swift Caravans. Please view our caravan
+								stocklist to look at all the caravan models available and our current stock of new and
+								used
+								caravans. Glossop Caravans also have 4 different caravan manufacturer Special Edition
+								Caravans offering a higher level of specification.
+							</p>
+							<p>We have a fantastic range of a1 motorhomes, used caravans/motorhomes as well as new
+								Motorhomes from Bessacarr, Elddis, Mondial, Escape and Swift. Glossop Caravans have one
+								of
+								the largest selection of new and used awnings, with a great selection on show including
+								6
+								berth caravans in one of the largest UK showrooms.</p>
+
+						</div><!-- the-content -->
+					</div>
+				</section>
+
+			</article>
 
 
 
-			</div><!-- #content .site-content -->
-		</div><!-- #primary .content-area -->
-	</main>
+		</div><!-- #content .site-content -->
+	</div><!-- #primary .content-area -->
+</div>
+<script>
+	jQuery('.nav-link').click(function (e) { 
+		e.preventDefault();
+		
+	});
+</script>
