@@ -31,13 +31,12 @@ window.onload = function () {
         const mainFooter = document.querySelector('.main-footer');
         console.log('xxxx');
         if (mainContent && mainFooter) {
-            console.log('xxxx2');
             mainFooter.parentNode.insertBefore(mainContent, mainFooter);
         }
 
     }, 1000);
 
     setTimeout(function () {
-        document.body.classList.add('show-body');
+        jQuery('body').addClass('show-body')
     }, 2000);
 };
