@@ -26,10 +26,15 @@ function fetch___template(location, elementSelector) {
 fetch___template('_header_footer.php', '#insert-footer-header');
 
 window.onload = function () {
-    const mainContent = document.getElementById('main-content');
-    const mainFooter = document.querySelector('.main-footer');
-    console.log('xxxx');
-    if (mainContent && mainFooter) {
-        mainFooter.parentNode.insertBefore(mainContent, mainFooter);
-    }
+
+
+    setTimeout(function () {
+        const mainContent = document.getElementById('main-content');
+        const mainFooter = document.querySelector('.main-footer');
+        console.log('xxxx');
+        if (mainContent && mainFooter) {
+            console.log('xxxx2');
+            mainFooter.parentNode.insertBefore(mainContent, mainFooter);
+        }
+    }, 500);
 };
