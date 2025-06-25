@@ -13,7 +13,6 @@ function read_more() {
         jQuery('.read-more-content').removeClass('d-none');
         jQuery(this).addClass('d-none');
         e.preventDefault();
-
     });
 }
 
