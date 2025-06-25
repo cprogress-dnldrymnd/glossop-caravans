@@ -703,8 +703,7 @@
 	src="https://newglossopacaravans.theprogressteam.co.uk/wp-content/themes/glossop-caravans/assets/vendors/bootstrap/dist/js/bootstrap.min.js?ver=6.8.1"
 	id="bootstrap-js"></script>
 <script>
-	jQuery('.nav-link').click(function (e) {
-		console.log('xx');
-		e.preventDefault();
-	});
+	setTimeout(function () {
+		jQuery('body').addClass('show-body')
+	}, 1100);
 </script>

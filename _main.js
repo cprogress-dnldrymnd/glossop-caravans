@@ -36,7 +36,5 @@ window.onload = function () {
 
     }, 1000);
 
-    setTimeout(function () {
-        jQuery('body').addClass('show-body')
-    }, 1100);
+
 };
