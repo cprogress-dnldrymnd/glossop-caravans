@@ -23,5 +23,8 @@ function fetch___template(location, elementSelector) {
             }
         });
 }
-fetch___template('_header.php', '#insert-header');
-fetch___template('_footer.php', '#insert-footer');
+fetch___template('_header_footer.php', '#insert-footer-header');
+
+jQuery(document).ready(function () {
+    jQuery('#main-content').insertBefore('.main-footer');
+});
