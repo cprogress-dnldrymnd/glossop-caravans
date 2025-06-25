@@ -34,5 +34,10 @@ window.onload = function () {
             console.log('xxxx2');
             mainFooter.parentNode.insertBefore(mainContent, mainFooter);
         }
+
     }, 1000);
+
+    setTimeout(function () {
+        document.body.classList.add('show-body');
+    }, 2000);
 };
