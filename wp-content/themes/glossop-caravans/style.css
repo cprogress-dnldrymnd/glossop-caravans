@@ -11937,10 +11937,7 @@ span.icons {
   gap: 0 !important; }
 
 :where(.is-layout-grid) {
-  gap: 40px; }
-  @media screen and (max-width: 767px) {
-    :where(.is-layout-grid) {
-      gap: 20px; } }
+  gap: 20px; }
   @media screen and (max-width: 575px) {
     :where(.is-layout-grid) {
       gap: 10px; } }

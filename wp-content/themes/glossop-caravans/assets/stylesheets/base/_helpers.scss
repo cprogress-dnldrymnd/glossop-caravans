@@ -216,10 +216,8 @@
 }
 
 :where(.is-layout-grid) {
-    gap: 40px;
-    @include responsive(xs) {
-        gap: 20px;
-    }
+    gap: 20px;
+ 
     @include responsive(mobile) {
         gap: 10px;
     }
