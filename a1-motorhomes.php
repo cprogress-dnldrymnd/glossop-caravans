@@ -56,3 +56,8 @@ get_header('static-pages');
 <?php
 get_footer('static-pages');
 ?>
+<script>
+	jQuery(document).ready(function() {
+		jQuery('html').removeClass('admin-bar');
+	});
+</script>
