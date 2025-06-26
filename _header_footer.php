@@ -1,4 +1,4 @@
 <?php
 require_once("./wp-load.php");
-get_header();
-get_footer();
+get_header('static-pages');
+get_footer('static-pages');
