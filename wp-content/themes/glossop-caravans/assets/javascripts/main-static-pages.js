@@ -33,7 +33,7 @@ fetch___template('_header_footer.php', '#insert-footer-header');
 function insert_elements() {
     setTimeout(function () {
         jQuery('.wpcf7').appendTo('#insertForm');
-        jQuery('#main-content').appendTo('#main-content-insert');
+        jQuery('#main-content').insertBefore('#main-content-insert');
     }, 1500);
     setTimeout(function () {
         jQuery('body').addClass('show-body');
