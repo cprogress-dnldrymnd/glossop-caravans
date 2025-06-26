@@ -29,7 +29,6 @@ window.onload = function () {
     setTimeout(function () {
         const mainContent = document.getElementById('main-content');
         const mainFooter = document.querySelector('#main-content-insert');
-        console.log('xxxx');
         if (mainContent && mainFooter) {
             mainFooter.parentNode.insertBefore(mainContent, mainFooter);
         }
