@@ -11301,6 +11301,9 @@ img {
         color: var(--text-color);
         background-color: var(--bs-white);
         border-color: var(--bs-black); }
+      .nav-tabs.nav-tabs-style-2 .nav-link:hover, .nav-tabs.nav-tabs-style-2 .nav-link:active, .nav-tabs.nav-tabs-style-2 .nav-link:focus {
+        color: var(--text-color);
+        border-color: var(--text-color); }
   .nav-tabs.swiper-wrapper {
     gap: 0;
     flex-wrap: nowrap; }

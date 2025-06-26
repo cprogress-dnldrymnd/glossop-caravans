@@ -235,6 +235,10 @@ img {
                 background-color: var(--bs-white);
                 border-color: var(--bs-black);
             }
+            @include on-event {
+                color: var(--text-color);
+                border-color: var(--text-color);
+            }
         }
     }
     &.swiper-wrapper {
