@@ -11750,11 +11750,14 @@ span.icons {
   z-index: 9999; }
 
 .wp-block-button__link.wp-block-button__link.has-background.has-background:hover, .wp-block-button__link.wp-block-button__link.has-background.has-background:active, .wp-block-button__link.wp-block-button__link.has-background.has-background:focus {
+  background-color: var(--text-color);
+  color: var(--bs-white);
+  border-color: var(--bs-white) !important; }
+
+.wp-block-button-hover-bordered .wp-block-button__link.wp-block-button__link:hover, .wp-block-button-hover-bordered .wp-block-button__link.wp-block-button__link:active, .wp-block-button-hover-bordered .wp-block-button__link.wp-block-button__link:focus {
   background-color: transparent !important;
   color: currentColor !important;
   border-color: currentColor !important; }
-.wp-block-button__link.wp-block-button__link.has-orange-color-background-color {
-  border: 1px solid var(--orange-color); }
 
 .container {
   max-width: 1320px !important; }
@@ -11807,6 +11810,9 @@ span.icons {
 
 .text-hover-yellow-block-btn.text-hover-yellow-block-btn.text-hover-yellow-block-btn .wp-element-button:hover, .text-hover-yellow-block-btn.text-hover-yellow-block-btn.text-hover-yellow-block-btn .wp-element-button:active, .text-hover-yellow-block-btn.text-hover-yellow-block-btn.text-hover-yellow-block-btn .wp-element-button:focus {
   color: var(--yellow-color) !important; }
+
+:root :where(.wp-block-button.is-style-outline--2 .wp-block-button__link) {
+  border-width: 1px !important; }
 
 .full-image img {
   width: 100%; }
