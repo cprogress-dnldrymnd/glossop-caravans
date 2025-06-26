@@ -43,4 +43,3 @@
 
         get_template_part('template-parts/header/search-stock');
         ?>
-        static 
