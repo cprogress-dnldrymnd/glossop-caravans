@@ -11749,8 +11749,8 @@ span.icons {
 .offcanvas-backdrop.offcanvas-backdrop {
   z-index: 9999; }
 
-.wp-block-button__link.wp-block-button__link.has-background:hover, .wp-block-button__link.wp-block-button__link.has-background:active, .wp-block-button__link.wp-block-button__link.has-background:focus {
-  background-color: transparent;
+.wp-block-button__link.wp-block-button__link.has-background.has-background:hover, .wp-block-button__link.wp-block-button__link.has-background.has-background:active, .wp-block-button__link.wp-block-button__link.has-background.has-background:focus {
+  background-color: transparent !important;
   color: currentColor;
   border-color: currentColor; }
 
