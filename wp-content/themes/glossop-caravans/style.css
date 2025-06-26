@@ -11247,6 +11247,10 @@ img {
   --bs-btn-disabled-color: var(--bs-white);
   --bs-btn-disabled-bg: var(--yellow-color);
   --bs-btn-disabled-border-color: var(--yellow-color); }
+  .btn-yellow:hover, .btn-yellow:active, .btn-yellow:focus {
+    background-color: var(--text-color) !important;
+    color: var(--bs-white) !important;
+    border-color: var(--bs-white) !important; }
 
 .btn-blue {
   --bs-btn-color: var(--bs-white);
