@@ -47,7 +47,7 @@
         <?php } ?>
         <?= listing__price() ?>
         <div class="listing-grid-item__button mt-3">
-            <a href="https://newglossopacaravans.theprogressteam.co.uk/listing-inner" class="btn btn-primary w-100 btn-lg btn-hover-bordered">
+            <a href="https://newglossopacaravans.theprogressteam.co.uk/listing-inner" class="btn btn-primary w-100 btn-lg btn-hover-bordered text-hover-orange">
                 View deal
             </a>
         </div>
