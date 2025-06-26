@@ -11263,6 +11263,10 @@ img {
   --bs-btn-disabled-color: var(--bs-white);
   --bs-btn-disabled-bg: var(--blue-color);
   --bs-btn-disabled-border-color: var(--blue-color); }
+  .btn-blue:hover, .btn-blue:active, .btn-blue:focus {
+    background-color: var(--text-color) !important;
+    color: var(--bs-white) !important;
+    border-color: var(--bs-white) !important; }
 
 .nav-tabs {
   --bs-nav-link-font-size: inherit;

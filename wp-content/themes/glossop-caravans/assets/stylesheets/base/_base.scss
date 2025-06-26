@@ -166,6 +166,11 @@ img {
     --bs-btn-disabled-color: var(--bs-white);
     --bs-btn-disabled-bg: var(--yellow-color);
     --bs-btn-disabled-border-color: var(--yellow-color);
+    @include on-event {
+        background-color: var(--text-color) !important;
+        color: var(--bs-white) !important;
+        border-color: var(--bs-white) !important;
+    }
 }
 
 .btn-blue {
@@ -183,6 +188,11 @@ img {
     --bs-btn-disabled-color: var(--bs-white);
     --bs-btn-disabled-bg: var(--blue-color);
     --bs-btn-disabled-border-color: var(--blue-color);
+    @include on-event {
+        background-color: var(--text-color) !important;
+        color: var(--bs-white) !important;
+        border-color: var(--bs-white) !important;
+    }
 }
 
 .nav-tabs {
