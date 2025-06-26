@@ -12900,7 +12900,8 @@ h5, .h5 {
   max-width: 140px; }
 
 .static-page-content {
-  padding-bottom: var(--sm-spacing); }
+  padding-top: var(--md-spacing);
+  padding-bottom: var(--md-spacing); }
 
 /*-----------------------------------------------------------------------------------*/
 /* Plugins
