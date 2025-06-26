@@ -11745,13 +11745,12 @@ span.icons {
 .advance-search {
   margin-bottom: 8px; }
 
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1320px; } }
-.container.small-container {
-  max-width: 1000px; }
-.container.medium-container {
-  max-width: 1120px; }
+.container {
+  max-width: 1320px !important; }
+  .container.small-container {
+    max-width: 1000px; }
+  .container.medium-container {
+    max-width: 1120px; }
 
 .background-white {
   background-color: var(--white-color); }
