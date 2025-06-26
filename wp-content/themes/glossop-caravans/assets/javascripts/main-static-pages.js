@@ -1,9 +1,14 @@
 jQuery(document).ready(function () {
-    swiper_sliders();x
+    show_body();
+    swiper_sliders();
     mega_menu();
     search_stock();
 });
-
+function show_body() {
+    setTimeout(function () {
+        jQuery('body').addClass('show-body');
+    }, 1300);
+}
 function search_stock() {
     jQuery('.edit-stock-filter').click(function (e) {
         jQuery(this).parents('.search-stock-mobile').toggleClass('filter--active');
@@ -12,22 +17,26 @@ function search_stock() {
     });
 }
 function mega_submenu() {
-    jQuery('#Motorhomes-Submenu').appendTo('.Motorhomes-Submenu');
-    jQuery('#Caravans-Submenu').appendTo('.Caravans-Submenu');
-    jQuery('#Export-Submenu').appendTo('.Export-Submenu');
+    setTimeout(function () {
 
-    let highestHeight = 0;
-    let highestElement = null;
+        jQuery('#Motorhomes-Submenu').appendTo('.Motorhomes-Submenu');
+        jQuery('#Caravans-Submenu').appendTo('.Caravans-Submenu');
+        jQuery('#Export-Submenu').appendTo('.Export-Submenu');
 
-    jQuery('.custom-submenu').each(function () {
-        const currentHeight = jQuery(this).outerHeight(); // Use .outerHeight() to include padding and border
+        let highestHeight = 0;
+        let highestElement = null;
 
-        if (currentHeight > highestHeight) {
-            highestHeight = currentHeight;
-            highestElement = jQuery(this).outerHeight();
-        }
-    });
-    jQuery('body').css('--mega-menu-height', highestElement + 'px');
+        jQuery('.custom-submenu').each(function () {
+            const currentHeight = jQuery(this).outerHeight(); // Use .outerHeight() to include padding and border
+
+            if (currentHeight > highestHeight) {
+                highestHeight = currentHeight;
+                highestElement = jQuery(this).outerHeight();
+            }
+        });
+        jQuery('body').css('--mega-menu-height', highestElement + 'px');
+    }, 2300);
+
 }
 function mega_menu() {
     if (jQuery('.static-page-content').length > 0) {

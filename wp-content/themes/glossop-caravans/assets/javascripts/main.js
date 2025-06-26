@@ -47,14 +47,7 @@ function mega_submenu() {
     jQuery('body').css('--mega-menu-height', highestElement + 'px');
 }
 function mega_menu() {
-    if (jQuery('.static-page-content').length > 0) {
-        mega_submenu();
-    } else {
-        setTimeout(function () {
-            mega_submenu();
-        }, 1000);
-    }
-
+    mega_submenu();
 
     $height = jQuery('#main-header').outerHeight();
     $main_header_inner_height = jQuery('#main-header > div').outerHeight();
