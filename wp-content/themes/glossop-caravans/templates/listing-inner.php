@@ -261,7 +261,7 @@ global $listing_fields;
                     <p>Interested in this caravan? Reserve online and temporarily remove from sale</p>
                   </div>
                   <div class="button-box">
-                    <a class="btn btn-primary w-100" data-bs-toggle="offcanvas" href="#offcanvasReserveForm" role="button" aria-controls="offcanvasReserveForm">Reserve now</a>
+                    <a class="btn btn-primary btn-hover-bordered text-hover-orange  w-100" data-bs-toggle="offcanvas" href="#offcanvasReserveForm" role="button" aria-controls="offcanvasReserveForm">Reserve now</a>
                   </div>
                 </div>
               </div>
