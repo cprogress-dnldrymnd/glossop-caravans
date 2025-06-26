@@ -11379,8 +11379,12 @@ img {
     padding-left: 0;
     padding-right: 0; } }
 .seach-stock-holder .tab-cotnent-holder {
-  padding-top: 25px;
-  padding-bottom: 25px; }
+  padding-top: 18px;
+  padding-bottom: 18px; }
+.seach-stock-holder .nav-tabs .nav-item .nav-link:hover, .seach-stock-holder .nav-tabs .nav-item .nav-link:active, .seach-stock-holder .nav-tabs .nav-item .nav-link:focus {
+  background-color: var(--green-color);
+  color: var(--bs-white);
+  border-color: var(--green-color); }
 @media screen and (max-width: 991px) {
   .seach-stock-holder .nav-tabs .nav-item .nav-link {
     width: 100%;
