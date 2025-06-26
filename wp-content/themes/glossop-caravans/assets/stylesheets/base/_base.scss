@@ -864,8 +864,8 @@ span.icons {
 .wp-block-button__link.wp-block-button__link {
     &.has-background.has-background {
         @include on-event {
-            background-color: var(--text-color);
-            color: var(--bs-white);
+            background-color: var(--text-color) !important;
+            color: var(--bs-white) !important;
             border-color: var(--bs-white) !important;
         }
     }
@@ -873,10 +873,13 @@ span.icons {
 
 .wp-block-button-hover-bordered.wp-block-button-hover-bordered {
     .wp-block-button__link.wp-block-button__link {
+        &.has-orange-color-background-color {
+            border: 1px solid var(--orange-color) !important;
+        }
         @include on-event {
             background-color: transparent !important;
             color: var(--bs-white) !important;
-            border-color: currentColor !important;
+            border-color: var(--bs-white) !important;
         }
     }
 }
