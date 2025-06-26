@@ -12,6 +12,7 @@
 
 
 ?>
+<div id="main-content-insert"></div>
 <?php echo do_shortcode('[template template_id=2540]'); ?>
 <footer class="main-footer">
     <?php echo do_shortcode('[template template_id=136]'); ?>

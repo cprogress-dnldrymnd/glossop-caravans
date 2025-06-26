@@ -28,12 +28,11 @@ fetch___template('_header_footer.php', '#insert-footer-header');
 window.onload = function () {
     setTimeout(function () {
         const mainContent = document.getElementById('main-content');
-        const mainFooter = document.querySelector('.main-footer');
+        const mainFooter = document.querySelector('#main-content-insert');
         console.log('xxxx');
         if (mainContent && mainFooter) {
             mainFooter.parentNode.insertBefore(mainContent, mainFooter);
         }
-
     }, 1000);
 
 
