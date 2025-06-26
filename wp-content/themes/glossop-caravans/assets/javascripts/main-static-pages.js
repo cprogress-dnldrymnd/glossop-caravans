@@ -1,11 +1,39 @@
 jQuery(document).ready(function () {
-    show_body();
+    insert_elements();
     mega_menu();
     search_stock();
 });
-function show_body() {
+function fetch___template(location, elementSelector) {
+    fetch(location) // Path to the HTML file you want to insert
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.text();
+        })
+        .then(data => {
+            const targetElement = document.querySelector(elementSelector);
+            if (targetElement) {
+                targetElement.innerHTML = data;
+            } else {
+                console.warn(`Element with selector "${elementSelector}" not found.`);
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching or inserting the HTML:', error);
+            const targetElement = document.querySelector(elementSelector);
+            if (targetElement) {
+                targetElement.innerHTML = '<p>Error loading content.</p>';
+            }
+        });
+}
+fetch___template('_header_footer.php', '#insert-footer-header');
+
+
+function insert_elements() {
     setTimeout(function () {
         jQuery('.wpcf7').appendTo('#insertForm');
+        jQuery('#main-content').appendTo('#main-content-insert');
     }, 1500);
     setTimeout(function () {
         jQuery('body').addClass('show-body');
