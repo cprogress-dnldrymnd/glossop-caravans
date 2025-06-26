@@ -71,7 +71,7 @@ function mega_submenu() {
 function mega_menu() {
     setTimeout(function () {
         mega_submenu();
-    }, 1000);
+    }, 2000);
 
     $height = jQuery('#main-header').outerHeight();
     $main_header_inner_height = jQuery('#main-header > div').outerHeight();
