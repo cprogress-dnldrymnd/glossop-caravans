@@ -11751,7 +11751,7 @@ span.icons {
 
 .wp-block-button__link.wp-block-button__link.has-background.has-background:hover, .wp-block-button__link.wp-block-button__link.has-background.has-background:active, .wp-block-button__link.wp-block-button__link.has-background.has-background:focus {
   background-color: transparent !important;
-  color: currentColor;
+  color: currentColor !important;
   border-color: currentColor !important; }
 .wp-block-button__link.wp-block-button__link.has-orange-color-background-color {
   border: 1px solid var(--orange-color); }

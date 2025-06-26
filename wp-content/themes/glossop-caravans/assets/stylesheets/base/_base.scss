@@ -865,7 +865,7 @@ span.icons {
     &.has-background.has-background {
         @include on-event {
             background-color: transparent !important;
-            color: currentColor;
+            color: currentColor !important;
             border-color: currentColor !important;
         }
     }
