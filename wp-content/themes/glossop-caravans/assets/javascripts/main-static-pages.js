@@ -6,6 +6,7 @@ jQuery(document).ready(function () {
 function show_body() {
     setTimeout(function () {
         jQuery('body').addClass('show-body');
+        jQuery('.wpcf7').appendTo('#insertForm');
     }, 1300);
 }
 function search_stock() {
