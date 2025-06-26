@@ -4,7 +4,7 @@ jQuery(document).ready(function () {
     search_stock();
 });
 function show_body() {
-      setTimeout(function () {
+    setTimeout(function () {
         jQuery('.wpcf7').appendTo('#insertForm');
     }, 1500);
     setTimeout(function () {
@@ -41,14 +41,9 @@ function mega_submenu() {
 
 }
 function mega_menu() {
-    if (jQuery('.static-page-content').length > 0) {
+    setTimeout(function () {
         mega_submenu();
-    } else {
-        setTimeout(function () {
-            mega_submenu();
-        }, 1000);
-    }
-
+    }, 1000);
 
     $height = jQuery('#main-header').outerHeight();
     $main_header_inner_height = jQuery('#main-header > div').outerHeight();
