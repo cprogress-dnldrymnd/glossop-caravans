@@ -32,7 +32,7 @@ window.onload = function () {
         if (mainContent && mainFooter) {
             mainFooter.parentNode.insertBefore(mainContent, mainFooter);
         }
-    }, 1000);
+    }, 1300);
 
 
 };
