@@ -2,7 +2,6 @@ function fetch___template(location, elementSelector) {
     fetch(location) // Path to the HTML file you want to insert
         .then(response => {
             if (!response.ok) {
-                // Throw an error if the response status is not OK (e.g., 404, 500)
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             return response.text();
