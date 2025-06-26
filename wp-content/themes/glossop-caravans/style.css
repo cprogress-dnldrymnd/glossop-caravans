@@ -11385,39 +11385,37 @@ img {
       --bs-gutter-x: 12px;
       --bs-gutter-y: 12px; } }
 
-.seach-stock-holder {
-  -webkit-box-shadow: "\a         0 1px 1px #0000001a,\a         0 2px 2px #0000000d,\a         0 3px 3px rgba(0, 0, 0, 0.033),\a         0 4px 4px rgba(0, 0, 0, 0.025),\a         0 5px 5px #00000005,\a         0 6px 6px rgba(0, 0, 0, 0.017),\a         0 7px 7px rgba(0, 0, 0, 0.014),\a         0 8px 8px rgba(0, 0, 0, 0.013)";
-  -moz-box-shadow: "\a         0 1px 1px #0000001a,\a         0 2px 2px #0000000d,\a         0 3px 3px rgba(0, 0, 0, 0.033),\a         0 4px 4px rgba(0, 0, 0, 0.025),\a         0 5px 5px #00000005,\a         0 6px 6px rgba(0, 0, 0, 0.017),\a         0 7px 7px rgba(0, 0, 0, 0.014),\a         0 8px 8px rgba(0, 0, 0, 0.013)";
-  box-shadow: "\a         0 1px 1px #0000001a,\a         0 2px 2px #0000000d,\a         0 3px 3px rgba(0, 0, 0, 0.033),\a         0 4px 4px rgba(0, 0, 0, 0.025),\a         0 5px 5px #00000005,\a         0 6px 6px rgba(0, 0, 0, 0.017),\a         0 7px 7px rgba(0, 0, 0, 0.014),\a         0 8px 8px rgba(0, 0, 0, 0.013)"; }
-  .seach-stock-holder label {
+.seach-stock-holde r {
+  box-shadow: 0 1px 1px #0000001a, 0 2px 2px #0000000d, 0 3px 3px rgba(0, 0, 0, 0.033), 0 4px 4px rgba(0, 0, 0, 0.025), 0 5px 5px #00000005, 0 6px 6px rgba(0, 0, 0, 0.017), 0 7px 7px rgba(0, 0, 0, 0.014), 0 8px 8px rgba(0, 0, 0, 0.013); }
+  .seach-stock-holde r label {
     color: var(--bs-white); }
   @media screen and (max-width: 991px) {
-    .seach-stock-holder .tab-nav-holder .container {
+    .seach-stock-holde r .tab-nav-holder .container {
       max-width: 100%;
       padding-left: 0;
       padding-right: 0; } }
-  .seach-stock-holder .tab-cotnent-holder {
+  .seach-stock-holde r .tab-cotnent-holder {
     padding-top: 18px;
     padding-bottom: 18px; }
-  .seach-stock-holder .nav-tabs .nav-item .nav-link:hover, .seach-stock-holder .nav-tabs .nav-item .nav-link:active, .seach-stock-holder .nav-tabs .nav-item .nav-link:focus {
+  .seach-stock-holde r .nav-tabs .nav-item .nav-link:hover, .seach-stock-holde r .nav-tabs .nav-item .nav-link:active, .seach-stock-holde r .nav-tabs .nav-item .nav-link:focus {
     background-color: var(--green-color);
     color: var(--bs-white);
     border-color: var(--green-color); }
   @media screen and (max-width: 991px) {
-    .seach-stock-holder .nav-tabs .nav-item .nav-link {
+    .seach-stock-holde r .nav-tabs .nav-item .nav-link {
       width: 100%;
       padding-left: 10px;
       padding-right: 10px; } }
   @media screen and (max-width: 991px) {
-    .seach-stock-holder .nav-tabs .nav-item {
+    .seach-stock-holde r .nav-tabs .nav-item {
       flex: 1 0 0%; } }
   @media screen and (max-width: 991px) {
-    .seach-stock-holder .nav-tabs {
+    .seach-stock-holde r .nav-tabs {
       flex-wrap: nowrap !important; } }
   @media screen and (max-width: 991px) {
-    .seach-stock-holder .search-stock-mobile:not(.filter--active) + .tab-nav-holder {
+    .seach-stock-holde r .search-stock-mobile:not(.filter--active) + .tab-nav-holder {
       display: none; }
-      .seach-stock-holder .search-stock-mobile:not(.filter--active) + .tab-nav-holder + .tab-cotnent-holder {
+      .seach-stock-holde r .search-stock-mobile:not(.filter--active) + .tab-nav-holder + .tab-cotnent-holder {
         display: none; } }
 
 .image-style {
