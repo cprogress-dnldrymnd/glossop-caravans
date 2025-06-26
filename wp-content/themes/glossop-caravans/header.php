@@ -26,6 +26,11 @@
 
 <body <?php body_class(); ?>>
     <main id="main" class="main-content" role="main">
+        <?php
+        if (is_front_page()) {
+            echo do_shortcode('[template template_id=2529]');
+        }
+        ?>
         <header id="masthead" class="site-header" role="banner">
             <?php
             echo do_shortcode('[template template_id=167]');
