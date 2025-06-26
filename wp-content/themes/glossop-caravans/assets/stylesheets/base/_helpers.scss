@@ -58,6 +58,13 @@
         color: var(--orange-color) !important;
     }
 }
+.text-hover-orange-block-btn {
+    .wp-element-button {
+        @include on-event {
+            color: var(--orange-color) !important;
+        }
+    }
+}
 
 .full-image {
     img {

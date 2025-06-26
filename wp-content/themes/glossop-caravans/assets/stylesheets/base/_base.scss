@@ -862,9 +862,11 @@ span.icons {
 }
 
 .wp-block-button__link.wp-block-button__link {
-    &.has-orange-color-background-color {
-        background-color: transparent;
-        color: currentColor;
-        border-color: currentColor;
+    &.has-background {
+        @include on-event {
+            background-color: transparent;
+            color: currentColor;
+            border-color: currentColor;
+        }
     }
 }

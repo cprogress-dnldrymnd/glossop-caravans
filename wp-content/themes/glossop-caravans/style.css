@@ -11749,10 +11749,10 @@ span.icons {
 .offcanvas-backdrop.offcanvas-backdrop {
   z-index: 9999; }
 
-.wp-block-button__link.wp-block-button__link.has-orange-color-background-color {
+.wp-block-button__link.wp-block-button__link.has-background:hover, .wp-block-button__link.wp-block-button__link.has-background:active, .wp-block-button__link.wp-block-button__link.has-background:focus {
   background-color: transparent;
-  color: var(--orange-color);
-  border-color: var(--orange-color); }
+  color: currentColor;
+  border-color: currentColor; }
 
 .container {
   max-width: 1320px !important; }
@@ -11798,6 +11798,9 @@ span.icons {
   background-color: var(--orange-color-3); }
 
 .text-hover-orange:hover, .text-hover-orange:active, .text-hover-orange:focus {
+  color: var(--orange-color) !important; }
+
+.text-hover-orange-block-btn .wp-element-button:hover, .text-hover-orange-block-btn .wp-element-button:active, .text-hover-orange-block-btn .wp-element-button:focus {
   color: var(--orange-color) !important; }
 
 .full-image img {
