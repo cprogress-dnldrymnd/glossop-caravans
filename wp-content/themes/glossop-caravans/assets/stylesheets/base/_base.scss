@@ -875,7 +875,7 @@ span.icons {
     .wp-block-button__link.wp-block-button__link {
         @include on-event {
             background-color: transparent !important;
-            color: currentColor !important;
+            color: var(--bs-white) !important;
             border-color: currentColor !important;
         }
     }

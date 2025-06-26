@@ -11756,7 +11756,7 @@ span.icons {
 
 .wp-block-button-hover-bordered.wp-block-button-hover-bordered .wp-block-button__link.wp-block-button__link:hover, .wp-block-button-hover-bordered.wp-block-button-hover-bordered .wp-block-button__link.wp-block-button__link:active, .wp-block-button-hover-bordered.wp-block-button-hover-bordered .wp-block-button__link.wp-block-button__link:focus {
   background-color: transparent !important;
-  color: currentColor !important;
+  color: var(--bs-white) !important;
   border-color: currentColor !important; }
 
 .container {
