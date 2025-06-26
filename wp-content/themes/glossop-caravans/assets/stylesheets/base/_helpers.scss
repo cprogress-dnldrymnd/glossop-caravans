@@ -53,6 +53,12 @@
     background-color: var(--orange-color-3);
 }
 
+.text-hover-orange {
+    @include on-event {
+        color: var(--orange-color) !important;
+    }
+}
+
 .full-image {
     img {
         width: 100%;

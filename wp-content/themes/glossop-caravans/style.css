@@ -11797,6 +11797,9 @@ span.icons {
 .background-orange-color-3 {
   background-color: var(--orange-color-3); }
 
+.text-hover-orange:hover, .text-hover-orange:active, .text-hover-orange:focus {
+  color: var(--orange-color) !important; }
+
 .full-image img {
   width: 100%; }
 

@@ -864,7 +864,7 @@ span.icons {
 .wp-block-button__link.wp-block-button__link {
     &.has-orange-color-background-color {
         background-color: transparent;
-        color: var(--orange-color);
-        border-color: var(--orange-color);
+        color: currentColor;
+        border-color: currentColor;
     }
 }
