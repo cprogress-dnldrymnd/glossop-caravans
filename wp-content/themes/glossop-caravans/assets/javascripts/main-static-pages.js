@@ -1,6 +1,5 @@
 jQuery(document).ready(function () {
     show_body();
-    swiper_sliders();
     mega_menu();
     search_stock();
 });
