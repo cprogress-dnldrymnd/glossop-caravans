@@ -214,7 +214,10 @@
 .col-no-gap {
     gap: 0 !important;
 }
-
+.py-15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 :where(.is-layout-grid) {
     gap: 20px;
  
