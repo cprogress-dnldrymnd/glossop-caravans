@@ -2,7 +2,11 @@
 require_once("./wp-load.php");
 get_header('static-pages');
 ?>
-
+<style>
+	.glossop-caravans.glossop-caravans {
+		margin-top: 0 !important;
+	}
+</style>
 <div id="main-content" class="static-page-content">
 	<div id="primary" class="row-fluid">
 		<div id="content" role="main" class="span8 offset2">
