@@ -11802,10 +11802,10 @@ span.icons {
 .text-hover-orange:hover, .text-hover-orange:active, .text-hover-orange:focus {
   color: var(--orange-color) !important; }
 
-.text-hover-orange-block-btn .wp-element-button:hover, .text-hover-orange-block-btn .wp-element-button:active, .text-hover-orange-block-btn .wp-element-button:focus {
+.text-hover-orange-block-btn.text-hover-orange-block-btn.text-hover-orange-block-btn .wp-element-button:hover, .text-hover-orange-block-btn.text-hover-orange-block-btn.text-hover-orange-block-btn .wp-element-button:active, .text-hover-orange-block-btn.text-hover-orange-block-btn.text-hover-orange-block-btn .wp-element-button:focus {
   color: var(--orange-color) !important; }
 
-.text-hover-yellow-block-btn.text-hover-yellow-block-btn .wp-element-button:hover, .text-hover-yellow-block-btn.text-hover-yellow-block-btn .wp-element-button:active, .text-hover-yellow-block-btn.text-hover-yellow-block-btn .wp-element-button:focus {
+.text-hover-yellow-block-btn.text-hover-yellow-block-btn.text-hover-yellow-block-btn .wp-element-button:hover, .text-hover-yellow-block-btn.text-hover-yellow-block-btn.text-hover-yellow-block-btn .wp-element-button:active, .text-hover-yellow-block-btn.text-hover-yellow-block-btn.text-hover-yellow-block-btn .wp-element-button:focus {
   color: var(--yellow-color) !important; }
 
 .full-image img {

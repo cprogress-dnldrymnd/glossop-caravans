@@ -73,7 +73,9 @@
         }
     }
 }
-
+:root :where(.wp-block-button.is-style-outline--2 .wp-block-button__link)  {
+    border-width: 1px !important;
+}
 .full-image {
     img {
         width: 100%;
