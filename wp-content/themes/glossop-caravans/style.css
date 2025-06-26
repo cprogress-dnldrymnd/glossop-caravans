@@ -12793,11 +12793,14 @@ h5, .h5 {
     gap: 18px;
     width: 100%;
     border-radius: 5px;
-    height: 100%; }
-    @media screen and (max-width: 575px) {
-      .listing-inner-holder .listing-inner--tabs .nav-tabs .nav-link svg {
-        width: 20px;
-        height: 20px; } }
+    height: 100%;
+    border: 1px solid var(--lightgray-color-2); }
+    .listing-inner-holder .listing-inner--tabs .nav-tabs .nav-link svg {
+      height: 32px; }
+      @media screen and (max-width: 575px) {
+        .listing-inner-holder .listing-inner--tabs .nav-tabs .nav-link svg {
+          width: 20px;
+          height: 20px; } }
     .listing-inner-holder .listing-inner--tabs .nav-tabs .nav-link.active {
       background-color: var(--dark-color);
       color: var(--bs-white); }
@@ -12807,6 +12810,8 @@ h5, .h5 {
     @media screen and (max-width: 575px) {
       .listing-inner-holder .listing-inner--tabs .nav-tabs .nav-link {
         font-size: 10px; } }
+    .listing-inner-holder .listing-inner--tabs .nav-tabs .nav-link:hover, .listing-inner-holder .listing-inner--tabs .nav-tabs .nav-link:active, .listing-inner-holder .listing-inner--tabs .nav-tabs .nav-link:focus {
+      border-color: var(--text-color); }
 .listing-inner-holder .listing-key--info .icon-list-v2 {
   row-gap: 0;
   column-gap: var(--sm-spacing); }
@@ -12880,7 +12885,7 @@ h5, .h5 {
   z-index: 999;
   left: 0;
   right: 0;
-  box-shadow: 0px -5px 16px #0000001F; }
+  box-shadow: 0px -5px 16px #0000001f; }
 
 .delear-details .logo-box img {
   max-width: 140px; }
