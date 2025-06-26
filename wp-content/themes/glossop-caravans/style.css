@@ -11143,6 +11143,8 @@ img {
       border-radius: var(--bs-btn-border-radius);
       background-color: var(--bs-btn-bg);
       transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+  .btn.btn-hover-bordered:hover, .btn.btn-hover-bordered:active, .btn.btn-hover-bordered:focus {
+    background-color: transparent; }
 
 .btn-lg, .btn-group-lg > .btn {
   --bs-btn-padding-y: 15px;
@@ -11745,6 +11747,11 @@ span.icons {
 
 .offcanvas-backdrop.offcanvas-backdrop {
   z-index: 9999; }
+
+.wp-block-button__link.wp-block-button__link.has-orange-color-background-color {
+  background-color: transparent;
+  color: var(--orange-color);
+  border-color: var(--orange-color); }
 
 .container {
   max-width: 1320px !important; }

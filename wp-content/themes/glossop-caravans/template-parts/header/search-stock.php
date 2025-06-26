@@ -61,7 +61,7 @@ global $listing_fields;
                             <div class="col-sm-12 col-md-12 col-lg button">
 
                                 <div class="button-box">
-                                    <button type="submit" class="btn btn-primary btn-lg w-100">Search</button>
+                                    <button type="submit" class="btn btn-primary btn-hover-bordered btn-lg w-100">Search</button>
                                 </div>
                             </div>
                         </div>
@@ -90,7 +90,7 @@ global $listing_fields;
                             </div>
                             <div class="col-sm-12 col-md-12 col-lg button">
                                 <div class="button-box">
-                                    <button type="submit" class="btn btn-primary btn-lg w-100">Search</button>
+                                    <button type="submit" class="btn btn-primary btn-hover-bordered btn-lg w-100">Search</button>
                                 </div>
                             </div>
                         </div>
@@ -119,7 +119,7 @@ global $listing_fields;
                             </div>
                             <div class="col-sm-12 col-md-12 col-lg button">
                                 <div class="button-box">
-                                    <button type="submit" class="btn btn-primary btn-lg w-100">Search</button>
+                                    <button type="submit" class="btn btn-primary btn-hover-bordered btn-lg w-100">Search</button>
                                 </div>
                             </div>
 

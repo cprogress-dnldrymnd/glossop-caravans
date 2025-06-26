@@ -49,6 +49,12 @@ img {
                 box-shadow 0.15s ease-in-out;
         }
     }
+    &.btn-hover-bordered {
+        @include on-event {
+            background-color: transparent;
+            border-color: currentColor;
+        }
+    }
 }
 
 .btn-lg {
@@ -56,7 +62,7 @@ img {
     --bs-btn-padding-x: 2.5vw;
     --bs-btn-font-size: 16px;
     --bs-border-radius-lg: 5px;
-    
+
     @include responsive(xs-sm) {
         --bs-btn-padding-y: 20px;
         --bs-btn-padding-x: 20px;
@@ -853,4 +859,12 @@ span.icons {
 }
 .offcanvas-backdrop.offcanvas-backdrop {
     z-index: 9999;
+}
+
+.wp-block-button__link.wp-block-button__link {
+    &.has-orange-color-background-color {
+        background-color: transparent;
+        color: var(--orange-color);
+        border-color: var(--orange-color);
+    }
 }
