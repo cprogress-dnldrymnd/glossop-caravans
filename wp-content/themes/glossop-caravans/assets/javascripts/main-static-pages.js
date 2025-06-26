@@ -4,10 +4,12 @@ jQuery(document).ready(function () {
     search_stock();
 });
 function show_body() {
+      setTimeout(function () {
+        jQuery('.wpcf7').appendTo('#insertForm');
+    }, 1500);
     setTimeout(function () {
         jQuery('body').addClass('show-body');
-        jQuery('.wpcf7').appendTo('#insertForm');
-    }, 1300);
+    }, 1600);
 }
 function search_stock() {
     jQuery('.edit-stock-filter').click(function (e) {
