@@ -11144,7 +11144,8 @@ img {
       background-color: var(--bs-btn-bg);
       transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   .btn.btn-hover-bordered:hover, .btn.btn-hover-bordered:active, .btn.btn-hover-bordered:focus {
-    background-color: transparent; }
+    background-color: transparent;
+    border-color: currentColor; }
 
 .btn-lg, .btn-group-lg > .btn {
   --bs-btn-padding-y: 15px;
