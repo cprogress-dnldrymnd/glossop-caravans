@@ -12811,6 +12811,7 @@ h5, .h5 {
       .listing-inner-holder .listing-inner--tabs .nav-tabs .nav-link {
         font-size: 10px; } }
     .listing-inner-holder .listing-inner--tabs .nav-tabs .nav-link:hover, .listing-inner-holder .listing-inner--tabs .nav-tabs .nav-link:active, .listing-inner-holder .listing-inner--tabs .nav-tabs .nav-link:focus {
+      color: var(--text-color);
       border-color: var(--text-color); }
 .listing-inner-holder .listing-key--info .icon-list-v2 {
   row-gap: 0;

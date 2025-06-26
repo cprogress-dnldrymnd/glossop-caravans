@@ -113,7 +113,7 @@ function swiper_sliders() {
 
             992: {
                 slidesPerView: 3,
-                spaceBetween: 40,
+                spaceBetween: 20,
             },
 
         },

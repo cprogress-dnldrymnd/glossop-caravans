@@ -342,6 +342,7 @@
                     font-size: 10px;
                 }
                 @include on-event {
+                    color: var(--text-color);
                     border-color: var(--text-color);
                 }
             }
