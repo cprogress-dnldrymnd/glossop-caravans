@@ -1,4 +1,5 @@
-.container {
+.container,
+#os-banner .container-fluid {
     max-width: 1320px !important;
 
     &.small-container {
@@ -8,7 +9,9 @@
         max-width: 1120px;
     }
 }
-
+#os-banner h1 {
+    text-transform: capitalize;
+}
 .background-white {
     background-color: var(--white-color);
 }
@@ -29,7 +32,7 @@
     background-color: var(--lightgray-color);
 }
 
-.background-lightgray-2 {
+.background-lightgrasy-2 {
     background-color: var(--lightgray-color-2);
 }
 
@@ -73,7 +76,7 @@
         }
     }
 }
-:root :where(.wp-block-button.is-style-outline--2 .wp-block-button__link)  {
+:root :where(.wp-block-button.is-style-outline--2 .wp-block-button__link) {
     border-width: 1px !important;
 }
 .full-image {
@@ -220,7 +223,7 @@
 }
 :where(.is-layout-grid) {
     gap: 20px;
- 
+
     @include responsive(mobile) {
         gap: 10px;
     }

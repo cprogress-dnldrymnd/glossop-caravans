@@ -11777,12 +11777,33 @@ span.icons {
   color: var(--bs-white) !important;
   border-color: var(--bs-white) !important; }
 
-.container {
+.container,
+#os-banner .container-fluid,
+#os-banner .container-sm,
+#os-banner .container-md,
+#os-banner .container-lg,
+#os-banner .container-xl,
+#os-banner .container-xxl {
   max-width: 1320px !important; }
-  .container.small-container {
+  .container.small-container,
+  #os-banner .container-fluid.small-container,
+  #os-banner .small-container.container-sm,
+  #os-banner .small-container.container-md,
+  #os-banner .small-container.container-lg,
+  #os-banner .small-container.container-xl,
+  #os-banner .small-container.container-xxl {
     max-width: 1000px; }
-  .container.medium-container {
+  .container.medium-container,
+  #os-banner .container-fluid.medium-container,
+  #os-banner .medium-container.container-sm,
+  #os-banner .medium-container.container-md,
+  #os-banner .medium-container.container-lg,
+  #os-banner .medium-container.container-xl,
+  #os-banner .medium-container.container-xxl {
     max-width: 1120px; }
+
+#os-banner h1, #os-banner .h1 {
+  text-transform: capitalize; }
 
 .background-white {
   background-color: var(--white-color); }
@@ -11799,7 +11820,7 @@ span.icons {
 .background-lightgray {
   background-color: var(--lightgray-color); }
 
-.background-lightgray-2 {
+.background-lightgrasy-2 {
   background-color: var(--lightgray-color-2); }
 
 .background-lightgray-3 {
