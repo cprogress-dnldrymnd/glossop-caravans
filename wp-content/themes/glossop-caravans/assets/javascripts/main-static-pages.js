@@ -1,9 +1,9 @@
+setTimeout(function () {
+    jQuery('body').addClass('show-body');
+    mega_menu();
+}, 1300);
 jQuery(document).ready(function () {
     insert_elements();
-    setTimeout(function () {
-        jQuery('body').addClass('show-body');
-        mega_menu();
-    }, 1300);
     search_stock();
 });
 function fetch___template(location, elementSelector) {
