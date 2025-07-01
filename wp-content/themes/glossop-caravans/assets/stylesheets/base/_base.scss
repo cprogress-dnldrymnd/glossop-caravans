@@ -90,6 +90,7 @@ img {
         padding: 18px;
     }
 }
+/*
 .seach-stock-holder {
     .form-control-lg,
     .btn-lg {
@@ -108,7 +109,7 @@ img {
             }
         }
     }
-}
+}*/
 .form-control-holder {
     label {
         @include responsive(xs-sm) {
