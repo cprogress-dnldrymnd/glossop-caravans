@@ -1,9 +1,6 @@
-setTimeout(function () {
-    jQuery('body').addClass('show-body');
-    mega_menu();
-}, 1300);
 jQuery(document).ready(function () {
     insert_elements();
+    mega_menu();
     search_stock();
 });
 function fetch___template(location, elementSelector) {
@@ -71,7 +68,6 @@ function mega_submenu() {
     }, 2300);
 
 }
-
 function mega_menu() {
     setTimeout(function () {
         mega_submenu();
