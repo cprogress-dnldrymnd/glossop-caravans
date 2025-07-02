@@ -11,6 +11,7 @@ jQuery.ajax({
         if ($targetElement.length) { // Check if the element exists using jQuery's .length
             jQuery(data).prependTo($targetElement);
             mega_menu();
+            jQuery('#form').appendTo('#insert-form');
             jQuery('body').addClass('show-body');
         } else {
             console.warn(`Element with selector "${elementSelector}" not found.`);
@@ -46,10 +47,6 @@ jQuery.ajax({
         }
     }
 });
-
-function move_form() {
-    
-}
 
 
 function search_stock() {
