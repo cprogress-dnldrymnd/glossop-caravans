@@ -149,7 +149,6 @@ $Templates->show_in_admin_bar = true;
 $Templates->has_archive = false;
 
 
-
 $Videos = new newPostType();
 $Videos->key = 'videos';
 $Videos->name = 'Videos';
