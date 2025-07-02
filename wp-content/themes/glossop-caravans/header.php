@@ -38,7 +38,4 @@
         </header>
         <?php
         echo do_shortcode('[template template_id=1735]');
-        ?>
-        <?php
-        
-        ?>
+        echo do_shortcode('[search_stock]');
