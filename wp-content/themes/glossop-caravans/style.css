@@ -12601,7 +12601,7 @@ h5, .h5 {
 @media (min-width: 992px) {
   .header-socials {
     position: relative;
-    top: 4px;
+    top: 28px;
     height: 0;
     z-index: 2; }
     .header-socials > div {
