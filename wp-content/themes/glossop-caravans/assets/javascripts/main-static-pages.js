@@ -5,31 +5,27 @@ jQuery(document).ready(function () {
     }, 1500);
     search_stock();
 });
-function fetch___template(location, elementSelector) {
-    fetch(location) // Path to the HTML file you want to insert
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            return response.text();
-        })
-        .then(data => {
-            const targetElement = document.querySelector(elementSelector);
-            if (targetElement) {
-                targetElement.innerHTML = data;
-            } else {
-                console.warn(`Element with selector "${elementSelector}" not found.`);
-            }
-        })
-        .catch(error => {
-            console.error('Error fetching or inserting the HTML:', error);
-            const targetElement = document.querySelector(elementSelector);
-            if (targetElement) {
-                targetElement.innerHTML = '<p>Error loading content.</p>';
-            }
-        });
-}
-fetch___template('https://newglossopacaravans.theprogressteam.co.uk/template/static-pages-header/?static_template=true', '#insert-header');
+
+jQuery.ajax({
+    url: 'https://newglossopacaravans.theprogressteam.co.uk/template/static-pages-header/?static_template=true', // Path to the HTML file you want to insert
+    method: 'GET', // Or 'POST' if applicable, but 'GET' is standard for fetching templates
+    dataType: 'html', // Expect HTML content
+    success: function (data) {
+        const $targetElement = jQuery('#main'); // Use jQuery to select the element
+        if ($targetElement.length) { // Check if the element exists using jQuery's .length
+            jQuery(data).prependTo($targetElement);
+        } else {
+            console.warn(`Element with selector "${elementSelector}" not found.`);
+        }
+    },
+    error: function (jqXHR, textStatus, errorThrown) {
+        console.error('Error fetching or inserting the HTML:', textStatus, errorThrown);
+        const $targetElement = jQuery(elementSelector);
+        if ($targetElement.length) {
+            $targetElement.html('<p>Error loading content.</p>');
+        }
+    }
+});
 
 function insert_elements() {
     setTimeout(function () {

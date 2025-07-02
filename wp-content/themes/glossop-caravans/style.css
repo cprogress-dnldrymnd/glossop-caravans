@@ -11102,6 +11102,12 @@ button.swiper-pagination-bullet {
   font-display: swap; }
 body {
   --admin-bar-height: 0px; }
+  body.static-page {
+    opacity: 1;
+    visibility: visible; }
+    body.static-page:not(.show-body) {
+      opacity: 0;
+      visibility: 1; }
 
 img {
   height: auto; }
@@ -12596,7 +12602,8 @@ h5, .h5 {
   .header-socials {
     position: relative;
     top: 4px;
-    height: 0; } }
+    height: 0;
+    z-index: 2; } }
 .bottom-footer .container > div {
   border-top: 1px solid #D3D3D3;
   padding-top: 30px;
