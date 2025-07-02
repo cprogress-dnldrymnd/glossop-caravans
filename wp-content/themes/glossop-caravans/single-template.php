@@ -1,7 +1,7 @@
 <?php
 if (isset($_GET['static_template'])) {
+    get_header();
 }
-get_header();
 
 the_content();
 
