@@ -1,6 +1,8 @@
 jQuery(document).ready(function () {
     insert_elements();
-    mega_menu();
+    setTimeout(function () {
+        mega_menu();
+    }, 1300);
     search_stock();
 });
 function fetch___template(location, elementSelector) {
