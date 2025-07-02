@@ -40,6 +40,5 @@
         echo do_shortcode('[template template_id=1735]');
         ?>
         <?php
-
-        get_template_part('template-parts/header/search-stock');
+        
         ?>
