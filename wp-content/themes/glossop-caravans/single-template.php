@@ -1,5 +1,5 @@
 <?php
-if (isset($_GET['static_template'])) {
+if (!isset($_GET['static_template'])) {
     get_header();
 }
 
