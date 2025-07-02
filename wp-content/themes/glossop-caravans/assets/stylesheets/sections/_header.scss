@@ -382,7 +382,10 @@
         height: 0;
         z-index: 2;
         > div {
+            height: 0;
             > div {
+                height: 0;
+
                 max-width: 280px !important;
                 margin-left: auto !important;
                 margin-right: 0 !important;

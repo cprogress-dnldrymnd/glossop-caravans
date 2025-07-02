@@ -12604,10 +12604,13 @@ h5, .h5 {
     top: 4px;
     height: 0;
     z-index: 2; }
-    .header-socials > div > div {
-      max-width: 280px !important;
-      margin-left: auto !important;
-      margin-right: 0 !important; } }
+    .header-socials > div {
+      height: 0; }
+      .header-socials > div > div {
+        height: 0;
+        max-width: 280px !important;
+        margin-left: auto !important;
+        margin-right: 0 !important; } }
 .bottom-footer .container > div {
   border-top: 1px solid #D3D3D3;
   padding-top: 30px;
