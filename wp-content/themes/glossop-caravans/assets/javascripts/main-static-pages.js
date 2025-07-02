@@ -1,8 +1,5 @@
 jQuery(document).ready(function () {
     insert_elements();
-    setTimeout(function () {
-        mega_menu();
-    }, 1500);
     search_stock();
 });
 
@@ -14,6 +11,8 @@ jQuery.ajax({
         const $targetElement = jQuery('#main'); // Use jQuery to select the element
         if ($targetElement.length) { // Check if the element exists using jQuery's .length
             jQuery(data).prependTo($targetElement);
+            mega_menu();
+            jQuery('body').addClass('show-body');
         } else {
             console.warn(`Element with selector "${elementSelector}" not found.`);
         }
@@ -27,15 +26,6 @@ jQuery.ajax({
     }
 });
 
-function insert_elements() {
-    setTimeout(function () {
-        jQuery('.wpcf7').appendTo('#insertForm');
-        jQuery('#main-content').insertBefore('#main-content-insert');
-    }, 1500);
-    setTimeout(function () {
-        jQuery('body').addClass('show-body');
-    }, 1600);
-}
 function search_stock() {
     jQuery('.edit-stock-filter').click(function (e) {
         jQuery(this).parents('.search-stock-mobile').toggleClass('filter--active');
