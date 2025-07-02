@@ -11105,9 +11105,6 @@ body {
   body.static-page {
     opacity: 1;
     visibility: visible; }
-    body.static-page:not(.show-body) {
-      opacity: 0;
-      visibility: 1; }
 
 img {
   height: auto; }

@@ -3,10 +3,7 @@ body {
     &.static-page {
         opacity: 1;
         visibility: visible;
-        &:not(.show-body) {
-            opacity: 0;
-            visibility: 1;
-        }
+   
     }
 }
 img {
