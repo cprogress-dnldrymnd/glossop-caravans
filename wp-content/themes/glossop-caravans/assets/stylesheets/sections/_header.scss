@@ -375,11 +375,18 @@
     }
 }
 
-@media(min-width: 992px) {
-	.header-socials {
+@media (min-width: 992px) {
+    .header-socials {
         position: relative;
         top: 4px;
         height: 0;
         z-index: 2;
-	}
+        > div {
+            > div {
+                max-width: 280px !important;
+                margin-left: auto !important;
+                margin-right: 0 !important;
+            }
+        }
+    }
 }
