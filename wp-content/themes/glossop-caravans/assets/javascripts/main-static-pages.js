@@ -2,7 +2,7 @@ jQuery(document).ready(function () {
     insert_elements();
     setTimeout(function () {
         mega_menu();
-    }, 1300);
+    }, 1500);
     search_stock();
 });
 function fetch___template(location, elementSelector) {
