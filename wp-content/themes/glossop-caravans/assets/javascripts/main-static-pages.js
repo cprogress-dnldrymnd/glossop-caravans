@@ -27,8 +27,7 @@ function fetch___template(location, elementSelector) {
             }
         });
 }
-fetch___template('_header_footer.php', '#insert-footer-header');
-
+fetch___template('https://newglossopacaravans.theprogressteam.co.uk/template/static-pages-header/?static_template=true', '#insert-header');
 
 function insert_elements() {
     setTimeout(function () {
