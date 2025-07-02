@@ -52,14 +52,11 @@ function mega_submenu() {
             }
         });
         jQuery('body').css('--mega-menu-height', highestElement + 'px');
-    }, 2300);
+    }, 100);
 
 }
 function mega_menu() {
-    setTimeout(function () {
-        mega_submenu();
-    }, 2000);
-
+    mega_submenu();
     $height = jQuery('#main-header').outerHeight();
     $main_header_inner_height = jQuery('#main-header > div').outerHeight();
     $admin_bar = jQuery('#wpadminbar').outerHeight();
