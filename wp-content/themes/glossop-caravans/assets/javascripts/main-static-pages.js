@@ -1,5 +1,4 @@
 jQuery(document).ready(function () {
-    insert_elements();
     search_stock();
 });
 
@@ -47,6 +46,10 @@ jQuery.ajax({
         }
     }
 });
+
+function move_form() {
+    
+}
 
 
 function search_stock() {
