@@ -54,6 +54,8 @@ add_shortcode('listing_grid_full_details', 'listing_grid_full_details');
 
 function search_stock()
 {
-    return get_template_part('template-parts/header/search-stock');
+    ob_start();
+    get_template_part('template-parts/header/search-stock');
+    return ob_get_clean();
 }
 add_shortcode('search_stock', 'search_stock');
