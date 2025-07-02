@@ -26,6 +26,29 @@ jQuery.ajax({
     }
 });
 
+
+jQuery.ajax({
+    url: 'https://newglossopacaravans.theprogressteam.co.uk/template/static-pages-footer/?static_template=true', // Path to the HTML file you want to insert
+    method: 'GET', // Or 'POST' if applicable, but 'GET' is standard for fetching templates
+    dataType: 'html', // Expect HTML content
+    success: function (data) {
+        const $targetElement = jQuery('#main'); // Use jQuery to select the element
+        if ($targetElement.length) { // Check if the element exists using jQuery's .length
+            jQuery(data).appendTo($targetElement);
+        } else {
+            console.warn(`Element with selector "${elementSelector}" not found.`);
+        }
+    },
+    error: function (jqXHR, textStatus, errorThrown) {
+        console.error('Error fetching or inserting the HTML:', textStatus, errorThrown);
+        const $targetElement = jQuery(elementSelector);
+        if ($targetElement.length) {
+            $targetElement.html('<p>Error loading content.</p>');
+        }
+    }
+});
+
+
 function search_stock() {
     jQuery('.edit-stock-filter').click(function (e) {
         jQuery(this).parents('.search-stock-mobile').toggleClass('filter--active');
