@@ -11104,7 +11104,12 @@ body {
   --admin-bar-height: 0px; }
   body.static-page {
     opacity: 1;
-    visibility: visible; }
+    visibility: visible;
+    -webkit-transition: 400ms;
+    -moz-transition: 400ms;
+    -ms-transition: 400ms;
+    -o-transition: 400ms;
+    transition: 400ms; }
     body.static-page:not(.show-body) {
       opacity: 0;
       visibility: 1; }

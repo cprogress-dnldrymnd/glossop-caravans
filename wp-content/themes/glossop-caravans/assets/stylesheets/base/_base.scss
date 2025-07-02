@@ -3,6 +3,7 @@ body {
     &.static-page {
         opacity: 1;
         visibility: visible;
+        @include transition(400ms);
         &:not(.show-body) {
             opacity: 0;
             visibility: 1;
