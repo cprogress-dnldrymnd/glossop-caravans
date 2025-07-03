@@ -12177,7 +12177,7 @@ a {
     color: var(--accent-color); }
 
 h1, .h1 {
-  font-size: 4.25rem; }
+  font-size: 52px; }
   @media screen and (max-width: 991px) {
     h1, .h1 {
       font-size: 3.5rem; } }
