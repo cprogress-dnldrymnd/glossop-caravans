@@ -11954,7 +11954,7 @@ span.icons {
   color: var(--red-color) !important; }
 
 .mw-600 {
-  max-width: 600px; }
+  max-width: 600px !important; }
 
 .mw-500 {
   max-width: 500px; }
