@@ -78,22 +78,24 @@ strong {
         }
     }
 }
-
-.swiper-button-prev,
-.swiper-button-next {
-    &.block-editor-block-list__block.block-editor-block-list__block {
+.block-editor-block-list__block.block-editor-block-list__block {
+    &.swiper-button-prev,
+    &.swiper-button-next {
         position: static;
         width: auto;
         height: auto;
         display: block;
-        &:after {
-            display: none;
-        }
-        &:before {
-            content: "test";
-        }
+        margin: 0;
+      
+
         .components-placeholder {
             display: none !important;
         }
+    }
+    &.swiper-button-prev {
+        
+    }
+    &.swiper-button-next {
+        
     }
 }
