@@ -1,0 +1,665 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ @font-face {
+    font-family: 'titan_oneregular';
+    src: url('../fonts/titanone-regular-webfont.eot');
+    src: url('../fonts/titanone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/titanone-regular-webfont.woff2') format('woff2'),
+         url('../fonts/titanone-regular-webfont.woff') format('woff'),
+         url('../fonts/titanone-regular-webfont.ttf') format('truetype'),
+         url('../fonts/titanone-regular-webfont.svg#titan_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* calendar */
+.xmas-advent-calendar__wrapper, .xmas-advent-calendar__wrapper * {
+    box-sizing: border-box;
+}
+
+.xmas-advent-calendar__wrapper {
+    line-height: 1.4;
+    box-sizing: border-box;
+}
+
+.xmas-advent-calendar__wrapper--side-sticky {
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: auto;
+	right: 0px;
+	width: 340px;
+    height: 340px;
+    margin: auto;
+    padding: 10px;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    z-index: 9999;
+    -webkit-transform: translateX(340px);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(340px);  /* IE 9 */
+    transform: translateX(340px);  /* Firefox 16+, IE 10+, Opera */
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+ }
+
+.xmas-advent-calendar__wrapper--big {
+    max-width: 900px;
+    max-height: 900px;
+    margin: 20px auto!important;
+    width: 100vw;
+    height: 100vw;
+    padding: 1%;
+    border-radius: 2%;
+}
+
+.xmas-advent-calendar__wrapper--big .xmas-advent-calendar__wrapper-toggle {
+    display: none;
+}
+
+.xmas-advent-calendar__wrapper--big .xmas-advent-calendar__day-wrapper {
+    width: 20%;
+    height: 20%;
+    background-image: url(../images/xmas-advent-calendar-open-day-big.png);
+    background-size: 89% 89%;
+    background-repeat: no-repeat;
+    background-position: 49% 49%;
+}
+
+.xmas-advent-calendar__wrapper--big .xmas-advent-calendar__day-background {
+    width: 100%;
+    height: 100%;
+}
+
+.xmas-advent-calendar__wrapper--big .xmas-advent-calendar__day {
+    height: 120%!important;
+    width: 120%!important;
+    max-width: 120%!important;
+    margin-left: -10%!important;
+    margin-top: -10%!important;
+}
+
+.xmas-advent-calendar__wrapper--big .xmas-advent-calendar__day-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 62%!important;
+    height: 60%!important;
+    font-size: 7vw!important;
+    font-family: 'titan_oneregular';
+    color: white;
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+@media (min-width: 900px) {
+    .xmas-advent-calendar__wrapper--big .xmas-advent-calendar__day-text {
+        font-size: 74px!important;
+    }
+}
+
+.xmas-advent-calendar__wrapper--shown {
+    -webkit-transform: translateX(10px)!important;  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(10px)!important;  /* IE 9 */
+    transform: translateX(10px)!important;  /* Firefox 16+, IE 10+, Opera */
+    -webkit-transition: all 500ms ease-out!important;
+    -moz-transition: all 500ms ease-out!important;
+    -o-transition: all 500ms ease-out!important;
+    transition: all 500ms ease-out!important;
+ }
+
+.xmas-advent-calendar__wrapper-toggle {
+    position: absolute;
+    left: -76px;
+    top: 45px;
+    cursor: pointer;
+}
+
+.xmas-advent-calendar__wrapper-toggle img {
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+
+ .xmas-advent-calendar__day {
+ 	height: 76px;
+    width: 76px;
+    max-width: 76px;
+    margin-left: -6px;
+    margin-top: -6px;
+ }
+ 
+ .xmas-advent-calendar__day-wrapper--allowed, .xmas-advent-calendar__day-background, .xmas-advent-calendar__day-wrapper--allowed .xmas-advent-calendar__day-text {
+    cursor: pointer;
+    -webkit-transition: all 500ms ease-out!important;
+    -moz-transition: all 500ms ease-out!important;
+    -o-transition: all 500ms ease-out!important;
+    transition: all 500ms ease-out!important;
+    -webkit-transform-origin: left;  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform-origin: left;  /* IE 9 */
+    transform-origin: left;
+ }
+
+.xmas-advent-calendar__day-wrapper--opened {
+    -webkit-transform: rotateY(85deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotateY(85deg);  /* IE 9 */
+    transform: rotateY(85deg);
+    -webkit-transform-origin: left;  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform-origin: left;  /* IE 9 */
+    transform-origin: left;
+    -webkit-transition: all 500ms ease-out!important;
+    -moz-transition: all 500ms ease-out!important;
+    -o-transition: all 500ms ease-out!important;
+    transition: all 500ms ease-out!important;
+}
+
+.xmas-advent-calendar__day-wrapper {
+    position: relative;
+ 	width: 64px;
+ 	height: 64px;
+ 	display: inline-block;
+    background-image: url(../images/xmas-advent-calendar-open-day.png);
+    margin-top: -3.5px;
+ }
+
+.xmas-advent-calendar__day-background {
+    position: relative;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+}
+
+.xmas-advent-calendar__day-text {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 35px;
+	height: 35px;
+    font-size: 22px;
+    font-family: 'titan_oneregular';
+    color: white;
+    text-shadow: 0px 0px 15px rgba(0,0,0,0.16);
+	text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+#xmas-advent-calendar__day-text1 {
+	top: 2px;
+    bottom: auto;
+    left: auto;
+    right: 1px;
+    color: #dd5156;
+}
+
+#xmas-advent-calendar__day-text2 {
+	top: auto;
+    bottom: 0px;
+    left: auto;
+    right: 1px;
+}
+
+#xmas-advent-calendar__day-text3 {
+	top: auto;
+    bottom: 0px;
+    left: auto;
+    right: 1px;
+}
+
+#xmas-advent-calendar__day-text4 {
+	top: 2px;
+    bottom: auto;
+    left: auto;
+    right: 1px;
+    color: #dd5156;
+}
+
+#xmas-advent-calendar__day-text5 {
+	top: 5px;
+    bottom: auto;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+#xmas-advent-calendar__day-text6 {
+	top: 0px;
+    bottom: 0px;
+    left: 1px;
+    right: 0px;
+}
+
+#xmas-advent-calendar__day-text7 {
+	top: auto;
+    bottom: 8px;
+    left: auto;
+    right: 1px;
+}
+
+#xmas-advent-calendar__day-text8 {
+	top: auto;
+    bottom: 1px;
+    left: auto;
+    right: 6px;
+    color: #dd5156;
+}
+
+#xmas-advent-calendar__day-text9 {
+	top: 0px;
+    bottom: 0px;
+    left: auto;
+    right: 1px;
+    color: #dd5156;
+}
+
+#xmas-advent-calendar__day-text10 {
+	top: 0px;
+    bottom: 0px;
+    left: auto;
+    right: 1px;
+}
+
+#xmas-advent-calendar__day-text11 {
+	top: auto;
+    bottom: 0px;
+    left: auto;
+    right: 1px;
+}
+
+#xmas-advent-calendar__day-text12 {
+	top: auto;
+    bottom: 0px;
+    left: 1px;
+    right: 0px;
+    color: #dd5156;
+}
+
+#xmas-advent-calendar__day-text13 {
+	top: 0px;
+    bottom: 0px;
+    left: auto;
+    right: 1px;
+}
+
+#xmas-advent-calendar__day-text14 {
+	top: 0px;
+    bottom: 0px;
+    left: 1px;
+    right: 0px;
+    color: #dd5156;
+}
+
+#xmas-advent-calendar__day-text15 {
+	top: 0px;
+    bottom: 0px;
+    left: auto;
+    right: 1px;
+}
+
+#xmas-advent-calendar__day-text16 {
+	top: 0px;
+    bottom: 0px;
+    left: 1px;
+    right: 0px;
+    color: #dd5156;
+}
+
+#xmas-advent-calendar__day-text17 {
+	top: auto;
+    bottom: 0px;
+    left: auto;
+    right: 1px;
+}
+
+#xmas-advent-calendar__day-text18 {
+	top: auto;
+    bottom: -6px;
+    left: -3px;
+    right: 0px;
+}
+
+#xmas-advent-calendar__day-text19 {
+	top: 3px;
+    bottom: 0px;
+    left: -1px;
+    right: 0px;
+}
+
+#xmas-advent-calendar__day-text20 {
+	top: auto;
+    bottom: -5px;
+    left: 1px;
+    right: 0px;
+}
+
+#xmas-advent-calendar__day-text21 {
+	top: auto;
+    bottom: 3px;
+    left: auto;
+    right: 5px;
+}
+
+#xmas-advent-calendar__day-text22 {
+	top: auto;
+    bottom: -5px;
+    left: auto;
+    right: 2px;
+}
+
+#xmas-advent-calendar__day-text23 {
+	top: 1px;
+    bottom: 0px;
+    left: 3px;
+    right: 0px;
+}
+
+#xmas-advent-calendar__day-text24 {
+	top: auto;
+    bottom: -4px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+#xmas-advent-calendar__day-text25 {
+	top: auto;
+    bottom: -1px;
+    left: auto;
+    right: 2px;
+}
+
+/* modal */
+.xmas-advent-calendar__modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+    z-index: 9999;
+    opacity: 0.0;
+	display: none;
+    overflow-x: hidden;
+    overflow-y: auto; 
+}
+
+.xmas-advent-calendar__modal__content {
+	position: absolute;
+	top: 165px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 600px;
+	height: 460px;
+    max-width: 95%;
+    max-height: 95%;
+	margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #c73336;
+    -webkit-transform: translateY(-2000px);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateY(-2000px);  /* IE 9 */
+    transform: translateY(-2000px);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.xmas-advent-calendar__modal__content--show {
+    -webkit-transform: translateY(0px);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateY(0px);  /* IE 9 */
+    transform: translateY(0px);  /* Firefox 16+, IE 10+, Opera */
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.xmas-advent-calendar__modal .close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    border-radius: 50%;
+    background: white;
+    z-index: 10;
+    cursor: pointer;
+    text-align: center;
+    z-index: 99999;
+}
+
+.xmas-advent-calendar__modal .close-button img {
+    width: 14px;
+    height: 14px;
+}
+
+.xmas-advent-calendar__modal-header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 110%;
+    margin-left: -5%;
+    display: none;
+}
+
+.xmas-advent-calendar__modal-header--1 {
+    -webkit-transform: translateY(-80%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateY(-80%);  /* IE 9 */
+    transform: translateY(-80%);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.xmas-advent-calendar__modal-header--1 + .xmas-advent-calendar__modal-code {
+    max-height: -webkit-calc(100% - 10px);
+    max-height: calc(100% - 10px);
+}
+
+.xmas-advent-calendar__modal-header--2 {
+    -webkit-transform: translateY(-80%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateY(-80%);  /* IE 9 */
+    transform: translateY(-80%);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.xmas-advent-calendar__modal-header--2 + .xmas-advent-calendar__modal-code {
+    height: -webkit-calc(100% - 50px);
+    height: calc(100% - 50px);
+}
+
+.xmas-advent-calendar__modal-header--3 {
+    -webkit-transform: translateY(-50%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateY(-50%);  /* IE 9 */
+    transform: translateY(-50%);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.xmas-advent-calendar__modal-header--3 + .xmas-advent-calendar__modal-code {
+    max-height: -webkit-calc(100% - 40px);
+    max-height: calc(100% - 40px);
+}
+
+.xmas-advent-calendar__modal-header--4 {
+    -webkit-transform: translateY(-54%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateY(-54%);  /* IE 9 */
+    transform: translateY(-54%);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.xmas-advent-calendar__modal-header--4 + .xmas-advent-calendar__modal-code {
+    max-height: -webkit-calc(100% - 40px);
+    max-height: calc(100% - 40px);
+}
+
+.xmas-advent-calendar__modal-header--5 {
+    -webkit-transform: translateY(-61%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateY(-61%);  /* IE 9 */
+    transform: translateY(-61%);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.xmas-advent-calendar__modal-header--5 + .xmas-advent-calendar__modal-code {
+    max-height: -webkit-calc(100% - 40px);
+    max-height: calc(100% - 40px);
+}
+
+.xmas-advent-calendar__modal-header--6 {
+    -webkit-transform: translateY(-44%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateY(-44%);  /* IE 9 */
+    transform: translateY(-44%);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.xmas-advent-calendar__modal-header--6 + .xmas-advent-calendar__modal-code {
+    max-height: -webkit-calc(100% - 10px);
+    max-height: calc(100% - 10px);
+}
+
+.xmas-advent-calendar__modal-header--7 {
+    width: 100%;
+    margin-left: 0;
+    -webkit-transform: translateY(-49%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateY(-49%);  /* IE 9 */
+    transform: translateY(-49%);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.xmas-advent-calendar__modal-header--7 + .xmas-advent-calendar__modal-code {
+    max-height: -webkit-calc(100% - 75px);
+    max-height: calc(100% - 75px);
+    margin-top: 40px;
+}
+
+.xmas-advent-calendar__modal-header--8 {
+    width: 100%;
+    margin-left: 0;
+    -webkit-transform: translateY(-41%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateY(-41%);  /* IE 9 */
+    transform: translateY(-41%);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.xmas-advent-calendar__modal-header--8 + .xmas-advent-calendar__modal-code {
+    max-height: -webkit-calc(100% - 50px);
+    max-height: calc(100% - 50px);
+    margin-top: 20px;
+}
+
+.xmas-advent-calendar__modal-header img {
+    width: 100%;
+    height: auto;
+}
+
+.xmas-advent-calendar__modal-code {
+    position: absolute;
+    width: -webkit-calc(100% - 40px);
+    width: calc(100% - 40px);
+    display: none;
+    overflow: auto;
+    z-index: 20;
+}
+
+.xmas-advent-calendar-subtitle {
+    font-family: Verdana!important;
+    color: white!important;
+}
+
+.xmas-advent-calendar-title {
+    text-align: center!important;
+    color: white!important;
+    font-family: 'titan_oneregular'!important;
+    font-size: 60px!important;
+}
+
+.xmas-advent-calendar-call-to-action-wrapper {
+  margin: 0!important;
+  margin-top: 60px!important;
+  min-height: 34px!important;
+}
+
+.xmas-advent-calendar-call-to-action {
+    background: white;
+    padding: 10px 20px;
+    color: #c73336!important;
+    border-radius: 25px;
+    text-transform: uppercase;
+}
+
+/*iframe {
+    /*height: 355px;
+    width: 560px;
+}
+
+/* wrapper colors */
+.color-input-wrapper-1 {
+    background-color: antiquewhite!important;
+}
+
+.color-input-wrapper-2 {
+    background-color: #f6c244!important;
+}
+
+.color-input-wrapper-3 {
+    background-color: #82b362!important;
+}
+
+.color-input-wrapper-4 {
+    background-color: #445260!important;
+}
+
+.color-input-wrapper-5 {
+    background-color: #b24145!important;
+}
+
+.color-input-wrapper-6 {
+    background-color: #c73336!important;
+}
+
+/* snow */
+#snow {
+    top: -100%;
+    bottom: -50px;
+    left: -100%;
+    right: -100%;
+    z-index: 1;
+    background-image: url('../images/snow1.png'), url('../images/snow3.png'), url('../images/snow2.png');
+    -webkit-animation: snow 20s linear infinite;
+    -moz-animation: snow 20s linear infinite;
+    -ms-animation: snow 20s linear infinite;
+    animation: snow 20s linear infinite;
+    position: absolute;
+}
+
+/* keyframes */
+@keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+ 
+@-moz-keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+ 
+@-webkit-keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+ 
+@-ms-keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}

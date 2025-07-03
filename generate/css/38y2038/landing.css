@@ -1,0 +1,229 @@
+.cfs .btn-red {
+  background-color: #d4201e;
+  color: #ffffff;
+}
+.cfs .btn-green {
+  background-color: #069c06;
+  color: #ffffff;
+}
+.cfs .btn-blue {
+  background-color: #0eaae5;
+  color: #ffffff;
+}
+.cfs .btn-grey {
+  background-color: #8f9192;
+  color: #ffffff;
+}
+.cfs .btn {
+  box-shadow: none;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 3px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.cfs .glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.cfs .p-0 {
+  padding: 0;
+}
+.cfs .p-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.cfs .p-r-0 {
+  padding-right: 0;
+}
+.cfs .p-l-0 {
+  padding-left: 0;
+}
+.cfs .towsafebox.boxes-small .box {
+  background-color: #ed9e3f;
+  overflow: hidden;
+}
+.cfs .towsafebox.boxes-small .box h4 {
+  font-size: 17px;
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: black;
+}
+.cfs .towsafebox.boxes-small .box #VRMinput {
+  padding: 30px;
+}
+.cfs .towsafebox.boxes-small .box #emailTow {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+.cfs .towsafebox.boxes-small .box #submit {
+  margin-top: 10px;
+}
+.cfs .towsafebox.boxes-small .box #towsafeEmailCheck,
+.cfs .towsafebox.boxes-small .box #towsafeRegCheck {
+  text-align: center;
+  background-color: #d4201e;
+  color: white;
+}
+.cfs .boxes-small .box {
+  padding-top: 15px;
+}
+.cfs .boxes-small .box h4 {
+  font-size: 28px;
+  color: #ffffff;
+  margin: 0;
+}
+.cfs .boxes-small .box a,
+.cfs .boxes-small .box a:visited {
+  color: white !important;
+}
+.cfs .boxed-l .form-box {
+  min-height: 417px;
+}
+.cfs .box {
+  background-color: #d4201e;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.cfs .box h2 {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 10px;
+}
+.cfs .box .gapSpare {
+  height: 30px;
+}
+.cfs .box .form-box {
+  background-color: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 10px;
+  overflow: hidden;
+}
+.cfs .box .form-box.form-box-bottom {
+  margin-top: 10px;
+}
+.cfs .box form .form-group {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.cfs .box form .control-label {
+  font-size: 12px;
+}
+.cfs .box form .checkbox-inline {
+  margin-left: 0px !important;
+  font-size: 12px;
+}
+.cfs .box form .layout-slider .mark,
+.cfs .box form .layout-slider ins {
+  background: none;
+}
+.cfs .box form select {
+  height: 28px;
+  padding: 2px 6px;
+}
+.cfs .box .logos a {
+  width: 18.5%;
+  padding: 0;
+  display: inline-block;
+}
+.cfs .gdpr_towsafe {
+  margin-top: 5px;
+}
+.cfs .gdpr_towsafe span {
+  color: #fff;
+}
+.cfs .gdpr_towsafe btn {
+  padding: 8px;
+  background-color: #eeeeee;
+  color: #000;
+}
+.cfs .gdpr_towsafe btn:hover {
+  background-color: #0d730d;
+  color: #fff;
+}
+.cfs .gdpr_towsafe btn.active {
+  background-color: #069c06;
+  color: #fff;
+}
+.cfs .hotline {
+  margin: 20px 0;
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  .cfs .boxed-l .form-box {
+    min-height: 403px;
+  }
+}
+@media (max-width: 991px) {
+  .cfs .form-horizontal .control-label {
+    margin-left: 7px;
+    text-align: left;
+  }
+  .cfs .form-horizontal .layout-slider {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .cfs .box .gapSpare {
+    height: 75px;
+  }
+  .cfs .boxed-l .form-box {
+    min-height: 561px;
+  }
+}
+@media (min-width: 768px) {
+  .cfs .boxed-l {
+    padding-left: 0;
+  }
+  .cfs .boxed-r {
+    padding-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .cfs .box {
+    margin-top: 15px;
+  }
+  .cfs .box h2 {
+    font-size: 26px;
+  }
+  .cfs .btn {
+    margin-bottom: 10px;
+  }
+  .cfs .box .gapSpare {
+    height: 0;
+  }
+  .cfs .links p {
+    font-size: 14px;
+  }
+}
