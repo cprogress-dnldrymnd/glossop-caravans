@@ -859,12 +859,14 @@ span.icons {
 .table-style-1.table-style-1 {
     border-radius: 10px;
     overflow: hidden;
-    border: 1px solid #CBCBCB;
+    border: 1px solid #cbcbcb;
     table {
         th {
             border-top: none !important;
             padding-top: 25px;
             padding-bottom: 25px;
+            color: var(--bs-white);
+
             @include responsive(md-lg) {
                 font-size: 24px;
             }
@@ -872,7 +874,7 @@ span.icons {
         thead {
             border-color: #dddddd;
             background-color: var(--orange-color);
-            color: var(--bs-white);
+            border: none;
         }
         th,
         td {
@@ -881,6 +883,9 @@ span.icons {
             border-color: #dddddd;
             padding: 15px 10px;
             font-size: 20px;
+            @include responsive(md-lg) {
+                padding: 15px 4vw;
+            }
         }
     }
 }
