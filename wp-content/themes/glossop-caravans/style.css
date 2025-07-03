@@ -11957,16 +11957,16 @@ span.icons {
   max-width: 600px !important; }
 
 .mw-500 {
-  max-width: 500px; }
+  max-width: 500px !important; }
 
 .mw-400 {
-  max-width: 400px; }
+  max-width: 400px !important; }
 
 .mw-300 {
-  max-width: 300px; }
+  max-width: 300px !important; }
 
 .mw-110 {
-  max-width: 110px; }
+  max-width: 110px !important; }
 
 .g-xxs {
   --bs-gutter-x: 8px;
