@@ -1,4 +1,4 @@
-<?php
+<?php 
 //error_reporting(E_ERROR | E_PARSE);
 ?>
 <!DOCTYPE html>
@@ -13,8 +13,8 @@
 
 <style type="text/css">
     body {
-        font-family: calibri !important;
-        font-size: 15px !important;
+        font-family: calibri!important;
+        font-size: 15px!important;
     }
 </style>
 
@@ -50,14 +50,14 @@
                             <div class="col-md-4">
                                 <input type="submit" name="submitButton" class="btn btn-primary button-loading">
                             </div>
-                        </div>
+                        </div>                      
                     </fieldset>
                 </form>
 
-
+                                
             </div>
-
-
+            
+            
         </div>
     </div>
 </body>
@@ -67,81 +67,87 @@
 <?php
 
 
-if (isset($_POST["submitButton"])) {
+if ( isset($_POST["submitButton"]) ) {
 
-    if (isset($_FILES["file"])) {
+   if ( isset($_FILES["file"])) {
 
-        //if there was an error uploading the file
+            //if there was an error uploading the file
         if ($_FILES["file"]["error"] > 0) {
             echo "Return Code: " . $_FILES["file"]["error"] . "<br />";
-        } else {
-            //Print file details
 
-            $file_parts = pathinfo($_FILES["file"]["name"]);
-            echo '<pre>';
-            print_r($file_parts);
-            if ($file_parts['extension'] != 'csv') {
-                echo "Only csv file is allowed: <br />";
-                exit();
-            }
+        }
+        else {
+              //Print file details
+            
+			 $file_parts = pathinfo($_FILES["file"]["name"]);
+			 echo '<pre>';
+			 print_r( $file_parts);
+			 if($file_parts['extension'] != 'csv'){
+				  echo "Only csv file is allowed: <br />";
+				  exit();
+			 }
 
-            //if file already exists
-            if (file_exists("upload/" . $_FILES["file"]["name"])) {
-                echo $_FILES["file"]["name"] . " already exists. ";
-            } else {
-
-                move_uploaded_file($_FILES["file"]["tmp_name"], "upload/" . $_FILES["file"]["name"]);
-                echo "Stored in: " . "upload/" . $_FILES["file"]["name"] . "<br />";
-
-
-                $file_name = 'upload/' . $_FILES["file"]["name"];
-
-                $f = fopen($file_name, "r");
-
-                $folderName = 'generate/' . $_POST['folder_name'];
-
-
-                if (!file_exists($folderName)) {
-                    mkdir($folderName);
-
-                    while (($line = fgetcsv($f)) !== false) {
-                        $row = $line[0];    // We need to get the actual row (it is the first element in a 1-element array)
-                        $cells = explode(";", $row);
-                        echo '<pre>';
-                        print_r($line);
-
-                        //foreach ($cells as $cell) {
-                        foreach ($line as $cell) {
-                            if (empty($cell)) {
-                                break;
-                            }
-                            echo $cell . "<br/>";
-                            $templateFileName = $cell;
-                            $templateFileName = trim(mb_strtolower(str_replace(" ", "-", $templateFileName)));
-                            copy("used-caravans-template.html", $folderName . "/" . $templateFileName . ".html");
-                            chmod($folderName, 0755);
-
-                            $myfile = fopen($folderName . "/" . $templateFileName . ".html", "r");
-                            $txt = "Template";
-
-                            $cell_value = $string = trim(preg_replace('/\s+/', ' ', $cell));;
-                            $contents = file_get_contents($folderName . "/" . $templateFileName . ".html");
-                            $contents = str_replace(array($txt), array($cell_value), $contents);
-                            file_put_contents($folderName . "/" . $templateFileName . ".html", $contents);
-                            fclose($myfile);
-                        }
-                    }
-                    echo "<script>alert('Templates created')</script>";
-                } else {
-                    echo "<script>alert('Folder already exist')</script>";
-                }
-                fclose($f);
-                unlink($file_name);
+                 //if file already exists
+             if (file_exists("upload/" . $_FILES["file"]["name"])) {
+           		 echo $_FILES["file"]["name"] . " already exists. ";
+             }
+             else {
+    
+            move_uploaded_file($_FILES["file"]["tmp_name"], "upload/" . $_FILES["file"]["name"]);
+           echo "Stored in: " . "upload/" . $_FILES["file"]["name"] . "<br />";
+			
+			
+			$file_name = 'upload/'.$_FILES["file"]["name"];
+			
+			$f = fopen($file_name, "r");
+	
+			$folderName = $_POST['folder_name'];
+			
+	
+			if (!file_exists($folderName)) {
+				mkdir($folderName);
+				
+				while (($line = fgetcsv($f)) !== false) {
+					$row = $line[0];    // We need to get the actual row (it is the first element in a 1-element array)
+					$cells = explode(";",$row);
+					echo '<pre>';
+					print_r($line);
+	
+					//foreach ($cells as $cell) {
+					foreach ($line as $cell) {
+						if(empty($cell)){
+							break;
+						}
+						echo $cell."<br/>";
+						$templateFileName = $cell;						
+						$templateFileName = trim(mb_strtolower(str_replace(" ","-",$templateFileName)));
+						copy("used-caravans-template.html",$folderName."/".$templateFileName.".html");
+						chmod($folderName,0755); 
+	
+						$myfile = fopen($folderName."/".$templateFileName.".html", "r");
+						$txt = "Template";
+	
+                        $cell_value = $string = trim(preg_replace('/\s+/', ' ', $cell));;
+						$contents = file_get_contents ($folderName."/".$templateFileName.".html");
+						$contents = str_replace(array($txt), array($cell_value), $contents);
+						file_put_contents($folderName."/".$templateFileName.".html", $contents);
+						fclose($myfile);
+					}
+				}
+				echo "<script>alert('Templates created')</script>";
+			}
+			else{
+				echo "<script>alert('Folder already exist')</script>";
+			}
+			fclose($f);
+			unlink($file_name);
+			
+			
             }
         }
-    } else {
-        echo "No file selected <br />";
-    }
+     } else {
+             echo "No file selected <br />";
+     }
 }
 exit();
 
