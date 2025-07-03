@@ -66,6 +66,12 @@ strong {
   width: auto;
   height: auto;
   display: block; }
+  .swiper-button-prev.block-editor-block-list__block.block-editor-block-list__block:after,
+  .swiper-button-next.block-editor-block-list__block.block-editor-block-list__block:after {
+    display: none; }
+  .swiper-button-prev.block-editor-block-list__block.block-editor-block-list__block:before,
+  .swiper-button-next.block-editor-block-list__block.block-editor-block-list__block:before {
+    content: "test"; }
   .swiper-button-prev.block-editor-block-list__block.block-editor-block-list__block .components-placeholder,
   .swiper-button-next.block-editor-block-list__block.block-editor-block-list__block .components-placeholder {
     display: none !important; }
