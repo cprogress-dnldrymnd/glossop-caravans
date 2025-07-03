@@ -11965,6 +11965,9 @@ span.icons {
 .mw-300 {
   max-width: 300px; }
 
+.mw-110 {
+  max-width: 110px; }
+
 .g-xxs {
   --bs-gutter-x: 8px;
   --bs-gutter-y: 8px; }
@@ -12009,6 +12012,9 @@ span.icons {
 
 .gap-24 {
   gap: 24px; }
+
+.gap-10 {
+  gap: 10; }
 
 .wp-block-image.w-100 > img {
   width: 100% !important;
