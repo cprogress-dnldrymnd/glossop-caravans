@@ -11748,22 +11748,26 @@ span.icons {
       transform: rotate(-45deg); }
 
 .table-style-1.table-style-1 {
-  max-width: 1000px; }
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #CBCBCB; }
   .table-style-1.table-style-1 table th {
     border-top: none !important;
     padding-top: 25px;
     padding-bottom: 25px; }
     @media screen and (min-width: 992px) {
       .table-style-1.table-style-1 table th {
-        font-size: 32px; } }
+        font-size: 24px; } }
   .table-style-1.table-style-1 table thead {
-    border-color: #dddddd; }
+    border-color: #dddddd;
+    background-color: var(--orange-color); }
   .table-style-1.table-style-1 table th,
   .table-style-1.table-style-1 table td {
     border-left: none;
     border-right: none;
     border-color: #dddddd;
-    padding: 15px 10px; }
+    padding: 15px 10px;
+    font-size: 20px; }
 
 @media screen and (min-width: 992px) {
   .listing-grid-item__button .btn {
