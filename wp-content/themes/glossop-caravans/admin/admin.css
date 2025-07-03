@@ -60,4 +60,14 @@ strong {
   .crb-field-style-1.crb-field-style-1 .cf-field__body input::placeholder {
     color: var(--wp--preset--color--white); }
 
+.swiper-button-prev.block-editor-block-list__block.block-editor-block-list__block,
+.swiper-button-next.block-editor-block-list__block.block-editor-block-list__block {
+  position: static;
+  width: auto;
+  height: auto;
+  display: block; }
+  .swiper-button-prev.block-editor-block-list__block.block-editor-block-list__block .components-placeholder,
+  .swiper-button-next.block-editor-block-list__block.block-editor-block-list__block .components-placeholder {
+    display: none !important; }
+
 /*# sourceMappingURL=admin.css.map */
