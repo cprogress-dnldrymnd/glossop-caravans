@@ -12264,27 +12264,114 @@ h5, .h5 {
 
 .fs-48 {
   font-size: 48px; }
-
-.fs-35 {
-  font-size: 35px; }
+  @media screen and (max-width: 1199px) {
+    .fs-48 {
+      font-size: 40px; } }
+  @media screen and (max-width: 991px) {
+    .fs-48 {
+      font-size: 35px; } }
+  @media screen and (max-width: 767px) {
+    .fs-48 {
+      font-size: 30px; } }
+  @media screen and (max-width: 575px) {
+    .fs-48 {
+      font-size: 25px; } }
 
 .fs-36 {
   font-size: 36px; }
+  @media screen and (max-width: 1199px) {
+    .fs-36 {
+      font-size: 32px; } }
+  @media screen and (max-width: 991px) {
+    .fs-36 {
+      font-size: 28px; } }
+  @media screen and (max-width: 767px) {
+    .fs-36 {
+      font-size: 24px; } }
+  @media screen and (max-width: 575px) {
+    .fs-36 {
+      font-size: 20px; } }
 
-.fs-30 {
-  font-size: 30px; }
+.fs-35 {
+  font-size: 35px; }
+  @media screen and (max-width: 1199px) {
+    .fs-35 {
+      font-size: 31px; } }
+  @media screen and (max-width: 991px) {
+    .fs-35 {
+      font-size: 27px; } }
+  @media screen and (max-width: 767px) {
+    .fs-35 {
+      font-size: 23px; } }
+  @media screen and (max-width: 575px) {
+    .fs-35 {
+      font-size: 19px; } }
 
 .fs-32 {
   font-size: 32px; }
+  @media screen and (max-width: 1199px) {
+    .fs-32 {
+      font-size: 29px; } }
+  @media screen and (max-width: 991px) {
+    .fs-32 {
+      font-size: 27px; } }
+  @media screen and (max-width: 767px) {
+    .fs-32 {
+      font-size: 25px; } }
+  @media screen and (max-width: 575px) {
+    .fs-32 {
+      font-size: 23px; } }
+
+.fs-30 {
+  font-size: 30px; }
+  @media screen and (max-width: 1199px) {
+    .fs-30 {
+      font-size: 28px; } }
+  @media screen and (max-width: 991px) {
+    .fs-30 {
+      font-size: 26px; } }
+  @media screen and (max-width: 767px) {
+    .fs-30 {
+      font-size: 24px; } }
+  @media screen and (max-width: 575px) {
+    .fs-30 {
+      font-size: 22px; } }
 
 .fs-25 {
-  font-size: 25; }
+  font-size: 25px; }
+  @media screen and (max-width: 991px) {
+    .fs-25 {
+      font-size: 24px; } }
+  @media screen and (max-width: 767px) {
+    .fs-25 {
+      font-size: 22px; } }
+  @media screen and (max-width: 575px) {
+    .fs-25 {
+      font-size: 20px; } }
 
 .fs-24 {
   font-size: 24px; }
+  @media screen and (max-width: 991px) {
+    .fs-24 {
+      font-size: 23px; } }
+  @media screen and (max-width: 767px) {
+    .fs-24 {
+      font-size: 21px; } }
+  @media screen and (max-width: 575px) {
+    .fs-24 {
+      font-size: 19px; } }
 
 .fs-23 {
   font-size: 23px; }
+  @media screen and (max-width: 991px) {
+    .fs-23 {
+      font-size: 22px; } }
+  @media screen and (max-width: 767px) {
+    .fs-23 {
+      font-size: 20px; } }
+  @media screen and (max-width: 575px) {
+    .fs-23 {
+      font-size: 18px; } }
 
 .fs-18 {
   font-size: 18px; }
