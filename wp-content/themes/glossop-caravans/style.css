@@ -11968,6 +11968,9 @@ span.icons {
 .mw-110 {
   max-width: 110px !important; }
 
+.full-height {
+  min-height: 100vh; }
+
 .g-xxs {
   --bs-gutter-x: 8px;
   --bs-gutter-y: 8px; }
