@@ -743,6 +743,7 @@ span.icons {
 .image-box {
     &.brand {
         img {
+            width: auto;
             max-height: 37px;
         }
     }
