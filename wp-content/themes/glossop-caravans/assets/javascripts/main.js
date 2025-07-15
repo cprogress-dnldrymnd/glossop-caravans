@@ -64,6 +64,8 @@ jQuery(window).scroll(function () {
         // If the element is below the viewport, this will be positive.
         var elementDistanceFromViewportTop = elementOffset - scrollPosition;
 
+        jQuery('body').css('--announcement-bar-height', elementDistanceFromViewportTop + 'px');
+
         console.log("Element's distance from viewport top:", elementDistanceFromViewportTop);
     }
 });

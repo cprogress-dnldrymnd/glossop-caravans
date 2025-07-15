@@ -11059,7 +11059,8 @@ button.swiper-pagination-bullet {
   --lightgray-color-3: #f9f9f9;
   --lightgray-color-4: #f6f6f6;
   --bs-border-radius: 5px;
-  --bs-border-color: #cdcdcd; }
+  --bs-border-color: #cdcdcd;
+  --announcement-bar-height: 0px; }
 
 @-moz-keyframes spin {
   from {
