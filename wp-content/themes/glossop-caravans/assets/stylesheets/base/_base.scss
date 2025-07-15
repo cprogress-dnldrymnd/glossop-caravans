@@ -220,6 +220,7 @@ img {
         background-color: var(--bs-white);
         position: relative;
         z-index: 1;
+        outline: none !important;
         &.active {
             background-color: var(--green-color);
             border-color: var(--green-color);
