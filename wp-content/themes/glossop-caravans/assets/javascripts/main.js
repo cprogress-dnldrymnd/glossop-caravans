@@ -5,6 +5,7 @@ jQuery(document).ready(function () {
     search_stock();
     listings();
     read_more();
+    header_distance();
 });
 
 
@@ -48,39 +49,24 @@ function mega_submenu() {
 }
 
 jQuery(window).scroll(function () {
-    if (jQuery('#announcement-bar').length > 0) {
-        // Select the element you want to track
-        var $element = jQuery('#masthead'); // Replace '#yourElementId' with your element's actual ID or class
-
-        // Get the element's position relative to the document
-        var elementOffset = $element.offset().top;
-
-        // Get the current scroll position of the window
-        var scrollPosition = jQuery(window).scrollTop();
-
-        // Calculate the element's position relative to the viewport top
-        // If the element is above the viewport, this will be negative.
-        // If the element is at the very top of the viewport, this will be 0.
-        // If the element is below the viewport, this will be positive.
-        var elementDistanceFromViewportTop = elementOffset - scrollPosition;
-
-        jQuery('body').css('--announcement-bar-height', elementDistanceFromViewportTop + 'px');
-
-        console.log("Element's distance from viewport top:", elementDistanceFromViewportTop);
-    }
+    header_distance();
 });
+
+function header_distance() {
+    var $element = jQuery('#masthead');
+    var elementOffset = $element.offset().top;
+    var scrollPosition = jQuery(window).scrollTop();
+    var elementDistanceFromViewportTop = elementOffset - scrollPosition;
+    jQuery('body').css('--header-distance', elementDistanceFromViewportTop + 'px');
+}
 function mega_menu() {
     mega_submenu();
 
     $height = jQuery('#main-header').outerHeight();
     $main_header_inner_height = jQuery('#main-header > div').outerHeight();
-    $admin_bar = jQuery('#wpadminbar').outerHeight();
     jQuery('body').css('--header-height', $height + 'px');
     jQuery('body').css('--header-inner-height', $main_header_inner_height + 'px');
-    if (jQuery('#wpadminbar').length > 0) {
-        jQuery('body').css('--admin-bar-height', $admin_bar + 'px');
 
-    }
     if (window.innerWidth > 991) {
         jQuery('.has-custom-submenu').hover(function () {
             jQuery('body').addClass('mega-menu-active');

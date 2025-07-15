@@ -86,7 +86,7 @@ function mega_menu() {
     jQuery('body').css('--header-height', $height + 'px');
     jQuery('body').css('--header-inner-height', $main_header_inner_height + 'px');
     if (jQuery('#wpadminbar').length > 0) {
-        jQuery('body').css('--admin-bar-height', $admin_bar + 'px');
+        jQuery('body').css('--header-distance', $admin_bar + 'px');
 
     }
     if (window.innerWidth > 991) {
