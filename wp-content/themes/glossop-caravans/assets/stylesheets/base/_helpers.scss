@@ -191,7 +191,7 @@
     color: var(--red-color) !important;
 }
 .mw-600 {
-    max-width: 600px !important
+    max-width: 600px !important;
 }
 .mw-500 {
     max-width: 500px !important;
@@ -428,4 +428,20 @@
 }
 .overflow-unset {
     overflow: unset !important;
+}
+
+.desktop-only {
+    &:not(.block-editor-block-list__block) {
+        @include responsive(xs) {
+            display: none;
+        }
+    }
+}
+
+.mobile-only {
+    &:not(.block-editor-block-list__block) {
+        @include responsive(sm-lg) {
+            display: none;
+        }
+    }
 }

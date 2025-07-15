@@ -12178,6 +12178,14 @@ span.icons {
 .overflow-unset {
   overflow: unset !important; }
 
+@media screen and (max-width: 767px) {
+  .desktop-only:not(.block-editor-block-list__block) {
+    display: none; } }
+
+@media screen and (max-width: 767px) {
+  .mobile-only:not(.block-editor-block-list__block) {
+    display: none; } }
+
 body {
   font-family: "Proxima Nova", sans-serif;
   color: var(--text-color);
