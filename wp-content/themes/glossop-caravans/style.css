@@ -12580,7 +12580,8 @@ h5, .h5 {
   -ms-transition: 320ms;
   -o-transition: 320ms;
   transition: 320ms;
-  opacity: 0; }
+  opacity: 0;
+  padding-top: 30px; }
   .custom-submenu.custom-submenu.custom-submenu.custom-submenu .wp-block-navigation-item .wp-block-navigation-item__content {
     padding: 0;
     height: auto !important; }

@@ -208,6 +208,7 @@
     visibility: hidden;
     @include transition(320ms);
     opacity: 0;
+    padding-top: 30px;
     .wp-block-navigation-item .wp-block-navigation-item__content {
         padding: 0;
         height: auto !important;
