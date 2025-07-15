@@ -47,7 +47,7 @@ function mega_submenu() {
     jQuery('body').css('--mega-menu-height', highestElement + 'px');
 }
 
-$(window).scroll(function () {
+jQuery(window).scroll(function () {
     if (jQuery('#announcement-bar').length > 0) {
         // Select the element you want to track
         var $element = jQuery('#masthead'); // Replace '#yourElementId' with your element's actual ID or class
@@ -65,8 +65,6 @@ $(window).scroll(function () {
         var elementDistanceFromViewportTop = elementOffset - scrollPosition;
 
         console.log("Element's distance from viewport top:", elementDistanceFromViewportTop);
-
-       
     }
 });
 function mega_menu() {
