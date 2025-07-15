@@ -220,7 +220,7 @@ function swiper_sliders() {
     }
     if (jQuery('.swiper-hero-slider').length > 0) {
 
-        jQuery('<div class="swiper-button-next swiper-button"></div><div class="swiper-button-prev swiper-button"></div>').appendTo('.swiper-on-mobile-2');
+        jQuery('<div class="swiper-button-next swiper-button"></div><div class="swiper-button-prev swiper-button"></div>').appendTo('.swiper-hero-slider');
         var swiper_hero_slider = new Swiper('.swiper-hero-slider', {
             slidesPerView: 1,
             navigation: {
