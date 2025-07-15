@@ -11114,6 +11114,9 @@ body {
       opacity: 0;
       visibility: 1; }
 
+section.wp-block-group {
+  max-width: 100%; }
+
 img {
   height: auto; }
 
