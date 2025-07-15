@@ -284,13 +284,13 @@ function listing__key_information()
 ?>
     <ul
         class="icon-list mb-0 icon-list-v2 d-flex list-inline align-items-center justify-content-end fw-semibold flex-wrap fs-18">
-        <li> <?= get__theme_images('berths.svg') ?> 6 Berth</li>
-        <li><?= get__theme_images('warranty.svg') ?> 3 year warranty</li>
-        <li><?= get__theme_images('year.svg') ?> Year 2024</li>
-        <li><span class="icons"><?= get__theme_images('tire.svg') ?><?= get__theme_images('tire.svg') ?></span>
+        <li> <?= get__theme_icons('berths.svg') ?> 6 Berth</li>
+        <li><?= get__theme_icons('warranty.svg') ?> 3 year warranty</li>
+        <li><?= get__theme_icons('year.svg') ?> Year 2024</li>
+        <li><span class="icons"><?= get__theme_icons('tire.svg') ?><?= get__theme_icons('tire.svg') ?></span>
             Twin axle</li>
-        <li><?= get__theme_images('kg.svg') ?> MTPLM 1630kg</li>
-        <li><?= get__theme_images('awning-size.svg') ?> 10.52m Awning Size</li>
+        <li><?= get__theme_icons('kg.svg') ?> MTPLM 1630kg</li>
+        <li><?= get__theme_icons('awning-size.svg') ?> 10.52m Awning Size</li>
     </ul>
 <?php
     return ob_get_clean();
