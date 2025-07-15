@@ -946,6 +946,14 @@ span.icons {
             @include responsive(xs-sm) {
                 white-space: nowrap;
                 min-width: unset;
+                opacity: 0;
+            }
+        }
+    }
+    &.swiper-initialized {
+        > div {
+            > div {
+                opacity: 1;
             }
         }
     }

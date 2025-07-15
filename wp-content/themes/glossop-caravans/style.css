@@ -11812,7 +11812,10 @@ span.icons {
   @media screen and (max-width: 991px) {
     .swiper-on-mobile-2 > div > div {
       white-space: nowrap;
-      min-width: unset; } }
+      min-width: unset;
+      opacity: 0; } }
+  .swiper-on-mobile-2.swiper-initialized > div > div {
+    opacity: 1; }
 
 .container,
 #os-banner .container-fluid,
