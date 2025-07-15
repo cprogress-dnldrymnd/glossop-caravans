@@ -236,3 +236,21 @@ h5 {
         font-size: 14px;
     }
 }
+
+.text-announcement-bar {
+    @include responsive(xs) {
+        font-size: 15px;
+    }
+    @include responsive(mobile) {
+        font-size: 14px;
+    }
+    @include responsive(xxs) {
+        font-size: 13px;
+    }
+    @include responsive(xxs) {
+        font-size: 13px;
+    }
+    @include responsive(xxxs) {
+        font-size: 12px;
+    }
+}
