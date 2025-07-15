@@ -12412,15 +12412,6 @@ h5, .h5 {
 @media screen and (max-width: 575px) {
   .text-announcement-bar {
     font-size: 14px; } }
-@media screen and (max-width: 480px) {
-  .text-announcement-bar {
-    font-size: 13px; } }
-@media screen and (max-width: 480px) {
-  .text-announcement-bar {
-    font-size: 13px; } }
-@media screen and (max-width: 360px) {
-  .text-announcement-bar {
-    font-size: 12px; } }
 
 @font-face {
   font-family: "Proxima Nova";

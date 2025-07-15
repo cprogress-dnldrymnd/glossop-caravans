@@ -205,5 +205,15 @@ function swiper_sliders() {
 
         });
     }
+    if (window.innerWidth < 992) {
+        jQuery('.swiper-on-mobile-2').addClass('swiper swiper-on-mobile-2-js');
+        jQuery('.swiper-on-mobile-2 > *').addClass('swiper-wrapper');
+        jQuery('.swiper-on-mobile-2 > * > *').addClass('swiper-slide');
+        var swiper_on_mobile = new Swiper('.swiper-on-mobile-2-js', {
+            slidesPerView: 1,
+        });
+    }
+
+
 
 }
