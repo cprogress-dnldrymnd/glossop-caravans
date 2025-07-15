@@ -11817,9 +11817,6 @@ span.icons {
   .swiper-on-mobile-2.swiper-initialized > div > div {
     opacity: 1; }
 
-.swiper .swiper-wrapper .swiper-slide.block-editor-block-list__block {
-  display: flex;
-  flex-direction: row; }
 .swiper .swiper-wrapper.block-editor-block-list__block {
   flex-direction: column; }
 
