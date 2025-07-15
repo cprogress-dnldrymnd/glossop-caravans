@@ -44,7 +44,7 @@ global $listing_fields;
                                                 aria-controls="collapseSort-by">
                                                 <span class="accordion-button-inner">
                                                     <span class="icon-text">
-                                                        <span class="icon"><?= get__theme_images('sort-by.svg') ?></span>
+                                                        <span class="icon"><?= get__theme_icons('sort-by.svg') ?></span>
                                                         Sort by
                                                     </span>
                                                     <span class="selected fs-14 fw-bold">Price: low to high</span>
@@ -65,7 +65,7 @@ global $listing_fields;
                                                 aria-controls="collapseNew-Used">
                                                 <span class="accordion-button-inner">
                                                     <span class="icon-text">
-                                                        <span class="icon"><?= get__theme_images('new-used.svg') ?></span>
+                                                        <span class="icon"><?= get__theme_icons('new-used.svg') ?></span>
                                                         New-Used
                                                     </span>
                                                     <span class="selected fs-14 fw-bold">Value</span>
@@ -86,7 +86,7 @@ global $listing_fields;
                                                 aria-controls="collapseBerths">
                                                 <span class="accordion-button-inner">
                                                     <span class="icon-text">
-                                                        <span class="icon"><?= get__theme_images('berths.svg') ?></span> Berths
+                                                        <span class="icon"><?= get__theme_icons('berths.svg') ?></span> Berths
                                                     </span>
                                                     <span class="selected fs-14 fw-bold">Value</span>
                                                 </span>
@@ -106,7 +106,7 @@ global $listing_fields;
                                                 aria-controls="collapseMake">
                                                 <span class="accordion-button-inner">
                                                     <span class="icon-text">
-                                                        <span class="icon"><?= get__theme_images('make.svg') ?></span> Make
+                                                        <span class="icon"><?= get__theme_icons('make.svg') ?></span> Make
                                                     </span>
                                                     <span class="selected fs-14 fw-bold">Value</span>
                                                 </span>
@@ -126,7 +126,7 @@ global $listing_fields;
                                                 aria-controls="collapseModel">
                                                 <span class="accordion-button-inner">
                                                     <span class="icon-text">
-                                                        <span class="icon"><?= get__theme_images('model.svg') ?></span> Model
+                                                        <span class="icon"><?= get__theme_icons('model.svg') ?></span> Model
                                                     </span>
                                                     <span class="selected fs-14 fw-bold">Value</span>
                                                 </span>
@@ -146,7 +146,7 @@ global $listing_fields;
                                                 aria-controls="collapsePrice">
                                                 <span class="accordion-button-inner">
                                                     <span class="icon-text">
-                                                        <span class="icon"><?= get__theme_images('price.svg') ?></span> Price
+                                                        <span class="icon"><?= get__theme_icons('price.svg') ?></span> Price
                                                     </span>
                                                     <span class="selected fs-14 fw-bold">Value</span>
                                                 </span>
@@ -166,7 +166,7 @@ global $listing_fields;
                                                 aria-controls="collapseYear">
                                                 <span class="accordion-button-inner">
                                                     <span class="icon-text">
-                                                        <span class="icon"><?= get__theme_images('year.svg') ?></span> Year
+                                                        <span class="icon"><?= get__theme_icons('year.svg') ?></span> Year
                                                     </span>
                                                     <span class="selected fs-14 fw-bold">Value</span>
                                                 </span>
@@ -186,7 +186,7 @@ global $listing_fields;
                                                 aria-controls="collapseLayout-type">
                                                 <span class="accordion-button-inner">
                                                     <span class="icon-text">
-                                                        <span class="icon"><?= get__theme_images('layout-type.svg') ?></span>
+                                                        <span class="icon"><?= get__theme_icons('layout-type.svg') ?></span>
                                                         Layout-type
                                                     </span>
                                                     <span class="selected fs-14 fw-bold">Value</span>
@@ -207,7 +207,7 @@ global $listing_fields;
                                                 aria-controls="collapseWidth">
                                                 <span class="accordion-button-inner">
                                                     <span class="icon-text">
-                                                        <span class="icon"><?= get__theme_images('width.svg') ?></span> Width
+                                                        <span class="icon"><?= get__theme_icons('width.svg') ?></span> Width
                                                     </span>
                                                     <span class="selected fs-14 fw-bold">Value</span>
                                                 </span>
@@ -227,7 +227,7 @@ global $listing_fields;
                                                 aria-controls="collapseAxles">
                                                 <span class="accordion-button-inner">
                                                     <span class="icon-text">
-                                                        <span class="icon"><?= get__theme_images('axles.svg') ?></span> Axles
+                                                        <span class="icon"><?= get__theme_icons('axles.svg') ?></span> Axles
                                                     </span>
                                                     <span class="selected fs-14 fw-bold">Value</span>
                                                 </span>
