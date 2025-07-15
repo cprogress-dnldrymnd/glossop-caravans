@@ -12182,7 +12182,7 @@ span.icons {
   .desktop-only:not(.block-editor-block-list__block) {
     display: none; } }
 
-@media screen and (max-width: 767px) {
+@media (min-width: 768px) {
   .mobile-only:not(.block-editor-block-list__block) {
     display: none; } }
 
