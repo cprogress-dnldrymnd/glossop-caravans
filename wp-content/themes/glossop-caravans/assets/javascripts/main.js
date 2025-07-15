@@ -209,7 +209,7 @@ function swiper_sliders() {
         jQuery('.swiper-on-mobile-2').addClass('swiper swiper-on-mobile-2-js');
         jQuery('.swiper-on-mobile-2 > *').addClass('swiper-wrapper');
         jQuery('.swiper-on-mobile-2 > * > *').removeClass().addClass('swiper-slide');
-        jQuery('<div class="swiper-button-next swiper-button"></div><div class="swiper-button-prev swiper-button"></div>').appendTo('.swiper-on-mobile-2');
+        jQuery('<div class="swiper-button-next"></div><div class="swiper-button-prev"></div>').appendTo('.swiper-on-mobile-2');
         var swiper_on_mobile2 = new Swiper('.swiper-on-mobile-2-js', {
             slidesPerView: 1,
             navigation: {
