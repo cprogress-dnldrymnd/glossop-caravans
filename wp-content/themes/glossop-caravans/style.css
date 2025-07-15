@@ -11817,6 +11817,9 @@ span.icons {
   .swiper-on-mobile-2.swiper-initialized > div > div {
     opacity: 1; }
 
+.swiper-wrapper.block-editor-block-list__block {
+  flex-direction: column; }
+
 .container,
 #os-banner .container-fluid,
 #os-banner .container-sm,

@@ -958,3 +958,9 @@ span.icons {
         }
     }
 }
+
+.swiper-wrapper {
+    &.block-editor-block-list__block {
+        flex-direction: column;
+    }
+}
