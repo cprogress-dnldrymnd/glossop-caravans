@@ -46,6 +46,29 @@ function mega_submenu() {
     });
     jQuery('body').css('--mega-menu-height', highestElement + 'px');
 }
+
+$(window).scroll(function () {
+    if (jQuery('#announcement-bar').length > 0) {
+        // Select the element you want to track
+        var $element = jQuery('#masthead'); // Replace '#yourElementId' with your element's actual ID or class
+
+        // Get the element's position relative to the document
+        var elementOffset = $element.offset().top;
+
+        // Get the current scroll position of the window
+        var scrollPosition = jQuery(window).scrollTop();
+
+        // Calculate the element's position relative to the viewport top
+        // If the element is above the viewport, this will be negative.
+        // If the element is at the very top of the viewport, this will be 0.
+        // If the element is below the viewport, this will be positive.
+        var elementDistanceFromViewportTop = elementOffset - scrollPosition;
+
+        console.log("Element's distance from viewport top:", elementDistanceFromViewportTop);
+
+       
+    }
+});
 function mega_menu() {
     mega_submenu();
 
