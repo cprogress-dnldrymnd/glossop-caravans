@@ -11807,6 +11807,10 @@ span.icons {
   .swiper-on-mobile-2 .swiper-button-prev:after,
   .swiper-on-mobile-2 .swiper-button-next:after {
     color: var(--bs-white); }
+@media screen and (max-width: 991px) {
+  .swiper-on-mobile-2 > div > div {
+    white-space: nowrap;
+    min-width: unset; } }
 
 .container,
 #os-banner .container-fluid,

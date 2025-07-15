@@ -940,4 +940,12 @@ span.icons {
             color: var(--bs-white);
         }
     }
+    > div {
+        > div {
+            @include responsive(xs-sm) {
+                white-space: nowrap;
+                min-width: unset;
+            }
+        }
+    }
 }
