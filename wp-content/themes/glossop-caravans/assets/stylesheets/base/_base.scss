@@ -740,7 +740,13 @@ span.icons {
         max-width: 85%;
     }
 }
-
+.image-box {
+    &.brand {
+        img {
+            max-height: 37px;
+        }
+    }
+}
 .wpcf7.wpcf7 {
     p {
         margin-bottom: 0;

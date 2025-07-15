@@ -11664,11 +11664,15 @@ span.icons {
     .offcanvas.offcanvas {
       max-width: 85%; } }
 
+.image
 .wpcf7.wpcf7 p {
   margin-bottom: 0; }
+.image
 .wpcf7.wpcf7 br {
   display: none; }
-.wpcf7.wpcf7 .wpcf7-list-item.first, .wpcf7.wpcf7 .wpcf7-list-item:first-child {
+.image
+.wpcf7.wpcf7 .wpcf7-list-item.first, .image
+.wpcf7.wpcf7 .wpcf7-list-item:first-child {
   margin-left: 0 !important; }
 
 @media screen and (max-width: 991px) {
