@@ -232,7 +232,7 @@ img {
 
     &:not(.nav-tabs-style-2) {
         .nav-link {
-            border-bottom: none;
+            border-bottom: none !important;
         }
     }
 

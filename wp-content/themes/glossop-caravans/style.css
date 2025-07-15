@@ -11308,7 +11308,7 @@ img {
       .nav-tabs .nav-link {
         padding: 18px 25px; } }
   .nav-tabs:not(.nav-tabs-style-2) .nav-link {
-    border-bottom: none; }
+    border-bottom: none !important; }
   .nav-tabs.nav-tabs-style-2 {
     gap: 20px;
     border: none; }
