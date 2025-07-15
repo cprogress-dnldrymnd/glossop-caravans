@@ -931,3 +931,13 @@ span.icons {
         }
     }
 }
+
+.swiper-on-mobile-2 {
+    .swiper-button-prev,
+    .swiper-button-next {
+        --swiper-navigation-size: 18px;
+        @include after {
+            color: var(--bs-white);
+        }
+    }
+}

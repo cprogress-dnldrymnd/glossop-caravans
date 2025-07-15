@@ -11801,6 +11801,13 @@ span.icons {
   color: var(--bs-white) !important;
   border-color: var(--bs-white) !important; }
 
+.swiper-on-mobile-2 .swiper-button-prev,
+.swiper-on-mobile-2 .swiper-button-next {
+  --swiper-navigation-size: 18px; }
+  .swiper-on-mobile-2 .swiper-button-prev:after,
+  .swiper-on-mobile-2 .swiper-button-next:after {
+    color: var(--bs-white); }
+
 .container,
 #os-banner .container-fluid,
 #os-banner .container-sm,
