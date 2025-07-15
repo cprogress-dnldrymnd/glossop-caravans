@@ -933,6 +933,7 @@ span.icons {
 }
 
 .swiper-on-mobile-2 {
+    overflow: hidden;
     .swiper-button-prev,
     .swiper-button-next {
         --swiper-navigation-size: 18px;

@@ -11801,16 +11801,18 @@ span.icons {
   color: var(--bs-white) !important;
   border-color: var(--bs-white) !important; }
 
-.swiper-on-mobile-2 .swiper-button-prev,
-.swiper-on-mobile-2 .swiper-button-next {
-  --swiper-navigation-size: 18px; }
-  .swiper-on-mobile-2 .swiper-button-prev:after,
-  .swiper-on-mobile-2 .swiper-button-next:after {
-    color: var(--bs-white); }
-@media screen and (max-width: 991px) {
-  .swiper-on-mobile-2 > div > div {
-    white-space: nowrap;
-    min-width: unset; } }
+.swiper-on-mobile-2 {
+  overflow: hidden; }
+  .swiper-on-mobile-2 .swiper-button-prev,
+  .swiper-on-mobile-2 .swiper-button-next {
+    --swiper-navigation-size: 18px; }
+    .swiper-on-mobile-2 .swiper-button-prev:after,
+    .swiper-on-mobile-2 .swiper-button-next:after {
+      color: var(--bs-white); }
+  @media screen and (max-width: 991px) {
+    .swiper-on-mobile-2 > div > div {
+      white-space: nowrap;
+      min-width: unset; } }
 
 .container,
 #os-banner .container-fluid,
