@@ -12373,6 +12373,18 @@ h5, .h5 {
     .fs-23 {
       font-size: 18px; } }
 
+.fs-20 {
+  font-size: 23px; }
+  @media screen and (max-width: 991px) {
+    .fs-20 {
+      font-size: 22px; } }
+  @media screen and (max-width: 767px) {
+    .fs-20 {
+      font-size: 20px; } }
+  @media screen and (max-width: 575px) {
+    .fs-20 {
+      font-size: 18px; } }
+
 .fs-18 {
   font-size: 18px; }
   @media screen and (max-width: 575px) {

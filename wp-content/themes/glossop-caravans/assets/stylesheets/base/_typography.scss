@@ -203,6 +203,13 @@ h5 {
         font-size: 18px;
     }
 }
+.fs-20 {
+    font-size: 20px;
+
+    @include responsive(mobile) {
+        font-size: 18px;
+    }
+}
 .fs-18 {
     font-size: 18px;
     @include responsive(mobile) {
