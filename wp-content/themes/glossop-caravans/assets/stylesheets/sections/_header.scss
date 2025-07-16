@@ -167,7 +167,7 @@
     visibility: hidden;
     z-index: 2;
     @include transition(300ms);
-    z-index: 1;
+    z-index: 3;
 }
 .mega-menu-active {
     .backdrop {
