@@ -11655,7 +11655,8 @@ span.icons {
       transform: none;
       visibility: visible;
       opacity: 1;
-      border: none; }
+      border: none;
+      z-index: 1; }
       .offcanvas.offcanvas.offcanvas-visible-desktop .offcanvas-body {
         padding: 0;
         background-color: transparent; }

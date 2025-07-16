@@ -728,6 +728,7 @@ span.icons {
             visibility: visible;
             opacity: 1;
             border: none;
+            z-index: 1;
             .offcanvas-body {
                 padding: 0;
                 background-color: transparent;
