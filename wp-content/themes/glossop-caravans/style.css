@@ -13653,3 +13653,7 @@ select[name="category_name"] {
 	width: 60px;
 	height: 60px;
 }
+
+html.glossop-caravans {
+  overflow: hidden !important;
+}
