@@ -12150,6 +12150,8 @@ span.icons {
   height: 30px !important;
   width: auto !important; }
 
+.admin-bar .top-0 {
+  top: 32px !important; }
 
 .now-on-display-box.position-absolute {
   z-index: 1;
@@ -12620,9 +12622,6 @@ h5, .h5 {
   background-color: var(--bs-white);
   z-index: 9999; }
 
-@media screen and (min-width: 992px) {
-  .admin-bar #masthead {
-    top: 32px; } }
 @media screen and (max-width: 991px) {
   .wp-block-navigation-item .wp-block-navigation-item__content {
     flex-direction: column; } }
