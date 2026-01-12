@@ -37,12 +37,8 @@ function mega_menu_spacing() {
         // 3. Calculate distance from the top of the viewport
         var distanceFromTop = elementOffset - scrollPosition;
 
-        console.log("Distance from viewport top: " + distanceFromTop + "px");
+        jQuery('body').css('--header-distance-top', distanceFromTop + 'px');
 
-        // Example: Do something when it hits the top
-        if (distanceFromTop <= 0) {
-            console.log("Element has hit the top!");
-        }
     });
 }
 
