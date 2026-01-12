@@ -1,3 +1,21 @@
+jQuery(window).scroll(function () {
+    console.log('xx2');
+    // 1. Get how much the window is scrolled
+    var scrollPosition = jQuery(window).scrollTop();
+
+    // 2. Get the element's fixed position on the page
+    var elementOffset = $target.offset().top;
+
+    // 3. Calculate distance from the top of the viewport
+    var distanceFromTop = elementOffset - scrollPosition;
+
+    console.log("Distance from viewport top: " + distanceFromTop + "px");
+
+    // Example: Do something when it hits the top
+    if (distanceFromTop <= 0) {
+        console.log("Element has hit the top!");
+    }
+});
 jQuery(document).ready(function () {
     swiper_sliders();
     fancybox();
@@ -151,24 +169,7 @@ function mega_menu() {
 
     var $target = jQuery('#main-header');
 
-    jQuery(window).scroll(function () {
-        console.log('xx2');
-        // 1. Get how much the window is scrolled
-        var scrollPosition = jQuery(window).scrollTop();
 
-        // 2. Get the element's fixed position on the page
-        var elementOffset = $target.offset().top;
-
-        // 3. Calculate distance from the top of the viewport
-        var distanceFromTop = elementOffset - scrollPosition;
-
-        console.log("Distance from viewport top: " + distanceFromTop + "px");
-
-        // Example: Do something when it hits the top
-        if (distanceFromTop <= 0) {
-            console.log("Element has hit the top!");
-        }
-    });
 }
 
 function fancybox() {
