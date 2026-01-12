@@ -26,20 +26,24 @@ function mega_menu_spacing() {
     console.log('x3');
 
     var $target = jQuery('#main-header');
+    menu_spacing($target);
     jQuery('body').scroll(function () {
         console.log('xx2');
-        // 1. Get how much the window is scrolled
-        var scrollPosition = jQuery(window).scrollTop();
-
-        // 2. Get the element's fixed position on the page
-        var elementOffset = $target.offset().top;
-
-        // 3. Calculate distance from the top of the viewport
-        var distanceFromTop = elementOffset - scrollPosition;
-
-        jQuery('body').css('--header-distance-top', distanceFromTop + 'px');
-
+        menu_spacing($target);
     });
+}
+
+function menu_spacing($target) {
+    // 1. Get how much the window is scrolled
+    var scrollPosition = jQuery(window).scrollTop();
+
+    // 2. Get the element's fixed position on the page
+    var elementOffset = $target.offset().top;
+
+    // 3. Calculate distance from the top of the viewport
+    var distanceFromTop = elementOffset - scrollPosition;
+
+    jQuery('body').css('--header-distance-top', distanceFromTop + 'px');
 }
 
 function match_height() {
