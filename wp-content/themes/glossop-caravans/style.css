@@ -192,6 +192,11 @@ Text Domain: glossop-caravans
 *::before,
 *::after {
   box-sizing: border-box; }
+  
+html, body {
+  overflow-x: hidden !important;
+ 
+}
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
@@ -207,7 +212,9 @@ body {
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+    height:100vh;
+}
 
 hr {
   margin: 1rem 0;
@@ -12061,11 +12068,15 @@ span.icons {
 
 .wp-block-image.w-100 > img {
   width: 100% !important;
-  object-fit: cover; }
+  /*object-fit: cover; */
+    
+}
 
 .wp-block-image.h-100 > img {
   height: 100% !important;
-  object-fit: cover; }
+  object-fit: cover; 
+    
+}
 
 .double-line-height {
   line-height: 1.8; }
@@ -12139,8 +12150,6 @@ span.icons {
   height: 30px !important;
   width: auto !important; }
 
-.admin-bar .top-0 {
-  top: 32px !important; }
 
 .now-on-display-box.position-absolute {
   z-index: 1;
@@ -12611,6 +12620,9 @@ h5, .h5 {
   background-color: var(--bs-white);
   z-index: 9999; }
 
+@media screen and (min-width: 992px) {
+  .admin-bar #masthead {
+    top: 32px; } }
 @media screen and (max-width: 991px) {
   .wp-block-navigation-item .wp-block-navigation-item__content {
     flex-direction: column; } }
@@ -12750,7 +12762,7 @@ h5, .h5 {
         content: "" !important;
         display: block !important;
         height: 71.2px;
-        background-image: url(https://newglossopacaravans.theprogressteam.co.uk/wp-content/uploads/2025/05/glossop-logo-300x78.png);
+        background-image: url(https://www.glossopcaravans.co.uk/wp-content/uploads/2025/05/glossop-logo-300x78.png);
         background-size: 150px;
         background-repeat: no-repeat;
         width: 100%;
@@ -13092,12 +13104,24 @@ h5, .h5 {
   #gallery-tab-pane {
     margin-left: -1rem;
     margin-right: -1rem; } }
+    
 
 .listing-inner--mobile-sticky {
-  z-index: 999;
+  position: fixed !important;
+  z-index: 99;
   left: 0;
   right: 0;
-  box-shadow: 0px -5px 16px #0000001f; }
+  box-shadow: 0px -5px 16px #0000001f;
+}
+
+  .listing-inner--mobile-sticky.scroll {
+  position: relative !important; 
+
+}
+
+.listing-inner--mobile-sticky.hidden {
+  display: none !important;
+}
 
 .delear-details .logo-box img {
   max-width: 140px; }
@@ -13111,3 +13135,519 @@ h5, .h5 {
 /*-----------------------------------------------------------------------------------*/
 
 /*# sourceMappingURL=style.css.map */
+
+.margin--left {
+	margin-left: var(--margin);
+	--bs-gutter-x: 1.5rem;
+    padding-left: calc(var(--bs-gutter-x) * .5) !important;
+}
+
+.swiper-wrapper.block-editor-block-list__block.block-editor-block-list__block {
+	flex-direction: column !important;
+}
+
+.wp-block-navigation__responsive-container-open.wp-block-navigation__responsive-container-open {
+	width: 32px;
+	height: 32px;
+	background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15"><g id="Burger-Menu-Mobile" transform="translate(-388 -29)"><rect id="Rectangle_227" data-name="Rectangle 227" width="17" height="3" transform="translate(388 29)"/><rect id="Rectangle_228" data-name="Rectangle 228" width="17" height="3" transform="translate(388 35)"/><rect id="Rectangle_229" data-name="Rectangle 229" width="17" height="3" transform="translate(388 41)"/></g></svg>');
+	    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.wp-block-navigation__responsive-container-open.wp-block-navigation__responsive-container-open svg {
+	display: none;
+}
+.swiper-listing-loop.swiper-listing-loop {
+	overflow: visible;
+}
+.swiper-listing-loop .swiper-wrapper {
+	padding: 0;
+	margin: 0;
+}
+[style="border-bottom-color: rgba(0, 0, 0, 0);"] {
+	border: none !important;
+}
+
+
+.carousel-style-1 .swiper  {
+	height: auto !important;
+}
+.menu-style-1 {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+.now-on-display-box.now-on-display-box{
+	position: static !important;
+	    border-radius: 0;
+}
+.listing-grid-item__top-position-relative .listing-grid--gallery + .now-on-display-box {
+	position: absolute !important;
+}
+/**/
+.text-white.text-white.text-white a{
+	color: #fff !important;
+}
+.py-20 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.py-12 {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+.p-18 {
+	padding: 18px;
+}
+
+.py-10 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+
+.accordion-v2 .accordion{
+	padding: 0;
+	border-left: none !important;
+	border-right: none !important;
+	border-radius: 0 !important;
+}
+.accordion-v2 {
+	--bs-border-color: #000 !important;
+}
+.accordion-v2.accordion-v2.accordion-v2 .accordion-item {
+	--bs-accordion-border-color: #000 !important;
+	
+}
+.swiper-listing {
+	padding-bottom: 24px;
+}
+ol, ul, dl {
+	margin-left: 0;
+	margin-right: 0;
+}
+.accordion-v2 .accordion-header {
+	padding-bottom: 0;
+}
+.wp-block-separator.wp-block-separator {
+	border-top-width: 1px;
+}
+.fs-26 {
+	font-size: 26px;
+}
+#myTabFilter {
+	border: none;
+	margin: 0;
+}
+.heading-with-arrow {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	justify-content: space-between;
+}
+.heading-with-arrow:after {
+	content: '';
+	display: block;
+	background-image: url(https://www.glossopcaravans.co.uk/wp-content/uploads/2025/07/arrow-right-thin-svgrepo-com.svg);
+	width: 25px;
+	height: 25px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#mobile-menu-buttons {
+	width: 100%;
+	margin-top: 30px !important;
+	padding-bottom: 50px !important;
+}
+.whats-app a {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+}
+.wp-block-navigation__responsive-container {
+	height: 100vh;
+	overflow: auto;
+}
+.whats-app a:before {
+	content: '';
+	display: block;
+	width: 22px;
+	height: 22px;
+	background-image: url(https://www.glossopcaravans.co.uk/wp-content/uploads/2025/07/whatsapp.svg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+input[type="checkbox"] {
+	width: 32px;
+	height: 32px;
+}
+.wpcf7-checkbox {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+.wpcf7-checkbox .wpcf7-list-item {
+	margin: 0;
+}
+.wpcf7-checkbox label{
+	display: flex;
+	gap: 10px;;
+	align-items: center;
+}
+
+.wp-block-query-pagination {
+	gap: 10px;
+}
+.wp-block-query-pagination-numbers {
+	display: flex;
+	gap: 10px;
+}
+.wp-block-query-pagination .page-numbers, .wp-block-query-pagination-previous, .wp-block-query-pagination-next {
+	width: 55px;
+	height: 55px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	font-weight: 600;
+	border: 1px solid;
+	border-radius: 5px;
+	text-decoration: none;
+	color: var(--bs-black);
+}
+.wp-block-query-pagination .page-numbers.current {
+	background-color: var(--orange-color);
+	border-color: var(--orange-color);
+	color: var(--bs-white)
+}
+.wp-block-query-pagination a.page-numbers:hover, .wp-block-query-pagination-previous:hover, .wp-block-query-pagination-next:hover {
+		background-color: var(--bs-black);
+	color: var(--bs-white);
+	border-color: var(--bs-black)
+}
+.fs-22 {
+	font-size: 22px;
+}
+.next-prev-post .post-navigation-link__label{
+	font-size: 16px;
+	display: block;
+}
+
+.next-prev-post a{
+	text-decoration: none;
+}
+.post-navigation-link__title {
+	font-weight: bold;
+	
+}
+
+.next-prev-post > div{
+	max-width: 295px;
+}
+.post-navigation-link-next {
+	text-align: right;
+}
+.sep-style {
+	border-top-width: 3px !important;
+
+	opacity: 1;
+}
+.tabs--style-3 .nav-tabs-swiper-style-1 {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+.section--arrow-style:before {
+	content: '';
+	display: block;
+	width: 0;
+      height: 0;
+      border-left: 47px solid transparent;
+      border-right: 47px solid transparent;
+      border-top: 36px solid var(--wp--preset--color--lightgray-4) !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+.swiper--timeline-thumbs-holder {
+	margin-top: 8vw !important;
+}
+.swiper--timeline-thumbs-holder .swiper-slide{
+	border-bottom: 5px solid transparent;
+	cursor: pointer;
+	width: auto !important;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.swiper--timeline-thumbs-holder .swiper-slide-thumb-active{
+	border-color: var(--orange-color);
+}
+select[name="category_name"] {
+	border: 1px solid;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: transparent;
+	font-weight: 600;
+}
+@media(min-width: 768px) {
+	.seach-stock-holder .nav-tabs .nav-item .nav-link {
+		padding-top: 22px;
+		padding-bottom: 22px;
+	}
+	.form-control-lg {
+		padding-top: 22px;
+		padding-bottom: 22px;
+	}
+	.btn-lg {
+		    --bs-btn-padding-y: 22px;
+	}
+}
+.hero-slider-desktop img {
+	/*height: 440px;*/
+}
+@media screen and (max-width: 1178px) {
+	.hero-slider-desktop {
+		display: none !important;
+	}
+}
+@media screen and (min-width: 1179px) {
+	.hero-slider-mobile {
+		display: none !important;
+	}
+}
+@media(min-width: 992px) {
+	.accordion-v2 .accordion-button  {
+		font-size: 22px;
+	}
+	.fs-45 {
+		font-size: 45px;
+	}
+}
+@media screen and (max-width: 991px) {
+   .wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content {
+			display: flex !important;
+			flex-direction: column;
+
+    }
+}
+@media(max-width: 575px) {
+	.wp-block-button__link.wp-block-button__link {
+		padding-top: 14px;
+		padding-bottom: 14px;
+	}
+	body:not(.page-id-2837):not(.home) .seach-stock-holder{
+		display: none !important;
+	}
+	.header-tel {
+		margin-right: 0 !important;
+	}
+	.header-tel a {
+		font-weight: bold !important;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.listing--details-mobile .listing-price .listing-grid-item__price, .listing-grid-item__prices-holder .listing-grid-item__price {
+		width: 33.33333%;
+		flex: 0 0 auto!important;
+	}
+	.listing--details-mobile .listing-price .listing-grid-item__price.col:last-child, .listing-grid-item__prices-holder .listing-grid-item__price.col:last-child {
+		display: block;
+	}
+}
+
+/*chat bots*/
+#masthead {
+	z-index: 999999999
+}
+#launcher {
+
+    right: 60px !important;
+    bottom: 20px !important;
+	z-index: 99 !important;
+}
+.wa__btn_popup_txt.wa__btn_popup_txt {
+	display: none !important;
+}
+.wa__btn_popup {
+    bottom: 30px !important;
+    right: 10px !important;
+		z-index: 99 !important;
+
+}
+
+
+
+.listing-grid .wp-block-post-title, .listing-grid .wp-block-post-excerpt {
+	overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; /* number of lines to show */
+           line-clamp: 2; 
+   -webkit-box-orient: vertical;
+}
+
+.listing-grid .wp-block-post-featured-image img {
+	aspect-ratio: 3/2 !important;
+	object-fit: cover !important;
+}
+
+.testimonial--stars {
+	display: flex;
+	gap: 5px;
+}
+.testimonial--stars svg {
+	width: 32px;
+	height: 32px;
+}
+.swiper--timeline-thumbs-holder {
+	position: absolute;
+	left: 0;
+	right: 0;
+	color: #fff;
+	bottom: 50px
+}
+.wp-block-cover[style*="min-height:100vh;"] {
+	min-height: calc(100vh - var(--header-height, 0px)) !important;
+}
+.wpcf7-acceptance label {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+.wp-block-navigation-item__content:hover {
+	color: var(--wp--preset--color--orange-color) !important;
+}
+.custom-submenu.custom-submenu.custom-submenu.custom-submenu {
+    transition: 100ms !important;
+}
+.block-editor-block-list__block.hero-slider-mobile {
+    display: block !important;
+}
+@media (max-width: 450px) {
+    .container {
+         padding-right: calc(var(--bs-gutter-x) * .5) !important;
+    padding-left: calc(var(--bs-gutter-x) * .5) !important;
+    }
+}
+@media (max-width: 1024px) {
+    .main-footer .wp-block-group.container.is-layout-constrained.wp-block-group-is-layout-constrained {
+        margin-left: 0 !important;
+    }
+}
+.testimonial--stars {
+	margin-bottom: 10px;
+}
+.testimonial--stars:not(.stars-5-stars){
+	color: #72cf0f;
+}
+.testimonial--stars.stars-5-stars{
+	color: #00b67a;
+}
+.static-page-content+#form {
+     max-width: 1320px !important;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.static-page .header-socials {
+    top: -67px !important
+}
+@media(max-width: 991px ) {
+	#webWidget {
+		width: 100% !important;
+		height: 60% !important;
+		right: 0 !important;
+		left: auto !important;
+		bottom: 0 !important;
+		top: auto !important;
+	}
+	
+	body[style*='position: fixed']:before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        opacity: 0.5;
+        z-index: 9990;
+	}
+	.page-template-caravan_details .wa__btn_popup{
+	bottom: 170px !important;
+}
+	.page-template-caravan_details #launcher {
+		bottom: 230px !important;
+		right: 10px !important;
+		margin: 0 !important;
+	}
+	nav:where(.is-layout-flex) {
+			gap: 1px;
+	}
+	.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content .wp-block-navigation__container .wp-block-navigation-item {
+		gap: 1px !important;
+	}
+	.custom-submenu.custom-submenu {
+		box-shadow: none !important;
+	}
+}
+
+.wa__btn_popup .wa__btn_popup_icon {
+	width: 48.92px !important;
+	height: 48.92px !important;
+}
+
+#masthead {
+    /*z-index: 10000 !important;*/
+}
+
+.entry-content .wp-block-button__link.wp-block-button__link {
+	text-decoration: none;
+	background-color: var(--orange-color);
+	color: #fff;
+	border-radius: 5px;
+	font-weight: 600;
+	border: 1px solid var(--orange-color);
+	transition: 500ms;
+}
+
+.entry-content .wp-block-button__link.wp-block-button__link:hover {
+	background-color: transparent;
+	color: var(--orange-color)
+}
+@media (max-width: 500px) {
+    .listings-holder {
+        padding-left: 0;
+        padding-right: 0;
+    }
+	.wpcf7-checkbox {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 5px;
+	}
+	.wpcf7-checkbox .wpcf7-list-item {
+		margin: 0;
+		width: calc(50% - 2.5px);
+	}
+} 
+@media (max-width: 450px) {
+    .row {
+            margin-right: calc(-.5 * var(--bs-gutter-x)) !important;
+    margin-left: calc(-.5 * var(--bs-gutter-x)) !important;
+    }
+}
+
+.team-badge {
+	flex: 0 0 60px;
+}
+
+.team-badge img {
+	width: 60px;
+	height: 60px;
+}
