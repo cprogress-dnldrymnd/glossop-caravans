@@ -37,7 +37,6 @@ function matchHeights(selector) {
     jQuery(selector).each(function () {
         // Use .outerHeight() to include padding and border in the calculation
         const currentHeight = jQuery(this).outerHeight();
-        console.log(currentHeight);
         if (currentHeight > maxHeight) {
             maxHeight = currentHeight;
         }
