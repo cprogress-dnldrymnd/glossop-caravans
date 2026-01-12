@@ -23,6 +23,8 @@ function toggleBtn_func() {
 }
 
 function mega_menu_spacing() {
+        console.log('x3');
+
     var $target = jQuery('#main-header');
     jQuery(window).scroll(function () {
         console.log('xx2');
