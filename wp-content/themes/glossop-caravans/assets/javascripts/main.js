@@ -26,7 +26,7 @@ function mega_menu_spacing() {
     console.log('x3');
 
     var $target = jQuery('#main-header');
-    jQuery(document).scroll(function () {
+    jQuery('body').scroll(function () {
         console.log('xx2');
         // 1. Get how much the window is scrolled
         var scrollPosition = jQuery(window).scrollTop();
