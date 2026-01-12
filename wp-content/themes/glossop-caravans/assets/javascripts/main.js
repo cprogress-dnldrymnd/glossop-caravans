@@ -6,7 +6,66 @@ jQuery(document).ready(function () {
     listings();
     read_more();
     header_distance();
+    margin__Left();
+    fixed_menu_link_mobile();
+    match_height();
+    toggleBtn_func();
 });
+
+function toggleBtn_func() {
+
+    jQuery(".toggleBtn a").on("click", function () {
+        jQuery('#toggleBtn').trigger('click');
+        console.log('xxx');
+    });
+}
+
+function match_height() {
+    jQuery('.loop-mh .nav-link').click(function (e) {
+        setTimeout(function () {
+            matchHeights(jQuery('.loop-mh .tab-pane.active .post--title'));
+            matchHeights(jQuery('.loop-mh .tab-pane.active .post--excerpt'));
+        }, 500);
+    });
+}
+
+
+function matchHeights(selector) {
+    let maxHeight = 0;
+
+    // Iterate through each element to find the maximum height
+    jQuery(selector).each(function () {
+        // Use .outerHeight() to include padding and border in the calculation
+        const currentHeight = jQuery(this).outerHeight();
+        console.log(currentHeight);
+        if (currentHeight > maxHeight) {
+            maxHeight = currentHeight;
+        }
+    });
+
+    // Set all elements to the calculated maximum height
+    jQuery(selector).height(maxHeight);
+}
+
+function fixed_menu_link_mobile() {
+    if (window.innerWidth < 992) {
+        jQuery('li.wp-block-navigation-item:not(.has-custom-submenu) .wp-block-navigation-item__content').click(function (e) {
+            $href = jQuery(this).attr('href');
+            $target = jQuery(this).attr('target');
+            if ($target == '_blank') {
+                window.open($href, '_blank').focus();
+            } else {
+                window.location.href = $href;
+            }
+            e.preventDefault();
+        });
+    }
+}
+
+function margin__Left() {
+    $margin = jQuery('#main-header > div').css('margin-left');
+    jQuery('body').css('--margin', $margin);
+}
 
 
 function read_more() {
@@ -20,6 +79,10 @@ function read_more() {
 function listings() {
     if (jQuery('.nav-tabs-js').length > 0) {
         jQuery('.nav-tabs-js .nav-item:first-child .nav-link').click();
+        setTimeout(function () {
+            matchHeights(jQuery('.loop-mh .tab-pane.active .post--title'));
+            matchHeights(jQuery('.loop-mh .tab-pane.active .post--excerpt'));
+        }, 100);
     }
 }
 function search_stock() {
@@ -33,6 +96,7 @@ function mega_submenu() {
     jQuery('#Motorhomes-Submenu').appendTo('.Motorhomes-Submenu');
     jQuery('#Caravans-Submenu').appendTo('.Caravans-Submenu');
     jQuery('#Export-Submenu').appendTo('.Export-Submenu');
+    jQuery('#Awnings-Submenu').appendTo('.Awnings-Submenu');
 
     let highestHeight = 0;
     let highestElement = null;
@@ -85,8 +149,6 @@ function mega_menu() {
         });
     }
 
-
-
     var $target = jQuery('#main-header');
 
     jQuery(window).scroll(function () {
@@ -119,14 +181,13 @@ function fancybox() {
     jQuery('.zoom').click(function (e) {
         jQuery(this).next().find('.swiper-slide-active a').addClass('sdsdss');
         jQuery(this).next().find('.swiper-slide-active a').trigger('click');
-        console.log('mama mo');
         e.preventDefault();
     });
 }
 
 function swiper_sliders() {
     var swiper = new Swiper(".swiper-listing", {
-
+        loop: true, // Add this line
         breakpoints: {
             0: {
                 slidesPerView: 'auto',
@@ -174,6 +235,36 @@ function swiper_sliders() {
 
 
 
+        //       var swiper_gallery = new Swiper('.swiper-gallery', {
+        //     loop: false,
+        //     slidesPerView: 1,
+        //     spaceBetween: 0,
+        //     preloadImages: false, // must be false for lazy loading
+        //     lazy: {
+        //         loadPrevNext: true,
+        //         loadPrevNextAmount: 1,
+        //         checkInView: true,
+        //     },
+        //     thumbs: { swiper: swiper_thumb },
+        //     navigation: {
+        //         nextEl: '.swiper-gallery-next',
+        //         prevEl: '.swiper-gallery-prev',
+        //     },
+        //     pagination: {
+        //         el: '.swiper-gallery-pagination',
+        //         type: 'fraction',
+        //     },
+        //     watchSlidesVisibility: true,
+        //     watchSlidesProgress: true,
+        //     on: {
+        //         init: function () {
+        //             this.lazy.load(); // force load first visible slide
+        //         },
+        //         slideChange: function () {
+        //             this.lazy.load(); // force load next slides
+        //         },
+        //     },
+        // });
         var swiper_gallery = new Swiper('.swiper-gallery', {
             loop: true,
             slidesPerView: 1,
@@ -243,23 +334,150 @@ function swiper_sliders() {
         jQuery('<div class="swiper-button-next"></div><div class="swiper-button-prev"></div>').appendTo('.swiper-on-mobile-2');
         var swiper_on_mobile2 = new Swiper('.swiper-on-mobile-2-js', {
             slidesPerView: 1,
+            autoplay: true,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
         });
     }
+    // if (jQuery('.swiper-hero-slider').length > 0) {
+    //     jQuery('.swiper-hero-slider img').removeAttr('srcset');
+    //     jQuery('<div class="swiper-button-next swiper-button"></div><div class="swiper-button-prev swiper-button"></div>').appendTo('.swiper-hero-slider');
+    //     var swiper_hero_slider = new Swiper('.swiper-hero-slider', {
+    //         slidesPerView: 1,
+    //         loop: true,
+    //         allowTouchMove: false,
+    //         navigation: {
+    //             nextEl: ".swiper-button-next",
+    //             prevEl: ".swiper-button-prev",
+    //         },
+    //     });
+    // }
     if (jQuery('.swiper-hero-slider').length > 0) {
 
-        jQuery('<div class="swiper-button-next swiper-button"></div><div class="swiper-button-prev swiper-button"></div>').appendTo('.swiper-hero-slider');
+        // Remove Gutenberg layout constraints
+        jQuery('.swiper-hero-slider, .swiper-hero-slider *')
+            .removeClass('is-layout-constrained wp-block-group-is-layout-constrained');
+
+        //  Add nav buttons only once
+        if (!jQuery('.swiper-hero-slider .swiper-button-next').length) {
+            jQuery('<div class="swiper-button-next swiper-button"></div><div class="swiper-button-prev swiper-button"></div>')
+                .appendTo('.swiper-hero-slider');
+        }
+
+        // Init Swiper
         var swiper_hero_slider = new Swiper('.swiper-hero-slider', {
             slidesPerView: 1,
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: '.swiper-hero-slider .swiper-button-next',
+                prevEl: '.swiper-hero-slider .swiper-button-prev',
+            },
+            observer: true,
+            observeParents: true,
+        });
+    }
+
+    if (jQuery('.swiper--timeline').length > 0) {
+        jQuery('.swiper--timeline-thumbs .swiper-slide').each(function (index, element) {
+            $width = jQuery(this).outerWidth();
+            jQuery(this).css('width', $width + 'px !important');
+        });
+        jQuery('.swiper--timeline, .swiper--timeline *').removeClass('is-layout-constrained wp-block-group-is-layout-constrained');
+        jQuery('.swiper--timeline-thumbs, .swiper--timeline-thumbs *').removeClass('is-layout-constrained wp-block-group-is-layout-constrained');
+        var swiper_thumbs = new Swiper(".swiper--timeline-thumbs", {
+            spaceBetween: 30,
+            slidesPerView: 'auto',
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper_timeline = new Swiper(".swiper--timeline", {
+            spaceBetween: 0,
+            slidesPerView: 1,
+            thumbs: {
+                swiper: swiper_thumbs,
             },
         });
     }
 
 
-}
+    if (jQuery('.swiper-listing-loop').length > 0) {
+        jQuery('.swiper-listing-loop').each(function (index, element) {
+            if (jQuery(this).find('>*').length > 0) {
+                jQuery(this).find('>*').removeAttr('class').addClass('swiper-wrapper');
+                jQuery(this).find('> * > *').removeAttr('class').addClass('swiper-slide');
+                $swiper_loop_class = 'swiper-listing-loop-' + index;
+
+                jQuery(this).addClass($swiper_loop_class);
+
+                const swiper_listing_loop = new Swiper("." + $swiper_loop_class, {
+                    loop: true, // Add this line
+                    breakpoints: {
+                        0: {
+                            slidesPerView: 'auto',
+                            spaceBetween: 12,
+                            freeMode: true,
+                        },
+
+
+                        992: {
+                            slidesPerView: 3,
+                            spaceBetween: 20,
+                        },
+
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+
+            }
+        });
+    }
+
+    if (jQuery('.swiper-listing-loop--v2').length > 0) {
+        jQuery('.swiper-listing-loop--v2').each(function (index, element) {
+            if (jQuery(this).find('>*').length > 0) {
+                jQuery(this).find('>*').removeAttr('class').addClass('swiper-wrapper p-0');
+                jQuery(this).find('> * > *').removeAttr('class').addClass('swiper-slide');
+                $swiper_loop_class = 'swiper-listing-loop--v2-' + index;
+
+                jQuery(this).addClass($swiper_loop_class);
+
+                const swiper_listing_loop = new Swiper("." + $swiper_loop_class, {
+                    loop: true, // Add this line
+                    breakpoints: {
+                        0: {
+                            slidesPerView: 'auto',
+                            spaceBetween: 12,
+                            freeMode: true,
+                        },
+
+
+                        992: {
+                            slidesPerView: 3,
+                            spaceBetween: 20,
+                        },
+
+                        1200: {
+                            slidesPerView: 4,
+                            spaceBetween: 20,
+                        },
+
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+
+            }
+        });
+    }
+}	
