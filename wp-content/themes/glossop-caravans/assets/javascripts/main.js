@@ -21,6 +21,7 @@ function toggleBtn_func() {
     });
 }
 
+
 function match_height() {
     jQuery('.loop-mh .nav-link').click(function (e) {
         setTimeout(function () {
@@ -112,7 +113,7 @@ function mega_submenu() {
     jQuery('body').css('--mega-menu-height', highestElement + 'px');
 }
 
-jQuery(window).scroll(function () {
+jQuery('body').scroll(function () {
     header_distance();
 });
 
