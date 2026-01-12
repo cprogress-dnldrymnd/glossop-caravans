@@ -1,3 +1,5 @@
+var $target = jQuery('#main-header');
+
 jQuery(window).scroll(function () {
     console.log('xx2');
     // 1. Get how much the window is scrolled
@@ -167,7 +169,6 @@ function mega_menu() {
     }
 
 
-    var $target = jQuery('#main-header');
 
 
 }
