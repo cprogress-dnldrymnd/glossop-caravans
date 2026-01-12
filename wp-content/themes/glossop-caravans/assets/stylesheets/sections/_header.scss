@@ -182,13 +182,6 @@
     z-index: 9999;
 }
 
-@include responsive(md-lg) {
-    .admin-bar {
-        #masthead {
-            top: 32px;
-        }
-    }
-}
 
 .wp-block-navigation-item {
     @include responsive(xs-sm) {
