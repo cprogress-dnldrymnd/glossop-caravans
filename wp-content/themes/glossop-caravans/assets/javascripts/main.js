@@ -113,7 +113,7 @@ function mega_submenu() {
 }
 
 jQuery(window).scroll(function () {
-   header_distance();
+    header_distance();
 });
 
 function header_distance() {
@@ -150,7 +150,26 @@ function mega_menu() {
     }
 
 
+    var $target = jQuery('#main-header');
 
+    jQuery(window).scroll(function () {
+        console.log('xx2');
+        // 1. Get how much the window is scrolled
+        var scrollPosition = jQuery(window).scrollTop();
+
+        // 2. Get the element's fixed position on the page
+        var elementOffset = $target.offset().top;
+
+        // 3. Calculate distance from the top of the viewport
+        var distanceFromTop = elementOffset - scrollPosition;
+
+        console.log("Distance from viewport top: " + distanceFromTop + "px");
+
+        // Example: Do something when it hits the top
+        if (distanceFromTop <= 0) {
+            console.log("Element has hit the top!");
+        }
+    });
 }
 
 function fancybox() {
@@ -215,36 +234,36 @@ function swiper_sliders() {
 
 
 
-//       var swiper_gallery = new Swiper('.swiper-gallery', {
-//     loop: false,
-//     slidesPerView: 1,
-//     spaceBetween: 0,
-//     preloadImages: false, // must be false for lazy loading
-//     lazy: {
-//         loadPrevNext: true,
-//         loadPrevNextAmount: 1,
-//         checkInView: true,
-//     },
-//     thumbs: { swiper: swiper_thumb },
-//     navigation: {
-//         nextEl: '.swiper-gallery-next',
-//         prevEl: '.swiper-gallery-prev',
-//     },
-//     pagination: {
-//         el: '.swiper-gallery-pagination',
-//         type: 'fraction',
-//     },
-//     watchSlidesVisibility: true,
-//     watchSlidesProgress: true,
-//     on: {
-//         init: function () {
-//             this.lazy.load(); // force load first visible slide
-//         },
-//         slideChange: function () {
-//             this.lazy.load(); // force load next slides
-//         },
-//     },
-// });
+        //       var swiper_gallery = new Swiper('.swiper-gallery', {
+        //     loop: false,
+        //     slidesPerView: 1,
+        //     spaceBetween: 0,
+        //     preloadImages: false, // must be false for lazy loading
+        //     lazy: {
+        //         loadPrevNext: true,
+        //         loadPrevNextAmount: 1,
+        //         checkInView: true,
+        //     },
+        //     thumbs: { swiper: swiper_thumb },
+        //     navigation: {
+        //         nextEl: '.swiper-gallery-next',
+        //         prevEl: '.swiper-gallery-prev',
+        //     },
+        //     pagination: {
+        //         el: '.swiper-gallery-pagination',
+        //         type: 'fraction',
+        //     },
+        //     watchSlidesVisibility: true,
+        //     watchSlidesProgress: true,
+        //     on: {
+        //         init: function () {
+        //             this.lazy.load(); // force load first visible slide
+        //         },
+        //         slideChange: function () {
+        //             this.lazy.load(); // force load next slides
+        //         },
+        //     },
+        // });
         var swiper_gallery = new Swiper('.swiper-gallery', {
             loop: true,
             slidesPerView: 1,
@@ -339,13 +358,13 @@ function swiper_sliders() {
         // Remove Gutenberg layout constraints
         jQuery('.swiper-hero-slider, .swiper-hero-slider *')
             .removeClass('is-layout-constrained wp-block-group-is-layout-constrained');
-    
+
         //  Add nav buttons only once
         if (!jQuery('.swiper-hero-slider .swiper-button-next').length) {
             jQuery('<div class="swiper-button-next swiper-button"></div><div class="swiper-button-prev swiper-button"></div>')
                 .appendTo('.swiper-hero-slider');
         }
-    
+
         // Init Swiper
         var swiper_hero_slider = new Swiper('.swiper-hero-slider', {
             slidesPerView: 1,
@@ -420,8 +439,8 @@ function swiper_sliders() {
             }
         });
     }
-      
-        if (jQuery('.swiper-listing-loop--v2').length > 0) {
+
+    if (jQuery('.swiper-listing-loop--v2').length > 0) {
         jQuery('.swiper-listing-loop--v2').each(function (index, element) {
             if (jQuery(this).find('>*').length > 0) {
                 jQuery(this).find('>*').removeAttr('class').addClass('swiper-wrapper p-0');
@@ -444,8 +463,8 @@ function swiper_sliders() {
                             slidesPerView: 3,
                             spaceBetween: 20,
                         },
-                        
-                         1200: {
+
+                        1200: {
                             slidesPerView: 4,
                             spaceBetween: 20,
                         },
