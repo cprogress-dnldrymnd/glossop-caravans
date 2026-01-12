@@ -1,5 +1,9 @@
 
 jQuery(document).ready(function () {
+    jQuery('body').scroll(function () {
+        header_distance();
+    });
+
     swiper_sliders();
     fancybox();
     mega_menu();
@@ -11,6 +15,7 @@ jQuery(document).ready(function () {
     fixed_menu_link_mobile();
     match_height();
     toggleBtn_func();
+
 });
 
 function toggleBtn_func() {
@@ -113,9 +118,6 @@ function mega_submenu() {
     jQuery('body').css('--mega-menu-height', highestElement + 'px');
 }
 
-jQuery('body').scroll(function () {
-    header_distance();
-});
 
 function header_distance() {
     var $element = jQuery('#masthead');
