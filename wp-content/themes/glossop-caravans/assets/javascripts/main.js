@@ -103,6 +103,7 @@ function mega_submenu() {
     jQuery('#Caravans-Submenu').appendTo('.Caravans-Submenu');
     jQuery('#Export-Submenu').appendTo('.Export-Submenu');
     jQuery('#Awnings-Submenu').appendTo('.Awnings-Submenu');
+    jQuery('#Service-Centre-Submenu').appendTo('.Service-Centre-Submenu');
 
     let highestHeight = 0;
     let highestElement = null;
