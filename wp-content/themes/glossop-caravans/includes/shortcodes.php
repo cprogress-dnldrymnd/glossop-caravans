@@ -59,3 +59,30 @@ function search_stock()
     return ob_get_clean();
 }
 add_shortcode('search_stock', 'search_stock');
+
+
+function test()
+{
+    // API URL — adjust if external API
+    $api_url = ('https://manage.compare.group/api/caravans_listing');
+
+    $response = wp_remote_post($api_url, array(
+        'headers' => array(
+            'X-API-KEY' => 'AlZeDqrRAn1fcaS8clOJD7WDDPRpTrkBsGguoeZv',
+            'Content-Type' => 'application/json',
+        ),
+        'timeout' => 15,
+    ));
+
+    if (is_wp_error($response)) {
+        return '<p>Error fetching data.</p>';
+    }
+
+    $data = json_decode(wp_remote_retrieve_body($response), true);
+
+    if (empty($data)) {
+        return '<p>No caravans found for this tag.</p>';
+    }
+}
+
+add_shortcode('test', 'test');
