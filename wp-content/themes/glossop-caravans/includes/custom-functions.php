@@ -1,11 +1,37 @@
 <?php
+
+/**
+ * Generates HTML markup for form control elements.
+ *
+ * Merges passed arguments with defaults to prevent undefined index errors, 
+ * then outputs the corresponding standard input, textarea, or select field.
+ *
+ * @param array $args Form control configuration parameters.
+ * @return string HTML string of the configured form control.
+ */
 function form_control($args)
 {
+    // Define default values to ensure all expected keys exist
+    $defaults = array(
+        'label'       => false,
+        'type'        => 'text',
+        'name'        => '',
+        'id'          => '',
+        'class'       => '',
+        'value'       => '',
+        'placeholder' => '',
+        'attribute'   => '',
+        'options'     => array()
+    );
+
+    // Merge passed arguments with defaults
+    $args = wp_parse_args($args, $defaults);
+
     $html = '<div class="form-control-holder">';
+
     if ($args['label'] != false) {
         $html .= '<label class="mb-2 fw-semibold" for="' . $args['id'] . '">' . $args['label'] . '</label>';
     }
-
 
     if ($args['type'] == 'select') {
         $html .= '<select ' . $args['attribute'] . '  name="' . $args['name'] . '" id="' . $args['id'] . '" class="form-control ' . $args['class'] . '">';
