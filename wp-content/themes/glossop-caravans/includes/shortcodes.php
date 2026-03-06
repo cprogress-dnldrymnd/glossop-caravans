@@ -61,8 +61,10 @@ function search_stock()
 add_shortcode('search_stock', 'search_stock');
 
 
-function test()
+
+function testing()
 {
+    ob_start();
     // API URL — adjust if external API
     $api_url = ('https://manage.compare.group/api/caravans_listing');
 
@@ -75,14 +77,16 @@ function test()
     ));
 
     if (is_wp_error($response)) {
-        return '<p>Error fetching data.</p>';
+        echo '<p>Error fetching data.</p>';
     }
 
     $data = json_decode(wp_remote_retrieve_body($response), true);
 
     if (empty($data)) {
-        return '<p>No caravans found for this tag.</p>';
+        echo '<p>No caravans found for this tag.</p>';
     }
+
+    return ob_get_clean();
 }
 
-add_shortcode('test', 'test');
+add_shortcode('test', 'testing');
