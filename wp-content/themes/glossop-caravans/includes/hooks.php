@@ -70,3 +70,29 @@ function example_enqueue_editor_assets()
     wp_enqueue_style('child-style', theme_dir . '/style.css');
 }
 add_action('enqueue_block_editor_assets', 'example_enqueue_editor_assets');
+
+
+/**
+ * Updates the canonical URL for 'caravan' post type if a custom listing URL exists.
+ *
+ * @author Digitally Disruptive - Donald Raymundo
+ * @link https://digitallydisruptive.co.uk/
+ * * @param string  $canonical_url The post's canonical URL.
+ * @param WP_Post $post          The post object.
+ * @return string The updated canonical URL.
+ */
+function dd_update_caravan_canonical_url($canonical_url, $post)
+{
+    // Only target the 'caravan' custom post type
+    if ('caravan' === $post->post_type) {
+        $custom_listing_url = get_post_meta($post->ID, 'listing_url', true);
+
+        // If the meta field is populated and is a valid URL, override the canonical
+        if (! empty($custom_listing_url) && filter_var($custom_listing_url, FILTER_VALIDATE_URL)) {
+            return $custom_listing_url;
+        }
+    }
+
+    return $canonical_url;
+}
+add_filter('get_canonical_url', 'dd_update_caravan_canonical_url', 10, 2);

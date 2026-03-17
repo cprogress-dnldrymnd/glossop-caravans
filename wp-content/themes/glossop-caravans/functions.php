@@ -106,3 +106,5 @@ function template($atts)
 }
 
 add_shortcode('template', 'template');
+
+
