@@ -96,3 +96,35 @@ function dd_update_caravan_canonical_url($canonical_url, $post)
     return $canonical_url;
 }
 add_filter('get_canonical_url', 'dd_update_caravan_canonical_url', 10, 2);
+
+/**
+ * Exclude parameterized URLs from Yoast XML sitemap.
+ * * Intercepts the sitemap generation array and evaluates the 'loc' string.
+ * If the URL contains forbidden query parameters (stock, slug), it returns 
+ * false to drop the node from the final XML output.
+ *
+ * @param array  $url  Array containing the URL data (loc, lastmod, chf, pri).
+ * @param string $type The sitemap type being generated (e.g., 'post', 'page').
+ * @param object $user The user object (if applicable for author sitemaps).
+ * @return array|bool  Returns the unmodified $url array, or boolean false to exclude.
+ */
+add_filter( 'wpseo_sitemap_entry', 'dd_exclude_parameterized_urls_sitemap', 10, 3 );
+
+function dd_exclude_parameterized_urls_sitemap( $url, $type, $user ) {
+    // Validate that the location key exists within the current node
+    if ( isset( $url['loc'] ) ) {
+        
+        // Define the parameters causing the non-canonical flag
+        $forbidden_params = [ '?stock=', '?slug=' ];
+        
+        // Iterate through forbidden parameters and drop the node if a match is found
+        foreach ( $forbidden_params as $param ) {
+            if ( strpos( $url['loc'], $param ) !== false ) {
+                return false; 
+            }
+        }
+    }
+    
+    // Return the sanitized URL node
+    return $url;
+}
