@@ -20,7 +20,7 @@
 
 <div class="backdrop"></div>
 <div class="d-none">
- <?= do_shortcode('[template template_id=1719]') ?>
+    <?= do_shortcode('[template template_id=1719]') ?>
     <?= do_shortcode('[template template_id=1602]') ?>
     <?= do_shortcode('[template template_id=1618]') ?>
     <?= do_shortcode('[template template_id=3897]') ?>
