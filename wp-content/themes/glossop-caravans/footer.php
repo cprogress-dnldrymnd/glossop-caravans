@@ -23,7 +23,7 @@
     <?= do_shortcode('[template template_id=1618]') ?>
     <?= do_shortcode('[template template_id=3897]') ?>
     <?= do_shortcode('[template template_id=5358]') ?>
-
+    <?= do_shortcode('[template template_id=5816]') ?>
 </div>
 </div><!-- #page -->
 
